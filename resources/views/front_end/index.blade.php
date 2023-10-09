@@ -22,10 +22,13 @@
         @yield('content')
     </main>
 @include('front_end.big_slider.main_slider')
-    {{-- @include('front_end._layout.footer') --}}
+@include('front_end.brand.brand')
+@include('front_end.product.product')
+
 </div>
 @include('front_end._layout.modal_settings')
 @include('front_end._layout.modal_search')
 @include('front_end._layout.scripts')
+
 </body>
 </html>
