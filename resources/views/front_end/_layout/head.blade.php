@@ -25,7 +25,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css2?family=Nokora&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/font/CS-Interface/style_website.css" />
+<link rel="stylesheet" href="/font/CS-Interface/style.css" />
 <!-- Font Tags End -->
 <!-- Vendor Styles Start -->
 <link rel="stylesheet" href="/css/vendor/bootstrap.min.css" />
@@ -35,12 +35,10 @@
 <!-- Template Base Styles Start -->
 <link rel="stylesheet" href="/css/styles_website.css" />
 <link rel="stylesheet" href="/css/main.css" />
-<script src="/js/cs/scrollspy.js"></script>
 <script src="/js/vendor/glide.min.js"></script>
 <script src="/js/vendor/baguetteBox.min.js"></script>
-<script src="/js/cs/glide.custom.js"></script>
-<script src="/js/plugins/carousels.js"></script>
 <link rel="stylesheet" href="/css/custom.css" />
+
 <!-- Template Base Styles End -->
 <script src="/js/base/loader.js"></script>
 <meta name="csrf-token" content="{{ csrf_token() }}">
