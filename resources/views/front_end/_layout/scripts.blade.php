@@ -31,14 +31,14 @@
 @yield('js_page')
 <script src="/js/common.js"></script>
 <script src="/js/scripts.js"></script>
-<script src="/js/carousel.js"></script>
-<script src="/js/product-carousel.js"></script>
-<script src="/js/plugins/carousels.js"></script>
+{{-- <script src="/js/product-carousel.js"></script> --}}
+{{-- <script src="/js/plugins/carousels.js"></script> --}}
 <script src="/js/cs/scrollspy.js"></script>
-    <script src="/js/vendor/glide.min.js"></script>
-    <script src="/js/vendor/baguetteBox.min.js"></script>
+<script src="/js/vendor/glide.min.js"></script>
+<script src="/js/vendor/baguetteBox.min.js"></script>
+<script src="/js/carousel.js"></script>
 <!-- Page Specific Scripts End -->
-<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
+{{-- <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
 </script>
  <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
-   </script>
+   </script> --}}

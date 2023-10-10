@@ -1,75 +1,141 @@
+@php
+    $html_tag_data = [];
+    $title = 'Order List';
+    $description= 'Ecommerce Order List Page';
+@endphp
+@extends('front_end.index',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description])
 
-{{-- <div class="owl-carousel owl-theme owl-loaded owl-drag" style="margin-top: 50px">
-    <div class="owl-stage-outer">
-            <div class="owl-stage" style="transform: translate3d(-1600px, 0px, 0px); transition: all 0.25s ease 0s; width: 3334px;">
-            <div class="owl-item cloned" style="margin-right: 10px;">
-                <div class="item" style="width:100%">
-                <img src="img/slider/slide5.jpg" alt="">
+
+@section('css')
+<link rel="stylesheet" href="/css/vendor/select2.css"/>
+<link rel="stylesheet" href="/css/vendor/select2-bootstrap4.min.css"/>
+<link rel="stylesheet" href="/css/datatables/1.12.1/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="/css/datatables/datetime/1.1.2/css/dataTables.dateTime.min.css">
+@endsection
+
+@section('js_vendor')
+<script src="/js/cs/scrollspy.js"></script>
+<script src="/js/vendor/select2.full.min.js"></script>
+@endsection
+
+@section('js_page')
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+<script src="/js/moment.min.js"></script>
+<script src="/js/datatables/datetime/1.1.2/js/dataTables.dateTime.min.js"></script>
+<script src="/js/datatables/1.12.1/js/jquery.dataTables.min.js"></script>
+<script src="/js/datatables/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+<script src="/js/datatables/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script src="/js/datatables/buttons/2.2.3/js/buttons.html5.min.js"></script>
+<script src="/js/dateRange.js"></script>
+
+@endsection
+
+@section('content')
+
+
+<style>
+    .dataTables_filter{
+    display: none !important;
+    }
+    body{
+        background-color: #e7e7e7;
+    }
+    th{
+        text-align: center !important;
+    }
+    tr{
+        vertical-align: middle;
+    }
+</style>
+<div class="">
+    <div class="page-title-container">
+        <div class="row">
+            <div class="col-auto mb-3 mb-md-0 me-auto">
+                <div class="w-auto sw-md-30">
+                    <a href="#" class="muted-link pb-1 d-inline-block breadcrumb-back">
+                        <i data-acorn-icon="chevron-left" data-acorn-size="13"></i>
+                        <span class="text-small align-middle">Home</span>
+                    </a>
+                    <h1 class="mb-0 pb-0 display-4" id="title">{{ $title }}</h1>
                 </div>
             </div>
-            <div class="owl-item cloned" style="margin-right: 10px;">
-                <div class="item" style="width:100%">
-                    <img src="img/slider/slide4.jpg" alt="">
-                </div>
-            </div>
-            <div class="owl-item cloned" style="margin-right: 10px;">
-                <div class="item" style="width:100%">
-                    <img src="img/slider/slide3.jpg" alt="">
-                </div>
-            </div>
-            <div class="owl-item cloned" style="margin-right: 10px;">
-                <div class="item" style="width:100%">
-                    <img src="img/slider/slide1.jpg" alt="">
-                </div>
-            </div>
-            <div class="owl-item cloned" >
-                <div class="item" style="width:100%">
-                    <img src="img/slider/slide2.jpg" alt="">
-                </div>
+
+            <div class="col-3 d-flex align-items-end justify-content-end">
+                <section class="scroll-section" id="default">
+                </section>
             </div>
         </div>
-        <div class="owl-nav disabled"></div>
     </div>
-</div> --}}
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/slider/slide1.jpg" class="d-block w-100" alt="">
-      </div>
-      <div class="carousel-item">
-        <img src="img/slider/slide2.jpg" class="d-block w-100" alt="">
-      </div>
-      <div class="carousel-item">
-        <img src="img/slider/slide3.jpg" class="d-block w-100" alt="">
-      </div>
-      <div class="carousel-item">
-        <img src="img/slider/slide4.jpg" class="d-block w-100" alt="">
-      </div>
-      <div class="carousel-item">
-        <img src="img/slider/slide5.jpg" class="d-block w-100" alt="">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+    <!-- Title and Top Buttons End -->
 
-{{-- <script>
-    var myCarousel = document.querySelector('#myCarousel')
-    var carousel = new bootstrap.Carousel(myCarousel, {
-    interval: 1000,
-    wrap: false
-})
-</script> --}}
+   <div class="row">
+        <div class="col">
+             <!-- Controls Start -->
+            <div class="row mb-2">
+                <div class="col-sm-12 col-md-5 col-lg-3 col-xxl-2 mb-1">
+                    <div class="d-inline-block float-md-start me-1 mb-1 search-input-container w-100 shadow bg-foreground">
+                        <input class="form-control" placeholder="Search" id="myInput" onkeyup="filter_name()" autocomplete="off" />
+                        <span class="search-magnifier-icon">
+                            <i data-acorn-icon="search"></i>
+                        </span>
+                        <span class="search-delete-icon d-none">
+                        <i data-acorn-icon="close"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls End -->
+        </div>
+        {{-- <div class="col">
+            <a href="List/Issue" class="btn btn-success" style="float: right">ISSUE INVOICE</a>
+        </div> --}}
+   </div>
+
+    <!-- Calendar List Start -->
+    <div class="card">
+        <div class="card-body">
+            <table id="filter_table" class="ui celled table" style="width:100%">
+                <div class="row mb-1">
+                    <div class="col-md-1 custom_width">
+                        <div class="d-inline-block float-md-start me-1 mb-2 search-input-container shadow" style="background-color: #e7e7e7">
+                            <input class="form-control" placeholder="Start" id="min" autocomplete="off" />
+                            <span class="search-magnifier-icon">
+                                <i data-acorn-icon="search"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-1 custom_width">
+                        <div class="d-inline-block float-md-start me-1 mb-2 search-input-container shadow" style="background-color: #e7e7e7">
+                            <input class="form-control" placeholder="End" id="max" autocomplete="off" />
+                            <span class="search-magnifier-icon">
+                                <i data-acorn-icon="search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>INVOICE NO</th>
+                        <th>NAME</th>
+                        <th class="order_list_mobile">PHONE</th>
+                        <th>DATE</th>
+                        <th class="order_list_mobile">TOTAL</th>
+                        <th class="order_list_mobile">DEPOSIT</th>
+                        <th>BALANCE</th>
+                        <th>PAID</th>
+                        <th class="order_list_pc">EDIT</th>
+                        <th class="order_list_mobile"></th>
+                    </tr>
+                </thead>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+@endsection
