@@ -218,7 +218,7 @@ class Common {
   // Datepicker defaults
   _setDatePickerDefaults() {
     if (jQuery().datepicker) {
-      jQuery.fn.datepicker.defaults = {
+      jQuery.fn.datepicker.defaults.templates = {
         leftArrow: '<i class="cs-chevron-left"></i>',
         rightArrow: '<i class="cs-chevron-right"></i>',
       };

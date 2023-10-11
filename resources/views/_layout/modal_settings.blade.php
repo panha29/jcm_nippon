@@ -197,6 +197,30 @@
                         </div>
                     </div>
 
+                    <div class="mb-5" id="placement">
+                        <label class="mb-3 d-inline-block form-label">Menu Placement</label>
+                        <div class="row d-flex g-3 justify-content-between flex-wrap">
+                            <a href="#" class="flex-grow-1 w-50 option col" data-value="horizontal" data-parent="placement">
+                                <div class="card rounded-md p-3 mb-1 no-shadow">
+                                    <div class="figure figure-primary top"></div>
+                                    <div class="figure figure-secondary bottom"></div>
+                                </div>
+                                <div class="text-muted text-part">
+                                    <span class="text-extra-small align-middle">HORIZONTAL</span>
+                                </div>
+                            </a>
+                            <a href="#" class="flex-grow-1 w-50 option col" data-value="vertical" data-parent="placement">
+                                <div class="card rounded-md p-3 mb-1 no-shadow">
+                                    <div class="figure figure-primary left"></div>
+                                    <div class="figure figure-secondary right"></div>
+                                </div>
+                                <div class="text-muted text-part">
+                                    <span class="text-extra-small align-middle">VERTICAL</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="mb-5" id="behaviour">
                         <label class="mb-3 d-inline-block form-label">Menu Behaviour</label>
                         <div class="row d-flex g-3 justify-content-between flex-wrap">
@@ -302,7 +326,6 @@
             </div>
 
             <div class="modal-body">
-
                 <div class="scroll-track-visible">
                     <div class="mb-5">
                         <label class="mb-2 d-inline-block form-label">Classic Dashboard</label>
@@ -521,7 +544,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

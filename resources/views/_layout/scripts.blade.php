@@ -6,7 +6,6 @@
 <script src="/js/vendor/clamp.min.js"></script>
 <script src="/icon/acorn-icons.js"></script>
 <script src="/icon/acorn-icons-interface.js"></script>
-<script src="/icon/acorn-icons-commerce.js"></script>
 @yield('js_vendor')
 <!-- Vendor Scripts End -->
 <!-- Template Base Scripts Start -->

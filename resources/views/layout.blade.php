@@ -22,11 +22,7 @@
     >
         @include('_layout.nav')
     </div>
-    <main
-        @isset($custom_main_class)
-        class="{{$custom_main_class}}"
-        @endisset
-    >
+    <main>
         @yield('content')
     </main>
     @include('_layout.footer')
@@ -35,4 +31,5 @@
 @include('_layout.modal_search')
 @include('_layout.scripts')
 </body>
+
 </html>
