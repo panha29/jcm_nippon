@@ -22,7 +22,7 @@
     >
         @include('_layout.nav')
     </div>
-    <main>
+    <main style="padding:0">
         @yield('content')
     </main>
     @include('_layout.footer')

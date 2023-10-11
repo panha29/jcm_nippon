@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 // index routing via Route feature
-Route::redirect('/', '/Dashboards/Default');
+// Route::redirect('/', '/Dashboards/Default');
+Route::view('/','website.website_index');
 
 
 /*
