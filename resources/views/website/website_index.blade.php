@@ -28,15 +28,15 @@
 @endsection
 
 @section('content')
-@include('website.main_slide')
-@include('website.brand')
-@include('website.product_slide')
-@include('website.services')
-@include('website.professional')
-@include('website.news')
-@include('website.application')
-@include('website.map')
-@include('website.footer')
-    <div class="container">
-    </div>
+<div class="container">
+    @include('website.main_slide')
+    @include('website.brand')
+    @include('website.product_slide')
+    @include('website.services')
+    @include('website.professional')
+    {{-- @include('website.news') --}}
+    {{-- @include('website.application') --}}
+    {{-- @include('website.map') --}}
+    @include('website.footer')
+</div>
 @endsection

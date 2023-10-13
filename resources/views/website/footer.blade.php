@@ -1,5 +1,5 @@
-<div class="container" style="margin-top: 2%; width:15%; text-align:center">
-    <div class="row">
+<div class="container" style="margin-top: 2%;  text-align:center">
+    <div class="row" style="width: 300px; margin-right:auto; margin-left:auto;">
         <div class="col">
             <a href="https://www.facebook.com/nipponcambodia">
                 <i class="mb-3 d-inline-block text-danger icon-45 bi-facebook"></i>
@@ -22,3 +22,12 @@
         </div>
     </div>
 </div>
+<img src="img/logo/logo.png" alt="nippon paint cambodia" style="margin-left:auto; margin-right:auto; display:block">
+<div class="container" style="margin-top: 1%">
+    <h6 style="text-align: center"><b>COPYRIGHT © 2019 JCMNIPPON   |   DESIGNED BY JCMNIPPON</b></h6>
+    <h6 style="text-align: center"><b>JCM NIPPON PRIVATE, LTD. WAS OFFICIALLY ESTABLISHED IN DECEMBER 31, 1998 WITH THE HEAD OFFICE AT # 51, ST. 271, PHSAR DERM THKOV DISTRICT, CHAMKAR MON COMMUNE, PHNOM PENH.</b></h6>
+</div>
+<br>
+<br>
+<br>
+<br>

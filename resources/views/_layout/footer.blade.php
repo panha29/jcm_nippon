@@ -1,9 +1,9 @@
 <!-- Layout Footer Start -->
-<footer>
+<footer  style="border-top: 0; padding-left:0; padding-right:0">
     <div class="footer-content">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-6">
+            <div class="row" style="margin-left:0; margin-right:0">
+                {{-- <div class="col-12 col-sm-6">
                     <p class="mb-0 text-muted text-medium">Colored Strategies 2021</p>
                 </div>
                 <div class="col-sm-6 d-none d-sm-block">
@@ -16,9 +16,12 @@
                         </li>
                         <li class="breadcrumb-item mb-0 text-medium"><a href="https://acorn-html-docs.coloredstrategies.com/" target="_blank" class="btn-link">Docs</a></li>
                     </ul>
-                </div>
+                </div> --}}
+                <img src="img/banner/nipponBanner.png" alt="" style="padding: 0" >
+
             </div>
         </div>
+
     </div>
 </footer>
 <!-- Layout Footer End -->
