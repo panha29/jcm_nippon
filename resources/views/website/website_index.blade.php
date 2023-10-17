@@ -28,15 +28,24 @@
 @endsection
 
 @section('content')
-<div class="container">
-    @include('website.main_slide')
+@include('website.css')
+{{-- <div class="container"> --}}
+    <div class="main-slide-responsive">
+     @include('website.main_slide')
+    </div>
+    <div class="brand-responsive">
     @include('website.brand')
-    @include('website.product_slide')
+    </div>
+
+    <div class="product-responsive">
+        @include('website.product_slide')
+
+    </div>
     @include('website.services')
     @include('website.professional')
     {{-- @include('website.news') --}}
     {{-- @include('website.application') --}}
     {{-- @include('website.map') --}}
     @include('website.footer')
-</div>
+{{-- </div> --}}
 @endsection

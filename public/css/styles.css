@@ -15081,7 +15081,7 @@ html[data-layout=fluid] main .container {
 
 html[data-placement=horizontal][data-dimension=mobile] main,
 html[data-placement=vertical][data-dimension=mobile] main {
-    padding-left: var(--main-spacing-horizontal) !important;
+    /* padding-left: var(--main-spacing-horizontal) !important; */
     padding-top: calc(var(--nav-size-slim) + calc(var(--main-spacing-horizontal) / 2));
 }
 

@@ -1,6 +1,6 @@
 <style>
     .img-card{
-        width: 50% !important;
+        width: 50%;
     }
 </style>
 <div class="container img-card">
