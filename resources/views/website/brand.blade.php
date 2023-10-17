@@ -1,10 +1,17 @@
-<style>
-    .img-card{
-        width: 50%;
-    }
-</style>
 <div class="container img-card">
-    <h3 style="margin-top:5%">OUR BRAND</h3>
+    <div class="container-divider">
+        <div class="row">
+            <div class="col">
+                <div class="divider"></div>
+            </div>
+            <div class="col">
+                <h3 class="mb-5">OUR BRAND</h3>
+            </div>
+            <div class="col">
+                <div class="divider"></div>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col">
             <div class="card">

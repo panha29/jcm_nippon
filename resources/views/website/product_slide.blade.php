@@ -5,15 +5,15 @@
 
         <h3>PRODUCTS</h3>
         <div class="gx-2">
-            <div class="p-0 mb-5">
+            <div class="p-0">
                 {{-- <div class="glide" id="glideAuto"> --}}
                 <div class="scroll-section" id="glideSmall">
                     <div class="glide__track" data-glide-el="track">
                         <div class="glide__slides">
                             <div class="glide__slide">
-                                <div class="card mb-5 sh-35">
+                                <div class="card mb-5 sh-35 card-responsive">
                                     <div class="card-body text-center align-items-center d-flex flex-column justify-content-between" style="padding: 20px">
-                                        <img src="img/product/p1.png" alt="" style="width: 170px">
+                                        <img src="img/product/p1.png" alt="" class="img-responsive">
                                         <p class="card-text h5 text-center mb-0 d-flex">Pending Orders</p>
                                     </div>
                                 </div>

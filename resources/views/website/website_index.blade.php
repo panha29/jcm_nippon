@@ -29,23 +29,27 @@
 
 @section('content')
 @include('website.css')
-{{-- <div class="container"> --}}
     <div class="main-slide-responsive">
-     @include('website.main_slide')
-    </div>
-    <div class="brand-responsive">
-    @include('website.brand')
+        @include('website.main_slide')
     </div>
 
+    <div class="brand-responsive">
+        @include('website.brand')
+    </div>
     <div class="product-responsive">
         @include('website.product_slide')
-
     </div>
-    @include('website.services')
-    @include('website.professional')
+    <div class="service-responsive">
+        @include('website.services')
+    </div>
+    <div class="professional-responsive">
+        @include('website.professional')
+    </div>
+
     {{-- @include('website.news') --}}
     {{-- @include('website.application') --}}
     {{-- @include('website.map') --}}
-    @include('website.footer')
-{{-- </div> --}}
+    <div class="footer-responsive">
+        @include('website.footer')
+    </div>
 @endsection

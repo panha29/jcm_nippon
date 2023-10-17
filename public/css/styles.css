@@ -7131,7 +7131,7 @@ button {
 */
 
 .card {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03) !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background: var(--foreground);
     border-radius: var(--border-radius-lg);
     border: initial;
