@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="/css/vendor/glide.core.min.css"/>
     <link rel="stylesheet" href="/css/vendor/baguetteBox.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="/css/vendor/plyr.css"/>
+
 @endsection
 
 @section('js_vendor')
@@ -17,6 +19,7 @@
 <script src="/js/vendor/glide.min.js"></script>
 <script src="/js/vendor/baguetteBox.min.js"></script>
 <script src="/js/vendor/fuse.js"></script>
+<script src="/js/vendor/plyr.min.js"></script>
 
 @endsection
 
@@ -24,6 +27,7 @@
 <script src="/js/cs/glide.custom.js"></script>
 <script src="/js/plugins/carousels.js"></script>
 <script src="/js/pages/interface.icons.js"></script>
+<script src="/js/plugins/players.js"></script>
 
 @endsection
 
@@ -32,7 +36,9 @@
     <div class="main-slide-responsive">
         @include('website.main_slide')
     </div>
-
+    <div class="video-responsive">
+        @include('website.video')
+    </div>
     <div class="brand-responsive">
         @include('website.brand')
     </div>
@@ -45,10 +51,15 @@
     <div class="professional-responsive">
         @include('website.professional')
     </div>
-
-    {{-- @include('website.news') --}}
-    {{-- @include('website.application') --}}
-    {{-- @include('website.map') --}}
+    <div class="news-responsive">
+        @include('website.news')
+    </div>
+    <div class="application-responsive">
+        @include('website.application')
+    </div>
+    <div class="map-responsive">
+        @include('website.map')
+    </div>
     <div class="footer-responsive">
         @include('website.footer')
     </div>

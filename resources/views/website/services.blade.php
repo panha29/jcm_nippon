@@ -1,5 +1,18 @@
 <div class="container bigger-screen">
-    <h3>OUR SERVICES</h3>
+
+    <div class="container-divider">
+        <div class="row">
+            <div class="col">
+                <div class="divider"></div>
+            </div>
+            <div class="col">
+                <h3 class="mb-5">OUR SERVICES</h3>
+            </div>
+            <div class="col">
+                <div class="divider"></div>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col">
             <div class="card">
@@ -37,8 +50,21 @@
 </div>
 
 <div class="container smaller-screen">
-    <h3>OUR SERVICES</h3>
-    <div class="row">
+
+    <div class="container-divider">
+        <div class="row">
+            <div class="col">
+                <div class="divider"></div>
+            </div>
+            <div class="col">
+                <h3>OUR SERVICES</h3>
+            </div>
+            <div class="col">
+                <div class="divider"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
         <div class="col">
             <div class="card">
                 <img src="img/service/service1.jpg" alt="nippon services">

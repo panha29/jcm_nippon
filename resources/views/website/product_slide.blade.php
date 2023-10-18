@@ -3,11 +3,25 @@
     <section class="scroll-section" id="autoPlay" style="margin-top: 5%;">
     {{-- <section class="scroll-section" id="smallGutters" style="margin-top: 5%;"> --}}
 
-        <h3>PRODUCTS</h3>
+
+        <div class="container-divider">
+            <div class="row">
+                <div class="col">
+                    <div class="divider"></div>
+                </div>
+                <div class="col">
+                    <h3 class="mb-5">PRODUCTS</h3>
+                </div>
+                <div class="col">
+                    <div class="divider"></div>
+                </div>
+            </div>
+        </div>
+
         <div class="gx-2">
             <div class="p-0">
-                {{-- <div class="glide" id="glideAuto"> --}}
-                <div class="scroll-section" id="glideSmall">
+                <div class="glide" id="glideAuto">
+                {{-- <div class="scroll-section" id="glideSmall"> --}}
                     <div class="glide__track" data-glide-el="track">
                         <div class="glide__slides">
                             <div class="glide__slide">

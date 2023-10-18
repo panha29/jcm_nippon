@@ -1,5 +1,17 @@
 <div class="container">
-    <h3>PROFESSIONAL PAINT</h3>
+    <div class="container-divider">
+        <div class="row">
+            <div class="col">
+                <div class="divider"></div>
+            </div>
+            <div class="col">
+                <h3 class="mb-5">PROFESSIONAL PAINT</h3>
+            </div>
+            <div class="col">
+                <div class="divider"></div>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col">
             <div class="card">
