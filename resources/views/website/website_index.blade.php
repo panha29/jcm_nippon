@@ -4,7 +4,7 @@
     $description = 'Dashboard pages contains different layouts to provide stats, graphics, listings, categories, banners and so on. They have various implementations of plugins such as Datatables, Chart.js, Glide.js and Plyr.js with alternative extensions.';
     $breadcrumbs = ["/"=>"Home"]
 @endphp
-@extends('layout',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description])
+@extends('web-layout',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description])
 
 @section('css')
     <link rel="stylesheet" href="/css/vendor/glide.core.min.css"/>

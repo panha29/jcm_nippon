@@ -1,18 +1,18 @@
 <div class="container">
     <div class="container-divider">
         <div class="row">
-            <div class="col">
+            <div class="col-3">
                 <div class="divider"></div>
             </div>
-            <div class="col">
+            <div class="col-6">
                 <h3 class="mb-5">PROFESSIONAL PAINT</h3>
             </div>
-            <div class="col">
+            <div class="col-3">
                 <div class="divider"></div>
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row mobile-inline">
         <div class="col">
             <div class="card">
                 <img src="img/professional/professional1.jpg" alt="nippon services">

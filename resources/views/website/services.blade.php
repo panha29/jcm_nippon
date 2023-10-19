@@ -56,7 +56,7 @@
             <div class="col">
                 <div class="divider"></div>
             </div>
-            <div class="col">
+            <div class="col-5">
                 <h3>OUR SERVICES</h3>
             </div>
             <div class="col">
