@@ -165,7 +165,7 @@
             <li class="nav-item"><a class="nav-link" href="#">Project Reference</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Dealers</a></li>
             <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Color Scheme</a></li>
+            <li class="nav-item"><a class="nav-link" href="Color%Scheme">Color Scheme</a></li>
         </ul>
     </div>
     <!-- Menu End -->

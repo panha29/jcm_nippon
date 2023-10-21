@@ -1,0 +1,519 @@
+@php
+    // $html_tag_data = [];
+    $html_tag_data = ["override"=>'{ "attributes" : { "placement" : "horizontal", "layout":"boxed" }, "storagePrefix" : "starter-project", "showSettings" : false }'];
+
+    $title = 'Customer Statement';
+    $description= 'Ecommerce Customer Statement Page';
+@endphp
+@extends('layout',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description])
+
+@section('css')
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khmer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/export/buttons.datatables.min.css">
+    <link rel="stylesheet" href="/css/export/jquery.datatables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.semanticui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/datetime/1.1.2/css/dataTables.dateTime.min.css">
+@endsection
+
+@section('js_vendor')
+
+@endsection
+
+@section('js_page')
+
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script> --}}
+    <script src="https://cdn.datatables.net/buttons/2.3.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.2/js/buttons.print.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+        $('#customer').DataTable( {
+            pageLength: 50,
+            ordering: false,
+            dom: 'Bfrtip',
+            lengthMenu: [[50, 70, 100,], [50, 70, 100]],
+            buttons: [
+                // 'copy', 'excel', 'print'
+
+                {
+                    extend: 'excelHtml5',
+                    title: 'Homefix'
+                }
+            ],
+            rowReorder: {
+                selector: 'td:nth-child(2)',
+            },
+            responsive: true
+        } );
+    } );
+    </script>
+@endsection
+
+@section('content')
+<style>
+.card [class*=card-img-horizontal] {
+    border-radius: initial;
+    border-top-right-radius: var(--border-radius-lg);
+    border-bottom-right-radius: var(--border-radius-lg);
+    border-bottom-left-radius: initial;
+    border-top-left-radius: initial;
+    height: 100%;
+}
+.modal-header-custom{
+    border-bottom: 0 !important;
+}
+.modal-content-custom {
+border-radius: var(--border-radius-lg);
+background: var(--foreground);
+opacity: 0.1;
+display: contents;
+}
+.modal-header-custom .btn-close {
+    padding: 0.5rem 0.5rem;
+    margin: -0.5rem -0.5rem -0.5rem auto;
+    color: white;
+}
+    .preview{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.dt-buttons {
+float: right !important;
+}
+.dataTables_filter{
+    display: none;
+}
+th{
+    text-align: center !important;
+}
+td{
+    height: 50px;
+}
+.redeem{
+    text-align: center;
+    background-color: orange;
+    border-color:orange;
+    color:white;
+    border: 1px solid;
+}
+.totalspend{
+    text-align:center;
+    background-color: #ff4a4a;
+    color:white;
+}
+.totalsum{
+    text-align: center;
+    background-color: #b13737;
+    border-color:#b13737;
+    color:white;
+}
+.modal-open{
+    padding: 0 !important;
+}
+</style>
+<div class="container mobile-display-on">
+    <!-- Title and Top Buttons Start -->
+    <div class="page-title-container">
+        <div class="row">
+            <!-- Title Start -->
+            <div class="col-auto mb-3 mb-md-0 me-auto">
+                <div class="w-auto sw-md-30">
+                    <a href="#" class="muted-link pb-1 d-inline-block breadcrumb-back">
+                        <i data-acorn-icon="chevron-left" data-acorn-size="13"></i>
+                        <span class="text-small align-middle">Home</span>
+                    </a>
+                    <h1 class="mb-0 pb-0 display-4" id="title" style="width: 400px">{{ $title }}</h1>
+                </div>
+            </div>
+            <!-- Title End -->
+        </div>
+    </div>
+    <!-- Title and Top Buttons End -->
+
+    <!-- Controls Start ON-->
+    <div class="row mb-2">
+        <!-- Search Start -->
+        {{-- <div class="col-sm-12 col-md-5 col-lg-3 col-xxl-2 mb-1">
+            <div class="d-inline-block float-md-start me-1 mb-1 search-input-container w-100 shadow bg-foreground">
+                <input class="form-control" placeholder="Search" onkeyup="filter_name()" id="myInput" autocomplete="off"/>
+                <span class="search-magnifier-icon"><i data-acorn-icon="search"></i></span>
+                <span class="search-delete-icon d-none"><i data-acorn-icon="close"></i></span>
+            </div>
+        </div> --}}
+        <!-- Search End -->
+    </div>
+    <!-- Controls End -->
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="col-8">
+                                <h1><b>{{$name}}</b></h1>
+                                <div style="width:80%; color:#979494">
+                                    <span>{{$gender}}</span>
+                                    <span>{{$email}}</span>
+                                    <span>{{$phone}}</span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#createredeem" style="float: right">
+                                Redeem
+                            </button>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table id="customer" class="ui celled table nowrap" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th class="" hidden>NAME</th>
+                                    <th class="">INVOICE</th>
+                                    <th class="" hidden>PHONE</th>
+                                    <th class="" hidden>EMAIL</th>
+                                    <th class="" hidden>GENDER</th>
+                                    <th class="">SEEN DATE</th>
+                                    <th class="">IMAGE</th>
+                                    <th class="">TOTAL</th>
+                                    <th class="" hidden></th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody-statement">
+                                @foreach ($data as $item)
+                                    <tr class="" style="background-color: ">
+                                        <td class="col-1" style="text-align: center" hidden>{{$item->customer_name}}</td>
+                                        <td class="col-1" style="text-align: center">#{{$item->customer_invoice}}</td>
+                                        <td class="col-1" style="text-align: center" hidden>{{$item->customer_phone}}</td>
+                                        <td class="col-1" style="text-align: center" hidden>{{$item->customer_email}}</td>
+                                        <td class="col-1" style="text-align: center" hidden>{{$item->customer_gender}}</td>
+                                        <td class="col-1" style="text-align: center">{{$item->customer_date}}</td>
+                                        <td class="col-1" style="text-align: center"><img src="{{ URL::asset('public/Image/'.$item->customer_image) }}" width="50px" height="50px" data-bs-toggle="modal" data-bs-target="#modal{{$item->id}}" onerror="this.style.display = 'none'"></td>
+                                        <td class="col-1" style="text-align: center">$ {{number_format($item->customer_total,2)}}</td>
+                                        <td hidden></td>
+                                    </tr>
+                                    <div class="modal fade" id="modal{{$item->id}}" tabindex="-1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content-custom">
+                                                <div class="modal-header-custom">
+                                                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="" style="display: inline-flex;">
+                                                        <img src="{{ url('public/Image/'.$item->customer_image) }}" style="width: 100%">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endforeach
+                                <tr>
+                                    <td style="border:0px"hidden></td>
+                                    <td style="border:0px"hidden></td>
+                                    <td style="border:0px"hidden></td>
+                                    <td style="border:0px"hidden></td>
+                                    <td style="border:0px"></td>
+                                    <td style="border:0px"></td>
+                                    <td style="text-align: center; background-color: #ff4a4a; font-family: 'Khmer', cursive; color:white; font-weight:bold;">ទឹកប្រាក់សរុប</td>
+                                    <td style="text-align: center" id="">$ {{number_format($totalspend,2)}}</td>
+                                    <td style="border:0px"hidden></td>
+                                </tr>
+                                <tr>
+                                    <td style="border:0px"hidden></td>
+                                    <td style="border:0px"hidden></td>
+                                    <td style="border:0px"hidden></td>
+                                    <td style="border:0px"hidden></td>
+                                    <td style="border:0px"></td>
+                                    <td style="border:0px"></td>
+                                    <td style="text-align: center; background-color: #ff4a4a; font-family: 'Khmer', cursive; color:white; font-weight:bold;">ទឹកប្រាក់នៅសល់</td>
+                                    <td style="text-align: center" id="totalbalance"></td>
+                                    <td style="border:0px"hidden></td>
+                                </tr>
+
+                                @foreach ($redeem as $item)
+                                <tr>
+                                    <td style="text-align: center;background-color: #d4d4d4; border-color:#979494" >Redeem</td>
+                                    <td style="text-align:center"><b>$ {{number_format($item->redeem_balance,2)}}</b></td>
+                                    <td style="text-align: center"><b>{{$item->redeem_type}}{{$item->redeem_note}}</b></td>
+                                    <td style="text-align:center"><b>{{$item->redeem_by}}{{$item->redeem_date}}</b></td>
+                                    <td hidden></td>
+                                    <td hidden></td>
+                                    <td hidden></td>
+                                    <td hidden></td>
+                                    <td hidden></td>
+                                </tr>
+                                @endforeach
+                                <tr>
+                                    <td style="text-align: center;background-color: #b13737; border-color:#b13737; color:white" >Total Redeem</td>
+                                    <td style="text-align:center" id="totalredeem"><b>$ {{number_format($sumredeem,2)}}</b></td>
+                                    <td style="text-align:center"><b id="totalsum1"></b></td>
+                                    <td ></td>
+                                    <td hidden></td>
+                                    <td hidden></td>
+                                    <td hidden></td>
+                                    <td hidden></td>
+                                    <td hidden></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="card">
+                <div class="card-body">
+                    <table class="table celled ui">
+                        <thead>
+                            <tr>
+                                <th class="" hidden>NAME</th>
+                                <th class="">INVOICE</th>
+                                <th class="" hidden>PHONE</th>
+                                <th class="" hidden>EMAIL</th>
+                                <th class="" hidden>GENDER</th>
+                                <th class="">SEEN DATE</th>
+                                <th class="">IMAGE</th>
+                                <th class="">TOTAL</th>
+                                <th class="" hidden></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($redeem as $item)
+                            <tr>
+                                <td style="text-align: center;background-color: #d4d4d4; border-color:#979494" ><b>Redeem</b></td>
+                                <td style="text-align:center" ><b>$ {{number_format($item->redeem_balance,2)}}</b></td>
+                                <td style="text-align: center"><b>{{$item->redeem_type}}<br>{{$item->redeem_note}}</b></td>
+                                <td style="text-align:center"><b>{{$item->redeem_by}}<br>{{$item->redeem_date}}</b></td>
+                                <td style="">
+                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete{{$item->id}}">
+                                        <i data-acorn-icon="bin" data-acorn-size="18"></i>
+                                    </button>
+                                    <a draggable="false" class="btn btn-primary print" target="_blank" href="print/{{$item->id}}">
+                                        <i data-acorn-icon="print" data-acorn-size="18"></i>
+
+                                    </a>
+                                </td>
+                                @include('admin_dashboard.customer.delete_redeem')
+
+                            </tr>
+                            @endforeach
+
+                            <tr>
+                                <td style="text-align: center;background-color: #b13737; border-color:#b13737; color:white" ><b>Total Balance</b></td>
+                                <td style="text-align:center"><b id="totalsum"></b></td>
+                                {{-- <td style="text-align:center" id="totalredeem" ><b>{{number_format($sumredeem,2)}}</b></td> --}}
+                                <td style="text-align: center;background-color: #d4d4d4; border-left: 0px"></b></td>
+                                <td style="text-align:center;background-color: #d4d4d4; border-left: 0px"><b></b></td>
+                                <td style="text-align:center;background-color: #d4d4d4; border-left: 0px"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div>
+                        <input type="text" class="form-control" name="" id="totalspendint" value="{{$totalspend}}" style="display: none"/>
+                        <input type="text" class="form-control" name="" id="totalredeemint" value="{{$sumredeem}}" style="display: none"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+
+{{------------------------------------------------------------------MOBILE DISPLAY----------------------------------------------------------}}
+
+<div class="container mobile-display-off">
+    <!-- Title and Top Buttons Start -->
+    <div class="page-title-container">
+        <div class="row">
+            <!-- Title Start -->
+            <div class="col-auto mb-3 mb-md-0 me-auto">
+                <div class="w-auto sw-md-30">
+                    <a href="#" class="muted-link pb-1 d-inline-block breadcrumb-back">
+                        <i data-acorn-icon="chevron-left" data-acorn-size="13"></i>
+                        <span class="text-small align-middle">Home</span>
+                    </a>
+                    <h1 class="mb-0 pb-0 display-4" id="title" style="width: 400px">{{ $title }}</h1>
+                </div>
+            </div>
+            <!-- Title End -->
+        </div>
+    </div>
+    <!-- Title and Top Buttons End -->
+
+    <!-- Controls Start ON-->
+    <div class="row mb-2">
+        <!-- Search Start -->
+        <div class="col-sm-12 col-md-5 col-lg-3 col-xxl-2 mb-1 mobile-display-on">
+            <div class="d-inline-block float-md-start me-1 mb-1 search-input-container w-100 shadow bg-foreground">
+                <input class="form-control" placeholder="Search" onkeyup="filter_name()" id="myInput" autocomplete="off"/>
+                <span class="search-magnifier-icon"><i data-acorn-icon="search"></i></span>
+                <span class="search-delete-icon d-none"><i data-acorn-icon="close"></i></span>
+            </div>
+        </div>
+        <!-- Search End -->
+    </div>
+    <!-- Controls End -->
+    <div class="  mb-3">
+        <table class="display nowrap" style="width:100%; font-size:10px;">
+            <tbody>
+                <tr>
+                    <td class="totalspend"><b>Total Spend</b></td>
+                    <td class="totalspend" id="totalspend"><b>{{number_format($totalspend,2)}}</b></td>
+                    <td class=""></b></td>
+                    <td class=""><b></b></td>
+                    <td class=""></td>
+                </tr>
+                @foreach ($redeem as $item)
+                    <tr>
+                        <td class="redeem"><b>Redeem</b></td>
+                        <td class="redeem"><b>$ {{number_format($item->redeem_balance,2)}}</b></td>
+                        <td class="redeem"><b>{{$item->redeem_type}}</b></td>
+                        <td class="redeem"><b>{{$item->redeem_by}}<br>{{$item->redeem_date}}</b></td>
+                        <td class="" style="text-align: center">
+                            <a draggable="false" class="btn btn-danger" data-id="destroy/redeem{{$item->id}}">
+                                <i data-acorn-icon="bin" data-acorn-size="18"></i>
+                            </a>
+
+                        </td>
+                    </tr>
+                @endforeach
+
+                <tr>
+
+                    <td class="totalsum"><b>Total Balance</b></td>
+                    <td class="totalsum"><b id="totalsum"></b></td>
+                    <td class="totalsum" hidden id="totalredeem"><b>$ {{number_format($sumredeem,2)}}</b></td>
+                    <td class=""></td>
+                    <td class=""></td>
+
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-8">
+                        <h1><b>{{$name}}</b></h1>
+                        <div style="width:80%; color:#979494">
+                            <span>{{$gender}}</span>
+                            <span>{{$email}}</span>
+                            <span>{{$phone}}</span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#createredeem" style="float: right">
+                            Redeem
+                        </button>
+                    </div>
+                </div>
+
+
+                <table id="customer" class="display table nowrap" style="width:100%; font-size:10px">
+                    <thead>
+                        <tr>
+                            <th class="">INVOICE</th>
+                            <th class="">SEEN DATE</th>
+                            <th class="">TOTAL</th>
+                            <th class="">IMAGE</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-statement">
+                        @foreach ($data as $item)
+                            <tr class="" style="vertical-align:middle">
+                                <td class="col-1" style="text-align: center; font-size:9px">{{$item->customer_invoice}}</td>
+                                <td class="col-1" style="text-align: center; font-size:9px">{{$item->customer_date}}</td>
+                                <td class="col-1" style="text-align: center; font-size:9px">$ {{number_format($item->customer_total,2)}}</td>
+                                <td class="col-1" style="text-align: center; font-size:9px"><img src="{{ url('public/Image/'.$item->customer_image) }}" width="50px" height="50px" data-bs-toggle="modal" data-bs-target="#mmodal{{$item->id}}" onerror="this.style.display = 'none'">
+                                </td>
+                            </tr>
+                            <div class="modal fade" id="mmodal{{$item->id}}" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content-custom">
+                                        <div class="modal-header-custom">
+                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="" style="display: inline-flex;">
+                                                <img src="{{ url('public/Image/'.$item->customer_image) }}" style="width: 100%">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@include('admin_dashboard.customer.customer_js')
+@include('admin_dashboard.customer.redeem_modal')
+{{-- <script>
+    document.addEventListener('DOMContentLoaded',() => {
+
+    //Get the texts from both textboxes
+    var spend = document.getElementById("totalspend").textContent ;
+    var redeem = document.getElementById("totalredeem").textContent ;
+    var txt3 = document.getElementById("totalspend1").textContent;
+    var txt4 = document.getElementById("totalredeem1").textContent;
+    console.log(spend);
+    console.log(redeem);
+    console.log(txt3);
+    console.log(txt4);
+    //Substract that
+    var res1 = parseFloat(spend) - parseFloat(redeem);
+    var res2 = parseFloat(txt3) - parseFloat(txt4);
+    console.log(res1);
+    console.log(res2);
+    //Set the value to your div
+    document.getElementById("totalsum").innerHTML = "$" + " " + res1.toFixed(2);
+    document.getElementById('totalsum2').innerHTML = "$" + " " + res2.toFixed(2);
+});
+</script> --}}
+
+<script>
+    var spend = document.getElementById("totalspendint").value;
+    var redeem = document.getElementById("totalredeemint").value;
+    var balance = parseFloat(spend) - parseFloat(redeem);
+    document.getElementById("totalbalance").innerHTML = "$" + " " + balance.toFixed(2).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+
+</script>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script>
+    $(".deleteRecord").on("click", function(){
+        var id = $(this).attr("data-id");
+        $.ajax({
+          url: "{{ route('delete_redeem') }}",
+          data: {"id": id,"_token": "{{ csrf_token() }}"},
+          type: 'POST',
+          success: function(result){
+              location.reload();
+          }
+        });
+      });
+</script>
+
+
+@endsection
+
