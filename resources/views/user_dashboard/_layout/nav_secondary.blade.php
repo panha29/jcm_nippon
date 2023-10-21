@@ -1,9 +1,8 @@
-<!-- Menu Start -->
 <div class="col-auto side-menu-container">
     <ul class="sw-25 side-menu mb-0 primary" id="menuSide">
         <li>
             <a href="#">
-                <i data-acorn-icon="diagram-1" class="icon"></i>
+                <i data-acorn-icon="category" class="icon"></i>
                 <span class="label">Connections</span>
             </a>
         </li>
@@ -15,7 +14,7 @@
         </li>
         <li>
             <a href="#">
-                <i data-acorn-icon="diagram-2" class="icon"></i>
+                <i data-acorn-icon="category" class="icon"></i>
                 <span class="label">Requests</span>
             </a>
         </li>
@@ -93,4 +92,3 @@
         </li>
     </ul>
 </div>
-<!-- Menu End -->

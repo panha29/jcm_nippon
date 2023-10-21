@@ -23,14 +23,13 @@ use Illuminate\Support\Facades\Auth;
 |--------------------------------------------------------------------------
 |
 */
-// Route::view('/Dashboard', 'horizontal');
-// Route::view('/Vertical', 'vertical');
+
 Route::view('/','website.website_index');
 
 
 Auth::routes();
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::redirect('Color%Scheme', '/login');
 
 
@@ -46,7 +45,7 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
 
 Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
 {
-    Route::redirect('/','/Dashboard');
-    // Route::get('/Dashboard',[UserLoginController::class,'return_dashboard']);
+    // Route::redirect('/','/Dashboard');
+    Route::get('/Dashboard',[UserLoginController::class,'user_website']);
 
 });

@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row" style="margin-left:0; margin-right:0">
 
-                <img src="img/banner/nipponBanner.png" alt="" style="padding: 0" class="footer-img">
+                <img src="../img/banner/nipponBanner.png" alt="" style="padding: 0" class="footer-img">
 
             </div>
         </div>

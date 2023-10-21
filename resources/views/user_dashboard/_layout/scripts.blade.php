@@ -1,13 +1,11 @@
 <!-- Vendor Scripts Start -->
-{{-- <script src="/js/vendor/jquery-3.5.1.min.js"></script> --}}
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="/js/vendor/jquery-3.5.1.min.js"></script>
 <script src="/js/vendor/bootstrap.bundle.min.js"></script>
 <script src="/js/vendor/OverlayScrollbars.min.js"></script>
 <script src="/js/vendor/autoComplete.min.js"></script>
 <script src="/js/vendor/clamp.min.js"></script>
 <script src="/icon/acorn-icons.js"></script>
 <script src="/icon/acorn-icons-interface.js"></script>
-<script src="/icon/acorn-icons-commerce.js"></script>
 @yield('js_vendor')
 <!-- Vendor Scripts End -->
 <!-- Template Base Scripts Start -->
@@ -22,8 +20,3 @@
 <script src="/js/common.js"></script>
 <script src="/js/scripts.js"></script>
 <!-- Page Specific Scripts End -->
-
-
-
-
-
