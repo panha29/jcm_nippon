@@ -38,7 +38,7 @@ Route::redirect('Color%Scheme', '/login');
 Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
 {
     Route::redirect('/','/Dashboard');
-    Route::view('/Dashboard','admin_dashboard/dashboard');
+    Route::view('/Dashboard','admin_dashboard/index');
 
 });
 
@@ -47,6 +47,6 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
 Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
 {
     Route::redirect('/','/Dashboard');
-    Route::get('/Dashboard',[UserLoginController::class,'return_dashboard']);
+    // Route::get('/Dashboard',[UserLoginController::class,'return_dashboard']);
 
 });

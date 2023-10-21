@@ -7,7 +7,7 @@
 
             <!-- Or added via css to provide different ones for different color themes -->
             {{-- <div class="img"></div> --}}
-            <img src="{{URL::asset('../../img/logo/kesorpka-logo.png')}}" alt="">
+            <img src="{{URL::asset('../../img/logo/logo.png')}}" alt="">
         </a>
     </div>
     <!-- Logo End -->
@@ -225,24 +225,19 @@
             </li> --}}
 
             <li>
-                <a draggable="false" href="#customers" data-href="/Admin/Customers">
+                <a draggable="false" href="#products" data-href="/Admin/Products">
                     <i data-acorn-icon="book" class="icon" data-acorn-size="18"></i>
-                    <span class="label">Customers</span>
+                    <span class="label">Products</span>
                 </a>
-                <ul id="customers">
+                <ul id="products">
                     <li>
-                        <a draggable="false" href="/Admin/Customers/List">
-                            <span class="label">Customer List</span>
+                        <a draggable="false" href="/Admin/Product/List">
+                            <span class="label">Product List</span>
                         </a>
                     </li>
                     <li>
-                        <a draggable="false" href="/Admin/Customers/Index">
-                            <span class="label">Customer Index</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a draggable="false" href="/Admin/Customers/Information">
-                            <span class="label">Customer Detail</span>
+                        <a draggable="false" href="/Admin/Product/Index">
+                            <span class="label">Product Index</span>
                         </a>
                     </li>
                 </ul>
