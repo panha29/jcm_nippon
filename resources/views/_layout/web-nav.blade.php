@@ -123,91 +123,37 @@
     <!-- User Menu End -->
 
     <!-- Icons Menu Start -->
-    <ul class="list-unstyled list-inline text-center menu-icons">
-        <li class="list-inline-item">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#searchPagesModal">
-                <i data-acorn-icon="search" data-acorn-size="18"></i>
-            </a>
-        </li>
-        <li class="list-inline-item">
-            <a href="#" id="pinButton" class="pin-button">
-                <i data-acorn-icon="lock-on" class="unpin" data-acorn-size="18"></i>
-                <i data-acorn-icon="lock-off" class="pin" data-acorn-size="18"></i>
-            </a>
-        </li>
-        <li class="list-inline-item">
-            <a href="#" id="colorButton">
-                <i data-acorn-icon="light-on" class="light" data-acorn-size="18"></i>
-                <i data-acorn-icon="light-off" class="dark" data-acorn-size="18"></i>
-            </a>
-        </li>
-        <li class="list-inline-item">
-            <a href="#" data-bs-toggle="dropdown" data-bs-target="#notifications" aria-haspopup="true" aria-expanded="false" class="notification-button">
-                <div class="position-relative d-inline-flex">
-                    <i data-acorn-icon="bell" data-acorn-size="18"></i>
-                    <span class="position-absolute notification-dot rounded-xl"></span>
-                </div>
-            </a>
-            <div class="dropdown-menu dropdown-menu-end wide notification-dropdown scroll-out" id="notifications">
-                <div class="scroll">
-                    <ul class="list-unstyled border-last-none">
-                        <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
-                            <img src="/img/profile/profile-1.webp" class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
-                            <div class="align-self-center">
-                                <a href="#">Joisse Kaycee just sent a new comment!</a>
-                            </div>
-                        </li>
-                        <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
-                            <img src="/img/profile/profile-2.webp" class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
-                            <div class="align-self-center">
-                                <a href="#">New order received! It is total $147,20.</a>
-                            </div>
-                        </li>
-                        <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
-                            <img src="/img/profile/profile-3.webp" class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
-                            <div class="align-self-center">
-                                <a href="#">3 items just added to wish list by a user!</a>
-                            </div>
-                        </li>
-                        <li class="pb-3 pb-3 border-bottom border-separator-light d-flex">
-                            <img src="/img/profile/profile-6.webp" class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
-                            <div class="align-self-center">
-                                <a href="#">Kirby Peters just sent a new message!</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </li>
-    </ul>
+
     <!-- Icons Menu End -->
 
     <!-- Menu Start -->
     <div class="menu-container flex-grow-1">
         <ul id="menu" class="menu card-header-tabs nav-tabs nav-tabs-line">
-            <li class="nav-item"><a class="nav-link active" href="#">About Us</a></li>
-            <li>
-                <a href="#products" data-href="/Products">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">About Us</a>
+            </li>
+            <li class="nav-item" >
+                <a href="#items" data-href="/Products">
                     <span class="label">Products</span>
                 </a>
-                <ul id="products">
+                <ul id="items">
                     <li>
-                        <a href="">
+                        <a href="/Products/Nippon">
                             <span class="label">Nippon Paint</span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="/Products/Sto">
                             <span class="label">Sto</span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="/Products/Renard">
                             <span class="label">Renard</span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="/Products/Selley">
                             <span class="label">Selleys</span>
                         </a>
                     </li>
@@ -219,6 +165,7 @@
             <li class="nav-item"><a class="nav-link" href="#">Project Reference</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Dealers</a></li>
             <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Color Scheme</a></li>
         </ul>
     </div>
     <!-- Menu End -->
