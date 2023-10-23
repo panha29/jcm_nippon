@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminLoginController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\CustomerDetailController;
 use App\Http\Controllers\RedeemRewardController;
@@ -38,6 +39,9 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
 {
     Route::redirect('/','/Dashboard');
     Route::view('/Dashboard','admin_dashboard/index');
+    Route::get('Product/List',[AdminLoginController::class,'product_list']);
+    Route::get('Product/Categorie',[AdminLoginController::class,'category_index']);
+    Route::post('/Admin/Product/Categorie/AddCategorie',[AdminLoginController::class,'category_save']);
 
 });
 

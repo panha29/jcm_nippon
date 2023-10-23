@@ -231,10 +231,16 @@
                 </a>
                 <ul id="products">
                     <li>
+                        <a draggable="false" href="/Admin/Product/Categorie">
+                            <span class="label">Product Categories</span>
+                        </a>
+                    </li>
+                    <li>
                         <a draggable="false" href="/Admin/Product/List">
                             <span class="label">Product List</span>
                         </a>
                     </li>
+
                     <li>
                         <a draggable="false" href="/Admin/Product/Index">
                             <span class="label">Product Index</span>
@@ -242,18 +248,39 @@
                     </li>
                 </ul>
             </li>
-            {{-- <li>
-                <a href="/User-control">
+
+            <li>
+                <a draggable="false" href="#news" data-href="/Admin/News">
+                    <i data-acorn-icon="book" class="icon" data-acorn-size="18"></i>
+                    <span class="label">News</span>
+                </a>
+                <ul id="news">
+                    <li>
+                        <a draggable="false" href="/Admin/News/Index">
+                            <span class="label">News Categories</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a draggable="false" href="/Admin/News/List">
+                            <span class="label">News List</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a draggable="false" href="/Admin/News/Index">
+                            <span class="label">News Index</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li>
+                <a href="/Admin/User">
                     <i data-acorn-icon="user" class="icon" data-acorn-size="18"></i>
                     <span class="label">User Control</span>
                 </a>
-            </li> --}}
-            <li>
-                <a href="/kesorpka" target="_blank" draggable="false">
-                    <i data-acorn-icon="shop" class="icon" data-acorn-size="18"></i>
-                    <span class="label">Website</span>
-                </a>
             </li>
+
         </ul>
     </div>
     <!-- Menu End -->
