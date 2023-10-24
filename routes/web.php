@@ -39,10 +39,17 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
 {
     Route::redirect('/','/Dashboard');
     Route::view('/Dashboard','admin_dashboard/index');
-    Route::get('Product/List',[AdminLoginController::class,'product_list']);
-    Route::get('Product/Categorie',[AdminLoginController::class,'category_index']);
-    Route::post('/Admin/Product/Categorie/AddCategorie',[AdminLoginController::class,'category_save']);
 
+    Route::group(['prefix'=>'Product'],function(){
+        Route::get('List',[AdminLoginController::class,'product_list']);
+        Route::post('List/AddProduct',[AdminLoginController::class,'product_save']);
+        Route::get('Categorie',[AdminLoginController::class,'category_index']);
+        Route::post('Categorie/AddCategories',[AdminLoginController::class,'category_save']);
+    });
+
+    Route::group(['prefix'=>'News-&-Media'],function(){
+        // Route::get('News');
+    });
 });
 
 

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CategoriesMigration extends Migration
+class NewsMigration extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class CategoriesMigration extends Migration
      */
     public function up()
     {
-        Schema::create('categories',function (Blueprint $table){
+        Schema::create('news',function (Blueprint $table){
             $table -> id();
-            $table -> string('category_name');
-            $table -> string('category_date');
+            $table -> string('news_title');
+            $table -> string('news_image');
+            $table -> string('news_date');
+            $table -> string('news_detail');
             $table->timestamps();
         });
     }
@@ -28,6 +30,6 @@ class CategoriesMigration extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categories');
+        Schema::dropIfExists('news');
     }
 }

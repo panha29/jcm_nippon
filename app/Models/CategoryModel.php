@@ -10,7 +10,7 @@ class CategoryModel extends Model
     use HasFactory;
     protected $table = 'categories';
     protected $fillable = [
-        'customer_date',
-        'customer_name',
+        'category_name',
+        'category_date',
     ];
 }
