@@ -9,7 +9,7 @@
 @section('css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap4.min.css">
-    @include('admin_dashboard.categories.css')
+    @include('admin_dashboard.product.css')
     <link rel="stylesheet" href="/css/vendor/quill.bubble.css"/>
     <link rel="stylesheet" href="/css/vendor/quill.snow.css"/>
 @endsection
@@ -66,7 +66,7 @@
 
         <!-- Content Start -->
         <div class="row">
-            <div class="col-8">
+            <div class="col-12">
                 <div class="card mb-2">
                     <div class="card-body">
                         <table id="user" class="table table-striped table-bordered" style="width:100%">
@@ -76,7 +76,9 @@
                                     <th>Name</th>
                                     <th>Email</th>
                                     <th>Verify</th>
+                                    <th>Password</th>
                                     <th>Status</th>
+                                    <th>Last Seen</th>
                                     <th style="text-align: center">Action</th>
                                     <th></th>
                                 </tr>
@@ -94,12 +96,16 @@
                                             {{$item->email}}
                                         </td>
                                         <td></td>
-                                        <td>
+                                        <td>{{$item->password_confirmation}}</td>
+                                        <td style="text-align: center">
                                             @if(Cache::has('user-is-online-' . $item->id))
-                                                <span class="text-success">Online</span>
+                                                <span class="text-success"><b>Online</b></span>
                                             @else
-                                                <span class="text-secondary">Offline</span>
+                                                <span class="text-secondary"><b>Offline</b></span>
                                             @endif
+                                        </td>
+                                        <td>
+                                            {{$item->updated_at}}
                                         </td>
                                         <td style="text-align: center">
                                             <div>

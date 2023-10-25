@@ -19,7 +19,16 @@ class AdminLoginController extends Controller
 
     public function category_index(){
         $data = DB::table('categories')->latest()->get();
-        return view('admin_dashboard.categories.categories_index',compact('data'));
+        return view('admin_dashboard.product.categories_index',compact('data'));
+    }
+
+    public function category_destroy($id){
+        CategoryModel::where('id',$id)->forceDelete();
+        return redirect('Admin/Product/Categorie');
+    }
+    public function product_destroy($id){
+        ProductModel::where('id',$id)->forceDelete();
+        return redirect('Admin/Product/List');
     }
 
     public function category_save(Request $request){

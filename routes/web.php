@@ -45,6 +45,8 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
         Route::post('List/AddProduct',[AdminLoginController::class,'product_save']);
         Route::get('Categorie',[AdminLoginController::class,'category_index']);
         Route::post('Categorie/AddCategories',[AdminLoginController::class,'category_save']);
+        Route::get('Categorie/{id}/Delete',[AdminLoginController::class,'category_destroy']);
+        Route::get('List/{id}/Delete',[AdminLoginController::class,'product_destroy']);
     });
 
     Route::group(['prefix'=>'News-&-Media'],function(){

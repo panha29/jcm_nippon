@@ -9,7 +9,7 @@
 @section('css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap4.min.css">
-    @include('admin_dashboard.categories.css')
+    @include('admin_dashboard.product.css')
     <link rel="stylesheet" href="/css/vendor/quill.bubble.css"/>
     <link rel="stylesheet" href="/css/vendor/quill.snow.css"/>
 @endsection
@@ -27,7 +27,7 @@
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap4.min.js"></script>
     <script>
-       new DataTable('#category', {
+       new DataTable('#product', {
         fixedColumns: {
         heightMatch: 'none'
     },
@@ -111,7 +111,7 @@
             <div class="col-8">
                 <div class="card mb-2">
                     <div class="card-body">
-                        <table id="category" class="table table-striped table-bordered" style="width:100%">
+                        <table id="product" class="table table-striped table-bordered" style="width:100%">
                             <thead>
                                 <tr>
                                     <th>No</th>
@@ -120,6 +120,7 @@
                                     <th>Detail</th>
                                     <th>Image</th>
                                     <th>Date</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -142,6 +143,9 @@
                                         </td>
                                         <td>
                                             {{$item->product_date}}
+                                        </td>
+                                        <td>
+                                            <a href="/Admin/Product/List/{{$item->id}}/Delete" class="btn btn-danger" draggable="false">Delete</a>
                                         </td>
                                     </tr>
                                 @endforeach
