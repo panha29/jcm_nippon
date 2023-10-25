@@ -16,6 +16,7 @@ class AdminLoginController extends Controller
         $cate = CategoryModel::get();
         return view('admin_dashboard.product.product_index',compact('data','cate'));
     }
+
     public function category_index(){
         $data = DB::table('categories')->latest()->get();
         return view('admin_dashboard.categories.categories_index',compact('data'));
@@ -43,5 +44,26 @@ class AdminLoginController extends Controller
         $data -> product_detail = $request -> product_detail;
         $data -> save();
         return redirect('/Admin/Product/List');
+    }
+    function news_list(){
+        $data = DB::table('news')->latest()->get();
+        return view('admin_dashboard.news&media.news_index',compact('data'));
+    }
+    function event_list(){
+        $data = DB::table('event')->latest()->get();
+        return view('admin_dashboard.news&media.event_index',compact('data'));
+    }
+    function career_list(){
+        $data = DB::table('career')->latest()->get();
+        return view('admin_dashboard.news&media.career_index',compact('data'));
+    }
+    function media_list(){
+        $data = DB::table('media')->latest()->get();
+        return view('admin_dashboard.news&media.media_index',compact('data'));
+    }
+
+    function user_list(){
+        $data = DB::table('users')->latest()->get();
+        return view('admin_dashboard.user.user_index',compact('data'));
     }
 }

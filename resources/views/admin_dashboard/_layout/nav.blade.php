@@ -250,24 +250,29 @@
             </li>
 
             <li>
-                <a draggable="false" href="#news" data-href="/Admin/News">
+                <a draggable="false" href="#news" data-href="/Admin/News-&-Media">
                     <i data-acorn-icon="book" class="icon" data-acorn-size="18"></i>
-                    <span class="label">News</span>
+                    <span class="label">News & Media</span>
                 </a>
                 <ul id="news">
                     <li>
-                        <a draggable="false" href="/Admin/News/Index">
-                            <span class="label">News Categories</span>
+                        <a draggable="false" href="/Admin/News-&-Media/News">
+                            <span class="label">News</span>
                         </a>
                     </li>
                     <li>
-                        <a draggable="false" href="/Admin/News/List">
-                            <span class="label">News List</span>
+                        <a draggable="false" href="/Admin/News-&-Media/Media">
+                            <span class="label">Media</span>
                         </a>
                     </li>
                     <li>
-                        <a draggable="false" href="/Admin/News/Index">
-                            <span class="label">News Index</span>
+                        <a draggable="false" href="/Admin/News-&-Media/Career">
+                            <span class="label">Career</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a draggable="false" href="/Admin/News-&-Media/Event">
+                            <span class="label">Event</span>
                         </a>
                     </li>
                 </ul>
@@ -275,7 +280,7 @@
 
 
             <li>
-                <a href="/Admin/User">
+                <a href="/Admin/User/List">
                     <i data-acorn-icon="user" class="icon" data-acorn-size="18"></i>
                     <span class="label">User Control</span>
                 </a>

@@ -1,6 +1,6 @@
 @php
     $html_tag_data = ["override"=>'{ "attributes" : { "placement" : "vertical", "layout":"fluid" }, "storagePrefix" : "starter-project", "showSettings" : false }'];
-    $title = 'Categories Index';
+    $title = 'Categories';
     $description= 'An empty page with a fluid vertical layout.';
     $breadcrumbs = ["/"=>"Home"]
 @endphp

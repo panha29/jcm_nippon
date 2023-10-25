@@ -1,7 +1,7 @@
 @php
     $html_tag_data = ["override"=>'{ "attributes" : { "placement" : "vertical", "layout":"fluid" }, "storagePrefix" : "starter-project", "showSettings" : false }'];
-    $title = 'Vertical Starter Page';
-    $description= 'An empty page with a fluid vertical layout.';
+    $title = '';
+    $description= '';
     $breadcrumbs = ["/"=>"Home"]
 @endphp
 @extends('admin_dashboard.layout',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description])

@@ -1,7 +1,7 @@
 @php
     $html_tag_data = ["override"=>'{ "attributes" : { "placement" : "vertical", "layout":"fluid" }, "storagePrefix" : "starter-project", "showSettings" : false }'];
-    $title = 'Product';
-    $description= 'An empty page with a fluid vertical layout.';
+    $title = 'Career';
+    $description= '';
     $breadcrumbs = ["/"=>"Home"]
 @endphp
 @extends('admin_dashboard.layout',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description])
@@ -27,7 +27,7 @@
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap4.min.js"></script>
     <script>
-       new DataTable('#category', {
+       new DataTable('#career', {
         fixedColumns: {
         heightMatch: 'none'
     },
@@ -69,33 +69,27 @@
             <div class="col-4">
                 <div class="card mb-2">
                     <div class="card-body" id="saveform_error">
-                        <h3 style="text-align: center" class="mb-3">Add Product</h3>
-                        <form action="/Admin/Product/List/AddProduct" method="POST" enctype="multipart/form-data">
+                        <h3 style="text-align: center" class="mb-3">Add Career</h3>
+                        <form action="/Admin/News/Career/AddCareer" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="product_name" style="width: 100px;">Name</span>
-                                <input type="text" class="form-control" placeholder="" aria-label="product_name" aria-describedby="product_name" name="product_name" autocomplete="off" id="product_name" >
-                            </div>
-                            <div class="input-group mb-3" >
-                                <span class="input-group-text" id="product_date" style="width: 100px;">Date</span>
-                                <input type="text" class="form-control" placeholder="" aria-label="product_date" aria-describedby="product_date" name="product_date" autocomplete="off" id="product_date">
-                            </div>
-                            <div class="input-group mb-3" >
-                                <span class="input-group-text" id="product_category" style="width: 100px;">Category</span>
-                                {{-- <input type="text" class="form-control" placeholder="" aria-label="product_category" aria-describedby="product_category" name="product_category" autocomplete="off" id="product_category"> --}}
-                                <select name="product_category" id="product_category" class="form-control">
-                                    @foreach ($cate as $item)
-                                        <option value="{{$item->category_name}}" name="product_category">{{$item->category_name}}</option>
-                                    @endforeach
-                                </select>
-
-                            </div>
-                            <div class="input-group mb-3" >
-                                <span class="input-group-text" id="product_detail" style="width: 100px;">Detail</span>
-                                <input type="text" class="form-control" placeholder="" aria-label="product_detail" aria-describedby="product_detail" name="product_detail" autocomplete="off" id="product_detail">
+                                <span class="input-group-text" id="career_title" style="width: 100px;">Career Title</span>
+                                <input type="text" class="form-control" placeholder="" aria-label="career_title" aria-describedby="career_title" name="career_title" autocomplete="off" id="career_title" >
                             </div>
                             <div class="input-group mb-3">
-                                <input type="file" class="form-control" name="product_image" id="input-file1" onchange="loadFile1(event)">
+                                <span class="input-group-text" id="career_position" style="width: 100px;">Position</span>
+                                <input type="text" class="form-control" placeholder="" aria-label="career_position" aria-describedby="career_position" name="career_position" autocomplete="off" id="career_position" >
+                            </div>
+                            <div class="input-group mb-3" >
+                                <span class="input-group-text" id="career_date" style="width: 100px;">Date</span>
+                                <input type="text" class="form-control" placeholder="" aria-label="career_date" aria-describedby="career_date" name="career_date" autocomplete="off" id="career_date">
+                            </div>
+                            <div class="input-group mb-3" >
+                                <span class="input-group-text" id="career_detail" style="width: 100px;">Detail</span>
+                                <input type="text" class="form-control" placeholder="" aria-label="career_detail" aria-describedby="career_detail" name="career_detail" autocomplete="off" id="career_detail">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="file" class="form-control" name="career_image" id="input-file1" onchange="loadFile1(event)">
                             </div>
                             <div class="">
                                 <img src="" id="pdimage1" class="rounded-md bg-cover-center d-block">
@@ -111,12 +105,12 @@
             <div class="col-8">
                 <div class="card mb-2">
                     <div class="card-body">
-                        <table id="category" class="table table-striped table-bordered" style="width:100%">
+                        <table id="career" class="table table-striped table-bordered" style="width:100%">
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Name</th>
-                                    <th>Category</th>
+                                    <th>Title</th>
+                                    <th>Position</th>
                                     <th>Detail</th>
                                     <th>Image</th>
                                     <th>Date</th>
@@ -129,19 +123,19 @@
                                             {{$loop->iteration}}
                                         </td>
                                         <td>
-                                            {{$item->product_name}}
+                                            {{$item->career_title}}
                                         </td>
                                         <td>
-                                            {{$item->product_category}}
+                                            {{$item->career_position}}
                                         </td>
                                         <td>
-                                            {{$item->product_detail}}
+                                            {{$item->career_detail}}
                                         </td>
                                         <td>
-                                            <img src="{{ url('img/product/company_product/'.$item->product_image) }}" alt="" style="width: 100px; height: 100px;" onerror="this.style.display = 'none'">
+                                            <img src="{{ url('img/product/company_product/'.$item->career_image) }}" alt="" style="width: 100px; height: 100px;" onerror="this.style.display = 'none'">
                                         </td>
                                         <td>
-                                            {{$item->product_date}}
+                                            {{$item->career_date}}
                                         </td>
                                     </tr>
                                 @endforeach

@@ -1,7 +1,7 @@
 @php
     $html_tag_data = ["override"=>'{ "attributes" : { "placement" : "vertical", "layout":"fluid" }, "storagePrefix" : "starter-project", "showSettings" : false }'];
-    $title = 'Product';
-    $description= 'An empty page with a fluid vertical layout.';
+    $title = 'News';
+    $description= '';
     $breadcrumbs = ["/"=>"Home"]
 @endphp
 @extends('admin_dashboard.layout',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description])
@@ -69,33 +69,31 @@
             <div class="col-4">
                 <div class="card mb-2">
                     <div class="card-body" id="saveform_error">
-                        <h3 style="text-align: center" class="mb-3">Add Product</h3>
-                        <form action="/Admin/Product/List/AddProduct" method="POST" enctype="multipart/form-data">
+                        <h3 style="text-align: center" class="mb-3">Add News</h3>
+                        <form action="/Admin/News/List/AddNews" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="product_name" style="width: 100px;">Name</span>
-                                <input type="text" class="form-control" placeholder="" aria-label="product_name" aria-describedby="product_name" name="product_name" autocomplete="off" id="product_name" >
+                                <span class="input-group-text" id="news_title" style="width: 100px;">Name</span>
+                                <input type="text" class="form-control" placeholder="" aria-label="news_title" aria-describedby="news_title" name="news_title" autocomplete="off" id="news_title" >
                             </div>
                             <div class="input-group mb-3" >
-                                <span class="input-group-text" id="product_date" style="width: 100px;">Date</span>
-                                <input type="text" class="form-control" placeholder="" aria-label="product_date" aria-describedby="product_date" name="product_date" autocomplete="off" id="product_date">
+                                <span class="input-group-text" id="news_date" style="width: 100px;">Date</span>
+                                <input type="text" class="form-control" placeholder="" aria-label="news_date" aria-describedby="news_date" name="news_date" autocomplete="off" id="news_date">
                             </div>
-                            <div class="input-group mb-3" >
+                            {{-- <div class="input-group mb-3" >
                                 <span class="input-group-text" id="product_category" style="width: 100px;">Category</span>
-                                {{-- <input type="text" class="form-control" placeholder="" aria-label="product_category" aria-describedby="product_category" name="product_category" autocomplete="off" id="product_category"> --}}
                                 <select name="product_category" id="product_category" class="form-control">
                                     @foreach ($cate as $item)
                                         <option value="{{$item->category_name}}" name="product_category">{{$item->category_name}}</option>
                                     @endforeach
                                 </select>
-
-                            </div>
+                            </div> --}}
                             <div class="input-group mb-3" >
-                                <span class="input-group-text" id="product_detail" style="width: 100px;">Detail</span>
-                                <input type="text" class="form-control" placeholder="" aria-label="product_detail" aria-describedby="product_detail" name="product_detail" autocomplete="off" id="product_detail">
+                                <span class="input-group-text" id="news_detail" style="width: 100px;">Detail</span>
+                                <input type="text" class="form-control" placeholder="" aria-label="news_detail" aria-describedby="news_detail" name="news_detail" autocomplete="off" id="news_detail">
                             </div>
                             <div class="input-group mb-3">
-                                <input type="file" class="form-control" name="product_image" id="input-file1" onchange="loadFile1(event)">
+                                <input type="file" class="form-control" name="news_image" id="input-file1" onchange="loadFile1(event)">
                             </div>
                             <div class="">
                                 <img src="" id="pdimage1" class="rounded-md bg-cover-center d-block">
@@ -116,7 +114,7 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Name</th>
-                                    <th>Category</th>
+                                    {{-- <th>Category</th> --}}
                                     <th>Detail</th>
                                     <th>Image</th>
                                     <th>Date</th>
@@ -129,19 +127,19 @@
                                             {{$loop->iteration}}
                                         </td>
                                         <td>
-                                            {{$item->product_name}}
+                                            {{$item->news_title}}
                                         </td>
-                                        <td>
+                                        {{-- <td>
                                             {{$item->product_category}}
+                                        </td> --}}
+                                        <td>
+                                            {{$item->news_detail}}
                                         </td>
                                         <td>
-                                            {{$item->product_detail}}
+                                            <img src="{{ url('img/product/company_product/'.$item->news_image) }}" alt="" style="width: 100px; height: 100px;" onerror="this.style.display = 'none'">
                                         </td>
                                         <td>
-                                            <img src="{{ url('img/product/company_product/'.$item->product_image) }}" alt="" style="width: 100px; height: 100px;" onerror="this.style.display = 'none'">
-                                        </td>
-                                        <td>
-                                            {{$item->product_date}}
+                                            {{$item->news_date}}
                                         </td>
                                     </tr>
                                 @endforeach
