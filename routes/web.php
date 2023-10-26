@@ -25,8 +25,9 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::view('/','website.website_index');
+// Route::view('/','website.website_index');
 
+Route::get('/',[AdminLoginController::class,'web_dashboard']);
 
 Auth::routes();
 
@@ -42,7 +43,9 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
 
     Route::group(['prefix'=>'Product'],function(){
         Route::get('List',[AdminLoginController::class,'product_list']);
+        Route::get('List/{id}/Edit',[AdminLoginController::class,'product_list_edit']);
         Route::post('List/AddProduct',[AdminLoginController::class,'product_save']);
+        Route::post('List/EditProduct',[AdminLoginController::class,'product_edit']);
         Route::get('Categorie',[AdminLoginController::class,'category_index']);
         Route::post('Categorie/AddCategories',[AdminLoginController::class,'category_save']);
         Route::get('Categorie/{id}/Delete',[AdminLoginController::class,'category_destroy']);

@@ -16,9 +16,9 @@ class EventMigration extends Migration
         Schema::create('event',function (Blueprint $table){
             $table -> id();
             $table -> string('event_title');
-            $table -> string('event_image');
+            $table -> string('event_image')->nullable();
             $table -> string('event_date');
-            $table -> string('event_detail');
+            $table -> string('event_detail')->nullable();
             $table->timestamps();
         });
     }

@@ -18,7 +18,7 @@ class ProductMigration extends Migration
             $table -> string('product_name');
             $table -> string('product_date');
             $table -> string('product_category');
-            $table -> string('product_detail');
+            $table -> string('product_detail')->nullable();
             $table -> string('product_image');
             $table->timestamps();
         });

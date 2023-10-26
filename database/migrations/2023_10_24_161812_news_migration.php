@@ -16,9 +16,9 @@ class NewsMigration extends Migration
         Schema::create('news',function (Blueprint $table){
             $table -> id();
             $table -> string('news_title');
-            $table -> string('news_image');
+            $table -> string('news_image')->nullable();
             $table -> string('news_date');
-            $table -> string('news_detail');
+            $table -> string('news_detail')->nullable();
             $table->timestamps();
         });
     }

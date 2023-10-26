@@ -17,6 +17,13 @@ class AdminLoginController extends Controller
         return view('admin_dashboard.product.product_index',compact('data','cate'));
     }
 
+    function product_list_edit($id){
+        $item = ProductModel::find ($id);
+        $cate = CategoryModel::get();
+        $data = ProductModel::latest()->get();
+        return view('admin_dashboard.product.product_edit',compact('item','cate','data'));
+    }
+
     public function category_index(){
         $data = DB::table('categories')->latest()->get();
         return view('admin_dashboard.product.categories_index',compact('data'));
@@ -54,6 +61,22 @@ class AdminLoginController extends Controller
         $data -> save();
         return redirect('/Admin/Product/List');
     }
+
+    public function product_edit(Request $request){
+        $data = ProductModel::find($request->id);
+        if($request->file('product_image')){
+            $file= $request->file('product_image');
+            $filename= date('YmdHi').$file->getClientOriginalName();
+            $file-> move(public_path('img/product/company_product'), $filename);
+            $data['product_image']= $filename;
+        }
+        $data -> product_name = $request -> product_name;
+        $data -> product_date = $request -> product_date;
+        $data -> product_category = $request -> product_category;
+        $data -> product_detail = $request -> product_detail;
+        $data -> save();
+        return redirect('/Admin/Product/List');
+    }
     function news_list(){
         $data = DB::table('news')->latest()->get();
         return view('admin_dashboard.news&media.news_index',compact('data'));
@@ -74,5 +97,16 @@ class AdminLoginController extends Controller
     function user_list(){
         $data = DB::table('users')->latest()->get();
         return view('admin_dashboard.user.user_index',compact('data'));
+    }
+
+    function nav_cate(){
+        $nav = CategoryModel::all();
+        return view('_layout.web-nav',compact('nav'));
+    }
+
+    function web_dashboard(){
+        $nav = CategoryModel::all();
+        $product = ProductModel::all();
+        return view('website.website_index',compact('nav','product'));
     }
 }

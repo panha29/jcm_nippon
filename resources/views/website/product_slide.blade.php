@@ -32,18 +32,18 @@
                                     </div>
                                 </div>
                             </div>
+                            @foreach ($product as $item)
                             <div class="glide__slide">
-                                <div class="card mb-5 sh-35">
-                                    <div class="card-body text-center align-items-center d-flex flex-column justify-content-between">
-                                        <div class="d-flex sw-6 sh-6 bg-gradient-light mb-3 align-items-center justify-content-center rounded-xl">
-                                            <i data-acorn-icon="loaf" class="text-white"></i>
-                                        </div>
-                                        <p class="card-text mb-0 d-flex">Pending Orders</p>
-                                        <p class="h4 text-center mb-0 d-flex text-primary">25</p>
+                                <div class="card mb-5 sh-35 card-responsive">
+                                    <div class="card-body text-center align-items-center d-flex flex-column justify-content-between" style="padding: 20px">
+                                        <img src="{{ url('img/product/company_product/'.$item->product_image) }}" alt="" class="img-responsive">
+                                        <p class="card-text h5 text-center mb-0 d-flex">{{$item->product_name}}</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="glide__slide">
+
+                            @endforeach
+                            {{-- <div class="glide__slide">
                                 <div class="card mb-5 sh-35">
                                     <div class="card-body text-center align-items-center d-flex flex-column justify-content-between">
                                         <div class="d-flex sw-6 sh-6 bg-gradient-light mb-3 align-items-center justify-content-center rounded-xl">
@@ -108,7 +108,7 @@
                                         <p class="h4 text-center mb-0 d-flex text-primary">25</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

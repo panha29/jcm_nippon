@@ -137,26 +137,15 @@
                     <span class="label">Products</span>
                 </a>
                 <ul id="items">
-                    <li>
-                        <a href="/Products/Nippon">
-                            <span class="label">Nippon Paint</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/Products/Sto">
-                            <span class="label">Sto</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/Products/Renard">
-                            <span class="label">Renard</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/Products/Selley">
-                            <span class="label">Selleys</span>
-                        </a>
-                    </li>
+
+                   @foreach ($nav as $item)
+                   <li>
+                    <a href="/Products/{{$item->category_name}}">
+                        <span class="label">{{$item->category_name}}</span>
+                    </a>
+                </li>
+                   @endforeach
+
                 </ul>
             </li>
 

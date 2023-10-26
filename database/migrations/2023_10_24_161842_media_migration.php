@@ -16,9 +16,9 @@ class MediaMigration extends Migration
         Schema::create('media',function (Blueprint $table){
             $table -> id();
             $table -> string('media_title');
-            $table -> string('media_image');
+            $table -> string('media_image')->nullable();
             $table -> string('media_date');
-            $table -> string('media_detail');
+            $table -> string('media_detail')->nullable();
             $table->timestamps();
         });
 
