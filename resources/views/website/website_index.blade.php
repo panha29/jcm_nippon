@@ -32,12 +32,19 @@
 @endsection
 
 @section('content')
+<style>
+    body{
+        background-color: white;
+    }
+</style>
 @include('website.css')
     <div class="main-slide-responsive">
         @include('website.main_slide')
     </div>
     <div class="video-responsive">
-        @include('website.video')
+        <div class="container">
+            @include('website.video')
+        </div>
     </div>
     <div class="brand-responsive">
         @include('website.brand')

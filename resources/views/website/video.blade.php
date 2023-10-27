@@ -1,14 +1,16 @@
+<br>
+<br>
+<br>
 <div class="bigger-screen">
     <div class="row">
         <div class="col">
             <div class="card mb-5 bg-transparent">
-                <video class="player" poster="img/brand/nipponpaint.png">
+                <video class="player" poster="img/brand/nipponpaint.png" style="background-color: white">
                     <source src="img/video/nippon_avi.mp4" type="video/mp4" />
                 </video>
             </div>
         </div>
         <div class="col">
-
             <div class="container-divider">
                 <div class="row">
                     <div class="col">

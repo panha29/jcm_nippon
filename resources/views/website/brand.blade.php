@@ -2,13 +2,13 @@
     <div class="container-divider">
         <div class="row">
             <div class="col">
-                <div class="divider"></div>
+                {{-- <div class="divider"></div> --}}
             </div>
             <div class="col">
-                <h3 class="mb-5">OUR BRAND</h3>
+                <h1 class="mb-5"><b>OUR BRAND</b></h1>
             </div>
             <div class="col">
-                <div class="divider"></div>
+                {{-- <div class="divider"></div> --}}
             </div>
         </div>
     </div>

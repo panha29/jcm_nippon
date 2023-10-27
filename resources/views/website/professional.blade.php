@@ -1,14 +1,14 @@
 <div class="container">
     <div class="container-divider">
         <div class="row">
-            <div class="col-3">
-                <div class="divider"></div>
+            <div class="col-4">
+                {{-- <div class="divider"></div> --}}
             </div>
-            <div class="col-6">
+            <div class="col-4">
                 <h3 class="mb-5">PROFESSIONAL PAINT</h3>
             </div>
-            <div class="col-3">
-                <div class="divider"></div>
+            <div class="col-4">
+                {{-- <div class="divider"></div> --}}
             </div>
         </div>
     </div>

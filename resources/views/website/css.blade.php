@@ -62,6 +62,20 @@
             margin-top: 8px;
         }
 
+        .footer-responsive .container-divider{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-responsive .divider{
+            text-align: center;
+            width: 100%;
+            height: 1px;
+            background-color: rgb(212, 212, 212);
+            margin-top: 12px;
+        }
+
         .brand-responsive .card-body{
             padding: 12px;
         }
@@ -298,10 +312,19 @@
         .main-slide-responsive{
             margin-top: 3%;
         }
-        .brand-responsive, .video-responsive, .product-responsive, .service-responsive, .professional-responsive, .application-responsive, .map-responsive, .news-responsive, .map-responsive{
+        .brand-responsive, .product-responsive, .service-responsive, .professional-responsive, .application-responsive, .map-responsive, .news-responsive, .map-responsive{
             width: 60%;
             margin: auto;
             margin-top: 4%;
+        }
+
+        .video-responsive{
+            width: 100%;
+            background-color: #EFF2F3;
+
+        }
+        .video-responsive .container{
+            width: 60% !important;
         }
 
         .brand-responsive, .product-responsive, .service-responsive, .professional-responsive, .application-responsive, .map-responsive, .news-responsive, .map-responsive, h3{
@@ -316,7 +339,7 @@
         }
 
         .brand-responsive .container-divider{
-            width: 50%;
+            width: 100%;
             margin-left: auto;
             margin-right: auto;
         }
@@ -330,7 +353,7 @@
         }
 
         .product-responsive .container-divider{
-            width: 50%;
+            width: 100%;
             margin-left: auto;
             margin-right: auto;
         }
@@ -343,8 +366,22 @@
             margin-top: 12px;
         }
 
+        .footer-responsive .container-divider{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-responsive .divider{
+            text-align: center;
+            width: 100%;
+            height: 1px;
+            background-color: rgb(212, 212, 212);
+            margin-top: 12px;
+        }
+
         .service-responsive .container-divider{
-            width: 60%;
+            width: 100%;
             margin-left: auto;
             margin-right: auto;
         }
@@ -358,7 +395,7 @@
         }
 
         .news-responsive .container-divider{
-            width: 60%;
+            width: 100%;
             margin-left: auto;
             margin-right: auto;
         }
@@ -419,7 +456,7 @@
         }
 
         .professional-responsive .container-divider{
-            width: 90%;
+            width: 100%;
             margin-left: auto;
             margin-right: auto;
         }
@@ -434,18 +471,20 @@
 
         .img-responsive{
             width: 170px !important;
+
         }
 
         .service-responsive img{
             border: initial;
-            border-top-left-radius: var(--border-radius-lg);
-            border-top-right-radius: var(--border-radius-lg);
+            width: 100%
+            /* border-top-left-radius: var(--border-radius-lg);
+            border-top-right-radius: var(--border-radius-lg); */
         }
         .smaller-screen{
             display: none;
         }
         .span-text-responsive{
-            font-size: 12px;
+            font-size: 16px;
             font-weight: bold;
             text-align: center;
         }
@@ -550,6 +589,18 @@
             top: 50px;
             left: 50%;
             transform: translateX(-50%);
+        }
+
+        .background-img {
+            /* background: url("/img/background/background-np.jpg"); */
+            background: transparent url('/img/background/background-np.jpg') no-repeat center center;
+            background-size: 700px 900px;
+            border-radius: var(--border-radius-lg);
+            border: initial;
+
+        }
+        .card{
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px !important;
         }
     }
 </style>
