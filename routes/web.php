@@ -64,7 +64,9 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
         Route::get('List',[AdminLoginController::class,'user_list']);
 
     });
+
 });
+Route::get('/contact-us',[AdminLoginController::class,'contact_us']);
 
 
 

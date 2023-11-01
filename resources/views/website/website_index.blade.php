@@ -36,6 +36,9 @@
     body{
         background-color: white;
     }
+    main {
+        padding: 0 !important;
+}
 </style>
 @include('website.css')
     <div class="main-slide-responsive">

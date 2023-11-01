@@ -130,7 +130,7 @@
     <div class="menu-container flex-grow-1">
         <ul id="menu" class="menu card-header-tabs nav-tabs nav-tabs-line">
             <li class="nav-item">
-                <a class="nav-link active" href="#">About Us</a>
+                <a class="nav-link" href="about-us">About Us</a>
             </li>
             <li class="nav-item" >
                 <a href="#items" data-href="/Products">
@@ -149,11 +149,12 @@
                 </ul>
             </li>
 
-            <li class="nav-item"><a class="nav-link" href="#">Painting Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Professional Painting</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Project Reference</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Dealers</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="painting-service">Painting Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="professional-painting">Professional Painting</a></li>
+            <li class="nav-item"><a class="nav-link" href="project-reference">Project Reference</a></li>
+            <li class="nav-item"><a class="nav-link" href="dearler">Dealers</a></li>
+            <li class="nav-item"><a class="nav-link" href="news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact-us">Contact Us</a></li>
             <li class="nav-item"><a class="nav-link" href="Color%Scheme">Color Scheme</a></li>
         </ul>
     </div>

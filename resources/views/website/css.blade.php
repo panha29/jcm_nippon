@@ -312,7 +312,7 @@
         .main-slide-responsive{
             margin-top: 3%;
         }
-        .brand-responsive, .product-responsive, .service-responsive, .professional-responsive, .application-responsive, .map-responsive, .news-responsive, .map-responsive{
+        .brand-responsive, .service-responsive, .product-responsive, .professional-responsive, .application-responsive, .map-responsive, .news-responsive, .map-responsive{
             width: 60%;
             margin: auto;
             margin-top: 4%;
@@ -323,7 +323,19 @@
             background-color: #EFF2F3;
 
         }
+
+        .service-responsive{
+            background-color: #EFF2F3;
+            width: 100%;
+            height: 50%;
+
+        }
+
         .video-responsive .container{
+            width: 60% !important;
+        }
+
+        .service-responsive .bigger-screen{
             width: 60% !important;
         }
 

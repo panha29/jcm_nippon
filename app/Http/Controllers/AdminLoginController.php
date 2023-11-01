@@ -109,4 +109,10 @@ class AdminLoginController extends Controller
         $product = ProductModel::all();
         return view('website.website_index',compact('nav','product'));
     }
+
+    function contact_us(){
+        $nav = CategoryModel::all();
+        $product = ProductModel::all();
+        return view('website.contact_us.index',compact('nav','product'));
+    }
 }

@@ -28,7 +28,7 @@
     >
         @include('_layout.web-nav')
     </div>
-    <main style="padding:0">
+    <main>
         @yield('content')
     </main>
     @include('_layout.footer')

@@ -1,5 +1,5 @@
+<br>
 <div class="container bigger-screen">
-
     <div class="container-divider">
         <div class="row">
             <div class="col">
@@ -72,7 +72,7 @@
                     <div class="col">
                         <div class="container"style="text-align: left; padding:10px">
                             <h5><b>Painting Service</b></h5>
-                            <h5>We also provide the painting services with </h5>
+                            <h5>We also provide Professional painters have extensive knowledge of different paint types, color combinations,and surface preparation techniques.</h5>
                         </div>
                     </div>
                 </div>
@@ -137,3 +137,4 @@
         </div>
     </div>
 </div>
+<br>

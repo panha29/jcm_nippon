@@ -1,4 +1,4 @@
-<div class="container-divider">
+<div class="container-divider mb-5">
     <div class="row">
         <div class="col">
             {{-- <div class="divider"></div> --}}
