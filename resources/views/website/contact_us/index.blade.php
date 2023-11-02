@@ -1,6 +1,6 @@
 @php
     $html_tag_data = [];
-    $title = '';
+    $title = 'Contact Us';
     $description = 'Contact Us';
     $breadcrumbs = ["/"=>"Home","/contact-us"=>"Contact Us"]
 @endphp
@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/css/vendor/select2-bootstrap4.min.css"/>
     <link rel="stylesheet" href="/css/vendor/plyr.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"/>
+
 @endsection
 
 @section('js_vendor')
@@ -29,6 +31,8 @@
     <script src="/js/cs/glide.custom.js"></script>
     <script src="/js/cs/charts.extend.js"></script>
     <script src="/js/pages/dashboard.default.js"></script>
+    <script src="/js/pages/interface.icons.js"></script>
+
 @endsection
 
 @section('content')
@@ -39,7 +43,7 @@
         <div class="page-title-container">
             <div class="row">
                 <div class="col-12 col-sm-6">
-                    <h1 class="mb-0 pb-0 display-4" id="title">{{ $title }}</h1>
+                    <h1 class="mb-0 pb-0 " id="title">{{ $title }}</h1>
                     @include('_layout.breadcrumb',['breadcrumbs'=>$breadcrumbs])
                 </div>
             </div>
@@ -163,5 +167,11 @@
         <div class="mt-5" style="width: 60%; margin:auto">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2324.512630281025!2d104.92035177341864!3d11.526826504909126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109511c5ffc60ab%3A0xabbabcf6bf4c8113!2sJCMNippon%20Private%20Ltd.!5e0!3m2!1sen!2skh!4v1697117076356!5m2!1sen!2skh" padding="0" width="100%" height="600px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
+        <div style="background-color:#EFF2F3;">
+            <br>
+            <div class="footer-responsive">
+                @include('website.footer')
+            </div>
+            <br>
+        </div>
 @endsection

@@ -59,29 +59,6 @@ template {
 [hidden] {
   display: none !important; }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2; }
-
-h1, .h1 {
-  font-size: 2.5rem; }
-
-h2, .h2 {
-  font-size: 2rem; }
-
-h3, .h3 {
-  font-size: 1.75rem; }
-
-h4, .h4 {
-  font-size: 1.5rem; }
-
-h5, .h5 {
-  font-size: 1.25rem; }
-
-h6, .h6 {
-  font-size: 1rem; }
 
 .lead {
   font-size: 1.25rem;
@@ -7722,13 +7699,6 @@ a {
     -webkit-box-shadow: none;
     box-shadow: none; }
 
-h1, h2, h3, h4, h5,
-.h1, .h2, .h3, .h4, .h5 {
-  line-height: 1.5;
-  font-weight: 400;
-  font-family: "Poppins", Arial, sans-serif;
-  color: #000; }
-
 .bg-primary {
   background: #01d28e !important; }
 
@@ -7847,11 +7817,6 @@ textarea.form-control {
       border-color: #019f6c !important;
       background: #019f6c !important; }
 
-.contactForm .label {
-  color: #000;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 600; }
 
 .contactForm .form-control {
   border: none;

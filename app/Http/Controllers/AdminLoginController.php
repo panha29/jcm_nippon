@@ -115,4 +115,16 @@ class AdminLoginController extends Controller
         $product = ProductModel::all();
         return view('website.contact_us.index',compact('nav','product'));
     }
+
+    function about_us(){
+        $nav = CategoryModel::all();
+        $product = ProductModel::all();
+        return view('website.about_us.index',compact('nav','product'));
+    }
+
+    function painting_services(){
+        $nav = CategoryModel::all();
+        $product = ProductModel::all();
+        return view('website.painting_services.index',compact('nav','product'));
+    }
 }

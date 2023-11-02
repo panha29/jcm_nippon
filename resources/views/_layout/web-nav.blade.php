@@ -149,7 +149,7 @@
                 </ul>
             </li>
 
-            <li class="nav-item"><a class="nav-link" href="painting-service">Painting Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="painting-services">Painting Services</a></li>
             <li class="nav-item"><a class="nav-link" href="professional-painting">Professional Painting</a></li>
             <li class="nav-item"><a class="nav-link" href="project-reference">Project Reference</a></li>
             <li class="nav-item"><a class="nav-link" href="dearler">Dealers</a></li>

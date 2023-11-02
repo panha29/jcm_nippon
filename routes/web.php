@@ -67,6 +67,8 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
 
 });
 Route::get('/contact-us',[AdminLoginController::class,'contact_us']);
+Route::get('/about-us',[AdminLoginController::class,'about_us']);
+Route::get('/painting-services',[AdminLoginController::class,'painting_services']);
 
 
 
