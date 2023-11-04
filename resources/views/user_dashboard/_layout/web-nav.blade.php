@@ -138,9 +138,8 @@
     <!-- Menu Start -->
     <div class="menu-container flex-grow-1">
         <ul id="menu" class="menu card-header-tabs nav-tabs nav-tabs-line">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">About Us</a>
-            </li>
+            <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">About Us</a></li>
             <li class="nav-item" >
                 <a href="#items" data-href="/Products">
                     <span class="label">Products</span>

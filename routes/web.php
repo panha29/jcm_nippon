@@ -27,11 +27,11 @@ use Illuminate\Support\Facades\Auth;
 
 // Route::view('/','website.website_index');
 
-Route::get('/',[AdminLoginController::class,'web_dashboard']);
+Route::get('/home',[AdminLoginController::class,'web_dashboard']);
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/login', [App\Http\Controllers\HomeController::class, 'index'])->name('login');
 Route::redirect('Color%Scheme', '/login');
 
 
@@ -69,6 +69,8 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
 Route::get('/contact-us',[AdminLoginController::class,'contact_us']);
 Route::get('/about-us',[AdminLoginController::class,'about_us']);
 Route::get('/painting-services',[AdminLoginController::class,'painting_services']);
+Route::get('/professional-painting',[AdminLoginController::class,'professional_painting']);
+Route::get('/project-reference',[AdminLoginController::class,'project_reference']);
 
 
 

@@ -114,8 +114,7 @@
                 </div>
             </div>
         </ol>
-        <h1 class="mt-5 mb-5" style="text-align: center; font-weight:600; font-size:26px">Our Milestones</h1>
-@include('website.about_us.milestones')
+{{-- @include('website.about_us.milestones') --}}
     </div>
 
 
