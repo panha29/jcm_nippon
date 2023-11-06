@@ -15514,7 +15514,7 @@ html[data-placement=horizontal] .nav-container .menu-container .menu>li>a {
 
 html[data-placement=horizontal] .nav-container .menu-container .menu>li>a.active,
 html[data-placement=horizontal] .nav-container .menu-container .menu>li>a:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03) !important;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03) !important; */
     background: rgba(255, 255, 255, 0.05);
 }
 

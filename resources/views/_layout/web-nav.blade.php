@@ -1,7 +1,7 @@
 <div class="nav-content d-flex">
     <!-- Logo Start -->
     <div class="logo position-relative">
-        <a href="/">
+        <a href="/home">
             <!-- Logo can be added directly -->
            <img src="/img/logo/logo.png" alt="logo" />
             <!-- Or added via css to provide different ones for different color themes -->
@@ -129,7 +129,7 @@
     <!-- Menu Start -->
     <div class="menu-container flex-grow-1">
         <ul id="menu" class="menu card-header-tabs nav-tabs nav-tabs-line">
-            <li class="nav-item"><a class="nav-link" href="Dashboard">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="home">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="about-us">About Us</a></li>
             <li class="nav-item" >
                 <a href="#items" data-href="/Products">
@@ -148,7 +148,7 @@
                 </ul>
             </li>
 
-            <li class="nav-item"><a class="nav-link" href="painting-services">Painting Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="painting-services">Our Services</a></li>
             <li class="nav-item"><a class="nav-link" href="professional-painting">Professional Painting</a></li>
             <li class="nav-item"><a class="nav-link" href="project-reference">Project Reference</a></li>
             <li class="nav-item"><a class="nav-link" href="dearler">Dealers</a></li>

@@ -71,7 +71,7 @@
         <div class="container" style="width:60%;">
             @foreach ($pr as $item)
             <div style="display: inline-flex; padding-left:15px" >
-                <div class="card image mb-3">
+                <div class="card image mb-3 responsive-card">
                     <a href=""><img src="{{ url('img/project_reference/company_project_reference/'.$item->project_reference_image1) }}" class="image" alt=""></a>
                     <div class="card-body" style="line-height: 25px">
                         <h3>{{$item->project_reference_name}}</h3>

@@ -27,11 +27,11 @@ use Illuminate\Support\Facades\Auth;
 
 // Route::view('/','website.website_index');
 
-Route::get('/Dashboard',[AdminLoginController::class,'web_dashboard']);
+Route::get('/home',[AdminLoginController::class,'web_dashboard']);
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/login', [App\Http\Controllers\HomeController::class, 'index'])->name('login');
 Route::redirect('Color%Scheme', '/login');
 
 

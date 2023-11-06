@@ -1,4 +1,15 @@
 <style>
+    @media only screen and (min-width: 1920px){
+        .image{
+        width: 350px !important;
+        height: 280px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        }
+        .responsive-card{
+            height: 550px !important;
+        }
+    }
     @media only screen and (max-width: 600px) {
         .main{
             padding-left: 0px !important;
