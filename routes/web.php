@@ -27,11 +27,11 @@ use Illuminate\Support\Facades\Auth;
 
 // Route::view('/','website.website_index');
 
-Route::get('/home',[AdminLoginController::class,'web_dashboard']);
+Route::get('/Dashboard',[AdminLoginController::class,'web_dashboard']);
 
 Auth::routes();
 
-Route::get('/login', [App\Http\Controllers\HomeController::class, 'index'])->name('login');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::redirect('Color%Scheme', '/login');
 
 
@@ -57,6 +57,13 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
         Route::get('Event',[AdminLoginController::class,'Event_list']);
         Route::get('Media',[AdminLoginController::class,'Media_list']);
         Route::get('Career',[AdminLoginController::class,'Career_list']);
+    });
+
+    Route::group(['prefix'=>'Project-Reference'],function(){
+        Route::post('List/AddProject-Reference',[AdminLoginController::class,'project_reference_save']);
+        Route::get('List',[AdminLoginController::class,'project_reference_index']);
+        Route::get('List/{id}/Delete',[AdminLoginController::class,'project_reference_destroy']);
+
 
     });
 

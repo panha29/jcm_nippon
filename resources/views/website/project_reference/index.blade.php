@@ -40,8 +40,8 @@
 @include('website.contact_us.css')
 <style>
     .image{
-        width: 400px;
-        height: 300px;
+        width: 388px;
+        height: 250px;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
@@ -69,17 +69,21 @@
     <br>
 
         <div class="container" style="width:60%;">
-          <div class="card image">
-              <a href=""><img src="img/project-reference/pr1.jpg" class="image" alt=""></a>
-            <div class="card-body">
-                <span>Aeon Mall</span><br>
-                <span>Exterior : WB 145, WB 590, WB 134, WB 569</span><br>
-                <span>Interior : MA 569, 2005-Y30A, 73A-1A</span><br>
-                <span>Area : ជិតមាត់ទន្លេ</span><br>
-                <span>Start : 01.04.2014</span><br>
-                <span>Finished : 27.06.14</span><br>
+            @foreach ($pr as $item)
+            <div style="display: inline-flex; padding-left:15px" >
+                <div class="card image mb-3">
+                    <a href=""><img src="{{ url('img/project_reference/company_project_reference/'.$item->project_reference_image1) }}" class="image" alt=""></a>
+                    <div class="card-body" style="line-height: 25px">
+                        <h3>{{$item->project_reference_name}}</h3>
+                        <span><b>Exterior</b> <span style="margin-left: 3px">:</span> {{$item->project_reference_exterior}}</span><br>
+                        <span><b>Interior</b> <span style="margin-left: 7px">:</span> {{$item->project_reference_interior}}</span><br>
+                        <span><b>Area</b> <span style="margin-left: 22px">:</span> {{$item->project_reference_area}}</span><br>
+                        <span><b>Start</b> <span style="margin-left: 21px">:</span> {{$item->project_reference_startDate}}</span><br>
+                        <span><b>Finished</b> <span style="margin-left: px">:</span> {{$item->project_reference_endDate}}</span><br>
+                    </div>
+                </div>
             </div>
-          </div>
+            @endforeach
 		</div>
         <br>
         <br>

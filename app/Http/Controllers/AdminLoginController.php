@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\CategoryModel;
 use App\Models\ProductModel;
+use App\Models\ProjectReferenceModel;
 use CategoriesMigration;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -135,6 +136,54 @@ class AdminLoginController extends Controller
     function project_reference(){
         $nav = CategoryModel::all();
         $product = ProductModel::all();
-        return view('website.project_reference.index',compact('nav','product'));
+        $pr = ProjectReferenceModel::all();
+        return view('website.project_reference.index',compact('nav','product','pr'));
+    }
+
+
+
+    public function project_reference_save(Request $request){
+        $data = new ProjectReferenceModel();
+        if($request->file('project_reference_image1')){
+            $file= $request->file('project_reference_image1');
+            $filename= date('YmdHi').$file->getClientOriginalName();
+            $file-> move(public_path('img/project_reference/company_project_reference'), $filename);
+            $data['project_reference_image1']= $filename;
+        }
+        if($request->file('project_reference_image2')){
+            $file= $request->file('project_reference_image2');
+            $filename= date('YmdHi').$file->getClientOriginalName();
+            $file-> move(public_path('img/project_reference/company_project_reference'), $filename);
+            $data['project_reference_image2']= $filename;
+        }
+        if($request->file('project_reference_image3')){
+            $file= $request->file('project_reference_image3');
+            $filename= date('YmdHi').$file->getClientOriginalName();
+            $file-> move(public_path('img/project_reference/company_project_reference'), $filename);
+            $data['project_reference_image3']= $filename;
+        }
+        if($request->file('project_reference_image4')){
+            $file= $request->file('project_reference_image4');
+            $filename= date('YmdHi').$file->getClientOriginalName();
+            $file-> move(public_path('img/project_reference/company_project_reference'), $filename);
+            $data['project_reference_image4']= $filename;
+        }
+        $data -> project_reference_name = $request -> project_reference_name;
+        $data -> project_reference_startDate = $request -> project_reference_startDate;
+        $data -> project_reference_endDate = $request -> project_reference_endDate;
+        $data -> project_reference_exterior = $request -> project_reference_exterior;
+        $data -> project_reference_interior = $request -> project_reference_interior;
+        $data -> project_reference_area = $request -> project_reference_area;
+
+        $data -> save();
+        return redirect('/Admin/Project-Reference/List');
+    }
+    public function project_reference_destroy($id){
+        ProjectReferenceModel::where('id',$id)->forceDelete();
+        return redirect('/Admin/Project-Reference/List');
+    }
+    function project_reference_index(){
+        $data = ProjectReferenceModel::latest()->get();
+        return view('admin_dashboard.project_reference.project-reference-index',compact('data'));
     }
 }

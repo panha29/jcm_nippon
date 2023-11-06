@@ -277,7 +277,12 @@
                     </li>
                 </ul>
             </li>
-
+            <li>
+                <a href="/Admin/Project-Reference/List">
+                    <i data-acorn-icon="user" class="icon" data-acorn-size="18"></i>
+                    <span class="label">Project Reference</span>
+                </a>
+            </li>
 
             <li>
                 <a href="/Admin/User/List">
