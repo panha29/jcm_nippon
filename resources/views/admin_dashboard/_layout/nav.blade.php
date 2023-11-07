@@ -283,7 +283,12 @@
                     <span class="label">Project Reference</span>
                 </a>
             </li>
-
+            <li>
+                <a href="/Admin/Dealer/List">
+                    <i data-acorn-icon="user" class="icon" data-acorn-size="18"></i>
+                    <span class="label">Dealer</span>
+                </a>
+            </li>
             <li>
                 <a href="/Admin/User/List">
                     <i data-acorn-icon="user" class="icon" data-acorn-size="18"></i>

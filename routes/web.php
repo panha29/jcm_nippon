@@ -27,12 +27,13 @@ use Illuminate\Support\Facades\Auth;
 
 // Route::view('/','website.website_index');
 
+Route::get('/',[AdminLoginController::class,'web_dashboard']);
 Route::get('/home',[AdminLoginController::class,'web_dashboard']);
 
 Auth::routes();
 
-Route::get('/login', [App\Http\Controllers\HomeController::class, 'index'])->name('login');
-Route::redirect('Color%Scheme', '/login');
+Route::get('/Color%Scheme', [App\Http\Controllers\HomeController::class, 'index'])->name('Color%Scheme');
+// Route::redirect('Color%Scheme', '/login');
 
 
 
@@ -63,13 +64,15 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
         Route::post('List/AddProject-Reference',[AdminLoginController::class,'project_reference_save']);
         Route::get('List',[AdminLoginController::class,'project_reference_index']);
         Route::get('List/{id}/Delete',[AdminLoginController::class,'project_reference_destroy']);
-
-
     });
 
     Route::group(['prefix'=>'User'],function(){
         Route::get('List',[AdminLoginController::class,'user_list']);
-
+    });
+    Route::group(['prefix'=>'Location'],function(){
+        Route::post('List/AddDealer',[AdminLoginController::class,'dealer_save']);
+        Route::get('List',[AdminLoginController::class,'dealer_index']);
+        Route::get('List/{id}/Delete',[AdminLoginController::class,'dealer_destroy']);
     });
 
 });
@@ -78,6 +81,7 @@ Route::get('/about-us',[AdminLoginController::class,'about_us']);
 Route::get('/painting-services',[AdminLoginController::class,'painting_services']);
 Route::get('/professional-painting',[AdminLoginController::class,'professional_painting']);
 Route::get('/project-reference',[AdminLoginController::class,'project_reference']);
+Route::get('/location',[AdminLoginController::class,'location']);
 
 
 

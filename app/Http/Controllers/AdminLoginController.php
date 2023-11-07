@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\CategoryModel;
+use App\Models\DealerModel;
 use App\Models\ProductModel;
 use App\Models\ProjectReferenceModel;
 use CategoriesMigration;
@@ -140,7 +141,11 @@ class AdminLoginController extends Controller
         return view('website.project_reference.index',compact('nav','product','pr'));
     }
 
-
+    function location(){
+        $nav = CategoryModel::all();
+        $product = ProductModel::all();
+        return view('website.dealer.index',compact('nav','product'));
+    }
 
     public function project_reference_save(Request $request){
         $data = new ProjectReferenceModel();
@@ -185,5 +190,22 @@ class AdminLoginController extends Controller
     function project_reference_index(){
         $data = ProjectReferenceModel::latest()->get();
         return view('admin_dashboard.project_reference.project-reference-index',compact('data'));
+    }
+
+    public function dealer_save(Request $request){
+        $data = new DealerModel();
+        $data -> dealer_name = $request -> dealer_name;
+        $data -> dealer_location = $request -> dealer_location;
+        $data -> dealer_phone = $request -> dealer_phone;
+        $data -> save();
+        return redirect('/Admin/Dealer/List');
+    }
+    public function dealer_destroy($id){
+        DealerModel::where('id',$id)->forceDelete();
+        return redirect('/Admin/Dealer/List');
+    }
+    function dealer_index(){
+        $data = DealerModel::latest()->get();
+        return view('admin_dashboard.dealer.index',compact('data'));
     }
 }
