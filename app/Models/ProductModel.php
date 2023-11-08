@@ -15,5 +15,6 @@ class ProductModel extends Model
         'product_category',
         'product_detail',
         'product_image',
+        'product_tag',
     ];
 }

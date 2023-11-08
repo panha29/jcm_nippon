@@ -23,13 +23,29 @@
     .dataTables_wrapper .dataTables_paginate .paginate_button {
         padding: 0.5em 0em !important;
         box-sizing: none !important;
+        border: none !important;
+
     }
     .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
-       display: none;
+       /* display: none; */
     }
 
     .page-item:first-child .page-link, .page-item:last-child .page-link{
-        display: none;
+        width: auto;
+
     }
+
+    .dataTables_wrapper .dataTables_paginate .paginate_button:active {
+    outline: none;
+    background-color: none !important;
+    background: none !important;
+    background: none !important;
+    background: none !important;
+    background: none !important;
+    background: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    }
+
 
 </style>

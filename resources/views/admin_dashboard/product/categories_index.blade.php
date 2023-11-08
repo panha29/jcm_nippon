@@ -60,6 +60,10 @@
                                 <span class="input-group-text" id="category_name">Categorie Name</span>
                                 <input type="text" class="form-control" placeholder="" aria-label="category_name" aria-describedby="category_name" name="category_name" autocomplete="off" id="category_name" >
                             </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="category_tag" style="width: 128px;">Categorie Tag</span>
+                                <input type="text" class="form-control" placeholder="" aria-label="category_tag" aria-describedby="category_tag" name="category_tag" autocomplete="off" id="category_tag" >
+                            </div>
                             <div class="input-group mb-3" >
                                 <span class="input-group-text" id="category_date" style="width: 128px;">Date</span>
                                 <input type="text" class="form-control" placeholder="" aria-label="category_date" aria-describedby="category_date" name="category_date" autocomplete="off" id="category_date" value="<?php echo date("d.m.Y");?>">

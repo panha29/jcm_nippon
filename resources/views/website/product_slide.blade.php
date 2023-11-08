@@ -20,8 +20,8 @@
 
         <div class="gx-2 mt-5">
             <div class="p-0">
-                {{-- <div class="glide" id="glideAuto"> --}}
-                <div class="glide" id="glideBasic">
+                <div class="glide" id="glideAuto">
+                {{-- <div class="glide" id="glideBasic"> --}}
                     <div class="glide__track" data-glide-el="track">
                         <div class="glide__slides">
                             @foreach ($product as $item)

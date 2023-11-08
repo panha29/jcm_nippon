@@ -47,6 +47,7 @@
             }
         };
     </script>
+    @include('admin_dashboard.product.js')
 @endsection
 
 @section('content')
@@ -81,13 +82,17 @@
                                 <input type="text" class="form-control" placeholder="" aria-label="product_date" aria-describedby="product_date" name="product_date" autocomplete="off" id="product_date" value="<?php echo date("d.m.Y");?>">
                             </div>
                             <div class="input-group mb-3" >
-                                <span class="input-group-text" id="product_category" style="width: 100px;">Category</span>
-                                {{-- <input type="text" class="form-control" placeholder="" aria-label="product_category" aria-describedby="product_category" name="product_category" autocomplete="off" id="product_category"> --}}
-                                <select name="product_category" id="product_category" class="form-control">
+                                <span class="input-group-text" style="width: 100px;">Category</span>
+                                <select name="product_category" id="product_category" class="form-control" onchange="updateform()">
+                                        <option value="" selected disabled>Default</option>
                                     @foreach ($cate as $item)
-                                        <option value="{{$item->category_name}}" name="product_category">{{$item->category_name}}</option>
+                                        <option data-value="{{$item->category_tag}}" value="{{$item->category_name}}" name="product_category">{{$item->category_name}}</option>
                                     @endforeach
                                 </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" style="width: 100px;">Product Tag</span>
+                                <input type="text" class="form-control" placeholder="" aria-label="product_tag" aria-describedby="product_tag" name="product_tag" autocomplete="off" id="product_tag">
                             </div>
                             <div class="input-group mb-3" >
                                 <span class="input-group-text" id="product_detail" style="width: 100px;">Detail</span>
@@ -137,7 +142,7 @@
                                         <td>
                                             {{$item->product_detail}}
                                         </td>
-                                        <td>
+                                        <td style="text-align: center">
                                             <img src="{{ url('img/product/company_product/'.$item->product_image) }}" alt="" style="width: 100px; height: 100px;" onerror="this.style.display = 'none'">
                                         </td>
                                         <td>

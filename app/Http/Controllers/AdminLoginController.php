@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\CategoryModel;
 use App\Models\DealerModel;
+use App\Models\NewsModel;
 use App\Models\ProductModel;
 use App\Models\ProjectReferenceModel;
 use CategoriesMigration;
@@ -44,6 +45,7 @@ class AdminLoginController extends Controller
         $data = new CategoryModel();
         $data -> category_name = $request -> category_name;
         $data -> category_date = $request -> category_date;
+        $data -> category_tag = $request -> category_tag;
         $data -> save();
         return redirect('/Admin/Product/Categorie');
     }
@@ -58,6 +60,7 @@ class AdminLoginController extends Controller
         }
         $data -> product_name = $request -> product_name;
         $data -> product_date = $request -> product_date;
+        $data -> product_tag = $request -> product_tag;
         $data -> product_category = $request -> product_category;
         $data -> product_detail = $request -> product_detail;
         $data -> save();
@@ -74,6 +77,7 @@ class AdminLoginController extends Controller
         }
         $data -> product_name = $request -> product_name;
         $data -> product_date = $request -> product_date;
+        $data -> product_tag = $request -> product_tag;
         $data -> product_category = $request -> product_category;
         $data -> product_detail = $request -> product_detail;
         $data -> save();
@@ -134,6 +138,11 @@ class AdminLoginController extends Controller
         $product = ProductModel::all();
         return view('website.professional_painting.index',compact('nav','product'));
     }
+    function news(){
+        $nav = CategoryModel::all();
+        $news = NewsModel::all();
+        return view('website.news.index',compact('nav','news'));
+    }
     function project_reference(){
         $nav = CategoryModel::all();
         $product = ProductModel::all();
@@ -145,6 +154,12 @@ class AdminLoginController extends Controller
         $nav = CategoryModel::all();
         $product = ProductModel::all();
         return view('website.dealer.index',compact('nav','product'));
+    }
+    function category_tag($id = null){
+        $nav = CategoryModel::all();
+        $product = ProductModel::where('product_tag', ($id))->latest()->get();
+        // $product = ProductModel::all();
+        return view('website.product.index',compact('nav','product'));
     }
 
     public function project_reference_save(Request $request){

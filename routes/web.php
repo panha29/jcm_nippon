@@ -28,7 +28,6 @@ use Illuminate\Support\Facades\Auth;
 // Route::view('/','website.website_index');
 
 Route::get('/',[AdminLoginController::class,'web_dashboard']);
-Route::get('/home',[AdminLoginController::class,'web_dashboard']);
 
 Auth::routes();
 
@@ -82,6 +81,9 @@ Route::get('/painting-services',[AdminLoginController::class,'painting_services'
 Route::get('/professional-painting',[AdminLoginController::class,'professional_painting']);
 Route::get('/project-reference',[AdminLoginController::class,'project_reference']);
 Route::get('/location',[AdminLoginController::class,'location']);
+Route::get('/Products/{category_tag}',[AdminLoginController::class,'category_tag']);
+Route::get('/home',[AdminLoginController::class,'web_dashboard']);
+Route::get('/news',[AdminLoginController::class,'news']);
 
 
 

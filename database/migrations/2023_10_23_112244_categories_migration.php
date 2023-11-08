@@ -17,6 +17,7 @@ class CategoriesMigration extends Migration
             $table -> id();
             $table -> string('category_name');
             $table -> string('category_date');
+            $table -> string('category_tag');
             $table->timestamps();
         });
     }

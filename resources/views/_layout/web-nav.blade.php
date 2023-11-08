@@ -129,32 +129,27 @@
     <!-- Menu Start -->
     <div class="menu-container flex-grow-1">
         <ul id="menu" class="menu card-header-tabs nav-tabs nav-tabs-line">
-            <li class="nav-item"><a class="nav-link" href="home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about-us">About Us</a></li>
-            <li class="nav-item" >
-                <a href="#items" data-href="/Products">
-                    <span class="label">Products</span>
-                </a>
-                <ul id="items">
-
-                   @foreach ($nav as $item)
-                   <li>
-                    <a href="/Products/{{$item->category_name}}">
-                        <span class="label">{{$item->category_name}}</span>
-                    </a>
-                </li>
-                   @endforeach
-
+            <li class="nav-item"><a class="nav-link" href="/home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/about-us">About Us</a></li>
+            <li class="nav-item"><a class="" href="/Products" data-href="/Products"><span class="label">Products</span></a>
+                <ul id="Products">
+                    <li>
+                       @foreach ($nav as $item)
+                        <a href="/Products/{{$item->category_tag}}">
+                            <span class="label">{{$item->category_name}}</span>
+                        </a>
+                        @endforeach
+                    </li>
                 </ul>
             </li>
 
-            <li class="nav-item"><a class="nav-link" href="painting-services">Our Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="professional-painting">Professional Painting</a></li>
-            <li class="nav-item"><a class="nav-link" href="project-reference">Project Reference</a></li>
-            <li class="nav-item"><a class="nav-link" href="location">Location</a></li>
-            <li class="nav-item"><a class="nav-link" href="news">News</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact-us">Contact Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="Color%Scheme">Color Scheme</a></li>
+            <li class="nav-item"><a class="nav-link" href="/painting-services">Our Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="/professional-painting">Professional Painting</a></li>
+            <li class="nav-item"><a class="nav-link" href="/project-reference">Project Reference</a></li>
+            <li class="nav-item"><a class="nav-link" href="/location">Location</a></li>
+            <li class="nav-item"><a class="nav-link" href="/news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contact-us">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Color%Scheme">Color Scheme</a></li>
         </ul>
     </div>
     <!-- Menu End -->

@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class MediaModel extends Model
 {
     use HasFactory;
+    protected $table = 'events';
+    protected $fillable = [
+        'events_title',
+        'events_image',
+        'events_date',
+        'events_detail',
+    ];
 }

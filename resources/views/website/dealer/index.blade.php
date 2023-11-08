@@ -59,40 +59,37 @@
 <style>
 
 </style>
-    <div class="container">
-        <div class="page-title-container">
-            <div class="row">
-                <div class="col-12 col-sm-6">
-                    <h1 class="mb-0 pb-0 " id="title">{{ $title }}</h1>
-                    @include('_layout.breadcrumb',['breadcrumbs'=>$breadcrumbs])
-                </div>
+<div class="container">
+    <div class="page-title-container">
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <h1 class="mb-0 pb-0 " id="title">{{ $title }}</h1>
+                @include('_layout.breadcrumb',['breadcrumbs'=>$breadcrumbs])
             </div>
         </div>
     </div>
-    <div style="text-align: center">
-        <h1>Store Location</h1>
-    </div>
-
-    <br>
-    <br>
-        <div class="container" style="width:60%; text-align: center" >
-
-            <div class="cuscard" data-tilt >
-                <div class="bg">
-                    <img src="/img/dealer.png" alt="Nippon Paint Cambodia" draggable="false" >
-                </div>
-            </div>
-
-		</div>
-        <br>
-        <br>
-        <br>
-        <div style="background-color:#EFF2F3;">
-            <br>
-            <div class="footer-responsive">
-                @include('website.footer')
-            </div>
-            <br>
+</div>
+<div style="text-align: center">
+    <h1>Store Location</h1>
+</div>
+<br>
+<br>
+<div class="container" style="width:60%; text-align: center" >
+    <div class="cuscard" data-tilt >
+        <div class="bg">
+            <img src="/img/dealer.png" alt="Nippon Paint Cambodia" draggable="false" >
         </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<div style="background-color:#EFF2F3;">
+    <br>
+    <div class="footer-responsive">
+        @include('website.footer')
+    </div>
+    <br>
+</div>
 
 @endsection
