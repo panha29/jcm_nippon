@@ -14,5 +14,6 @@ class NewsModel extends Model
         'news_image',
         'news_date',
         'news_detail',
+        'news_important',
     ];
 }

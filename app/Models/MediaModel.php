@@ -14,5 +14,6 @@ class MediaModel extends Model
         'events_image',
         'events_date',
         'events_detail',
+        'events_important',
     ];
 }

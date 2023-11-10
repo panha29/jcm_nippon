@@ -41,8 +41,6 @@
 
 @section('content')
 @include('website.css')
-@include('website.news.js')
-@include('website.news.css')
 <div class="container">
     <div class="page-title-container">
         <div class="row">
@@ -55,7 +53,19 @@
 </div>
 
 <div style="width: 60%">
-  @include('website.news.news_important_slide')
+    <div class="row">
+        <div class="col">
+            @foreach ($data as $item)
+            <?php if ($item->news_important == "yes") { ?>
+                <img src="{{ url('img/company_news/'.$item->news_image) }}" alt="" style="width: 100%">
+            <?php } ?>
+            @endforeach
+        </div>
+        <div class="col">
+            <b><span>Trending News</span></b><br>
+            <h3></h3>
+        </div>
+    </div>
 </div>
 
 

@@ -19,6 +19,7 @@ class NewsMigration extends Migration
             $table -> string('news_image')->nullable();
             $table -> string('news_date');
             $table -> string('news_detail')->nullable();
+            $table -> string('news_important')->nullable();
             $table->timestamps();
         });
     }

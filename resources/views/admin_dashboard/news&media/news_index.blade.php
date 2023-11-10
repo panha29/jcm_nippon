@@ -9,7 +9,6 @@
 @section('css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap4.min.css">
-    @include('admin_dashboard.product.css')
     <link rel="stylesheet" href="/css/vendor/quill.bubble.css"/>
     <link rel="stylesheet" href="/css/vendor/quill.snow.css"/>
 @endsection
@@ -27,9 +26,8 @@
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap4.min.js"></script>
     <script>
-       new DataTable('#category', {
-        fixedColumns: {
-        heightMatch: 'none'
+       new DataTable('#jcmnews', {
+
     },
         paging: true,
         info: false,
@@ -50,6 +48,16 @@
 @endsection
 
 @section('content')
+<style>
+       .text {
+    word-wrap: break-word;
+}
+/* table{
+  table-layout:fixed;
+  word-wrap: break-word;
+    word-break: break-all;
+} */
+</style>
     <div class="container">
         <!-- Title and Top Buttons Start -->
         <div class="page-title-container">
@@ -70,15 +78,15 @@
                 <div class="card mb-2">
                     <div class="card-body" id="saveform_error">
                         <h3 style="text-align: center" class="mb-3">Add News</h3>
-                        <form action="/Admin/News/List/AddNews" method="POST" enctype="multipart/form-data">
+                        <form action="/Admin/News-&-Media/News/AddNews" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="news_title" style="width: 100px;">Name</span>
+                                <span class="input-group-text" id="news_title" style="width: 100px;">Title</span>
                                 <input type="text" class="form-control" placeholder="" aria-label="news_title" aria-describedby="news_title" name="news_title" autocomplete="off" id="news_title" >
                             </div>
                             <div class="input-group mb-3" >
                                 <span class="input-group-text" id="news_date" style="width: 100px;">Date</span>
-                                <input type="text" class="form-control" placeholder="" aria-label="news_date" aria-describedby="news_date" name="news_date" autocomplete="off" id="news_date">
+                                <input type="text" class="form-control" placeholder="" aria-label="news_date" aria-describedby="news_date" name="news_date" autocomplete="off" id="news_date" value="<?php echo date("d M");?>">
                             </div>
                             {{-- <div class="input-group mb-3" >
                                 <span class="input-group-text" id="product_category" style="width: 100px;">Category</span>
@@ -92,6 +100,14 @@
                                 <span class="input-group-text" id="news_detail" style="width: 100px;">Detail</span>
                                 <input type="text" class="form-control" placeholder="" aria-label="news_detail" aria-describedby="news_detail" name="news_detail" autocomplete="off" id="news_detail">
                             </div>
+                            <div class="input-group mb-3" >
+                                <span class="input-group-text" id="news_important" style="width: 100px;">Important</span>
+                                <select name="news_important" id="news_important" class="form-control">
+                                    <option value="" selected disabled>Choose</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
                             <div class="input-group mb-3">
                                 <input type="file" class="form-control" name="news_image" id="input-file1" onchange="loadFile1(event)">
                             </div>
@@ -100,7 +116,6 @@
                             </div>
                             <div style="float: right">
                                 <button type="submit" class="btn-primary btn">Save</button>
-                                <button type="reset" class="btn-danger btn">Reset</button>
                             </div>
                         </form>
                     </div>
@@ -109,7 +124,7 @@
             <div class="col-8">
                 <div class="card mb-2">
                     <div class="card-body">
-                        <table id="category" class="table table-striped table-bordered" style="width:100%">
+                        <table id="jcmnews" class="table table-striped table-bordered" style="width:100%">
                             <thead>
                                 <tr>
                                     <th>No</th>
@@ -127,7 +142,7 @@
                                             {{$loop->iteration}}
                                         </td>
                                         <td>
-                                            {{$item->news_title}}
+                                            <div class="text">{{$item->news_title}}</div>
                                         </td>
                                         {{-- <td>
                                             {{$item->product_category}}
@@ -136,7 +151,7 @@
                                             {{$item->news_detail}}
                                         </td>
                                         <td>
-                                            <img src="{{ url('img/product/company_product/'.$item->news_image) }}" alt="" style="width: 100px; height: 100px;" onerror="this.style.display = 'none'">
+                                            <img src="{{ url('img/company_news/'.$item->news_image) }}" alt="" style="width: 100px; height: 100px;" onerror="this.style.display = 'none'">
                                         </td>
                                         <td>
                                             {{$item->news_date}}

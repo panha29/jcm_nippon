@@ -54,6 +54,7 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
 
     Route::group(['prefix'=>'News-&-Media'],function(){
         Route::get('News',[AdminLoginController::class,'News_list']);
+        Route::post('News/AddNews',[AdminLoginController::class,'news_save']);
         Route::get('Event',[AdminLoginController::class,'Event_list']);
         Route::get('Media',[AdminLoginController::class,'Media_list']);
         Route::get('Career',[AdminLoginController::class,'Career_list']);

@@ -19,6 +19,7 @@ class EventMigration extends Migration
             $table -> string('event_image')->nullable();
             $table -> string('event_date');
             $table -> string('event_detail')->nullable();
+            $table -> string('event_important')->nullable();
             $table->timestamps();
         });
     }

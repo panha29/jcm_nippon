@@ -7,6 +7,7 @@ use App\Models\DealerModel;
 use App\Models\NewsModel;
 use App\Models\ProductModel;
 use App\Models\ProjectReferenceModel;
+use App\Models\MediaModel;
 use CategoriesMigration;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -140,8 +141,8 @@ class AdminLoginController extends Controller
     }
     function news(){
         $nav = CategoryModel::all();
-        $news = NewsModel::all();
-        return view('website.news.index',compact('nav','news'));
+        $data = NewsModel::all();
+        return view('website.news.index',compact('nav','data'));
     }
     function project_reference(){
         $nav = CategoryModel::all();
@@ -215,12 +216,98 @@ class AdminLoginController extends Controller
         $data -> save();
         return redirect('/Admin/Dealer/List');
     }
+
     public function dealer_destroy($id){
         DealerModel::where('id',$id)->forceDelete();
         return redirect('/Admin/Dealer/List');
     }
+
     function dealer_index(){
         $data = DealerModel::latest()->get();
         return view('admin_dashboard.dealer.index',compact('data'));
+    }
+
+    public function news_save(Request $request){
+        $data = new NewsModel();
+        if($request->file('news_image')){
+            $file= $request->file('news_image');
+            $filename= date('YmdHi').$file->getClientOriginalName();
+            $file-> move(public_path('img/company_news'), $filename);
+            $data['news_image']= $filename;
+        }
+        $data -> news_title = $request -> news_title;
+        $data -> news_date = $request -> news_date;
+        $data -> news_detail = $request -> news_detail;
+        $data -> news_important = $request -> news_important;
+        $data -> save();
+        return redirect('/Admin/News-&-Media/News');
+    }
+
+    public function news_edit(Request $request){
+        $data = NewsModel::find($request->id);
+        if($request->file('news_image')){
+            $file= $request->file('news_image');
+            $filename= date('YmdHi').$file->getClientOriginalName();
+            $file-> move(public_path('img/company_news'), $filename);
+            $data['news_image']= $filename;
+        }
+        $data -> news_title = $request -> news_title;
+        $data -> news_date = $request -> news_date;
+        $data -> news_detail = $request -> news_detail;
+        $data -> news_important = $request -> news_important;
+        $data -> save();
+        return redirect('/Admin/News-&-Media/News');
+    }
+
+    public function news_destroy($id){
+        NewsModel::where('id',$id)->forceDelete();
+        return redirect('/Admin/News-&-Media/News');
+    }
+
+    function news_index(){
+        $data = NewsModel::latest()->get();
+        return view('admin_dashboard.news&media.news_index',compact('data'));
+    }
+
+    public function media_save(Request $request){
+        $data = new MediaModel();
+        if($request->file('media_image')){
+            $file= $request->file('media_image');
+            $filename= date('YmdHi').$file->getClientOriginalName();
+            $file-> move(public_path('img/company_media'), $filename);
+            $data['media_image']= $filename;
+        }
+        $data -> media_title = $request -> media_title;
+        $data -> media_date = $request -> media_date;
+        $data -> media_detail = $request -> media_detail;
+        $data -> media_important = $request -> media_important;
+        $data -> save();
+        return redirect('/Admin/News-&-Media/News');
+    }
+
+    public function media_edit(Request $request){
+        $data = MediaModel::find($request->id);
+        if($request->file('media_image')){
+            $file= $request->file('media_image');
+            $filename= date('YmdHi').$file->getClientOriginalName();
+            $file-> move(public_path('img/company_media'), $filename);
+            $data['media_image']= $filename;
+        }
+        $data -> media_title = $request -> media_title;
+        $data -> media_date = $request -> media_date;
+        $data -> media_detail = $request -> media_detail;
+        $data -> media_important = $request -> media_important;
+        $data -> save();
+        return redirect('/Admin/News-&-Media/News');
+    }
+
+    public function media_destroy($id){
+        MediaModel::where('id',$id)->forceDelete();
+        return redirect('/Admin/News-&-Media/News');
+    }
+
+    function media_index(){
+        $data = MediaModel::latest()->get();
+        return view('admin_dashboard.news&media.media_index',compact('data'));
     }
 }
