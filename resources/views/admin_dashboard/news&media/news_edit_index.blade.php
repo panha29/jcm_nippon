@@ -1,6 +1,6 @@
 @php
     $html_tag_data = ["override"=>'{ "attributes" : { "placement" : "vertical", "layout":"fluid" }, "storagePrefix" : "starter-project", "showSettings" : false }'];
-    $title = 'News';
+    $title = 'Edit News';
     $description= '';
     $breadcrumbs = ["/"=>"Home"]
 @endphp
@@ -77,39 +77,31 @@
             <div class="col-4">
                 <div class="card mb-2">
                     <div class="card-body" id="saveform_error">
-                        <h3 style="text-align: center" class="mb-3">Add News</h3>
-                        <form action="/Admin/News-&-Media/News/AddNews" method="POST" enctype="multipart/form-data">
+                        <h3 style="text-align: center" class="mb-3">Edit News</h3>
+                        <form action="/Admin/News-&-Media/News/EditNews" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="news_title" style="width: 100px;">Title</span>
-                                <input type="text" class="form-control" placeholder="" aria-label="news_title" aria-describedby="news_title" name="news_title" autocomplete="off" id="news_title" >
+                                <input type="text" name="id" value="{{$item['id']}}" hidden>
+                                <input type="text" class="form-control" placeholder="" aria-label="news_title" aria-describedby="news_title" name="news_title" autocomplete="off" id="news_title" value="{{$item['news_title']}}">
                             </div>
                             <div class="input-group mb-3" >
                                 <span class="input-group-text" id="news_date" style="width: 100px;">Date</span>
-                                <input type="text" class="form-control" placeholder="" aria-label="news_date" aria-describedby="news_date" name="news_date" autocomplete="off" id="news_date" value="<?php echo date("d M");?>">
+                                <input type="text" class="form-control" placeholder="" aria-label="news_date" aria-describedby="news_date" name="news_date" autocomplete="off" id="news_date" value="{{$item['news_date']}}">
                             </div>
-                            {{-- <div class="input-group mb-3" >
-                                <span class="input-group-text" id="product_category" style="width: 100px;">Category</span>
-                                <select name="product_category" id="product_category" class="form-control">
-                                    @foreach ($cate as $item)
-                                        <option value="{{$item->category_name}}" name="product_category">{{$item->category_name}}</option>
-                                    @endforeach
-                                </select>
-                            </div> --}}
                             <div class="input-group mb-3" >
                                 <span class="input-group-text" id="news_detail" style="width: 100px;">Detail</span>
-                                <input type="text" class="form-control" placeholder="" aria-label="news_detail" aria-describedby="news_detail" name="news_detail" autocomplete="off" id="news_detail">
+                                <input type="text" class="form-control" placeholder="" aria-label="news_detail" aria-describedby="news_detail" name="news_detail" autocomplete="off" id="news_detail" value="{{$item['news_detail']}}">
                             </div>
                             <div class="input-group mb-3" >
                                 <span class="input-group-text" id="news_important" style="width: 100px;">Important</span>
                                 <select name="news_important" id="news_important" class="form-control">
-                                    <option value="" selected disabled>Choose</option>
-                                    <option value="yes">Yes</option>
+                                    <option value="{{$item['news_important']}}" selected>{{$item['news_important']}}</option>
                                     <option value="no">No</option>
                                 </select>
                             </div>
                             <div class="input-group mb-3">
-                                <input type="file" class="form-control" name="news_image" id="input-file1" onchange="loadFile1(event)">
+                                <input type="file" class="form-control" name="news_image" id="input-file1" onchange="loadFile1(event)" value="{{$item['news_image']}}">
                             </div>
                             <div class="">
                                 <img src="" id="pdimage1" class="rounded-md bg-cover-center d-block">
@@ -153,9 +145,9 @@
                                         <td>
                                             {{$item->news_date}}
                                         </td>
-                                        <td style="vertical-align: middle;">
-                                            <a href="/Admin/News-&-Media/News/{{$item->id}}/Edit" class="btn btn-primary" draggable="false">Edit</a>
-                                            <a href="/Admin/News-&-Media/News/{{$item->id}}/Delete" class="btn btn-danger" draggable="false">Delete</a>
+                                        <td style="vertical-align: middle;text-align:center">
+                                            {{-- <a href="#" class="btn btn-primary" draggable="false">Edit</a> --}}
+                                            <a href="Admin/News-&-Media/News/Delete/{{$item->id}}" class="btn btn-danger" draggable="false">Delete</a>
                                         </td>
                                     </tr>
                                 @endforeach

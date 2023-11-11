@@ -7,41 +7,19 @@
 @extends('web-layout',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description])
 
 @section('css')
-    <link rel="stylesheet" href="/css/vendor/glide.core.min.css"/>
-    <link rel="stylesheet" href="/css/vendor/introjs.min.css"/>
-    <link rel="stylesheet" href="/css/vendor/select2.min.css"/>
-    <link rel="stylesheet" href="/css/vendor/select2-bootstrap4.min.css"/>
-    <link rel="stylesheet" href="/css/vendor/plyr.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"/>
 
 @endsection
 
 @section('js_vendor')
-    <script src="/js/vendor/Chart.bundle.min.js"></script>
-    <script src="/js/vendor/chartjs-plugin-datalabels.js"></script>
-    <script src="/js/vendor/chartjs-plugin-rounded-bar.min.js"></script>
-    <script src="/js/vendor/glide.min.js"></script>
-    <script src="/js/vendor/intro.min.js"></script>
-    <script src="/js/vendor/select2.full.min.js"></script>
-    <script src="/js/vendor/plyr.min.js"></script>
-    <script src="/js/vendor/jquery.barrating.min.js"></script>
-    <script src="/js/vendor/movecontent.js"></script>
-
 @endsection
 
 @section('js_page')
-    <script src="/js/cs/glide.custom.js"></script>
-    <script src="/js/cs/charts.extend.js"></script>
-    <script src="/js/pages/dashboard.default.js"></script>
-    <script src="/js/pages/interface.icons.js"></script>
-    <script src="/js/pages/storefront.home.js"></script>
 
+    @include('website.news.js')
 @endsection
 
 @section('content')
 @include('website.css')
-@include('website.news.js')
 @include('website.news.css')
 <div class="container">
     <div class="page-title-container">
@@ -54,7 +32,7 @@
     </div>
 </div>
 
-<div style="width: 60%">
+<div style="width: 60%; margin:auto">
   @include('website.news.news_important_slide')
 </div>
 

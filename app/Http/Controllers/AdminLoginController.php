@@ -269,6 +269,12 @@ class AdminLoginController extends Controller
         return view('admin_dashboard.news&media.news_index',compact('data'));
     }
 
+    function news_index_edit($id){
+        $item = NewsModel::find ($id);
+        $data = NewsModel::latest()->get();
+        return view('admin_dashboard.news&media.news_edit_index',compact('item','data'));
+    }
+
     public function media_save(Request $request){
         $data = new MediaModel();
         if($request->file('media_image')){
