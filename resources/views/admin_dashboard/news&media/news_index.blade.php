@@ -26,11 +26,17 @@
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap4.min.js"></script>
     <script>
-       new DataTable('#jcmnews', {
+      var table1 = $('#jcmnews').DataTable({
+        // pageLength: 50,
+        visible: false,
+        ordering: false,
+        dom: 'Bfrtip',
+        drawCallback: function() {
+            new AcornIcons().replace();
+        },
 
-    },
-        paging: true,
-        info: false,
+        responsive: true,
+
     });
     </script>
     <script src="/js/forms/controls.editor.js"></script>
@@ -46,18 +52,9 @@
         };
     </script>
 @endsection
-
+@include('admin_dashboard.news&media.css')
 @section('content')
-<style>
-       .text {
-    word-wrap: break-word;
-}
-/* table{
-  table-layout:fixed;
-  word-wrap: break-word;
-    word-break: break-all;
-} */
-</style>
+
     <div class="container">
         <!-- Title and Top Buttons Start -->
         <div class="page-title-container">
@@ -88,14 +85,6 @@
                                 <span class="input-group-text" id="news_date" style="width: 100px;">Date</span>
                                 <input type="text" class="form-control" placeholder="" aria-label="news_date" aria-describedby="news_date" name="news_date" autocomplete="off" id="news_date" value="<?php echo date("d M");?>">
                             </div>
-                            {{-- <div class="input-group mb-3" >
-                                <span class="input-group-text" id="product_category" style="width: 100px;">Category</span>
-                                <select name="product_category" id="product_category" class="form-control">
-                                    @foreach ($cate as $item)
-                                        <option value="{{$item->category_name}}" name="product_category">{{$item->category_name}}</option>
-                                    @endforeach
-                                </select>
-                            </div> --}}
                             <div class="input-group mb-3" >
                                 <span class="input-group-text" id="news_detail" style="width: 100px;">Detail</span>
                                 <input type="text" class="form-control" placeholder="" aria-label="news_detail" aria-describedby="news_detail" name="news_detail" autocomplete="off" id="news_detail">
@@ -122,8 +111,8 @@
                 </div>
             </div>
             <div class="col-8">
-                <div class="card mb-2">
-                    <div class="card-body">
+                <div class=" mb-2">
+                    <div class="">
                         <table id="jcmnews" class="table table-striped table-bordered" style="width:100%">
                             <thead>
                                 <tr>
@@ -148,14 +137,18 @@
                                             {{$item->news_detail}}
                                         </td>
                                         <td>
-                                            <img src="{{ url('img/company_news/'.$item->news_image) }}" alt="" style="width: 100px; height: 100px;" onerror="this.style.display = 'none'">
+                                            <img src="{{ url('img/company_news/'.$item->news_image) }}" alt="" style="width: 100%" onerror="this.style.display = 'none'">
                                         </td>
                                         <td>
                                             {{$item->news_date}}
                                         </td>
                                         <td style="vertical-align: middle;">
-                                            <a href="/Admin/News-&-Media/News/{{$item->id}}/Edit" class="btn btn-primary" draggable="false">Edit</a>
-                                            <a href="/Admin/News-&-Media/News/{{$item->id}}/Delete" class="btn btn-danger" draggable="false">Delete</a>
+                                            <a href="/Admin/News-&-Media/News/{{$item->id}}/Edit" class="btn btn-primary" draggable="false">
+                                                <i data-acorn-icon="pen"></i>
+                                            </a>
+                                            <a href="/Admin/News-&-Media/News/{{$item->id}}/Delete" class="btn btn-danger" draggable="false">
+                                                <i data-acorn-icon="bin"></i>
+                                            </a>
                                         </td>
                                     </tr>
                                 @endforeach

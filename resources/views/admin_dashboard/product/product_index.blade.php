@@ -33,6 +33,9 @@
     },
         paging: true,
         info: false,
+        drawCallback: function() {
+            new AcornIcons().replace();
+        },
     });
     </script>
     <script src="/js/forms/controls.editor.js"></script>
@@ -149,8 +152,8 @@
                                             {{$item->product_date}}
                                         </td>
                                         <td>
-                                            <a href="/Admin/Product/List/{{$item->id}}/Delete" class="btn btn-danger" draggable="false">Delete</a>
-                                            <a href="/Admin/Product/List/{{$item->id}}/Edit" class="btn btn-primary" draggable="false">Edit</a>
+                                            <a href="/Admin/Product/List/{{$item->id}}/Edit" class="btn btn-primary" draggable="false"><i data-acorn-icon="pen"></i></a>
+                                            <a href="/Admin/Product/List/{{$item->id}}/Delete" class="btn btn-danger" draggable="false"><i data-acorn-icon="bin"></i></a>
                                         </td>
                                     </tr>
                                 @endforeach

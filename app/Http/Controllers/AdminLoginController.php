@@ -142,7 +142,8 @@ class AdminLoginController extends Controller
     function news(){
         $nav = CategoryModel::all();
         $data = NewsModel::all();
-        return view('website.news.index',compact('nav','data'));
+        $imp = NewsModel::where('news_important', 'yes')->get();
+        return view('website.news.index',compact('nav','data','imp'));
     }
     function project_reference(){
         $nav = CategoryModel::all();
@@ -266,7 +267,8 @@ class AdminLoginController extends Controller
 
     function news_index(){
         $data = NewsModel::latest()->get();
-        return view('admin_dashboard.news&media.news_index',compact('data'));
+
+        return view('admin_dashboard.news&media.news_index',compact('data',));
     }
 
     function news_index_edit($id){

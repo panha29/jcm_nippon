@@ -1,31 +1,73 @@
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+{{-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"> --}}
+   <style>
+    .col1{
+        width: 40%;
+    }
+    .col2{
+        width: 60%;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        width: 30px;
+        height: 3px;
+        padding: 0;
+        margin-right: 3px;
+        margin-left: 3px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #aaa;
+        background-clip: padding-box;
+        border: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        opacity: .5;
+        -webkit-transition: opacity 0.6s ease;
+        transition: opacity 0.6s ease;
+    }
+
+    .carousel-indicators {
+        margin-bottom: -2rem;
+    }
+    </style>
+
+<div style="text-align: center">
+    <h1 style="font-size: 50px"><b>Trending</b></h1>
+</div>
+<div id="next-news" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        @foreach ($imp as $item)
+            <button type="button" data-bs-target="#next-news" data-bs-slide-to="{{$loop->index}}" class="{{$loop->index == 0 ? 'active' : ''}}" ></button>
+            <script>
+                console.log({{$loop->iteration}})
+            </script>
+        @endforeach
     </div>
     <div class="carousel-inner">
-      @foreach ($data as $item)
-      <div class="carousel-item active">
-        <img src="{{url('img/company_news/'.$item->news_image)}}" style="width:400px" class="d-block" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      @endforeach
-
-
+        @foreach ($imp as $item)
+            <div class="carousel-item {{$loop->index == 0 ? 'active' : ''}}">
+                <div class="card">
+                    <div class="row">
+                        <div class="col1">
+                            <img src="{{url('img/company_news/'.$item->news_image)}}" style="width: 500px; border-radius:15px;" class="d-block" alt="jcm nippon cambodia">
+                        </div>
+                        <div class="col2">
+                            <div class="card-body">
+                                <div class="mt-7">
+                                    <h5>{{$item->news_date}}</h5>
+                                    <h1 style="line-height: 45px; font-weight:600; color:black">{{$item->news_title}}</h1>
+                                    <p style="line-height: 30px; color:grey">{{$item->news_detail}}</p>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        @endforeach
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-<br>
-<br>
-<br>
+</div>
+

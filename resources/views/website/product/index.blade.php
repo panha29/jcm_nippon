@@ -119,12 +119,12 @@
             <div class="row g-2">
                 <div class="col-12 col-sm-6">
                     <div class="card sh-22 sh-xl-19 hover-img-scale-up">
-                        <img src="/img/product/product_index1.png" class="card-img h-100 scale" alt="card image" />
+                        <img src="/img/product/product_index1.png" class="card-img h-100 scale" alt="card image" draggable="false"/>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6">
                     <div class="card sh-22 sh-xl-19 hover-img-scale-up">
-                        <img src="/img/product/product_index4.jpg" class="card-img h-100 scale" alt="card image" />
+                        <img src="/img/product/product_index4.jpg" class="card-img h-100 scale" alt="card image" draggable="false"/>
                         <div class="card-img-overlay d-flex flex-column justify-content-between bg-transparent">
 
                         </div>
