@@ -28,8 +28,8 @@ use Illuminate\Support\Facades\Auth;
 // Route::view('/','website.website_index');
 
 Route::get('/',[AdminLoginController::class,'web_dashboard']);
-
 Auth::routes();
+
 
 Route::get('/Color%Scheme', [App\Http\Controllers\HomeController::class, 'index'])->name('Color%Scheme');
 // Route::redirect('Color%Scheme', '/login');
