@@ -83,7 +83,7 @@
                             </div>
                             <div class="input-group mb-3" >
                                 <span class="input-group-text" id="news_date" style="width: 100px;">Date</span>
-                                <input type="text" class="form-control" placeholder="" aria-label="news_date" aria-describedby="news_date" name="news_date" autocomplete="off" id="news_date" value="<?php echo date("d M");?>">
+                                <input type="text" class="form-control" placeholder="" aria-label="news_date" aria-describedby="news_date" name="news_date" autocomplete="off" id="news_date" value="<?php echo date("d M Y");?>">
                             </div>
                             <div class="input-group mb-3" >
                                 <span class="input-group-text" id="news_detail" style="width: 100px;">Detail</span>

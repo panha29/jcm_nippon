@@ -58,6 +58,12 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
         Route::get('News/{id}/Edit',[AdminLoginController::class,'news_index_edit']);
         Route::post('News/EditNews',[AdminLoginController::class,'news_edit']);
         Route::get('News/{id}/Delete',[AdminLoginController::class,'news_destroy']);
+
+        Route::post('Media/AddMedia',[AdminLoginController::class,'media_save']);
+        Route::get('Media/{id}/Edit',[AdminLoginController::class,'media_index_edit']);
+        Route::post('Media/EditMedia',[AdminLoginController::class,'media_edit']);
+        Route::get('Media/{id}/Delete',[AdminLoginController::class,'media_destroy']);
+
         Route::get('Event',[AdminLoginController::class,'Event_list']);
         Route::get('Media',[AdminLoginController::class,'Media_list']);
         Route::get('Career',[AdminLoginController::class,'Career_list']);

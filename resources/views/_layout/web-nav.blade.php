@@ -146,7 +146,7 @@
             <li class="nav-item"><a class="nav-link" href="/painting-services">Our Services</a></li>
             <li class="nav-item"><a class="nav-link" href="/professional-painting">Professional Painting</a></li>
             <li class="nav-item"><a class="nav-link" href="/project-reference">Project Reference</a></li>
-            <li class="nav-item"><a class="nav-link" href="/location">Location</a></li>
+            <li class="nav-item"><a class="nav-link" href="/location">Store Location</a></li>
             <li class="nav-item"><a class="nav-link" href="/news">News</a></li>
             <li class="nav-item"><a class="nav-link" href="/contact-us">Contact Us</a></li>
             <li class="nav-item"><a class="nav-link" href="/Color%Scheme">Color Scheme</a></li>

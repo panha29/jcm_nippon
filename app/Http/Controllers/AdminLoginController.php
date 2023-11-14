@@ -143,7 +143,8 @@ class AdminLoginController extends Controller
         $nav = CategoryModel::all();
         $data = NewsModel::all();
         $imp = NewsModel::where('news_important', 'yes')->get();
-        return view('website.news.index',compact('nav','data','imp'));
+        $media = MediaModel::latest()->get();
+        return view('website.news.index',compact('nav','data','imp','media'));
     }
     function project_reference(){
         $nav = CategoryModel::all();
@@ -267,7 +268,6 @@ class AdminLoginController extends Controller
 
     function news_index(){
         $data = NewsModel::latest()->get();
-
         return view('admin_dashboard.news&media.news_index',compact('data',));
     }
 
@@ -281,7 +281,7 @@ class AdminLoginController extends Controller
         $data = new MediaModel();
         if($request->file('media_image')){
             $file= $request->file('media_image');
-            $filename= date('YmdHi').$file->getClientOriginalName();
+            $filename = $file->getClientOriginalName();
             $file-> move(public_path('img/company_media'), $filename);
             $data['media_image']= $filename;
         }
@@ -290,7 +290,7 @@ class AdminLoginController extends Controller
         $data -> media_detail = $request -> media_detail;
         $data -> media_important = $request -> media_important;
         $data -> save();
-        return redirect('/Admin/News-&-Media/News');
+        return redirect('/Admin/News-&-Media/Media');
     }
 
     public function media_edit(Request $request){
@@ -306,12 +306,12 @@ class AdminLoginController extends Controller
         $data -> media_detail = $request -> media_detail;
         $data -> media_important = $request -> media_important;
         $data -> save();
-        return redirect('/Admin/News-&-Media/News');
+        return redirect('/Admin/News-&-Media/Media');
     }
 
     public function media_destroy($id){
         MediaModel::where('id',$id)->forceDelete();
-        return redirect('/Admin/News-&-Media/News');
+        return redirect('/Admin/News-&-Media/Media');
     }
 
     function media_index(){

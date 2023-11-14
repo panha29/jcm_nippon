@@ -7,17 +7,16 @@
 @extends('admin_dashboard.layout',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description])
 
 @section('css')
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap4.min.css">
-    @include('admin_dashboard.product.css')
-    <link rel="stylesheet" href="/css/vendor/quill.bubble.css"/>
-    <link rel="stylesheet" href="/css/vendor/quill.snow.css"/>
+    @include('admin_dashboard.news&media.css')
+    <link rel="stylesheet" href="/css/vendor/plyr.css"/>
 @endsection
 
 @section('js_vendor')
     <script src="/js/cs/scrollspy.js"></script>
     <script src="/js/vendor/quill.min.js"></script>
     <script src="/js/vendor/quill.active.js"></script>
+    <script src="/js/vendor/plyr.min.js"></script>
+
 @endsection
 
 @section('js_page')
@@ -26,6 +25,8 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap4.min.js"></script>
+    <script src="/js/plugins/players.js"></script>
+
     <script>
        new DataTable('#event', {
         fixedColumns: {
@@ -70,16 +71,13 @@
                 <div class="card mb-2">
                     <div class="card-body" id="saveform_error">
                         <h3 style="text-align: center" class="mb-3">Add Media</h3>
-                        <form action="/Admin/News/Media/AddMedia" method="POST" enctype="multipart/form-data">
+                        <form action="/Admin/News-&-Media/Media/AddMedia" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="media_title" style="width: 100px;">Career Title</span>
+                                <span class="input-group-text" id="media_title" style="width: 100px;">Media Title</span>
                                 <input type="text" class="form-control" placeholder="" aria-label="media_title" aria-describedby="media_title" name="media_title" autocomplete="off" id="media_title" >
                             </div>
-                            {{-- <div class="input-group mb-3">
-                                <span class="input-group-text" id="career_position" style="width: 100px;">Position</span>
-                                <input type="text" class="form-control" placeholder="" aria-label="career_position" aria-describedby="career_position" name="career_position" autocomplete="off" id="career_position" >
-                            </div> --}}
+
                             <div class="input-group mb-3" >
                                 <span class="input-group-text" id="media_date" style="width: 100px;">Date</span>
                                 <input type="text" class="form-control" placeholder="" aria-label="media_date" aria-describedby="media_date" name="media_date" autocomplete="off" id="media_date">
@@ -87,6 +85,14 @@
                             <div class="input-group mb-3" >
                                 <span class="input-group-text" id="media_detail" style="width: 100px;">Detail</span>
                                 <input type="text" class="form-control" placeholder="" aria-label="media_detail" aria-describedby="media_detail" name="media_detail" autocomplete="off" id="media_detail">
+                            </div>
+                            <div class="input-group mb-3" >
+                                <span class="input-group-text" id="media_important" style="width: 100px;">Important</span>
+                                <select name="media_important" id="media_important" class="form-control">
+                                    <option value="" selected disabled>Choose</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
                             </div>
                             <div class="input-group mb-3">
                                 <input type="file" class="form-control" name="media_image" id="input-file1" onchange="loadFile1(event)">
@@ -110,10 +116,10 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Title</th>
-                                    {{-- <th>event</th> --}}
                                     <th>Detail</th>
                                     <th>Image</th>
                                     <th>Date</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -125,17 +131,25 @@
                                         <td>
                                             {{$item->media_title}}
                                         </td>
-                                        {{-- <td>
-                                            {{$item->product_event}}
-                                        </td> --}}
+
                                         <td>
                                             {{$item->media_detail}}
                                         </td>
                                         <td>
-                                            <img src="{{ url('img/product/company_product/'.$item->media_image) }}" alt="" style="width: 100px; height: 100px;" onerror="this.style.display = 'none'">
+                                            <video class="player"  style="background-color: white;width:100%; ">
+                                                <source src="{{asset('img/company_media/'.$item->media_image)}}" type="video/mp4" style="" />
+                                            </video>
                                         </td>
                                         <td>
                                             {{$item->media_date}}
+                                        </td>
+                                        <td style="vertical-align: middle;">
+                                            <a href="/Admin/News-&-Media/Media/{{$item->id}}/Edit" class="btn btn-primary" draggable="false">
+                                                <i data-acorn-icon="pen"></i>
+                                            </a>
+                                            <a href="/Admin/News-&-Media/Media/{{$item->id}}/Delete" class="btn btn-danger" draggable="false">
+                                                <i data-acorn-icon="bin"></i>
+                                            </a>
                                         </td>
                                     </tr>
                                 @endforeach
