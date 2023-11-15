@@ -1,23 +1,7 @@
 
 <div class="container product-slide" style="">
     <section class="scroll-section" id="autoPlay" style="margin-top: 5%;">
-    {{-- <section class="scroll-section" id="smallGutters" style="margin-top: 5%;"> --}}
-
-
-        <div class="container-divider">
-            <div class="row">
-                <div class="col">
-                    {{-- <div class="divider"></div> --}}
-                </div>
-                <div class="col">
-                    <h1 class="mb-5"><b>OFFICIAL PRODUCTS</b></h1>
-                </div>
-                <div class="col">
-                    {{-- <div class="divider"></div> --}}
-                </div>
-            </div>
-        </div>
-
+        <h1 class="mb-5" style="text-align: center"><b>OFFICIAL PRODUCTS</b></h1>
         <div class="gx-2 mt-5">
             <div class="p-0">
                 <div class="glide" id="glideAuto">
@@ -30,8 +14,8 @@
                                 <div class="background-img">
                                     <img src="{{ url('img/product/company_product/'.$item->product_image) }}" alt="" class="img-responsive">
                                 </div>
-                                        <div class="card-body text-center align-items-center d-flex flex-column justify-content-between " style="padding: 25px 10px 0 10px">
-                                        <h6 class="card-text text-center mb-0 d-flex" ><b>{{$item->product_name}}</b></h6>
+                                        <div class="card-body text-center align-items-center d-flex flex-column justify-content-between " style="padding: 10px 10px 0 10px">
+                                        <h6 class="card-text text-center mb-0 d-flex" >{{$item->product_name}}</h6>
 
                                     </div>
                                 </div>

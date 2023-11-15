@@ -10,7 +10,7 @@
 }
 
 .center-nav{
-    width: 400px;
+    width: 360px;
     margin: auto;
 }
 

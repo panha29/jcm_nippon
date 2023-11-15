@@ -84,20 +84,7 @@
 </div>
 
 <div class="container smaller-screen">
-
-    <div class="container-divider">
-        <div class="row">
-            <div class="col">
-                <div class="divider"></div>
-            </div>
-            <div class="col-5">
-                <h3>OUR SERVICES</h3>
-            </div>
-            <div class="col">
-                <div class="divider"></div>
-            </div>
-        </div>
-    </div>
+    <h1 class="mb-5" style="text-align: center"><b>OUR SERVICES</b></h1>
     <div class="row mt-5">
         <div class="col">
             <div class="card">
@@ -130,7 +117,7 @@
         <div class="col">
             <div class="card">
                 <img src="img/service/service4.jpg" alt="nippon services">
-                <div class="card-body span-text-responsive" style="padding: 15px">
+                <div class="card-body span-text-responsive" style="padding: 15px; height:66px">
                     <span>Painting Service</span>
                 </div>
             </div>

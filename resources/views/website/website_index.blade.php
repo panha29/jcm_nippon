@@ -40,7 +40,7 @@
         padding: 0 !important;
 }
 </style>
-@include('website.css')
+@include('website.responsive_css')
     <div class="main-slide-responsive">
         @include('website.main_slide')
     </div>

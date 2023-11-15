@@ -1,16 +1,6 @@
 <div class="container img-card">
     <div class="container-divider">
-        <div class="row">
-            <div class="col">
-                {{-- <div class="divider"></div> --}}
-            </div>
-            <div class="col">
-                <h1 class="mb-5"><b>OUR BRAND</b></h1>
-            </div>
-            <div class="col">
-                {{-- <div class="divider"></div> --}}
-            </div>
-        </div>
+        <h1 class="mb-5"><b>OUR BRAND</b></h1>
     </div>
     <div class="row mobile-inline">
         <div class="col mt-5">

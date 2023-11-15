@@ -1,16 +1,5 @@
-<div class="container-divider mb-5">
-    <div class="row">
-        <div class="col">
-            {{-- <div class="divider"></div> --}}
-        </div>
-        <div class="col">
-            <h3>FOLLOW US</h3>
-        </div>
-        <div class="col">
-            {{-- <div class="divider"></div> --}}
-        </div>
-    </div>
-</div>
+<h1 class="mb-5 mt-5" style="text-align: center"><b>FOLLOW US</b></h1>
+
 <div class="container">
     <div class="row" >
         <div class="col">
@@ -40,7 +29,5 @@
     <h6 style="text-align: center"><b>COPYRIGHT © 2019 JCMNIPPON   |   DESIGNED BY JCMNIPPON</b></h6>
     <h6 style="text-align: center"><b>JCM NIPPON PRIVATE, LTD. WAS OFFICIALLY ESTABLISHED IN DECEMBER 31, 1998 WITH THE HEAD OFFICE AT # 51, ST. 271, PHSAR DERM THKOV DISTRICT, CHAMKAR MON COMMUNE, PHNOM PENH.</b></h6>
 </div>
-<br>
-<br>
 <br>
 <br>
