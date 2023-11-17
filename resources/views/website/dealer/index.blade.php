@@ -54,7 +54,7 @@
 @endsection
 
 @section('content')
-@include('website.css')
+@include('website.responsive_css')
 @include('website.dealer.css')
 <style>
 
@@ -74,10 +74,10 @@
 </div>
 <br>
 <br>
-<div class="container" style="width:60%; text-align: center" >
+<div class="container" style="text-align: center" >
     <div class="cuscard" data-tilt >
         <div class="bg">
-            <img src="/img/dealer.png" alt="Nippon Paint Cambodia" draggable="false" >
+            <img src="/img/dealer.png" alt="Nippon Paint Cambodia" draggable="false" width="100%">
         </div>
     </div>
 </div>

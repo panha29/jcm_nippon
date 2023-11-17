@@ -7,38 +7,22 @@
 @extends('web-layout',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description])
 
 @section('css')
-    <link rel="stylesheet" href="/css/vendor/glide.core.min.css"/>
-    <link rel="stylesheet" href="/css/vendor/introjs.min.css"/>
-    <link rel="stylesheet" href="/css/vendor/select2.min.css"/>
-    <link rel="stylesheet" href="/css/vendor/select2-bootstrap4.min.css"/>
-    <link rel="stylesheet" href="/css/vendor/plyr.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"/>
 
 @endsection
 
 @section('js_vendor')
-    <script src="/js/vendor/Chart.bundle.min.js"></script>
-    <script src="/js/vendor/chartjs-plugin-datalabels.js"></script>
-    <script src="/js/vendor/chartjs-plugin-rounded-bar.min.js"></script>
-    <script src="/js/vendor/glide.min.js"></script>
-    <script src="/js/vendor/intro.min.js"></script>
-    <script src="/js/vendor/select2.full.min.js"></script>
-    <script src="/js/vendor/plyr.min.js"></script>
-
 @endsection
 
 @section('js_page')
-    <script src="/js/cs/glide.custom.js"></script>
-    <script src="/js/cs/charts.extend.js"></script>
-    <script src="/js/pages/dashboard.default.js"></script>
     <script src="/js/pages/interface.icons.js"></script>
 @endsection
 
 @section('content')
-@include('website.css')
-@include('website.contact_us.css')
-<style>
+@include('website.responsive_css')
+
+{{-- <style>
     .image{
         width: 388px;
         height: 250px;
@@ -51,7 +35,7 @@
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
     }
-</style>
+</style> --}}
     <div class="container">
         <div class="page-title-container">
             <div class="row">
@@ -68,12 +52,12 @@
     <br>
     <br>
 
-        <div class="container" style="width:60%;">
+        <div class="container">
             @foreach ($pr as $item)
             <div style="display: inline-flex; padding-left:15px" >
-                <div class="card image mb-3 responsive-card">
-                    <a href=""><img src="{{ url('img/project_reference/company_project_reference/'.$item->project_reference_image1) }}" class="image" alt=""></a>
-                    <div class="card-body" style="line-height: 25px">
+                <div class="pr-image-card mb-3 responsive-card">
+                    <img src="{{ url('img/project_reference/company_project_reference/'.$item->project_reference_image1) }}" class="pr-image" alt="">
+                    <div class="" style="line-height: 25px; padding:15px">
                         <h3>{{$item->project_reference_name}}</h3>
                         <span><b>Exterior</b> <span style="margin-left: 3px">:</span> {{$item->project_reference_exterior}}</span><br>
                         <span><b>Interior</b> <span style="margin-left: 7px">:</span> {{$item->project_reference_interior}}</span><br>

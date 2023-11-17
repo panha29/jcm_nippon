@@ -7,97 +7,69 @@
         margin-top:64px;
         padding-left: 0px !important;
     }
-    .brand-responsive{
-        width: 100% !important;
+
+    .brand-responsive .brand-responsive .brand-responsive  .professional-responsive  .news-responsive{
+        width: 100%;
         padding: 5%;
         margin-top: 4%;
+
+    }
+    .brand-responsive{
+        margin: auto;
+    }
+    .responsive-view{
+        width: 100%;
+        margin:auto;
+        text-align: justify;
+    }
+    .painting-service-img{
+        width: 100%;
+        height: 130px;
+    }
+    .professional-painting-img{
+        width: 100%;
+        border-radius: var(--border-radius-lg);
+    }
+    .pr-image {
+        width: 100%;
+        border-top-right-radius: 15px;
     }
 
+    .pr-image-card{
+        height: auto;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        border: initial;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .news-card{
+        height: auto;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        border: initial;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .news-image{
+        width: 100%;
+        border-top-right-radius: 15px;
+    }
     .history-text{
-        width: 80%;
+        width: 100%;
         text-align: justify;
         display: block;
         margin: auto;
-    }
-    .brand-responsive .container-divider{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 12px;
-        text-align: center;
-
-    }
-
-    .brand-responsive .divider{
-        text-align: center;
-        width: 100%;
-        height: 1px;
-        background-color: rgb(212, 212, 212);
-        margin-top: 8px;
-    }
-
-    .product-responsive .container-divider{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .product-responsive .divider{
-        text-align: center;
-        width: 100%;
-        height: 1px;
-        background-color: rgb(212, 212, 212);
-        margin-top: 8px;
-    }
-
-    .service-responsive .container-divider{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .service-responsive .divider{
-        text-align: center;
-        width: 100%;
-        height: 1px;
-        background-color: rgb(212, 212, 212);
-        margin-top: 8px;
-    }
-
-    .footer-responsive .container-divider{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .footer-responsive .divider{
-        text-align: center;
-        width: 100%;
-        height: 1px;
-        background-color: rgb(212, 212, 212);
-        margin-top: 12px;
     }
 
     .brand-responsive .card-body{
         padding: 12px;
     }
 
-    .video-responsive{
-        width: 100%;
-        margin-top: 4%;
-        margin: auto;
-        padding: 15px;
-    }
 
     .img-card{
         width: 100% !important;
-    }
-    .product-responsive{
-        /* padding: 5%; */
     }
 
     .glide__slide{
@@ -115,10 +87,7 @@
         margin-top: 8px;
     }
 
-    .service-responsive{
-        width: 100%;
-        padding: 5%;
-    }
+
     .service-responsive img{
         border: initial;
         border-top-left-radius: var(--border-radius-lg);
@@ -134,28 +103,28 @@
         font-size: 12px;
         text-align: left;
     }
-    .professional-responsive{
+
+    .application-responsive{
+        width: 100%;
+        margin-top: 4%;
+        margin: auto;
         padding: 15px;
-        width: 100%;
-    }
-
-    .professional-responsive .container-divider{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 12px;
-        text-align: center;
 
     }
 
-    .professional-responsive .divider{
-        text-align: center;
-        width: 100%;
-        height: 1px;
-        background-color: rgb(212, 212, 212);
-        margin-top: 8px;
+    .map-responsive{
+        width: 95%;
+        margin-top: 4%;
+        margin-right:auto;
+        margin-left:auto;
     }
 
+    .footer-responsive{
+        width:100%;
+        margin-top: 4%;
+        margin-right:auto;
+        margin-left:auto;
+    }
     .professional-responsive .mobile-inline{
         display: list-item;
         list-style-type: none;
@@ -179,31 +148,16 @@
         padding: 17px !important;
         text-transform:uppercase;
     }
-    .news-responsive{
-        width: 100%;
-        padding: 15px;
 
-    }
 
     .news-responsive .bigger-screen{
         list-style-type: none;
 
     }
+    .card-img-overlay {
 
-    .news-responsive .container-divider{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 12px;
-        text-align: center;
-    }
+        top: auto !important;
 
-    .news-responsive .divider{
-        text-align: center;
-        width: 100%;
-        height: 1px;
-        background-color: rgb(212, 212, 212);
-        margin-top: 8px;
     }
 
     .news-responsive .span-news-date{
@@ -211,8 +165,8 @@
         color: white;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
-        padding: 8px;
-        width: 109px;
+        padding: 7px;
+        width: 100px;
         float: right;
     }
 
@@ -224,59 +178,7 @@
 
     }
 
-    .application-responsive{
-        width: 100%;
-        margin-top: 4%;
-        margin: auto;
-        padding: 15px;
 
-    }
-
-    .application-responsive .container-divider{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .application-responsive .divider{
-        text-align: center;
-        width: 100%;
-        height: 1px;
-        background-color: rgb(212, 212, 212);
-        margin-top: 19px;
-    }
-
-    .map-responsive{
-        width: 95%;
-        margin-top: 4%;
-        margin-right:auto;
-        margin-left:auto;
-    }
-
-    .map-responsive .container-divider{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .map-responsive .divider{
-        text-align: center;
-        width: 100%;
-        height: 1px;
-        background-color: rgb(212, 212, 212);
-        margin-top: 8px;
-    }
-
-    .footer-responsive{
-        width:100%;
-        margin-top: 4%;
-        margin-right:auto;
-        margin-left:auto;
-    }
     .footer-responsive .container{
         width: 140px !important;
     }
@@ -314,6 +216,37 @@
         display: flex;
         border-bottom-left-radius: var(--border-radius-md);
         border-bottom-right-radius: var(--border-radius-md);
+    }
+
+    html[data-placement=horizontal] .nav-container .nav-shadow {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    }
+
+    html[data-placement=horizontal] .nav-container {
+        height: var(--nav-size-slim);
+        right: 0;
+        left: 0;
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+        padding-left: var(--main-spacing-horizontal);
+        padding-right: var(--main-spacing-horizontal);
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
+        html[data-placement=vertical] .nav-container .nav-content .logo a, html[data-placement=horizontal] .nav-container.mobile-side-ready .nav-content .logo a, html[data-placement=vertical] .nav-container.mobile-side-ready .nav-content .logo a {
+        overflow: hidden;
+        display: inline-block;
+        width: 230px;
+    }
+
+    .big-screen{
+        display: none;
     }
 
 }

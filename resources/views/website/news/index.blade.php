@@ -25,8 +25,8 @@
 @endsection
 
 @section('content')
-@include('website.css')
-@include('website.news.css')
+@include('website.responsive_css')
+{{-- @include('website.news.css') --}}
 <div class="container">
     <div class="page-title-container">
         <div class="row">
@@ -38,11 +38,11 @@
     </div>
 </div>
 
-<div style="width: 60%; margin:auto">
+<div style="">
     <div class="mt-5">
         @include('website.news.news_important_slide')
     </div>
-    <div class="" style="margin-top:150px; ">
+    <div class="" style="margin-top:25px; ">
         @include('website.news.nav_tab')
     </div>
 </div>

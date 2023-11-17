@@ -83,45 +83,66 @@
 
 </div>
 
-<div class="container smaller-screen">
-    <h1 class="mb-5" style="text-align: center"><b>OUR SERVICES</b></h1>
-    <div class="row mt-5">
-        <div class="col">
-            <div class="card">
-                <img src="img/service/service1.jpg" alt="nippon services">
-                <div class="card-body span-text-responsive" style="padding: 15px">
-                    <span>Color Scheme Service</span>
-                    <span style="color:white">Color Scheme Service</span>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="img/service/service2.jpg" alt="nippon services">
-                <div class="card-body span-text-responsive" style="padding: 15px">
-                    <span>100000 Colors</span>
-                    <span style="color:white">100000 Colors</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row mt-2">
-        <div class="col">
-            <div class="card">
-                <img src="img/service/service3.jpg" alt="nippon services">
-                <div class="card-body span-text-responsive" style="padding: 15px">
-                    <span>Computerized Color Mixing</span>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="img/service/service4.jpg" alt="nippon services">
-                <div class="card-body span-text-responsive" style="padding: 15px; height:66px">
-                    <span>Painting Service</span>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="container small-screen" style="padding: 15px">
+    <h1 class="" style="text-align: center"><b>OUR SERVICES</b></h1>
+   <!-- Banners Start -->
+   <div class="row g-2 mb-5">
+       <div class="col-12 col-sm-6 col-xl-3 mb-3">
+           <div class="card w-100 sh-23 hover-img-scale-up">
+               <img src="img/service/service1.jpg" class="card-img scale" alt="card image" />
+               <div class="card-img-overlay bg-transparent">
+                   <div class="h-100" style="float: right">
+                       {{-- <div class="cta-2 text-black w-75">Color Scheme Service</div> --}}
+                       <a href="painting-services" class="btn btn-icon btn-icon-start btn-primary mt-3 stretched-link">
+                           <i data-acorn-icon="chevron-right" class="text-white"></i>
+                           <span>View</span>
+                       </a>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="col-12 col-sm-6 col-xl-3 mb-3">
+           <div class="card w-100 sh-23 hover-img-scale-up">
+               <img src="img/service/service2.jpg" class="card-img scale" alt="card image" />
+               <div class="card-img-overlay bg-transparent">
+                   <div class="h-100" style="float: right">
+                       {{-- <div class="cta-2 text-black w-75">100000 Colors</div> --}}
+                       <a href="painting-services" class="btn btn-icon btn-icon-start btn-primary mt-3 stretched-link">
+                           <i data-acorn-icon="chevron-right" class="text-white"></i>
+                           <span>View</span>
+                       </a>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="col-12 col-sm-6 col-xl-3 mb-3">
+           <div class="card w-100 sh-23 hover-img-scale-up">
+               <img src="img/service/service3.jpg" class="card-img scale" alt="card image" />
+               <div class="card-img-overlay bg-transparent">
+                   <div class="h-100" style="float: right">
+                       {{-- <div class="cta-2 text-black w-75">Computerized Color Mixing</div> --}}
+                       <a href="painting-services" class="btn btn-icon btn-icon-start btn-primary mt-3 stretched-link">
+                           <i data-acorn-icon="chevron-right" class="text-white"></i>
+                           <span>View</span>
+                       </a>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="col-12 col-sm-6 col-xl-3 mb-3">
+           <div class="card w-100 sh-23 hover-img-scale-up">
+               <img src="img/service/service4.jpg" class="card-img scale" alt="card image" />
+               <div class="card-img-overlay bg-transparent">
+                   <div class="h-100" style="float: right">
+                       {{-- <div class="cta-2 text-black w-75">Painting Service</div> --}}
+                       <a href="painting-services" class="btn btn-icon btn-icon-start btn-primary mt-3 stretched-link">
+                           <i data-acorn-icon="chevron-right" class="text-white"></i>
+                           <span>View</span>
+                       </a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <!-- Banners End -->
 </div>
-<br>

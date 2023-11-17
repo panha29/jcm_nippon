@@ -5,19 +5,7 @@
     }
 </style>
 <div class="container bigger-screen">
-    <div class="container-divider">
-        <div class="row">
-            <div class="col">
-                {{-- <div class="divider"></div> --}}
-            </div>
-            <div class="col">
-                <h3>NEWS / MEDIA</h3>
-            </div>
-            <div class="col">
-                {{-- <div class="divider"></div> --}}
-            </div>
-        </div>
-    </div>
+    <h3 style="text-align: center">NEWS / MEDIA</h3>
     <div class="row mt-5">
         <div class="col">
             <div class="card">
@@ -75,17 +63,16 @@
     </div>
 </div>
 
-<div class="container smaller-screen mt-5">
+<div class="container smaller-screen mt-5" style="padding: 15px">
     <h1 class="mb-5" style="text-align: center"><b>NEWS / MEDIA</b></h1>
-
-    <div class="card">
-        <img src="img/news/news1.jpg" alt="nippon services">
+    <div class="news-card">
+        <img src="img/news/news1.jpg" alt="nippon services" class="news-image">
         <div class="card-body">
             <span class="span-news">សូមចូលរួមអបអរសាទរបងប្រុសដែលជាសមាជិក​ JCM Applicator បានឈ្នះរង្វាន់រថយន្ត​ Pick Up</span>
         </div>
     </div>
 
-    <div class="card mt-5">
+    {{-- <div class="card mt-5">
         <div class="row">
             <div class="col">
                 <div class="container">
@@ -100,5 +87,5 @@
                 <span class="span-news">សូមចូលរួមអបអរសាទរបងប្រុសដែលជាសមាជិក​ JCM Applicator បានឈ្នះរង្វាន់រថយន្ត​ Pick Up</span>
             </div>
        </div>
-    </div>
+    </div> --}}
 </div>
