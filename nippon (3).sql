@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 14, 2023 at 12:10 PM
+-- Generation Time: Nov 17, 2023 at 11:15 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -251,7 +251,7 @@ INSERT INTO `product` (`id`, `product_name`, `product_date`, `product_category`,
 (28, 'Container', '26.10.2023', 'Painting Tools', 'painting-tools', NULL, '202310261707t7.png', '2023-10-26 10:07:33', '2023-10-26 10:07:33'),
 (29, 'Glove', '26.10.2023', 'Painting Tools', 'painting-tools', NULL, '202310261707t5.png', '2023-10-26 10:07:41', '2023-10-26 10:08:23'),
 (30, 'Roller Tray', '26.10.2023', 'Painting Tools', 'painting-tools', NULL, '202310261707t8.png', '2023-10-26 10:07:49', '2023-10-26 10:08:30'),
-(31, 'Sandpaper/Sanding Block', '26.10.2023', 'Painting Tools', 'painting-tools', NULL, '202310261710t10.png', '2023-10-26 10:10:18', '2023-10-26 10:10:18'),
+(31, 'Sandpaper / Sanding Block', '26.10.2023', 'Painting Tools', 'painting-tools', NULL, '202310261710t10.png', '2023-10-26 10:10:18', '2023-10-26 10:10:18'),
 (32, 'Scrapper', '26.10.2023', 'Painting Tools', 'painting-tools', NULL, '202310261710t2.png', '2023-10-26 10:10:26', '2023-10-26 10:10:26'),
 (33, 'Rollers', '26.10.2023', 'Painting Tools', 'painting-tools', NULL, '202310261710t4.png', '2023-10-26 10:10:33', '2023-10-26 10:10:33'),
 (34, 'Brushes', '26.10.2023', 'Painting Tools', 'painting-tools', NULL, '202310261710t6.png', '2023-10-26 10:10:41', '2023-10-26 10:11:10'),
