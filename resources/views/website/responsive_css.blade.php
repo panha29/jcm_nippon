@@ -202,7 +202,6 @@
     }
     html[data-placement=horizontal] .nav-container .logo img, html[data-placement=horizontal] .nav-container .logo .img, html[data-placement=vertical] .nav-container .logo img, html[data-placement=vertical] .nav-container .logo .img {
         width: 215px;
-        /* width: 100px; */
         min-height: 0px;
         object-position: left;
         object-fit: cover;
@@ -250,7 +249,7 @@
     }
 
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 1920px) {
     .small-screen{
         display: none;
     }
@@ -266,12 +265,123 @@
         padding: 10px !important;
     }
     .background-img {
-        /* background: url("/img/background/background-np.jpg"); */
         background: transparent url('/img/background/background-np.jpg') no-repeat center center;
         background-size: 700px 900px;
         border-radius: var(--border-radius-lg);
         border: initial;
 
+    }
+
+    html[data-placement=horizontal] .nav-container .logo img, html[data-placement=horizontal] .nav-container .logo .img, html[data-placement=vertical] .nav-container .logo img, html[data-placement=vertical] .nav-container .logo .img {
+        width: 215px;
+        min-height: 0px;
+        object-position: left;
+        object-fit: cover;
+        transition: width var(--transition-time), height var(--transition-time);
+    }
+    html[data-placement=vertical][data-dimension=mobile] .nav-container .mobile-buttons-container>a, html[data-placement=horizontal][data-dimension=mobile] .nav-container .mobile-buttons-container>a {
+        color: black;
+        padding: 0.25rem 0.5rem;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        border-bottom-left-radius: var(--border-radius-md);
+        border-bottom-right-radius: var(--border-radius-md);
+    }
+
+    html[data-placement=horizontal] .nav-container .nav-shadow {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    }
+
+    html[data-placement=horizontal] .nav-container {
+        height: var(--nav-size-slim);
+        right: 0;
+        left: 0;
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+        padding-left: var(--main-spacing-horizontal);
+        padding-right: var(--main-spacing-horizontal);
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
+        html[data-placement=vertical] .nav-container .nav-content .logo a, html[data-placement=horizontal] .nav-container.mobile-side-ready .nav-content .logo a, html[data-placement=vertical] .nav-container.mobile-side-ready .nav-content .logo a {
+        overflow: hidden;
+        display: inline-block;
+        width: 230px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .small-screen{
+        display: none;
+    }
+    .video-text{
+        font-size: 16px;
+    }
+    .img-responsive{
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+    .product-label{
+        padding: 10px !important;
+    }
+    .background-img {
+        background: transparent url('/img/background/background-np.jpg') no-repeat center center;
+        background-size: 700px 900px;
+        border-radius: var(--border-radius-lg);
+        border: initial;
+
+    }
+
+    html[data-placement=horizontal] .nav-container .logo img, html[data-placement=horizontal] .nav-container .logo .img, html[data-placement=vertical] .nav-container .logo img, html[data-placement=vertical] .nav-container .logo .img {
+        width: 215px;
+        min-height: 0px;
+        object-position: left;
+        object-fit: cover;
+        transition: width var(--transition-time), height var(--transition-time);
+    }
+    html[data-placement=vertical][data-dimension=mobile] .nav-container .mobile-buttons-container>a, html[data-placement=horizontal][data-dimension=mobile] .nav-container .mobile-buttons-container>a {
+        color: black;
+        padding: 0.25rem 0.5rem;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        border-bottom-left-radius: var(--border-radius-md);
+        border-bottom-right-radius: var(--border-radius-md);
+    }
+
+    html[data-placement=horizontal] .nav-container .nav-shadow {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    }
+
+    html[data-placement=horizontal] .nav-container {
+        height: var(--nav-size-slim);
+        right: 0;
+        left: 0;
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+        padding-left: var(--main-spacing-horizontal);
+        padding-right: var(--main-spacing-horizontal);
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
+        html[data-placement=vertical] .nav-container .nav-content .logo a, html[data-placement=horizontal] .nav-container.mobile-side-ready .nav-content .logo a, html[data-placement=vertical] .nav-container.mobile-side-ready .nav-content .logo a {
+        overflow: hidden;
+        display: inline-block;
+        width: 230px;
     }
 }
 </style>
