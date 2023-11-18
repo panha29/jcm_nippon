@@ -250,5 +250,28 @@
     }
 
 }
+@media only screen and (min-width: 800px) {
+    .small-screen{
+        display: none;
+    }
+    .video-text{
+        font-size: 16px;
+    }
+    .img-responsive{
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+    .product-label{
+        padding: 10px !important;
+    }
+    .background-img {
+        /* background: url("/img/background/background-np.jpg"); */
+        background: transparent url('/img/background/background-np.jpg') no-repeat center center;
+        background-size: 700px 900px;
+        border-radius: var(--border-radius-lg);
+        border: initial;
 
+    }
+}
 </style>

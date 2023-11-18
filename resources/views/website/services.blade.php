@@ -1,24 +1,14 @@
 <br>
-<div class="container bigger-screen">
-    <div class="container-divider">
-        <div class="row">
-            <div class="col">
-                {{-- <div class="divider"></div> --}}
-            </div>
-            <div class="col">
-                <h1 class="mb-5"><b>OUR SERVICES</b></h1>
-            </div>
-            <div class="col">
-                {{-- <div class="divider"></div> --}}
-            </div>
-        </div>
-    </div>
+<div class="container bigger-screen" style="width: 60%">
+
+                <h1 class="mb-5" style="text-align: center"><b>OUR SERVICES</b></h1>
+
     <div class="row mb-5">
         <div class="col" >
             <div class="card" style="border-radius: 0px !important">
                 <div class="row">
                     <div class="col">
-                        <img src="img/service/service1.jpg" alt="nippon services">
+                        <img src="img/service/service1.jpg" style="width:100%" alt="nippon services">
                     </div>
                     <div class="col">
                         <div class="container"style="text-align: left; padding:10px">
@@ -34,7 +24,7 @@
             <div class="card" style="border-radius: 0px !important">
                 <div class="row">
                     <div class="col">
-                        <img src="img/service/service2.jpg" alt="nippon services">
+                        <img src="img/service/service2.jpg" style="width:100%" alt="nippon services">
                     </div>
                     <div class="col">
                         <div class="container"style="text-align: left; padding:10px">
@@ -51,7 +41,7 @@
             <div class="card" style="border-radius: 0px !important">
                 <div class="row">
                     <div class="col">
-                        <img src="img/service/service3.jpg" alt="nippon services">
+                        <img src="img/service/service3.jpg" style="width:100%" alt="nippon services">
                     </div>
                     <div class="col">
                         <div class="container"style="text-align: left; padding:10px">
@@ -67,7 +57,7 @@
             <div class="card" style="border-radius: 0px !important">
                 <div class="row">
                     <div class="col">
-                        <img src="img/service/service4.jpg" alt="nippon services">
+                        <img src="img/service/service4.jpg" style="width:100%" alt="nippon services">
                     </div>
                     <div class="col">
                         <div class="container"style="text-align: left; padding:10px">

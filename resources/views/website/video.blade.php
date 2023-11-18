@@ -1,5 +1,5 @@
 <br>
-<div class="big-screen">
+<div class="big-screen mt-7" style="width: 60%; margin:auto;">
     <div class="row">
         <div class="col">
             <div class="card mb-5 bg-transparent">

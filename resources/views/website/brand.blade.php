@@ -1,4 +1,4 @@
-<div class="big-screen">
+<div class="big-screen" style="width:60%; margin:auto">
     <div class="container img-card mt-5">
         <h1 class="" style="text-align: center"><b>OUR BRAND</b></h1>
         <div class="row mobile-inline" style="padding: 15px">

@@ -51,7 +51,6 @@
     </div>
     <br>
     <br>
-
         <div class="container">
             @foreach ($pr as $item)
             <div style="display: inline-flex; padding-left:15px" >

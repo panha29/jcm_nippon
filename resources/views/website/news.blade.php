@@ -4,8 +4,8 @@
         src: url('/font/CS-Interface/fonts/Battambang-Regular.ttf');
     }
 </style>
-<div class="container bigger-screen">
-    <h3 style="text-align: center">NEWS / MEDIA</h3>
+<div class="container big-screen mt-7" style="width: 60%;">
+    <h3 style="text-align: center"><b>NEWS / MEDIA</b></h3>
     <div class="row mt-5">
         <div class="col">
             <div class="card">
@@ -63,7 +63,7 @@
     </div>
 </div>
 
-<div class="container smaller-screen mt-5" style="padding: 15px">
+<div class="container small-screen mt-5" style="padding: 15px">
     <h1 class="mb-5" style="text-align: center"><b>NEWS / MEDIA</b></h1>
     <div class="news-card">
         <img src="img/news/news1.jpg" alt="nippon services" class="news-image">
