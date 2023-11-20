@@ -318,4 +318,11 @@ class AdminLoginController extends Controller
         $data = MediaModel::latest()->get();
         return view('admin_dashboard.news&media.media_index',compact('data'));
     }
+
+
+
+    function webv2(){
+        $product = ProductModel::all();
+        return view('websiteV2.website_index',compact('product'));
+    }
 }

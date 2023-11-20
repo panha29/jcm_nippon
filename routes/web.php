@@ -28,7 +28,8 @@ use Illuminate\Support\Facades\Auth;
 // Route::view('/','website.website_index');
 
 // Route::get('/',[AdminLoginController::class,'web_dashboard']);
-Route::view('/','websiteV2.website_index');
+Route::get('/',[AdminLoginController::class,'webv2']);
+// Route::view('/','websiteV2.website_index');
 Auth::routes();
 
 

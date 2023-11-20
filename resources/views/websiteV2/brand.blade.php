@@ -94,6 +94,7 @@
                                 </div>
                             </article>
                         </div>
+
                         {{-- <div class="carousel-item col-12 col-lg-6 col-xl-4 mr-60">
                             <article class="lqd-pf-item lqd-pf-item-style-3 lqd-pf-overlay-bg-scale lqd-pf-content-v pf-details-h-str">
                                 <div class="lqd-pf-item-inner">

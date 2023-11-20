@@ -4,7 +4,7 @@
         <div class="row items-center">
             <div class="col col-xl-5 col-12" data-custom-animations="true" data-ca-options='{"animationTarget": "img", "duration" : 1000, "ease": "power4.out", "initValues": {"x": "-60px", "rotationY" : 60, "opacity" : 0, "transformOrigin": "50% 50% 0px"} , "animations": {"x": "0px", "rotationY" : 0, "opacity" : 1, "transformOrigin": "50% 50% 120px"}}'>
                 <div class="carousel-container relative carousel-nav-shaped carousel-dots-mobile-inside carousel-dots-mobile-center" id="img-carousel">
-                    <div class="carousel-items relative -mx-15" data-lqd-flickity='{"cellAlign": "left", "groupCells": false, "prevNextButtons": true, "pageDots": false}' tabindex="0">
+                    <div class="carousel-items relative -mx-15" data-lqd-flickity='{"cellAlign": "left", "groupCells": false, "prevNextButtons": false, "pageDots": false}' tabindex="0">
                         <div class="carousel-item flex flex-col justify-center has-one-child w-full px-15">
                             <div class="carousel-item-inner relative w-full">
                                 <div class="carousel-item-content relative w-full">
