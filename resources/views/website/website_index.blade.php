@@ -28,7 +28,6 @@
 <script src="/js/plugins/carousels.js"></script>
 <script src="/js/pages/interface.icons.js"></script>
 <script src="/js/plugins/players.js"></script>
-
 @endsection
 
 @section('content')
@@ -41,14 +40,17 @@
 }
 </style>
 @include('website.responsive_css')
-    <div class="main-slide-responsive">
+
+
+    <div class="main-slide-responsive" style="background-color: #EFF2F3">
         @include('website.main_slide')
     </div>
-    <div class="video-responsive">
+    <div class="video-responsive" style="background-color: #EFF2F3">
         <div class="container">
             @include('website.video')
         </div>
     </div>
+
     <div class="brand-responsive">
         @include('website.brand')
     </div>

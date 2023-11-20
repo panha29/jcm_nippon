@@ -383,5 +383,9 @@
         display: inline-block;
         width: 230px;
     }
+
+    /* .card-responsive{
+        width: 33.33%;
+    } */
 }
 </style>
