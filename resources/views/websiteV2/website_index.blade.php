@@ -21,69 +21,7 @@
 @section('content')
 <div id="lqd-contents-wrap">
 
-    <!-- Start Banner -->
-    <section class="lqd-section banner min-h-100vh w-full flex flex-column items-center justify-center" id="banner">
-        <div class="absolute w-full h-full">
-            <div class="ld-particles-container relative w-full lqd-particles-as-bg lqd-overlay flex h-vh-100">
-                <div class="ld-particles-inner lqd-overlay flex pointer-events-none" id="lqd-particle-banner" data-particles="true" data-particles-options='{"particles": {"number": {"value" : 14, "density" : 1} , "color": {"value" : ["#F27E3F", "#0FBBB4", "#48BB0F", "#3FF292", "#899BFF"]} , "shape": {"type" : ["circle"]} , "opacity": {"value" : 1} , "size": {"value" : 6, "random": true, "anim": {"enable": true, "size_min" : 1, "speed" : 1}} , "move": {"enable": true, "direction": "right", "out_mode": "out"}} , "interactivity" : [], "retina_detect": true}'></div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row items-center">
-                <div class="col col-12 col-xl-5" data-custom-animations="true" data-ca-options='{"animationTarget": "h2, h6, p, .btn", "duration" : 1800, "delay" : 170, "ease": "power4.out", "initValues": {"y": "65px", "rotationY" : 65, "opacity" : 0} , "animations": {"y": "0px", "rotationY" : 0, "opacity" : 1}}'>
-                    <div class="ld-fancy-heading relative">
-                        <h6 class="ld-fh-element inline-block relative mb-2em text-12 uppercase font-bold tracking-1/5 text-gray-900">Creative solutions for everyone</h6>
-                    </div>
-                    <div class="ld-fancy-heading relative">
-                        <h2 class="ld-fh-element inline-block relative text-rotator-activated mb-0/25em text-72 leading-1/05em tracking-0" data-text-rotator="true"> Create more beauty of <span class="txt-rotate-keywords">
-                                <span class="txt-rotate-keyword lqd-keyword-slide-out is-next">Home</span>
-                                <span class="txt-rotate-keyword lqd-keyword-slide-out">Industry</span>
-                                <span class="txt-rotate-keyword lqd-keyword-slide-in active">Constuction</span>
-                            </span>
-                        </h2>
-                    </div>
-                    <div class="ld-fancy-heading relative">
-                        <p class="ld-fh-element relative mb-2em text-20 leading-32">Passionate about solving problems through creative and digital products.</p>
-                    </div>
-                    <div class="flex flex-row flex-wrap items-center justify-start">
-                        <div class="fancy-button mr-15 module-btn sm:w-full">
-                            <a href="#contact-modal" class="btn btn-solid btn-xlg btn-icon-right btn-hover-reveal font-bold uppercase tracking-1/5 leading-1/4em whitespace-nowrap bg-transparent rounded-100 text-white" data-lity="#contact-modal">
-                                <span class="btn-txt" data-text="Get a Quote">Get a Quote</span>
-                                <span class="btn-icon text-16">
-                                    <i aria-hidden="true" class="lqd-icn-ess icon-md-arrow-round-forward-2"></i>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="fancy-button text-left sm:w-full">
-                            <a href="#services" class="btn btn-naked btn-icon-right btn-hover-reveal btn-has-label font-bold uppercase tracking-1/5 leading-1/4em whitespace-nowrap text-blue-700" data-localscroll="true">
-                                <span class="btn-txt" data-text="Discover Hub">Discover Hub</span>
-                                <span class="btn-icon">
-                                    <i aria-hidden="true" class="lqd-icn-ess icon-md-arrow-round-down"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-xl-7 sm:order-first" data-custom-animations="true" data-ca-options='{"animationTarget": "svg, img", "startDelay" : 350, "ease": "power4.out", "initValues": {"opacity" : 0} , "animations": {"opacity" : 1}}'>
-                    <div class="image-container relative -mr-50 lg:m-0">
-                        <div class="ld-masked-image" data-dynamic-shape="true">
-                            <svg class="scene lqd-overlay flex" viewbox="140 140 140 140">
-                                <defs>
-                                    <clippath id="banner-masked-svg" clippathunits="objectBoundingBox" transform="scale(0.00158)">
-                                        <path vector-effect="non-scaling-stroke" fill="black" d="M212.625, 0.091 C319.112, -2.992 719.225, 71.583 615.507, 328.179 C511.789, 584.775 250.263, 624.292 112.94, 568.057 C-24.383, 511.822 -12.023, 229.89 23.583, 138.127 C59.189, 46.364 106.138, 3.174 212.625, 0.091 Z" pathdata:id="M362.5, 4 C487, 4 631, -44 631, 201.5 C631, 447 538, 623.5 310.5, 581.5 C83, 539.5 -29.917, 266.627 7, 156.5 C43.917, 46.373 238, 4 362.5, 4 Z;M370, 18 C494.5, 18 627, -56.5 627, 189 C627, 434.5 405.5, 573.5 155.5, 581 C-94.5, 588.5 23.083, 175.127 60, 65 C96.917, -45.127 245.5, 18 370, 18 Z"></path>
-                                    </clippath>
-                                </defs>
-                            </svg>
-                            <figure class="clip-svg" data-responsive-bg="true">
-                                <img width="1292" height="1196" src="/webv2/images/big-pic.png" class="w-full invisible" alt="Banner Image">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End banner -->
+@include('websiteV2.banner')
 
     <!-- Start Services -->
     <section class="lqd-section services pt-50" id="services" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element", "ease": "power4.out", "initValues": {"y": "60px", "rotationZ" : 5, "opacity" : 0, "transformOrigin": "50% 50% 120px"} , "animations": {"y": "0px", "rotationZ" : 0, "opacity" : 1, "transformOrigin": "50% 50% 0px"}}'>
@@ -248,218 +186,13 @@
 @include('websiteV2.professional')
 @include('websiteV2.brand')
 @include('websiteV2.product')
+@include('websiteV2.goal')
+@include('websiteV2.applicator')
 
 
-    <!-- Start Case Study -->
-    <section class="lqd-section case-study pt-30 pb-50" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element", "ease": "power4.out", "initValues": {"y": "45px", "rotationY" : 45, "opacity" : 0} , "animations": {"y": "0px", "rotationY" : 0, "opacity" : 1}}'>
-        <div class="container">
-            <div class="row justify-center">
-                <div class="col col-12 col-xl-6 text-center p-0 mb-30">
-                    <div class="title-module">
-                        <div class="ld-fancy-heading relative animation-element">
-                            <h2 class="ld-fh-element inline-block relative mb-0/5em">Case Studies</h2>
-                        </div>
-                        <div class="ld-fancy-heading relative animation-element">
-                            <p class="ld-fh-element inline-block relative mb-0/5em text-20 leading-1/7em">Our design services starts and ends with a best in class experience strategy that builds brands.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 p-0"></div>
-                <div class="col col-12 col-md-6 col-xl-3 p-20 module-content module-1">
-                    <div class="icon-box-module py-45 px-30 bg-white rounded-10 mb-30 sm:m-0 animation-element">
-                        <div class="iconbox text-start mb-0 items-start flex flex-grow-1 relative flex-col iconbox-default">
-                            <div class="iconbox-icon-wrap">
-                                <div class="iconbox-icon-container inline-flex relative z-1 rounded-full mb-25 w-55 h-55 text-26 bg-red-100">
-                                    <svg width="27" height="27" viewBox="0 0 24 24">
-                                        <path fill="#D85F69" d="M19, 1H5A5.006, 5.006, 0, 0, 0, 0, 6V18a5.006, 5.006, 0, 0, 0, 5, 5H19a5.006, 5.006, 0, 0, 0, 5-5V6A5.006, 5.006, 0, 0, 0, 19, 1ZM5, 3H19a3, 3, 0, 0, 1, 3, 3V7H2V6A3, 3, 0, 0, 1, 5, 3ZM19, 21H5a3, 3, 0, 0, 1-3-3V9H22v9A3, 3, 0, 0, 1, 19, 21Zm0-8a1, 1, 0, 0, 1-1, 1H6a1, 1, 0, 0, 1, 0-2H18A1, 1, 0, 0, 1, 19, 13Zm-4, 4a1, 1, 0, 0, 1-1, 1H6a1, 1, 0, 0, 1, 0-2h8A1, 1, 0, 0, 1, 15, 17ZM3, 5A1, 1, 0, 1, 1, 4, 6, 1, 1, 0, 0, 1, 3, 5ZM6, 5A1, 1, 0, 1, 1, 7, 6, 1, 1, 0, 0, 1, 6, 5ZM9, 5a1, 1, 0, 1, 1, 1, 1A1, 1, 0, 0, 1, 9, 5Z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="contents text-start">
-                                <h3 class="lqd-iconbox-heading text-20 mb-0/75em">Web Design </h3>
-                                <div class="text-14 mb-2/5rem">Ceating brand identities, digital experiences, and print materials that communicate clearly.</div>
-                                <a href="./page-asymmetric-agency-case-studies.html" class="btn btn-naked btn-icon-right btn-hover-reveal mt-1/5em mb-0 tracking-1/5 leading-1/4em text-13 uppercase font-bold text-blue-600">
-                                    <span class="btn-txt" data-text="― Learn more">― Learn more</span>
-                                    <span class="btn-icon text-18">
-                                        <i class="lqd-icn-ess icon-md-arrow-forward"></i>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-xl-3 p-20 module-content module-2">
-                    <div class="icon-box-module py-45 px-30 bg-white rounded-10 mt-60 mb-30 lg:mt-0 sm:m-0 animation-element">
-                        <div class="iconbox text-start mb-0 items-start flex flex-grow-1 relative flex-col iconbox-default">
-                            <span class="iconbox-label inline-block absolute rounded-100 font-bold uppercase tracking-0/1em top-0 right-0 bg-gray-100">Exclusive</span>
-                            <div class="iconbox-icon-wrap">
-                                <div class="iconbox-icon-container inline-flex relative z-1 rounded-full mb-25 w-55 h-55 text-26 bg-blue-100">
-                                    <svg width="27" height="27" viewBox="0 0 24 24">
-                                        <path fill="#67C8D8" d="M17, 0a1, 1, 0, 0, 0-1, 1c0, 2.949-2.583, 4-5, 4H4A4, 4, 0, 0, 0, 0, 9v2a3.979, 3.979, 0, 0, 0, 1.514, 3.109l3.572, 7.972A3.233, 3.233, 0, 0, 0, 8.039, 24a2.982, 2.982, 0, 0, 0, 2.72-4.2L8.559, 15H11c2.417, 0, 5, 1.051, 5, 4a1, 1, 0, 0, 0, 2, 0V1A1, 1, 0, 0, 0, 17, 0ZM8.937, 20.619A.983.983, 0, 0, 1, 8.039, 22a1.232, 1.232, 0, 0, 1-1.126-.734L4.105, 15H6.359ZM16, 14.6A7.723, 7.723, 0, 0, 0, 11, 13H4a2, 2, 0, 0, 1-2-2V9A2, 2, 0, 0, 1, 4, 7h7a7.723, 7.723, 0, 0, 0, 5-1.595Zm7.9.852a1, 1, 0, 0, 1-1.342.448l-2-1a1, 1, 0, 0, 1, .894-1.79l2, 1A1, 1, 0, 0, 1, 23.9, 15.447Zm-3.79-9a1, 1, 0, 0, 1, .448-1.342l2-1a1, 1, 0, 1, 1, .894, 1.79l-2, 1a1, 1, 0, 0, 1-1.342-.448ZM20, 10a1, 1, 0, 0, 1, 1-1h2a1, 1, 0, 0, 1, 0, 2H21A1, 1, 0, 0, 1, 20, 10Z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="contents text-start">
-                                <h3 class="lqd-iconbox-heading text-20 mb-0/75em">Digital Marketing </h3>
-                                <div class="text-14 mb-2/5rem">Ceating brand identities, digital experiences, and print materials that communicate clearly.</div>
-                                <a href="./page-asymmetric-agency-case-studies.html" class="btn btn-naked btn-icon-right btn-hover-reveal mt-1/5em mb-0 tracking-1/5 leading-1/4em text-13 uppercase font-bold text-blue-600">
-                                    <span class="btn-txt" data-text="― Learn more">― Learn more</span>
-                                    <span class="btn-icon text-18">
-                                        <i class="lqd-icn-ess icon-md-arrow-forward"></i>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-xl-3 p-20 module-content module-3">
-                    <div class="icon-box-module py-45 px-30 bg-white rounded-10 mb-30 sm:m-0 animation-element">
-                        <div class="iconbox text-start mb-0 items-start flex flex-grow-1 relative flex-col iconbox-default">
-                            <div class="iconbox-icon-wrap">
-                                <div class="iconbox-icon-container inline-flex relative z-1 rounded-full mb-25 w-55 h-55 text-26 bg-green-100">
-                                    <svg width="27" height="27" viewBox="0 0 24 24">
-                                        <path fill="#50CF80" d="M20, 4H15a4, 4, 0, 0, 0-4-4H4A4, 4, 0, 0, 0, 0, 4V23a1, 1, 0, 0, 0, 2, 0V13h8a4, 4, 0, 0, 0, 4, 4h6a4, 4, 0, 0, 0, 4-4V8A4, 4, 0, 0, 0, 20, 4ZM2, 11V4A2, 2, 0, 0, 1, 4, 2h7a2, 2, 0, 0, 1, 2, 2V9a2, 2, 0, 0, 1-2, 2Zm20, 2a2, 2, 0, 0, 1-2, 2H14a2, 2, 0, 0, 1-2-2v-.142A4, 4, 0, 0, 0, 15, 9V6h5a2, 2, 0, 0, 1, 2, 2Z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="contents text-start">
-                                <h3 class="lqd-iconbox-heading text-20 mb-0/75em">Modern Computerize Color </h3>
-                                <div class="text-14 mb-2/5rem">Ceating brand identities, digital experiences, and print materials that communicate clearly.</div>
-                                <a href="./page-asymmetric-agency-case-studies.html" class="btn btn-naked btn-icon-right btn-hover-reveal mt-1/5em mb-0 tracking-1/5 leading-1/4em text-13 uppercase font-bold text-blue-600">
-                                    <span class="btn-txt" data-text="― Learn more">― Learn more</span>
-                                    <span class="btn-icon text-18">
-                                        <i class="lqd-icn-ess icon-md-arrow-forward"></i>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-xl-3 p-20 module-content module-4">
-                    <div class="icon-box-module py-45 px-30 bg-white rounded-10 mt-60 mb-30 lg:mt-0 sm:m-0 animation-element">
-                        <div class="iconbox text-start mb-0 items-start flex flex-grow-1 relative flex-col iconbox-default">
-                            <div class="iconbox-icon-wrap">
-                                <div class="iconbox-icon-container inline-flex relative z-1 rounded-full mb-25 w-55 h-55 text-26 bg-purple-100">
-                                    <svg width="27" height="27" viewBox="0 0 24 24">
-                                        <path fill="#DD74C3" d="M22.773, 7.721A4.994, 4.994, 0, 0, 0, 19, 6H15.011l.336-2.041A3.037, 3.037, 0, 0, 0, 9.626, 2.122L7.712, 6H5a5.006, 5.006, 0, 0, 0-5, 5v5a5.006, 5.006, 0, 0, 0, 5, 5H18.3a5.024, 5.024, 0, 0, 0, 4.951-4.3l.705-5A5, 5, 0, 0, 0, 22.773, 7.721ZM2, 16V11A3, 3, 0, 0, 1, 5, 8H7V19H5A3, 3, 0, 0, 1, 2, 16Zm19.971-4.581-.706, 5A3.012, 3.012, 0, 0, 1, 18.3, 19H9V7.734a1, 1, 0, 0, 0, .23-.292l2.189-4.435A1.07, 1.07, 0, 0, 1, 13.141, 2.8a1.024, 1.024, 0, 0, 1, .233.84l-.528, 3.2A1, 1, 0, 0, 0, 13.833, 8H19a3, 3, 0, 0, 1, 2.971, 3.419Z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="contents text-start">
-                                <h3 class="lqd-iconbox-heading text-20 mb-0/75em">Social Media </h3>
-                                <div class="text-14 mb-2/5rem">Ceating brand identities, digital experiences, and print materials that communicate clearly.</div>
-                                <a href="./page-asymmetric-agency-case-studies.html" class="btn btn-naked btn-icon-right btn-hover-reveal mt-1/5em mb-0 tracking-1/5 leading-1/4em text-13 uppercase font-bold text-blue-600">
-                                    <span class="btn-txt" data-text="― Learn more">― Learn more</span>
-                                    <span class="btn-icon text-18">
-                                        <i class="lqd-icn-ess icon-md-arrow-forward"></i>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Case Study -->
 
-    <!-- Start Team -->
-    <section class="lqd-section team pt-30 pb-130" id="team" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element, h2, .btn", "ease": "power4.out", "initValues": {"y": "45px", "rotationY" : 45, "opacity" : 0} , "animations": {"y": "0px", "rotationY" : 0, "opacity" : 1}}'>
-        <div class="container">
-            <div class="row items-center justify-between">
-                <div class="col col-12 col-md-6 module-title sm:py-0">
-                    <div class="ld-fancy-heading relative">
-                        <h2 class="ld-fh-element inline-block relative lqd-highlight-grow-bottom m-0" data-inview="true" data-transition-delay="true" data-delay-options='{"delayType": "transition"}'> Our à <mark class="lqd-highlight">
-                                <span class="lqd-highlight-txt">team</span>
-                                <span class="lqd-highlight-inner bottom-0/2em left-0 bg-green-200"></span>
-                            </mark>
-                        </h2>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 text-end sm:text-start module-btn">
-                    <a href="#" class="btn btn-naked btn-icon-right btn-hover-swp tracking-1/5 whitespace-nowrap leading-0/8em font-bold uppercase text-green-900" target="_blank" rel="nofollow">
-                        <span class="btn-txt" data-text="Explore Advertising">Explore Advertising</span>
-                        <span class="btn-icon">
-                            <i aria-hidden="true" class="lqd-icn-ess icon-md-arrow-round-forward"></i>
-                        </span>
-                        <span class="btn-icon mr-10">
-                            <i aria-hidden="true" class="lqd-icn-ess icon-md-arrow-round-forward"></i>
-                        </span>
-                    </a>
-                </div>
-                <div class="col col-12 col-xl-3 animation-element">
-                    <div class="lqd-tm relative lqd-tm-style-2 module-1">
-                        <div class="lqd-tm-img">
-                            <figure class="m-0">
-                                <img class="w-full" width="564" height="712" src="/webv2/images/demo/digital-hub/team-1.jpg" alt="Erik Genie">
-                            </figure>
-                        </div>
-                        <div class="lqd-tm-details pb-1em relative" data-custom-animations="true" data-ca-options='{"triggerHandler":  "inview" ,  "animationTarget":  "h3, p" ,  "duration":  1200,  "delay":  120,   "startDelay":  450,  "initValues":  { "translateY":  30,  "opacity":  0 } ,  "animations":  { "translateY":  0,  "opacity":  1 }}'>
-                            <svg width="240.72" height="219.539" viewBox="0 0 240.72 219.539">
-                                <defs>
-                                    <linearGradient id="grandient-path-1" x1="0%" x2="100%" y1="6.867%" y2="100%">
-                                        <stop offset="0%" stop-color="#F8F9FFE6"></stop>
-                                        <stop offset="100%" stop-color="#F8F9FF"></stop>
-                                    </linearGradient>
-                                </defs>
-                                <path fill="url(#grandient-path-1)" d="M246.434, 215.222c-34.945, 52.734-119.407, 86.81-177.044, 55.4S1.026, 143.131, 42.221, 94.4C117.052, 5.887, 306.8, 124.134, 246.434, 215.222Z" transform="translate(-17.385 -63.129)"></path>
-                            </svg>
-                            <h3 class="mt-0 mb-0/35em text-blue-700">Claudia Aria</h3>
-                            <p class="mt-0 mb-0  text-blue-200">Senior Designer</p>
-                        </div>
-                        <a class="lqd-overlay flex leading-1/4em fresco" href="/webv2/images/demo/digital-hub/team-1.jpg" data-fresco-group="team"></a>
-                    </div>
-                </div>
-                <div class="col col-12 col-xl-3 offset-xl-1 animation-element">
-                    <div class="lqd-tm relative lqd-tm-style-2 module-2">
-                        <div class="lqd-tm-img">
-                            <figure class="m-0">
-                                <img class="w-full" width="564" height="712" src="/webv2/images/demo/digital-hub/team-2.jpg" alt="Lena Meki">
-                            </figure>
-                        </div>
-                        <div class="lqd-tm-details pb-1em relative" data-custom-animations="true" data-ca-options='{"triggerHandler":  "inview" ,  "animationTarget":  "h3, p" ,  "duration":  1200,  "delay":  120,   "startDelay":  450,  "initValues":  { "translateY":  30,  "opacity":  0 } ,  "animations":  { "translateY":  0,  "opacity":  1 }}'>
-                            <svg width="240.72" height="219.539" viewBox="0 0 240.72 219.539">
-                                <defs>
-                                    <linearGradient id="grandient-path-2" x1="0%" x2="100%" y1="6.867%" y2="100%">
-                                        <stop offset="0%" stop-color="#F8F9FFE6"></stop>
-                                        <stop offset="100%" stop-color="#F8F9FF"></stop>
-                                    </linearGradient>
-                                </defs>
-                                <path fill="url(#grandient-path-2)" d="M246.434, 215.222c-34.945, 52.734-119.407, 86.81-177.044, 55.4S1.026, 143.131, 42.221, 94.4C117.052, 5.887, 306.8, 124.134, 246.434, 215.222Z" transform="translate(-17.385 -63.129)"></path>
-                            </svg>
-                            <h3 class="mt-0 mb-0/35em text-blue-700">Lena Meki</h3>
-                            <p class="mt-0 mb-0 text-blue-200">Consultation</p>
-                        </div>
-                        <a class="lqd-overlay flex leading-1/4em fresco" href="/webv2/images/demo/digital-hub/team-2.jpg" data-fresco-group="team"></a>
-                    </div>
-                </div>
-                <div class="col col-12 col-xl-3 offset-xl-1 animation-element">
-                    <div class="lqd-tm relative lqd-tm-style-2 module-3">
-                        <div class="lqd-tm-img">
-                            <figure class="m-0">
-                                <img class="w-full" width="560" height="712" src="/webv2/images/demo/digital-hub/team-3.jpg" alt="Claudia Aria">
-                            </figure>
-                        </div>
-                        <div class="lqd-tm-details pb-1em relative" data-custom-animations="true" data-ca-options='{"triggerHandler":  "inview" ,  "animationTarget":  "h3, p" ,  "duration":  1200,  "delay":  120,   "startDelay":  450,  "initValues":  { "translateY":  30,  "opacity":  0 } ,  "animations":  { "translateY":  0,  "opacity":  1 }}'>
-                            <svg width="240.72" height="219.539" viewBox="0 0 240.72 219.539">
-                                <defs>
-                                    <linearGradient id="grandient-path-3" x1="0%" x2="100%" y1="6.867%" y2="100%">
-                                        <stop offset="0%" stop-color="#F8F9FFE6"></stop>
-                                        <stop offset="100%" stop-color="#F8F9FF"></stop>
-                                    </linearGradient>
-                                </defs>
-                                <path fill="url(#grandient-path-3)" d="M246.434, 215.222c-34.945, 52.734-119.407, 86.81-177.044, 55.4S1.026, 143.131, 42.221, 94.4C117.052, 5.887, 306.8, 124.134, 246.434, 215.222Z" transform="translate(-17.385 -63.129)"></path>
-                            </svg>
-                            <h3 class="mt-0 mb-0/35em text-blue-700">Erik Genie</h3>
-                            <p class="mt-0 mb-0 text-blue-200">Senior Developer</p>
-                        </div>
-                        <a class="lqd-overlay flex leading-1/4em fresco" href="/webv2/images/demo/digital-hub/team-3.jpg" data-fresco-group="team"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Team -->
+
+
 
     <!-- Start Counters -->
     <section class="lqd-section counters pt-70 pb-65" id="counters">
@@ -537,90 +270,10 @@
     </section>
     <!-- End Counters -->
 
-    <!-- Start Testimonial -->
-    <section class="lqd-section testimonial pt-170 pb-85 bg-slate-100 transition-all" id="testimonial">
-        <div class="lqd-shape lqd-shape-top" data-negative="false">
-            <svg class="lqd-custom-shape left-0 rotate-180" preserveaspectratio="none" viewbox="0 0 1440 150">
-                <path class="lqd-shape-fill" d="M 0 26.1978 C 275.76 83.8152 430.707 65.0509 716.279 25.6386 C 930.422 -3.86123 1210.32 -3.98357 1439 9.18045 C 2072.34 45.9691 2201.93 62.4429 2560 26.198 V 172.199 L 0 172.199 V 26.1978 Z" fill="#fff">
-                    <animate repeatCount="indefinite" fill="freeze" attributeName="d" dur="10s" values="M0 25.9086C277 84.5821 433 65.736 720 25.9086C934.818 -3.9019 1214.06 -5.23669 1442 8.06597C2079 45.2421 2208 63.5007 2560 25.9088V171.91L0 171.91V25.9086Z; M0 86.3149C316 86.315 444 159.155 884 51.1554C1324 -56.8446 1320.29 34.1214 1538 70.4063C1814 116.407 2156 188.408 2560 86.315V232.317L0 232.316V86.3149Z; M0 53.6584C158 11.0001 213 0 363 0C513 0 855.555 115.001 1154 115.001C1440 115.001 1626 -38.0004 2560 53.6585V199.66L0 199.66V53.6584Z; M0 25.9086C277 84.5821 433 65.736 720 25.9086C934.818 -3.9019 1214.06 -5.23669 1442 8.06597C2079 45.2421 2208 63.5007 2560 25.9088V171.91L0 171.91V25.9086Z"></animate>
-                </path>
-            </svg>
-        </div>
-        <div class="container">
-            <div class="row items-center content-center">
-                <div class="col col-12 col-xl-6 p-15">
-                    <div class="image-container flex justify-center items-center">
-                        <div class="lqd-imggrp-single text-center block relative perspective m-auto w-65percent lg:w-full" data-hover3d="true">
-                            <div class="lqd-imggrp-img-container inline-flex relative transform-style-3d">
-                                <figure class="w-full relative" data-stacking-factor="1">
-                                    <img width="750" height="750" src="/webv2/images/demo/digital-hub/avatar-testimonial.png" alt="Testimonial">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-xl-6 p-15">
-                    <div class="title-container">
-                        <div class="ld-fancy-heading relative">
-                            <h6 class="ld-fh-element mb-0/5em inline-block relative text-15 uppercase font-bold tracking-2/5 text-green-900">Real stories</h6>
-                        </div>
-                    </div>
-                    <div class="carousel-container relative carousel-nav-left carousel-nav-lg carousel-nav-shaped carousel-nav-solid carousel-nav-circle carousel-nav-left carousel-dots-mobile-outside carousel-dots-mobile-left">
-                        <div class="carousel-items relative -mx-30 lg:mx-0" data-lqd-flickity='{"prevNextButtons": true, "groupCells": true, "navArrow": "6", "cellAlign": "left", "buttonsAppendTo": "self", "addSlideNumbersToArrows": false, "pageDots": false}'>
-                            <div class="carousel-item flex flex-col justify-center w-full px-30 lg:px-0">
-                                <div class="carousel-item-inner relative w-full">
-                                    <div class="carousel-item-content relative w-full">
-                                        <h5 class="mt-1em">
-                                            <span class="text-22 font-normal text-nightblue leading-35">“I think Hub is the best theme I ever seen this year. Amazing design, easy to customize and a design quality superlative.”</span>
-                                        </h5>
-                                        <h3 class="mb-0 mt-1em">
-                                            <span class="text-14 text-nightblue">FELICIA MARCI</span>
-                                        </h3>
-                                        <h6 class="mt-1em">
-                                            <span class="text-12 text-blue-200 m-0">TWITTER CEO</span>
-                                        </h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item flex flex-col justify-center w-full px-30 lg:px-0">
-                                <div class="carousel-item-inner relative w-full">
-                                    <div class="carousel-item-content relative w-full">
-                                        <h5 class="mt-1em">
-                                            <span class="text-22 font-normal text-nightblue leading-35">“I think Hub is the best theme I ever seen this year. Amazing design, easy to customize and a design quality superlative.”</span>
-                                        </h5>
-                                        <h3 class="mb-0 mt-1em">
-                                            <span class="text-14 text-nightblue">FELICIA MARCI</span>
-                                        </h3>
-                                        <h6 class="mt-1em">
-                                            <span class="text-12 text-blue-200 m-0">TWITTER CEO</span>
-                                        </h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item flex flex-col justify-center w-full px-30 lg:px-0">
-                                <div class="carousel-item-inner relative w-full">
-                                    <div class="carousel-item-content relative w-full">
-                                        <h5 class="mt-1em">
-                                            <span class="text-22 font-normal text-nightblue leading-35">“I think Hub is the best theme I ever seen this year. Amazing design, easy to customize and a design quality superlative.”</span>
-                                        </h5>
-                                        <h3 class="mb-0 mt-1em">
-                                            <span class="text-14 text-nightblue">FELICIA MARCI</span>
-                                        </h3>
-                                        <h6 class="mt-1em">
-                                            <span class="text-12 text-blue-200 m-0">TWITTER CEO</span>
-                                        </h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Testimonial -->
+@include('websiteV2.history')
 
-    <!-- Start Clients -->
+
+    {{-- <!-- Start Clients -->
     <section class="lqd-section clients py-45 bg-slate-100 border-top border-bottom border-black-10 transition-all" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element", "ease": "power4.out", "initValues": {"scaleX" : 0.2, "scaleY" : 0.2, "opacity" : 0} , "animations": {"scaleX" : 1, "scaleY" : 1, "opacity" : 1}}'>
         <div class="container">
             <div class="row items-center text-center">
@@ -675,7 +328,7 @@
             </div>
         </div>
     </section>
-    <!-- End Clients -->
+    <!-- End Clients --> --}}
 
     <!-- Start Contact -->
     <section class="lqd-section contact pt-75 pb-100 bg-slate-100 transition-all" id="contact">
@@ -696,7 +349,7 @@
                                         <span class="lqd-highlight-inner bg-slate-200 bottom-5 left-0"></span>
                                     </mark>
                                     <mark class="lqd-highlight">
-                                        <span class="lqd-highlight-txt">Projects?</span>
+                                        <span class="lqd-highlight-txt">Painting?</span>
                                         <span class="lqd-highlight-inner bg-slate-200 bottom-5 left-0"></span>
                                     </mark>
                                 </h2>
@@ -705,7 +358,7 @@
                                 <p class="ld-fh-element inline-block relative lqd-split-lines mb-0/5em text-blue-700" data-split-text="true" data-split-options='{"type": "lines"}'> Digital experiences, and print materials that communicate marketing goals.</p>
                             </div>
                         </div>
-                        <div class="w-30percent flex items-center p-10 lg:hidden" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element", "startDelay" : 350, "ease": "power4.out", "initValues": {"x": "-30px", "opacity" : 0} , "animations": {"x": "0px", "opacity" : 1}}'>
+                        <div class="w-30percent flex items-center p-10 lg:hidden" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element", "startDelay" : 150, "ease": "power4.out", "initValues": {"x": "-30px", "opacity" : 0} , "animations": {"x": "0px", "opacity" : 1}}'>
                             <div class="-mr-15percent -mb-40percent -ml-15percent animation-element">
                                 <div class="lqd-imggrp-single block relative perspective" data-hover3d="true" data-float="ease">
                                     <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center transform-style-3d">
@@ -718,14 +371,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-12 col-xl-6 p-10" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element,  p,  h4", "startDelay" : 700, "ease": "power4.out", "initValues": {"y": "30px", "opacity" : 0} , "animations": {"y": "0px", "opacity" : 1}}'>
+                <div class="col col-12 col-xl-6 p-10" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element,  p,  h4", "startDelay" : 250, "ease": "power4.out", "initValues": {"y": "30px", "opacity" : 0} , "animations": {"y": "0px", "opacity" : 1}}'>
                     <div class="w-full flex flex-wrap bg-white shadow-md transition-all">
                         <div class="w-50percent flex flex-col border-right border-black-10 py-30 pr-30 pl-60 sm:w-full module-white animation-element">
                             <div class="ld-fancy-heading relative">
-                                <p class="ld-fh-element inline-block relative m-0 text-blue-200">Project Offers</p>
+                                <p class="ld-fh-element inline-block relative m-0 text-blue-200">For More Information</p>
                             </div>
                             <div class="ld-fancy-heading relative">
-                                <h4 class="ld-fh-element inline-block relative m-0 text-20 text-blue-700">info.liquid.com</h4>
+                                <h4 class="ld-fh-element inline-block relative m-0 text-20 text-blue-700">info@jcmnippon.com</h4>
                             </div>
                         </div>
                         <div class="w-50percent flex flex-col py-30 pr-30 pl-60 sm:w-full module-white animation-element">
@@ -733,7 +386,8 @@
                                 <p class="ld-fh-element inline-block relative m-0 text-blue-200">Consultation</p>
                             </div>
                             <div class="ld-fancy-heading relative">
-                                <h4 class="ld-fh-element inline-block relative m-0 text-20 text-blue-700">+ 1 223 38 87</h4>
+                                <h4 class="ld-fh-element inline-block relative m-0 text-20 text-blue-700">+855 11 822 266
+                                </h4>
                             </div>
                         </div>
                     </div>

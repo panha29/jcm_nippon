@@ -120,13 +120,13 @@ class AdminLoginController extends Controller
     function contact_us(){
         $nav = CategoryModel::all();
         $product = ProductModel::all();
-        return view('website.contact_us.index',compact('nav','product'));
+        return view('websiteV2.contact.contact_us',compact('nav','product'));
     }
 
     function about_us(){
         $nav = CategoryModel::all();
         $product = ProductModel::all();
-        return view('website.about_us.index',compact('nav','product'));
+        return view('websiteV2.about.about_us',compact('nav','product'));
     }
 
     function painting_services(){
@@ -323,6 +323,12 @@ class AdminLoginController extends Controller
 
     function webv2(){
         $product = ProductModel::all();
-        return view('websiteV2.website_index',compact('product'));
+        $nav = CategoryModel::all();
+
+        return view('websiteV2.website_index',compact('product','nav'));
+    }
+    function navv2(){
+        $nav = CategoryModel::all();
+        return view('_layoutV2.web-nav',compact('nav'));
     }
 }

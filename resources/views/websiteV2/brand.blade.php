@@ -17,8 +17,8 @@
             </div>
             <div class="col col-12 p-0">
                 <div class="carousel-container pt-40 animation-element">
-                    {{-- <div class="carousel-items relative" data-lqd-flickity='{ "equalHeightCells": true, "filters": "#pf-filter-46824385", "prevNextButtons": false, "navArrow":  6, "fullwidthSide":  true, "buttonsAppendTo":  "self" }'> --}}
-                    <div class="carousel-items relative" >
+                    <div class="carousel-items relative" data-lqd-flickity='{ "equalHeightCells": true, "filters": "#pf-filter-46824385", "prevNextButtons": false, "navArrow":  6, "fullwidthSide":  true, "buttonsAppendTo":  "self" }'>
+                    {{-- <div class="carousel-items relative" > --}}
                         <div class="carousel-item col-12 col-lg-6 col-xl-4 mr-60">
                             <article class="lqd-pf-item lqd-pf-item-style-3 lqd-pf-overlay-bg-scale lqd-pf-content-v pf-details-h-str">
                                 <div class="lqd-pf-item-inner">

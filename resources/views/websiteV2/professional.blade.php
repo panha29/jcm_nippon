@@ -47,7 +47,7 @@
                                                 <h6 class="ld-fh-element inline-block relative m-0 text-12 font-bold uppercase">Recommended</h6>
                                             </div>
                                             <div class="ld-fancy-heading relative">
-                                                <h2 class="ld-fh-element inline-block relative mb-0/5em text-52" data-inview="true" data-transition-delay="true" data-delay-options='{"elements": ".lqd-highlight-inner", "delayType": "transition"}'> Professional at<br>
+                                                <h2 class="ld-fh-element inline-block relative mb-0/5em text-52" data-inview="true" data-transition-delay="true" data-delay-options='{"elements": ".lqd-highlight-inner", "delayType": "transition"}'> Professional at
                                                     <mark class="lqd-highlight">
                                                         <span class="lqd-highlight-txt">Painting</span>
                                                         <span class="lqd-highlight-inner bg-green-200 bottom-0 left-0"></span>
@@ -110,7 +110,7 @@
                                                 <h6 class="ld-fh-element inline-block relative m-0 text-12 font-bold uppercase">Creative Solutions</h6>
                                             </div>
                                             <div class="ld-fancy-heading relative">
-                                                <h2 class="ld-fh-element inline-block relative mb-0/5em text-52" data-inview="true" data-transition-delay="true" data-delay-options='{"elements": ".lqd-highlight-inner", "delayType": "transition"}'> Protection & Preparation at<br>
+                                                <h2 class="ld-fh-element inline-block relative mb-0/5em text-52" data-inview="true" data-transition-delay="true" data-delay-options='{"elements": ".lqd-highlight-inner", "delayType": "transition"}'> Protection And Preparation at
                                                     <mark class="lqd-highlight">
                                                         <span class="lqd-highlight-txt">Painting</span>
                                                         <span class="lqd-highlight-inner bg-green-200 bottom-0 left-0"></span>

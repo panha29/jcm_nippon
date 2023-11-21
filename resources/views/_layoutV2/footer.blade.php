@@ -58,12 +58,15 @@
                         <div class="lqd-imggrp-single block relative mb-35">
                             <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                                 <figure class="w-full relative">
-                                    <img src="/webv2/images/demo/digital-hub/logo.svg" alt="Digital Hub">
+                                    {{-- <img src="/webv2/images/npp.png" alt="nippon paint cambodia" width="100"> --}}
+                                    <img src="/webv2/images/logo.png" alt="nippon paint cambodia">
+
+                                    {{-- <img src="/webv2/images/demo/digital-hub/logo.svg" alt="Digital Hub"> --}}
                                 </figure>
                             </div>
                         </div>
                         <div class="ld-fancy-heading relative">
-                            <p class="ld-fh-element inline-block relative mb-2em">We're Hub agency. We're passionate about solving problems through creative and digital products.</p>
+                            <p class="ld-fh-element inline-block relative mb-2em">We're Qualified with top painting producs. We're passionate about painting and creating the color to change your life style more better.</p>
                         </div>
                         <ul class="icon-list-items inline-items flex flex-wrap list-none p-0 mb-0 -mx-10">
                             <li class="icon-list-item inline-item mx-10">
