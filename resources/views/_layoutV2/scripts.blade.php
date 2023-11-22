@@ -19,5 +19,6 @@
 <script src="/webv2/vendors/isotope/isotope.pkgd.min.js"></script>
 <script src="/webv2/js/liquid-gdpr.min.js"></script>
 <script src="/webv2/js/liquid-ajax-contact-form.min.js"></script>
-
+<script src="/icon/acorn-icons.js"></script>
+<script src="/icon/acorn-icons-interface.js"></script>
 @yield('js_vendor')

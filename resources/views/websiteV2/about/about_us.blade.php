@@ -28,6 +28,15 @@
             margin-left: 20%;
 
         }
+        .category{
+        background-color: #e9e9e9 !important;
+        width: 331px;
+        height: 300px;
+        float: right;
+        border-radius: 25px;
+        padding: 15px;
+        line-height: 40px;
+        }
     }
 
     @media screen and (min-width: 1920px){
@@ -59,7 +68,6 @@
 
 @section('content')
 <div id="lqd-contents-wrap">
-
     <section class="lqd-section has-accordion-page pt-100 bg-gray-200">
         <div class="container" >
             <div class="titlebar-inner">

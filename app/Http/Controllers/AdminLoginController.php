@@ -161,9 +161,9 @@ class AdminLoginController extends Controller
     function category_tag($id = null){
         $nav = CategoryModel::all();
         $product = ProductModel::where('product_tag', ($id))->latest()->get();
-        // $product = ProductModel::all();
         return view('website.product.index',compact('nav','product'));
     }
+
 
     public function project_reference_save(Request $request){
         $data = new ProjectReferenceModel();
@@ -330,5 +330,21 @@ class AdminLoginController extends Controller
     function navv2(){
         $nav = CategoryModel::all();
         return view('_layoutV2.web-nav',compact('nav'));
+    }
+
+    function category_tagv2($id = null){
+        $nav = CategoryModel::all();
+        $product = ProductModel::where('product_tag', ($id))->latest()->get();
+        $pdcate = ProductModel::where('product_tag', ($id))->first();
+        $allpd = ProductModel::latest()->get();
+        return view('websiteV2.product.product',compact('nav','product','pdcate','allpd'));
+    }
+
+    function all_product($id = null){
+        $nav = CategoryModel::all();
+        $product = ProductModel::where('product_tag', ($id))->latest()->get();
+        $pdcate = ProductModel::where('product_tag', ($id))->first();
+        $allpd = ProductModel::latest()->get();
+        return view('websiteV2.product.all_product',compact('nav','product','pdcate','allpd'));
     }
 }

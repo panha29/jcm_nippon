@@ -106,3 +106,7 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
     Route::get('/Dashboard',[UserLoginController::class,'user_website']);
 
 });
+
+
+Route::get('/Products/{category_tag}',[AdminLoginController::class,'category_tagv2']);
+Route::get('Products',[AdminLoginController::class,'all_product']);

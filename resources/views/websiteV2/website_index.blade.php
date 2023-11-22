@@ -15,6 +15,7 @@
 @endsection
 
 @section('js_page')
+<script src="/js/pages/interface.icons.js"></script>
 
 @endsection
 
@@ -363,7 +364,7 @@
                                 <div class="lqd-imggrp-single block relative perspective" data-hover3d="true" data-float="ease">
                                     <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center transform-style-3d">
                                         <figure class="w-full relative" data-stacking-factor="1">
-                                            <img width="308" height="552" src="/webv2/images/demo/digital-hub/shape-person.png" alt="consultaition">
+                                            <img width="308" height="552" src="/webv2/images/blobby1.png" alt="nippon paint cambodia" >
                                         </figure>
                                     </div>
                                 </div>

@@ -20,7 +20,7 @@
                             </li>
 
                             <li class="menu-item-has-children">
-                                <a class="leading-1/4em text-blue-700" href="/products">
+                                <a class="leading-1/4em text-blue-700" href="/Products">
                                     Products
                                     <span class="submenu-expander"></span>
                                     <span class="link-icon inline-flex hide-if-empty right-icon">
@@ -30,7 +30,7 @@
                                 <ul class="nav-item-children">
                                     @foreach ($nav as $item)
                                     <li>
-                                        <a href="#">{{$item->category_name}}</a>
+                                        <a href="/Products/{{$item->category_tag}}">{{$item->category_name}}</a>
                                     </li>
                                     @endforeach
                                 </ul>
@@ -38,12 +38,24 @@
 
                             <li class="menu-item-has-children">
                                 <a class="leading-1/4em text-blue-700" href="#case-studies">
-                                    Case Studies
+                                    About Company
                                     <span class="submenu-expander"></span>
                                     <span class="link-icon inline-flex hide-if-empty right-icon">
                                         <i class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
                                     </span>
                                 </a>
+                                <ul class="nav-item-children">
+                                    <li>
+                                        <a href="#">Project Reference</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">News & Media</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Career</a>
+                                    </li>
+
+                                </ul>
                             </li>
                             <li>
                                 <a class="leading-1/4em text-blue-700" href="#testimonial">
@@ -60,6 +72,11 @@
                                     Contact Us
                                 </a>
                             </li>
+                            <li>
+                                <a class="leading-1/4em text-blue-700" href="contact-us">
+                                    Color Palette
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -74,8 +91,8 @@
                         </h6>
                     </div>
                     <div class="module-btn px-0/5em">
-                        <a href="#contact-modal" class="btn btn-solid btn-md uppercase text-13 font-bold  leading-1/4em bg-white rounded-100 shadow-md text-blue-700 hover:text-white" data-lity="#contact-modal">
-                            <span class="btn-txt" data-text="Start a project">Start a project</span>
+                        <a href="" class="btn btn-solid btn-md uppercase text-13 font-bold  leading-1/4em bg-white rounded-100 shadow-md text-blue-700 hover:text-white" data-lity="#contact-modal">
+                            Login
                         </a>
                     </div>
                 </div>

@@ -12,14 +12,14 @@
                     <h6 class="ld-fh-element inline-block relative mb-2em text-12 uppercase font-bold tracking-1/5 text-gray-900">Creative solutions for everyone</h6>
                 </div>
                 <div class="ld-fancy-heading relative">
-                    <h2 class="ld-fh-element inline-block relative text-rotator-activated mb-0/25em text-72 leading-1/05em tracking-0" data-text-rotator="true"> Nippon Paint Create the Beauty of<span class="txt-rotate-keywords">
-                            <span class="txt-rotate-keyword lqd-keyword-slide-out is-next">House</span>
-                            <span class="txt-rotate-keyword lqd-keyword-slide-out">Industry</span>
-                            <span class="txt-rotate-keyword lqd-keyword-slide-in active">Construction</span>
+                    <h2 class="ld-fh-element inline-block relative text-rotator-activated mb-0/25em text-72 leading-1/05em tracking-0" data-text-rotator="true"> Nippon Paint<span class="txt-rotate-keywords">
+                            <span class="txt-rotate-keyword lqd-keyword-slide-out"> We Build</span>
+                            <span class="txt-rotate-keyword lqd-keyword-slide-out">We Do It</span>
+                            <span class="txt-rotate-keyword lqd-keyword-slide-in active"> We Dream</span>
                         </span>
                     </h2>
                 </div>
-                <div class="ld-fancy-heading relative">
+                <div class="ld-fancy-heading relative mt-90">
                     <p class="ld-fh-element relative mb-2em text-20 leading-32">Passionate about creating the color of life.</p>
                 </div>
                 <div class="flex flex-row flex-wrap items-center justify-start">
@@ -52,7 +52,7 @@
                             </defs>
                         </svg>
                         <figure class="clip-svg" data-responsive-bg="true">
-                            <img width="1292" height="1196" src="/webv2/images/big-pic.png" class="w-full invisible" alt="Banner Image">
+                            <img width="1292" height="1196" src="/webv2/images/big-pic.png" class="w-full invisible" alt="nippon paint cambodia">
                         </figure>
                     </div>
                 </div>
