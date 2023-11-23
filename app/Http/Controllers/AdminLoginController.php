@@ -332,6 +332,16 @@ class AdminLoginController extends Controller
         return view('_layoutV2.web-nav',compact('nav'));
     }
 
+    function servicev2(){
+        $nav = CategoryModel::all();
+        return view('websiteV2.painting-service.service',compact('nav'));
+    }
+
+    function project_referencev2(){
+        $nav = CategoryModel::all();
+        return view('websiteV2.project-reference.project-reference',compact('nav'));
+    }
+
     function category_tagv2($id = null){
         $nav = CategoryModel::all();
         $product = ProductModel::where('product_tag', ($id))->latest()->get();

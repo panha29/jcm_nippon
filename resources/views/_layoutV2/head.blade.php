@@ -3,10 +3,9 @@
 <link rel="stylesheet" href="/webv2/vendors/liquid-icon/lqd-essentials/lqd-essentials.min.css">
 <link rel="stylesheet" href="/webv2/css/theme.min.css">
 <link rel="stylesheet" href="/webv2/css/utility.min.css">
-<link rel="stylesheet" href="/webv2/css/demo/digital-hub/base.css">
-<link rel="stylesheet" href="/webv2/css/demo/digital-hub/digital-hub.css">
 
-
+{{-- <link rel="stylesheet" href="/webv2/css/demo/start-hub-8/base.css">
+<link rel="stylesheet" href="/webv2/css/demo/start-hub-8/start-hub-8.css"> --}}
 <!-- Fonts -->
 {{-- <link rel="stylesheet" href="https://use.typekit.net/TYPEKIT_ID.css"> --}}
 <link rel="preconnect" href="https://fonts.googleapis.com">

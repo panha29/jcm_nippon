@@ -110,3 +110,5 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
 
 Route::get('/Products/{category_tag}',[AdminLoginController::class,'category_tagv2']);
 Route::get('Products',[AdminLoginController::class,'all_product']);
+Route::get('Painting-Services',[AdminLoginController::class,'servicev2']);
+Route::get('Project-Reference',[AdminLoginController::class,'project_referencev2']);

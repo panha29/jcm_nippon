@@ -46,7 +46,7 @@
                                 </a>
                                 <ul class="nav-item-children">
                                     <li>
-                                        <a href="#">Project Reference</a>
+                                        <a href="/Project-Reference">Project Reference</a>
                                     </li>
                                     <li>
                                         <a href="#">News & Media</a>
@@ -58,7 +58,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a class="leading-1/4em text-blue-700" href="#testimonial">
+                                <a class="leading-1/4em text-blue-700" href="Painting-Services">
                                     Painting Services
                                 </a>
                             </li>

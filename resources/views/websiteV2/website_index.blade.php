@@ -7,6 +7,9 @@
 @extends('webv2-layout',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description])
 
 @section('css')
+<link rel="stylesheet" href="/webv2/css/demo/digital-hub/base.css">
+<link rel="stylesheet" href="/webv2/css/demo/digital-hub/digital-hub.css">
+
 @endsection
 
 @section('js_vendor')
