@@ -70,6 +70,8 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
         Route::get('Event',[AdminLoginController::class,'Event_list']);
         Route::get('Media',[AdminLoginController::class,'Media_list']);
         Route::get('Career',[AdminLoginController::class,'Career_list']);
+        Route::post('Career/AddCareer',[AdminLoginController::class,'career_save']);
+        Route::get('Career/{id}/Edit',[AdminLoginController::class,'career_index_edit']);
     });
 
     Route::group(['prefix'=>'Project-Reference'],function(){
@@ -96,7 +98,7 @@ Route::get('/project-reference',[AdminLoginController::class,'project_reference'
 Route::get('/location',[AdminLoginController::class,'location']);
 Route::get('/Products/{category_tag}',[AdminLoginController::class,'category_tag']);
 Route::get('/home',[AdminLoginController::class,'web_dashboard']);
-Route::get('/news',[AdminLoginController::class,'news']);
+// Route::get('/news',[AdminLoginController::class,'news']);
 
 
 
@@ -111,4 +113,6 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
 Route::get('/Products/{category_tag}',[AdminLoginController::class,'category_tagv2']);
 Route::get('Products',[AdminLoginController::class,'all_product']);
 Route::get('Painting-Services',[AdminLoginController::class,'servicev2']);
+Route::get('News',[AdminLoginController::class,'newsv2']);
+Route::get('Career',[AdminLoginController::class,'career']);
 Route::get('Project-Reference',[AdminLoginController::class,'project_referencev2']);

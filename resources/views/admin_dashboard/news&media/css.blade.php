@@ -1,7 +1,5 @@
 <style>
-    /* Ensure that the demo table scrolls */
-
-
+ /* Ensure that the demo table scrolls */
 
     .dataTables_length, .dataTables_filter{
         display: none;
@@ -19,7 +17,9 @@
         border: none !important;
 
     }
-
+    .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+       /* display: none; */
+    }
 
     .page-item:first-child .page-link, .page-item:last-child .page-link{
         width: auto;
@@ -37,6 +37,5 @@
     background: none !important;
     box-shadow: none !important;
     }
-
 
 </style>

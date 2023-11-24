@@ -9,7 +9,7 @@
 @section('css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap4.min.css">
-    @include('admin_dashboard.product.css')
+    @include('admin_dashboard.news&media.css')
     <link rel="stylesheet" href="/css/vendor/quill.bubble.css"/>
     <link rel="stylesheet" href="/css/vendor/quill.snow.css"/>
 @endsection
@@ -27,14 +27,17 @@
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap4.min.js"></script>
     <script>
-       new DataTable('#career', {
-        fixedColumns: {
-        heightMatch: 'none'
-    },
-        paging: true,
-        info: false,
-    });
-    </script>
+        new DataTable('#career', {
+         fixedColumns: {
+         heightMatch: 'none'
+     },
+         paging: true,
+         info: false,
+         drawCallback: function() {
+             new AcornIcons().replace();
+         },
+     });
+     </script>
     <script src="/js/forms/controls.editor.js"></script>
     <script>
         var loadFile1 = function(event) {
@@ -47,6 +50,7 @@
             }
         };
     </script>
+    @include('admin_dashboard.news&media.js')
 @endsection
 
 @section('content')
@@ -70,11 +74,15 @@
                 <div class="card mb-2">
                     <div class="card-body" id="saveform_error">
                         <h3 style="text-align: center" class="mb-3">Add Career</h3>
-                        <form action="/Admin/News/Career/AddCareer" method="POST" enctype="multipart/form-data">
+                        <form action="/Admin/News-&-Media/Career/AddCareer" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="career_title" style="width: 100px;">Career Title</span>
                                 <input type="text" class="form-control" placeholder="" aria-label="career_title" aria-describedby="career_title" name="career_title" autocomplete="off" id="career_title" >
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="career_location" style="width: 100px;">Location</span>
+                                <input type="text" class="form-control" placeholder="" aria-label="career_location" aria-describedby="career_location" name="career_location" autocomplete="off" id="career_location" >
                             </div>
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="career_position" style="width: 100px;">Position</span>
@@ -82,12 +90,13 @@
                             </div>
                             <div class="input-group mb-3" >
                                 <span class="input-group-text" id="career_date" style="width: 100px;">Date</span>
-                                <input type="text" class="form-control" placeholder="" aria-label="career_date" aria-describedby="career_date" name="career_date" autocomplete="off" id="career_date">
+                                <input type="text" class="form-control" placeholder="" aria-label="career_date" aria-describedby="career_date" name="career_date" autocomplete="off" id="career_date" value="<?php echo date("d/m/Y");?>">
                             </div>
                             <div class="input-group mb-3" >
                                 <span class="input-group-text" id="career_detail" style="width: 100px;">Detail</span>
                                 <input type="text" class="form-control" placeholder="" aria-label="career_detail" aria-describedby="career_detail" name="career_detail" autocomplete="off" id="career_detail">
                             </div>
+
                             <div class="input-group mb-3">
                                 <input type="file" class="form-control" name="career_image" id="input-file1" onchange="loadFile1(event)">
                             </div>

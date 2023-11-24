@@ -49,21 +49,21 @@
                     <h1 class="" style="font-size:50px">Project Reference</h1>
 
                         <div class="ld-fancy-heading relative w-auto mb-0/65em bg-orange-100 rounded-100" data-custom-animations="true" data-ca-options='{"animationTarget": ".lqd-split-lines .lqd-lines .split-inner", "delay" : 100, "ease": "power4.out", "initValues": {"y": "35px", "opacity" : 0} , "animations": {"y": "0px", "opacity" : 1}}'>
-                            <h6 class="ld-fh-element relative lqd-split-lines lowercase m-0 py-10 px-20" data-split-text="true" data-split-options='{"type":"lines"}'> Digital Experience</h6>
+                            <h6 class="ld-fh-element relative lqd-split-lines lowercase m-0 py-10 px-20" data-split-text="true" data-split-options='{"type":"lines"}'> decade Experience</h6>
                         </div>
                         <div class="ld-fancy-heading relative" data-custom-animations="true" data-ca-options='{"animationTarget": ".lqd-split-lines .lqd-lines .split-inner", "duration" : 1800, "startDelay" : 250, "delay" : 180, "ease": "power4.out", "initValues": {"y": "30px", "z": "-130px", "rotationX" : -75, "opacity" : 0} , "animations": {"y": "0px", "z": "0px", "rotationX" : 0, "opacity" : 1}}'>
                             <h1 class="ld-fh-element mb-0/5em inline-block relative lqd-highlight-classic lqd-highlight-grow-left lqd-split-lines -tracking-1" data-inview="true" data-transition-delay="true" data-delay-options='{"elements": ".lqd-highlight-inner", "delayType": "transition"}'
                                 data-split-text="true" data-split-options='{"type": "lines"}'>
-                                <span>Branding, digital</span>
+                                <span>industry, building,</span>
                                 <mark class="lqd-highlight">
-                                        <span class="lqd-highlight-txt">marketing</span>
+                                        <span class="lqd-highlight-txt">house</span>
                                         <span class="lqd-highlight-inner"></span>
-                                    </mark> and business solutions
+                                    </mark> and construction solutions
                             </h1>
                         </div>
                         <div class="w-full">
                             <div class="ld-fancy-heading relative mask-text module-text" data-custom-animations="true" data-ca-options='{"animationTarget": ".lqd-split-lines .lqd-lines .split-inner", "duration" : 1800, "startDelay" : 850, "delay" : 180, "ease": "power4.out", "initValues": {"y": "65px"} , "animations": {"y": "0px"}}'>
-                                <p class="ld-fh-element mb-0/5em inline-block relative text-20 leading-1/5em lqd-split-lines" data-split-text="true" data-split-options='{"type": "lines"}'> We merge imagination and technology to help thousands of brands grow in an age of digital transformation.</p>
+                                <p class="ld-fh-element mb-0/5em inline-block relative text-20 leading-1/5em lqd-split-lines" data-split-text="true" data-split-options='{"type": "lines"}'> We merge imagination and technology to help thousands of construction grow in an age of Nippon Paint's product.</p>
                             </div>
                         </div>
                         <div class="spacer w-full">
@@ -79,7 +79,7 @@
                                 </a>
                                 <div class="ld-fancy-heading relative">
                                     <p class="text-14 m-0 p-0 ld-fh-element relative">
-                                        <span class="text-black">Hotline: <span class="text-primary">(733) 860-2906</span></span>
+                                        <span class="text-black">Hotline: <span class="text-primary">+855 11 822 266 / 11 907 902</span></span>
                                     </p>
                                 </div>
                             </div>
@@ -98,26 +98,26 @@
             <div class="row items-center text-center">
                 <div class="col col-12 p-0">
                     <div class="ld-fancy-heading relative">
-                        <p class="ld-fh-element relative text-11 font-bold uppercase mb-3/5em tracking-0/1 text-blue-900">Join the 10.000+ companies trusting HUB</p>
+                        <p class="ld-fh-element relative text-11 font-bold uppercase mb-3/5em tracking-0/1 text-blue-900">Join the 10.000+ client trusting us</p>
                     </div>
                 </div>
                 <div class="col col-6 col-md-4 col-xl-2 p-0 mb-30">
-                    <img src="webv2/images/demo/modern-agency/client-dropcam.svg" alt="clients">
+                    <img src="webv2/images/client/aeon.png" alt="clients" width="110">
                 </div>
                 <div class="col col-6 col-md-4 col-xl-2 p-0 mb-30">
-                    <img src="webv2/images/demo/modern-agency/client-amazon.svg" alt="clients">
+                    <img src="webv2/images/client/ford.png" alt="clients">
                 </div>
                 <div class="col col-6 col-md-4 col-xl-2 p-0 mb-30">
-                    <img src="webv2/images/demo/modern-agency/client-cisco.svg" alt="clients">
+                    <img src="webv2/images/client/grandpp.png" alt="clients">
                 </div>
                 <div class="col col-6 col-md-4 col-xl-2 p-0 mb-30">
-                    <img src="webv2/images/demo/modern-agency/client-amd-logo.svg" alt="clients">
+                    <img src="webv2/images/client/tax1.png" alt="clients">
                 </div>
                 <div class="col col-6 col-md-4 col-xl-2 p-0 mb-30">
-                    <img src="webv2/images/demo/modern-agency/client-logitech.svg" alt="clients">
+                    <img src="webv2/images/client/tourism.png" alt="clients">
                 </div>
                 <div class="col col-6 col-md-4 col-xl-2 p-0 mb-30">
-                    <img src="webv2/images/demo/modern-agency/client-spotify.svg" alt="clients">
+                    <img src="webv2/images/client/tex.png" alt="clients" width="70">
                 </div>
             </div>
         </div>
@@ -130,10 +130,10 @@
                 <div class="col col-md-10 offset-md-1 mb-60 p-0 module-first">
                     <div class="w-full flex flex-col items-center">
                         <div class="ld-fancy-heading relative">
-                            <h6 class="mb-1em ld-fh-element relative">We're Hub Agency</h6>
+                            <h6 class="mb-1em ld-fh-element relative">We're Color professional</h6>
                         </div>
                         <div class="ld-fancy-heading relative">
-                            <h2 class="ld-fh-element mb-0/5em inline-block relative">We design and build beautiful digital products that make a difference</h2>
+                            <h2 class="ld-fh-element mb-0/5em inline-block relative">We design and build beautiful with premium products that make a difference</h2>
                         </div>
                     </div>
                 </div>
@@ -168,8 +168,8 @@
                             </div>
                         </div>
                         <div class="contents">
-                            <h3 class="lqd-iconbox-heading text-20 mb-20">Grow your business </h3>
-                            <p>We have an experienced team of production and inspection personnel to ensure quality.</p>
+                            <h3 class="lqd-iconbox-heading text-20 mb-20">Low Cost </h3>
+                            <p>Our quality policy: strict and effective managment to have best product for you.</p>
                         </div>
                     </div>
                 </div>
@@ -189,8 +189,8 @@
                             </div>
                         </div>
                         <div class="contents">
-                            <h3 class="lqd-iconbox-heading text-20 mb-20">Digital Marketing </h3>
-                            <p>Our quality policy: strict and effective managment to have best product for you.</p>
+                            <h3 class="lqd-iconbox-heading text-20 mb-20">Effeciency and Effective </h3>
+                            <p>We have an experienced team of production and inspection personnel to ensure quality.</p>
                         </div>
                     </div>
                 </div>
@@ -252,8 +252,8 @@
                             </div>
                         </div>
                         <div class="contents">
-                            <h3 class="lqd-iconbox-heading text-20 mb-20">Search Engine Optimization </h3>
-                            <p>In the shortest possbible time for customers to solve questions of the use of product.</p>
+                            <h3 class="lqd-iconbox-heading text-20 mb-20">Fast and Quality </h3>
+                            <p>In the shortest possbible time for us to solve customeer need and want.</p>
                         </div>
                     </div>
                 </div>
@@ -270,7 +270,7 @@
                         <div class="lqd-imggrp-single block relative">
                             <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                                 <figure class="w-full relative">
-                                    <img class="rounded-8" src="webv2/images/demo/modern-agency/shape-dots.svg" alt="digital experience">
+                                    {{-- <img class="rounded-8" src="" alt="digital experience"> --}}
                                 </figure>
                             </div>
                         </div>
@@ -279,7 +279,7 @@
                         <div class="lqd-imggrp-single block relative" data-shadow-style="4" data-inview="true" data-animate-shadow="true">
                             <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                                 <figure class="w-full relative">
-                                    <img class="rounded-8" src="webv2/images/demo/modern-agency/digital-experience-1.jpg" alt="digital experience">
+                                    <img class="rounded-8" src="webv2/images/pr/orkide.jpg" alt="digital experience">
                                 </figure>
                             </div>
                         </div>
@@ -288,7 +288,7 @@
                         <div class="lqd-imggrp-single block relative" data-shadow-style="4" data-inview="true" data-animate-shadow="true">
                             <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                                 <figure class="w-full relative">
-                                    <img class="rounded-8" src="webv2/images/demo/modern-agency/digital-experience-2.jpg" alt="digital experience">
+                                    <img class="rounded-8" src="webv2/images/pr/rrcondo.jpg" alt="digital experience">
                                 </figure>
                             </div>
                         </div>
@@ -297,7 +297,7 @@
                         <div class="lqd-imggrp-single block relative mt-50percent" data-shadow-style="4" data-inview="true" data-animate-shadow="true">
                             <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                                 <figure class="w-full relative">
-                                    <img class="rounded-8" width="393" src="webv2/images/demo/modern-agency/digital-experience-3.jpg" alt="digital experience">
+                                    <img class="rounded-8" width="393" src="webv2/images/pr/im.jpg" alt="digital experience">
                                 </figure>
                             </div>
                         </div>
@@ -309,18 +309,18 @@
                     </div>
                     <div class="ld-fancy-heading relative">
                         <h2 class="mb-0/75em ld-fh-element relative lqd-highlight-classic lqd-highlight-grow-left lqd-highlight-reset-onhover h2" data-inview="true" data-transition-delay="true" data-delay-options='{"elements": ".lqd-highlight-inner", "delayType": "transition"}'>
-                            <span> Connect people in</span>
+                            <span> Build with trust</span>
                             <mark class="lqd-highlight">
-                                    <span class="lqd-highlight-txt">digital life</span>
+                                    <span class="lqd-highlight-txt">for our client</span>
                                     <span class="lqd-highlight-inner"></span>
                                 </mark>
                         </h2>
                     </div>
                     <div class="ld-fancy-heading relative">
-                        <p class="text-20 font-bold leading-1/5em mb-1/5em ld-fh-element relative">More than just an ad agency, we harness the tools of traditional and digital.</p>
+                        <p class="text-20 font-bold leading-1/5em mb-1/5em ld-fh-element relative">More than just a painter, we harness the tools of traditional and technology for our client.</p>
                     </div>
                     <div class="ld-fancy-heading relative">
-                        <p class="text-20 leading-1/5em mb-2/5em ld-fh-element relative">With over 25 years of experience, we have crafted thousands of strategic discovery process that enables us to peel back the layers which enable us to understand, connect, represent and dominate your market.</p>
+                        <p class="text-20 leading-1/5em mb-2/5em ld-fh-element relative">With over 25 years of experience, we have crafted thousands of strategic discovery process that enables us to peel back the layers which enable us to understand, connect, represent and satisfy your need and want.</p>
                     </div>
                     <a href="#counter" class="btn font-bold text-14 uppercase tracking-0/5 whitespace-nowrap btn-solid btn-xl btn-hover-txt-switch btn-hover-txt-switch-x bg-primary text-white rounded-100 hover:bg-accent" data-localscroll=" true">
                         <span class="btn-txt" data-text="More about us" data-split-text="true" data-split-options='{"type":  "chars, words"}'>More about us</span>
@@ -331,13 +331,13 @@
     </section>
     <!-- End Digital Experience -->
     <!-- Start Digital Experience Counter -->
-    <section class="lqd-section digital-experience-counter py-100" id="counter">
+    {{-- <section class="lqd-section digital-experience-counter py-100" id="counter">
         <div class="container">
             <div class="row algin-items-center">
                 <div class="col col-12 col-xl-5">
                     <div class="w-full flex flex-col items-start lg:text-center lg:items-center" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element", "delay" : 100, "ease": "power4.out", "initValues": {"y": "35px", "opacity" : 0} , "animations": {"y": "0px", "opacity" : 1}}'>
                         <div class="ld-fancy-heading relative w-auto mb-0/65em bg-orange-100 rounded-100 animation-element">
-                            <h6 class="ld-fh-element relative lowercase m-0 py-10 px-20"> Digital Experience</h6>
+                            <h6 class="ld-fh-element relative lowercase m-0 py-10 px-20"> Project Experiencing</h6>
                         </div>
                         <div class="ld-fancy-heading relative">
                             <h2 class="mb-0/75em ld-fh-element relative lqd-highlight-classic lqd-highlight-grow-left lqd-highlight-reset-onhover" data-inview="true" data-transition-delay="true" data-delay-options='{"elements": ".lqd-highlight-inner", "delayType": "transition"}'>
@@ -349,7 +349,7 @@
                             </h2>
                         </div>
                         <div class="ld-fancy-heading relative">
-                            <p class="text-20 leading-1/5em mb-2/5em ld-fh-element relative">Through strategy, design, and planning we build brand identities that connect with your Nesi. We then fine-tune a marketing plan that allows us to laser focus and target your audience through the right channels.</p>
+                            <p class="text-20 leading-1/5em mb-2/5em ld-fh-element relative">Through strategy, design, and planning we paint many construction and building that connect with your Nesi. We then fine-tune a marketing plan that allows us to laser focus and target your audience through the right choices.</p>
                         </div>
                     </div>
                 </div>
@@ -383,17 +383,17 @@
                                             <div class="counter-box text-title m-0 py-35 border-bottom border-black-10">
                                                 <div class="lqd-counter relative center lqd-counter-default">
                                                     <div class="text-48 font-bold mb-15 lqd-counter-element relative " data-enable-counter="true" data-counter-options='{"targetNumber": "27+"}'>
-                                                        <span class="block">27+</span>
+                                                        <span class="block">24</span>
                                                     </div>
-                                                    <span class="lqd-counter-text text-text">Countries</span>
+                                                    <span class="lqd-counter-text text-text">Provinces</span>
                                                 </div>
                                             </div>
                                             <div class="counter-box text-title m-0 py-35">
                                                 <div class="lqd-counter relative center lqd-counter-default">
-                                                    <div class="text-48 font-bold mb-15 lqd-counter-element relative " data-enable-counter="true" data-counter-options='{"targetNumber": "2,663"}'>
-                                                        <span class="block">2,663</span>
+                                                    <div class="text-48 font-bold mb-15 lqd-counter-element relative " data-enable-counter="true" data-counter-options='{"targetNumber": "++"}'>
+                                                        <span class="block">++</span>
                                                     </div>
-                                                    <span class="lqd-counter-text text-text">Usual Users</span>
+                                                    <span class="lqd-counter-text text-text">Usual Client</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -414,10 +414,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End Digital Experience Counter -->
     <!-- Start Services -->
-    <section class="lqd-section icon-box-colored pt-30 pb-60" id="services">
+    {{-- <section class="lqd-section icon-box-colored pt-30 pb-60" id="services">
         <div class="container">
             <div class="row">
                 <div class="col col-12 col-xl-4 pt-110 px-30 lg:p-0" data-parallax="true" data-parallax-options='{"ease": "linear", "start": "top bottom", "end": "bottom+=0px top"}' data-parallax-from='{"y": "60px"}' data-parallax-to='{"y": "-150px"}'>
@@ -610,10 +610,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End Services -->
     <!-- Start Testimonials -->
-    <section class="lqd-section testimonials pt-60 pb-50">
+    {{-- <section class="lqd-section testimonials pt-60 pb-50">
         <div class="container">
             <div class="row">
                 <div class="col col-12 col-xl-6">
@@ -693,10 +693,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End Testimonials -->
-      <!-- Start Global Companies -->
-      <section class="lqd-section global-companies py-100">
+    <!-- Start Global Companies -->
+    {{-- <section class="lqd-section global-companies py-100">
         <div class="container">
             <div class="row items-center justify-center">
                 <div class="col col-12 col-xl-6">
@@ -733,7 +733,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End Global Companies -->
        <!-- Start Blog -->
        <section class="lqd-section blog pt-100 pb-55" id="blog">
@@ -742,46 +742,48 @@
                 <div class="col col-12 mb-40">
                     <div class="w-full flex flex-col items-center text-center">
                         <div class="ld-fancy-heading relative w-full">
-                            <h6 class="mb-1em ld-fh-element relative lowercase">We're Hub Agency</h6>
+                            <h6 class="mb-1em ld-fh-element relative lowercase">We're Professional Painting</h6>
                         </div>
                         <div class="ld-fancy-heading relative w-full">
-                            <h2 class="ld-fh-element mb-0/5em inline-block relative">Articles daily updated</h2>
+                            <h2 class="ld-fh-element mb-0/5em inline-block relative">Our Project Reference</h2>
                         </div>
                     </div>
                 </div>
                 <div class="col col-12">
                     <div class="row -mr-15 -ml-15">
+                        @foreach ($pjref as $item)
                         <div class="col col-sm-6 col-lg-4 mb-30 px-15 py-0">
                             <article class="lqd-lp relative lqd-lp-style-6 lqd-lp-hover-img-zoom lqd-lp-animate-onhover rounded-4 overflow-hidden text-start post type-post status-publish format-standard has-post-thumbnail hentry category-blog-single tag-beauty tag-travel">
                                 <div class="lqd-lp-img overflow-hidden">
                                     <figure>
-                                        <img width="720" height="510" src="webv2/images/demo/modern-agency/blog-1.jpeg" alt="modernagencywp">
+                                        <img width="720" height="510" src="{{ url('img/project_reference/company_project_reference/'.$item->project_reference_image1) }}" alt="nippon paint cambodia">
                                     </figure>
                                     <div class="lqd-lp-meta uppercase font-bold relative z-3">
-                                        <span class="screen-reader-text">Tags </span>
+                                        {{-- <span class="screen-reader-text">Tags </span> --}}
                                         <ul class="lqd-lp-cat lqd-lp-cat-shaped lqd-lp-cat-solid reset-ul inline-ul font-bold uppercase tracking-0/1em">
                                             <li>
-                                                <a class="rounded-full" href="#" rel="category">Blog Single</a>
+                                                <a class="rounded-full" href="#" rel="category">{{$item->project_reference_startDate}}</a>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <header class="lqd-lp-header p-2rem">
+                                <header class="lqd-lp-header p-2rem" style="height: 139px">
                                     <div class="lqd-lp-meta lqd-lp-meta-dot-between flex flex-wrap items-center uppercase tracking-0/1em font-bold">
                                         <div class="lqd-lp-author relative z-3">
                                             <div class="lqd-lp-author-info">
                                                 <h3 class="mt-0 mb-0 h5">
-                                                    <a href="#">modernagencywp</a>
+                                                    <p>{{$item->project_reference_area}}</p>
                                                 </h3>
                                             </div>
                                         </div>
-                                        <time class="lqd-lp-date" datetime="2021-06-02T13:40:12+00:00">1 year ago</time>
+                                        {{-- <time class="lqd-lp-date" datetime="2023-11-24T13:40:12+00:00">{{$item->project_reference_startDate}}</time> --}}
                                     </div>
-                                    <h2 class="entry-title lqd-lp-title mt-0/75em mb-0 h5">5 reasons to purchase desktop computers</h2>
+                                    <h2 class="entry-title lqd-lp-title mt-0/75em mb-0 h5">{{$item->project_reference_name}}</h2>
                                 </header>
                             </article>
                         </div>
-                        <div class="col col-sm-6 col-lg-4 mb-30 px-15 py-0">
+                        @endforeach
+                        {{-- <div class="col col-sm-6 col-lg-4 mb-30 px-15 py-0">
                             <article class="lqd-lp relative lqd-lp-style-6 lqd-lp-hover-img-zoom lqd-lp-animate-onhover rounded-4 overflow-hidden text-start post type-post status-publish format-standard has-post-thumbnail hentry category-blog-single tag-beauty tag-travel">
                                 <div class="lqd-lp-img overflow-hidden">
                                     <figure>
@@ -840,7 +842,7 @@
                                     <h2 class="entry-title lqd-lp-title mt-0/75em mb-0 h5">Success Story: Businessman in Harlem</h2>
                                 </header>
                             </article>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -848,7 +850,7 @@
     </section>
     <!-- End Blog -->
   <!-- Start Contact -->
-    <section class="lqd-section contact pt-35 pb-100" id="contact" data-parallax="true" data-parallax-options='{"ease": "linear", "start": "top bottom", "end": "bottom+=0px top"}' data-parallax-from='{"y": "100px", "scaleX" : 1.2, "scaleY" : 1.2}' data-parallax-to='{"y": "0px", "scaleX" : 1, "scaleY" : 1}'>
+    {{-- <section class="lqd-section contact pt-35 pb-100" id="contact" data-parallax="true" data-parallax-options='{"ease": "linear", "start": "top bottom", "end": "bottom+=0px top"}' data-parallax-from='{"y": "100px", "scaleX" : 1.2, "scaleY" : 1.2}' data-parallax-to='{"y": "0px", "scaleX" : 1, "scaleY" : 1}'>
         <div class="container">
             <div class="row">
                 <div class="col col-12 p-0" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element-wrap, .animation-element-wrap > .animation-element-inner .animation-element , :scope > .animation-element-wrap > .animation-element-inner .animation-element .lqd-split-lines .lqd-lines .split-inner, :scope > .animation-element-wrap > .animation-element-inner .animation-element .lqd-split-words .lqd-words .split-inner, :scope > .animation-element-wrap > .animation-element-inner .animation-element .lqd-split-chars .lqd-chars .split-inner", "ease": "power4.out", "initValues": {"y": "100px", "z": "100px", "rotationX" : -65, "opacity" : 0} , "animations": {"y": "0px", "z": "0px", "rotationX" : 0, "opacity" : 1}}'>
@@ -883,7 +885,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End Contact -->
 </div>
 

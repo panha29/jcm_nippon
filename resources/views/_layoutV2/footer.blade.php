@@ -175,7 +175,7 @@
     <!-- End Footer Menu -->
 </footer>
 <!-- Contact modal -->
-<div id="contact-modal" class="lity-modal lqd-modal lity-hide" data-modal-type="fullscreen">
+{{-- <div id="contact-modal" class="lity-modal lqd-modal lity-hide" data-modal-type="fullscreen">
     <div class="lqd-modal-inner">
         <div class="lqd-modal-head"></div>
         <section class="lqd-section lqd-modal-content link-black bg-center bg-cover bg-norepeat" style="background-image: url(/webv2/images/common/modal-bg.jpeg);">
@@ -287,5 +287,5 @@
         </section>
         <div class="lqd-modal-foot"></div>
     </div>
-</div>
+</div> --}}
 <!-- Contact modal -->

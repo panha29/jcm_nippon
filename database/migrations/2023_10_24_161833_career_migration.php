@@ -18,6 +18,7 @@ class CareerMigration extends Migration
             $table -> string('career_title');
             $table -> string('career_position');
             $table -> string('career_image')->nullable();
+            $table -> string('career_location')->nullable();
             $table -> string('career_date');
             $table -> string('career_detail')->nullable();
             $table->timestamps();

@@ -49,16 +49,16 @@
                                         <a href="/Project-Reference">Project Reference</a>
                                     </li>
                                     <li>
-                                        <a href="#">News & Media</a>
+                                        <a href="/News">News & Media</a>
                                     </li>
                                     <li>
-                                        <a href="#">Career</a>
+                                        <a href="/Career">Career</a>
                                     </li>
 
                                 </ul>
                             </li>
                             <li>
-                                <a class="leading-1/4em text-blue-700" href="Painting-Services">
+                                <a class="leading-1/4em text-blue-700" href="/Painting-Services">
                                     Painting Services
                                 </a>
                             </li>
@@ -68,12 +68,12 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="leading-1/4em text-blue-700" href="contact-us">
+                                <a class="leading-1/4em text-blue-700" href="/contact-us">
                                     Contact Us
                                 </a>
                             </li>
                             <li>
-                                <a class="leading-1/4em text-blue-700" href="contact-us">
+                                <a class="leading-1/4em text-blue-700" href="/login">
                                     Color Palette
                                 </a>
                             </li>

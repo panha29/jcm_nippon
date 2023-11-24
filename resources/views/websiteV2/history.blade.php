@@ -16,7 +16,7 @@
                             <figure class="w-full relative" data-stacking-factor="1">
                                 <video width="400" height="400" controls poster="img/brand/nipponpaint.png" >
                                     <source src="/webv2/videos/nippon_avi.mp4" type="video/mp4">
-                                  </video>
+                                </video>
                             </figure>
                         </div>
                     </div>

@@ -15,5 +15,6 @@ class CareerModel extends Model
         'career_image',
         'career_date',
         'career_detail',
+        'career_location',
     ];
 }

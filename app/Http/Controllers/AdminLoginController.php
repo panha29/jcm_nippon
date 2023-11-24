@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CareerModel;
 use App\Models\CategoryModel;
 use App\Models\DealerModel;
 use App\Models\NewsModel;
@@ -309,6 +310,29 @@ class AdminLoginController extends Controller
         return redirect('/Admin/News-&-Media/Media');
     }
 
+    public function career_save(Request $request){
+        $data = new CareerModel();
+        $data -> career_title = $request -> career_title;
+        $data -> career_location = $request -> career_location;
+        $data -> career_position = $request -> career_position;
+        $data -> career_date = $request -> career_date;
+        $data -> career_detail = $request -> career_detail;
+        $data -> career_image = $request -> career_image;
+        $data -> save();
+        return redirect('/Admin/News-&-Media/Career');
+    }
+
+    public function career_edit(Request $request){
+        $data = CareerModel::find($request->id);
+        $data -> career_title = $request -> career_title;
+        $data -> career_position = $request -> career_position;
+        $data -> career_date = $request -> career_date;
+        $data -> career_detail = $request -> career_detail;
+        $data -> career_image = $request -> career_image;
+        $data -> save();
+        return redirect('/Admin/News-&-Media/Media');
+    }
+
     public function media_destroy($id){
         MediaModel::where('id',$id)->forceDelete();
         return redirect('/Admin/News-&-Media/Media');
@@ -336,11 +360,25 @@ class AdminLoginController extends Controller
         $nav = CategoryModel::all();
         return view('websiteV2.painting-service.service',compact('nav'));
     }
+    function newsv2(){
+        $nav = CategoryModel::all();
+        $news = NewsModel::latest()->get();
+        $media = MediaModel::latest()->get();
+        return view('websiteV2.news.news',compact('nav','news','media'));
+    }
+
+    function career(){
+        $nav = CategoryModel::all();
+        $career = CareerModel::latest()->get();
+        return view('websiteV2.career.career',compact('nav','career'));
+    }
 
     function project_referencev2(){
         $nav = CategoryModel::all();
-        return view('websiteV2.project-reference.project-reference',compact('nav'));
+        $pjref = ProjectReferenceModel::all();
+        return view('websiteV2.project-reference.project-reference',compact('nav','pjref'));
     }
+
 
     function category_tagv2($id = null){
         $nav = CategoryModel::all();
@@ -357,4 +395,7 @@ class AdminLoginController extends Controller
         $allpd = ProductModel::latest()->get();
         return view('websiteV2.product.all_product',compact('nav','product','pdcate','allpd'));
     }
+
+
+
 }
