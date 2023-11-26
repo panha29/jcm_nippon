@@ -90,14 +90,7 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
     });
 
 });
-Route::get('/contact-us',[AdminLoginController::class,'contact_us']);
-Route::get('/about-us',[AdminLoginController::class,'about_us']);
-Route::get('/painting-services',[AdminLoginController::class,'painting_services']);
-Route::get('/professional-painting',[AdminLoginController::class,'professional_painting']);
-Route::get('/project-reference',[AdminLoginController::class,'project_reference']);
-Route::get('/location',[AdminLoginController::class,'location']);
-Route::get('/Products/{category_tag}',[AdminLoginController::class,'category_tag']);
-Route::get('/home',[AdminLoginController::class,'web_dashboard']);
+
 // Route::get('/news',[AdminLoginController::class,'news']);
 
 
@@ -106,13 +99,31 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
 {
     // Route::redirect('/','/Dashboard');
     Route::get('/Dashboard',[UserLoginController::class,'user_website']);
+    Route::get('/Products/{category_tag}',[UserLoginController::class,'user_category_tagv2']);
+    Route::get('/Products',[UserLoginController::class,'user_all_product']);
+    Route::get('/Painting-Services',[UserLoginController::class,'user_servicev2']);
+    Route::get('/News',[UserLoginController::class,'user_newsv2']);
+    Route::get('/Career',[UserLoginController::class,'user_career']);
+    Route::get('/Project-Reference',[UserLoginController::class,'user_project_referencev2']);
+    Route::get('/Contact-Us',[UserLoginController::class,'user_contact_us']);
+    Route::get('/About-Us',[UserLoginController::class,'user_about_us']);
+    Route::get('/Color-Palette',[UserLoginController::class,'user_color_palette']);
+
 
 });
+Route::get('/Project-Reference',[AdminLoginController::class,'project_reference']);
+Route::get('/home',[AdminLoginController::class,'web_dashboard']);
+Route::get('/Products/{category_tag}',[AdminLoginController::class,'category_tag']);
+Route::get('/location',[AdminLoginController::class,'location']);
+Route::get('/Professional-Painting',[AdminLoginController::class,'professional_painting']);
+Route::get('/Painting-Services',[AdminLoginController::class,'painting_services']);
 
-
-Route::get('/Products/{category_tag}',[AdminLoginController::class,'category_tagv2']);
-Route::get('Products',[AdminLoginController::class,'all_product']);
-Route::get('Painting-Services',[AdminLoginController::class,'servicev2']);
-Route::get('News',[AdminLoginController::class,'newsv2']);
-Route::get('Career',[AdminLoginController::class,'career']);
-Route::get('Project-Reference',[AdminLoginController::class,'project_referencev2']);
+                                // New Website //
+// Route::get('/Products/{category_tag}',[AdminLoginController::class,'category_tagv2']);
+// Route::get('/Products',[AdminLoginController::class,'all_product']);
+// Route::get('/Painting-Services',[AdminLoginController::class,'servicev2']);
+// Route::get('/News',[AdminLoginController::class,'newsv2']);
+// Route::get('/Career',[AdminLoginController::class,'career']);
+// Route::get('/Project-Reference',[AdminLoginController::class,'project_referencev2']);
+// Route::get('/Contact-Us',[AdminLoginController::class,'contact_us']);
+// Route::get('/About-Us',[AdminLoginController::class,'about_us']);

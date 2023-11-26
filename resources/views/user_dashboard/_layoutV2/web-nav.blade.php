@@ -4,7 +4,7 @@
         <div class="container-fluid p-0">
             <div class="flex flex-wrap w-full justify-between">
                 <div class="navbar-brand-plain w-15percent py-30 flex">
-                    <a href="/" class="navbar-brand flex relative p-0 leading-1/4em">
+                    <a href="/User/Dashboard" class="navbar-brand flex relative p-0 leading-1/4em">
                         <span class="navbar-brand-inner post-rel">
                             <img class="logo-default" src="/webv2/images/logo.png" alt="Nippon Paint Cambodia">
                         </span>
@@ -14,13 +14,13 @@
                     <div class="navbar-collapse inline-flex lqd-submenu-cover p-0" id="main-header-collapse" aria-expanded="false" role="navigation">
                         <ul id="primary-nav" class="main-nav flex justify-center reset-ul inline-ul lqd-menu-counter-right lqd-menu-items-inline main-nav-hover-default lqd-submenu-toggle-hover" data-submenu-options='{"toggleType": "fade", "handler": "mouse-in-out"}' data-localscroll="true" data-localscroll-options='{"itemsSelector" : ">li > a", "trackWindowScroll": true, "includeParentAsOffset": true}'>
                             <li class="is-active">
-                                <a class="leading-1/4em text-blue-700" href="/">
+                                <a class="leading-1/4em text-blue-700" href="/User/Dashboard">
                                     Home
                                 </a>
                             </li>
 
                             <li class="menu-item-has-children">
-                                <a class="leading-1/4em text-blue-700" href="/Products">
+                                <a class="leading-1/4em text-blue-700" href="/User/Products">
                                     Products
                                     <span class="submenu-expander"></span>
                                     <span class="link-icon inline-flex hide-if-empty right-icon">
@@ -30,14 +30,14 @@
                                 <ul class="nav-item-children">
                                     @foreach ($nav as $item)
                                     <li>
-                                        <a href="/Products/{{$item->category_tag}}">{{$item->category_name}}</a>
+                                        <a href="/User/Products/{{$item->category_tag}}">{{$item->category_name}}</a>
                                     </li>
                                     @endforeach
                                 </ul>
                             </li>
 
                             <li class="menu-item-has-children">
-                                <a class="leading-1/4em text-blue-700" href="#case-studies">
+                                <a class="leading-1/4em text-blue-700">
                                     About Company
                                     <span class="submenu-expander"></span>
                                     <span class="link-icon inline-flex hide-if-empty right-icon">
@@ -46,33 +46,33 @@
                                 </a>
                                 <ul class="nav-item-children">
                                     <li>
-                                        <a href="/Project-Reference">Project Reference</a>
+                                        <a href="/User/Project-Reference">Project Reference</a>
                                     </li>
                                     <li>
-                                        <a href="/News">News & Media</a>
+                                        <a href="/User/News">News & Media</a>
                                     </li>
                                     <li>
-                                        <a href="/Career">Career</a>
+                                        <a href="/User/Career">Career</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a class="leading-1/4em text-blue-700" href="/Painting-Services">
+                                <a class="leading-1/4em text-blue-700" href="/User/Painting-Services">
                                     Painting Services
                                 </a>
                             </li>
                             <li>
-                                <a class="leading-1/4em text-blue-700" href="/About-Us">
+                                <a class="leading-1/4em text-blue-700" href="/User/About-Us">
                                     About Us
                                 </a>
                             </li>
                             <li>
-                                <a class="leading-1/4em text-blue-700" href="/Contact-Us">
+                                <a class="leading-1/4em text-blue-700" href="/User/Contact-Us">
                                     Contact Us
                                 </a>
                             </li>
                             <li>
-                                <a class="leading-1/4em text-blue-700" href="/login">
+                                <a class="leading-1/4em text-blue-700" href="/User/Color-Palette">
                                     Color Palette
                                 </a>
                             </li>
@@ -111,7 +111,7 @@
                     </span>
                 </span>
             </button>
-            <a class="navbar-brand flex relative leading-1/4em" href="/">
+            <a class="navbar-brand flex relative leading-1/4em" href="/User">
                 <span class="navbar-brand-inner">
                     <img class="logo-default" src="/webv2/images/logo.png" alt="Hub">
                 </span>
@@ -121,11 +121,11 @@
             <div class="mobile-navbar-collapse navbar-collapse collapse w-full" id="lqd-mobile-sec-nav" aria-expanded="false" role="navigation">
                 <ul id="mobile-primary-nav" class="reset-ul lqd-mobile-main-nav main-nav lqd-submenu-toggle-hover">
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7550 current_page_item menu-item-7601">
-                        <a href="/" class="leading-1/4em">Home</a>
+                        <a href="/User/Dashboard" class="leading-1/4em">Home</a>
                     </li>
                     <li class="menu-item-has-children">
 
-                        <a class="leading-1/4em" href="/Products">
+                        <a class="leading-1/4em" href="/User/Products">
                             Products
                             <span class="submenu-expander absolute"></span>
                             <span class="link-icon inline-flex hide-if-empty right-icon">
@@ -135,13 +135,13 @@
                         <ul class="nav-item-children">
                             @foreach ($nav as $item)
                             <li>
-                                <a href="/Products/{{$item->category_tag}}">{{$item->category_name}}</a>
+                                <a href="/User/Products/{{$item->category_tag}}">{{$item->category_name}}</a>
                             </li>
                             @endforeach
                         </ul>
                     </li>
                     <li class="menu-item-has-children">
-                        <a href="/Painting-Services" class="leading-1/4em">
+                        <a href="/User/Painting-Services" class="leading-1/4em">
                             Painting Service
                             <span class="submenu-expander absolute"></span>
                             <span class="link-icon inline-flex hide-if-empty right-icon">
@@ -150,7 +150,7 @@
                         </a>
                     </li>
                     <li class="menu-item-has-children">
-                        <a class="leading-1/4em " href="#">
+                        <a class="leading-1/4em ">
                             About Company
                             <span class="submenu-expander absolute"></span>
                             <span class="link-icon inline-flex hide-if-empty right-icon">
@@ -159,28 +159,28 @@
                         </a>
                         <ul class="nav-item-children">
                             <li>
-                                <a href="/Project-Reference">Project Reference</a>
+                                <a href="/User/Project-Reference">Project Reference</a>
                             </li>
                             <li>
-                                <a href="/News">News & Media</a>
+                                <a href="/User/News">News & Media</a>
                             </li>
                             <li>
-                                <a href="/Career">Career</a>
+                                <a href="/User/Career">Career</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a class="leading-1/4em" href="/Painting-Services">
+                        <a class="leading-1/4em" href="/User/Painting-Services">
                             Painting Services
                         </a>
                     </li>
                     <li>
-                        <a href="/Contact-Us" class="leading-1/4em">
+                        <a href="/User/Contact-Us" class="leading-1/4em">
                             Contact Us
                         </a>
                     </li>
                     <li>
-                        <a href="/login" class="leading-1/4em">
+                        <a href="/User/login" class="leading-1/4em">
                             Color Palette
                         </a>
                     </li>
