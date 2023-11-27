@@ -284,6 +284,12 @@
                 </a>
             </li>
             <li>
+                <a href="/Admin/ColorPalette/List">
+                    <i data-acorn-icon="user" class="icon" data-acorn-size="18"></i>
+                    <span class="label">Color Palette</span>
+                </a>
+            </li>
+            <li>
                 <a href="/Admin/Dealer/List">
                     <i data-acorn-icon="user" class="icon" data-acorn-size="18"></i>
                     <span class="label">Dealer</span>

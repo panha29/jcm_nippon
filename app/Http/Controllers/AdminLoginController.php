@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\CareerModel;
 use App\Models\CategoryModel;
+use App\Models\ColorPaletteModel;
 use App\Models\DealerModel;
 use App\Models\NewsModel;
 use App\Models\ProductModel;
@@ -224,6 +225,33 @@ class AdminLoginController extends Controller
         DealerModel::where('id',$id)->forceDelete();
         return redirect('/Admin/Dealer/List');
     }
+
+    public function colorpalette_save(Request $request){
+        $data = new ColorPaletteModel();
+        if($request->file('colorpalette_image')){
+            $file= $request->file('colorpalette_image');
+            $filename= $file->getClientOriginalName();
+            $file-> move(public_path('img/color_palette/company_color_palette'), $filename);
+            $data['colorpalette_image']= $filename;
+        }
+        $data -> colorpalette_category = $request -> colorpalette_category;
+        $data -> colorpalette_name = $request -> colorpalette_name;
+        $data -> colorpalette_rgb = $request -> colorpalette_rgb;
+        $data -> colorpalette_batch = $request -> colorpalette_batch;
+        $data -> save();
+        return redirect('/Admin/ColorPalette/List');
+    }
+
+    public function colorpalette_destroy($id){
+        ColorPaletteModel::where('id',$id)->forceDelete();
+        return redirect('/Admin/ColorPalette/List');
+    }
+
+    function colorpalett_index(){
+        $data = ColorPaletteModel::latest()->get();
+        return view('admin_dashboard.color_palette.index',compact('data'));
+    }
+
 
     function dealer_index(){
         $data = DealerModel::latest()->get();

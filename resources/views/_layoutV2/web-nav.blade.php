@@ -90,7 +90,7 @@
                         </h6>
                     </div>
                     <div class="module-btn px-0/5em">
-                        <a href="" class="btn btn-solid btn-md uppercase text-13 font-bold  leading-1/4em bg-white rounded-100 shadow-md text-blue-700 hover:text-white" data-lity="#contact-modal">
+                        <a href="/login" class="btn btn-solid btn-md uppercase text-13 font-bold  leading-1/4em bg-white rounded-100 shadow-md text-blue-700 hover:text-white">
                             Login
                         </a>
                     </div>

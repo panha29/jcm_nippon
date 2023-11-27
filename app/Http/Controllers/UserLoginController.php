@@ -4,10 +4,13 @@ namespace App\Http\Controllers;
 use App\Models\CategoryModel;
 use App\Models\ProductModel;
 use App\Models\CareerModel;
+use App\Models\ColorPaletteModel;
 use App\Models\ProjectReferenceModel;
 use App\Models\NewsModel;
 use App\Models\MediaModel;
+use Colorpalette;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class UserLoginController extends Controller
 {
@@ -66,6 +69,14 @@ class UserLoginController extends Controller
 
     function user_color_palette(){
         $nav = CategoryModel::all();
-        return view('user_dashboard.websiteV2.color_palette.color_palette',compact('nav'));
+        $color = ColorPaletteModel::get();
+        // $color = DB::table('colorpalette')->select('colorpalette_category')->groupBy('colorpalette_category')->get();
+        return view('user_dashboard.websiteV2.color_palette.color_palette',compact('nav','color'));
     }
+    function user_contact_us(){
+        $nav = CategoryModel::all();
+        $product = ProductModel::all();
+        return view('user_dashboard.websiteV2.contact.contact_us',compact('nav','product'));
+    }
+
 }

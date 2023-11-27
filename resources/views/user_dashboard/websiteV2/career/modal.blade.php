@@ -7,7 +7,7 @@
             <div class="modal-header">
               <h3 class="modal-title" id="exampleModalLabel">{{$item->career_title}}</h3>
             </div>
-            <div class="modal-body">`
+            <div class="modal-body">
                 <?php if ($item->career_title == "Senior Training & Talent Development Specialist") { ?>
                     <div class="container">
                         <h5>Duties & Responsibilities</h5>
