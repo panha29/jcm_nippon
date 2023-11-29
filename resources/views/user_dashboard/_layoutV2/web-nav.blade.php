@@ -190,7 +190,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/User/login" class="leading-1/4em">
+                        <a href="/User/Color-Palette" class="leading-1/4em">
                             Color Palette
                         </a>
                     </li>

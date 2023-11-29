@@ -9,7 +9,27 @@
 @section('css')
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/base.css">
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/digital-hub.css">
-
+<style>
+@media screen and (max-width: 420px){
+    .color-view{
+        display: inline-flex;
+        height: 250px;
+        width: 170px !important;
+    }
+}
+@media screen and (max-width: 1920px){
+    .color-view{
+        display: inline-flex;
+        height: 250px;
+        width: 180px;
+    }
+}
+.color-view{
+        display: inline-flex;
+        height: 250px;
+        width: 180px;
+    }
+</style>
 @endsection
 
 @section('js_vendor')
@@ -149,10 +169,22 @@
                                         </a>
                                     </li>
                                     <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
-                                        <a href="#lqd-tab-events-item-3" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
+                                        <a href="#lqd-tab-events-item-Yellow" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
                                             <span class="iconbox items-center justify-center">
                                                 <span class="flex flex-col">
-                                                    <span class="iconbox-title h3 my-0">Day 3</span>
+                                                    <span class="iconbox-title h3 my-0">Yellow</span>
+                                                </span>
+                                            </span>
+                                            <span class="lqd-tabs-nav-progress">
+                                                <span class="lqd-tabs-nav-progress-inner"></span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
+                                        <a href="#lqd-tab-events-item-Orange" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
+                                            <span class="iconbox items-center justify-center">
+                                                <span class="flex flex-col">
+                                                    <span class="iconbox-title h3 my-0">Orange</span>
                                                 </span>
                                             </span>
                                             <span class="lqd-tabs-nav-progress">
@@ -167,10 +199,17 @@
                                     <div class="container p-0 module-container">
                                         @foreach ($color as $item)
                                             <?php if ($item->colorpalette_category == "Green") { ?>
-                                                <div id="lqd-tab-events-item-Green" role="tabpanel" class="lqd-tabs-pane fade " style="display:inline; height: 500px; background-color:white">
-                                                    <div class="container" style="display:inline; height: 500px; background-color:white">
-                                                        <img width="150" height="150" src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
-                                                        <h5>{{$item->colorpalette_name}}</h5>
+                                                <div id="lqd-tab-events-item-Green" role="tabpanel" class="lqd-tabs-pane fade color-view" >
+                                                    <div class="container " >
+                                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
+                                                        <span class="iconbox items-center justify-center mt-10">
+                                                            <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
+                                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="flex flex-col"  style="text-align: center">
+                                                            <span class="">{{$item->colorpalette_rgb}}</span>
+                                                        </span>
                                                     </div>
                                                 </div>
                                             <?php } ?>
@@ -180,75 +219,61 @@
                                 <div id="lqd-tab-events-item-Red" role="tabpanel" class="lqd-tabs-pane fade">
                                     @foreach ($color as $item)
                                         <?php if ($item->colorpalette_category == "Red") { ?>
-                                            <div id="lqd-tab-events-item-Red" role="tabpanel" class="lqd-tabs-pane fade " style="display:inline">
-                                                <div class="container" style="display:inline">
-                                                    <img width="150" height="150" src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
+                                            <div id="lqd-tab-events-item-Red" role="tabpanel" class="lqd-tabs-pane fade color-view" >
+                                                <div class="container " >
+                                                    <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
+                                                    <span class="iconbox items-center justify-center mt-10">
+                                                        <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
+                                                            <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="flex flex-col"  style="text-align: center">
+                                                        <span class="">{{$item->colorpalette_rgb}}</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         <?php } ?>
                                     @endforeach
                                 </div>
-                                <div id="lqd-tab-events-item-3" role="tabpanel" class="lqd-tabs-pane fade">
-                                    <div class="container p-0 module-container">
-                                        <div class="w-full relative flex flex-wrap bg-white rounded-100 shadow-md transition-all px-25 mb-25 sm:rounded-10 sm:p-0">
-                                            <div class="w-15percent flex flex-col items-center justify-center border-right border-black-10 py-25 px-15 sm:w-full sm:items-center sm:border-right-0 sm:border-bottom">
-                                                <p class="ld-fh-element relative m-0 text-26 font-bold leading-1em text-primary"> 18:00</p>
-                                                <p class="ld-fh-element relative m-0 text-14 text-primary"> Orlando</p>
+                                <div id="lqd-tab-events-item-Yellow" role="tabpanel" class="lqd-tabs-pane fade">
+                                    @foreach ($color as $item)
+                                        <?php if ($item->colorpalette_category == "Yellow") { ?>
+                                            <div id="lqd-tab-events-item-Yellow" role="tabpanel" class="lqd-tabs-pane fade color-view" >
+                                                <div class="container " >
+                                                    <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
+                                                    <span class="iconbox items-center justify-center mt-10">
+                                                        <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
+                                                            <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="flex flex-col"  style="text-align: center">
+                                                        <span class="">{{$item->colorpalette_rgb}}</span>
+                                                    </span>
+                                                </div>
                                             </div>
-                                            <div class="w-35percent flex flex-col justify-center border-right border-black-10 py-25 pr-15 pl-30 md:w-30percent sm:w-full sm:items-center sm:border-right-0 sm:border-bottom">
-                                                <p class="ld-fh-element relative m-0 text-14 text-primary"> Conference / Event </p>
-                                                <p class="ld-fh-element relative m-0 text-17 font-bold text-primary"> Webinar for Developers</p>
-                                            </div>
-                                            <div class="w-30percent flex flex-col justify-center py-25 pr-15 pl-30 sm:w-full sm:items-center">
-                                                <p class="ld-fh-element relative m-0 text-14 text-primary"> Speakers</p>
-                                                <p class="ld-fh-element relative m-0 text-17 font-bold text-primary"> Mary Jane, Terry Jack</p>
-                                            </div>
-                                            <div class="w-20percent flex flex-col items-center justify-center py-25 md:w-25percent sm:w-full">
-                                                <a href="#contact-modal" class="button btn btn-solid btn-md btn-hover-txt-switch-change btn-hover-txt-switch btn-hover-txt-switch-y btn-md btn-has-label bg-slate-700 rounded-100 text-13 uppercase leading-1/3em tracking-1 text-white font-bold hover:bg-secondary hover:text-primary" data-lity="#contact-modal">
-                                                    <span class="btn-txt" data-text="20 seats left" data-split-text="true" data-split-options='{ "type": "chars, words" }'>Get a ticket</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="w-full relative flex flex-wrap bg-white rounded-100 shadow-md transition-all px-25 mb-25 sm:rounded-10 sm:p-0">
-                                            <div class="w-15percent flex flex-col items-center justify-center border-right border-black-10 py-25 px-15 sm:w-full sm:items-center sm:border-right-0 sm:border-bottom">
-                                                <p class="ld-fh-element relative m-0 text-26 font-bold leading-1em text-primary"> 19:00</p>
-                                                <p class="ld-fh-element relative m-0 text-14 text-primary"> Orlando</p>
-                                            </div>
-                                            <div class="w-35percent flex flex-col justify-center border-right border-black-10 py-25 pr-15 pl-30 md:w-30percent sm:w-full sm:items-center sm:border-right-0 sm:border-bottom">
-                                                <p class="ld-fh-element relative m-0 text-14 text-primary"> Conference / Event </p>
-                                                <p class="ld-fh-element relative m-0 text-17 font-bold text-primary"> Optimize your online learning</p>
-                                            </div>
-                                            <div class="w-30percent flex flex-col justify-center py-25 pr-15 pl-30 sm:w-full sm:items-center">
-                                                <p class="ld-fh-element relative m-0 text-14 text-primary"> Speakers</p>
-                                                <p class="ld-fh-element relative m-0 text-17 font-bold text-primary"> Mary Jane, Terry Jack</p>
-                                            </div>
-                                            <div class="w-20percent flex flex-col items-center justify-center py-25 md:w-25percent sm:w-full">
-                                                <a href="#contact-modal" class="button btn btn-solid btn-md btn-hover-txt-switch-change btn-hover-txt-switch btn-hover-txt-switch-y btn-md btn-has-label bg-slate-700 rounded-100 text-13 uppercase leading-1/3em tracking-1 text-white font-bold hover:bg-secondary hover:text-primary" data-lity="#contact-modal">
-                                                    <span class="btn-txt" data-text="20 seats left" data-split-text="true" data-split-options='{ "type": "chars, words" }'>Get a ticket</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="w-full relative flex flex-wrap bg-white rounded-100 shadow-md transition-all px-25 mb-25 sm:rounded-10 sm:p-0">
-                                            <div class="w-15percent flex flex-col items-center justify-center border-right border-black-10 py-25 px-15 sm:w-full sm:items-center sm:border-right-0 sm:border-bottom">
-                                                <p class="ld-fh-element relative m-0 text-26 font-bold leading-1em text-primary"> 20:30</p>
-                                                <p class="ld-fh-element relative m-0 text-14 text-primary"> Orlando</p>
-                                            </div>
-                                            <div class="w-35percent flex flex-col justify-center border-right border-black-10 py-25 pr-15 pl-30 md:w-30percent sm:w-full sm:items-center sm:border-right-0 sm:border-bottom">
-                                                <p class="ld-fh-element relative m-0 text-14 text-primary"> Conference / Event </p>
-                                                <p class="ld-fh-element relative m-0 text-17 font-bold text-primary"> Networking and Data Science</p>
-                                            </div>
-                                            <div class="w-30percent flex flex-col justify-center py-25 pr-15 pl-30 sm:w-full sm:items-center">
-                                                <p class="ld-fh-element relative m-0 text-14 text-primary"> Speakers</p>
-                                                <p class="ld-fh-element relative m-0 text-17 font-bold text-primary"> Mary Jane, Terry Jack</p>
-                                            </div>
-                                            <div class="w-20percent flex flex-col items-center justify-center py-25 md:w-25percent sm:w-full">
-                                                <a href="#contact-modal" class="button btn btn-solid btn-md btn-hover-txt-switch-change btn-hover-txt-switch btn-hover-txt-switch-y btn-md btn-has-label bg-slate-700 rounded-100 text-13 uppercase leading-1/3em tracking-1 text-white font-bold hover:bg-secondary hover:text-primary" data-lity="#contact-modal">
-                                                    <span class="btn-txt" data-text="20 seats left" data-split-text="true" data-split-options='{ "type": "chars, words" }'>Get a ticket</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        <?php } ?>
+                                    @endforeach
                                 </div>
+                                <div id="lqd-tab-events-item-Orange" role="tabpanel" class="lqd-tabs-pane fade">
+                                    @foreach ($color as $item)
+                                        <?php if ($item->colorpalette_category == "Orange") { ?>
+                                            <div id="lqd-tab-events-item-Orange" role="tabpanel" class="lqd-tabs-pane fade color-view" >
+                                                <div class="container " >
+                                                    <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
+                                                    <span class="iconbox items-center justify-center mt-10">
+                                                        <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
+                                                            <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="flex flex-col"  style="text-align: center">
+                                                        <span class="">{{$item->colorpalette_rgb}}</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        <?php } ?>
+                                    @endforeach
+                                </div>
+
                             </div>
                         </div>
                     </div>

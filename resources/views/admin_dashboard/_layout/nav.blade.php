@@ -302,6 +302,13 @@
                 </a>
             </li>
 
+            <li>
+                <a href="/Admin/Map/List">
+                    <i data-acorn-icon="user" class="icon" data-acorn-size="18"></i>
+                    <span class="label">Map</span>
+                </a>
+            </li>
+
         </ul>
     </div>
     <!-- Menu End -->
