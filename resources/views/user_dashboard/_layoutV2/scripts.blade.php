@@ -20,6 +20,6 @@
 <script src="/webv2/js/liquid-gdpr.min.js"></script>
 <script src="/webv2/js/liquid-ajax-contact-form.min.js"></script>
 
-
+<script src="/webv2/js/icons/icon-box.js"></script>
 
 @yield('js_vendor')

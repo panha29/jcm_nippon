@@ -192,6 +192,78 @@
                                             </span>
                                         </a>
                                     </li>
+                                    <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
+                                        <a href="#lqd-tab-events-item-Blue" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
+                                            <span class="iconbox items-center justify-center">
+                                                <span class="flex flex-col">
+                                                    <span class="iconbox-title h3 my-0">Blue</span>
+                                                </span>
+                                            </span>
+                                            <span class="lqd-tabs-nav-progress">
+                                                <span class="lqd-tabs-nav-progress-inner"></span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
+                                        <a href="#lqd-tab-events-item-Purple" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
+                                            <span class="iconbox items-center justify-center">
+                                                <span class="flex flex-col">
+                                                    <span class="iconbox-title h3 my-0">Purple</span>
+                                                </span>
+                                            </span>
+                                            <span class="lqd-tabs-nav-progress">
+                                                <span class="lqd-tabs-nav-progress-inner"></span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
+                                        <a href="#lqd-tab-events-item-Grey" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
+                                            <span class="iconbox items-center justify-center">
+                                                <span class="flex flex-col">
+                                                    <span class="iconbox-title h3 my-0">Grey</span>
+                                                </span>
+                                            </span>
+                                            <span class="lqd-tabs-nav-progress">
+                                                <span class="lqd-tabs-nav-progress-inner"></span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
+                                        <a href="#lqd-tab-events-item-Neutral" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
+                                            <span class="iconbox items-center justify-center">
+                                                <span class="flex flex-col">
+                                                    <span class="iconbox-title h3 my-0">Neutral</span>
+                                                </span>
+                                            </span>
+                                            <span class="lqd-tabs-nav-progress">
+                                                <span class="lqd-tabs-nav-progress-inner"></span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
+                                        <a href="#lqd-tab-events-item-Green-Blue" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
+                                            <span class="iconbox items-center justify-center">
+                                                <span class="flex flex-col">
+                                                    <span class="iconbox-title h3 my-0">Green Blue</span>
+                                                </span>
+                                            </span>
+                                            <span class="lqd-tabs-nav-progress">
+                                                <span class="lqd-tabs-nav-progress-inner"></span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
+                                        <a href="#lqd-tab-events-item-Off-White" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
+                                            <span class="iconbox items-center justify-center">
+                                                <span class="flex flex-col">
+                                                    <span class="iconbox-title h3 my-0">Off White</span>
+                                                </span>
+                                            </span>
+                                            <span class="lqd-tabs-nav-progress">
+                                                <span class="lqd-tabs-nav-progress-inner"></span>
+                                            </span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </nav>
                             <div class="lqd-tabs-content mb-2rem pt-15">
@@ -273,7 +345,120 @@
                                         <?php } ?>
                                     @endforeach
                                 </div>
-
+                                <div id="lqd-tab-events-item-Blue" role="tabpanel" class="lqd-tabs-pane fade">
+                                    @foreach ($color as $item)
+                                        <?php if ($item->colorpalette_category == "Blue") { ?>
+                                            <div id="lqd-tab-events-item-Blue" role="tabpanel" class="lqd-tabs-pane fade color-view" >
+                                                <div class="container " >
+                                                    <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
+                                                    <span class="iconbox items-center justify-center mt-10">
+                                                        <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
+                                                            <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="flex flex-col"  style="text-align: center">
+                                                        <span class="">{{$item->colorpalette_rgb}}</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        <?php } ?>
+                                    @endforeach
+                                </div>
+                                <div id="lqd-tab-events-item-Purple" role="tabpanel" class="lqd-tabs-pane fade">
+                                    @foreach ($color as $item)
+                                        <?php if ($item->colorpalette_category == "Purple") { ?>
+                                            <div id="lqd-tab-events-item-Purple" role="tabpanel" class="lqd-tabs-pane fade color-view" >
+                                                <div class="container " >
+                                                    <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
+                                                    <span class="iconbox items-center justify-center mt-10">
+                                                        <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
+                                                            <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="flex flex-col"  style="text-align: center">
+                                                        <span class="">{{$item->colorpalette_rgb}}</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        <?php } ?>
+                                    @endforeach
+                                </div>
+                                <div id="lqd-tab-events-item-Grey" role="tabpanel" class="lqd-tabs-pane fade">
+                                    @foreach ($color as $item)
+                                        <?php if ($item->colorpalette_category == "Grey") { ?>
+                                            <div id="lqd-tab-events-item-Grey" role="tabpanel" class="lqd-tabs-pane fade color-view" >
+                                                <div class="container " >
+                                                    <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
+                                                    <span class="iconbox items-center justify-center mt-10">
+                                                        <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
+                                                            <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="flex flex-col"  style="text-align: center">
+                                                        <span class="">{{$item->colorpalette_rgb}}</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        <?php } ?>
+                                    @endforeach
+                                </div>
+                                <div id="lqd-tab-events-item-Offwhite" role="tabpanel" class="lqd-tabs-pane fade">
+                                    @foreach ($color as $item)
+                                        <?php if ($item->colorpalette_category == "Offwhite") { ?>
+                                            <div id="lqd-tab-events-item-Offwhite" role="tabpanel" class="lqd-tabs-pane fade color-view" >
+                                                <div class="container " >
+                                                    <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
+                                                    <span class="iconbox items-center justify-center mt-10">
+                                                        <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
+                                                            <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="flex flex-col"  style="text-align: center">
+                                                        <span class="">{{$item->colorpalette_rgb}}</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        <?php } ?>
+                                    @endforeach
+                                </div>
+                                <div id="lqd-tab-events-item-Green-Blue" role="tabpanel" class="lqd-tabs-pane fade">
+                                    @foreach ($color as $item)
+                                        <?php if ($item->colorpalette_category == "GreenBlue") { ?>
+                                            <div id="lqd-tab-events-item-Green-Blue" role="tabpanel" class="lqd-tabs-pane fade color-view" >
+                                                <div class="container " >
+                                                    <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
+                                                    <span class="iconbox items-center justify-center mt-10">
+                                                        <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
+                                                            <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="flex flex-col"  style="text-align: center">
+                                                        <span class="">{{$item->colorpalette_rgb}}</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        <?php } ?>
+                                    @endforeach
+                                </div>
+                                <div id="lqd-tab-events-item-Orange" role="tabpanel" class="lqd-tabs-pane fade">
+                                    @foreach ($color as $item)
+                                        <?php if ($item->colorpalette_category == "Orange") { ?>
+                                            <div id="lqd-tab-events-item-Orange" role="tabpanel" class="lqd-tabs-pane fade color-view" >
+                                                <div class="container " >
+                                                    <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
+                                                    <span class="iconbox items-center justify-center mt-10">
+                                                        <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
+                                                            <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="flex flex-col"  style="text-align: center">
+                                                        <span class="">{{$item->colorpalette_rgb}}</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        <?php } ?>
+                                    @endforeach
+                                </div>
                             </div>
                         </div>
                     </div>
