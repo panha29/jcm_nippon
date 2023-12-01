@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminLoginController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\CustomerDetailController;
+use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\RedeemRewardController;
 use App\Http\Controllers\UserLoginController;
 use App\Models\CustomerModel;
@@ -33,7 +34,12 @@ use Illuminate\Support\Facades\Auth;
 Auth::routes([
     'verify' => true
 ]);
-
+Route::group(['middleware' => ['auth']], function() {
+    /**
+    * Logout Route
+    */
+    Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');
+ });
 
 Route::get('/Color%Scheme', [App\Http\Controllers\HomeController::class, 'index'])->name('Color%Scheme');
 // Route::redirect('Color%Scheme', '/login');
@@ -119,14 +125,14 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
 
 });
 Route::get('/Project-Reference',[AdminLoginController::class,'project_reference']);
-Route::get('/home',[AdminLoginController::class,'web_dashboard']);
+// Route::get('/home',[AdminLoginController::class,'web_dashboard']);
 Route::get('/Products/{category_tag}',[AdminLoginController::class,'category_tag']);
 Route::get('/location',[AdminLoginController::class,'location']);
 Route::get('/Professional-Painting',[AdminLoginController::class,'professional_painting']);
 Route::get('/Painting-Services',[AdminLoginController::class,'painting_services']);
 
                                 // New Website //
-Route::get('/',[AdminLoginController::class,'webv2']);
+Route::get('/Home',[AdminLoginController::class,'webv2']);
 Route::get('/Products/{category_tag}',[AdminLoginController::class,'category_tagv2']);
 Route::get('/Products',[AdminLoginController::class,'all_product']);
 Route::get('/Painting-Services',[AdminLoginController::class,'servicev2']);

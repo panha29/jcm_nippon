@@ -11,7 +11,7 @@
         <div class="container-fluid p-0">
             <div class="flex flex-wrap w-full justify-between">
                 <div class="navbar-brand-plain w-15percent py-30 flex">
-                    <a href="/" class="navbar-brand flex relative p-0 leading-1/4em">
+                    <a href="/Home" class="navbar-brand flex relative p-0 leading-1/4em">
                         <span class="navbar-brand-inner post-rel">
                             <img class="logo-default" src="/webv2/images/logo.png" alt="Nippon Paint Cambodia">
                         </span>
@@ -21,7 +21,7 @@
                     <div class="navbar-collapse inline-flex lqd-submenu-cover p-0" id="main-header-collapse" aria-expanded="false" role="navigation">
                         <ul id="primary-nav" class="main-nav flex justify-center reset-ul inline-ul lqd-menu-counter-right lqd-menu-items-inline main-nav-hover-default lqd-submenu-toggle-hover" data-submenu-options='{"toggleType": "fade", "handler": "mouse-in-out"}' data-localscroll="true" data-localscroll-options='{"itemsSelector" : ">li > a", "trackWindowScroll": true, "includeParentAsOffset": true}'>
                             <li class="is-active">
-                                <a class="leading-1/4em text-blue-700" href="/">
+                                <a class="leading-1/4em text-blue-700" href="/Home">
                                     Home
                                 </a>
                             </li>
@@ -119,7 +119,7 @@
                     </span>
                 </span>
             </button>
-            <a class="navbar-brand flex relative leading-1/4em" href="/">
+            <a class="navbar-brand flex relative leading-1/4em" href="/Home">
                 <span class="navbar-brand-inner">
                     <img class="logo-default" src="/webv2/images/logo.png" alt="Hub">
                 </span>
@@ -129,7 +129,7 @@
             <div class="mobile-navbar-collapse navbar-collapse collapse w-full" id="lqd-mobile-sec-nav" aria-expanded="false" role="navigation">
                 <ul id="mobile-primary-nav" class="reset-ul lqd-mobile-main-nav main-nav lqd-submenu-toggle-hover">
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7550 current_page_item menu-item-7601">
-                        <a href="/" class="leading-1/4em">Home</a>
+                        <a href="/Home" class="leading-1/4em">Home</a>
                     </li>
                     <li class="menu-item-has-children">
 

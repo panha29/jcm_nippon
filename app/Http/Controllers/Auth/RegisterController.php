@@ -9,6 +9,8 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
+
+
 class RegisterController extends Controller
 {
     /*
@@ -49,12 +51,24 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
+
+
+        // return Validator::make($data, [
+        //     'name' => ['required', 'string', 'max:255'],
+        //     'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+        //     'password' => ['required', 'string', 'min:5', 'confirmed'],
+        //     'password_confirmation' => ['required', 'string', 'min:5'],
+
+        // ]);
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:5', 'confirmed'],
-            'password_confirmation' => ['required', 'string', 'min:5'],
-        ]);
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:6|confirmed',
+        ], [
+            'email.required' => 'The email is required.',
+            'email.email' => 'The email needs to have a valid format.',
+            'email.exists' => 'The email has been registered in the system.',
+       ]);
     }
 
     /**

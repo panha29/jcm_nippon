@@ -82,10 +82,10 @@
                 <div class="w-25percent flex items-center justify-end lg:hidden">
                     <div class="widget-text-editor mr-15">
                         <h6 class="whitespace-nowrap mt-1em text-end">
-                            <span class="text-12 opacity-70 text-blue-700 leading-1/15em tracking-0">More Information</span>
+                            <span class="text-12 opacity-70 text-blue-700 leading-1/15em tracking-0">Welcome!</span>
                             <br>
                             <strong>
-                                <span class="text-15 text-orange-500 leading-1/15em tracking-1">+855 11 822 266 / 11 907 902</span>
+                                <span class="text-15 text-orange-500 leading-1/15em tracking-1">{{Auth::user()->name}}</span>
                             </strong>
                         </h6>
                     </div>
@@ -94,7 +94,7 @@
                             Login
                         </a> --}}
 
-                        <a class="btn btn-solid btn-md uppercase text-13 font-bold  leading-1/4em bg-white rounded-100 shadow-md text-blue-700 hover:text-white" href="{{ route('logout') }}"
+                        {{-- <a class="btn btn-solid btn-md uppercase text-13 font-bold  leading-1/4em bg-white rounded-100 shadow-md text-blue-700 hover:text-white" href="{{ route('logout') }}"
                         onclick="event.preventDefault();
                                  document.getElementById('logout-form').submit();">
                             {{ __('Logout') }}
@@ -102,7 +102,11 @@
 
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                             @csrf
-                        </form>
+                        </form> --}}
+
+                        <a class="btn btn-solid btn-md uppercase text-13 font-bold  leading-1/4em bg-white rounded-100 shadow-md text-blue-700 hover:text-white" href="/logout">
+                        Logout
+                        </a>
                     </div>
                 </div>
             </div>
