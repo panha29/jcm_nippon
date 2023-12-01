@@ -1,3 +1,10 @@
+<style>
+    @media and screen (max-width: 1280px){
+        .main-header .desktop-header{
+            display: none !important;
+        }
+    }
+</style>
 <div class="lqd-sticky-placeholder hidden"></div>
 <header id="site-header" class="main-header main-header-overlay" data-sticky-header="true" data-sticky-values-measured="false" data-sticky-options='{"disableOnMobile": true}'>
     <section class="lqd-section desktop-header md:hidden">
@@ -143,10 +150,10 @@
                     <li class="menu-item-has-children">
                         <a href="/Painting-Services" class="leading-1/4em">
                             Painting Service
-                            <span class="submenu-expander absolute"></span>
+                            {{-- <span class="submenu-expander absolute"></span>
                             <span class="link-icon inline-flex hide-if-empty right-icon">
                                 <i class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
-                            </span>
+                            </span> --}}
                         </a>
                     </li>
                     <li class="menu-item-has-children">
