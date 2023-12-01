@@ -144,7 +144,7 @@
                             <div class="lqd-fb-content-wrap lqd-overlay flex flex-col items-end transform-style-3d backface-hidden will-change-transform" data-stacking-factor="0.5">
                                 <div class="lqd-fb-img lqd-overlay flex rounded-4 overflow-hidden backface-hidden">
                                     <figure class="w-full h-full m-0">
-                                        <img class="w-full h-full objfit-cover objfit-center" src="/webv2/images/colorscheme.jpg" alt="House Scheme Services">
+                                        <img class="w-full h-full objfit-cover objfit-center" src="/webv2/images/colorscheme.jpg" alt="Color Scheme Services">
                                     </figure>
                                     <div class="lqd-fb-bg lqd-overlay flex"></div>
                                     <div class="lqd-fb-hover-overlay lqd-overlay flex bg-transparent" style="background-image: linear-gradient(180deg,  rgba(255,  255,  255,  0) 25%,  rgba(71,  214,  126,  0.8) 100%);"></div>
@@ -154,7 +154,7 @@
                                         <i aria-hidden="true" class="lqd-icn-ess icon-lqd-mobile"></i>
                                     </span>
                                     <h6 class="mt-0 mb-1/35em font-bold">Nippon Paint Cambodia</h6>
-                                    <h2 class="lqd-fb__title mt-0 text-26 font-bold">House Scheme Services</h2>
+                                    <h2 class="lqd-fb__title mt-0 text-26 font-bold">Color Scheme Services</h2>
                                 </div>
                             </div>
                         </div>

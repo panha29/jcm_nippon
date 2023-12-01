@@ -30,7 +30,9 @@ use Illuminate\Support\Facades\Auth;
 // Route::get('/',[AdminLoginController::class,'web_dashboard']);
 // Route::get('/products',[AdminLoginController::class,'webv2']);
 // Route::view('/','websiteV2.website_index');
-Auth::routes();
+Auth::routes([
+    'verify' => true
+]);
 
 
 Route::get('/Color%Scheme', [App\Http\Controllers\HomeController::class, 'index'])->name('Color%Scheme');

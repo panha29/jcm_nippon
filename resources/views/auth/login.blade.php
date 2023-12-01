@@ -56,7 +56,7 @@
                         <div class="mb-3 filled form-group tooltip-end-top">
                             <i data-acorn-icon="lock-off"></i>
                             <input class="form-control pe-7" type="password" placeholder="Password" @error('password') is-invalid @enderror" name="password"/>
-                            <a class="text-small position-absolute t-3 e-3" href="/Pages/Authentication/ForgotPassword">Forgot?</a>
+                            <a class="text-small position-absolute t-3 e-3" href="verify">Forgot?</a>
                         </div>
                         <button type="submit" class="btn btn-lg btn-primary" style="float: right">Login</button>
                     </form>

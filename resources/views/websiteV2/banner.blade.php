@@ -12,7 +12,7 @@
                     <h6 class="ld-fh-element inline-block relative mb-2em text-12 uppercase font-bold tracking-1/5 text-gray-900">Creative solutions for everyone</h6>
                 </div>
                 <div class="ld-fancy-heading relative">
-                    <h2 class="ld-fh-element inline-block relative text-rotator-activated mb-0/25em text-72 leading-1/05em tracking-0" data-text-rotator="true"> Nippon Paint<span class="txt-rotate-keywords">
+                    <h2 class="ld-fh-element inline-block relative text-rotator-activated mb-0/25em text-60 leading-1/05em tracking-0" data-text-rotator="true"> Nippon Paint<span class="txt-rotate-keywords">
                             <span class="txt-rotate-keyword lqd-keyword-slide-out"> We Build</span>
                             <span class="txt-rotate-keyword lqd-keyword-slide-out">We Do It</span>
                             <span class="txt-rotate-keyword lqd-keyword-slide-in active"> We Dream</span>
@@ -24,7 +24,7 @@
                 </div>
                 <div class="flex flex-row flex-wrap items-center justify-start">
                     <div class="fancy-button mr-15 module-btn sm:w-full">
-                        <a href="#contact-modal" class="btn btn-solid btn-xlg btn-icon-right btn-hover-reveal font-bold uppercase tracking-1/5 leading-1/4em whitespace-nowrap bg-transparent rounded-100 text-white" data-lity="#contact-modal">
+                        <a href="tel: +855 11 822 266" class="btn btn-solid btn-xlg btn-icon-right btn-hover-reveal font-bold uppercase tracking-1/5 leading-1/4em whitespace-nowrap bg-transparent rounded-100 text-white" data-lity="#contact-modal">
                             <span class="btn-txt" data-text="Get a Quote">Get a Quote</span>
                             <span class="btn-icon text-16">
                                 <i aria-hidden="true" class="lqd-icn-ess icon-md-arrow-round-forward-2"></i>
