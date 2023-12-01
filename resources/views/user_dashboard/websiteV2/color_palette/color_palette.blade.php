@@ -10,25 +10,7 @@
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/base.css">
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/digital-hub.css">
 <style>
-@media screen and (max-width: 420px){
-    .color-view{
-        display: inline-flex;
-        height: 250px;
-        width: 170px !important;
-    }
-}
-@media screen and (max-width: 1920px){
-    .color-view{
-        display: inline-flex;
-        height: 250px;
-        width: 180px;
-    }
-}
-.color-view{
-        display: inline-flex;
-        height: 250px;
-        width: 180px;
-    }
+
 </style>
 @endsection
 

@@ -11,49 +11,7 @@
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/digital-hub.css">
 
 <style>
-    @media screen and (max-width: 879px){
-        .category{
-            background-color: #e9e9e9 !important;
-            width: 350px;
-            height: 300px;
-            float: right;
-            border-radius: 25px;
-            padding: 15px;
-            line-height: 40px;
-            display: none;
-        }
-        .moblie-cate{
-            display: none;
-        }
 
-        .mobile-width{
-            width: 100% !important;
-        }
-    }
-
-    @media screen and (max-width: 1920px){
-        .category{
-            background-color: #e9e9e9 !important;
-            width: auto;
-            height: 300px;
-            float: right;
-            border-radius: 25px;
-            padding: 10px;
-            line-height: 40px;
-        }
-    }
-
-    @media screen and (max-width: 2560px){
-        .category{
-            background-color: #e9e9e9 !important;
-            width: auto;
-            height: 300px;
-            float: right;
-            border-radius: 25px;
-            padding: 10px;
-            line-height: 40px;
-        }
-    }
 </style>
 @endsection
 

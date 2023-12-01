@@ -9,7 +9,6 @@
 @section('css')
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/base.css">
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/digital-hub.css">
-
 @endsection
 
 @section('js_vendor')

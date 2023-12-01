@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/base.css">
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/digital-hub.css">
 
-<style>
+{{-- <style>
     @media screen and (max-width: 879px){
         .category{
             background-color: #e9e9e9 !important;
@@ -54,7 +54,7 @@
             line-height: 40px;
         }
     }
-</style>
+</style> --}}
 @endsection
 
 @section('js_vendor')
