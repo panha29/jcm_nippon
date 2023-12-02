@@ -141,3 +141,5 @@ Route::get('/Career',[AdminLoginController::class,'career']);
 Route::get('/Project-Reference',[AdminLoginController::class,'project_referencev2']);
 Route::get('/Contact-Us',[AdminLoginController::class,'contact_us']);
 Route::get('/About-Us',[AdminLoginController::class,'about_us']);
+Route::redirect('/', '/Home', 301);
+Route::view('/Verify','websiteV2.verify');
