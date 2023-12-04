@@ -51,7 +51,7 @@
         }
         .new-logo1{
             width: 45px !important;
-            margin-left: 143px !important;
+            margin-left: 150px !important;
 
         }
     }

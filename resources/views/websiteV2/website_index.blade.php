@@ -264,7 +264,7 @@
                             </p>
                         </div>
                         <div class="ld-fancy-heading relative">
-                            <p class="ld-fh-element inline-block relative mb-0/5em text-12 uppercase font-bold tracking-1 text-blue-700">Hub it Employees</p>
+                            <p class="ld-fh-element inline-block relative mb-0/5em text-12 uppercase font-bold tracking-1 text-blue-700">Project Completed</p>
                         </div>
                     </div>
                 </div>

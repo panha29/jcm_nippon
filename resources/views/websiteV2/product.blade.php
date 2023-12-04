@@ -13,8 +13,8 @@
             </div>
             <div class="col col-12 col-md-6 p-0 text-end sm:text-start">
                 <div class="fancy-button animation-element">
-                    <a href="#contact-modal" class="btn btn-naked font-bold uppercase whitespace-nowrap tracking-1/5 leading-1/4em text-green-900" data-lity="#contact-modal">
-                        <span class="btn-txt" data-text="see more works">see more works</span>
+                    <a href="/Products" class="btn btn-naked font-bold uppercase whitespace-nowrap tracking-1/5 leading-1/4em text-green-900">
+                        <span class="btn-txt" data-text="see more works">see more products</span>
                     </a>
                 </div>
             </div>

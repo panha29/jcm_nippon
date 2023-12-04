@@ -254,7 +254,7 @@
                                         @foreach ($color as $item)
                                             <?php if ($item->colorpalette_category == "Green") { ?>
                                                 <div id="lqd-tab-events-item-Green" role="tabpanel" class="lqd-tabs-pane fade color-view" >
-                                                    <div class="container " >
+                                                    <div class="" >
                                                         <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
                                                         <span class="iconbox items-center justify-center mt-10">
                                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
@@ -274,7 +274,7 @@
                                     @foreach ($color as $item)
                                         <?php if ($item->colorpalette_category == "Red") { ?>
                                             <div id="lqd-tab-events-item-Red" role="tabpanel" class="lqd-tabs-pane fade color-view" >
-                                                <div class="container " >
+                                                <div class="" >
                                                     <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
                                                     <span class="iconbox items-center justify-center mt-10">
                                                         <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
@@ -293,7 +293,7 @@
                                     @foreach ($color as $item)
                                         <?php if ($item->colorpalette_category == "Yellow") { ?>
                                             <div id="lqd-tab-events-item-Yellow" role="tabpanel" class="lqd-tabs-pane fade color-view" >
-                                                <div class="container " >
+                                                <div class="" >
                                                     <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
                                                     <span class="iconbox items-center justify-center mt-10">
                                                         <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
@@ -312,7 +312,7 @@
                                     @foreach ($color as $item)
                                         <?php if ($item->colorpalette_category == "Orange") { ?>
                                             <div id="lqd-tab-events-item-Orange" role="tabpanel" class="lqd-tabs-pane fade color-view" >
-                                                <div class="container " >
+                                                <div class="" >
                                                     <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
                                                     <span class="iconbox items-center justify-center mt-10">
                                                         <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
@@ -331,7 +331,7 @@
                                     @foreach ($color as $item)
                                         <?php if ($item->colorpalette_category == "Blue") { ?>
                                             <div id="lqd-tab-events-item-Blue" role="tabpanel" class="lqd-tabs-pane fade color-view" >
-                                                <div class="container " >
+                                                <div class="" >
                                                     <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
                                                     <span class="iconbox items-center justify-center mt-10">
                                                         <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
@@ -350,7 +350,7 @@
                                     @foreach ($color as $item)
                                         <?php if ($item->colorpalette_category == "Purple") { ?>
                                             <div id="lqd-tab-events-item-Purple" role="tabpanel" class="lqd-tabs-pane fade color-view" >
-                                                <div class="container " >
+                                                <div class="" >
                                                     <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
                                                     <span class="iconbox items-center justify-center mt-10">
                                                         <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
@@ -369,7 +369,7 @@
                                     @foreach ($color as $item)
                                         <?php if ($item->colorpalette_category == "Grey") { ?>
                                             <div id="lqd-tab-events-item-Grey" role="tabpanel" class="lqd-tabs-pane fade color-view" >
-                                                <div class="container " >
+                                                <div class="" >
                                                     <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
                                                     <span class="iconbox items-center justify-center mt-10">
                                                         <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
@@ -388,7 +388,7 @@
                                     @foreach ($color as $item)
                                         <?php if ($item->colorpalette_category == "Offwhite") { ?>
                                             <div id="lqd-tab-events-item-Offwhite" role="tabpanel" class="lqd-tabs-pane fade color-view" >
-                                                <div class="container " >
+                                                <div class="" >
                                                     <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
                                                     <span class="iconbox items-center justify-center mt-10">
                                                         <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
@@ -407,7 +407,7 @@
                                     @foreach ($color as $item)
                                         <?php if ($item->colorpalette_category == "GreenBlue") { ?>
                                             <div id="lqd-tab-events-item-Green-Blue" role="tabpanel" class="lqd-tabs-pane fade color-view" >
-                                                <div class="container " >
+                                                <div class="" >
                                                     <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
                                                     <span class="iconbox items-center justify-center mt-10">
                                                         <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
@@ -426,7 +426,7 @@
                                     @foreach ($color as $item)
                                         <?php if ($item->colorpalette_category == "Orange") { ?>
                                             <div id="lqd-tab-events-item-Orange" role="tabpanel" class="lqd-tabs-pane fade color-view" >
-                                                <div class="container " >
+                                                <div class="" >
                                                     <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
                                                     <span class="iconbox items-center justify-center mt-10">
                                                         <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
