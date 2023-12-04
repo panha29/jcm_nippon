@@ -38,7 +38,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <title>Acorn Admin Template | {{$title}}</title>
+    <title>JCM Nippon Paint Cambodia | {{$title}}</title>
     <meta name="description" content="{{$description}}"/>
     @include('admin_dashboard._layout.head')
 </head>
@@ -49,7 +49,7 @@
     <!-- Background End -->
 
     <div class="container-fluid p-0 h-100 position-relative">
-        <div class="row g-0 h-100">
+        <div class="row g-0">
             @yield('content')
         </div>
     </div>

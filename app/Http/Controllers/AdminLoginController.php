@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Models\CareerModel;
 use App\Models\CategoryModel;
 use App\Models\ColorPaletteModel;
@@ -10,9 +9,7 @@ use App\Models\NewsModel;
 use App\Models\ProductModel;
 use App\Models\ProjectReferenceModel;
 use App\Models\MediaModel;
-use CategoriesMigration;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\DB;
 
 class AdminLoginController extends Controller
@@ -423,7 +420,4 @@ class AdminLoginController extends Controller
         $allpd = ProductModel::latest()->get();
         return view('websiteV2.product.all_product',compact('nav','product','pdcate','allpd'));
     }
-
-
-
 }

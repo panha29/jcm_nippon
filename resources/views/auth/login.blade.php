@@ -24,15 +24,14 @@
     }
 </style>
 @section('content')
-    <form method="POST" action="{{ route('login') }}">
-        @csrf
+
         <div class="sw-lg-70 min-h-70 bg-foreground d-flex justify-content-center align-items-center shadow-deep py-5 full-page-content-right-border login-ui mobile-login-screen" >
             <div class="sw-lg-50 px-5">
                 <div class="sh-11">
                     {{-- <a href="/"> --}}
                         {{-- <div class="logo-default"></div> --}}
                         <h1 style="font-weight:600; text-align:center;">NIPPON PAINT CAMBODIA</h1>
-                        {{-- <img src="../img/logo/kesorpka_logo.png" alt="" style="" class="logo"> --}}
+                        {{-- <img src="../img/logo/npp.png" alt="" class="logo"> --}}
                     {{-- </a> --}}
                 </div>
                 <div class="mb-5">
@@ -48,14 +47,25 @@
                     </p>
                 </div>
                 <div>
-                    <form id="loginForm" class="tooltip-end-bottom" novalidate>
+                    <form method="POST" action="{{ route('login') }}">
+                        @csrf
                         <div class="mb-3 filled form-group tooltip-end-top">
                             <i data-acorn-icon="email"></i>
-                            <input class="form-control" placeholder="Email" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" autocomplete="off"/>
+                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                         <div class="mb-3 filled form-group tooltip-end-top">
                             <i data-acorn-icon="lock-off"></i>
-                            <input class="form-control pe-7" type="password" placeholder="Password" @error('password') is-invalid @enderror" name="password"/>
+                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             <a class="text-small position-absolute t-3 e-3" href="verify">Forgot?</a>
                         </div>
                         <button type="submit" class="btn btn-lg btn-primary" style="float: right">Login</button>
@@ -63,5 +73,4 @@
                 </div>
             </div>
         </div>
-    </form>
 @endsection

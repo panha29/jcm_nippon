@@ -1,50 +1,24 @@
 <?php
 
-use App\Http\Controllers\AdminLoginController;
-use App\Http\Controllers\CustomerController;
-use App\Http\Controllers\CustomerDetailController;
-use App\Http\Controllers\LogoutController;
-use App\Http\Controllers\RedeemRewardController;
-use App\Http\Controllers\UserLoginController;
-use App\Models\CustomerModel;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\AdminLoginController;
+use App\Http\Controllers\UserLoginController;
+use App\Http\Controllers\LogoutController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-/*
-|--------------------------------------------------------------------------
-| Pages
-|--------------------------------------------------------------------------
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
 |
 */
 
-// Route::view('/','website.website_index');
-
-// Route::get('/',[AdminLoginController::class,'web_dashboard']);
-// Route::get('/products',[AdminLoginController::class,'webv2']);
-// Route::view('/','websiteV2.website_index');
-Auth::routes([
-    'verify' => true
-]);
-Route::group(['middleware' => ['auth']], function() {
-    /**
-    * Logout Route
-    */
-    Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');
- });
-
-Route::get('/Color%Scheme', [App\Http\Controllers\HomeController::class, 'index'])->name('Color%Scheme');
-// Route::redirect('Color%Scheme', '/login');
-
-
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
 {
@@ -101,37 +75,30 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
         Route::get('List',[AdminLoginController::class,'dealer_index']);
         Route::get('List/{id}/Delete',[AdminLoginController::class,'dealer_destroy']);
     });
+    Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');
+
 
 });
-
-// Route::get('/news',[AdminLoginController::class,'news']);
-
-
 
 Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
 {
-    // Route::redirect('/','/Dashboard');
-    Route::get('/Dashboard',[UserLoginController::class,'user_website']);
-    Route::get('/Products/{category_tag}',[UserLoginController::class,'user_category_tagv2']);
-    Route::get('/Products',[UserLoginController::class,'user_all_product']);
-    Route::get('/Painting-Services',[UserLoginController::class,'user_servicev2']);
-    Route::get('/News',[UserLoginController::class,'user_newsv2']);
-    Route::get('/Career',[UserLoginController::class,'user_career']);
-    Route::get('/Project-Reference',[UserLoginController::class,'user_project_referencev2']);
-    Route::get('/Contact-Us',[UserLoginController::class,'user_contact_us']);
-    Route::get('/About-Us',[UserLoginController::class,'user_about_us']);
-    Route::get('/Color-Palette',[UserLoginController::class,'user_color_palette']);
-
-
+ // Route::redirect('/','/Dashboard');
+ Route::get('/Dashboard',[UserLoginController::class,'user_website']);
+ Route::get('/Products/{category_tag}',[UserLoginController::class,'user_category_tagv2']);
+ Route::get('/Products',[UserLoginController::class,'user_all_product']);
+ Route::get('/Painting-Services',[UserLoginController::class,'user_servicev2']);
+ Route::get('/News',[UserLoginController::class,'user_newsv2']);
+ Route::get('/Career',[UserLoginController::class,'user_career']);
+ Route::get('/Project-Reference',[UserLoginController::class,'user_project_referencev2']);
+ Route::get('/Contact-Us',[UserLoginController::class,'user_contact_us']);
+ Route::get('/About-Us',[UserLoginController::class,'user_about_us']);
+ Route::get('/Color-Palette',[UserLoginController::class,'user_color_palette']);
+ Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');
 });
-Route::get('/Project-Reference',[AdminLoginController::class,'project_reference']);
-// Route::get('/home',[AdminLoginController::class,'web_dashboard']);
-Route::get('/Products/{category_tag}',[AdminLoginController::class,'category_tag']);
-Route::get('/location',[AdminLoginController::class,'location']);
-Route::get('/Professional-Painting',[AdminLoginController::class,'professional_painting']);
-Route::get('/Painting-Services',[AdminLoginController::class,'painting_services']);
 
-                                // New Website //
+Auth::routes();
+Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');
+
 Route::get('/Home',[AdminLoginController::class,'webv2']);
 Route::get('/Products/{category_tag}',[AdminLoginController::class,'category_tagv2']);
 Route::get('/Products',[AdminLoginController::class,'all_product']);

@@ -6,8 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
-use App\Models\User;
-use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -36,8 +34,8 @@ class LoginController extends Controller
             return redirect('Admin/Dashboard');
         }
         return redirect('User/Dashboard');
-
     }
+
 
     /**
      * Create a new controller instance.
