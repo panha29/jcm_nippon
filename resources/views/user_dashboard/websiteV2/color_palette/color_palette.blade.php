@@ -11,57 +11,8 @@
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/digital-hub.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
 <style>
-table td, table th {
-    border: none;
-    padding: 5px;
-}
-tbody, td, tfoot, th, thead, tr {
-    border-color: inherit;
-    border-style: none;
-    border-width: 0;
-}
 
-tbody{
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 1140px;
-}
-table tr {
-    border-bottom: 0px solid #dedede;
-}
-table tbody tr:nth-child(odd) {
-    background-color: transparent;
-}
-/*
-.icon-rtl {
-  padding-right: 25px !important;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAaxJREFUSEvV1E9oz3Ecx/HHj3aSPymJ21xdMFcHLeTC1BJKrVFLkWTIDptStPJ3q0WRlGgHNRdRcsBNw2o3FycHM0Uc7GDrrc+vvvu17+/71e+3g8/p+67v5/18v9+f9+tVscinssj55QHWoBdt2JSKeI+3uIavZQtbCHAYw1iZk+QbuvGkDKQWcAJD6eJjjOBlittxHB0pPoRHRZAsYAM+Ykkaz9WcywO4gF9oxVQ9SBYQ1R7DKA4UVPYMu9CPi2UBn7EuPepEAWAnnmMcW8sCZtCCpfhTAFiNafyoswx/U2RH9BPLsBzxXe+swHd8wdqyHUxiI7bhTQFge9quF9hRFnAJ5zGGfQWAmH+8Q2jmQVnAenxK73AGV3IuDuIsQtlb/kUH8W8X7mWEdhOvU7wXPdid4utJL3UXYiGr2I/bWJVTXWzOrdRFvNs5PM3rJM/sYjNOJ7PbjN94h1e4m8wujK+qgfCuk5itBTVi13tqDO8GTjUTELke4mAm6WX0ZSGNdBB5QvkB6cwkjREercaNAqp57uBICuZ10SxAWPx9fMA8m28WIFdv/z9gDtBmShkOcYCMAAAAAElFTkSuQmCC") no-repeat !important;
-  background-size: 20px !important;
-} */
 
-input[type=text]{
-  /* background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAaxJREFUSEvV1E9oz3Ecx/HHj3aSPymJ21xdMFcHLeTC1BJKrVFLkWTIDptStPJ3q0WRlGgHNRdRcsBNw2o3FycHM0Uc7GDrrc+vvvu17+/71e+3g8/p+67v5/18v9+f9+tVscinssj55QHWoBdt2JSKeI+3uIavZQtbCHAYw1iZk+QbuvGkDKQWcAJD6eJjjOBlittxHB0pPoRHRZAsYAM+Ykkaz9WcywO4gF9oxVQ9SBYQ1R7DKA4UVPYMu9CPi2UBn7EuPepEAWAnnmMcW8sCZtCCpfhTAFiNafyoswx/U2RH9BPLsBzxXe+swHd8wdqyHUxiI7bhTQFge9quF9hRFnAJ5zGGfQWAmH+8Q2jmQVnAenxK73AGV3IuDuIsQtlb/kUH8W8X7mWEdhOvU7wXPdid4utJL3UXYiGr2I/bWJVTXWzOrdRFvNs5PM3rJM/sYjNOJ7PbjN94h1e4m8wujK+qgfCuk5itBTVi13tqDO8GTjUTELke4mAm6WX0ZSGNdBB5QvkB6cwkjREercaNAqp57uBICuZ10SxAWPx9fMA8m28WIFdv/z9gDtBmShkOcYCMAAAAAElFTkSuQmCC") no-repeat !important; */
-
-    min-height: 44px;
-    border: 0px  transparent;
-    /* background: var(--background-light); */
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #efefef;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-
-}
-
-input[type=text]:focus {
-  border:0px solid #efefef !important;
-}
 </style>
 @endsection
 
@@ -306,7 +257,7 @@ input[type=text]:focus {
                                 </ul>
                             </nav>
                             <div class="lqd-contact-form ">
-                                <div class="" style="float: right">
+                                <div class="mobile-view-search" style="float: right">
                                     <span class="lqd-form-control-wrap text">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
                                         <input type="text"  onkeyup="filter_name()" size="40" id="myInput" autocomplete="off" class="icon-rtl lqd-cf-form-control border-1 border-black-10 rounded-4 px-2em text-16 text-slate-700" aria-required="true" aria-invalid="false">
