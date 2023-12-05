@@ -249,6 +249,34 @@
                 </div>
             </div>
         </div>
+        <div class="row mt-50">
+            <div class="col col-8 p-0 mobile-view">
+                <article class="lqd-pf-item lqd-pf-item-style-3 lqd-pf-overlay-bg-scale lqd-pf-content-v pf-details-h-str">
+                    <div class="lqd-pf-item-inner">
+                        <div class="lqd-pf-img rounded-6 mb-2em">
+                            <figure>
+                                <figure class="">
+                                    <img src="/webv2/images/selleys.jpg" class="objfit-cover objfit-center" alt="nippon paint cambodia selleys" draggable="false">
+                                </figure>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col col-4 p-0 mobile-view" style="text-align: right;">
+                <div class="ld-fancy-heading relative">
+                    <h2 class="ld-fh-element inline-block relative mb-0/5em text-34" > Home Improvement Product's
+                        <mark class="lqd-highlight">
+                            <span class="lqd-highlight-txt text-50">Selleys</span>
+                            <span class="lqd-highlight-inner bg-green-200 bottom-0 left-0"></span>
+                        </mark>
+                    </h2>
+                </div>
+                <div class="ld-fancy-heading relative pl-50" style="text-align: justify;">
+                    <p class="ld-fh-element inline-block relative mb-1/5em text-18 leading-1/7em">We were awarded the Most Trusted Brand In Glue, Constructive Adhesives, Sealants And Fillers by Reader’s Digest in 2019 and named the Top 50 Most Innovative Companies by the Australian Financial Review for 2 consecutive years.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <!-- End Case Study Carousel -->

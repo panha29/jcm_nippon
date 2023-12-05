@@ -104,7 +104,7 @@
                         <div class="lqd-pf-img rounded-6 mb-2em">
                             <figure>
                                 <figure class="">
-                                    <img src="/webv2/images/selleys.jpg" class="objfit-cover objfit-center" alt="nippon paint cambodia selleys" draggable="false">
+                                    <img src="webv2/images/selleys.jpg" class="objfit-cover objfit-center" alt="nippon paint cambodia selleys" draggable="false">
                                 </figure>
                             </figure>
                         </div>
@@ -127,5 +127,6 @@
             </div>
         </div>
     </div>
+
 </section>
 <!-- End Case Study Carousel -->

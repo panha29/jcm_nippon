@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\AdminLoginController;
 use App\Http\Controllers\UserLoginController;
 use App\Http\Controllers\LogoutController;
+use App\Models\ColorPaletteModel;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -67,7 +69,6 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
 
     Route::group(['prefix'=>'ColorPalette'],function(){
         Route::post('List/AddColor',[AdminLoginController::class,'colorpalette_save']);
-
         Route::get('List',[AdminLoginController::class,'colorpalett_index']);
     });
     Route::group(['prefix'=>'Location'],function(){
@@ -94,11 +95,11 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
  Route::get('/About-Us',[UserLoginController::class,'user_about_us']);
  Route::get('/Color-Palette',[UserLoginController::class,'user_color_palette']);
  Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');
+
 });
 
 Auth::routes();
 Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');
-
 Route::get('/Home',[AdminLoginController::class,'webv2']);
 Route::get('/Products/{category_tag}',[AdminLoginController::class,'category_tagv2']);
 Route::get('/Products',[AdminLoginController::class,'all_product']);
