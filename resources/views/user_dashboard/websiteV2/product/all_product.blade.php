@@ -25,10 +25,6 @@
         .moblie-cate{
             display: none;
         }
-
-        .mobile-width{
-            width: 100% !important;
-        }
     }
 
     @media screen and (max-width: 1920px){
@@ -104,7 +100,7 @@
                 </div>
             </section>
         </div>
-        <div class="col-9 mobile-width">
+        <div class="col-9 mobile-product-width">
             <section class="lqd-section products pt-40 sm:pt-0" id="products">
                 <div class="container">
                     <div class="row">

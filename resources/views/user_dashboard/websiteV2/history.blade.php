@@ -11,10 +11,10 @@
         <div class="row items-center content-center">
             <div class="col col-12 col-xl-6 p-15">
                 <div class="image-container flex justify-center items-center">
-                    <div class="lqd-imggrp-single text-center block relative perspective m-auto w-65percent lg:w-full" data-hover3d="true">
+                    <div class="lqd-imggrp-single text-center block relative perspective m-auto" data-hover3d="true">
                         <div class="lqd-imggrp-img-container inline-flex relative transform-style-3d">
                             <figure class="w-full relative" data-stacking-factor="1">
-                                <video width="400" height="400" controls poster="../img/brand/nipponpaint.png" >
+                                <video width="400" height="400" controls poster="../img/brand/nipponpaint.png" style="padding:15px">
                                     <source src="/webv2/videos/nippon_avi.mp4" type="video/mp4">
                                 </video>
                             </figure>

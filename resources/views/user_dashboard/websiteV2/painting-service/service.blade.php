@@ -122,11 +122,166 @@
         <div class="absolute mb-0 top-0 z-0 max-w-full module-shape">
             <figure id="lqd-draw-shape-851c9d9" class="lqd-draw-shape" data-lqd-draw-shape="true" data-draw-shape-options='{"drawSVG": "0% 0%", "stagger" : 0 , "start": "top bottom", "end": "center 20%", "scrub" : 1 , "ease": "linear"}'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="255.64" height="182.773" viewBox="0 0 255.64 182.773">
-                                        <path d="M629.327,2793.022s26.615,148.038,71.511,142.649c13.427-2.278,22.262-11.867,28.131-22.554,8-14.569,9.938-31.107,9.938-31.107s29.991,80.066,62.334,80.06,27.3-44.1,27.3-44.1,9.277,42.023,49.372,50.767" transform="translate(-625.844 -2789.539)" fill="none" stroke="#ff5125" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
-                                    </svg>
+                        <path d="M629.327,2793.022s26.615,148.038,71.511,142.649c13.427-2.278,22.262-11.867,28.131-22.554,8-14.569,9.938-31.107,9.938-31.107s29.991,80.066,62.334,80.06,27.3-44.1,27.3-44.1,9.277,42.023,49.372,50.767" transform="translate(-625.844 -2789.539)" fill="none" stroke="#ff5125" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+                    </svg>
             </figure>
         </div>
-        <div class="container">
+        <div class="container service-pc-view">
+            <div class="row">
+                <div class="col col-12" data-custom-animations="true" data-ca-options='{"animationTarget": ".lqd-split-chars .lqd-chars .split-inner, .lqd-adv-txt-fig", "duration" : 1100 , "delay" : 20 , "ease": "expo.out", "initValues": {"y": "85px", "rotationZ" : 10} , "animations": {"y": "0px", "rotationZ" : 0}}'>
+                    <div class="flex flex-wrap relative w-full justify-between items-start">
+                        <div class="ld-fancy-heading relative mask-text">
+                            <h2 class="ld-fh-element relative lqd-split-chars mb-0/75em" data-split-text="true" data-split-options='{"type": "chars, words"}'> Our Duty & Services</h2>
+                        </div>
+                        <div id="services-carousel-nav-container"></div>
+                    </div>
+                </div>
+                <div class="col col-12" data-custom-animations="true" data-ca-options='{"animationTarget": ".carousel-items .carousel-item-inner", "duration" : 1100 , "delay" : 100 , "ease": "expo.out", "initValues": {"scaleX" : 0.5 , "scaleY" : 0.5 , "opacity" : 0} , "animations": {"scaleX" : 1 , "scaleY" : 1 , "opacity" : 1}}'>
+                    <div class="carousel-container relative carousel-nav-right carousel-nav-right carousel-nav-floated carousel-dots-mobile-outside carousel-dots-mobile-center">
+                        <div class="carousel-items relative -mr-10 -ml-10">
+                            <div class="col col-xl-4 col-md-6 col-12 carousel-item flex flex-col justify-center has-one-child px-10">
+                                <div class="carousel-item-inner relative w-full">
+                                    <div class="carousel-item-content relative w-full">
+                                        <div class="pt-20 pb-25 rounded-10 flex flex-col items-center bg-yellow-200">
+                                            <div class="ld-fancy-heading relative">
+                                                <h4 style="text-align:center" class="ld-fh-element relative text-20 mb-0/25em">Pre-Painting Site Inspection With Our Professional</h4>
+                                            </div>
+                                            <div class="ld-fancy-heading relative">
+                                                <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Serives</p>
+                                            </div>
+                                            <div class="w-230 lqd-imggrp-single block relative">
+                                                <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
+                                                    <figure class="w-full relative rounded-full">
+                                                        <img class="rounded-full" draggable="false" width="458" height="602" src="../webv2/images/demo/service/page-s1.jpg" alt="services">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-xl-4 col-md-6 col-12 carousel-item flex flex-col justify-center has-one-child px-10">
+                                <div class="carousel-item-inner relative w-full">
+                                    <div class="carousel-item-content relative w-full">
+                                        <div class="pt-20 pb-25 rounded-10 flex flex-col items-center bg-yellow-200">
+                                            <div class="ld-fancy-heading relative">
+                                                <h4 style="text-align:center" class="ld-fh-element relative text-20 mb-0/25em">Shifting and Protection of Furniture and Floor</h4>
+                                            </div>
+                                            <div class="ld-fancy-heading relative">
+                                                <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Serives</p>
+                                            </div>
+                                            <div class="w-230 lqd-imggrp-single block relative">
+                                                <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
+                                                    <figure class="w-full relative rounded-full">
+                                                        <img class="rounded-full" draggable="false" width="458" height="602" src="../webv2/images/demo/service/page-s3.jpg" alt="services">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-xl-4 col-md-6 col-12 carousel-item flex flex-col justify-center has-one-child px-10">
+                                <div class="carousel-item-inner relative w-full">
+                                    <div class="carousel-item-content relative w-full">
+                                        <div class="pt-20 pb-25 rounded-10 flex flex-col items-center bg-yellow-200">
+                                            <div class="ld-fancy-heading relative">
+                                                <h4 style="text-align:center" class="ld-fh-element relative text-20 mb-0/25em">Certified and Highly-Trained Painting Professionals</h4>
+                                            </div>
+                                            <div class="ld-fancy-heading relative">
+                                                <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Serives</p>
+                                            </div>
+                                            <div class="w-230 lqd-imggrp-single block relative">
+                                                <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
+                                                    <figure class="w-full relative rounded-full">
+                                                        <img class="rounded-full" draggable="false" width="458" height="602" src="../webv2/images/demo/service/page-s4.jpg" alt="services">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-12" data-custom-animations="true" data-ca-options='{"animationTarget": ".carousel-items .carousel-item-inner", "duration" : 1100 , "delay" : 100 , "ease": "expo.out", "initValues": {"scaleX" : 0.5 , "scaleY" : 0.5 , "opacity" : 0} , "animations": {"scaleX" : 1 , "scaleY" : 1 , "opacity" : 1}}'>
+                    <div class="carousel-container relative carousel-nav-right carousel-nav-right carousel-nav-floated carousel-dots-mobile-outside carousel-dots-mobile-center">
+                        <div class="carousel-items relative -mr-10 -ml-10">
+                            <div class="col col-xl-4 col-md-6 col-12 carousel-item flex flex-col justify-center has-one-child px-10">
+                                <div class="carousel-item-inner relative w-full">
+                                    <div class="carousel-item-content relative w-full">
+                                        <div class="pt-20 pb-25 rounded-10 flex flex-col items-center bg-yellow-200">
+                                            <div class="ld-fancy-heading relative">
+                                                <h4 style="text-align:center" class="ld-fh-element relative text-20 mb-0/25em">Prepare Premium Nippon Paint Products</h4>
+                                            </div>
+                                            <div class="ld-fancy-heading relative">
+                                                <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Serives</p>
+                                            </div>
+                                            <div class="w-230 lqd-imggrp-single block relative">
+                                                <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
+                                                    <figure class="w-full relative rounded-full">
+                                                        <img class="rounded-full" draggable="false" width="458" height="602" src="../webv2/images/demo/service/page-s2.jpg" alt="services">
+                                                    </figure>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-xl-4 col-md-6 col-12 carousel-item flex flex-col justify-center has-one-child px-10">
+                                <div class="carousel-item-inner relative w-full">
+                                    <div class="carousel-item-content relative w-full">
+                                        <div class="pt-20 pb-25 rounded-10 flex flex-col items-center bg-yellow-200">
+                                            <div class="ld-fancy-heading relative">
+                                                <h4 style="text-align:center" class="ld-fh-element relative text-20 mb-0/25em">Reinstating of furniture after painting</h4>
+                                            </div>
+                                            <div class="ld-fancy-heading relative">
+                                                <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Serives</p>
+                                            </div>
+                                            <div class="w-230 lqd-imggrp-single block relative">
+                                                <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
+                                                    <figure class="w-full relative rounded-full">
+                                                        <img class="rounded-full" draggable="false" width="458" height="602" src="../webv2/images/demo/service/page-s5.jpg" alt="services">
+                                                    </figure>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-xl-4 col-md-6 col-12 carousel-item flex flex-col justify-center has-one-child px-10">
+                                <div class="carousel-item-inner relative w-full">
+                                    <div class="carousel-item-content relative w-full">
+                                        <div class="pt-20 pb-25 rounded-10 flex flex-col items-center bg-yellow-200">
+                                            <div class="ld-fancy-heading relative">
+                                                <h4 style="text-align:center" class="ld-fh-element relative text-20 mb-0/25em">Available Thousand Colors to Choose</h4>
+                                            </div>
+                                            <div class="ld-fancy-heading relative">
+                                                <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Serives</p>
+                                            </div>
+                                            <div class="w-230 lqd-imggrp-single block relative">
+                                                <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
+                                                    <figure class="w-full relative rounded-full">
+                                                        <img class="rounded-full" draggable="false" width="458" height="602" src="../webv2/images/demo/service/colorpallet.jpg" alt="services">
+                                                    </figure>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container service-mobile-view">
             <div class="row">
                 <div class="col col-12" data-custom-animations="true" data-ca-options='{"animationTarget": ".lqd-split-chars .lqd-chars .split-inner, .lqd-adv-txt-fig", "duration" : 1100 , "delay" : 20 , "ease": "expo.out", "initValues": {"y": "85px", "rotationZ" : 10} , "animations": {"y": "0px", "rotationZ" : 0}}'>
                     <div class="flex flex-wrap relative w-full justify-between items-start">

@@ -61,6 +61,9 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
         Route::post('List/AddProject-Reference',[AdminLoginController::class,'project_reference_save']);
         Route::get('List',[AdminLoginController::class,'project_reference_index']);
         Route::get('List/{id}/Delete',[AdminLoginController::class,'project_reference_destroy']);
+        Route::Post('List/EditProject-Reference',[AdminLoginController::class,'project_reference_edit']);
+        Route::get('List/{id}/Edit',[AdminLoginController::class,'project_reference_list_edit']);
+
     });
 
     Route::group(['prefix'=>'User'],function(){

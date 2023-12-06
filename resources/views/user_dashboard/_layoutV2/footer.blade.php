@@ -296,5 +296,5 @@
 </div> --}}
 <!-- Contact modal -->
 <template id="lqd-temp-sticky-header-sentinel">
-			<div class="lqd-sticky-sentinel invisible absolute pointer-events-none"></div>
-		</template>
+    <div class="lqd-sticky-sentinel invisible absolute pointer-events-none"></div>
+</template>

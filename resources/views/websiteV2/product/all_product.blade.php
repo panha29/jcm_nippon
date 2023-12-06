@@ -62,7 +62,7 @@
                 </div>
             </section>
         </div>
-        <div class="col-9 mobile-width">
+        <div class="col-9 mobile-product-width">
             <section class="lqd-section products pt-40 sm:pt-0" id="products">
                 <div class="container">
                     <div class="row">

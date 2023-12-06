@@ -162,7 +162,7 @@
                         <div class="col col-12 col-md-8 col-xl-6 relative">
                             <div class="w-full absolute top-15percent -right-80percent z-0 text-center" data-parallax="true" data-parallax-options='{ "ease" : "linear", "start" : "top bottom", "end" : "bottom-=100% top" }' data-parallax-from='{ "y" : "65%", "rotationZ":-50,"opacity":0.6}' data-parallax-to='{ "y" : "-10%", "rotationZ":0,"opacity":1}'>
                                 <div class="elementor-widget-container">
-                                    <img class="w-390" width="790" height="731" src="../../webv2/images/demo/events-hub/shape-colored.jpg" alt="shape">
+                                    <img class="w-390" width="790" height="731" src="../webv2/images/demo/events-hub/shape-colored.jpg" alt="shape">
                                 </div>
                             </div>
                             <div class="ld-fancy-heading relative mask-text -mb-30 module-number">
