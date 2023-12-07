@@ -102,7 +102,7 @@
                     </div>
                 </div>
                 <div class="col col-6 col-md-4 col-xl-2 p-0 mb-30">
-                    <img src="../webv2/images/client/aeon.png" alt="clients" width="110">
+                    <img src="../webv2/images/client/aeon.png" alt="clients" width="">
                 </div>
                 <div class="col col-6 col-md-4 col-xl-2 p-0 mb-30">
                     <img src="../webv2/images/client/ford.png" alt="clients">
@@ -114,10 +114,10 @@
                     <img src="../webv2/images/client/tax1.png" alt="clients">
                 </div>
                 <div class="col col-6 col-md-4 col-xl-2 p-0 mb-30">
-                    <img src="../webv2/images/client/tourism.png" alt="clients">
+                    <img src="../webv2/images/client/tourism.png" alt="clients" width="120">
                 </div>
                 <div class="col col-6 col-md-4 col-xl-2 p-0 mb-30">
-                    <img src="../webv2/images/client/tex.png" alt="clients" width="70">
+                    <img src="../webv2/images/client/tex.png" alt="clients" width="120">
                 </div>
             </div>
         </div>
