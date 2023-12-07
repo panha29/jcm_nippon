@@ -21,6 +21,11 @@ use App\Models\ColorPaletteModel;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+Auth::routes(
+    [
+        'verify' => true
+    ]
+);
 
 Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
 {
@@ -101,7 +106,6 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
 
 });
 
-Auth::routes();
 Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');
 Route::get('/Home',[AdminLoginController::class,'webv2']);
 Route::get('/Products/{category_tag}',[AdminLoginController::class,'category_tagv2']);

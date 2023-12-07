@@ -97,7 +97,12 @@
  /* ANDROID CENTER FIX */
  div[style*="margin: 16px 0;"] {
      margin: 0 !important;
- }</style>
+ }
+ .hiddenlink{
+
+    display: none;
+ }
+ </style>
                                 <script type='text/javascript' src=''></script>
                                 <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
                                 <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
@@ -107,7 +112,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <!-- LOGO -->
     <tr>
-        <td bgcolor="#FFA73B" align="center">
+        <td bgcolor="#e93434" align="center">
             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
                 <tr>
                     <td align="center" valign="top" style="padding: 40px 10px 40px 10px;"> </td>
@@ -116,7 +121,7 @@
         </td>
     </tr>
     <tr>
-        <td bgcolor="#FFA73B" align="center" style="padding: 0px 10px 0px 10px;">
+        <td bgcolor="#e93434" align="center" style="padding: 0px 10px 0px 10px;">
             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
                 <tr>
                     <td bgcolor="#ffffff" align="center" valign="top" style="padding: 40px 20px 20px 20px; border-radius: 4px 4px 0px 0px; color: #111111; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 400; letter-spacing: 4px; line-height: 48px;">
@@ -141,7 +146,7 @@
                                 <td bgcolor="#ffffff" align="center" style="padding: 20px 30px 60px 30px;">
                                     <table border="0" cellspacing="0" cellpadding="0">
                                         <tr>
-                                            <td align="center" style="border-radius: 3px;" bgcolor="#FFA73B"><a href="https://mail.google.com" target="_blank" style="font-size: 20px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; color: #ffffff; text-decoration: none; padding: 15px 25px; border-radius: 2px; border: 1px solid #FFA73B; display: inline-block;">Confirm Account</a></td>
+                                            <td align="center" style="border-radius: 3px;" bgcolor="#e93434"><a href="https://mail.google.com" target="_blank" style="font-size: 20px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; color: #ffffff; text-decoration: none; padding: 15px 25px; border-radius: 2px; border: 1px solid #e93434; display: inline-block;">Confirm Account</a></td>
                                         </tr>
                                     </table>
                                 </td>
@@ -155,8 +160,12 @@
                     </td>
                 </tr> <!-- COPY -->
                 <tr>
-                    <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 20px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400;">
-                        <p style="margin: 0;"><a href="/Home" target="_blank" style="color: #FFA73B;">NIPPON PAINT CAMBODIA</a></p>
+                    <td bgcolor="#ffffff" class="col-12" style="padding: 20px 30px 20px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400;">
+                        {{-- <p style="margin: 0;"><a href="{{ route('logout') }}" class="hiddenlink" target="_blank" style="color: #e93434;">NIPPON PAINT CAMBODIA</a></p> --}}
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <button type="submit" class="btn btn-primary" style="width: 100%"> NIPPON PAINT CAMBODIA</button>
+                        </form>
                     </td>
                 </tr>
                 <tr>
