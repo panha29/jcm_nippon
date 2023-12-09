@@ -540,7 +540,7 @@ body {
         display: inline-flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 390px;
+        width: auto;
         justify-content: space-between;
     }
     table tr {

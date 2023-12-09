@@ -16,13 +16,13 @@
 @endsection
 
 
-<style>
+{{-- <style>
     .logo{
         width: 180px;
         margin-top:-100px;
         margin-left: 120px;
     }
-</style>
+</style> --}}
 @section('content')
 
         <div class="sw-lg-70 min-h-70 bg-foreground d-flex justify-content-center align-items-center shadow-deep py-5 full-page-content-right-border login-ui mobile-login-screen" >

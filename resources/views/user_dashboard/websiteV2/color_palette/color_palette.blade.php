@@ -10,8 +10,14 @@
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/base.css">
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/digital-hub.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
-<style>
 
+
+<style>
+@media screen and (max-width: 430px){
+    .pt-100{
+        padding-top: 0 !important;
+    }
+}
 
 </style>
 @endsection

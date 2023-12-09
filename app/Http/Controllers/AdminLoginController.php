@@ -466,4 +466,9 @@ class AdminLoginController extends Controller
         $allpd = ProductModel::latest()->get();
         return view('websiteV2.product.all_product',compact('nav','product','pdcate','allpd'));
     }
+
+    function loginui(){
+        $nav = CategoryModel::all();
+        return view('websiteV2.layout_full',compact('nav'));
+    }
 }

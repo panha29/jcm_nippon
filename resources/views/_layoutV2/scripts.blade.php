@@ -21,5 +21,4 @@
 <script src="/webv2/js/liquid-ajax-contact-form.min.js"></script>
 
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
 @yield('js_vendor')

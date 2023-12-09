@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\AdminLoginController;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\UserLoginController;
 use App\Http\Controllers\LogoutController;
 use App\Models\ColorPaletteModel;
