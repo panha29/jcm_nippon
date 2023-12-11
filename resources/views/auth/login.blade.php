@@ -25,7 +25,7 @@
 </style> --}}
 @section('content')
 
-        <div class="sw-lg-70 min-h-70 bg-foreground d-flex justify-content-center align-items-center shadow-deep py-5 full-page-content-right-border login-ui mobile-login-screen" >
+        <div class="sw-lg-70 min-h-70 bg-foreground d-flex justify-content-center align-items-center shadow-deep py-5 full-page-content-right-border login-ui" >
             <div class="sw-lg-50 px-5">
                 <div class="sh-11">
                     {{-- <a href="/"> --}}

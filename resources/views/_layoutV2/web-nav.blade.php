@@ -82,7 +82,6 @@
                                 <a class="leading-1/4em text-blue-700" href="/login">
                                     Color Palette
                                 </a>
-
                             </li>
                         </ul>
                     </div>

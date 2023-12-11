@@ -69,17 +69,20 @@
             <div class="col-12">
                 <div class="card mb-2">
                     <div class="card-body">
+                        <div class="mb-2" style="float: right">
+                            @include('admin_dashboard.user.add_user_modal')
+                        </div>
                         <table id="user" class="table table-striped table-bordered" style="width:100%">
                             <thead>
                                 <tr>
                                     <th>No</th>
                                     <th>Name</th>
+                                    <th>Duty</th>
                                     <th>Email</th>
                                     <th>Verify</th>
                                     <th>Password</th>
-                                    <th>Status</th>
-                                    <th>Last Seen</th>
-                                    <th style="text-align: center">Action</th>
+                                    <th>Active</th>
+                                    <th style="text-align: center">Last Seen Date</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -91,6 +94,9 @@
                                         </td>
                                         <td>
                                             {{$item->name}}
+                                        </td>
+                                        <td>
+                                            {{$item->duty}}
                                         </td>
                                         <td>
                                             {{$item->email}}
@@ -107,13 +113,7 @@
                                         <td>
                                             {{$item->updated_at}}
                                         </td>
-                                        <td style="text-align: center">
-                                            <div>
-                                                <a class="btn btn-outline-primary" id="unbanned" name="unbanned" >Unbanned</a>
-                                                <a class="btn btn-outline-danger" id="unbanned" name="banned" > Banned</a>
 
-                                            </div>
-                                        </td>
                                         <td style="text-align: center">
                                             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete{{$item->id}}">
                                                 Delete

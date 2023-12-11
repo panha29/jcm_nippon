@@ -44,6 +44,17 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
         Route::get('List/{id}/Delete',[AdminLoginController::class,'product_destroy']);
     });
 
+    Route::group(['prefix'=>'Color-Pricing'],function(){
+        Route::get('List',[AdminLoginController::class,'product_pricing_list']);
+        Route::get('List/{id}/Edit',[AdminLoginController::class,'product_pricing_list_edit']);
+        Route::post('List/AddProductPricing',[AdminLoginController::class,'product_pricing_save']);
+        Route::post('List/EditProductPricing',[AdminLoginController::class,'product_pricing_edit']);
+        Route::get('List/{id}/Delete',[AdminLoginController::class,'product_pricing_destroy']);
+        Route::get('Categorie',[AdminLoginController::class,'category_index']);
+        Route::post('Categorie/AddCategories',[AdminLoginController::class,'category_save']);
+        Route::get('Categorie/{id}/Delete',[AdminLoginController::class,'category_destroy']);
+    });
+
     Route::group(['prefix'=>'News-&-Media'],function(){
         Route::get('News',[AdminLoginController::class,'News_list']);
         Route::post('News/AddNews',[AdminLoginController::class,'news_save']);
@@ -74,6 +85,7 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
 
     Route::group(['prefix'=>'User'],function(){
         Route::get('List',[AdminLoginController::class,'user_list']);
+        Route::post('List/Adduser',[AdminLoginController::class,'add_user']);
     });
 
     Route::group(['prefix'=>'ColorPalette'],function(){
@@ -103,6 +115,7 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
  Route::get('/Contact-Us',[UserLoginController::class,'user_contact_us']);
  Route::get('/About-Us',[UserLoginController::class,'user_about_us']);
  Route::get('/Color-Palette',[UserLoginController::class,'user_color_palette']);
+ Route::get('/Color-Pricing',[UserLoginController::class,'user_color_pricing']);
  Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');
 
 });

@@ -9,6 +9,7 @@ use App\Models\NewsModel;
 use App\Models\ProductModel;
 use App\Models\ProjectReferenceModel;
 use App\Models\MediaModel;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 

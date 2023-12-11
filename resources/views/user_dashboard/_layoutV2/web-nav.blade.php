@@ -76,6 +76,13 @@
                                     Color Palette
                                 </a>
                             </li>
+                            @if(Auth::user()->member == 'yes')
+                                <li>
+                                    <a class="leading-1/4em text-blue-700" href="/User/Color-Pricing">
+                                        Color Pricing
+                                    </a>
+                                </li>
+                            @endif
                         </ul>
                     </div>
                 </div>

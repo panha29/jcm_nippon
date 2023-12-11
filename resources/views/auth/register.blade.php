@@ -17,7 +17,7 @@
 @endsection
 
 @section('content')
-    <div style="margin-bottom:auto; margin-top:auto" class="sw-lg-70 bg-foreground d-flex justify-content-center align-items-center shadow-deep py-5 full-page-content-right-border register-ui mobile-register-screen">
+    <div style="" class="sw-lg-70 bg-foreground d-flex justify-content-center align-items-center shadow-deep py-5 full-page-content-right-border register-ui">
         <div class="sw-lg-50 px-5">
             <div class="sh-11">
                 <a href="/">
@@ -40,7 +40,6 @@
             </div>
             <div>
                 <form method="POST" action="{{ route('register') }}">
-
                     @csrf
                     <div class="mb-3 filled form-group tooltip-end-top">
                         <i data-acorn-icon="user">{{ __('Name') }}</i>

@@ -9,6 +9,7 @@ use App\Models\NewsModel;
 use App\Models\ProductModel;
 use App\Models\ProjectReferenceModel;
 use App\Models\MediaModel;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -18,6 +19,19 @@ class AdminLoginController extends Controller
         $data = DB::table('product')->latest()->get();
         $cate = CategoryModel::get();
         return view('admin_dashboard.product.product_index',compact('data','cate'));
+    }
+
+    function add_user(Request $request){
+        $data = new User();
+        $data -> name = $request -> name;
+        $data -> email = $request -> email;
+        $data -> duty = $request -> duty;
+        $data -> member = $request -> member;
+        $data -> password = $request -> password;
+        $data -> password_confirmation = $request -> password_confirmation;
+        $data -> password = $request -> password;
+        $data -> save();
+        return redirect('/Admin/User/List');
     }
 
     function product_list_edit($id){
@@ -470,5 +484,11 @@ class AdminLoginController extends Controller
     function loginui(){
         $nav = CategoryModel::all();
         return view('websiteV2.layout_full',compact('nav'));
+    }
+
+    function product_pricing_list(){
+        $data = DB::table('product')->latest()->get();
+        $cate = CategoryModel::get();
+        return view('admin_dashboard.product.product_pricing_index',compact('data','cate'));
     }
 }
