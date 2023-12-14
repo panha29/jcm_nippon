@@ -44,15 +44,15 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
         Route::get('List/{id}/Delete',[AdminLoginController::class,'product_destroy']);
     });
 
-    Route::group(['prefix'=>'Color-Pricing'],function(){
-        Route::get('List',[AdminLoginController::class,'product_pricing_list']);
+    Route::group(['prefix'=>'ColorPricing'],function(){
+        Route::get('List',[AdminLoginController::class,'color_pricing_list']);
         Route::get('List/{id}/Edit',[AdminLoginController::class,'product_pricing_list_edit']);
-        Route::post('List/AddProductPricing',[AdminLoginController::class,'product_pricing_save']);
-        Route::post('List/EditProductPricing',[AdminLoginController::class,'product_pricing_edit']);
-        Route::get('List/{id}/Delete',[AdminLoginController::class,'product_pricing_destroy']);
-        Route::get('Categorie',[AdminLoginController::class,'category_index']);
-        Route::post('Categorie/AddCategories',[AdminLoginController::class,'category_save']);
-        Route::get('Categorie/{id}/Delete',[AdminLoginController::class,'category_destroy']);
+        Route::post('List/AddColor',[AdminLoginController::class,'colorpricing_save']);
+        // Route::post('List/EditProductPricing',[AdminLoginController::class,'product_pricing_edit']);
+        // Route::get('List/{id}/Delete',[AdminLoginController::class,'product_pricing_destroy']);
+        // Route::get('Categorie',[AdminLoginController::class,'category_index']);
+        // Route::post('Categorie/AddCategories',[AdminLoginController::class,'category_save']);
+        // Route::get('Categorie/{id}/Delete',[AdminLoginController::class,'category_destroy']);
     });
 
     Route::group(['prefix'=>'News-&-Media'],function(){

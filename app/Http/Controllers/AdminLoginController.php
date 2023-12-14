@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\CareerModel;
 use App\Models\CategoryModel;
 use App\Models\ColorPaletteModel;
+use App\Models\ColorPricingModel;
 use App\Models\DealerModel;
 use App\Models\NewsModel;
 use App\Models\ProductModel;
@@ -486,9 +487,25 @@ class AdminLoginController extends Controller
         return view('websiteV2.layout_full',compact('nav'));
     }
 
-    function product_pricing_list(){
-        $data = DB::table('product')->latest()->get();
-        $cate = CategoryModel::get();
-        return view('admin_dashboard.product.product_pricing_index',compact('data','cate'));
+    public function colorpricing_save(Request $request){
+        $data = new ColorPricingModel();
+        if($request->file('product_pricing_image')){
+            $file= $request->file('product_pricing_image');
+            $filename= $file->getClientOriginalName();
+            $file-> move(public_path('img/color_pricing'), $filename);
+            $data['product_pricing_image']= $filename;
+        }
+        $data -> product_pricing_price = $request -> product_pricing_price;
+        $data -> product_pricing_name = $request -> product_pricing_name;
+        $data -> product_pricing_category = $request -> product_pricing_category;
+        $data -> product_pricing_batch = $request -> product_pricing_batch;
+        $data -> product_pricing_quantity = $request -> product_pricing_quantity;
+        $data -> save();
+        return redirect('/Admin/ColorPricing/List');
+    }
+
+    function color_pricing_list(){
+        $data = DB::table('product_pricing')->latest()->get();
+        return view('admin_dashboard.color_pricing.index',compact('data'));
     }
 }

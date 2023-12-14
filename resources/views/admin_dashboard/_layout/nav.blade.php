@@ -290,6 +290,12 @@
                 </a>
             </li>
             <li>
+                <a href="/Admin/ColorPricing/List">
+                    <i data-acorn-icon="user" class="icon" data-acorn-size="18"></i>
+                    <span class="label">Color Pricing</span>
+                </a>
+            </li>
+            <li>
                 <a href="/Admin/Dealer/List">
                     <i data-acorn-icon="user" class="icon" data-acorn-size="18"></i>
                     <span class="label">Dealer</span>
