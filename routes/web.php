@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\AdminLoginController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\ColorPricingController;
 use App\Http\Controllers\UserLoginController;
 use App\Http\Controllers\LogoutController;
 use App\Models\ColorPaletteModel;
@@ -45,14 +46,17 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
     });
 
     Route::group(['prefix'=>'ColorPricing'],function(){
-        Route::get('List',[AdminLoginController::class,'color_pricing_list']);
-        Route::get('List/{id}/Edit',[AdminLoginController::class,'product_pricing_list_edit']);
-        Route::post('List/AddColor',[AdminLoginController::class,'colorpricing_save']);
-        // Route::post('List/EditProductPricing',[AdminLoginController::class,'product_pricing_edit']);
-        // Route::get('List/{id}/Delete',[AdminLoginController::class,'product_pricing_destroy']);
-        // Route::get('Categorie',[AdminLoginController::class,'category_index']);
-        // Route::post('Categorie/AddCategories',[AdminLoginController::class,'category_save']);
-        // Route::get('Categorie/{id}/Delete',[AdminLoginController::class,'category_destroy']);
+        Route::post('List/AddMA',[ColorPricingController::class,'matex_save']);
+        Route::post('List/AddMPM',[ColorPricingController::class,'matexpremium_save']);
+        Route::post('List/AddNSEW',[ColorPricingController::class,'supereasywash_save']);
+        Route::post('List/AddWB',[ColorPricingController::class,'weatherbond_save']);
+        Route::post('List/AddWG',[ColorPricingController::class,'weathergard_save']);
+
+        Route::get('Matex',[ColorPricingController::class,'colorprice_index']);
+        Route::get('Premium-Matex',[ColorPricingController::class,'colorprice_index']);
+        Route::get('WeatherGard',[ColorPricingController::class,'colorprice_index']);
+        Route::get('WeatherBond',[ColorPricingController::class,'colorprice_index']);
+        Route::get('SuperEasyWash',[ColorPricingController::class,'colorprice_index']);
     });
 
     Route::group(['prefix'=>'News-&-Media'],function(){

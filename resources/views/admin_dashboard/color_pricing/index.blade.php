@@ -53,70 +53,13 @@
         <!-- Title and Top Buttons End -->
         @include('admin_dashboard.color_pricing.color-form-modal')
 
-        <!-- Content Start -->
-      <div class="row mb-3">
-            <div class="col">
+        @yield('contentmatex')
+            {{-- @include('admin_dashboard.color_pricing.ma') --}}
+            {{-- @include('admin_dashboard.color_pricing.mpm')
+            @include('admin_dashboard.color_pricing.nsew')
+            @include('admin_dashboard.color_pricing.wb')
+            @include('admin_dashboard.color_pricing.wg') --}}
 
-            </div>
-            <div class="col">
-                <div style="float: right">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#colorpricing" >
-                        Add Color
-                    </button>
-               </div>
-            </div>
-      </div>
-        <div class="card mb-2">
-            <div class="card-body">
-                <table id="colorpalettetable" class="table table-striped table-bordered" style="width:100%">
-                    <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>Name</th>
-                            <th>Price</th>
-                            <th>Category</th>
-                            <th>Quantity</th>
-                            <th>Batch</th>
-                            <th>Image</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach ($data as $item)
-                            <tr>
-                                <td style="text-align: center;">
-                                    {{$loop->iteration}}
-                                </td>
-                                <td class="col-1">
-                                    {{$item->product_pricing_name}}
-                                </td>
-                                <td>
-                                    {{$item->product_pricing_price}}
-                                </td>
-                                <td>
-                                   {{$item->product_pricing_category}}
-                                </td>
-                                <td>
-                                    {{$item->product_pricing_quantity}}
-                                </td>
-                                <td>
-                                    {{$item->product_pricing_batch}}
-                                </td>
-                                <td>
-                                    <img src="{{ url('img/color_pricing/'.$item->product_pricing_image) }}" alt="" style="width: 100px; height: 100px;" onerror="this.style.display = 'none'">
-
-                                </td>
-                                <td>
-                                    <a href="/Admin/ColorPricing/List/{{$item->id}}/Delete" class="btn btn-danger" draggable="false">Delete</a>
-                                    <a href="/Admin/ColorPricing/List/{{$item->id}}/Edit" class="btn btn-primary" draggable="false">Edit</a>
-                                </td>
-                            </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <!-- Content End -->
     </div>
 
 @endsection

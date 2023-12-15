@@ -283,18 +283,53 @@
                     <span class="label">Project Reference</span>
                 </a>
             </li>
+
+            <li>
+                <a draggable="false" href="#colorpricing" data-href="/Admin/ColorPricing">
+                    <i data-acorn-icon="book" class="icon" data-acorn-size="18"></i>
+                    <span class="label">Color Pricing</span>
+                </a>
+                <ul id="colorpricing">
+                    <li>
+                        <a draggable="false" href="/Admin/ColorPricing/Matex">
+                            <span class="label">Matex</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a draggable="false" href="/Admin/ColorPricing/Premium-Matex">
+                            <span class="label">Matex Premium</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a draggable="false" href="/Admin/ColorPricing/WeatherGard">
+                            <span class="label">WeatherGard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a draggable="false" href="/Admin/ColorPricing/WeatherBond">
+                            <span class="label">WeatherBond</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a draggable="false" href="/Admin/ColorPricing/SuperEasyWash">
+                            <span class="label">SuperEasyWash</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
             <li>
                 <a href="/Admin/ColorPalette/List">
                     <i data-acorn-icon="user" class="icon" data-acorn-size="18"></i>
                     <span class="label">Color Palette</span>
                 </a>
             </li>
-            <li>
+            {{-- <li>
                 <a href="/Admin/ColorPricing/List">
                     <i data-acorn-icon="user" class="icon" data-acorn-size="18"></i>
                     <span class="label">Color Pricing</span>
                 </a>
-            </li>
+            </li> --}}
             <li>
                 <a href="/Admin/Dealer/List">
                     <i data-acorn-icon="user" class="icon" data-acorn-size="18"></i>
