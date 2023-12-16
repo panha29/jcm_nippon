@@ -105,5 +105,10 @@ class ColorPricingController extends Controller
         return view('admin_dashboard.color_pricing.index', compact('ma','wb','wg','mpm','nsew'));
     }
 
+    // function colorprice_index(){
+    //     $ma = DB::table('colorprice_matex')->get();
+    //     return view('admin_dashboard.color_pricing.ma', compact('ma'));
+    // }
+
 
 }
