@@ -46,6 +46,12 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
     });
 
     Route::group(['prefix'=>'ColorPricing'],function(){
+        Route::post('List/ImportMa',[ColorPricingController::class,'import_ma']);
+        Route::post('List/ImportMpm',[ColorPricingController::class,'import_mpm']);
+        Route::post('List/ImportWg',[ColorPricingController::class,'import_wg']);
+        Route::post('List/ImportWb',[ColorPricingController::class,'import_wb']);
+        Route::post('List/ImportNsew',[ColorPricingController::class,'import_nsew']);
+
         Route::post('List/AddMatex',[ColorPricingController::class,'matex_save']);
         Route::post('List/AddMatexPremium',[ColorPricingController::class,'matexpremium_save']);
         Route::post('List/AddSuperEasyWash',[ColorPricingController::class,'supereasywash_save']);

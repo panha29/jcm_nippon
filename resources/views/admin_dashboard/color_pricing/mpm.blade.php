@@ -40,7 +40,17 @@
 
         <div class="row mb-3">
             <div class="col">
-
+                <div class="card-body">
+                    <div class="input-group">
+                        <form action="/Admin/ColorPricing/List/ImportMpm" method="POST" enctype="multipart/form-data">
+                            @csrf
+                            <div style="display: inline-flex">
+                                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" name="file" required style="border-top-right-radius: 0px; border-bottom-right-radius:0px">
+                                <button class="btn btn-primary" type="submit" id="inputGroupFileAddon04" style="border-top-left-radius: 0px; border-bottom-left-radius:0px">Upload</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
             <div class="col">
                 <div style="float: right">
