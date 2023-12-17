@@ -52,11 +52,11 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
         Route::post('List/AddWB',[ColorPricingController::class,'weatherbond_save']);
         Route::post('List/AddWG',[ColorPricingController::class,'weathergard_save']);
 
-        Route::get('Matex',[ColorPricingController::class,'colorprice_index']);
-        Route::get('Premium-Matex',[ColorPricingController::class,'colorprice_index']);
-        Route::get('WeatherGard',[ColorPricingController::class,'colorprice_index']);
-        Route::get('WeatherBond',[ColorPricingController::class,'colorprice_index']);
-        Route::get('SuperEasyWash',[ColorPricingController::class,'colorprice_index']);
+        Route::get('Matex',[ColorPricingController::class,'colorprice_ma']);
+        Route::get('Premium-Matex',[ColorPricingController::class,'colorprice_mpm']);
+        Route::get('WeatherGard',[ColorPricingController::class,'colorprice_wg']);
+        Route::get('WeatherBond',[ColorPricingController::class,'colorprice_wb']);
+        Route::get('SuperEasyWash',[ColorPricingController::class,'colorprice_nsew']);
     });
 
     Route::group(['prefix'=>'News-&-Media'],function(){

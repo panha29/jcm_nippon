@@ -96,19 +96,35 @@ class ColorPricingController extends Controller
         return redirect('/Admin/ColorPricing/SuperEasyWash');
     }
 
-    function colorprice_index(){
-        $ma = DB::table('colorprice_matex')->get();
-        $wb = DB::table('colorprice_matexpremium')->get();
-        $wg = DB::table('colorprice_weatherbond')->get();
-        $nsew = DB::table('colorprice_weathergard')->get();
-        $mpm = DB::table('colorprice_supereasywash')->get();
-        return view('admin_dashboard.color_pricing.index', compact('ma','wb','wg','mpm','nsew'));
-    }
-
     // function colorprice_index(){
     //     $ma = DB::table('colorprice_matex')->get();
-    //     return view('admin_dashboard.color_pricing.ma', compact('ma'));
+    //     $wb = DB::table('colorprice_matexpremium')->get();
+    //     $wg = DB::table('colorprice_weatherbond')->get();
+    //     $nsew = DB::table('colorprice_weathergard')->get();
+    //     $mpm = DB::table('colorprice_supereasywash')->get();
+    //     return view('admin_dashboard.color_pricing.index', compact('ma','wb','wg','mpm','nsew'));
     // }
+
+    function colorprice_ma(){
+        $ma = DB::table('colorprice_matex')->get();
+        return view('admin_dashboard.color_pricing.ma', compact('ma'));
+    }
+    function colorprice_mpm(){
+        $mpm = DB::table('colorprice_matexpremium')->get();
+        return view('admin_dashboard.color_pricing.mpm', compact('mpm'));
+    }
+    function colorprice_wb(){
+        $wb = DB::table('colorprice_weatherbond')->get();
+        return view('admin_dashboard.color_pricing.wb', compact('wb'));
+    }
+    function colorprice_wg(){
+        $wg = DB::table('colorprice_weathergard')->get();
+        return view('admin_dashboard.color_pricing.wg', compact('wg'));
+    }
+    function colorprice_nsew(){
+        $nsew = DB::table('colorprice_supereasywash')->get();
+        return view('admin_dashboard.color_pricing.nsew', compact('nsew'));
+    }
 
 
 }

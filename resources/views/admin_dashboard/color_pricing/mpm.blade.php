@@ -44,7 +44,7 @@
             </div>
             <div class="col">
                 <div style="float: right">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#matex" >
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#matexpremium" >
                         Add Color
                     </button>
                 </div>
@@ -66,7 +66,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($mpmp as $item)
+                        @foreach ($mpm as $item)
                             <tr>
                                 <td style="text-align: center;">
                                     {{$loop->iteration}}

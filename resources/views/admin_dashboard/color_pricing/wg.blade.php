@@ -44,7 +44,7 @@
             </div>
             <div class="col">
                 <div style="float: right">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#matex" >
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#weathergard" >
                         Add Color
                     </button>
                 </div>
