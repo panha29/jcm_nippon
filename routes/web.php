@@ -46,11 +46,17 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
     });
 
     Route::group(['prefix'=>'ColorPricing'],function(){
-        Route::post('List/AddMA',[ColorPricingController::class,'matex_save']);
-        Route::post('List/AddMPM',[ColorPricingController::class,'matexpremium_save']);
-        Route::post('List/AddNSEW',[ColorPricingController::class,'supereasywash_save']);
-        Route::post('List/AddWB',[ColorPricingController::class,'weatherbond_save']);
-        Route::post('List/AddWG',[ColorPricingController::class,'weathergard_save']);
+        Route::post('List/AddMatex',[ColorPricingController::class,'matex_save']);
+        Route::post('List/AddMatexPremium',[ColorPricingController::class,'matexpremium_save']);
+        Route::post('List/AddSuperEasyWash',[ColorPricingController::class,'supereasywash_save']);
+        Route::post('List/AddWeatherBond',[ColorPricingController::class,'weatherbond_save']);
+        Route::post('List/AddWeatherGard',[ColorPricingController::class,'weathergard_save']);
+
+        Route::get('Matex/{id}/Delete',[ColorPricingController::class,'ma_destroy']);
+        Route::get('Premium-Matex/{id}/Delete',[ColorPricingController::class,'mpm_destroy']);
+        Route::get('WeatherGard/{id}/Delete',[ColorPricingController::class,'wg_destroy']);
+        Route::get('WeatherBond/{id}/Delete',[ColorPricingController::class,'wb_destroy']);
+        Route::get('SuperEasyWash/{id}/Delete',[ColorPricingController::class,'nsew_destroy']);
 
         Route::get('Matex',[ColorPricingController::class,'colorprice_ma']);
         Route::get('Premium-Matex',[ColorPricingController::class,'colorprice_mpm']);

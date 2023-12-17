@@ -90,8 +90,8 @@
                                     <img src="{{ url('img/color_pricing/'.$item->color_image) }}" alt="" style="width: 100px; height: 100px;" onerror="this.style.display = 'none'">
                                 </td>
                                 <td>
-                                    <a href="/Admin/ColorPricing/List/{{$item->id}}/Delete" class="btn btn-danger" draggable="false">Delete</a>
-                                    <a href="/Admin/ColorPricing/List/{{$item->id}}/Edit" class="btn btn-primary" draggable="false">Edit</a>
+                                    <a href="/Admin/ColorPricing/SuperEasyWash/{{$item->id}}/Delete" class="btn btn-danger" draggable="false">Delete</a>
+                                    <a href="/Admin/ColorPricing/SuperEasyWash/{{$item->id}}/Edit" class="btn btn-primary" draggable="false">Edit</a>
                                 </td>
                             </tr>
                         @endforeach

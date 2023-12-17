@@ -265,6 +265,7 @@ class AdminLoginController extends Controller
         ProjectReferenceModel::where('id',$id)->forceDelete();
         return redirect('/Admin/Project-Reference/List');
     }
+
     function project_reference_index(){
         $data = ProjectReferenceModel::latest()->get();
         return view('admin_dashboard.project_reference.project-reference-index',compact('data'));

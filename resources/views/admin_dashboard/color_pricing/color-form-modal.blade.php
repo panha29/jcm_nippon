@@ -161,8 +161,8 @@
                     <input type="text" class="form-control" placeholder="" aria-label="color_5l" aria-describedby="color_5l" name="color_5l" autocomplete="off" id="color_5l">
                 </div>
                 <div class="input-group mb-3" >
-                    <span class="input-group-text" id="color_18l" style="width: 100px;">15L Price</span>
-                    <input type="text" class="form-control" placeholder="" aria-label="color_18l" aria-describedby="color_18l" name="color_18l" autocomplete="off" id="color_18l">
+                    <span class="input-group-text" id="color_15l" style="width: 100px;">15L Price</span>
+                    <input type="text" class="form-control" placeholder="" aria-label="color_15l" aria-describedby="color_15l" name="color_15l" autocomplete="off" id="color_15l">
                 </div>
 
                 <div class="input-group mb-3">

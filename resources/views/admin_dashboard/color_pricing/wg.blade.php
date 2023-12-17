@@ -60,7 +60,7 @@
                             <th>Tag</th>
                             <th class="col-1">1L Price</th>
                             <th class="col-1">5L Price</th>
-                            <th class="col-1">18L Price</th>
+                            <th class="col-1">15L Price</th>
                             <th>Image</th>
                             <th></th>
                         </tr>
@@ -84,14 +84,14 @@
                                     {{$item->color_5l}}
                                 </td>
                                 <td>
-                                    {{$item->color_18l}}
+                                    {{$item->color_15l}}
                                 </td>
                                 <td>
                                     <img src="{{ url('img/color_pricing/'.$item->color_image) }}" alt="" style="width: 100px; height: 100px;" onerror="this.style.display = 'none'">
                                 </td>
                                 <td>
-                                    <a href="/Admin/ColorPricing/List/{{$item->id}}/Delete" class="btn btn-danger" draggable="false">Delete</a>
-                                    <a href="/Admin/ColorPricing/List/{{$item->id}}/Edit" class="btn btn-primary" draggable="false">Edit</a>
+                                    <a href="/Admin/ColorPricing/WeatherGard/{{$item->id}}/Delete" class="btn btn-danger" draggable="false">Delete</a>
+                                    <a href="/Admin/ColorPricing/WeatherGard/{{$item->id}}/Edit" class="btn btn-primary" draggable="false">Edit</a>
                                 </td>
                             </tr>
                         @endforeach

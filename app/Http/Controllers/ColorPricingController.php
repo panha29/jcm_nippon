@@ -96,19 +96,38 @@ class ColorPricingController extends Controller
         return redirect('/Admin/ColorPricing/SuperEasyWash');
     }
 
-    // function colorprice_index(){
-    //     $ma = DB::table('colorprice_matex')->get();
-    //     $wb = DB::table('colorprice_matexpremium')->get();
-    //     $wg = DB::table('colorprice_weatherbond')->get();
-    //     $nsew = DB::table('colorprice_weathergard')->get();
-    //     $mpm = DB::table('colorprice_supereasywash')->get();
-    //     return view('admin_dashboard.color_pricing.index', compact('ma','wb','wg','mpm','nsew'));
-    // }
 
     function colorprice_ma(){
         $ma = DB::table('colorprice_matex')->get();
         return view('admin_dashboard.color_pricing.ma', compact('ma'));
     }
+
+    public function ma_destroy($id){
+        MatexModel::where('id',$id)->forceDelete();
+        return redirect('/Admin/ColorPricing/Matex');
+    }
+
+    public function mpm_destroy($id){
+        MatexPremiumModel::where('id',$id)->forceDelete();
+        return redirect('/Admin/ColorPricing/Premium-Matex');
+    }
+
+    public function wg_destroy($id){
+        WeatherGardModel::where('id',$id)->forceDelete();
+        return redirect('/Admin/ColorPricing/WeatherGard');
+    }
+
+    public function wb_destroy($id){
+        WeatherBondModel::where('id',$id)->forceDelete();
+        return redirect('/Admin/ColorPricing/WeatherBond');
+    }
+
+    public function nsew_destroy($id){
+        SuperEasyWashModel::where('id',$id)->forceDelete();
+        return redirect('/Admin/ColorPricing/SuperEasyWash');
+    }
+
+
     function colorprice_mpm(){
         $mpm = DB::table('colorprice_matexpremium')->get();
         return view('admin_dashboard.color_pricing.mpm', compact('mpm'));
