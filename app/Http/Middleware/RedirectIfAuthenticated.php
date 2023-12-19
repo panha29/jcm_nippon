@@ -24,6 +24,5 @@ class RedirectIfAuthenticated
                 return redirect('User/Dashboard');
         }
         return $next($request);
-
     }
 }
