@@ -144,7 +144,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 pb-25 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em">Pre-Painting Site Inspection With Our Professional</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-10 text-center">Pre-Painting Site Inspection With Our Professional</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>
@@ -165,7 +165,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 pb-25 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em">Shifting and Protection of Furniture and Floor</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-10 text-center">Shifting and Protection of Furniture and Floor</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>
@@ -186,7 +186,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 pb-25 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em">Certified and Highly-Trained Painting Professionals</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-10 text-center">Certified and Highly-Trained Painting Professionals</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>
@@ -215,7 +215,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 pb-25 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em">Prepare Premium Nippon Paint Products</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-10 text-center">Prepare Premium Nippon Paint Products</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>
@@ -227,9 +227,6 @@
                                                     </figure>
                                                 </div>
                                             </div>
-                                            <div class="divider w-full">
-                                                <span class="w-full my-25 border-top border-black-20"></span>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -239,7 +236,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 pb-25 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em">Reinstating of furniture after painting</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-10 text-center">Reinstating of furniture after painting</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>
@@ -251,9 +248,6 @@
                                                     </figure>
                                                 </div>
                                             </div>
-                                            <div class="divider w-full">
-                                                <span class="w-full my-25 border-top border-black-20"></span>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -263,7 +257,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 pb-25 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em">Aavailable Thousand Colors to Choose</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-10 text-center">Aavailable Thousand Colors to Choose</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>
@@ -274,9 +268,6 @@
                                                         <img class="rounded-full" draggable="false" width="458" height="602" src="../webv2/images/demo/service/colorpallet.jpg" alt="services">
                                                     </figure>
                                                 </div>
-                                            </div>
-                                            <div class="divider w-full">
-                                                <span class="w-full my-25 border-top border-black-20"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -305,7 +296,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-15 text-center">Pre-Painting Site Inspection With Our Professional</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-15 text-center p-10 text-center">Pre-Painting Site Inspection With Our Professional</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>
@@ -326,7 +317,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-15 text-center">Shifting and Protection of Furniture and Floor</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-15 text-center p-10 text-center">Shifting and Protection of Furniture and Floor</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>
@@ -418,7 +409,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-15 text-center">Aavailable Thousand Colors to Choose</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-15 text-center">Available Thousand Colors to Choose</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>

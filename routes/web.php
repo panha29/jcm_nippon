@@ -131,7 +131,7 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
  Route::get('/Contact-Us',[UserLoginController::class,'user_contact_us']);
  Route::get('/About-Us',[UserLoginController::class,'user_about_us']);
  Route::get('/Color-Palette',[UserLoginController::class,'user_color_palette']);
- Route::get('/Color-Pricing',[UserLoginController::class,'user_color_pricing']);
+ Route::get('/Color-Pricing',[ColorPricingController::class,'user_color_pricing']);
  Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');
 
 });

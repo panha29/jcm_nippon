@@ -1,6 +1,5 @@
 <div id="lqd-tab-events-item-Green" role="tabpanel" class="lqd-tabs-pane fade active show">
     <div class="container p-0 module-container">
-
         <table id="colorid" class="" style="width: auto;">
             <thead>
                 <tr>

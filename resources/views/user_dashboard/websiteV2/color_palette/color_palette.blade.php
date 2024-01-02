@@ -141,7 +141,7 @@
                                 <ul class="reset-ul lqd-tabs-nav flex items-center justify-center border-black-10 link-13 uppercase font-ultrabold link-primary md:justify-between" role="tablist">
 
                                     <li data-controls="lqd-tab-events-item-1" role="presentation" class="text-center">
-                                        <a href="#lqd-tab-events-item-Green" class="active" aria-expanded="false" aria-controls="lqd-tab-events-item-green" role="tab" data-bs-toggle="tab">
+                                        <a draggable="false" href="#lqd-tab-events-item-Green" class="active" aria-expanded="false" aria-controls="lqd-tab-events-item-green" role="tab" data-bs-toggle="tab">
                                             <span class="iconbox items-center justify-center">
                                                 <span class="flex flex-col">
                                                     <span class="iconbox-title h3 my-0">Green</span>
@@ -153,7 +153,7 @@
                                         </a>
                                     </li>
                                     <li data-controls="lqd-tab-events-item-2" role="presentation" class="text-center">
-                                        <a href="#lqd-tab-events-item-Red" aria-expanded="false" aria-controls="lqd-tab-events-item-Red" role="tab" data-bs-toggle="tab">
+                                        <a draggable="false" href="#lqd-tab-events-item-Red" aria-expanded="false" aria-controls="lqd-tab-events-item-Red" role="tab" data-bs-toggle="tab">
                                             <span class="iconbox items-center justify-center">
                                                 <span class="flex flex-col">
                                                     <span class="iconbox-title h3 my-0">Red</span>
@@ -165,7 +165,7 @@
                                         </a>
                                     </li>
                                     <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
-                                        <a href="#lqd-tab-events-item-Yellow" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
+                                        <a draggable="false" href="#lqd-tab-events-item-Yellow" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
                                             <span class="iconbox items-center justify-center">
                                                 <span class="flex flex-col">
                                                     <span class="iconbox-title h3 my-0">Yellow</span>
@@ -177,7 +177,7 @@
                                         </a>
                                     </li>
                                     <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
-                                        <a href="#lqd-tab-events-item-Orange" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
+                                        <a draggable="false" href="#lqd-tab-events-item-Orange" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
                                             <span class="iconbox items-center justify-center">
                                                 <span class="flex flex-col">
                                                     <span class="iconbox-title h3 my-0">Orange</span>
@@ -189,7 +189,7 @@
                                         </a>
                                     </li>
                                     <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
-                                        <a href="#lqd-tab-events-item-Blue" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
+                                        <a draggable="false" href="#lqd-tab-events-item-Blue" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
                                             <span class="iconbox items-center justify-center">
                                                 <span class="flex flex-col">
                                                     <span class="iconbox-title h3 my-0">Blue</span>
@@ -201,7 +201,7 @@
                                         </a>
                                     </li>
                                     <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
-                                        <a href="#lqd-tab-events-item-Purple" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
+                                        <a draggable="false" href="#lqd-tab-events-item-Purple" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
                                             <span class="iconbox items-center justify-center">
                                                 <span class="flex flex-col">
                                                     <span class="iconbox-title h3 my-0">Purple</span>
@@ -213,7 +213,7 @@
                                         </a>
                                     </li>
                                     <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
-                                        <a href="#lqd-tab-events-item-Grey" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
+                                        <a draggable="false" href="#lqd-tab-events-item-Grey" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
                                             <span class="iconbox items-center justify-center">
                                                 <span class="flex flex-col">
                                                     <span class="iconbox-title h3 my-0">Grey</span>
@@ -225,7 +225,7 @@
                                         </a>
                                     </li>
                                     <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
-                                        <a href="#lqd-tab-events-item-Neutral" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
+                                        <a draggable="false" href="#lqd-tab-events-item-Neutral" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
                                             <span class="iconbox items-center justify-center">
                                                 <span class="flex flex-col">
                                                     <span class="iconbox-title h3 my-0">Neutral</span>
@@ -237,7 +237,7 @@
                                         </a>
                                     </li>
                                     <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
-                                        <a href="#lqd-tab-events-item-Green-Blue" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
+                                        <a draggable="false" href="#lqd-tab-events-item-Green-Blue" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
                                             <span class="iconbox items-center justify-center">
                                                 <span class="flex flex-col">
                                                     <span class="iconbox-title h3 my-0">Green Blue</span>
@@ -249,7 +249,7 @@
                                         </a>
                                     </li>
                                     <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
-                                        <a href="#lqd-tab-events-item-Off-White" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
+                                        <a draggable="false" href="#lqd-tab-events-item-Off-White" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
                                             <span class="iconbox items-center justify-center">
                                                 <span class="flex flex-col">
                                                     <span class="iconbox-title h3 my-0">Off White</span>

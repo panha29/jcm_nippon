@@ -14,8 +14,9 @@ use App\Models\WeatherBondModel;
 use App\Models\WeatherGardModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-// use Maatwebsite\Excel\Excel;
 use Maatwebsite\Excel\Facades\Excel;
+use Illuminate\Support\Facades\Cache;
+use App\Models\CategoryModel;
 
 class ColorPricingController extends Controller
 {
@@ -178,5 +179,21 @@ class ColorPricingController extends Controller
     function colorprice_nsew(){
         $nsew = DB::table('colorprice_supereasywash')->get();
         return view('admin_dashboard.color_pricing.nsew', compact('nsew'));
+    }
+
+    function user_color_pricing(){
+        // $ma = DB::table('colorprice_matex')->get();
+        // $mpm = DB::table('colorprice_matexpremium')->get();
+        // $wb = DB::table('colorprice_weatherbond')->get();
+        // $wg = DB::table('colorprice_weathergard')->get();
+        // $nsew = DB::table('colorprice_supereasywash')->get();
+        // return view('admin_dashboard.color_pricing.nsew', compact('nsew'));
+        $nav = CategoryModel::all();
+
+        $ma = Cache::remember('colorprice_matex', $seconds = 86400, function () {
+            return DB::table('colorprice_matex')->get();
+        });
+        return view('user_dashboard.websiteV2.color_pricing.all_color_pricing', compact('ma','nav'));
+
     }
 }

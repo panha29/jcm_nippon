@@ -12,6 +12,7 @@ use App\Models\MediaModel;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Cache;
 
 class UserLoginController extends Controller
 {
@@ -69,9 +70,11 @@ class UserLoginController extends Controller
     }
 
     function user_color_palette(){
+        // $color = DB::table('colorpalette')->get();
         $nav = CategoryModel::all();
-        $color = ColorPaletteModel::get();
-        // $color = DB::table('colorpalette')->select('colorpalette_category')->groupBy('colorpalette_category')->get();
+        $color = Cache::remember('colorpalette', $seconds = 86400, function () {
+            return DB::table('colorpalette')->get();
+        });
         return view('user_dashboard.websiteV2.color_palette.color_palette',compact('nav','color'));
     }
     function user_contact_us(){
