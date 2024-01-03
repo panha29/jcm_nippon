@@ -244,7 +244,7 @@ body {
         height: 290px;
         width: 180px;
     }
-    table td,
+    /* table td,
     table th {
         border: none;
         padding: 5px;
@@ -271,7 +271,7 @@ body {
     }
     table tbody tr:nth-child(odd) {
         background-color: transparent;
-    }
+    } */
     input[type=text] {
         min-height: 44px;
         border: 0px transparent;
@@ -308,7 +308,7 @@ body {
         height: 290px;
         width: 180px;
     }
-    table td,
+    /* table td,
     table th {
         border: none;
         padding: 5px;
@@ -335,7 +335,7 @@ body {
     }
     table tbody tr:nth-child(odd) {
         background-color: transparent;
-    }
+    } */
     input[type=text] {
         min-height: 44px;
         border: 0px transparent;
@@ -373,7 +373,7 @@ body {
         padding: 33px;
         line-height: 40px;
     }
-    table td,
+    /* table td,
     table th {
         border: none;
         padding: 5px;
@@ -400,7 +400,7 @@ body {
     }
     table tbody tr:nth-child(odd) {
         background-color: transparent;
-    }
+    } */
     input[type=text] {
         min-height: 44px;
         border: 0px transparent;
@@ -536,13 +536,13 @@ body {
         border-style: none;
         border-width: 0;
     }
-    tbody {
+    /* tbody {
         display: inline-flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: auto;
         justify-content: space-between;
-    }
+    } */
     table tr {
         border-bottom: 0px solid #dedede;
     }

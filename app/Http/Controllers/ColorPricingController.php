@@ -190,6 +190,18 @@ class ColorPricingController extends Controller
         // return view('admin_dashboard.color_pricing.nsew', compact('nsew'));
         $nav = CategoryModel::all();
 
+        $all = Cache::remember('colorprice_matex', $seconds = 86400, function () {
+            return DB::table('colorprice_matex')->get();
+        });
+        $ma = Cache::remember('colorprice_matex', $seconds = 86400, function () {
+            return DB::table('colorprice_matex')->get();
+        });
+        $ma = Cache::remember('colorprice_matex', $seconds = 86400, function () {
+            return DB::table('colorprice_matex')->get();
+        });
+        $ma = Cache::remember('colorprice_matex', $seconds = 86400, function () {
+            return DB::table('colorprice_matex')->get();
+        });
         $ma = Cache::remember('colorprice_matex', $seconds = 86400, function () {
             return DB::table('colorprice_matex')->get();
         });
