@@ -244,34 +244,34 @@ body {
         height: 290px;
         width: 180px;
     }
-    /* table td,
-    table th {
+    .color_pallete td,
+    .color_pallete th {
         border: none;
-        padding: 5px;
+        padding: 10px;
     }
-    tbody,
-    td,
-    tfoot,
-    th,
-    thead,
-    tr {
+    .color_pallete tbody,
+    .color_pallete td,
+    .color_pallete tfoot,
+    .color_pallete th,
+    .color_pallete thead,
+    .color_pallete tr {
         border-color: inherit;
         border-style: none;
         border-width: 0;
     }
-    tbody {
+    .color_pallete tbody {
         display: inline-flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
         width: 1140px;
     }
-    table tr {
+    .color_pallete table tr {
         border-bottom: 0px solid #dedede;
     }
-    table tbody tr:nth-child(odd) {
+    .color_pallete table tbody tr:nth-child(odd) {
         background-color: transparent;
-    } */
+    }
     input[type=text] {
         min-height: 44px;
         border: 0px transparent;
@@ -308,34 +308,34 @@ body {
         height: 290px;
         width: 180px;
     }
-    /* table td,
-    table th {
+    .color_pallete td,
+    .color_pallete th {
         border: none;
-        padding: 5px;
+        padding: 10px;
     }
-    tbody,
-    td,
-    tfoot,
-    th,
-    thead,
-    tr {
+    .color_pallete tbody,
+    .color_pallete td,
+    .color_pallete tfoot,
+    .color_pallete th,
+    .color_pallete thead,
+    .color_pallete tr {
         border-color: inherit;
         border-style: none;
         border-width: 0;
     }
-    tbody {
+    .color_pallete tbody {
         display: inline-flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
         width: 1140px;
     }
-    table tr {
+    .color_pallete table tr {
         border-bottom: 0px solid #dedede;
     }
-    table tbody tr:nth-child(odd) {
+    .color_pallete table tbody tr:nth-child(odd) {
         background-color: transparent;
-    } */
+    }
     input[type=text] {
         min-height: 44px;
         border: 0px transparent;
@@ -373,34 +373,34 @@ body {
         padding: 33px;
         line-height: 40px;
     }
-    /* table td,
-    table th {
+    .color_pallete td,
+    .color_pallete th {
         border: none;
-        padding: 5px;
+        padding: 10px;
     }
-    tbody,
-    td,
-    tfoot,
-    th,
-    thead,
-    tr {
+    .color_pallete tbody,
+    .color_pallete td,
+    .color_pallete tfoot,
+    .color_pallete th,
+    .color_pallete thead,
+    .color_pallete tr {
         border-color: inherit;
         border-style: none;
         border-width: 0;
     }
-    tbody {
+    .color_pallete tbody {
         display: inline-flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
         width: 1140px;
     }
-    table tr {
+    .color_pallete table tr {
         border-bottom: 0px solid #dedede;
     }
-    table tbody tr:nth-child(odd) {
+    .color_pallete table tbody tr:nth-child(odd) {
         background-color: transparent;
-    } */
+    }
     input[type=text] {
         min-height: 44px;
         border: 0px transparent;
@@ -521,32 +521,32 @@ body {
         width: 100%;
         margin: auto;
     }
-    table td,
-    table th {
+    .color_pallete td,
+    .color_pallete th {
         border: none;
-        padding: 0px;
+        padding: 10px;
     }
-    tbody,
-    td,
-    tfoot,
-    th,
-    thead,
-    tr {
+    .color_pallete tbody,
+    .color_pallete td,
+    .color_pallete tfoot,
+    .color_pallete th,
+    .color_pallete thead,
+    .color_pallete tr {
         border-color: inherit;
         border-style: none;
         border-width: 0;
     }
-    /* tbody {
+    .color_pallete tbody {
         display: inline-flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: auto;
-        justify-content: space-between;
-    } */
-    table tr {
+        justify-content: space-evenly;
+        width: 1010px;
+    }
+    .color_pallete table tr {
         border-bottom: 0px solid #dedede;
     }
-    table tbody tr:nth-child(odd) {
+    .color_pallete table tbody tr:nth-child(odd) {
         background-color: transparent;
     }
     input[type=text] {

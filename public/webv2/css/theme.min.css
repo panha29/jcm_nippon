@@ -1293,9 +1293,10 @@ table tbody th {
     font-weight: 400
 }
 
-table tbody tr:nth-child(odd) {
+
+/* table tbody tr:nth-child(odd) {
     background-color: #f7f7f7
-}
+} */
 
 pre {
     margin-bottom: 1.5em

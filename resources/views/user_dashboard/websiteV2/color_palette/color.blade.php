@@ -1,6 +1,6 @@
 <div id="lqd-tab-events-item-Green" role="tabpanel" class="lqd-tabs-pane fade active show">
     <div class="container p-0 module-container">
-        <table id="colorid" class="" style="width: auto;">
+        <table id="colorid" class="color_pallete" style="width: auto;">
             <thead>
                 <tr>
                     <th></th>
@@ -43,7 +43,7 @@
 
 <div id="lqd-tab-events-item-Red" role="tabpanel" class="lqd-tabs-pane fade show">
     <div class="container p-0 module-container">
-        <table id="colorid" class="" style="width: auto;">
+        <table id="colorid" class="color_pallete" style="width: auto;">
             <thead>
                 <tr>
                     <th></th>
@@ -85,7 +85,7 @@
 </div>
 <div id="lqd-tab-events-item-Yellow" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="colorid" class="" style="width: auto;">
+        <table id="colorid" class="color_pallete" style="width: auto;">
             <thead>
                 <tr>
                     <th></th>
@@ -127,7 +127,7 @@
 </div>
 <div id="lqd-tab-events-item-Orange" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="colorid" class="" style="width: auto;">
+        <table id="colorid" class="color_pallete" style="width: auto;">
             <thead>
                 <tr>
                     <th></th>
@@ -169,7 +169,7 @@
 </div>
 <div id="lqd-tab-events-item-Blue" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="colorid" class="" style="width: auto;">
+        <table id="colorid" class="color_pallete" style="width: auto;">
             <thead>
                 <tr>
                     <th></th>
@@ -211,7 +211,7 @@
 </div>
 <div id="lqd-tab-events-item-Purple" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="colorid" class="" style="width: auto;">
+        <table id="colorid" class="color_pallete" style="width: auto;">
             <thead>
                 <tr>
                     <th></th>
@@ -253,7 +253,7 @@
 </div>
 <div id="lqd-tab-events-item-Grey" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="colorid" class="" style="width: auto;">
+        <table id="colorid" class="color_pallete" style="width: auto;">
             <thead>
                 <tr>
                     <th></th>
@@ -295,7 +295,7 @@
 </div>
 <div id="lqd-tab-events-item-Neutral" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="colorid" class="" style="width: auto;">
+        <table id="colorid" class="color_pallete" style="width: auto;">
             <thead>
                 <tr>
                     <th></th>
@@ -337,7 +337,7 @@
 </div>
 <div id="lqd-tab-events-item-Green-Blue" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="colorid" class="" style="width: auto;">
+        <table id="colorid" class="color_pallete" style="width: auto;">
             <thead>
                 <tr>
                     <th></th>
@@ -379,7 +379,7 @@
 </div>
 <div id="lqd-tab-events-item-Off-White" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="colorid" class="" style="width: auto;">
+        <table id="colorid" class="color_pallete" style="width: auto;">
             <thead>
                 <tr>
                     <th></th>
