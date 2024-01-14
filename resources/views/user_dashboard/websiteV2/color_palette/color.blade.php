@@ -180,7 +180,7 @@
                     <?php if ($item->colorpalette_category == "Blue") { ?>
                         <tr>
                             <td>
-                                <div id="lqd-tab-events-item-All-Color" role="tabpanel" class="lqd-tabs-pane fade color-view" >
+                                <div id="lqd-tab-events-item-Blue" role="tabpanel" class="lqd-tabs-pane fade color-view" >
                                     <div id="box">
                                         <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
 
@@ -335,7 +335,7 @@
         </table>
     </div>
 </div>
-<div id="lqd-tab-events-item-Green-Blue" role="tabpanel" class="lqd-tabs-pane fade">
+{{-- <div id="lqd-tab-events-item-Green-Blue" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
         <table id="colorid" class="color_pallete" style="width: auto;">
             <thead>
@@ -376,7 +376,7 @@
             </tbody>
         </table>
     </div>
-</div>
+</div> --}}
 <div id="lqd-tab-events-item-Off-White" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
         <table id="colorid" class="color_pallete" style="width: auto;">

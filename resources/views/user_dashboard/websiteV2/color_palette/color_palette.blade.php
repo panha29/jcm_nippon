@@ -176,8 +176,8 @@
                                             </span>
                                         </a>
                                     </li>
-                                    <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
-                                        <a draggable="false" href="#lqd-tab-events-item-Orange" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
+                                    <li data-controls="lqd-tab-events-item-4" role="presentation" class="text-center">
+                                        <a draggable="false" href="#lqd-tab-events-item-Orange" aria-expanded="false" aria-controls="lqd-tab-events-item-4" role="tab" data-bs-toggle="tab">
                                             <span class="iconbox items-center justify-center">
                                                 <span class="flex flex-col">
                                                     <span class="iconbox-title h3 my-0">Orange</span>
@@ -188,8 +188,8 @@
                                             </span>
                                         </a>
                                     </li>
-                                    <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
-                                        <a draggable="false" href="#lqd-tab-events-item-Blue" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
+                                    <li data-controls="lqd-tab-events-item-Blue" role="presentation" class="text-center">
+                                        <a draggable="false" href="#lqd-tab-events-item-Blue" aria-expanded="false" aria-controls="lqd-tab-events-item-Blue" role="tab" data-bs-toggle="tab">
                                             <span class="iconbox items-center justify-center">
                                                 <span class="flex flex-col">
                                                     <span class="iconbox-title h3 my-0">Blue</span>
