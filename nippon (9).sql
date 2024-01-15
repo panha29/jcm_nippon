@@ -1,0 +1,2619 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jan 15, 2024 at 11:35 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.1.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `nippon`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `career`
+--
+
+CREATE TABLE `career` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `career_title` varchar(255) NOT NULL,
+  `career_position` varchar(255) NOT NULL,
+  `career_image` varchar(255) DEFAULT NULL,
+  `career_location` varchar(255) DEFAULT NULL,
+  `career_date` varchar(255) NOT NULL,
+  `career_detail` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `career`
+--
+
+INSERT INTO `career` (`id`, `career_title`, `career_position`, `career_image`, `career_location`, `career_date`, `career_detail`, `created_at`, `updated_at`) VALUES
+(1, 'Senior Training & Talent Development Specialist', 'Senior Training & Talent Development Specialist', NULL, 'Phnom Penh', '24/11/2023', 'Senior Training & Talent Development Specialist', '2023-11-24 03:20:43', '2023-11-24 03:20:43'),
+(2, 'Internal Auditor', 'Internal Auditor', NULL, 'Phnom Penh', '24/11/2023', 'Internal Auditor', '2023-11-24 04:29:37', '2023-11-24 04:29:37');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `categories`
+--
+
+CREATE TABLE `categories` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `category_name` varchar(255) NOT NULL,
+  `category_date` varchar(255) NOT NULL,
+  `category_tag` varchar(255) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `categories`
+--
+
+INSERT INTO `categories` (`id`, `category_name`, `category_date`, `category_tag`, `created_at`, `updated_at`) VALUES
+(1, 'Home Paint', '26.10.2023', 'home-paint', '2023-10-25 20:28:34', '2023-10-25 20:28:34'),
+(2, 'WaterProofing', '26.10.2023', 'waterproofing', '2023-10-25 20:29:23', '2023-10-25 20:29:23'),
+(3, 'Protective Paint & Industry', '26.10.2023', 'protective-paint-industry', '2023-10-25 20:30:04', '2023-10-25 20:30:04'),
+(4, 'Painting Tools', '26.10.2023', 'painting-tools', '2023-10-25 20:30:08', '2023-10-25 20:30:08');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `colorpalette`
+--
+
+CREATE TABLE `colorpalette` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `colorpalette_name` varchar(255) NOT NULL,
+  `colorpalette_category` varchar(255) NOT NULL,
+  `colorpalette_rgb` varchar(255) DEFAULT NULL,
+  `colorpalette_batch` varchar(255) DEFAULT NULL,
+  `colorpalette_image` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `colorpalette`
+--
+
+INSERT INTO `colorpalette` (`id`, `colorpalette_name`, `colorpalette_category`, `colorpalette_rgb`, `colorpalette_batch`, `colorpalette_image`, `created_at`, `updated_at`) VALUES
+(1, 'Primrose', 'Green', 'RGB- 212 197 33', '40A-1A', '40A-1A Primrose (RGB- 212 197 33).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(2, 'Leaf Scent', 'Green', 'RGB- 241 236 190', '40A-2P', '40A-2P Leaf Scent (RGB- 241 236 190).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(3, 'Willow Leaf', 'Green', 'RGB- 245 235 180', '40A-3P', '40A-3P Willow Leaf (RGB- 245 235 180).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(4, 'Green Spirit', 'Green', 'RGB- 234 221 131', '40B-1T', '40B-1T Green Spirit (RGB- 234 221 131).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(5, 'Peel Green', 'Green', 'RGB- 227 211 103', '40B-2D', '40B-2D Peel Green (RGB- 227 211 103).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(6, 'Bitter Lime', 'Green', 'RGB- 215 200 76', '40B-3D', '40B-3D Bitter Lime (RGB- 215 200 76).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(7, 'Bright Lime', 'Green', 'RGB- 200 188 49', '40B-4A', '40B-4A Bright Lime (RGB- 200 188 49).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(8, 'Green Sigh', 'Green', 'RGB- 220 218 123', '40C-1T', '40C-1T Green Sigh (RGB- 220 218 123).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(9, 'Light Chartreuse', 'Green', 'RGB- 208 205 95', '40C-2D', '40C-2D Light Chartreuse (RGB- 208 205 95).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(10, 'Green Fields', 'Green', 'RGB- 201 198 81', '40C-3D', '40C-3D Green Fields (RGB- 201 198 81).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(11, 'Weeping Willow', 'Green', 'RGB- 180 180 56', '40C-4A', '40C-4A Weeping Willow (RGB- 180 180 56).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(12, 'Citronette', 'Green', 'RGB- 164 161 58', '41A-1A', '41A-1A Citronette (RGB- 164 161 58).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(13, 'Light Nile', 'Green', 'RGB- 239 239 203', '41A-2P', '41A-2P Light Nile (RGB- 239 239 203).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(14, 'Pixie Green', 'Green', 'RGB- 232 236 186', '41A-3P', '41A-3P Pixie Green (RGB- 232 236 186).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(15, 'Spring Burst', 'Green', 'RGB- 230 232 164', '41B-1T', '41B-1T Spring Burst (RGB- 230 232 164).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(16, 'Leaf Bud', 'Green', 'RGB- 215 223 128', '41B-2T', '41B-2T Leaf Bud (RGB- 215 223 128).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(17, 'Springtide', 'Green', 'RGB- 194 208 86', '41B-3D', '41B-3D Springtide (RGB- 194 208 86).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(18, 'Green Electra', 'Green', 'RGB- 177 194 63', '41B-4A', '41B-4A Green Electra (RGB- 177 194 63).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(19, 'Lime Mist', 'Green', 'RGB- 219 227 153', '41C-1T', '41C-1T Lime Mist  (RGB- 219 227 153).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(20, 'Lime Tart', 'Green', 'RGB- 204 217 132', '41C-2T', '41C-2T Lime Tart  (RGB- 204 217 132).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(21, 'Green Glitter', 'Green', 'RGB- 178 197 86', '41C-3D', '41C-3D Green Glitter  (RGB- 178 197 86).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(22, 'Greenella', 'Green', 'RGB- 156 174 62', '41C-4A', '41C-4A Greenella  (RGB- 156 174 62).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(23, 'Envys Eyes', 'Green', 'RGB- 126 176 62', '42A-1A', '42A-1A Envys Eyes  (RGB- 126 176 62).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(24, 'Absinthe', 'Green', 'RGB- 240 240 219', '42A-2P', '42A-2P Absinthe  (RGB- 240 240 219).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(25, 'Touch-o-lime', 'Green', 'RGB-229 232 201', '42A-3P', '42A-3P Touch-o-lime  (RGB-229 232 201).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(26, 'Pale Citron', 'Green', 'RGB- 223 234 179', '42B-1P', '42B-1P Pale Citron  (RGB- 223 234 179).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(27, 'Limesicle', 'Green', 'RGB- 202 224 146', '42B-2T', '42B-2T Limesicle  (RGB- 202 224 146).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(28, 'Candy Green', 'Green', 'RGB- 184 212 115', '42B-3D', '42B-3D Candy Green  (RGB- 184 212 115).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(29, 'Sharp Green', 'Green', 'RGB- 160 197 89', '42B-4D', '42B-4D Sharp Green  (RGB- 160 197 89).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(30, 'Carousel Green', 'Green', 'RGB-215 222 178', '42C-1P', '42C-1P Carousel Green  (RGB-215 222 178).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(31, 'Carolina Green', 'Green', 'RGB-201 212 157', '42C-2T', '42C-2T Carolina Green  (RGB-201 212 157).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(32, 'Green Aspen', 'Green', 'RGB- 176 188 121', '42C-3D', '42C-3D Green Aspen  (RGB- 176 188 121).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(33, 'New Holly', 'Green', 'RGB- 154 168 97', '42C-4D', '42C-4D New Holly  (RGB- 154 168 97).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(34, 'Christmas Green', 'Green', 'RGB- 74 139 64', '43A-1A', '43A-1A Christmas Green  (RGB- 74 139 64).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(35, 'Green Hint', 'Green', 'RGB- 237 239 216', '43A-2P', '43A-2P Green Hint  (RGB- 237 239 216).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(36, 'Tidal Foam', 'Green', 'RGB- 221 232 201', '43A-3P', '43A-3P Tidal Foam  (RGB- 221 232 201).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(37, 'Spring Thaw', 'Green', 'RGB- 219 234 186', '43B-1P', '43B-1P Spring Thaw  (RGB- 219 234 186).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(38, 'Sap Green', 'Green', 'RGB- 199 225 152', '43B-2T', '43B-2T Sap Green  (RGB- 199 225 152).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(39, 'Green Cheer', 'Green', 'RGB- 171 209 115', '43B-3D', '43B-3D Green Cheer  (RGB- 171 209 115).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(40, 'Shocking Green', 'Green', 'RGB- 146 194 89', '43B-4D', '43B-4D Shocking Green  (RGB- 146 194 89).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(41, 'Crystal Green', 'Green', 'RGB-209 226 188', '43C-1P', '43C-1P Crystal Green  (RGB-209 226 188).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(42, 'Monterey Green', 'Green', 'RGB-184 209 159', '43C-2T', '43C-2T Monterey Green  (RGB-184 209 159).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(43, 'Moss Green', 'Green', 'RGB-1154 184 122', '43C-3D', '43C-3D Moss Green  (RGB-1154 184 122).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(44, 'Dandelion Green', 'Green', 'RGB-132 165 101', '43C-4D', '43C-4D Dandelion Green  (RGB-132 165 101).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(45, 'Forest Green', 'Green', 'RGB- 66 101 65', '44A-1A', '44A-1A Forest Green  (RGB- 66 101 65).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(46, 'Creamy Cucumber', 'Green', 'RGB- 228 235 214', '44A-2P', '44A-2P Creamy Cucumber  (RGB- 228 235 214).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(47, 'Almost Aqua', 'Green', 'RGB- 221 232 205', '44A-3P', '44A-3P Almost Aqua  (RGB- 221 232 205).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(48, 'Willowbrook', 'Green', 'RGB- 199 222 184', '44B-1P', '44B-1P Willowbrook  (RGB- 199 222 184).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(49, 'Glen Green', 'Green', 'RGB- 173 205 157', '44B-2T', '44B-2T Glen Green  (RGB- 173 205 157).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(50, 'Cape Green', 'Green', 'RGB- 139 178 122', '44B-3D', '44B-3D Cape Green  (RGB- 139 178 122).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(51, 'Grass Green', 'Green', 'RGB- 117 162 104', '44B-4D', '44B-4D Grass Green  (RGB- 117 162 104).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(52, 'Arabian Green', 'Green', 'RGB- 193 218 188', '44C-1P', '44C-1P Arabian Green  (RGB- 193 218 188).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(53, 'Village Green', 'Green', 'RGB- 158 197 157', '44C-2T', '44C-2T Village Green  (RGB- 158 197 157).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(54, 'Pea Pod', 'Green', 'RGB- 136 178 132', '44C-3D', '44C-3D Pea Pod  (RGB- 136 178 132).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(55, 'Polo Green', 'Green', 'RGB- 108 152 107', '44C-4D', '44C-4D Polo Green  (RGB- 108 152 107).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(56, 'Lucky Irish', 'Green', 'RGB- 53 151 77', '45A-1A', '45A-1A Lucky Irish  (RGB- 53 151 77).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(57, 'Everfrost', 'Green', 'RGB- 235 241 217', '45A-2P', '45A-2P Everfrost  (RGB- 235 241 217).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(58, 'Green Glow', 'Green', 'RGB- 218 236 197', '45A-3P', '45A-3P Green Glow  (RGB- 218 236 197).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(59, 'Garden Fantasy', 'Green', 'RGB- 206 232 180', '45B-1P', '45B-1P Garden Fantasy  (RGB- 206 232 180).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(60, 'Green Melody', 'Green', 'RGB- 178 218 148', '45B-2T', '45B-2T Green Melody  (RGB- 178 218 148).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(61, 'Easter Green', 'Green', 'RGB- 158 206 120', '45B-3D', '45B-3D Easter Green  (RGB- 158 206 120).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(62, 'Shamrock', 'Green', 'RGB- 130 193 94', '45B-4D', '45B-4D Shamrock  (RGB- 130 193 94).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(63, 'Cove Green', 'Green', 'RGB- 192 222 187', '45C-1P', '45C-1P Cove Green  (RGB- 192 222 187).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(64, 'Barbados Green', 'Green', 'RGB- 159 203 159', '45C-2T', '45C-2T Barbados Green  (RGB- 159 203 159).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(65, 'Ceramic Jade', 'Green', 'RGB- 137 187 134', '45C-3D', '45C-3D Ceramic Jade  (RGB- 137 187 134).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(66, 'Green Thumb', 'Green', 'RGB- 112 164 109', '45C-4D', '45C-4D Green Thumb  (RGB- 112 164 109).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(67, 'Wild Mint', 'Green', 'RGB- 29 116 73', '46A-1A', '46A-1A Wild Mint  (RGB- 29 116 73).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(68, 'Cypress Green', 'Green', 'RGB- 231 240 220', '46A-2P', '46A-2P Cypress Green  (RGB- 231 240 220).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(69, 'Mint Hint', 'Green', 'RGB- 219 238 208', '46A-3P', '46A-3P Mint Hint  (RGB- 219 238 208).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(70, 'Gumdrop', 'Green', 'RGB- 195 230 187', '46B-1P', '46B-1P Gumdrop  (RGB- 195 230 187).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(71, 'Mint Cream', 'Green', 'RGB- 169 219 161', '46B-2T', '46B-2T Mint Cream  (RGB- 169 219 161).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(72, 'Merry Green', 'Green', 'RGB- 137 198 129', '46B-3D', '46B-3D Merry Green  (RGB- 137 198 129).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(73, 'Guava', 'Green', 'RGB- 102 185 100', '46B-4D', '46B-4D Guava  (RGB- 102 185 100).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(74, 'Tabor Hill', 'Green', 'RGB- 196 227 194', '46C-1P', '46C-1P Tabor Hill (RGB- 196 227 194).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(75, 'Everglade', 'Green', 'RGB- 164 208 167', '46C-2T', '46C-2T Everglade (RGB- 164 208 167).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(76, 'Freemont Green', 'Green', 'RGB- 136 189 135', '46C-3D', '46C-3D Freemont Green  (RGB- 136 189 135).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(77, 'Green Terrace', 'Green', 'RGB- 110 168 112', '46C-4D', '46C-4D Green Terrace  (RGB- 110 168 112).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(78, 'Florida Palm', 'Green', 'RGB-  125 116 61', '50A-1A', '50A-1A Florida Palm  (RGB-  125 116 61).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(79, 'Eva', 'Green', 'RGB- 242 239 221', '50A-2P', '50A-2P Eva  (RGB- 242 239 221).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(80, 'Minced Onion', 'Green', 'RGB- 233 229 199', '50A-3P', '50A-3P Minced Onion  (RGB- 233 229 199).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(81, 'Bleached Turf', 'Green', 'RGB- 225 221 185', '50B-1P', '50B-1P Bleached Turf  (RGB- 225 221 185).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(82, 'Boc Choy', 'Green', 'RGB- 206 200 153', '50B-2T', '50B-2T Boc Choy  (RGB- 206 200 153).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(83, 'Scallion', 'Green', 'RGB- 181 176 118', '50B-3D', '50B-3D Scallion  (RGB- 181 176 118).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(84, 'Budding Bough', 'Green', 'RGB- 165 160 101', '50B-4D', '50B-4D Budding Bough  (RGB- 165 160 101).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(85, 'Dusty Dawn', 'Green', 'RGB-  223 220 187', '50C-1P', '50C-1P Dusty Dawn  (RGB-  223 220 187).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(86, 'Romaine', 'Green', 'RGB-  202 198 158', '50C-2T', '50C-2T Romaine  (RGB-  202 198 158).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(87, 'Alphalpha', 'Green', 'RGB-  177 173 124', '50C-3D', '50C-3D Alphalpha  (RGB-  177 173 124).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(88, 'Essex Green', 'Green', 'RGB-  156 153 102', '50C-4D', '50C-4D Essex Green  (RGB-  156 153 102).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(89, 'Ripe Avocado', 'Green', 'RGB- 101 110 74', '51A-1A', '51A-1A Ripe Avocado  (RGB- 101 110 74).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(90, 'Winter Park', 'Green', 'RGB- 236 237 219', '51A-2P', '51A-2P Winter Park  (RGB- 236 237 219).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(91, 'Aspenwood', 'Green', 'RGB- 220 225 200', '51A-3P', '51A-3P Aspenwood  (RGB- 220 225 200).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(92, 'Honeydew', 'Green', 'RGB- 215 218 181', '51B-1P', '51B-1P Honeydew  (RGB- 215 218 181).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(93, 'Fairway', 'Green', 'RGB- 191 197 151', '51B-2T', '51B-2T Fairway  (RGB- 191 197 151).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(94, 'Twig Green', 'Green', 'RGB- 173 179 125', '51B-3D', '51B-3D Twig Green  (RGB- 173 179 125).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(95, 'Lettuce Green', 'Green', 'RGB- 150 159 99', '51B-4D', '51B-4D Lettuce Green  (RGB- 150 159 99).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(96, 'Aspen Meadows', 'Green', 'RGB- 209 215 186', '51C-1P', '51C-1P Aspen Meadows  (RGB- 209 215 186).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(97, 'Melon Green', 'Green', 'RGB- 184 194 157', '51C-2T', '51C-2T Melon Green  (RGB- 184 194 157).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(98, 'Lunar Green', 'Green', 'RGB- 164 173 130', '51C-3D', '51C-3D Lunar Green  (RGB- 164 173 130).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(99, 'Hollyhock', 'Green', 'RGB- 140 152 109', '51C-4D', '51C-4D Hollyhock  (RGB- 140 152 109).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(100, 'Scarab', 'Green', 'RGB- 0 144 89', '53A-1A', '53A-1A Scarab  (RGB- 0 144 89).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(101, 'Cool White', 'Green', 'RGB- 230 240 222', '53A-2P', '53A-2P Cool White  (RGB- 230 240 222).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(102, 'Glacial Green', 'Green', 'RGB- 219 238 212', '53A-3P', '53A-3P Glacial Green  (RGB- 219 238 212).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(103, 'Frosted Mint', 'Green', 'RGB- 193 230 194', '53B-1P', '53B-1P Frosted Mint  (RGB- 193 230 194).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(104, 'Sunlit Glade', 'Green', 'RGB- 160 218 166', '53B-2T', '53B-2T Sunlit Glade  (RGB- 160 218 166).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(105, 'Jewel Green', 'Green', 'RGB- 122 199 132', '53B-3D', '53B-3D Jewel Green  (RGB- 122 199 132).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(106, 'Dublin Delight', 'Green', 'RGB- 94 184 110', '53B-4D', '53B-4D Dublin Delight  (RGB- 94 184 110).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(107, 'Peter Pan', 'Green', 'RGB- 188 225 194', '53C-1P', '53C-1P Peter Pan  (RGB- 188 225 194).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(108, 'Siamese Green', 'Green', 'RGB- 153 205 163', '53C-2T', '53C-2T Siamese Green  (RGB- 153 205 163).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(109, 'Green Sapphire', 'Green', 'RGB- 126 187 137', '53C-3D', '53C-3D Green Sapphire  (RGB- 126 187 137).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(110, 'Minnesota Green', 'Green', 'RGB- 96 166 111', '53C-4D', '53C-4D Minnesota Green  (RGB- 96 166 111).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(111, 'Emerald Sea', 'Green', 'RGB- 0 148 108', '54A-1A', '54A-1A Emerald Sea  (RGB- 0 148 108).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(112, 'Jamaican Mist', 'Green', 'RGB- 220 237 221', '54A-2P', '54A-2P Jamaican Mist  (RGB- 220 237 221).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(113, 'Pastel Jade', 'Green', 'RGB- 195 235 213', '54A-3P', '54A-3P Pastel Jade  (RGB- 195 235 213).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(114, 'Green Spark', 'Green', 'RGB- 171 227 199', '54B-1P', '54B-1P Green Spark  (RGB- 171 227 199).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(115, 'Swirl Green', 'Green', 'RGB- 134 213 174', '54B-2T', '54B-2T Swirl Green  (RGB- 134 213 174).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(116, 'Jade Dream', 'Green', 'RGB- 96 196 146', '54B-3D', '54B-3D Jade Dream  (RGB- 96 196 146).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(117, 'Erin Isle', 'Green', 'RGB- 56 178 123', '54B-4D', '54B-4D Erin Isle  (RGB- 56 178 123).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(118, 'Misty Jade', 'Green', 'RGB- 177 220 199', '54C-1P', '54C-1P Misty Jade  (RGB- 177 220 199).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(119, 'Porcelain Green', 'Green', 'RGB- 141 200 170', '54C-2T', '54C-2T Porcelain Green  (RGB- 141 200 170).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(120, 'Charade', 'Green', 'RGB- 114 181 146', '54C-3D', '54C-3D Charade  (RGB- 114 181 146).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(121, 'Jester', 'Green', 'RGB- 89 161 122', '54C-4D', '54C-4D Jester  (RGB- 89 161 122).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(122, 'Golf Green', 'Green', 'RGB- 0 121 93', '55A-1A', '55A-1A Golf Green  (RGB- 0 121 93).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(123, 'Foam Frost', 'Green', 'RGB- 222 240 226', '55A-2P', '55A-2P Foam Frost  (RGB- 222 240 226).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(124, 'Pristine Green', 'Green', 'RGB- 177 230 206', '55B-1P', '55B-1P Pristine Green  (RGB- 177 230 206).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(125, 'Placid Green', 'Green', 'RGB- 137 216 183', '55B-2T', '55B-2T Placid Green  (RGB- 137 216 183).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(126, 'Green Flash', 'Green', 'RGB- 84 194 152', '55B-3D', '55B-3D Green Flash  (RGB- 84 194 152).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(127, 'Piquant Green', 'Green', 'RGB- 39 177 129', '55B-4D', '55B-4D Piquant Green  (RGB- 39 177 129).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(128, 'Grenada', 'Green', 'RGB- 82 110 92', '60A-1A', '60A-1A Grenada   (RGB- 82 110 92).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(129, 'Grenada', 'Green', 'RGB- 82 110 92', '60A-1A', '60A-1A Grenada  (RGB- 82 110 92).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(130, 'Vapor Mint', 'Green', 'RGB- 234 238 225', '60A-2P', '60A-2P Vapor Mint  (RGB- 234 238 225).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(131, 'Green Fog', 'Green', 'RGB- 208 221 207', '60A-3P', '60A-3P Green Fog  (RGB- 208 221 207).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(132, 'Green Boy', 'Green', 'RGB-204 219 199', '60B-1P', '60B-1P Green Boy  (RGB-204 219 199).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(133, 'Green Pearl', 'Green', 'RGB-173 196 172', '60B-2T', '60B-2T Green Pearl  (RGB-173 196 172).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(134, 'Green Drift', 'Green', 'RGB-142 167 139', '60B-3D', '60B-3D Green Drift  (RGB-142 167 139).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(135, 'Boffin Green', 'Green', 'RGB-122 147 122', '60B-4D', '60B-4D Boffin Green  (RGB-122 147 122).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(136, 'Smoke Green', 'Green', 'RGB- 193 212 196', '60C-1P', '60C-1P Smoke Green  (RGB- 193 212 196).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(137, 'Green Stone', 'Green', 'RGB- 160 186 164', '60C-2T', '60C-2T Green Stone  (RGB- 160 186 164).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(138, 'Green Suede', 'Green', 'RGB- 126 156 130', '60C-3D', '60C-3D Green Suede   (RGB- 126 156 130).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(139, 'Veridian', 'Green', 'RGB- 102 134 109', '60C-4D', '60C-4D Veridian   (RGB- 102 134 109).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(140, 'Nocturnal Sea', 'Green', 'RGB- 56 94 90', '61A-1A', '61A-1A Nocturnal Sea  (RGB- 56 94 90).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(141, 'Winter Whisper', 'Green', 'RGB- 227 233 223', '61A-2P', '61A-2P Winter Whisper  (RGB- 227 233 223).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(142, 'Bayou Mist', 'Green', 'RGB- 208 222 212', '61A-3P', '61A-3P Bayou Mist  (RGB- 208 222 212).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(143, 'Academy Gray', 'Green', 'RGB- 194 211 203', '61B-1P', '61B-1P Academy Gray  (RGB- 194 211 203).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(144, 'Alaska Jade', 'Green', 'RGB- 161 185 176', '61B-2T', '61B-2T Alaska Jade  (RGB- 161 185 176).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(145, 'India Green', 'Green', 'RGB- 132 158 147', '61B-3D', '61B-3D India Green  (RGB- 132 158 147).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(146, 'Wharf Green', 'Green', 'RGB- 108 136 125', '61B-4D', '61B-4D Wharf Green  (RGB- 108 136 125).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(147, 'Waterway', 'Green', 'RGB- 188 206 200', '61C-1P', '61C-1P Waterway  (RGB- 188 206 200).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(148, 'Bounding Main', 'Green', 'RGB- 158 181 175', '61C-2T', '61C-2T Bounding Main  (RGB- 158 181 175).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(149, 'Bayou Waters', 'Green', 'RGB- 126 151 146', '61C-3D', '61C-3D Bayou Waters  (RGB- 126 151 146).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(150, 'Briny Deep', 'Green', 'RGB- 104 129 123', '61C-4D', '61C-4D Briny Deep  (RGB- 104 129 123).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(151, 'Pizazz', 'Orange', 'RGB- 194 70 62', '15A-1A', '15A-1A Pizazz (RGB- 194 70 62).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(152, 'Peach Frosting ', 'Orange', 'RGB- 247 230 220', '15A-2P', '15A-2P Peach Frosting  (RGB- 247 230 220).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(153, 'Peach Dust', 'Orange', 'RGB- 249 215 205', '15A-3P', '15A-3P Peach Dust (RGB- 249 215 205).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(154, 'Peaches N Cream ', 'Orange', 'RGB- 250 205 196', '15B-1P', '15B-1P Peaches N Cream  (RGB- 250 205 196).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(155, 'Peach Velvet ', 'Orange', 'RGB- 249 178 168', '15B-2T', '15B-2T Peach Velvet  (RGB- 249 178 168).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(156, 'Dawn Sun ', 'Orange', 'RGB- 241 150 137', '15B-3D', '15B-3D Dawn Sun  (RGB- 241 150 137).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(157, 'Tropical Punch', 'Orange', 'RGB- 231 124 110', '15B-4D', '15B-4D Tropical Punch (RGB- 231 124 110).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(158, 'Persian Melon', 'Orange', 'RGB- 242 187 176', '15C-1P', '15C-1P Persian Melon (RGB- 242 187 176).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(159, 'Smoked Salmon', 'Orange', 'RGB- 233 156 145', '15C-2T', '15C-2T Smoked Salmon (RGB- 233 156 145).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(160, 'Titian Orange', 'Orange', 'RGB- 222 135 121', '15C-3D', '15C-3D Titian Orange (RGB- 222 135 121).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(161, 'Lobster Shell', 'Orange', 'RGB- 207 112 98', '15C-4D', '15C-4D Lobster Shell (RGB- 207 112 98).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(162, 'Deep Henna ', 'Orange', 'RGB- 166 78 57', '16A-1A', '16A-1A Deep Henna  (RGB- 166 78 57).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(163, 'Ivanhoe Ivory', 'Orange', 'RGB- 249 226 209', '16A-2P', '16A-2P Ivanhoe Ivory (RGB- 249 226 209).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(164, 'Pleasant Pebble ', 'Orange', 'RGB- 244 199 182', '16A-3P', '16A-3P Pleasant Pebble  (RGB- 244 199 182).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(165, 'Bath Salt ', 'Orange', 'RGB- 246 190 169', '16B-1P', '16B-1P Bath Salt  (RGB- 246 190 169).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(166, 'Shrimpette ', 'Orange', 'RGB- 236 158 138', '16B-2T', '16B-2T Shrimpette  (RGB- 236 158 138).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(167, 'Sorcery Suede ', 'Orange', 'RGB- 223 137 115', '16B-3D', '16B-3D Sorcery Suede  (RGB- 223 137 115).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(168, 'Apricot Brandy ', 'Orange', 'RGB- 209 114 92', '16B-4D', '16B-4D Apricot Brandy  (RGB- 209 114 92).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(169, 'Lobster Bisque ', 'Orange', 'RGB- 241 184 167', '16C-1P', '16C-1P Lobster Bisque  (RGB- 241 184 167).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(170, 'Honeysuckle Coral ', 'Orange', 'RGB- 228 152 131', '16C-2T', '16C-2T Honeysuckle Coral  (RGB- 228 152 131).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(171, 'Tile Tan ', 'Orange', 'RGB- 214 130 108', '16C-3D', '16C-3D Tile Tan  (RGB- 214 130 108).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(172, 'Brandy Flame ', 'Orange', 'RGB- 199 111 88', '16C-4D', '16C-4D Brandy Flame  (RGB- 199 111 88).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(173, 'Vivid Orange ', 'Orange', 'RGB- 214 91 60', '17A-1A', '17A-1A Vivid Orange  (RGB- 214 91 60).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(174, 'September Cream ', 'Orange', 'RGB- 249 232 218', '17A-2P', '17A-2P September Cream  (RGB- 249 232 218).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(175, 'Peach Whisper ', 'Orange', 'RGB- 253 218 198', '17A-3P', '17A-3P Peach Whisper  (RGB- 253 218 198).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(176, 'Sweet Jewel ', 'Orange', 'RGB- 253 205 181', '17B-1P', '17B-1P Sweet Jewel  (RGB- 253 205 181).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(177, 'Apricot Tone ', 'Orange', 'RGB- 252 179 151', '17B-2T', '17B-2T Apricot Tone  (RGB- 252 179 151).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(178, 'Melody ', 'Orange', 'RGB- 245 151 119', '17B-3D', '17B-3D Melody  (RGB- 245 151 119).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(179, 'Orange Supreme ', 'Orange', 'RGB- 241 131 95', '17B-4D', '17B-4D Orange Supreme  (RGB- 241 131 95).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(180, 'Angel Peach ', 'Orange', 'RGB- 252 204 176', '17C-1P', '17C-1P Angel Peach  (RGB- 252 204 176).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(181, 'Tangy Glo ', 'Orange', 'RGB- 248 177 143', '17C-2T', '17C-2T Tangy Glo  (RGB- 248 177 143).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(182, 'Orange Glint ', 'Orange', 'RGB- 242 159 119', '17C-3D', '17C-3D Orange Glint  (RGB- 242 159 119).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(183, 'Glazed Carrot ', 'Orange', 'RGB- 230 135 92', '17C-4D', '17C-4D Glazed Carrot  (RGB- 230 135 92).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(184, 'Really Orange', 'Orange', 'RGB- 227 117 53', '18A-1A', '18A-1A Really Orange (RGB- 227 117 53).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(185, 'Peach Beige ', 'Orange', 'RGB- 250 228 210', '18A-2P', '18A-2P Peach Beige  (RGB- 250 228 210).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(186, 'Abbeystone', 'Orange', 'RGB- 253 219 186', '18A-3P', '18A-3P Abbeystone (RGB- 253 219 186).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(187, 'Orange Paste ', 'Orange', 'RGB- 253 207 168', '18B-1P', '18B-1P Orange Paste  (RGB- 253 207 168).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(188, 'Frothy Orange ', 'Orange', 'RGB- 250 183 137', '18B-2T', '18B-2T Frothy Orange  (RGB- 250 183 137).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(189, 'Orange Drop ', 'Orange', 'RGB- 243 163 109', '18B-3D', '18B-3D Orange Drop  (RGB- 243 163 109).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(190, 'Orange Peel', 'Orange', 'RGB- 235 139 84', '18B-4D', '18B-4D Orange Peel (RGB- 235 139 84).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(191, 'Apricot Liqueur', 'Orange', 'RGB- 248 208 179', '18C-1P', '18C-1P Apricot Liqueur (RGB- 248 208 179).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(192, 'Colonial Peach', 'Orange', 'RGB- 240 174 133', '18C-2T', '18C-2T Colonial Peach (RGB- 240 174 133).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(193, 'Mango ', 'Orange', 'RGB- 229 151 106', '18C-3D', '18C-3D Mango  (RGB- 229 151 106).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(194, 'Lacquer Orange ', 'Orange', 'RGB- 215 127 80', '18C-4D', '18C-4D Lacquer Orange  (RGB- 215 127 80).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(195, 'Jack-o-lantern ', 'Orange', 'RGB- 237 138 44', '19A-1A', '19A-1A Jack-o-lantern  (RGB- 237 138 44).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(196, 'Orange Scent ', 'Orange', 'RGB- 249 234 210', '19A-2P', '19A-2P Orange Scent  (RGB- 249 234 210).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(197, 'Candelabra ', 'Orange', 'RGB- 254 223 184', '19A-3P', '19A-3P Candelabra  (RGB- 254 223 184).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(198, 'Candleglow ', 'Orange', 'RGB- 255 214 170', '19B-1P', '19B-1P Candleglow  (RGB- 255 214 170).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(199, 'Orange Gem ', 'Orange', 'RGB- 255 193 134', '19B-2T', '19B-2T Orange Gem  (RGB- 255 193 134).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(200, 'Tangerine ', 'Orange', 'RGB- 253 175 101', '19B-3D', '19B-3D Tangerine  (RGB- 253 175 101).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(201, 'Orange Flare ', 'Orange', 'RGB- 249 154 75', '19B-4D', '19B-4D Orange Flare  (RGB- 249 154 75).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(202, 'Moon Morn ', 'Orange', 'RGB- 255 214 172', '19C-1P', '19C-1P Moon Morn  (RGB- 255 214 172).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(203, 'Gobi Sands ', 'Orange', 'RGB- 251 191 137', '19C-2T', '19C-2T Gobi Sands  (RGB- 251 191 137).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(204, 'Squash ', 'Orange', 'RGB- 244 171 106', '19C-3D', '19C-3D Squash  (RGB- 244 171 106).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(205, 'Indian Corn ', 'Orange', 'RGB- 235 153 84', '19C-4D', '19C-4D Indian Corn  (RGB- 235 153 84).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(206, 'Patio Brick', 'Orange', 'RGB- 175 108 69', '20A-1A', '20A-1A Patio Brick (RGB- 175 108 69).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(207, 'Vanilla Ice', 'Orange', 'RGB- 245 224 204', '20A-2P', '20A-2P Vanilla Ice (RGB- 245 224 204).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(208, 'Powder Puff', 'Orange', 'RGB- 241 209 184', '20A-3P', '20A-3P Powder Puff (RGB- 241 209 184).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(209, 'Honey Rose', 'Orange', 'RGB- 238 197 168', '20B-1P', '20B-1P Honey Rose (RGB- 238 197 168).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(210, 'Calfskin', 'Orange', 'RGB- 225 170 135', '20B-2T', '20B-2T Calfskin (RGB- 225 170 135).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(211, 'Smoked Seville', 'Orange', 'RGB- 209 150 111', '20B-3D', '20B-3D Smoked Seville (RGB- 209 150 111).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(212, 'Cattail', 'Orange', 'RGB- 194 130 94', '20B-4D', '20B-4D Cattail (RGB- 194 130 94).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(213, 'Vicuna', 'Orange', 'RGB- 229 189 159', '20C-1P', '20C-1P Vicuna (RGB- 229 189 159).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(214, 'Italian Earth', 'Orange', 'RGB- 214 161 128', '20C-2T', '20C-2T Italian Earth (RGB- 214 161 128).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(215, 'Copper Kettle', 'Orange', 'RGB- 198 141 106', '20C-3D', '20C-3D Copper Kettle (RGB- 198 141 106).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(216, 'Hash Brown', 'Orange', 'RGB- 174 116 82', '20C-4D', '20C-4D Hash Brown (RGB- 174 116 82).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(217, 'Really Rust', 'Orange', 'RGB- 167 88 61', '22A-1A', '22A-1A Really Rust (RGB- 167 88 61).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(218, 'Tender Pink  ', 'Orange', 'RGB- 248 222 207', '22A-2P', '22A-2P Tender Pink   (RGB- 248 222 207).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(219, 'October Haze', 'Orange', 'RGB- 244 204 185', '22A-3P', '22A-3P October Haze (RGB- 244 204 185).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(220, 'Shell Corn ', 'Orange', 'RGB- 240 193 169', '22B-1P', '22B-1P Shell Corn  (RGB- 240 193 169).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(221, 'Evening Sun ', 'Orange', 'RGB- 222 161 134', '22B-2T', '22B-2T Evening Sun  (RGB- 222 161 134).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(222, 'Buckeye', 'Orange', 'RGB- 208 136 108', '22B-3D', '22B-3D Buckeye (RGB- 208 136 108).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(223, 'Orange Berry', 'Orange', 'RGB- 193 117 89', '22B-4D', '22B-4D Orange Berry (RGB- 193 117 89).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(224, 'Petal Peach', 'Orange', 'RGB- 239 190 163', '22C-1P', '22C-1P Petal Peach (RGB- 239 190 163).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(225, 'Ripe Peach', 'Orange', 'RGB- 225 160 126', '22C-2T', '22C-2T Ripe Peach (RGB- 225 160 126).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(226, 'Amber Leaf', 'Orange', 'RGB- 213 139 102', '22C-3D', '22C-3D Amber Leaf (RGB- 213 139 102).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(227, 'Bright Sienna', 'Orange', 'RGB- 198 120 86', '22C-4D', '22C-4D Bright Sienna (RGB- 198 120 86).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(228, 'Pecan Pie', 'Orange', 'RGB- 173 110 70', '23A-1A', '23A-1A Pecan Pie (RGB- 173 110 70).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(229, 'Apricot Fluff', 'Orange', 'RGB- 247 230 213', '23A-2P', '23A-2P Apricot Fluff (RGB- 247 230 213).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(230, 'Toasted Macaroon', 'Orange', 'RGB- 243 212 190', '23A-3P', '23A-3P Toasted Macaroon (RGB- 243 212 190).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(231, 'Light Apricot', 'Orange', 'RGB- 2243 201 172', '23B-1P', '23B-1P Light Apricot (RGB- 2243 201 172).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(232, 'Sunset Cloud', 'Orange', 'RGB- 227 171 137', '23B-2T', '23B-2T Sunset Cloud (RGB- 227 171 137).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(233, 'Tangelo', 'Orange', 'RGB- 217 151 113', '23B-3D', '23B-3D Tangelo (RGB- 217 151 113).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(234, 'Alpaca', 'Orange', 'RGB- 238 199 173', '23C-1P', '23C-1P Alpaca (RGB- 238 199 173).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(235, 'Butterscotch Pie', 'Orange', 'RGB- 222 171 139', '23C-2T', '23C-2T Butterscotch Pie (RGB- 222 171 139).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(236, 'Tawny Copper', 'Orange', 'RGB- 204 144 108', '23C-3D', '23C-3D Tawny Copper (RGB- 204 144 108).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(237, 'Spanish Nut', 'Orange', 'RGB- 189 127 92', '23C-4D', '23C-4D Spanish Nut (RGB- 189 127 92).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(238, 'Nectarine ', 'Orange', 'RGB- 250 160 51', '27A-1A', '27A-1A Nectarine  (RGB- 250 160 51).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(239, 'Banana Split ', 'Orange', 'RGB- 252 228 187', '27A-2P', '27A-2P Banana Split  (RGB- 252 228 187).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(240, 'Golden Blond ', 'Orange', 'RGB- 255 222 172', '27A-3P', '27A-3P Golden Blond  (RGB- 255 222 172).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(241, 'Yellow Buff ', 'Orange', 'RGB- 255 215 152', '27B-1P', '27B-1P Yellow Buff  (RGB- 255 215 152).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(242, 'Empire Yellow ', 'Orange', 'RGB- 255 203 118', '27B-2T', '27B-2T Empire Yellow  (RGB- 255 203 118).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(243, 'Tibetan Gold ', 'Orange', 'RGB- 255 191 88', '27B-3D', '27B-3D Tibetan Gold  (RGB- 255 191 88).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(244, 'Mountain Marigold ', 'Orange', 'RGB- 255 178 62', '27B-4D', '27B-4D Mountain Marigold  (RGB- 255 178 62).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(245, 'Abigail ', 'Orange', 'RGB- 254 201 137', '27C-1T', '27C-1T Abigail  (RGB- 254 201 137).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(246, 'Golden Corn ', 'Orange', 'RGB- 255 195 115', '27C-2T', '27C-2T Golden Corn  (RGB- 255 195 115).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(247, 'Clarion ', 'Orange', 'RGB- 250 178 83', '27C-3D', '27C-3D Clarion  (RGB- 250 178 83).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(248, 'Calliope ', 'Orange', 'RGB- 243 163 69', '27C-4D', '27C-4D Calliope  (RGB- 243 163 69).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(249, 'Roanoke Red', 'Red', 'RGB- 125 75 65', '10A-1A', '10A-1A Roanoke Red  (RGB- 125 75 65).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(250, 'Pink Shadow', 'Red', 'RGB- 237 213 203', '10A-2P', '10A-2P Pink Shadow   (RGB- 237 213 203).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(251, 'Dusty Coral', 'Red', 'RGB- 221 183 173', '10A-3P', '10A-3P Dusty Coral  (RGB- 221 183 173).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(252, 'Tanberry', 'Red', 'RGB-  211 164 154', '10B-1P', '10B-1P Tanberry   (RGB-  211 164 154).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(253, 'Jericho Tan', 'Red', 'RGB- 184 131 121', '10B-2T', '10B-2T Jericho Tan    (RGB- 184 131 121).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(254, 'Red Java', 'Red', 'RGB- 169 112 99', '10B-3D', '10B-3D Red Java   (RGB- 169 112 99).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(255, 'Redwood', 'Red', 'RGB- 148 92 81', '10B-4D', '10B-4D Redwood  (RGB- 148 92 81).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(256, 'Young Doe', 'Red', 'RGB- 212 167 155', '10C-1P', '10C-1P Young Doe  (RGB- 212 167 155).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(257, 'Brown Rose', 'Red', 'RGB- 184 133 120', '10C-2T', '10C-2T Brown Rose  (RGB- 184 133 120).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(258, 'Cromwell Brown', 'Red', 'RGB- 170 115 101', '10C-3D', '10C-3D Cromwell Brown  (RGB- 170 115 101).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(259, 'Oakleaf Brown', 'Red', 'RGB- 148 94 82', '10C-4D', '10C-4D Oakleaf Brown  (RGB- 148 94 82).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(260, 'Carnelian', 'Red', 'RGB- 122 76 65', '11A-1A', '11A-1A Carnelian  (RGB- 122 76 65).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(261, 'Baby Birch', 'Red', 'RGB- 240 223 212', '11A-2P', '11A-2P Baby Birch  (RGB- 240 223 212).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(262, 'Bitsey Beige', 'Red', 'RGB- 232 203 189', '11A-3P', '11A-3P Bitsey Beige  (RGB- 232 203 189).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(263, 'Country Way', 'Red', 'RGB- 221 173 157', '11B-1P', '11B-1P Country Way (RGB- 221 173 157).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(264, 'Bread Pudding', 'Red', 'RGB- 198 141 124', '11B-2T', '11B-2T Bread Pudding (RGB- 198 141 124).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(265, 'Branch Bough', 'Red', 'RGB- 183 122 103', '11B-3D', '11B-3D Branch Bough (RGB- 183 122 103).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(266, 'Light Earth', 'Red', 'RGB- 165 102 85', '11B-4D', '11B-4D Light Earth (RGB- 165 102 85).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(267, 'Tan Wisp', 'Red', 'RGB- 223 187 171', '11C-1P', '11C-1P Tan Wisp  (RGB- 223 187 171).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(268, 'Clove Dust', 'Red', 'RGB- 202 156 136', '11C-2T', '11C-2T Clove Dust  (RGB- 202 156 136).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(269, 'Spicecake', 'Red', 'RGB- 181 128 106', '11C-3D', '11C-3D Spicecake   (RGB- 181 128 106).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(270, 'Sable Brush', 'Red', 'RGB- 163 110 89', '11C-4D', '11C-4D Sable Brush   (RGB- 163 110 89).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(271, 'Devils Food', 'Red', 'RGB- 121 84 73', '12A-1A', '12A-1A Devils Food  (RGB- 121 84 73).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(272, 'Smoke Stain Rose', 'Red', 'RGB- 235 223 213', '12A-2P', '12A-2P Smoke Stain Rose  (RGB- 235 223 213).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(273, 'Tan Blush', 'Red', 'RGB- 216 186 171', '12B-1P', '12B-1P Tan Blush  (RGB- 216 186 171).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(274, 'Chocolate Milk', 'Red', 'RGB- 190 153 137', '12B-2T', '12B-2T Chocolate Milk  (RGB- 190 153 137).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(275, 'Alder', 'Red', 'RGB- 169 128 109', '12B-3D', '12B-3D Alder  (RGB- 169 128 109).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(276, 'Aged Teakwood', 'Red', 'RGB- 151 109 92', '12B-4D', '12B-4D Aged Teakwood  (RGB- 151 109 92).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(277, 'War Dance', 'Red', 'RGB- 149 70 62', '14A-1A', '14A-1A War Dance  (RGB- 149 70 62).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(278, 'Cosmetic Pink', 'Red', 'RGB- 246 227 216', '14A-2P', '14A-2P Cosmetic Pink  (RGB- 246 227 216).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(279, 'Lovers Knot', 'Red', 'RGB- 246 208 199', '14A-3P', '14A-3P Lovers Knot  (RGB- 246 208 199).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(280, 'Rosy Flesh', 'Red', 'RGB- 243 195 185', '14B-1P', '14B-1P Rosy Flesh (RGB- 243 195 185).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(281, 'Enchilada', 'Red', 'RGB- 234 167 155', '14B-2T', '14B-2T Enchilada (RGB- 234 167 155).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(282, 'Santa Fe', 'Red', 'RGB- 221 147 133', '14B-3D', '14B-3D Santa Fe (RGB- 221 147 133).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(283, 'Mineral Red', 'Red', 'RGB- 203 122 105', '14B-4D', '14B-4D Mineral Red (RGB- 203 122 105).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(284, 'Salmon Mousse', 'Red', 'RGB- 239 179 171', '14C-1P', '14C-1P Salmon Mousse  (RGB- 239 179 171).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(285, 'Shrimpy', 'Red', 'RGB- 226 147 139', '14C-2T', '14C-2T Shrimpy  (RGB- 226 147 139).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(286, 'Azalea', 'Red', 'RGB- 213 127 116', '14C-3D', '14C-3D Azalea  (RGB- 213 127 116).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(287, 'Brigand', 'Red', 'RGB- 197 106 95', '14C-4D', '14C-4D Brigand  (RGB- 197 106 95).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(288, 'Velvet Maroon', 'Red', 'RGB- 105 69 80', '1A-1A', '1A-1A Velvet Maroon (RGB- 105 69 80).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(289, 'White Lavender', 'Red', 'RGB- 237 224 222', '1A-2P', '1A-2P White Lavender (RGB- 237 224 222).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(290, 'Lilac Mauve', 'Red', 'RGB- 227 206 213', '1A-3P', '1A-3P Lilac Mauve (RGB- 227 206 213).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(291, 'Meadow Sweet', 'Red', 'RGB- 218 191 206', '1B-1P', '1B-1P Meadow Sweet (RGB- 218 191 206).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(292, 'Geisha', 'Red', 'RGB- 193 156 182', '1B-2T', '1B-2T Geisha (RGB- 193 156 182).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(293, 'Bacchus', 'Red', 'RGB- 179 139 168', '1B-3D', '1B-3D Bacchus (RGB- 179 139 168).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(294, 'Lavender Silk', 'Red', 'RGB- 156 113 147', '1B-4D', '1B-4D Lavender Silk (RGB- 156 113 147).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(295, 'Aloha Orchid', 'Red', 'RGB- 217 193 206', '1C-1P', '1C-1P Aloha Orchid (RGB- 217 193 206).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(296, 'September Glory', 'Red', 'RGB- 192 162 182', '1C-2T', '1C-2T September Glory (RGB- 192 162 182).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(297, 'Verbena', 'Red', 'RGB- 174 139 162', '1C-3D', '1C-3D Verbena (RGB- 174 139 162).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(298, 'Rich Plum', 'Red', 'RGB- 153 116 140', '1C-4D', '1C-4D Rich Plum (RGB- 153 116 140).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(299, 'Bronco Brown', 'Red', 'RGB- 132 83 64', '21A-1A', '21A-1A Bronco Brown  (RGB- 132 83 64).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(300, 'Fair Complexion', 'Red', 'RGB- 243 225 209', '21A-2P ', '21A-2P Fair Complexion  (RGB- 243 225 209).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(301, 'Tinge Of Peach', 'Red', 'RGB- 236 205 184', '21A-3P ', '21A-3P Tinge Of Peach   (RGB- 236 205 184).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(302, 'Irish Cream', 'Red', 'RGB- 231 193 171', '21B-1P', '21B-1P Irish Cream  (RGB- 231 193 171).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(303, 'October Leaves', 'Red', 'RGB- 210 162 134', '21B-2T', '21B-2T October Leaves  (RGB- 210 162 134).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(304, 'Cherokee Tan', 'Red', 'RGB- 187 131 102', '21B-3D', '21B-3D Cherokee Tan  (RGB- 187 131 102).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(305, 'India', 'Red', 'RGB- 170 113 84', '21B-4D', '21B-4D India  (RGB- 170 113 84).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(306, 'Desert Sand', 'Red', 'RGB- 221 184 163', '21C-1P', '21C-1P Desert Sand   (RGB- 221 184 163).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(307, 'German Chocolate', 'Red', 'RGB- 197 151 128', '21C-2T  ', '21C-2T German Chocolate  (RGB- 197 151 128).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(308, 'Iced Coffee', 'Red', 'RGB- 183 134 109', '21C-3D', '21C-3D Iced Coffee  (RGB- 183 134 109).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(309, 'Auburn', 'Red', 'RGB- 161 111 88', '21C-4D', '21C-4D Auburn  (RGB- 161 111 88).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(310, 'Carnival Red', 'Red', 'RGB- 126 63 88', '2A-1A', '2A-1A Carnival Red  (RGB- 126 63 88).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(311, 'Lightest Lavender', 'Red', 'RGB- 243 229 228', '2A-2P', '2A-2P Lightest Lavender  (RGB- 243 229 228).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(312, 'Parasol Pink', 'Red', 'RGB- 239 214 220', '2A-3P', '2A-3P Parasol Pink (RGB- 239 214 220).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(313, 'Precious Pink', 'Red', 'RGB- 238 200 218', '2B-1P', '2B-1P Precious Pink  (RGB- 238 200 218).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(314, 'Pink Love', 'Red', 'RGB- 229 169 200', '2B-2T', '2B-2T Pink Love  (RGB- 229 169 200).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(315, 'Snappy Pink', 'Red', 'RGB- 217 135 178', '2B-3D', '2B-3D Snappy Pink  (RGB- 217 135 178).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(316, 'Blazen Pink', 'Red', 'RGB- 206 111 158', '2B-4D', '2B-4D Blazen Pink   (RGB- 206 111 158).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(317, 'Bridesmaid Pink', 'Red', 'RGB- 232 200 214', '2C-1P', '2C-1P Bridesmaid Pink (RGB- 232 200 214).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(318, 'Tropical Orchid', 'Red', 'RGB- 218 173 194', '2C-2T', '2C-2T Tropical Orchid (RGB- 218 173 194).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(319, 'Cedar Rose', 'Red', 'RGB- 199 140 168', '2C-3D', '2C-3D Cedar Rose (RGB- 199 140 168).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(320, 'Satin Rose', 'Red', 'RGB- 179 119 147', '2C-4D', '2C-4D Satin Rose (RGB- 179 119 147).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(321, 'Scarlet', 'Red', 'RGB-166 60 77', '3A-1A', '3A-1A Scarlet  (RGB-166 60 77).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(322, 'Whisper Pink', 'Red', 'RGB- 244 227 226', '3A-2P', '3A-2P Whisper Pink  (RGB- 244 227 226).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(323, 'Pink Tiara', 'Red', 'RGB-244 212 220', '3A-3P', '3A-3P Pink Tiara  (RGB-244 212 220).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(324, 'Debutante Pink', 'Red', 'RGB- 238 195 210', '3B-1P', '3B-1P Debutante Pink  (RGB- 238 195 210).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(325, 'Pink Princess', 'Red', 'RGB- 233 170 197', '3B-2T', '3B-2T Pink Princess  (RGB- 233 170 197).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(326, 'Marsh Rose', 'Red', 'RGB- 224 138 169', '3B-3D', '3B-3D Marsh Rose  (RGB- 224 138 169).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(327, 'Lipstick', 'Red', 'RGB- 213 112 147', '3B-4D', '3B-4D Lipstick  (RGB- 213 112 147).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(328, 'Petal Pink', 'Red', 'RGB-236 195 205', '3C-1P', '3C-1P Petal Pink  (RGB-236 195 205).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(329, 'Misty Rose', 'Red', 'RGB-223 167 184', '3C-2T', '3C-2T Misty Rose  (RGB-223 167 184).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(330, 'Damask Rose', 'Red', 'RGB-208 138 158', '3C-3D', '3C-3D Damask Rose (RGB-208 138 158).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(331, 'Painted Desert', 'Red', 'RGB-188 113 136', '3C-4D', '3C-4D Painted Desert (RGB-188 113 136).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(332, 'Fire Engine Red', 'Red', 'RGB- 177 60 66', '4A-1A', '4A-1A Fire Engine Red (RGB- 177 60 66).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(333, 'Pink Hibiscus', 'Red', 'RGB- 244 223 220', '4A-2P', '4A-2P Pink Hibiscus (RGB- 244 223 220).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30');
+INSERT INTO `colorpalette` (`id`, `colorpalette_name`, `colorpalette_category`, `colorpalette_rgb`, `colorpalette_batch`, `colorpalette_image`, `created_at`, `updated_at`) VALUES
+(334, 'Baby Girl', 'Red', 'RGB- 236 199 205', '4A-3P', '4A-3P Baby Girl (RGB- 236 199 205).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(335, 'Raspberry Whip', 'Red', 'RGB- 242 196 207', '4B-1P', '4B-1P Raspberry Whip (RGB- 242 196 207).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(336, 'Winter Rouge', 'Red', 'RGB- 237 166 186', '4B-2T', '4B-2T Winter Rouge (RGB- 237 166 186).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(337, 'Molly Pink', 'Red', 'RGB- 228 137 159', '4B-3D', '4B-3D Molly Pink (RGB- 228 137 159).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(338, 'Calypso Ruffel', 'Red', 'RGB- 222 111 138', '4B-4D', '4B-4D Calypso Ruffel (RGB- 222 111 138).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(339, 'Sunset Pink', 'Red', 'RGB-233 184 192', '4C-1P', '4C-1P Sunset Pink (RGB-233 184 192).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(340, 'Blushing Pink', 'Red', 'RGB-222 155 168', '4C-2T', '4C-2T Blushing Pink (RGB-222 155 168).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(341, 'Dutchess Pink', 'Red', 'RGB-208 130 143', '4C-3D', '4C-3D Dutchess Pink (RGB-208 130 143).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(342, 'Rosalind', 'Red', 'RGB- 192 104 117', '4C-4D', '4C-4D Rosalind (RGB- 192 104 117).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(343, 'Spectrum Red', 'Red', 'RGB- 194 71 68', '5A-1A', '5A-1A Spectrum Red  (RGB- 194 71 68).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(344, 'Spectrum Red', 'Red', 'RGB- 194 71 68', '5A-1A', '5A-1A Spectrum Red (RGB- 194 71 68).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(345, 'Feminique', 'Red', 'RGB- 246 224 222', '5A-2P', '5A-2P Feminique (RGB- 246 224 222).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(346, 'Spring Bud', 'Red', 'RGB- 248 210 213', '5A-3P', '5A-3P Spring Bud  (RGB- 248 210 213).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(347, 'Carnation Petal', 'Red', 'RGB- 248 197 205', '5B-1P', '5B-1P Carnation Petal (RGB- 248 197 205).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(348, 'Cactus Flower', 'Red', 'RGB- 245 167 180', '5B-2T', '5B-2T Cactus Flower (RGB- 245 167 180).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(349, 'Festive Pink', 'Red', 'RGB- 239 137 153', '5B-3D', '5B-3D Festive Pink (RGB- 239 137 153).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(350, 'Pink Flamingo', 'Red', 'RGB- 231 114 130', '5B-4D', '5B-4D Pink Flamingo (RGB- 231 114 130).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(351, 'Pink Lustre', 'Red', 'RGB- 232 178 182', '5C-1P', '5C-1P Pink Lustre  (RGB- 232 178 182).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(352, 'Angean Rose', 'Red', 'RGB- 215 144 147', '5C-2T', '5C-2T Angean Rose  (RGB- 215 144 147).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(353, 'Enchantress', 'Red', 'RGB- 202 123 125', '5C-3D', '5C-3D Enchantress  (RGB- 202 123 125).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(354, 'Pagoda Red', 'Red', 'RGB- 185 100 102', '5C-4D', '5C-4D Pagoda Red  (RGB- 185 100 102).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(355, 'Red Hot', 'Red', 'RGB- 186 68 58', '6A-1A', '6A-1A Red Hot (RGB- 186 68 58).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(356, 'Sunset Snow', 'Red', 'RGB- 247 227 220', '6A-2P', '6A-2P Sunset Snow (RGB- 247 227 220).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(357, 'Demure Pink', 'Red', 'RGB- 245 203 204', '6A-3P', '6A-3P Demure Pink (RGB- 245 203 204).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(358, 'Snow Flower', 'Red', 'RGB- 247 193 195', '6B-1P', '6B-1P Snow Flower (RGB- 247 193 195).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(359, 'Fantasy Pink', 'Red', 'RGB- 243 164 169', '6B-2T', '6B-2T Fantasy Pink (RGB- 243 164 169).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(360, 'Charade Pink', 'Red', 'RGB- 237 142 146', '6B-3D', '6B-3D Charade Pink (RGB- 237 142 146).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(361, 'Japonica', 'Red', 'RGB- 228 116 120', '6B-4D', '6B-4D Japonica (RGB- 228 116 120).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(362, 'Pink Mums', 'Red', 'RGB- 242 183 186', '6C-1P', '6C-1P Pink Mums  (RGB- 242 183 186).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(363, 'Coral Sea', 'Red', 'RGB- 230 151 157', '6C-2T', '6C-2T Coral Sea  (RGB- 230 151 157).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(364, 'Corinthian', 'Red', 'RGB- 224 131 135', '6C-3D', '6C-3D Corinthian  (RGB- 224 131 135).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(365, 'Egyptian Red', 'Red', 'RGB- 208 108 108', '6C-4D', '6C-4D Egyptian Red  (RGB- 208 108 108).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(366, 'Burgundy Dash', 'Red', 'RGB- 132 67 64', '7A-1A', '7A-1A Burgundy Dash  (RGB- 132 67 64).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(367, 'Pink Frost', 'Red', 'RGB- 246 219 213', '7A-2P', '7A-2P Pink Frost  (RGB- 246 219 213).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(368, 'Peach Bloom', 'Red', 'RGB- 244 195 193', '7A-3P', '7A-3P Peach Bloom  (RGB- 244 195 193).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(369, 'Beauty Rose', 'Red', 'RGB- 236 178 174', '7B-1P', '7B-1P Beauty Rose  (RGB- 236 178 174).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(370, 'Coral Reef', 'Red', 'RGB- 226 146 144', '7B-2T', '7B-2T Coral Reef  (RGB- 226 146 144).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(371, 'Ginger', 'Red', 'RGB- 217 128 126', '7B-3D', '7B-3D Ginger  (RGB- 217 128 126).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(372, 'Carmine', 'Red', 'RGB- 197 103 98', '7B-4D', '7B-4D Carmine  (RGB- 197 103 98).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(373, 'Fawn Pink', 'Red', 'RGB- 232 182 181', '7C-1P', '7C-1P Fawn Pink  (RGB- 232 182 181).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(374, 'Lotus', 'Red', 'RGB- 218 151 150', '7C-2T', '7C-2T Lotus  (RGB- 218 151 150).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(375, 'Fire Clay', 'Red', 'RGB- 200 121 119', '7C-3D', '7C-3D Fire Clay  (RGB- 200 121 119).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(376, 'Copper Glow', 'Red', 'RGB- 183 98 96', '7C-4D', '7C-4D Copper Glow  (RGB- 183 98 96).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(377, 'Old Hickory', 'Red', 'RGB- 97 65 63', '8A-1A', '8A-1A Old Hickory  (RGB- 97 65 63).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(378, 'Shy Cream', 'Red', 'RGB- 235 220 211', '8A-2P', '8A-2P Shy Cream  (RGB- 235 220 211).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(379, 'Mauve Mist', 'Red', 'RGB- 222 197 193', '8A-3P', '8A-3P Mauve Mist  (RGB- 222 197 193).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(380, 'Mission Rose', 'Red', 'RGB- 215 183 184', '8B-1P', '8B-1P Mission Rose  (RGB- 215 183 184).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(381, 'Fading Rose', 'Red', 'RGB- 198 157 158', '8B-2T', '8B-2T Fading Rose  (RGB- 198 157 158).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(382, 'Norman Rose', 'Red', 'RGB- 176 128 130', '8B-3D', '8B-3D Norman Rose  (RGB- 176 128 130).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(383, 'Brownberry', 'Red', 'RGB- 148 102 106', '8B-4D', '8B-4D Brownberry  (RGB- 148 102 106).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(384, 'Coral Tan', 'Red', 'RGB- 211 181 177', '8C-1P', '8C-1P Coral Tan  (RGB- 211 181 177).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(385, 'Coral Brown', 'Red', 'RGB- 187 148 144', '8C-2T', '8C-2T Coral Brown  (RGB- 187 148 144).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(386, 'Chocolate Mousse', 'Red', 'RGB- 164 120 115', '8C-3D', '8C-3D Chocolate Mousse  (RGB- 164 120 115).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(387, 'Ginger Brown', 'Red', 'RGB- 138 94 90', '8C-4D', '8C-4D Ginger Brown  (RGB- 138 94 90).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(388, 'Boulder Brown', 'Red', 'RGB- 109 77 69', '9A-1A', '9A-1A Boulder Brown  (RGB- 109 77 69).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(389, 'Dune Beige', 'Red', 'RGB- 242 227 218', '9A-2P', '9A-2P Dune Beige  (RGB- 242 227 218).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(390, 'Spice Beige', 'Red', 'RGB- 230 207 199', '9A-3P', '9A-3P Spice Beige  (RGB- 230 207 199).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(391, 'Cinnaswirl', 'Red', 'RGB- 215 175 171', '9B-1P', '9B-1P Cinnaswirl  (RGB- 215 175 171).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(392, 'Canyon Mauve', 'Red', 'RGB- 196 149 144', '9B-2T', '9B-2T Canyon Mauve  (RGB- 196 149 144).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(393, 'Cinnabar', 'Red', 'RGB- 175 121 115', '9B-3D', '9B-3D Cinnabar  (RGB- 175 121 115).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(394, 'Copper Rust', 'Red', 'RGB- 152 97 92', '9B-4D', '9B-4D Copper Rust  (RGB- 152 97 92).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(395, 'Pink Sand', 'Red', 'RGB- 213 184 177', '9C-1P', '9C-1P Pink Sand  (RGB- 213 184 177).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(396, 'Cornico Beige', 'Red', 'RGB- 191 154 144', '9C-2T', '9C-2T Cornico Beige  (RGB- 191 154 144).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(397, 'Russet Brown', 'Red', 'RGB- 168 127 116', '9C-3D', '9C-3D Russet Brown  (RGB- 168 127 116).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(398, 'Fall Leaf', 'Red', 'RGB- 153 108 99', '9C-4D', '9C-4D Fall Leaf  (RGB- 153 108 99).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(399, 'Cadmium Yellow', 'Yellow', 'RGB- 255 174 15', '28A-1A', '28A-1A Cadmium Yellow (RGB- 255 174 15).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(400, 'Whisper Gold', 'Yellow', 'RGB- 249 237 212', '28A-2P', '28A-2P Whisper Gold (RGB- 249 237 212).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(401, 'Aureole', 'Yellow', 'RGB- 252 231 193', '28A-3P', '28A-3P Aureole (RGB- 252 231 193).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(402, 'Gladsome', 'Yellow', 'RGB- 255 225 166', '28B-1P', '28B-1P Gladsome (RGB- 255 225 166).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(403, 'Fortunata', 'Yellow', 'RGB- 255 212 128', '28B-2T', '28B-2T Fortunata (RGB- 255 212 128).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(404, 'Radiance', 'Yellow', 'RGB- 255 203 102', '28B-3T', '28B-3T Radiance (RGB- 255 203 102).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(405, 'Sunflower', 'Yellow', 'RGB- 255 188 51', '28B-4D', '28B-4D Sunflower (RGB- 255 188 51).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(406, 'Black Eyed Susa', 'Yellow', 'RGB- 255 221 161', '28C-1P', '28C-1P Black Eyed Susan (RGB- 255 221 161).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(407, 'Jasmine', 'Yellow', 'RGB- 255 212 133', '28C-2T', '28C-2T Jasmine (RGB- 255 212 133).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(408, 'Golden Haze', 'Yellow', 'RGB- 255 200 108', '28C-3T', '28C-3T Golden Haze (RGB- 255 200 108).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(409, 'Golden Laughter', 'Yellow', 'RGB- 251 179 65', '28C-4D', '28C-4D Golden Laughter (RGB- 251 179 65).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(410, 'Dazzle Yellow ', 'Yellow', 'RGB- 254 186 22', '29A-1A', '29A-1A Dazzle Yellow  (RGB- 254 186 22).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(411, 'Amber White', 'Yellow', 'RGB- 246 237 207', '29A-2P', '29A-2P Amber White (RGB- 246 237 207).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(412, 'Pollen', 'Yellow', 'RGB- 252 233 182', '29A-3P', '29A-3P Pollen (RGB- 252 233 182).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(413, 'Lemon Custard', 'Yellow', 'RGB- 253 230 169', '29B-1P', '29B-1P Lemon Custard (RGB- 253 230 169).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(414, 'Corn Yellow', 'Yellow', 'RGB- 255 221 131', '29B-2T', '29B-2T Corn Yellow (RGB- 255 221 131).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(415, 'Bolivian', 'Yellow', 'RGB- 255 216 109', '29B-3T', '29B-3T Bolivian (RGB- 255 216 109).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(416, 'Mayan', 'Yellow', 'RGB- 255 205 59', '29B-4D', '29B-4D Mayan (RGB- 255 205 59).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(417, 'Sugar Cookie', 'Yellow', 'RGB- 255 230 170', '29C-1P', '29C-1P Sugar Cookie (RGB- 255 230 170).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(418, 'Cheesecake', 'Yellow', 'RGB- 255 219 133', '29C-2T', '29C-2T Cheesecake (RGB- 255 219 133).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(419, 'Yellow Begonia', 'Yellow', 'RGB- 255 210 107', '29C-3T', '29C-3T Yellow Begonia (RGB- 255 210 107).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(420, 'Sun Valley', 'Yellow', 'RGB- 255 195 56', '29C-4D', '29C-4D Sun Valley (RGB- 255 195 56).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(421, 'Rich Mustard', 'Yellow', 'RGB- 251 201 48', '30A-1A', '30A-1A Rich Mustard (RGB- 251 201 48).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(422, 'Peaceful', 'Yellow', 'RGB- 247 239 210', '30A-2P', '30A-2P Peaceful (RGB- 247 239 210).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(423, 'Bianca', 'Yellow', 'RGB- 251 236 187', '30A-3P', '30A-3P Bianca (RGB- 251 236 187).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(424, 'Chablis', 'Yellow', 'RGB- 253 233 170', '30B-1P', '30B-1P Chablis (RGB- 253 233 170).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(425, 'Earth Yellow', 'Yellow', 'RGB- 255 225 129', '30B-2T', '30B-2T Earth Yellow (RGB- 255 225 129).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(426, 'Yellow Aster', 'Yellow', 'RGB- 255 221 115', '30B-3T', '30B-3T Yellow Aster (RGB- 255 221 115).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(427, 'Sunlight', 'Yellow', 'RGB- 255 208 68', '30B-4D', '30B-4D Sunlight (RGB- 255 208 68).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(428, 'Bouquet Yellow', 'Yellow', 'RGB- 252 222 146', '30C-1T', '30C-1T Bouquet Yellow (RGB- 252 222 146).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(429, 'Pineapple Fluff', 'Yellow', 'RGB- 252 215 121', '30C-2T', '30C-2T Pineapple Fluff (RGB- 252 215 121).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(430, 'Gourmet Mustard', 'Yellow', 'RGB- 234 190 82', '30C-3D', '30C-3D Gourmet Mustard (RGB- 234 190 82).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(431, 'Centennial Gold', 'Yellow', 'RGB- 219 170 61', '30C-4A', '30C-4A Centennial Gold (RGB- 219 170 61).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(432, 'Costa Del Sol', 'Yellow', 'RGB- 228 186 54', '31A-1A', '31A-1A Costa Del Sol (RGB- 228 186 54).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(433, 'Glisten', 'Yellow', 'RGB- 248 239 205', '31A-2P', '31A-2P Glisten (RGB- 248 239 205).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(434, 'Queen Annes Lance', 'Yellow', 'RGB- 249 236 192', '31A-3P', '31A-3P Queen Annes Lace (RGB- 249 236 192).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(435, 'Lemon Ice', 'Yellow', 'RGB- 253 235 172', '31B-1P', '31B-1P Lemon Ice (RGB- 253 235 172).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(436, 'Panama', 'Yellow', 'RGB- 253 227 142', '31B-2T', '31B-2T Panama (RGB- 253 227 142).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(437, 'Summer Sun', 'Yellow', 'RGB- 255 222 120', '31B-3T', '31B-3T Summer Sun (RGB- 255 222 120).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(438, 'Spectrum Yellow', 'Yellow', 'RGB- 251 205 76', '31B-4D', '31B-4D Spectrum Yellow (RGB- 251 205 76).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(439, 'Gentle Yellow', 'Yellow', 'RGB- 248 229 177', '31C-1P', '31C-1P Gentle Yellow (RGB- 248 229 177).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(440, 'Pebblegold', 'Yellow', 'RGB- 241 213 141', '31C-2T', '31C-2T Pebblegold (RGB- 241 213 141).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(441, 'Olive Bistre', 'Yellow', 'RGB- 234 199 113', '31C-3D', '31C-3D Olive Bistre (RGB- 234 199 113).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(442, 'Acacia', 'Yellow', 'RGB- 225 184 87', '31C-4D', '31C-4D Acacia (RGB- 225 184 87).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(443, 'Lacquer Yellow', 'Yellow', 'RGB- 248 200 9', '32A-1A', '32A-1A Lacquer Yellow (RGB- 248 200 9).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(444, 'Thistledown', 'Yellow', 'RGB- 246 240 212', '32A-2P', '32A-2P Thistledown (RGB- 246 240 212).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(445, 'Bistre', 'Yellow', 'RGB- 247 237 197', '32A-3P', '32A-3P Bistre (RGB- 247 237 197).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(446, 'Arctic Spring', 'Yellow', 'RGB- 251 236 178', '32B-1P', '32B-1P Arctic Spring (RGB- 251 236 178).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(447, 'Spring Yellow', 'Yellow', 'RGB- 253 231 144', '32B-2T', '32B-2T Spring Yellow (RGB- 253 231 144).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(448, 'Happy Day', 'Yellow', 'RGB- 255 227 115', '32B-3T', '32B-3T Happy Day (RGB- 255 227 115).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(449, 'Lemon Drop', 'Yellow', 'RGB- 255 215 64', '32B-4D', '32B-4D Lemon Drop (RGB- 255 215 64).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(450, 'Curry Light', 'Yellow', 'RGB- 247 229 156', '32C-1T', '32C-1T Curry Light (RGB- 247 229 156).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(451, 'Crest', 'Yellow', 'RGB- 245 221 132', '32C-2T', '32C-2T Crest (RGB- 245 221 132).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(452, 'Miners Gold', 'Yellow', 'RGB- 241 217 123', '32C-3T', '32C-3T Miners Gold (RGB- 241 217 123).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(453, 'Limequat', 'Yellow', 'RGB- 228 197 80', '32C-4D', '32C-4D Limequat (RGB- 228 197 80).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(454, 'Equador', 'Yellow', 'RGB- 204 160 58', '33A-1A', '33A-1A Equador (RGB- 204 160 58).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(455, 'Whipped Cream', 'Yellow', 'RGB- 248 238 206', '33A-2P', '33A-2P Whipped Cream (RGB- 248 238 206).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(456, 'Yellow Quartz', 'Yellow', 'RGB- 246 233 194', '33A-3P', '33A-3P Yellow Quartz (RGB- 246 233 194).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(457, 'Mellow Yellow', 'Yellow', 'RGB- 249 229 178', '33B-1P', '33B-1P Mellow Yellow (RGB- 249 229 178).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(458, 'Sprout', 'Yellow', 'RGB- 246 219 151', '33B-2T', '33B-2T Sprout (RGB- 246 219 151).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(459, 'Honeycomb', 'Yellow', 'RGB- 240 207 125', '33B-3T', '33B-3T Honeycomb (RGB- 240 207 125).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(460, 'Skinned Bark', 'Yellow', 'RGB- 224 181 84', '33B-4D', '33B-4D Skinned Bark (RGB- 224 181 84).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(461, 'Polk Gold', 'Yellow', 'RGB- 248 222 172', '33C-1P', '33C-1P Polk Gold (RGB- 248 222 172).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(462, 'Glint O Gold', 'Yellow', 'RGB- 239 203 135', '33C-2T', '33C-2T Glint O Gold (RGB- 239 203 135).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(463, 'Gladiator', 'Yellow', 'RGB- 228 184 102', '33C-3D', '33C-3D Gladiator (RGB- 228 184 102).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(464, 'Polished Brass', 'Yellow', 'RGB- 212 166 79', '33C-4D', '33C-4D Polished Brass (RGB- 212 166 79).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(465, 'Deep Amber', 'Yellow', 'RGB- 170 118 60', '36A-1A', '36A-1A Deep Amber (RGB- 170 118 60).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(466, 'Vanilla Cream', 'Yellow', 'RGB- 249 234 210', '36A-2P', '36A-2P Vanilla Cream (RGB- 249 234 210).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(467, 'Moondance', 'Yellow', 'RGB- 247 221 185', '36A-3P', '36A-3P Moondance (RGB- 247 221 185).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(468, 'Cane', 'Yellow', 'RGB- 233 189 136', '36B-1T', '36B-1T Cane (RGB- 233 189 136).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(469, 'Harvest', 'Yellow', 'RGB- 224 172 112', '36B-2D', '36B-2D Harvest (RGB- 224 172 112).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(470, 'Golden Ochre', 'Yellow', 'RGB- 210 153 88', '36B-3D', '36B-3D Golden Ochre (RGB- 210 153 88).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(471, 'Pigskin', 'Yellow', 'RGB- 185 131 69', '36B-4A', '36B-4A Pigskin (RGB- 185 131 69).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(472, 'Carlsbad Canyon', 'Yellow', 'RGB- 223 189 151', '36C-1T', '36C-1T Carlsbad Canyon (RGB- 223 189 151).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(473, 'Applewood', 'Yellow', 'RGB- 211 172 130', '36C-2T', '36C-2T Applewood (RGB- 211 172 130).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(474, 'Cassel Brown', 'Yellow', 'RGB- 189 145 101', '36C-3D', '36C-3D Cassel Brown (RGB- 189 145 101).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(475, 'Suede', 'Yellow', 'RGB- 152 109 69', '36C-4A', '36C-4A Suede (RGB- 152 109 69).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(476, 'Saddlebag', 'Yellow', 'RGB- 148 109 66', '37A-1A', '37A-1A Saddlebag (RGB- 148 109 66).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(477, 'Ivory Tusk', 'Yellow', 'RGB- 247 238 216', '37A-2P', '37A-2P Ivory Tusk (RGB- 247 238 216).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(478, 'Provincial Tan', 'Yellow', 'RGB- 248 228 196', '37A-3P', '37A-3P Provincial Tan (RGB- 248 228 196).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(479, 'Infinity', 'Yellow', 'RGB- 242 219 179', '37B-1P', '37B-1P Infinity (RGB- 242 219 179).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(480, 'Blonde Wood', 'Yellow', 'RGB- 231 198 144', '37B-2T', '37B-2T Blonde Wood (RGB- 231 198 144).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(481, 'Glitter Gold', 'Yellow', 'RGB- 222 182 119', '37B-3D', '37B-3D Glitter Gold (RGB- 222 182 119).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(482, 'Hot Mustard', 'Yellow', 'RGB- 210 165 97', '37B-4D', '37B-4D Hot Mustard (RGB- 210 165 97).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(483, 'Old Parchment', 'Yellow', 'RGB- 240 217 178', '37C-1P', '37C-1P Old Parchment (RGB- 240 217 178).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(484, 'Kitty Hawk', 'Yellow', 'RGB-  228 195 142', '37C-2T', '37C-2T Kitty Hawk (RGB-  228 195 142).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(485, 'Moonrock', 'Yellow', 'RGB-  219 179 118', '37C-3D', '37C-3D Moonrock (RGB-  219 179 118).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(486, 'Antique Brass', 'Yellow', 'RGB-  191 147 78', '37C-4A', '37C-4A Antique Brass (RGB-  191 147 78).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(487, 'Golf Green', 'GreenBlue', 'RGB- 0 121 93', '55A-1A', '55A-1A Golf Green  (RGB- 0 121 93).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(488, 'Aquatint', 'GreenBlue', 'RGB- 196 235 216', '55A-3P', '55A-3P Aquatint  (RGB- 196 235 216).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(489, 'Sunlit Sea', 'GreenBlue', 'RGB- 185 222 212', '55C-1P', '55C-1P Sunlit Sea  (RGB- 185 222 212).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(490, 'Cameo Green', 'GreenBlue', 'RGB- 149 203 189', '55C-2T', '55C-2T Cameo Green  (RGB- 149 203 189).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(491, 'Heirloom', 'GreenBlue', 'RGB- 108 175 157', '55C-3D', '55C-3D Heirloom  (RGB- 108 175 157).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(492, 'Isle O Green', 'GreenBlue', 'RGB- 82 153 133', '55C-4D', '55C-4D Isle O Green  (RGB- 82 153 133).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(493, 'Jamacian Holiday', 'GreenBlue', 'RGB- 0 151 121', '56A-1A', '56A-1A Jamacian Holiday  (RGB- 0 151 121).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(494, 'Sea Sprite', 'GreenBlue', 'RGB- 228 241 230', '56A-2P', '56A-2P Sea Sprite  (RGB- 228 241 230).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(495, 'Aquaril', 'GreenBlue', 'RGB- 193 236 226', '56A-3P', '56A-3P Aquaril  (RGB- 193 236 226).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(496, 'Sea Teal', 'GreenBlue', 'RGB- 170 231 217', '56B-1P', '56B-1P Sea Teal  (RGB- 170 231 217).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(497, 'Azurean', 'GreenBlue', 'RGB- 120 215 197', '56B-2T', '56B-2T Azurean  (RGB- 120 215 197).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(498, 'Yama Light', 'GreenBlue', 'RGB- 60 197 174', '56B-3D', '56B-3D Yama Light  (RGB- 60 197 174).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(499, 'Bright Jade', 'GreenBlue', 'RGB- 0 179 153', '56B-4D', '56B-4D Bright Jade  (RGB- 0 179 153).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(500, 'Aqua Frost', 'GreenBlue', 'RGB- 176 218 211', '56C-1P', '56C-1P Aqua Frost  (RGB- 176 218 211).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(501, 'Sea Vista', 'GreenBlue', 'RGB- 139 201 192', '56C-2T', '56C-2T Sea Vista  (RGB- 139 201 192).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(502, 'Aqua Pool', 'GreenBlue', 'RGB- 95 172 162', '56C-3D', '56C-3D Aqua Pool  (RGB- 95 172 162).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(503, 'Gemstone', 'GreenBlue', 'RGB- 69 149 139', '56C-4D', '56C-4D Gemstone  (RGB- 69 149 139).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(504, 'Billiard', 'GreenBlue', 'RGB- 0 134 118', '57A-1A', '57A-1A Billiard  (RGB- 0 134 118).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(505, 'Calm Sky', 'GreenBlue', 'RGB- 219 240 233', '57A-2P', '57A-2P Calm Sky  (RGB- 219 240 233).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(506, 'Huron Foam', 'GreenBlue', 'RGB- 189 232 225', '57A-3P', '57A-3P Huron Foam  (RGB- 189 232 225).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(507, 'Airwaves', 'GreenBlue', 'RGB- 164 223 217', '57B-1P', '57B-1P Airwaves  (RGB- 164 223 217).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(508, 'Clearwater', 'GreenBlue', 'RGB- 119 211 203', '57B-2T', '57B-2T Clearwater  (RGB- 119 211 203).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(509, 'Bahama Sea', 'GreenBlue', 'RGB- 56 190 178', '57B-3D', '57B-3D Bahama Sea  (RGB- 56 190 178).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(510, 'Tropic Turquoise', 'GreenBlue', 'RGB- 0 171 158', '57B-4D', '57B-4D Tropic Turquoise  (RGB- 0 171 158).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(511, 'Blue Frost', 'GreenBlue', 'RGB- 174 215 212', '57C-1P', '57C-1P Blue Frost  (RGB- 174 215 212).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(512, 'Aquamarine Blue', 'GreenBlue', 'RGB- 134 195 193', '57C-2T', '57C-2T Aquamarine Blue  (RGB- 134 195 193).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(513, 'Indian Turquoise', 'GreenBlue', 'RGB- 90 166 164', '57C-3D', '57C-3D Indian Turquoise  (RGB- 90 166 164).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(514, 'Airland Blue', 'GreenBlue', 'RGB- 60 145 142', '57C-4D', '57C-4D Airland Blue  (RGB- 60 145 142).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(515, 'Hawaiian Blue', 'GreenBlue', 'RGB- 0 129 124', '58A-1A', '58A-1A Hawaiian Blue  (RGB- 0 129 124).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(516, 'Icy Haze', 'GreenBlue', 'RGB- 222 236 229', '58A-2P', '58A-2P Icy Haze  (RGB- 222 236 229).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(517, 'Light Sky', 'GreenBlue', 'RGB- 188 230 225', '58A-3P', '58A-3P Light Sky  (RGB- 188 230 225).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(518, 'Tame Blue', 'GreenBlue', 'RGB- 166 223 220', '58B-1P', '58B-1P Tame Blue  (RGB- 166 223 220).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(519, 'Teton Blue', 'GreenBlue', 'RGB- 112 204 204', '58B-2T', '58B-2T Teton Blue  (RGB- 112 204 204).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(520, 'Tiara Turquoise', 'GreenBlue', 'RGB- 43 181 182', '58B-3D', '58B-3D Tiara Turquoise  (RGB- 43 181 182).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(521, 'Bright Aqua', 'GreenBlue', 'RGB- 0 161 160', '58B-4D', '58B-4D Bright Aqua  (RGB- 0 161 160).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(522, 'Garland Blue', 'GreenBlue', 'RGB- 172 213 214', '58C-1P', '58C-1P Garland Blue  (RGB- 172 213 214).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(523, 'Tahiti Blue', 'GreenBlue', 'RGB- 133 191 196', '58C-2T', '58C-2T Tahiti Blue  (RGB- 133 191 196).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(524, 'Danube', 'GreenBlue', 'RGB- 89 161 168', '58C-3D', '58C-3D Danube  (RGB- 89 161 168).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(525, 'Catalina', 'GreenBlue', 'RGB- 56 139 145', '58C-4D', '58C-4D Catalina  (RGB- 56 139 145).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(526, 'Blue Canyon', 'GreenBlue', 'RGB- 0 128 136', '59A-1A', '59A-1A Blue Canyon  (RGB- 0 128 136).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(527, 'Tropic Mist', 'GreenBlue', 'RGB- 214 235 231', '59A-2P', '59A-2P Tropic Mist  (RGB- 214 235 231).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(528, 'Heavenly Scent', 'GreenBlue', 'RGB- 188 228 228', '59A-3P', '59A-3P Heavenly Scent  (RGB- 188 228 228).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(529, 'Tropical Sky', 'GreenBlue', 'RGB- 164 220 224', '59B-1P', '59B-1P Tropical Sky  (RGB- 164 220 224).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(530, 'Lake Placid', 'GreenBlue', 'RGB- 114 202 210', '59B-2T', '59B-2T Lake Placid  (RGB- 114 202 210).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(531, 'Mediterranean', 'GreenBlue', 'RGB- 49 176 187', '59B-3D', '59B-3D Mediterranean  (RGB- 49 176 187).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(532, 'Unicorn Blue', 'GreenBlue', 'RGB- 0 161 170', '59B-4D', '59B-4D Unicorn Blue  (RGB- 0 161 170).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(533, 'Debonair', 'GreenBlue', 'RGB- 172 212 218', '59C-1P', '59C-1P Debonair  (RGB- 172 212 218).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(534, 'Prudence', 'GreenBlue', 'RGB- 129 188 199', '59C-2T', '59C-2T Prudence  (RGB- 129 188 199).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(535, 'Blue Mood', 'GreenBlue', 'RGB- 91 158 169', '59C-3D', '59C-3D Blue Mood  (RGB- 91 158 169).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(536, 'Scarborough', 'GreenBlue', 'RGB- 63 135 147', '59C-4D', '59C-4D Scarborough  (RGB- 63 135 147).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(537, 'Deep Teal ', 'GreenBlue', 'RGB- 23 94 91', '62A-1A', '62A-1A Deep Teal   (RGB- 23 94 91).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(538, 'Deep Teal', 'GreenBlue', 'RGB- 23 94 91', '62A-1A', '62A-1A Deep Teal  (RGB- 23 94 91).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(539, 'Silver Snow', 'GreenBlue', 'RGB- 224 234 227', '62A-2P', '62A-2P Silver Snow  (RGB- 224 234 227).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(540, 'Friendly Sky', 'GreenBlue', 'RGB- 193 214 214', '62A-3P', '62A-3P Friendly Sky  (RGB- 193 214 214).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(541, 'Duchess Blue', 'GreenBlue', 'RGB- 174 203 204', '62B-1P', '62B-1P Duchess Blue  (RGB- 174 203 204).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(542, 'Alaskan Blue', 'GreenBlue', 'RGB- 145 184 185', '62B-2T', '62B-2T Alaskan Blue  (RGB- 145 184 185).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(543, 'Blue Vein', 'GreenBlue', 'RGB- 110 153 153', '62B-3D', '62B-3D Blue Vein  (RGB- 110 153 153).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(544, 'Abbey Slate', 'GreenBlue', 'RGB- 84 131 132', '62B-4D', '62B-4D Abbey Slate  (RGB- 84 131 132).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(545, 'Aspen Light', 'GreenBlue', 'RGB- 174 202 202', '62C-1P', '62C-1P Aspen Light  (RGB- 174 202 202).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(546, 'Wall Street', 'GreenBlue', 'RGB- 135 173 175', '62C-2T', '62C-2T Wall Street  (RGB- 135 173 175).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(547, 'Dutch Blue', 'GreenBlue', 'RGB- 109 150 154', '62C-3D', '62C-3D Dutch Blue  (RGB- 109 150 154).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(548, 'Castle Keep', 'GreenBlue', 'RGB- 84 126 130', '62C-4D', '62C-4D Castle Keep  (RGB- 84 126 130).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(549, 'Blue Vase', 'GreenBlue', 'RGB- 8 93 100', '63A-1A', '63A-1A Blue Vase  (RGB- 8 93 100).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(550, 'Streamline', 'GreenBlue', 'RGB- 214 231 228', '63A-2P', '63A-2P Streamline  (RGB- 214 231 228).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(551, 'Oxford Cloth ', 'GreenBlue', 'RGB- 202 218 218', '63A-3P', '63A-3P Oxford Cloth   (RGB- 202 218 218).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(552, 'Tyrol Blue', 'GreenBlue', 'RGB- 166 202 208', '63B-1P', '63B-1P Tyrol Blue  (RGB- 166 202 208).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(553, 'Aspiration', 'GreenBlue', 'RGB- 124 174 184', '63B-2T', '63B-2T Aspiration  (RGB- 124 174 184).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(554, 'Portland Blue', 'GreenBlue', 'RGB- 92 152 160', '63B-3D', '63B-3D Portland Blue  (RGB- 92 152 160).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(555, 'Fiord Blue', 'GreenBlue', 'RGB- 70 129 139', '63B-4D', '63B-4D Fiord Blue  (RGB- 70 129 139).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(556, 'Snow Globe ', 'GreenBlue', 'RGB- 189 210 212', '63C-1P', '63C-1P Snow Globe   (RGB- 189 210 212).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(557, 'Blue Earth ', 'GreenBlue', 'RGB- 150 182 188', '63C-2T', '63C-2T Blue Earth   (RGB- 150 182 188).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(558, 'Strauss Waltz ', 'GreenBlue', 'RGB- 121 158 164', '63C-3D', '63C-3D Strauss Waltz   (RGB- 121 158 164).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(559, 'Dark Sea', 'GreenBlue', 'RGB- 95 135 143', '63C-4D', '63C-4D Dark Sea  (RGB- 95 135 143).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(560, 'Cypress Blue', 'GreenBlue', 'RGB- 40 87 102', '64A-1A', '64A-1A Cypress Blue  (RGB- 40 87 102).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(561, 'Blue Ice', 'GreenBlue', 'RGB- 222 233 229', '64A-2P', '64A-2P Blue Ice  (RGB- 222 233 229).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(562, 'Blue Goddess', 'GreenBlue', 'RGB- 182 212 220', '64B-1P', '64B-1P Blue Goddess  (RGB- 182 212 220).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(563, 'Blue Eyes', 'GreenBlue', 'RGB- 140 186 199', '64B-2T', '64B-2T Blue Eyes  (RGB- 140 186 199).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(564, 'China Blue', 'GreenBlue', 'RGB- 104 156 170', '64B-3D', '64B-3D China Blue  (RGB- 104 156 170).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(565, 'Florentina Blue', 'GreenBlue', 'RGB- 76 134 150', '64B-4D', '64B-4D Florentina Blue  (RGB- 76 134 150).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(566, 'Marine Blue', 'GreenBlue', 'RGB- 0 121 140', '66A-1A', '66A-1A Marine Blue  (RGB- 0 121 140).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(567, 'Ruffles', 'GreenBlue', 'RGB- 215 235 231', '66A-2P', '66A-2P Ruffles  (RGB- 215 235 231).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(568, 'Bunting Blue', 'GreenBlue', 'RGB- 189 219 224', '66A-3P', '66A-3P Bunting Blue  (RGB- 189 219 224).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(569, 'Sistine Blue', 'GreenBlue', 'RGB- 160 216 225', '66B-1P', '66B-1P Sistine Blue  (RGB- 160 216 225).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(570, 'Bobby Blue', 'GreenBlue', 'RGB- 110 197 212', '66B-2T', '66B-2T Bobby Blue  (RGB- 110 197 212).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(571, 'Marseilles Blue', 'GreenBlue', 'RGB- 45 174 194', '66B-3D', '66B-3D Marseilles Blue  (RGB- 45 174 194).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(572, 'Nanking Blue', 'GreenBlue', 'RGB- 0 154 176', '66B-4D', '66B-4D Nanking Blue  (RGB- 0 154 176).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(573, 'Polar Morn', 'GreenBlue', 'RGB- 171 209 220', '66C-1P', '66C-1P Polar Morn  (RGB- 171 209 220).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(574, 'Bungalow Blue', 'GreenBlue', 'RGB- 128 183 200', '66C-2T', '66C-2T Bungalow Blue  (RGB- 128 183 200).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(575, 'Saturn', 'GreenBlue', 'RGB- 91 156 176', '66C-3D', '66C-3D Saturn  (RGB- 91 156 176).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(576, 'Martinique', 'GreenBlue', 'RGB- 59 133 154', '66C-4D', '66C-4D Martinique  (RGB- 59 133 154).jpg', '2023-11-26 18:29:30', '2023-11-26 18:29:30'),
+(577, 'Mosaic Blue', 'Purple', 'RGB- 31 86 138', '70A-1A', '70A-1A Mosaic Blue  (RGB- 31 86 138).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(578, 'Frosty Violet', 'Purple', 'RGB- 224 230 230', '70A-2P', '70A-2P Frosty Violet  (RGB- 224 230 230).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(579, 'Lively Lavender', 'Purple', 'RGB- 202 215 229', '70A-3P', '70A-3P Lively Lavender  (RGB- 202 215 229).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(580, 'Crystal Orchid', 'Purple', 'RGB- 182 199 221', '70B-1P', '70B-1P Crystal Orchid  (RGB- 182 199 221).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(581, 'French Orchid', 'Purple', 'RGB- 147 173 210', '70B-2T', '70B-2T French Orchid  (RGB- 147 173 210).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(582, 'Sweet Lilac', 'Purple', 'RGB- 117 148 192', '70B-3D', '70B-3D Sweet Lilac  (RGB- 117 148 192).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(583, 'Pansy Blue', 'Purple', 'RGB- 90 124 175', '70B-4D', '70B-4D Pansy Blue  (RGB- 90 124 175).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(584, 'Twilight Chimes', 'Purple', 'RGB- 184 200 221', '70C-1P', '70C-1P Twilight Chimes  (RGB- 184 200 221).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(585, 'Autumn Crocus', 'Purple', 'RGB- 148 172 204', '70C-2T', '70C-2T Autumn Crocus  (RGB- 148 172 204).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(586, 'Lilac Velvet', 'Purple', 'RGB- 125 152 192', '70C-3D', '70C-3D Lilac Velvet  (RGB- 125 152 192).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(587, 'Grape Crush', 'Purple', 'RGB- 99 129 171', '70C-4D', '70C-4D Grape Crush  (RGB- 99 129 171).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(588, 'Deep Blue', 'Purple', 'RGB- 66 86 132', '71A-1A', '71A-1A Deep Blue  (RGB- 66 86 132).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(589, 'Lilac Swish', 'Purple', 'RGB- 228 229 229', '71A-2P', '71A-2P Lilac Swish  (RGB- 228 229 229).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(590, 'Evening Haze', 'Purple', 'RGB- 205 209 220', '71A-3P', '71A-3P Evening Haze  (RGB- 205 209 220).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(591, 'Thistle', 'Purple', 'RGB- 192 198 221', '71B-1P', '71B-1P Thistle  (RGB- 192 198 221).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(592, 'Flirtation', 'Purple', 'RGB- 159 170 204', '71B-2T', '71B-2T Flirtation  (RGB- 159 170 204).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(593, 'Aster Purple', 'Purple', 'RGB- 133 145 192', '71B-3D', '71B-3D Aster Purple  (RGB- 133 145 192).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(594, 'Majestic', 'Purple', 'RGB- 107 121 170', '71B-4D', '71B-4D Majestic  (RGB- 107 121 170).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(595, 'Misty Lilac', 'Purple', 'RGB- 193 198 216', '71C-1P', '71C-1P Misty Lilac  (RGB- 193 198 216).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(596, 'Lilac Bud', 'Purple', 'RGB- 163 170 198', '71C-2T', '71C-2T Lilac Bud  (RGB- 163 170 198).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(597, 'Daybreak', 'Purple', 'RGB- 138 146 180', '71C-3D', '71C-3D Daybreak  (RGB- 138 146 180).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(598, 'Purple Mystery', 'Purple', 'RGB- 113 123 160', '71C-4D', '71C-4D Purple Mystery  (RGB- 113 123 160).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(599, 'Oriental Night', 'Purple', 'RGB- 88 88 131', '72A-1A', '72A-1A Oriental Night  (RGB- 88 88 131).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(600, 'Bouquet Orchid', 'Purple', 'RGB- 232 229 230', '72A-2P', '72A-2P Bouquet Orchid  (RGB- 232 229 230).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(601, 'Winsome Lilac', 'Purple', 'RGB- 215 211 225', '72A-3P', '72A-3P Winsome Lilac  (RGB- 215 211 225).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(602, 'Grape Sherbet', 'Purple', 'RGB- 202 194 218', '72B-1P', '72B-1P Grape Sherbet  (RGB- 202 194 218).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(603, 'Purple Angel', 'Purple', 'RGB- 173 164 201', '72B-2T', '72B-2T Purple Angel  (RGB- 173 164 201).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(604, 'Matthews Purple', 'Purple', 'RGB- 156 143 186', '72B-3D', '72B-3D Matthews Purple  (RGB- 156 143 186).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(605, 'Hyacinth', 'Purple', 'RGB- 131 119 166', '72B-4D', '72B-4D Hyacinth  (RGB- 131 119 166).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(606, 'Lilac Brook', 'Purple', 'RGB- 203 199 221', '72C-1P', '72C-1P Lilac Brook  (RGB- 203 199 221).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(607, 'Savon Star', 'Purple', 'RGB- 173 168 202', '72C-2T', '72C-2T Savon Star  (RGB- 173 168 202).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(608, 'Iris Petal', 'Purple', 'RGB- 150 142 185', '72C-3D', '72C-3D Iris Petal  (RGB- 150 142 185).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(609, 'Violet Sequin', 'Purple', 'RGB- 125 119 168', '72C-4D', '72C-4D Violet Sequin  (RGB- 125 119 168).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(610, 'Cosmic Navy', 'Purple', 'RGB- 55 85 118', '76A-1A', '76A-1A Cosmic Navy  (RGB- 55 85 118).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(611, 'Evening Blue', 'Purple', 'RGB- 200 215 224', '76A-3P', '76A-3P Evening Blue  (RGB- 200 215 224).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(612, 'Lavendar Star', 'Purple', 'RGB- 188 202 217', '76C-1P', '76C-1P Lavendar Star  (RGB- 188 202 217).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(613, 'French Blue', 'Purple', 'RGB- 156 176 199', '76C-2T', '76C-2T French Blue  (RGB- 156 176 199).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(614, 'Purple Ribbon', 'Purple', 'RGB- 121 146 176', '76C-3D', '76C-3D Purple Ribbon  (RGB- 121 146 176).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(615, 'Prince', 'Purple', 'RGB- 92 119 152', '76C-4D', '76C-4D Prince  (RGB- 92 119 152).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(616, 'Paris Nights', 'Purple', 'RGB- 71 80 106', '77A-1A', '77A-1A Paris Nights  (RGB- 71 80 106).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(617, 'Contralto', 'Purple', 'RGB- 230 231 231', '77A-2P', '77A-2P Contralto  (RGB- 230 231 231).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(618, 'Lavendar And Lace', 'Purple', 'RGB- 209 210 220', '77A-3P', '77A-3P Lavendar And Lace  (RGB- 209 210 220).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(619, 'Snow Violets', 'Purple', 'RGB- 191 202 220', '77B-1P', '77B-1P Snow Violets  (RGB- 191 202 220).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(620, 'Allure', 'Purple', 'RGB- 160 175 201', '77B-2T', '77B-2T Allure  (RGB- 160 175 201).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(621, 'Yorktown', 'Purple', 'RGB- 130 147 177', '77B-3D', '77B-3D Yorktown  (RGB- 130 147 177).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(622, 'Tuscany Blue', 'Purple', 'RGB- 105 125 161', '77B-4D', '77B-4D Tuscany Blue  (RGB- 105 125 161).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(623, 'Persian Silk', 'Purple', 'RGB- 192 194 210', '77C-1P', '77C-1P Persian Silk  (RGB- 192 194 210).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(624, 'Violet Shadow', 'Purple', 'RGB- 161 162 186', '77C-2T', '77C-2T Violet Shadow  (RGB- 161 162 186).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(625, 'Smoked Heather', 'Purple', 'RGB- 141 144 170', '77C-3D', '77C-3D Smoked Heather  (RGB- 141 144 170).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(626, 'Jet Black', 'Purple', 'RGB- 57 57 59', '78A-1A', '78A-1A Jet Black  (RGB- 57 57 59).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(627, 'Oxford White', 'Purple', 'RGB- 227 229 228', '78A-2P', '78A-2P Oxford White  (RGB- 227 229 228).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(628, 'November Sky', 'Purple', 'RGB- 186 198 206', '78B-1P', '78B-1P November Sky  (RGB- 186 198 206).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(629, 'Autumn Eve', 'Purple', 'RGB- 156 170 185', '78B-2T', '78B-2T Autumn Eve  (RGB- 156 170 185).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(630, 'Confederate Blue', 'Purple', 'RGB- 123 140 156', '78B-3D', '78B-3D Confederate Blue  (RGB- 123 140 156).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(631, 'Indigo Violet', 'Purple', 'RGB- 97 115 132', '78B-4D', '78B-4D Indigo Violet  (RGB- 97 115 132).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(632, 'rape', 'Purple', 'RRGB- 114 117 146', '7C-4D ', '7C-4D Grape  (RGB- 114 117 146).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(633, 'Cumberland', 'Grey', 'RGB- 83 81 80', '13A-1A', '13A-1A Cumberland  (RGB-  83 81 80).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(634, 'Ermine White', 'Grey', 'RGB- 234 232 223', '13A-2P', '13A-2P Ermine White  (RGB-  234 232 223).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(635, 'Alabaster', 'Grey', 'RGB- 216 212 206', '13A-3P', '13A-3P Alabaster  (RGB-  216 212 206).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(636, 'Mortar Gray', 'Grey', 'RGB- 203 202 196', '13B-1P', '13B-1P Mortar Gray  (RGB-  203 202 196).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(637, 'Dauphin Gray', 'Grey', 'RGB- 176 172 165', '13B-2T', '13B-2T Dauphin Gray  (RGB-  176 172 165).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(638, 'Great Smokies', 'Grey', 'RGB- 152 148 141', '13B-3D', '13B-3D Great Smokies  (RGB-  152 148 141).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(639, 'Gray Mood', 'Grey', 'RGB- 128 123 116', '13B-4D', '13B-4D Gray Mood  (RGB-  128 123 116).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(640, 'Gray Button', 'Grey', 'RGB- 199 200 196', '13C-1P', '13C-1P Gray Button  (RGB-  199 200 196).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(641, 'Pewter Cup', 'Grey', 'RGB- 172 173 169', '13C-2T', '13C-2T Pewter Cup  (RGB-  172 173 169).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(642, 'Weathered Gray', 'Grey', 'RGB- 143 143 139', '13C-3D', '13C-3D Weathered Gray  (RGB-  143 143 139).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(643, 'Slate Gray', 'Grey', 'RGB- 121 121 118', '13C-4D', '13C-4D Slate Gray  (RGB-  121 121 118).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(644, 'Le Sabr', 'Grey', 'RGB- 91 81 68', '39A-1A', '39A-1A Le Sabre (RGB-  91 81 68).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(645, 'Winter Sk', 'Grey', 'RGB- 231 228 220', '39A-2P', '39A-2P Winter Sky (RGB-  231 228 220).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(646, 'Igloo', 'Grey', 'RGB- 218 214 204', '39A-3P', '39A-3P Igloo  (RGB-  218 214 204).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(647, 'Sand Drif', 'Grey', 'RGB- 217 209 192', '39B-1P', '39B-1P Sand Drift (RGB-  217 209 192).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(648, 'Glacier Gra', 'Grey', 'RGB- 195 184 162', '39B-2T', '39B-2T Glacier Gray (RGB-  195 184 162).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(649, 'Deep Twiligh', 'Grey', 'RGB- 177 164 139', '39B-3D', '39B-3D Deep Twilight (RGB-  177 164 139).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(650, 'Peppe', 'Grey', 'RGB- 154 140 117', '39B-4D', '39B-4D Pepper (RGB-  154 140 117).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(651, 'Sequoia Dusk', 'Grey', 'RGB- 206 200 189', '39C-1P', '39C-1P Sequoia Dusk  (RGB-  206 200 189).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(652, 'Worn Path', 'Grey', 'RGB- 180 174 163', '39C-2T', '39C-2T Worn Path  (RGB-  180 174 163).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(653, 'Catfish', 'Grey', 'RGB- 159 153 140', '39C-3D', '39C-3D Catfish  (RGB-  159 153 140).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(654, 'Oyster Gra', 'Grey', 'RGB- 137 129 116', '39C-4D', '39C-4D Oyster Gray (RGB-  137 129 116).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(655, 'Black Forest', 'Grey', 'RGB- 64 70 67', '52A-1A', '52A-1A Black Forest  (RGB- 64 70 67).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(656, 'Silver Fox', 'Grey', 'RGB- 231 231 223', '52A-2P', '52A-2P Silver Fox  (RGB- 231 231 223).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(657, 'Cloudy Day', 'Grey', 'RGB- 213 217 207', '52A-3P', '52A-3P Cloudy Day  (RGB- 213 217 207).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(658, 'Airway', 'Grey', 'RGB- 199 204 195', '52B-1P', '52B-1P Airway  (RGB- 199 204 195).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(659, 'Gray Fog', 'Grey', 'RGB- 172 178 169', '52B-2T', '52B-2T Gray Fog  (RGB- 172 178 169).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(660, 'Flint Ridge', 'Grey', 'RGB- 151 156 145', '52B-3D', '52B-3D Flint Ridge  (RGB- 151 156 145).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(661, 'Gun Metal', 'Grey', 'RGB- 125 130 119', '52B-4D', '52B-4D Gun Metal  (RGB- 125 130 119).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(662, 'New Wave Gray', 'Grey', 'RGB- 196 202 195', '52C-1P', '52C-1P New Wave Gray  (RGB- 196 202 195).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(663, 'Gray Beam', 'Grey', 'RGB- 167 175 169', '52C-2T', '52C-2T Gray Beam  (RGB- 167 175 169).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(664, 'Mariners Gray', 'Grey', 'RGB- 145 152 143', '52C-3D', '52C-3D Mariners Gray  (RGB- 145 152 143).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(665, 'Gladstone', 'Grey', 'RGB- 119 125 118', '52C-4D', '52C-4D Gladstone  (RGB- 119 125 118).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30');
+INSERT INTO `colorpalette` (`id`, `colorpalette_name`, `colorpalette_category`, `colorpalette_rgb`, `colorpalette_batch`, `colorpalette_image`, `created_at`, `updated_at`) VALUES
+(666, 'Black Magic', 'Grey', 'RGB- 56 60 62', '65A-1A', '65A-1A Black Magic  (RGB- 56 60 62).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(667, 'Far Horizon', 'Grey', 'RGB- 223 226 219', '65A-2P', '65A-2P Far Horizon  (RGB- 223 226 219).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(668, 'Mirage Lake', 'Grey', 'RGB-  201 208 207', '65A-3P', '65A-3P Mirage Lake  (RGB-  201 208 207).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(669, 'Dixieland', 'Grey', 'RGB- 185 193 191', '65B-1P', '65B-1P Dixieland  (RGB- 185 193 191).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(670, 'Penguin', 'Grey', 'RGB- 152 162 162', '65B-2T', '65B-2T Penguin  (RGB- 152 162 162).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(671, 'Alden Charcoal', 'Grey', 'RGB- 130 141 140', '65B-3D', '65B-3D Alden Charcoal  (RGB- 130 141 140).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(672, 'Pipe Gray', 'Grey', 'RGB- 106 116 116', '65B-4D', '65B-4D Pipe Gray  (RGB- 106 116 116).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(673, 'Bright Steel', 'Grey', 'RGB-  184 196 195', '65C-1P', '65C-1P Bright Steel  (RGB-  184 196 195).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(674, 'Labrador Blue', 'Grey', 'RGB- 151 166 168', '65C-2T', '65C-2T Labrador Blue  (RGB- 151 166 168).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(675, 'Rough Sea', 'Grey', 'RGB- 121 136 138', '65C-3D', '65C-3D Rough Sea  (RGB- 121 136 138).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(676, 'Peking', 'Grey', 'RGB- 102 115 118', '65C-4D', '65C-4D Peking  (RGB- 102 115 118).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(677, 'Navy Wool', 'Grey', 'RGB- 52 71 81', '73A-1A', '73A-1A Navy Wool  (RGB- 52 71 81).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(678, 'Blue Glow', 'Grey', 'RGB- 199 210 212', '73A-3P', '73A-3P Blue Glow  (RGB- 199 210 212).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(679, 'Heavenly Gray', 'Grey', 'RGB- 184 197 203', '73C-1P', '73C-1P Heavenly Gray  (RGB- 184 197 203).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(680, 'Gray Duck', 'Grey', 'RGB- 150 168 178', '73C-2T', '73C-2T Gray Duck  (RGB- 150 168 178).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(681, 'Alpine', 'Grey', 'RGB- 119 139 148', '73C-3D', '73C-3D Alpine  (RGB- 119 139 148).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(682, 'Symphony Blue', 'Grey', 'RGB- 94 115 125', '73C-4D', '73C-4D Symphony Blue  (RGB- 94 115 125).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(683, 'Jet Black', 'Grey', 'RGB- 57 57 59', '78A-1A', '78A-1A Jet Black  (RGB- 57 57 59).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(684, 'Sterling', 'Grey', 'RGB- 202 209 209', '78A-3P', '78A-3P Sterling  (RGB- 202 209 209).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(685, 'Tuxedo Gray', 'Grey', 'RGB- 184 194 197', '78C-1P', '78C-1P Tuxedo Gray  (RGB- 184 194 197).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(686, 'Silver Spur', 'Grey', 'RGB- 152 164 171', '78C-2T', '78C-2T Silver Spur  (RGB- 152 164 171).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(687, 'Gray Tweed', 'Grey', 'RGB- 122 135 141', '78C-3D', '78C-3D Gray Tweed  (RGB- 122 135 141).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(688, 'Dark Shadow', 'Grey', 'RGB- 99 111 118', '78C-4D', '78C-4D Dark Shadow  (RGB- 99 111 118).jpg', '2023-11-27 01:29:30', '2023-11-27 01:29:30'),
+(689, 'Beethoven Blue', 'Blue', 'RGB- 88 117 131', '3B-4D', '3B-4D Beethoven Blue  (RGB- 88 117 131).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(690, 'Cicely', 'Blue', 'RGB- 125 170 192', '4B-2T', '4B-2T Cicely  (RGB- 125 170 192).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(691, 'Cypress Blue', 'Blue', 'RGB- 40 87 102', '64A-1A', '64A-1A Cypress Blue  (RGB- 40 87 102).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(692, 'Blue Gray', 'Blue', 'RGB- 197 216 221', '64A-3P', '64A-3P Blue Gray  (RGB- 197 216 221).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(693, 'Far Away', 'Blue', 'RGB- 172 199 209', '64C-1P', '64C-1P Far Away  (RGB- 172 199 209).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(694, 'Blanket Blue', 'Blue', 'RGB- 137 171 186', '64C-2T', '64C-2T Blanket Blue  (RGB- 137 171 186).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(695, 'Historic Blue', 'Blue', 'RGB- 105 143 160', '64C-3D', '64C-3D Historic Blue  (RGB- 105 143 160).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(696, 'Blue Manor', 'Blue', 'RGB- 84 121 140', '64C-4D', '64C-4D Blue Manor  (RGB- 84 121 140).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(697, 'Continental Blue', 'Blue', 'RGB- 0 117 170', '67A-1A', '67A-1A Continental Blue  (RGB- 0 117 170).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(698, 'Airy', 'Blue', 'RGB- 224 236 233', '67A-2P', '67A-2P Airy  (RGB- 224 236 233).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(699, 'Blue Chiffon', 'Blue', 'RGB-183 219 231).', '67A-3P', '67A-3P Blue Chiffon  (RGB-183 219 231).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(700, 'Lovebird Blue', 'Blue', 'RGB- 161 211 231', '67B-1P', '67B-1P Lovebird Blue  (RGB- 161 211 231).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(701, 'Jewel Blue', 'Blue', 'RGB- 109 188 223', '67B-2T', '67B-2T Jewel Blue  (RGB- 109 188 223).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(702, 'Grotto Blue', 'Blue', 'RGB- 49 166 212', '67B-3D', '67B-3D Grotto Blue  (RGB- 49 166 212).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(703, 'Spectrum Blue', 'Blue', 'RGB- 0 147 202', '67B-4D', '67B-4D Spectrum Blue  (RGB- 0 147 202).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(704, 'Harbour Sky', 'Blue', 'RGB- 152 200 220', '67C-1P', '67C-1P Harbour Sky  (RGB- 152 200 220).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(705, 'Mainline Blue', 'Blue', 'RGB- 114 177 203', '67C-2T', '67C-2T Mainline Blue  (RGB- 114 177 203).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(706, 'Stormy Blue', 'Blue', 'RGB- 80 159 192', '67C-3D', '67C-3D Stormy Blue  (RGB- 80 159 192).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(707, 'Blueprint', 'Blue', 'RGB- 59 139 171', '67C-4D', '67C-4D Blueprint  (RGB- 59 139 171).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(708, 'Blue Fury', 'Blue', 'RGB- 0 108 162', '68A-1A', '68A-1A Blue Fury  (RGB- 0 108 162).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(709, 'Chimes', 'Blue', 'RGB- 218 229 230', '68A-2P', '68A-2P Chimes  (RGB- 218 229 230).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(710, 'Johnny Blue', 'Blue', 'RGB- 190 217 231', '68A-3P', '68A-3P Johnny Blue  (RGB- 190 217 231).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(711, 'Norwegian Blue', 'Blue', 'RGB- 172 207 230', '68B-1P', '68B-1P Norwegian Blue  (RGB- 172 207 230).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(712, 'Little Boy Blue', 'Blue', 'RGB- 129 182 219', '68B-2T', '68B-2T Little Boy Blue  (RGB- 129 182 219).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(713, 'Sterling Blue', 'Blue', 'RGB- 91 156 204', '68B-3D', '68B-3D Sterling Blue  (RGB- 91 156 204).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(714, 'Bonnie Blue', 'Blue', 'RGB- 50 134 186', '68B-4D', '68B-4D Bonnie Blue  (RGB- 50 134 186).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(715, 'Blue Pansy', 'Blue', 'RGB- 168 197 217', '68C-1P', '68C-1P Blue Pansy  (RGB- 168 197 217).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(716, 'Colonels Lady', 'Blue', 'RGB- 127 170 202', '68C-2T', '68C-2T Colonels Lady  (RGB- 127 170 202).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(717, 'Blue Surf', 'Blue', 'RGB- 106 150 184', '68C-3D', '68C-3D Blue Surf  (RGB- 106 150 184).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(718, 'Wild Blue', 'Blue', 'RGB- 73 128 165', '68C-4D', '68C-4D Wild Blue  (RGB- 73 128 165).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(719, 'Legendary Blue', 'Blue', 'RGB- 23 99 151', '69A-1A', '69A-1A Legendary Blue  (RGB- 23 99 151).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(720, 'Air Blue', 'Blue', 'RGB- 220 230 231', '69A-2P', '69A-2P Air Blue  (RGB- 220 230 231).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(721, 'Forget-me-not', 'Blue', 'RGB- 194 215 230', '69A-3P', '69A-3P Forget-me-not  (RGB- 194 215 230).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(722, 'Blue Lotus', 'Blue', 'RGB- 172 202 226', '69B-1P', '69B-1P Blue Lotus  (RGB- 172 202 226).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(723, 'Blue Beauty', 'Blue', 'RGB- 137 177 215', '69B-2T', '69B-2T Blue Beauty  (RGB- 137 177 215).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(724, 'Misty Blue', 'Blue', 'RGB- 108 154 200', '69B-3D', '69B-3D Misty Blue  (RGB- 108 154 200).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(725, 'Blue Charm', 'Blue', 'RGB- 75 129 183', '69B-4D', '69B-4D Blue Charm  (RGB- 75 129 183).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(726, 'Blue Fox Frost', 'Blue', 'RGB- 174 200 222', '69C-1P', '69C-1P Blue Fox Frost  (RGB- 174 200 222).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(727, 'Prairie Sky', 'Blue', 'RGB- 136 176 207', '69C-2T', '69C-2T Prairie Sky  (RGB- 136 176 207).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(728, 'Blue Suede', 'Blue', 'RGB- 111 157 195', '69C-3D', '69C-3D Blue Suede  (RGB- 111 157 195).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(729, 'Sovereign Blue', 'Blue', 'RGB- 80 130 172', '69C-4D', '69C-4D Sovereign Blue  (RGB- 80 130 172).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(730, 'Navy Wool', 'Blue', 'RGB- 52 71 81', '73A-1A', '73A-1A Navy Wool  (RGB- 52 71 81).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(731, 'Smoke Ring', 'Blue', 'RGB- 223 229 226', '73A-2P', '73A-2P Smoke Ring  (RGB- 223 229 226).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(732, 'Prelude', 'Blue', 'RGB- 179 200 207', '73B-1P', '73B-1P Prelude  (RGB- 179 200 207).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(733, 'Pale Cadet', 'Blue', 'RGB- 149 175 187', '73B-2T', '73B-2T Pale Cadet  (RGB- 149 175 187).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(734, 'Copenhagen', 'Blue', 'RGB- 112 142 155', '73B-3D', '73B-3D Copenhagen  (RGB- 112 142 155).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(735, 'Bohemian Blue', 'Blue', 'RGB- 38 96 123', '74A-1A', '74A-1A Bohemian Blue  (RGB- 38 96 123).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(736, 'London Dawn', 'Blue', 'RGB- 218 230 229', '74A-2P', '74A-2P London Dawn  (RGB- 218 230 229).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(737, 'Echo', 'Blue', 'RGB- 195 215 222', '74A-3P', '74A-3P Echo   (RGB- 195 215 222).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(738, 'Delphinium', 'Blue', 'RGB- 163 198 213', '74B-1P', '74B-1P Delphinium  (RGB- 163 198 213).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(739, 'Pottery Blue', 'Blue', 'RGB- 101 152 177', '74B-3D', '74B-3D Pottery Blue  (RGB- 101 152 177).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(740, 'La Traviata', 'Blue', 'RGB- 72 128 154', '74B-4D', '74B-4D La Traviata  (RGB- 72 128 154).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(741, 'Dreamy Winters', 'Blue', 'RGB- 175 203 215', '74C-1P', '74C-1P Dreamy Winters   (RGB- 175 203 215).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(742, 'Sky King', 'Blue', 'RGB- 139 176 195', '74C-2T', '74C-2T Sky King   (RGB- 139 176 195).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(743, 'Night Fall', 'Blue', 'RGB- 106 149 168', '74C-3D', '74C-3D Night Fall   (RGB- 106 149 168).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(744, 'Boundary Waters', 'Blue', 'RGB- 79 124 145', '74C-4D', '74C-4D Boundary Waters  (RGB- 79 124 145).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(745, 'Calico Blue', 'Blue', 'RGB- 49 85 113', '75A-1A', '75A-1A Calico Blue  (RGB- 49 85 113).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(746, 'Nordic Ice', 'Blue', 'RGB- 220 231 229', '75A-2P', '75A-2P Nordic Ice  (RGB- 220 231 229).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(747, 'Adriatic Haze', 'Blue', 'RGB- 190 210 220', '75A-3P', '75A-3P Adriatic Haze  (RGB- 190 210 220).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(748, 'Blue Harmony', 'Blue', 'RGB- 180 206 221', '75B-1P', '75B-1P Blue Harmony  (RGB- 180 206 221).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(749, 'Delta Water', 'Blue', 'RGB- 145 180 205', '75B-2T', '75B-2T Delta Water  (RGB- 145 180 205).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(750, 'Riviera Sky', 'Blue', 'RGB- 106 149 179', '75B-3D', '75B-3D Riviera Sky  (RGB- 106 149 179).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(751, 'Blue Shadow', 'Blue', 'RGB- 80 127 160', '75B-4D', '75B-4D Blue Shadow  (RGB- 80 127 160).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(752, 'Midsummer', 'Blue', 'RGB- 175 200 212', '75C-1P', '75C-1P Midsummer  (RGB- 175 200 212).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(753, 'Nordic Blue', 'Blue', 'RGB- 126 163 186', '75C-2T', '75C-2T Nordic Blue  (RGB- 126 163 186).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(754, 'Napoleon', 'Blue', 'RGB- 99 138 163', '75C-3D', '75C-3D Napoleon  (RGB- 99 138 163).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(755, 'Bristol Blue', 'Blue', 'RGB- 67 100 122', '75C-4A', '75C-4A Bristol Blue  (RGB- 67 100 122).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(756, 'Cosmic Navy', 'Blue', 'RGB- 55 85 118', '76A-1A', '76A-1A Cosmic Navy   (RGB- 55 85 118).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(757, 'Murmur', 'Blue', 'RGB- 220 228 230', '76A-2P', '76A-2P Murmur   (RGB- 220 228 230).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(758, 'Bleu Celeste', 'Blue', 'RGB- 173 198 216', '76B-1P', '76B-1P Bleu Celeste   (RGB- 173 198 216).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(759, 'Breton', 'Blue', 'RGB- 133 167 198', '76B-2T', '76B-2T Breton   (RGB- 133 167 198).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(760, 'Milano', 'Blue', 'RGB- 111 149 179', '76B-3D', '76B-3D Milano   (RGB- 111 149 179).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(761, 'Antioch Blue', 'Blue', 'RGB- 84 126 161', '76B-4D', '76B-4D Antioch Blue   (RGB- 84 126 161).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(762, 'Devils Food', 'Neutral', 'RGB- 121 84 73', '12A-1A', '12A-1A Devils Food (RGB- 121 84 73).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(763, 'Mauve Blush', 'Neutral', 'RGB- 225 200 186', '12A-3P', '12A-3P Mauve Blush (RGB- 225 200 186).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(764, 'Mineral Mauve', 'Neutral', 'RGB- 209 188 175', '12C-1P', '12C-1P Mineral Mauve (RGB- 209 188 175).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(765, 'Indian Tan', 'Neutral', 'RGB- 184 157 142', '12C-2T', '12C-2T Indian Tan (RGB- 184 157 142).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(766, 'Mayfair Tan', 'Neutral', 'RGB- 166 135 117', '12C-3D', '12C-3D Mayfair Tan (RGB- 166 135 117).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(767, 'Rich Earth', 'Neutral', 'RGB- 148 115 100', '12C-4D', '12C-4D Rich Earth (RGB- 148 115 100).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(768, 'Rich Chocolate', 'Neutral', 'RGB- 137 91 65', '24A-1A', '24A-1A Rich Chocolate (RGB- 137 91 65).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(769, 'Belleek', 'Neutral', 'RGB- 242 227 211', '24A-2P', '24A-2P Belleek (RGB- 242 227 211).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(770, 'Flax', 'Neutral', 'RGB- 233 211 191', '24A-3P', '24A-3P Flax (RGB- 233 211 191).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(771, 'Ceramic Beige', 'Neutral', 'RGB- 220 190 167', '24B-1P', '24B-1P Ceramic Beige (RGB- 220 190 167).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(772, 'Sahara Sand', 'Neutral', 'RGB- 201 164 137', '24B-2T', '24B-2T Sahara Sand (RGB- 201 164 137).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(773, 'Harvest Tan', 'Neutral', 'RGB- 179 136 108', '24B-3D', '24B-3D Harvest Tan (RGB- 179 136 108).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(774, 'Cocoa Mix', 'Neutral', 'RGB- 158 116 89', '24B-4D', '24B-4D Cocoa Mix (RGB- 158 116 89).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(775, 'Chocolate Shake', 'Neutral', 'RGB- 215 182 160', '24C-1P', '24C-1P Chocolate Shake (RGB- 215 182 160).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(776, 'Frosty Toffee', 'Neutral', 'RGB- 189 150 125', '24C-2T', '24C-2T Frosty Toffee (RGB- 189 150 125).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(777, 'Cocoa Bean', 'Neutral', 'RGB- 173 131 103', '24C-3D', '24C-3D Cocoa Bean (RGB- 173 131 103).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(778, 'Fudge', 'Neutral', 'RGB- 151 110 87', '24C-4D', '24C-4D Fudge (RGB- 151 110 87).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(779, 'Chocolate Chip', 'Neutral', 'RGB- 108 80 67', '25A-1A', '25A-1A Chocolate Chip (RGB- 108 80 67).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(780, 'Divinity', 'Neutral', 'RGB- 238 228 216', '25A-2P', '25A-2P Divinity (RGB- 238 228 216).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(781, 'Antique Ivory', 'Neutral', 'RGB- 229 214 197', '25A-3P', '25A-3P Antique Ivory (RGB- 229 214 197).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(782, 'Cocoa Candy', 'Neutral', 'RGB- 220 203 186', '25B-1P', '25B-1P Cocoa Candy (RGB- 220 203 186).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(783, 'Malibu Sand', 'Neutral', 'RGB- 198 176 154', '25B-2T', '25B-2T Malibu Sand (RGB- 198 176 154).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(784, 'Franciscan Robe', 'Neutral', 'RGB- 180 155 131', '25B-3D', '25B-3D Franciscan Robe (RGB- 180 155 131).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(785, 'Tulip Wood', 'Neutral', 'RGB- 159 131 107', '25B-4D', '25B-4D Tulip Wood (RGB- 159 131 107).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(786, 'Cocoa Parfait', 'Neutral', 'RGB- 223 208 193', '25C-1P', '25C-1P Cocoa Parfait (RGB- 223 208 193).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(787, 'Bracken Brown', 'Neutral', 'RGB- 201 180 160', '25C-2T', '25C-2T Bracken Brown (RGB- 201 180 160).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(788, 'Tarragon', 'Neutral', 'RGB- 178 153 131', '25C-3D', '25C-3D Tarragon (RGB- 178 153 131).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(789, 'Brushwood', 'Neutral', 'RGB- 156 129 110', '25C-4D', '25C-4D Brushwood (RGB- 156 129 110).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(790, 'Cafe Noir', 'Neutral', 'RGB- 90 73 64', '26A-1A', '26A-1A Cafe Noir (RGB- 90 73 64).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(791, 'White Shadow', 'Neutral', 'RGB- 230 222 214', '26A-2P', '26A-2P White Shadow (RGB- 230 222 214).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(792, 'Your Shadow', 'Neutral', 'RGB- 214 204 198', '26A-3P', '26A-3P Your Shadow (RGB- 214 204 198).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(793, 'Gray Beige', 'Neutral', 'RGB- 204 190 183', '26B-1P', '26B-1P Gray Beige (RGB- 204 190 183).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(794, 'Autumn Brown', 'Neutral', 'RGB- 178 160 152', '26B-2T', '26B-2T Autumn Brown (RGB- 178 160 152).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(795, 'Cocotone', 'Neutral', 'RGB- 154 133 123', '26B-3D', '26B-3D Cocotone (RGB- 154 133 123).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(796, 'Earth Brown', 'Neutral', 'RGB- 136 114 105', '26B-4D', '26B-4D Earth Brown (RGB- 136 114 105).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(797, 'Silver Velvet', 'Neutral', 'RGB- 202 189 182', '26C-1P', '26C-1P Silver Velvet (RGB- 202 189 182).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(798, 'Mole', 'Neutral', 'RGB- 169 153 149', '26C-2T', '26C-2T Mole (RGB- 169 153 149).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(799, 'Easton Brown', 'Neutral', 'RGB- 154 135 128', '26C-3D', '26C-3D Easton Brown (RGB- 154 135 128).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(800, 'Ranch Mink', 'Neutral', 'RGB- 128 110 103', '26C-4D', '26C-4D Ranch Mink (RGB- 128 110 103).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(801, 'Dandy Brown', 'Neutral', 'RGB- 125 91 69', '34A-1A', '34A-1A Dandy Brown (RGB- 125 91 69).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(802, 'Dutch Cream', 'Neutral', 'RGB-  239 226 209', '34A-2P', '34A-2P Dutch Cream (RGB-  239 226 209).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(803, 'Manhattan Beige', 'Neutral', 'RGB- 227 209 188', '34A-3P', '34A-3P Manhattan Beige (RGB- 227 209 188).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(804, 'Rice Puff', 'Neutral', 'RGB-  229 201 174', '34B-1P', '34B-1P Rice Puff (RGB-  229 201 174).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(805, 'Tropic Tan', 'Neutral', 'RGB- 210 174 144', '34B-2T', '34B-2T Tropic Tan (RGB- 210 174 144).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(806, 'Cocoon', 'Neutral', 'RGB- 186 143 110', '34B-3D', '34B-3D Cocoon (RGB- 186 143 110).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(807, 'Oak Brown', 'Neutral', 'RGB- 164 122 90', '34B-4D', '34B-4D Oak Brown (RGB- 164 122 90).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(808, 'Tea N Cream', 'Neutral', 'RGB- 217 194 170', '34C-1P', '34C-1P Tea N Cream (RGB- 217 194 170).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(809, 'Burlap', 'Neutral', 'RGB- 194 164 137', '34C-2T', '34C-2T Burlap (RGB- 194 164 137).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(810, 'Grenadier Gold', 'Neutral', 'RGB- 173 139 110', '34C-3D', '34C-3D Grenadier Gold (RGB- 173 139 110).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(811, 'Hollandia', 'Neutral', 'RGB- 150 117 88', '34C-4D', '34C-4D Hollandia (RGB- 150 117 88).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(812, 'Beech Tree', 'Neutral', 'RGB-  140 105 75', '35A-1A', '35A-1A Beech Tree (RGB-  140 105 75).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(813, 'Beech Tree', 'Neutral', 'RGB- 140 105 75', '35A-1A', '35A-1A Beech Tree (RGB- 140 105 75).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(814, 'Ivory Vapor', 'Neutral', 'RGB- 246 234 218', '35A-2P', '35A-2P Ivory Vapor (RGB- 246 234 218).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(815, 'Bleached Sand', 'Neutral', 'RGB-  241 223 202', '35A-3P', '35A-3P Bleached Sand (RGB-  241 223 202).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(816, 'Biscuit', 'Neutral', 'RGB- 229 204 176', '35B-1P', '35B-1P Biscuit (RGB- 229 204 176).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(817, 'Lowell', 'Neutral', 'RGB- 212 178 145', '35B-2T', '35B-2T Lowell (RGB- 212 178 145).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(818, 'Cameron', 'Neutral', 'RGB- 190 149 111', '35B-3D', '35B-3D Cameron (RGB- 190 149 111).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(819, 'Burnt Sugar', 'Neutral', 'RGB- 169 129 92', '35B-4D', '35B-4D Burnt Sugar (RGB- 169 129 92).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(820, 'Camels Hair', 'Neutral', 'RGB-  228 203 178', '35C-1P', '35C-1P Camels Hair (RGB-  228 203 178).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(821, 'Camouflage Tan', 'Neutral', 'RGB-  210 177 145', '35C-2T', '35C-2T Camouflage Tan (RGB-  210 177 145).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(822, 'Boca Raton', 'Neutral', 'RGB-  182 143 108', '35C-3D', '35C-3D Boca Raton (RGB-  182 143 108).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(823, 'Oakheart', 'Neutral', 'RGB-  144 104 72', '35C-4A', '35C-4A Oakheart (RGB-  144 104 72).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(824, 'Stratum Rock', 'Neutral', 'RGB-  124 99 67', '38A-1A', '38A-1A Stratum Rock (RGB-  124 99 67).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(825, 'Stratum Rock', 'Neutral', 'RGB- 124 99 67', '38A-1A', '38A-1A Stratum Rock (RGB- 124 99 67).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(826, 'Porcelain', 'Neutral', 'RGB- 241 235 221', '38A-2P', '38A-2P Porcelain (RGB- 241 235 221).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(827, 'Bone', 'Neutral', 'RGB-  231 219 200', '38A-3P', '38A-3P Bone (RGB-  231 219 200).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(828, 'Sand Dollar', 'Neutral', 'RGB- 231 211 180', '38B-1P', '38B-1P Sand Dollar (RGB- 231 211 180).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(829, 'Buff', 'Neutral', 'RGB- 216 188 148', '38B-2T', '38B-2T Buff (RGB- 216 188 148).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(830, 'Temple Gold', 'Neutral', 'RGB- 200 168 123', '38B-3D', '38B-3D Temple Gold (RGB- 200 168 123).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(831, 'Tiber Gold', 'Neutral', 'RGB- 185 150 105', '38B-4D', '38B-4D Tiber Gold (RGB- 185 150 105).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(832, 'Chalk Beige', 'Neutral', 'RGB-  230 219 201', '38C-1P', '38C-1P Chalk Beige (RGB-  230 219 201).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(833, 'Light Coffee', 'Neutral', 'RGB-  200 184 159', '38C-2T', '38C-2T Light Coffee (RGB-  200 184 159).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(834, 'Castilian', 'Neutral', 'RGB-  183 163 134', '38C-3D', '38C-3D Castilian (RGB-  183 163 134).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(835, 'Bavarian Brown', 'Neutral', 'RGB-  161 139 109', '38C-4D', '38C-4D Bavarian Brown (RGB-  161 139 109).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(836, 'Tobacco Gold', 'Neutral', 'RGB-  136 107 68', '47A-1A', '47A-1A Tobacco Gold (RGB-  136 107 68).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(837, 'Pearly Gates', 'Neutral', 'RGB-  243 234 218', '47A-2P', '47A-2P Pearly Gates (RGB-  243 234 218).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(838, 'Plantation White', 'Neutral', 'RGB-  236 222 201', '47A-3P', '47A-3P Plantation White (RGB-  236 222 201).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(839, 'Deauville', 'Neutral', 'RGB-  232 216 192', '47B-1P', '47B-1P Deauville (RGB-  232 216 192).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(840, 'Wheatland', 'Neutral', 'RGB-  217 194 160', '47B-2T', '47B-2T Wheatland (RGB-  217 194 160).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(841, 'Poplar', 'Neutral', 'RGB-  193 166 126', '47B-3D', '47B-3D Poplar (RGB-  193 166 126).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(842, 'Contessa', 'Neutral', 'RGB- 175 146 105', '47B-4D', '47B-4D Contessa (RGB- 175 146 105).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(843, 'Ceylon Ivory', 'Neutral', 'RGB-  228 210 185', '47C-1P', '47C-1P Ceylon Ivory (RGB-  228 210 185).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(844, 'Riviera Sand', 'Neutral', 'RGB-  203 183 153', '47C-2T', '47C-2T Riviera Sand (RGB-  203 183 153).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(845, 'Dodge City Tan', 'Neutral', 'RGB-  194 167 132', '47C-3D', '47C-3D Dodge City Tan (RGB-  194 167 132).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(846, 'Moulin', 'Neutral', 'RGB-  169 142 108', '47C-4D', '47C-4D Moulin (RGB-  169 142 108).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(847, 'Congo', 'Neutral', 'RGB-  152 120 60', '48A-1A', '48A-1A Congo (RGB-  152 120 60).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(848, 'Cleo', 'Neutral', 'RGB-  243 234 216', '48A-2P', '48A-2P Cleo (RGB-  243 234 216).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(849, 'Chelsea', 'Neutral', 'RGB-  239 225 199', '48A-3P', '48A-3P Chelsea (RGB-  239 225 199).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(850, 'Winters Edge', 'Neutral', 'RGB-  235 218 185', '48B-1P', '48B-1P Winters Edge (RGB-  235 218 185).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(851, 'Japan Tan', 'Neutral', 'RGB-  219 195 153', '48B-2T', '48B-2T Japan Tan (RGB-  219 195 153).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(852, 'Curry Spice', 'Neutral', 'RGB-  194 165 113', '48B-3D', '48B-3D Curry Spice (RGB-  194 165 113).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(853, 'Pepo', 'Neutral', 'RGB-  174 144 90', '48B-4D', '48B-4D Pepo (RGB-  174 144 90).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(854, 'Antique Linen', 'Neutral', 'RGB-  228 212 181', '48C-1P', '48C-1P Antique Linen (RGB-  228 212 181).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(855, 'Olive Wood', 'Neutral', 'RGB-  212 189 148', '48C-2T', '48C-2T Olive Wood (RGB-  212 189 148).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(856, 'Pepper Tree', 'Neutral', 'RGB-  189 163 116', '48C-3D', '48C-3D Pepper Tree (RGB-  189 163 116).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(857, 'Bronze Sheen', 'Neutral', 'RGB-  171 144 97', '48C-4D', '48C-4D Bronze Sheen (RGB-  171 144 97).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(858, 'Shadey Olive', 'Neutral', 'RGB-  129 113 69', '49A-1A', '49A-1A Shadey Olive (RGB-  129 113 69).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(859, 'Worm White', 'Neutral', 'RGB-  238 232 217', '49A-2P', '49A-2P Worm White (RGB-  238 232 217).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(860, 'Washed Pebble', 'Neutral', 'RGB-  237 229 205', '49A-3P', '49A-3P Washed Pebble (RGB-  237 229 205).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(861, 'Leek', 'Neutral', 'RGB-  230 221 191', '49B-1P', '49B-1P Leek (RGB-  230 221 191).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(862, 'Primeval', 'Neutral', 'RGB-  214 200 162', '49B-2T', '49B-2T Primeval (RGB-  214 200 162).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(863, 'Russet Pear', 'Neutral', 'RGB-  190 173 122', '49B-3D', '49B-3D Russet Pear (RGB-  190 173 122).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(864, 'Date Palm', 'Neutral', 'RGB-  171 153 101', '49B-4D', '49B-4D Date Palm (RGB-  171 153 101).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(865, 'Putty', 'Neutral', 'RGB-  216 204 179', '49C-1P', '49C-1P Putty (RGB-  216 204 179).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(866, 'Khaki', 'Neutral', 'RGB-  194 180 148', '49C-2T', '49C-2T Khaki (RGB-  194 180 148).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(867, 'Dried Seaweed', 'Neutral', 'RGB-  174 157 122', '49C-3D', '49C-3D Dried Seaweed (RGB-  174 157 122).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(868, 'Glendive', 'Neutral', 'RGB-  154 136 101', '49C-4D', '49C-4D Glendive (RGB-  154 136 101).jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30'),
+(869, 'White', 'OffWhite', 'RGB- 255 255 255', '', 'offwhite.jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `colorprice_matex`
+--
+
+CREATE TABLE `colorprice_matex` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `color_name` varchar(255) NOT NULL,
+  `color_tag` varchar(255) DEFAULT NULL,
+  `color_image` varchar(255) DEFAULT NULL,
+  `color_1l` varchar(255) DEFAULT NULL,
+  `color_5l` varchar(255) DEFAULT NULL,
+  `color_18l` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `colorprice_matex`
+--
+
+INSERT INTO `colorprice_matex` (`id`, `color_name`, `color_tag`, `color_image`, `color_1l`, `color_5l`, `color_18l`, `created_at`, `updated_at`) VALUES
+(3, 'Bl014-3', 'MA', 'Bl014-3.jpg', '6.92', '27.62', '91.64', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(4, 'Bl021-3', 'MA', 'Bl021-3.jpg', '5.79', '21.94', '68.19', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(5, 'Bl042-1', 'MA', 'Bl042-1.jpg', '6.08', '23.4', '73.44', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(6, 'Bl044-3', 'MA', 'Bl044-3.jpg', '6.93', '27.66', '91.76', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(7, 'Bl061-3', 'MA', 'Bl061-3.jpg', '5.78', '21.9', '68.03', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(8, 'Bl063-2', 'MA', 'Bl063-2.jpg', '5.85', '22.23', '72.24', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(9, 'Bl071-2', 'MA', 'Bl071-2.jpg', '5.59', '20.95', '64.62', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(10, 'Bl072-1', 'MA', 'Bl072-1.jpg', '6.13', '23.64', '74.29', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(11, 'Bl091-3', 'MA', 'Bl091-3.jpg', '5.77', '21.86', '67.9', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(12, 'Bl132-2', 'MA', 'Bl132-2.jpg', '5.97', '22.84', '71.41', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(13, 'Bl134-3', 'MA', 'Bl134-3.jpg', '6.64', '26.2', '86.51', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(14, 'GB023-2', 'MA', 'GB023-2.jpg', '5.58', '20.9', '67.43', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(15, 'GB062-1', 'MA', 'GB062-1.jpg', '6.01', '23.04', '72.14', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(16, 'GB091-3', 'MA', 'GB091-3.jpg', '5.79', '21.94', '68.17', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(17, 'GB092-1', 'MA', 'GB092-1.jpg', '6.04', '23.22', '72.79', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(18, 'GB101-2', 'MA', 'GB101-2.jpg', '5.57', '20.86', '64.29', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(19, 'GB151-3', 'MA', 'GB151-3.jpg', '5.68', '21.42', '66.31', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(20, 'GB162-1', 'MA', 'GB162-1.jpg', '6.07', '23.33', '73.18', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(21, 'GB163-2', 'MA', 'GB163-2.jpg', '5.67', '21.37', '69.14', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(22, 'GB164-3', 'MA', 'GB164-3.jpg', '6.55', '25.73', '84.83', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(23, 'Gn032-1', 'MA', 'Gn032-1.jpg', '6.85', '27.27', '87.37', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(24, 'Gn041-3', 'MA', 'Gn041-3.jpg', '6.06', '23.32', '73.16', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(25, 'Gn043-2', 'MA', 'Gn043-2.jpg', '6.24', '24.21', '79.37', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(26, 'Gn061-2', 'MA', 'Gn061-2.jpg', '5.62', '21.11', '65.19', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(27, 'Gn071-2', 'MA', 'Gn071-2.jpg', '5.62', '21.1', '65.15', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(28, 'Gn093-2', 'MA', 'Gn093-2.jpg', '5.82', '22.12', '71.82', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(29, 'Gn111-2', 'MA', 'Gn111-2.jpg', '5.61', '21.03', '64.89', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(30, 'Gn122-1', 'MA', 'Gn122-1.jpg', '6.07', '23.34', '73.24', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(31, 'Gn134-3', 'MA', 'Gn134-3.jpg', '6.59', '25.95', '85.62', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(32, 'Gn191-2', 'MA', 'Gn191-2.jpg', '5.69', '21.43', '66.34', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(33, 'Gn193-2', 'MA', 'Gn193-2.jpg', '6.5', '25.49', '80.97', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(34, 'Gn223-2', 'MA', 'Gn223-2.jpg', '6.31', '24.56', '77.62', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(35, 'Gn231-2', 'MA', 'Gn231-2.jpg', '5.56', '20.78', '64.01', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(36, 'Gn261-2', 'MA', 'Gn261-2.jpg', '5.59', '20.93', '64.54', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(37, 'Gn272-1', 'MA', 'Gn272-1.jpg', '5.91', '22.54', '70.36', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(38, 'Gn274-3', 'MA', 'Gn274-3.jpg', '6.13', '23.65', '77.33', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(39, 'Gy012-1', 'MA', 'Gy012-1.jpg', '5.87', '22.33', '69.57', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(40, 'Gy014-3', 'MA', 'Gy014-3.jpg', '6.52', '25.62', '84.42', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(41, 'Gy021-3', 'MA', 'Gy021-3.jpg', '5.73', '21.65', '67.14', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(42, 'Gy023-2', 'MA', 'Gy023-2.jpg', '5.63', '21.15', '68.36', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(43, 'Gy032-1', 'MA', 'Gy032-1.jpg', '5.91', '22.56', '70.4', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(44, 'Gy034-3', 'MA', 'Gy034-3.jpg', '6.36', '24.79', '81.45', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(45, 'Gy043-2', 'MA', 'Gy043-2.jpg', '6.63', '26.16', '83.38', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(46, 'Gy064-3', 'MA', 'Gy064-3.jpg', '5.81', '22.03', '71.51', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(47, 'Gy071-3', 'MA', 'Gy071-3.jpg', '5.7', '21.52', '66.66', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(48, 'Gy072-1', 'MA', 'Gy072-1.jpg', '5.82', '22.08', '68.69', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(49, 'Gy073-2', 'MA', 'Gy073-2.jpg', '6.33', '24.63', '77.85', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(50, 'Gy074-3', 'MA', 'Gy074-3.jpg', '5.9', '22.48', '73.12', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(51, 'Gy075-4', 'MA', 'Gy075-4.jpg', '6.87', '27.36', '90.69', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(52, 'Gy081-2', 'MA', 'Gy081-2.jpg', '5.57', '20.84', '64.23', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(53, 'Gy082-1', 'MA', 'Gy082-1.jpg', '5.81', '22.05', '68.57', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(54, 'Gy083-2', 'MA', 'Gy083-2.jpg', '6.24', '24.19', '76.28', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(55, 'Gy085-4', 'MA', 'Gy085-4.jpg', '6.43', '25.16', '82.77', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(56, 'Gy091-3', 'MA', 'Gy091-3.jpg', '5.69', '21.47', '66.49', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(57, 'Gy092-1', 'MA', 'Gy092-1.jpg', '5.87', '22.36', '69.71', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(58, 'Gy093-2', 'MA', 'Gy093-2.jpg', '6.41', '25.06', '79.43', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(59, 'Gy094-3', 'MA', 'Gy094-3.jpg', '5.83', '22.16', '71.98', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(60, 'Gy095-4', 'MA', 'Gy095-4.jpg', '6.54', '25.71', '84.74', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(61, 'Gy101-2', 'MA', 'Gy101-2.jpg', '5.6', '21', '64.8', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(62, 'Gy102-1', 'MA', 'Gy102-1.jpg', '5.77', '21.87', '67.92', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(63, 'Gy103-2', 'MA', 'Gy103-2.jpg', '6.37', '24.85', '78.68', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(64, 'Gy105-4', 'MA', 'Gy105-4.jpg', '6.31', '24.53', '80.5', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(65, 'Ne013-2', 'MA', 'Ne013-2.jpg', '6.36', '24.81', '78.52', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(66, 'Ne014-3', 'MA', 'Ne014-3.jpg', '6.29', '24.43', '80.16', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(67, 'Ne021-3', 'MA', 'Ne021-3.jpg', '5.73', '21.64', '67.1', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(68, 'Ne033-2', 'MA', 'Ne033-2.jpg', '6.26', '24.29', '76.66', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(69, 'Ne043-2', 'MA', 'Ne043-2.jpg', '6.81', '27.05', '86.58', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(70, 'Ne051-3', 'MA', 'Ne051-3.jpg', '5.68', '21.41', '66.27', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(71, 'Ne053-2', 'MA', 'Ne053-2.jpg', '6.24', '24.18', '76.23', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(72, 'Ne072-1', 'MA', 'Ne072-1.jpg', '5.79', '21.95', '68.23', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(73, 'Ne081-2', 'MA', 'Ne081-2.jpg', '5.59', '20.95', '64.62', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(74, 'Ne082-1', 'MA', 'Ne082-1.jpg', '5.85', '22.25', '69.29', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(75, 'Ne091-2', 'MA', 'Ne091-2.jpg', '5.56', '20.81', '64.1', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(76, 'Ne093-2', 'MA', 'Ne093-2.jpg', '6.46', '25.31', '80.33', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(77, 'Ne102-1', 'MA', 'Ne102-1.jpg', '5.83', '22.15', '68.93', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(78, 'Ne104-3', 'MA', 'Ne104-3.jpg', '6.46', '25.29', '83.24', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(79, 'Ne121-2', 'MA', 'Ne121-2.jpg', '5.74', '21.68', '67.26', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(80, 'Ne123-2', 'MA', 'Ne123-2.jpg', '6.8', '27', '86.41', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(81, 'Ne132-1', 'MA', 'Ne132-1.jpg', '6.16', '23.82', '74.94', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(82, 'Ne133-2', 'MA', 'Ne133-2.jpg', '5.76', '21.82', '70.74', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(83, 'Ne142-2', 'MA', 'Ne142-2.jpg', '6.04', '23.21', '72.74', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(84, 'Ne143-2', 'MA', 'Ne143-2.jpg', '6.67', '26.36', '84.09', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(85, 'Ne151-2', 'MA', 'Ne151-2.jpg', '5.58', '20.91', '64.47', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(86, 'Ne153-2', 'MA', 'Ne153-2.jpg', '6.53', '25.65', '81.53', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(87, 'Ne164-3', 'MA', 'Ne164-3.jpg', '5.66', '21.31', '68.91', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(88, 'Ne172-1', 'MA', 'Ne172-1.jpg', '5.92', '22.58', '70.5', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(89, 'Ne174-3', 'MA', 'Ne174-3.jpg', '5.96', '22.78', '74.2', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(90, 'Ne175-4', 'MA', 'Ne175-4.jpg', '6.94', '27.72', '92', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(91, 'Ne181-2', 'MA', 'Ne181-2.jpg', '5.6', '20.98', '64.72', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(92, 'Ne184-3', 'MA', 'Ne184-3.jpg', '5.83', '22.16', '71.97', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(93, 'Ne191-3', 'MA', 'Ne191-3.jpg', '5.72', '21.6', '66.97', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(94, 'Ne193-2', 'MA', 'Ne193-2.jpg', '6.72', '26.61', '84.98', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(95, 'Ne195-4', 'MA', 'Ne195-4.jpg', '6.89', '27.43', '90.94', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(96, 'Or011-2', 'MA', 'Or011-2.jpg', '5.77', '21.83', '67.8', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(97, 'Or032-1', 'MA', 'Or032-1.jpg', '6.11', '23.54', '73.95', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(98, 'Or044-3', 'MA', 'Or044-3.jpg', '6.83', '27.16', '89.96', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(99, 'Or063-2', 'MA', 'Or063-2.jpg', '6.1', '23.5', '76.79', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(100, 'Or073-2', 'MA', 'Or073-2.jpg', '5.96', '22.81', '74.33', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(101, 'Or082-1', 'MA', 'Or082-1.jpg', '6.25', '24.24', '76.47', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(102, 'Or091-2', 'MA', 'Or091-2.jpg', '5.54', '20.71', '63.76', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(103, 'Or102-1', 'MA', 'Or102-1.jpg', '6.03', '23.15', '72.53', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(104, 'Or111-2', 'MA', 'Or111-2.jpg', '5.57', '20.83', '64.19', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(105, 'Or112-1', 'MA', 'Or112-1.jpg', '6.35', '24.74', '78.25', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(106, 'Or151-2', 'MA', 'Or151-2.jpg', '5.6', '20.98', '64.73', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(107, 'Or163-2', 'MA', 'Or163-2.jpg', '6.76', '26.8', '85.67', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(108, 'Pu011-2', 'MA', 'Pu011-2.jpg', '5.59', '20.95', '64.63', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(109, 'Pu012-1', 'MA', 'Pu012-1.jpg', '6.17', '23.86', '75.08', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(110, 'Pu013-2', 'MA', 'Pu013-2.jpg', '6.03', '23.15', '75.53', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(111, 'Pu021-3', 'MA', 'Pu021-3.jpg', '5.83', '22.15', '68.95', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(112, 'Pu034-3', 'MA', 'Pu034-3.jpg', '6.33', '24.64', '80.91', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(113, 'Pu041-3', 'MA', 'Pu041-3.jpg', '5.8', '22.02', '68.47', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(114, 'Pu052-1', 'MA', 'Pu052-1.jpg', '6.32', '24.6', '77.78', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(115, 'Pu054-3', 'MA', 'Pu054-3.jpg', '6.91', '27.54', '91.33', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(116, 'Pu061-2', 'MA', 'Pu061-2.jpg', '5.56', '20.81', '64.13', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(117, 'Pu062-1', 'MA', 'Pu062-1.jpg', '6.1', '23.52', '73.88', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(118, 'Pu072-1', 'MA', 'Pu072-1.jpg', '6.3', '24.52', '77.46', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(119, 'Pu073-2', 'MA', 'Pu073-2.jpg', '5.88', '22.39', '72.82', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(120, 'Pu081-3', 'MA', 'Pu081-3.jpg', '5.83', '22.17', '69.01', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(121, 'Pu084-3', 'MA', 'Pu084-3.jpg', '6.6', '25.99', '85.75', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(122, 'Pu091-3', 'MA', 'Pu091-3.jpg', '5.74', '21.7', '67.31', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(123, 'Pu092-1', 'MA', 'Pu092-1.jpg', '5.92', '22.59', '70.52', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(124, 'Pu093-2', 'MA', 'Pu093-2.jpg', '6.71', '26.54', '84.74', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(125, 'Pu104-3', 'MA', 'Pu104-3.jpg', '6.51', '25.57', '84.27', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(126, 'Re012-1', 'MA', 'Re012-1.jpg', '6.03', '23.13', '72.46', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(127, 'Re021-2', 'MA', 'Re021-2.jpg', '5.57', '20.87', '64.35', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(128, 'Re022-1', 'MA', 'Re022-1.jpg', '6.18', '23.9', '75.25', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(129, 'Re031-3', 'MA', 'Re031-3.jpg', '5.9', '22.49', '70.16', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(130, 'Re043-2', 'MA', 'Re043-2.jpg', '5.9', '22.49', '73.15', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(131, 'Re052-1', 'MA', 'Re052-1.jpg', '6.25', '24.26', '76.55', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(132, 'Re053-2', 'MA', 'Re053-2.jpg', '7.11', '28.53', '91.92', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(133, 'Re071-3', 'MA', 'Re071-3.jpg', '6.03', '23.17', '72.62', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(134, 'Re084-3', 'MA', 'Re084-3.jpg', '6.9', '27.51', '91.23', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(135, 'Re092-1', 'MA', 'Re092-1.jpg', '6.26', '24.31', '76.72', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(136, 'Re112-1', 'MA', 'Re112-1.jpg', '6.25', '24.26', '76.53', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(137, 'Re121-2', 'MA', 'Re121-2.jpg', '5.79', '21.93', '68.13', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(138, 'Re123-2', 'MA', 'Re123-2.jpg', '6.35', '24.73', '81.22', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(139, 'Re161-3', 'MA', 'Re161-3.jpg', '5.97', '22.87', '71.54', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(140, 'Re172-1', 'MA', 'Re172-1.jpg', '6.32', '24.62', '77.84', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(141, 'Re182-1', 'MA', 'Re182-1.jpg', '5.84', '22.19', '69.08', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(142, 'Re194-3', 'MA', 'Re194-3.jpg', '5.81', '22.06', '71.63', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(143, 'Re244-3', 'MA', 'Re244-3.jpg', '6.42', '25.08', '82.47', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(144, 'Re262-1', 'MA', 'Re262-1.jpg', '5.96', '22.82', '71.37', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(145, 'Re273-2', 'MA', 'Re273-2.jpg', '6.59', '25.96', '82.64', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(146, 'Ye012-1', 'MA', 'Ye012-1.jpg', '6.32', '24.6', '77.76', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(147, 'Ye022-1', 'MA', 'Ye022-1.jpg', '6.86', '27.31', '87.53', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(148, 'Ye054-3', 'MA', 'Ye054-3.jpg', '6.77', '26.83', '88.8', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(149, 'Ye072-1', 'MA', 'Ye072-1.jpg', '6.11', '23.53', '73.92', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(150, 'Ye073-2', 'MA', 'Ye073-2.jpg', '5.88', '22.42', '72.91', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(151, 'Ye074-3', 'MA', 'Ye074-3.jpg', '7.14', '28.68', '95.44', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(152, 'Ye101-2', 'MA', 'Ye101-2.jpg', '5.64', '21.2', '65.51', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(153, 'Ye131-3', 'MA', 'Ye131-3.jpg', '5.7', '21.51', '66.62', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(154, 'Ye142-1', 'MA', 'Ye142-1.jpg', '6', '23.01', '72.04', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(155, 'Ye151-2', 'MA', 'Ye151-2.jpg', '5.61', '21.04', '64.94', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(156, 'Ye152-1', 'MA', 'Ye152-1.jpg', '5.58', '20.92', '67.52', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(157, 'OW005', 'MA', 'OW005.jpg', '5.54', '20.71', '63.75', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(158, 'OW021', 'MA', 'OW021.jpg', '5.53', '20.67', '63.6', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(159, 'OW027', 'MA', 'OW027.jpg', '5.52', '20.61', '63.4', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(160, 'OW040', 'MA', 'OW040.jpg', '5.57', '20.84', '64.21', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(161, 'OW045', 'MA', 'OW045.jpg', '5.52', '20.58', '63.28', '2023-12-17 10:26:21', '2023-12-17 10:26:21'),
+(162, 'OW053', 'MA', 'OW053.jpg', '5.53', '20.63', '63.47', '2023-12-17 10:26:21', '2023-12-17 10:26:21');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `colorprice_matexpremium`
+--
+
+CREATE TABLE `colorprice_matexpremium` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `color_name` varchar(255) NOT NULL,
+  `color_tag` varchar(255) DEFAULT NULL,
+  `color_image` varchar(255) DEFAULT NULL,
+  `color_1l` varchar(255) DEFAULT NULL,
+  `color_5l` varchar(255) DEFAULT NULL,
+  `color_18l` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `colorprice_matexpremium`
+--
+
+INSERT INTO `colorprice_matexpremium` (`id`, `color_name`, `color_tag`, `color_image`, `color_1l`, `color_5l`, `color_18l`, `created_at`, `updated_at`) VALUES
+(2, 'Bl014-3', 'MPM', 'Bl014-3.jpg', '8.77', '35.34', '117.81', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(3, 'Bl016-1', 'MPM', 'Bl016-1.jpg', '10.72', '45.12', '155.02', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(4, 'Bl021-3', 'MPM', 'Bl021-3.jpg', '8.24', '31.2', '103.31', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(5, 'Bl042-1', 'MPM', 'Bl042-1.jpg', '8.63', '33.15', '110.34', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(6, 'Bl046-1', 'MPM', 'Bl046-1.jpg', '10.96', '46.29', '159.25', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(7, 'Bl061-3', 'MPM', 'Bl061-3.jpg', '8.26', '31.31', '103.71', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(8, 'Bl063-2', 'MPM', 'Bl063-2.jpg', '9.32', '38.61', '128.79', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(9, 'Bl071-2', 'MPM', 'Bl071-2.jpg', '8.06', '30.32', '100.16', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(10, 'Bl072-1', 'MPM', 'Bl072-1.jpg', '8.77', '33.83', '112.78', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(11, 'Bl091-3', 'MPM', 'Bl091-3.jpg', '8.39', '31.97', '106.1', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(12, 'Bl132-2', 'MPM', 'Bl132-2.jpg', '8.38', '31.91', '105.87', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(13, 'Bl134-3', 'MPM', 'Bl134-3.jpg', '8.42', '33.62', '111.64', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(14, 'GB023-2', 'MPM', 'GB023-2.jpg', '8.28', '33.4', '110.05', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(15, 'GB062-1', 'MPM', 'GB062-1.jpg', '8.39', '31.93', '105.94', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(16, 'GB065-4', 'MPM', 'GB065-4.jpg', '9.3', '38.01', '129.44', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(17, 'GB091-3', 'MPM', 'GB091-3.jpg', '8.23', '31.14', '103.12', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(18, 'GB092-1', 'MPM', 'GB092-1.jpg', '8.46', '32.28', '107.2', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(19, 'GB101-2', 'MPM', 'GB101-2.jpg', '8.05', '30.26', '99.95', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(20, 'GB105-4', 'MPM', 'GB105-4.jpg', '9.56', '39.3', '132.08', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(21, 'GB151-3', 'MPM', 'GB151-3.jpg', '8.14', '30.69', '101.5', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(22, 'GB162-1', 'MPM', 'GB162-1.jpg', '8.36', '31.8', '105.47', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(23, 'GB163-2', 'MPM', 'GB163-2.jpg', '8.36', '33.8', '111.48', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(24, 'GB164-3', 'MPM', 'GB164-3.jpg', '8.4', '33.49', '111.15', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(25, 'Gn016-1', 'MPM', 'Gn016-1.jpg', '15.57', '69.34', '242.23', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(26, 'Gn032-1', 'MPM', 'Gn032-1.jpg', '9.39', '38.94', '130', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(27, 'Gn041-3', 'MPM', 'Gn041-3.jpg', '9.11', '35.56', '119.03', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(28, 'Gn043-2', 'MPM', 'Gn043-2.jpg', '10.49', '43.95', '148.83', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(29, 'Gn055-4', 'MPM', 'Gn055-4.jpg', '14.4', '63.52', '221.29', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(30, 'Gn061-2', 'MPM', 'Gn061-2.jpg', '8.15', '30.76', '101.74', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(31, 'Gn066-1', 'MPM', 'Gn066-1.jpg', '14.77', '65.37', '227.94', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(32, 'Gn071-2', 'MPM', 'Gn071-2.jpg', '8.15', '30.73', '101.62', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(33, 'Gn076-1', 'MPM', 'Gn076-1.jpg', '13.64', '59.71', '207.54', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(34, 'Gn093-2', 'MPM', 'Gn093-2.jpg', '9.66', '40.3', '134.86', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(35, 'Gn111-2', 'MPM', 'Gn111-2.jpg', '8.1', '30.51', '100.84', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(36, 'Gn122-1', 'MPM', 'Gn122-1.jpg', '8.45', '32.26', '107.15', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(37, 'Gn134-3', 'MPM', 'Gn134-3.jpg', '8.95', '36.24', '121.07', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(38, 'Gn166-1', 'MPM', 'Gn166-1.jpg', '10.34', '43.21', '148.15', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(39, 'Gn191-3', 'MPM', 'Gn191-3.jpg', '8.19', '30.97', '102.5', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(40, 'Gn193-2', 'MPM', 'Gn193-2.jpg', '8.45', '34.27', '113.19', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(41, 'Gn195-4', 'MPM', 'Gn195-4.jpg', '10.78', '45.39', '156.01', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(42, 'Gn223-2', 'MPM', 'Gn223-2.jpg', '8.69', '33.45', '111.41', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(43, 'Gn225-4', 'MPM', 'Gn225-4.jpg', '9.1', '36.99', '123.76', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(44, 'Gn231-2', 'MPM', 'Gn231-2.jpg', '8.05', '30.23', '99.81', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(45, 'Gn261-2', 'MPM', 'Gn261-2.jpg', '8.07', '30.34', '100.22', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(46, 'Gn272-1', 'MPM', 'Gn272-1.jpg', '8.32', '31.6', '104.74', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(47, 'Gn274-3', 'MPM', 'Gn274-3.jpg', '9.09', '37.45', '124.63', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(48, 'Gy011-3', 'MPM', 'Gy011-3.jpg', '8.2', '30.99', '102.56', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(49, 'Gy012-1', 'MPM', 'Gy012-1.jpg', '8.27', '31.37', '103.94', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(50, 'Gy014-3', 'MPM', 'Gy014-3.jpg', '8.32', '33.1', '109.76', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(51, 'Gy021-3', 'MPM', 'Gy021-3.jpg', '8.15', '30.77', '101.78', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(52, 'Gy023-2', 'MPM', 'Gy023-2.jpg', '8.27', '33.35', '109.86', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(53, 'Gy025-4', 'MPM', 'Gy025-4.jpg', '9.6', '39.48', '132.74', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(54, 'Gy032-1', 'MPM', 'Gy032-1.jpg', '8.3', '31.5', '104.41', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(55, 'Gy043-2', 'MPM', 'Gy043-2.jpg', '8.22', '33.11', '108.99', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(56, 'Gy064-3', 'MPM', 'Gy064-3.jpg', '8.64', '35.18', '116.46', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(57, 'Gy071-3', 'MPM', 'Gy071-3.jpg', '8.15', '30.76', '101.75', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(58, 'Gy072-1', 'MPM', 'Gy072-1.jpg', '8.23', '31.17', '103.21', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(59, 'Gy073-2', 'MPM', 'Gy073-2.jpg', '8.63', '33.17', '110.42', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(60, 'Gy074-3', 'MPM', 'Gy074-3.jpg', '8.87', '36.34', '120.62', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(61, 'Gy075-4', 'MPM', 'Gy075-4.jpg', '8.67', '34.86', '116.1', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(62, 'Gy076-1', 'MPM', 'Gy076-1.jpg', '8.81', '35.55', '120.58', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(63, 'Gy081-2', 'MPM', 'Gy081-2.jpg', '8.05', '30.25', '99.91', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(64, 'Gy082-1', 'MPM', 'Gy082-1.jpg', '8.23', '31.16', '103.19', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(65, 'Gy083-2', 'MPM', 'Gy083-2.jpg', '8.58', '32.89', '109.41', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(66, 'Gy085-4', 'MPM', 'Gy085-4.jpg', '8.34', '33.18', '110.05', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(67, 'Gy091-3', 'MPM', 'Gy091-3.jpg', '8.14', '30.71', '101.57', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(68, 'Gy092-1', 'MPM', 'Gy092-1.jpg', '8.28', '31.38', '103.97', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(69, 'Gy093-2', 'MPM', 'Gy093-2.jpg', '8.73', '33.63', '112.07', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(70, 'Gy094-3', 'MPM', 'Gy094-3.jpg', '8.68', '35.42', '117.32', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(71, 'Gy095-4', 'MPM', 'Gy095-4.jpg', '8.4', '33.51', '111.23', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(72, 'Gy096-1', 'MPM', 'Gy096-1.jpg', '8.8', '35.52', '120.46', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(73, 'Gy101-2', 'MPM', 'Gy101-2.jpg', '8.08', '30.38', '100.38', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(74, 'Gy102-1', 'MPM', 'Gy102-1.jpg', '8.22', '31.08', '102.88', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(75, 'Gy103-2', 'MPM', 'Gy103-2.jpg', '8.68', '33.4', '111.23', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(76, 'Gy105-4', 'MPM', 'Gy105-4.jpg', '8.18', '32.42', '107.3', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(77, 'Ne013-2', 'MPM', 'Ne013-2.jpg', '8.04', '32.19', '105.68', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(78, 'Ne014-3', 'MPM', 'Ne014-3.jpg', '8.14', '32.21', '106.55', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(79, 'Ne021-3', 'MPM', 'Ne021-3.jpg', '8.16', '30.82', '101.97', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(80, 'Ne033-2', 'MPM', 'Ne033-2.jpg', '8.64', '33.18', '110.45', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(81, 'Ne043-1', 'MPM', 'Ne043-1.jpg', '9.17', '35.86', '120.11', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(82, 'Ne051-3', 'MPM', 'Ne051-3.jpg', '8.15', '30.75', '101.7', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(83, 'Ne053-2', 'MPM', 'Ne053-2.jpg', '7.94', '31.7', '103.92', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(84, 'Ne072-1', 'MPM', 'Ne072-1.jpg', '8.25', '31.27', '103.57', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(85, 'Ne074-3', 'MPM', 'Ne074-3.jpg', '8.81', '36.04', '119.53', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(86, 'Ne076-1', 'MPM', 'Ne076-1.jpg', '9.21', '37.56', '127.8', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(87, 'Ne081-2', 'MPM', 'Ne081-2.jpg', '8.07', '30.36', '100.3', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(88, 'Ne082-1', 'MPM', 'Ne082-1.jpg', '8.29', '31.45', '104.22', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(89, 'Ne091-2', 'MPM', 'Ne091-2.jpg', '8.05', '30.23', '99.84', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(90, 'Ne093-2', 'MPM', 'Ne093-2.jpg', '8.07', '32.37', '106.34', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(91, 'Ne102-1', 'MPM', 'Ne102-1.jpg', '8.28', '31.4', '104.02', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(92, 'Ne104-3', 'MPM', 'Ne104-3.jpg', '8.25', '32.77', '108.58', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(93, 'Ne116-1', 'MPM', 'Ne116-1.jpg', '9.21', '37.57', '127.84', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(94, 'Ne121-2', 'MPM', 'Ne121-2.jpg', '8.08', '30.39', '100.41', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(95, 'Ne123-2', 'MPM', 'Ne123-2.jpg', '9.17', '35.84', '120.02', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(96, 'Ne132-1', 'MPM', 'Ne132-1.jpg', '8.58', '32.89', '109.4', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(97, 'Ne133-2', 'MPM', 'Ne133-2.jpg', '8.63', '35.17', '116.42', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(98, 'Ne135-4', 'MPM', 'Ne135-4.jpg', '9.67', '39.86', '136.08', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(99, 'Ne142-2', 'MPM', 'Ne142-2.jpg', '8.42', '32.11', '106.59', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(100, 'Ne143-2', 'MPM', 'Ne143-2.jpg', '8.29', '33.43', '110.16', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(101, 'Ne151-2', 'MPM', 'Ne151-2.jpg', '8.06', '30.32', '100.16', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(102, 'Ne153-2', 'MPM', 'Ne153-2.jpg', '8.84', '34.21', '114.16', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(103, 'Ne164-3', 'MPM', 'Ne164-3.jpg', '8.61', '35.07', '116.06', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(104, 'Ne165-4', 'MPM', 'Ne165-4.jpg', '8.3', '33.02', '109.49', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(105, 'Ne172-1', 'MPM', 'Ne172-1.jpg', '8.33', '31.66', '104.97', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(106, 'Ne174-3', 'MPM', 'Ne174-3.jpg', '8.93', '36.66', '121.77', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(107, 'Ne175-4', 'MPM', 'Ne175-4.jpg', '8.86', '35.8', '119.5', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(108, 'Ne181-2', 'MPM', 'Ne181-2.jpg', '8.07', '30.35', '100.25', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(109, 'Ne184-3', 'MPM', 'Ne184-3.jpg', '8.76', '35.81', '118.72', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(110, 'Ne186-1', 'MPM', 'Ne186-1.jpg', '8.97', '36.34', '123.41', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(111, 'Ne191-3', 'MPM', 'Ne191-3.jpg', '8.17', '30.83', '101.98', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(112, 'Ne193-2', 'MPM', 'Ne193-2.jpg', '8.21', '33.06', '108.8', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(113, 'Ne195-4', 'MPM', 'Ne195-4.jpg', '8.72', '35.1', '116.96', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(114, 'Or011-2', 'MPM', 'Or011-2.jpg', '8.18', '30.88', '102.17', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(115, 'Or014-3', 'MPM', 'Or014-3.jpg', '12.13', '52.15', '180.35', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(116, 'Or032-1', 'MPM', 'Or032-1.jpg', '8.94', '34.71', '115.94', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(117, 'Or035-4', 'MPM', 'Or035-4.jpg', '14.04', '61.7', '214.71', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(118, 'Or044-3', 'MPM', 'Or044-3.jpg', '11.31', '48.07', '163.66', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(119, 'Or055-4', 'MPM', 'Or055-4.jpg', '12.57', '54.34', '188.24', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(120, 'Or063-2', 'MPM', 'Or063-2.jpg', '9.88', '41.41', '138.88', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(121, 'Or073-2', 'MPM', 'Or073-2.jpg', '9.54', '39.71', '132.77', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(122, 'Or082-1', 'MPM', 'Or082-1.jpg', '9.05', '35.23', '117.81', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(123, 'Or091-2', 'MPM', 'Or091-2.jpg', '8.19', '30.96', '102.45', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(124, 'Or102-1', 'MPM', 'Or102-1.jpg', '9.24', '36.19', '121.28', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(125, 'Or111-2', 'MPM', 'Or111-2.jpg', '8.07', '30.33', '100.19', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(126, 'Or112-1', 'MPM', 'Or112-1.jpg', '9.58', '37.91', '127.47', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(127, 'Or151-2', 'MPM', 'Or151-2.jpg', '8.08', '30.38', '100.37', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(128, 'Or163-2', 'MPM', 'Or163-2.jpg', '9.19', '35.96', '120.47', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(129, 'Or172-1', 'MPM', 'Or172-1.jpg', '8.37', '31.87', '105.72', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(130, 'OW005', 'MPM', 'OW005.jpg', '8.08', '30.38', '100.38', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(131, 'OW021', 'MPM', 'OW021.jpg', '8.04', '30.18', '99.63', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(132, 'OW053', 'MPM', 'OW053.jpg', '8.02', '30.09', '99.34', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(133, 'Pu011-2', 'MPM', 'Pu011-2.jpg', '8.04', '30.2', '99.71', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(134, 'Pu012-1', 'MPM', 'Pu012-1.jpg', '9.43', '37.13', '124.66', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(135, 'Pu021-3', 'MPM', 'Pu021-3.jpg', '8.6', '33.02', '109.88', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(136, 'Pu034-3', 'MPM', 'Pu034-3.jpg', '9.65', '39.75', '133.71', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(137, 'Pu041-3', 'MPM', 'Pu041-3.jpg', '8.34', '31.69', '105.1', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(138, 'Pu052-1', 'MPM', 'Pu052-1.jpg', '9.21', '36.05', '120.79', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(139, 'Pu061-2', 'MPM', 'Pu061-2.jpg', '8.05', '30.26', '99.94', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(140, 'Pu062-1', 'MPM', 'Pu062-1.jpg', '8.81', '34.04', '113.53', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(141, 'Pu072-1', 'MPM', 'Pu072-1.jpg', '9.04', '35.18', '117.64', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(142, 'Pu076-1', 'MPM', 'Pu076-1.jpg', '12.86', '55.8', '193.49', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(143, 'Pu081-3', 'MPM', 'Pu081-3.jpg', '8.36', '31.82', '105.54', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(144, 'Pu091-3', 'MPM', 'Pu091-3.jpg', '8.2', '31.02', '102.66', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(145, 'Pu092-1', 'MPM', 'Pu092-1.jpg', '8.47', '32.37', '107.55', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(146, 'Pu093-2', 'MPM', 'Pu093-2.jpg', '8.78', '35.91', '119.07', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(147, 'Pu104-3', 'MPM', 'Pu104-3.jpg', '8.75', '35.24', '117.48', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(148, 'Pu106-1', 'MPM', 'Pu106-1.jpg', '9.05', '36.74', '124.87', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(149, 'Re012-1', 'MPM', 'Re012-1.jpg', '9.22', '36.1', '120.97', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(150, 'Re013-2', 'MPM', 'Re013-2.jpg', '10.6', '44.98', '151.72', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(151, 'Re021-2', 'MPM', 'Re021-2.jpg', '8.24', '31.18', '103.25', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(152, 'Re022-1', 'MPM', 'Re022-1.jpg', '9.83', '39.16', '131.97', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(153, 'Re031-3', 'MPM', 'Re031-3.jpg', '8.69', '33.44', '111.39', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(154, 'Re052-1', 'MPM', 'Re052-1.jpg', '9.75', '38.77', '130.56', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(155, 'Re071-3', 'MPM', 'Re071-3.jpg', '8.77', '33.86', '112.88', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(156, 'Re076-1', 'MPM', 'Re076-1.jpg', '21.83', '100.63', '354.88', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(157, 'Re084-3', 'MPM', 'Re084-3.jpg', '12.46', '53.8', '184.28', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(158, 'Re092-1', 'MPM', 'Re092-1.jpg', '9.53', '37.64', '126.49', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(159, 'Re096-1', 'MPM', 'Re096-1.jpg', '19.98', '91.39', '321.62', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(160, 'Re112-1', 'MPM', 'Re112-1.jpg', '9.4', '37.01', '124.24', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(161, 'Re121-2', 'MPM', 'Re121-2.jpg', '8.04', '30.21', '99.77', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(162, 'Re123-2', 'MPM', 'Re123-2.jpg', '10.79', '45.97', '155.29', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(163, 'Re126-1', 'MPM', 'Re126-1.jpg', '17.73', '80.16', '281.17', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(164, 'Re141-2', 'MPM', 'Re141-2.jpg', '8.04', '30.18', '99.66', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(165, 'Re161-3', 'MPM', 'Re161-3.jpg', '9.09', '35.45', '118.62', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(166, 'Re172-1', 'MPM', 'Re172-1.jpg', '9.09', '35.43', '118.56', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(167, 'Re176-1', 'MPM', 'Re176-1.jpg', '11.95', '51.25', '177.09', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(168, 'Re182-1', 'MPM', 'Re182-1.jpg', '8.21', '31.06', '102.8', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(169, 'Re185-4', 'MPM', 'Re185-4.jpg', '12.21', '52.56', '179.83', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(170, 'Re194-3', 'MPM', 'Re194-3.jpg', '8.69', '35.46', '117.47', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(171, 'Re244-3', 'MPM', 'Re244-3.jpg', '8.38', '33.38', '110.79', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(172, 'Re262-1', 'MPM', 'Re262-1.jpg', '8.41', '32.04', '106.33', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(173, 'Re266-1', 'MPM', 'Re266-1.jpg', '9.21', '37.57', '127.84', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(174, 'Re273-2', 'MPM', 'Re273-2.jpg', '9.03', '35.17', '117.6', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(175, 'Ye012-1', 'MPM', 'Ye012-1.jpg', '9.94', '39.71', '133.97', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(176, 'Ye022-1', 'MPM', 'Ye022-1.jpg', '9.18', '37.89', '126.21', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(177, 'Ye035-4', 'MPM', 'Ye035-4.jpg', '16.27', '72.86', '254.88', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(178, 'Ye054-3', 'MPM', 'Ye054-3.jpg', '10.9', '46.01', '156.25', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(179, 'Ye055-4', 'MPM', 'Ye055-4.jpg', '15.7', '69.98', '244.54', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(180, 'Ye072-1', 'MPM', 'Ye072-1.jpg', '9.17', '35.84', '120.01', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(181, 'Ye073-2', 'MPM', 'Ye073-2.jpg', '10.52', '44.6', '150.36', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(182, 'Ye074-3', 'MPM', 'Ye074-3.jpg', '11.47', '48.86', '166.51', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(183, 'Ye101-2', 'MPM', 'Ye101-2.jpg', '8.23', '31.16', '103.17', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(184, 'Ye131-3', 'MPM', 'Ye131-3.jpg', '8.16', '30.82', '101.95', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(185, 'Ye142-1', 'MPM', 'Ye142-1.jpg', '8.83', '34.15', '113.94', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(186, 'Ye151-2', 'MPM', 'Ye151-2.jpg', '8.11', '30.53', '100.92', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(187, 'Ye152-1', 'MPM', 'Ye152-1.jpg', '8.39', '33.96', '112.05', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(188, 'Ye154-3', 'MPM', 'Ye154-3.jpg', '9.47', '38.86', '130.51', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(189, 'OW005', 'MPM', 'OW005.jpg', '8.08', '30.38', '100.38', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(190, 'OW021', 'MPM', 'OW021.jpg', '8.04', '30.18', '99.63', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(191, 'OW027', 'MPM', 'OW027.jpg', '8.03', '30.14', '99.5', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(192, 'OW040', 'MPM', 'OW040.jpg', '8.08', '30.4', '100.43', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(193, 'OW045', 'MPM', 'OW045.jpg', '8.01', '30.07', '99.24', '2023-12-17 10:53:29', '2023-12-17 10:53:29'),
+(194, 'OW053', 'MPM', 'OW053.jpg', '8.02', '30.09', '99.34', '2023-12-17 10:53:29', '2023-12-17 10:53:29');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `colorprice_supereasywash`
+--
+
+CREATE TABLE `colorprice_supereasywash` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `color_name` varchar(255) NOT NULL,
+  `color_tag` varchar(255) DEFAULT NULL,
+  `color_image` varchar(255) DEFAULT NULL,
+  `color_1l` varchar(255) DEFAULT NULL,
+  `color_5l` varchar(255) DEFAULT NULL,
+  `color_18l` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `colorprice_supereasywash`
+--
+
+INSERT INTO `colorprice_supereasywash` (`id`, `color_name`, `color_tag`, `color_image`, `color_1l`, `color_5l`, `color_18l`, `created_at`, `updated_at`) VALUES
+(199, 'Bl014-3', 'NSEW', 'Bl014-3.jpg', '7.71', '31.56', '107.82', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(200, 'Bl016-1', 'NSEW', 'Bl016-1.jpg', '9.98', '43.42', '152.21', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(201, 'Bl021-3', 'NSEW', 'Bl021-3.jpg', '7.34', '30.21', '103.16', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(202, 'Bl042-1', 'NSEW', 'Bl042-1.jpg', '7.86', '32.78', '112.42', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(203, 'Bl044-3', 'NSEW', 'Bl044-3.jpg', '7.65', '31.24', '106.68', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(204, 'Bl046-1', 'NSEW', 'Bl046-1.jpg', '10.14', '44.2', '155', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(205, 'Bl061-3', 'NSEW', 'Bl061-3.jpg', '7.35', '30.27', '103.37', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(206, 'Bl063-2', 'NSEW', 'Bl063-2.jpg', '7.85', '33.24', '110.28', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(207, 'Bl071-2', 'NSEW', 'Bl071-2.jpg', '7.15', '29.25', '99.72', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(208, 'Bl072-1', 'NSEW', 'Bl072-1.jpg', '8.14', '34.18', '117.45', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(209, 'Bl091-3', 'NSEW', 'Bl091-3.jpg', '7.37', '30.36', '103.69', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(210, 'Bl132-2', 'NSEW', 'Bl132-2.jpg', '7.66', '31.79', '108.83', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(211, 'Bl134-3', 'NSEW', 'Bl134-3.jpg', '7.57', '30.86', '105.3', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(212, 'GB023-2', 'NSEW', 'GB023-2.jpg', '7.42', '31.11', '102.61', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(213, 'GB062-1', 'NSEW', 'GB062-1.jpg', '7.69', '31.93', '109.35', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(214, 'GB065-4', 'NSEW', 'GB065-4.jpg', '8.98', '38.39', '134.12', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(215, 'GB091-3', 'NSEW', 'GB091-3.jpg', '7.41', '30.56', '104.42', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(216, 'GB092-1', 'NSEW', 'GB092-1.jpg', '7.78', '32.42', '111.09', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(217, 'GB101-2', 'NSEW', 'GB101-2.jpg', '7.11', '29.07', '99.04', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(218, 'GB105-4', 'NSEW', 'GB105-4.jpg', '8.43', '35.16', '120.79', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(219, 'GB151-3', 'NSEW', 'GB151-3.jpg', '7.32', '30.09', '102.74', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(220, 'GB162-1', 'NSEW', 'GB162-1.jpg', '7.84', '32.7', '112.13', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(221, 'GB163-2', 'NSEW', 'GB163-2.jpg', '7.48', '31.4', '103.65', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(222, 'GB164-3', 'NSEW', 'GB164-3.jpg', '7.39', '29.95', '102.04', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(223, 'Gn016-1', 'NSEW', 'Gn016-1.jpg', '10.93', '48.14', '169.2', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(224, 'Gn032-1', 'NSEW', 'Gn032-1.jpg', '7.52', '31.58', '104.3', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(225, 'Gn041-3', 'NSEW', 'Gn041-3.jpg', '8', '33.48', '114.91', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(226, 'Gn043-2', 'NSEW', 'Gn043-2.jpg', '8.71', '37.56', '125.83', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(227, 'Gn055-4', 'NSEW', 'Gn055-4.jpg', '10.6', '46.5', '163.29', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(228, 'Gn061-2', 'NSEW', 'Gn061-2.jpg', '7.19', '29.43', '100.33', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(229, 'Gn066-1', 'NSEW', 'Gn066-1.jpg', '11.62', '51.6', '181.66', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(230, 'Gn071-2', 'NSEW', 'Gn071-2.jpg', '7.2', '29.48', '100.51', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(231, 'Gn076-1', 'NSEW', 'Gn076-1.jpg', '10.71', '47.03', '165.21', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(232, 'Gn093-2', 'NSEW', 'Gn093-2.jpg', '7.92', '33.6', '111.57', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(233, 'Gn111-2', 'NSEW', 'Gn111-2.jpg', '7.15', '29.26', '99.73', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(234, 'Gn122-1', 'NSEW', 'Gn122-1.jpg', '7.92', '33.12', '113.64', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(235, 'Gn134-4', 'NSEW', 'Gn134-4.jpg', '7.43', '30.13', '102.65', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(236, 'Gn166-1', 'NSEW', 'Gn166-1.jpg', '11.08', '48.89', '171.91', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(237, 'Gn191-3', 'NSEW', 'Gn191-3.jpg', '7.31', '30.06', '102.62', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(238, 'Gn193-2', 'NSEW', 'Gn193-2.jpg', '7.2', '30.01', '98.62', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(239, 'Gn195-4', 'NSEW', 'Gn195-4.jpg', '9.09', '38.43', '132.55', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(240, 'Gn223-2', 'NSEW', 'Gn223-2.jpg', '7.09', '29.46', '96.66', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(241, 'Gn225-4', 'NSEW', 'Gn225-4.jpg', '8.08', '33.39', '114.41', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(242, 'Gn231-2', 'NSEW', 'Gn231-2.jpg', '7.1', '29', '98.81', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(243, 'Gn261-2', 'NSEW', 'Gn261-2.jpg', '7.13', '29.17', '99.41', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(244, 'Gn272-1', 'NSEW', 'Gn272-1.jpg', '7.65', '31.76', '108.72', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(245, 'Gn274-3', 'NSEW', 'Gn274-3.jpg', '7.01', '28.03', '95.12', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(246, 'Gy012-1', 'NSEW', 'Gy012-1.jpg', '7.59', '31.46', '107.67', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(247, 'Gy014-3', 'NSEW', 'Gy014-3.jpg', '7.42', '30.12', '102.64', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(248, 'Gy021-3', 'NSEW', 'Gy021-3.jpg', '7.36', '30.28', '103.4', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(249, 'Gy023-2', 'NSEW', 'Gy023-2.jpg', '7.48', '31.41', '103.67', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(250, 'Gy025-4', 'NSEW', 'Gy025-4.jpg', '8.4', '35', '120.21', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(251, 'Gy032-1', 'NSEW', 'Gy032-1.jpg', '7.68', '31.92', '109.32', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(252, 'Gy034-3', 'NSEW', 'Gy034-3.jpg', '7.26', '29.32', '99.74', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(253, 'Gy043-2', 'NSEW', 'Gy043-2.jpg', '7.42', '31.1', '102.55', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(254, 'Gy064-3', 'NSEW', 'Gy064-3.jpg', '7.95', '33.74', '112.06', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(255, 'Gy071-3', 'NSEW', 'Gy071-3.jpg', '7.3', '30.01', '102.44', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(256, 'Gy072-1', 'NSEW', 'Gy072-1.jpg', '7.51', '31.05', '106.19', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(257, 'Gy073-2', 'NSEW', 'Gy073-2.jpg', '7.09', '29.45', '96.61', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(258, 'Gy074-3', 'NSEW', 'Gy074-3.jpg', '8.11', '34.55', '114.97', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(259, 'Gy075-4', 'NSEW', 'Gy075-4.jpg', '7.77', '31.86', '108.91', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(260, 'Gy076-1', 'NSEW', 'Gy076-1.jpg', '8.19', '34.43', '119.85', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(261, 'Gy081-2', 'NSEW', 'Gy081-2.jpg', '7.12', '29.11', '99.21', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(262, 'Gy082-1', 'NSEW', 'Gy082-1.jpg', '7.47', '30.84', '105.43', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(263, 'Gy083-2', 'NSEW', 'Gy083-2.jpg', '7.01', '29.06', '95.22', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(264, 'Gy085-4', 'NSEW', 'Gy085-4.jpg', '7.4', '30.01', '102.23', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(265, 'Gy091-3', 'NSEW', 'Gy091-3.jpg', '7.3', '30', '102.4', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(266, 'Gy092-1', 'NSEW', 'Gy092-1.jpg', '7.59', '31.47', '107.7', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(267, 'Gy093-2', 'NSEW', 'Gy093-2.jpg', '7.15', '29.73', '97.62', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(268, 'Gy094-3', 'NSEW', 'Gy094-3.jpg', '8.02', '34.12', '113.44', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(269, 'Gy095-4', 'NSEW', 'Gy095-4.jpg', '7.36', '29.79', '101.45', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(270, 'Gy096-1', 'NSEW', 'Gy096-1.jpg', '8.15', '34.26', '119.24', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(271, 'Gy101-2', 'NSEW', 'Gy101-2.jpg', '7.15', '29.26', '99.72', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(272, 'Gy102-1', 'NSEW', 'Gy102-1.jpg', '7.45', '30.73', '105.04', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(273, 'Gy103-2', 'NSEW', 'Gy103-2.jpg', '7.09', '29.45', '96.6', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(274, 'Gy105-4', 'NSEW', 'Gy105-4.jpg', '7.14', '28.7', '97.52', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(275, 'Ne013-2', 'NSEW', 'Ne013-2.jpg', '7.15', '29.76', '97.74', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(276, 'Ne014-3', 'NSEW', 'Ne014-3.jpg', '7.24', '29.2', '99.33', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(277, 'Ne021-3', 'NSEW', 'Ne021-3.jpg', '7.34', '30.21', '103.14', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(278, 'Ne033-2', 'NSEW', 'Ne033-2.jpg', '7.06', '29.3', '96.08', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(279, 'Ne043-1', 'NSEW', 'Ne043-1.jpg', '7.54', '31.68', '104.63', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(280, 'Ne051-3', 'NSEW', 'Ne051-3.jpg', '7.31', '30.05', '102.58', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(281, 'Ne053-2', 'NSEW', 'Ne053-2.jpg', '7.06', '29.32', '96.15', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(282, 'Ne072-1', 'NSEW', 'Ne072-1.jpg', '7.5', '31.01', '106.05', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(283, 'Ne076-1', 'NSEW', 'Ne076-1.jpg', '8.23', '34.65', '120.65', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(284, 'Ne081-2', 'NSEW', 'Ne081-2.jpg', '7.16', '29.28', '99.81', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(285, 'Ne082-1', 'NSEW', 'Ne082-1.jpg', '7.62', '31.62', '108.23', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(286, 'Ne091-2', 'NSEW', 'Ne091-2.jpg', '7.11', '29.05', '98.99', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(287, 'Ne093-2', 'NSEW', 'Ne093-2.jpg', '7.21', '30.04', '98.76', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(288, 'Ne102-1', 'NSEW', 'Ne102-1.jpg', '7.59', '31.43', '107.54', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(289, 'Ne104-3', 'NSEW', 'Ne104-3.jpg', '7.26', '29.31', '99.71', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(290, 'Ne116-1', 'NSEW', 'Ne116-1.jpg', '7.97', '33.35', '115.95', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(291, 'Ne121-2', 'NSEW', 'Ne121-2.jpg', '7.17', '29.33', '99.99', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(292, 'Ne123-2', 'NSEW', 'Ne123-2.jpg', '7.44', '31.22', '103.01', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(293, 'Ne132-1', 'NSEW', 'Ne132-1.jpg', '8.21', '34.57', '118.85', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(294, 'Ne133-2', 'NSEW', 'Ne133-2.jpg', '7.87', '33.35', '110.65', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(295, 'Ne135-4', 'NSEW', 'Ne135-4.jpg', '8.03', '33.65', '117.04', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(296, 'Ne142-2', 'NSEW', 'Ne142-2.jpg', '7.9', '32.99', '113.17', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(297, 'Ne143-2', 'NSEW', 'Ne143-2.jpg', '7.49', '31.43', '103.75', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(298, 'Ne151-2', 'NSEW', 'Ne151-2.jpg', '7.13', '29.16', '99.38', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(299, 'Ne153-2', 'NSEW', 'Ne153-2.jpg', '7.23', '30.17', '99.22', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(300, 'Ne164-3', 'NSEW', 'Ne164-3.jpg', '7.82', '33.11', '109.78', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(301, 'Ne165-4', 'NSEW', 'Ne165-4.jpg', '7.35', '29.76', '101.32', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(302, 'Ne172-1', 'NSEW', 'Ne172-1.jpg', '7.69', '31.94', '109.39', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(303, 'Ne174-3', 'NSEW', 'Ne174-3.jpg', '8.48', '36.41', '121.66', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(304, 'Ne175-4', 'NSEW', 'Ne175-4.jpg', '8.06', '33.29', '114.03', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(305, 'Ne181-2', 'NSEW', 'Ne181-2.jpg', '7.14', '29.22', '99.59', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(306, 'Ne184-3', 'NSEW', 'Ne184-3.jpg', '8.02', '34.08', '113.28', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(307, 'Ne186-1', 'NSEW', 'Ne186-1.jpg', '8.34', '35.22', '122.71', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(308, 'Ne191-3', 'NSEW', 'Ne191-3.jpg', '7.34', '30.21', '103.16', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(309, 'Ne193-2', 'NSEW', 'Ne193-2.jpg', '7.39', '30.97', '102.1', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(310, 'Ne195-4', 'NSEW', 'Ne195-4.jpg', '7.65', '31.26', '106.74', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(311, 'Or011-2', 'NSEW', 'Or011-2.jpg', '7.44', '30.7', '104.92', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(312, 'Or014-3', 'NSEW', 'Or014-3.jpg', '9.59', '40.94', '141.6', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(313, 'Or032-1', 'NSEW', 'Or032-1.jpg', '8.49', '35.97', '123.9', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(314, 'Or035-4', 'NSEW', 'Or035-4.jpg', '10.38', '45.41', '159.37', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(315, 'Or044-3', 'NSEW', 'Or044-3.jpg', '7.65', '31.25', '106.69', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(316, 'Or055-4', 'NSEW', 'Or055-4.jpg', '9.86', '42.79', '149.94', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(317, 'Or063-2', 'NSEW', 'Or063-2.jpg', '8.36', '35.82', '119.55', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(318, 'Or073-2', 'NSEW', 'Or073-2.jpg', '8.11', '34.54', '114.94', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(319, 'Or082-1', 'NSEW', 'Or082-1.jpg', '8.38', '35.42', '121.92', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(320, 'Or091-2', 'NSEW', 'Or091-2.jpg', '7.08', '28.9', '98.44', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(321, 'Or102-1', 'NSEW', 'Or102-1.jpg', '8.22', '34.62', '119.03', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(322, 'Or111-2', 'NSEW', 'Or111-2.jpg', '7.13', '29.17', '99.4', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(323, 'Or112-1', 'NSEW', 'Or112-1.jpg', '8.44', '35.71', '122.94', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(324, 'Or151-2', 'NSEW', 'Or151-2.jpg', '7.16', '29.31', '99.93', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(325, 'Or163-2', 'NSEW', 'Or163-2.jpg', '7.5', '31.48', '103.93', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(326, 'OW005', 'NSEW', 'OW005.jpg', '7.06', '28.82', '98.15', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(327, 'OW021', 'NSEW', 'OW021.jpg', '7.05', '28.73', '97.84', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(328, 'OW027', 'NSEW', 'OW027.jpg', '7.04', '28.71', '97.75', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(329, 'OW027', 'NSEW', 'OW027.jpg', '7.04', '28.71', '97.75', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(330, 'OW040', 'NSEW', 'OW040.jpg', '7.07', '28.87', '98.32', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(331, 'OW040', 'NSEW', 'OW040.jpg', '7.07', '28.87', '98.32', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(332, 'OW045', 'NSEW', 'OW045.jpg', '7.02', '28.61', '97.39', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(333, 'OW045', 'NSEW', 'OW045.jpg', '7.02', '28.61', '97.39', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(334, 'OW053', 'NSEW', 'OW053.jpg', '7.04', '28.68', '97.64', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(335, 'OW053', 'NSEW', 'OW053.jpg', '7.04', '28.68', '97.64', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(336, 'Pu011-2', 'NSEW', 'Pu011-2.jpg', '7.09', '28.96', '98.64', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(337, 'Pu012-1', 'NSEW', 'Pu012-1.jpg', '7.95', '33.23', '114.03', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(338, 'Pu013-2', 'NSEW', 'Pu013-2.jpg', '8.11', '34.57', '115.04', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(339, 'Pu015-4', 'NSEW', 'Pu015-4.jpg', '9.25', '39.77', '139.07', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(340, 'Pu021-3', 'NSEW', 'Pu021-3.jpg', '7.56', '31.28', '106.99', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(341, 'Pu034-3', 'NSEW', 'Pu034-3.jpg', '7.52', '30.6', '104.36', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(342, 'Pu041-3', 'NSEW', 'Pu041-3.jpg', '7.41', '30.53', '104.32', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(343, 'Pu052-1', 'NSEW', 'Pu052-1.jpg', '8.22', '34.61', '118.98', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(344, 'Pu054-3', 'NSEW', 'Pu054-3.jpg', '7.64', '31.21', '106.55', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(345, 'Pu061-2', 'NSEW', 'Pu061-2.jpg', '7.1', '29', '98.81', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(346, 'Pu062-1', 'NSEW', 'Pu062-1.jpg', '7.85', '32.76', '112.32', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(347, 'Pu072-1', 'NSEW', 'Pu072-1.jpg', '8.07', '33.86', '116.28', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(348, 'Pu073-2', 'NSEW', 'Pu073-2.jpg', '7.83', '33.14', '109.91', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(349, 'Pu076-1', 'NSEW', 'Pu076-1.jpg', '9.71', '42.07', '147.37', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(350, 'Pu081-3', 'NSEW', 'Pu081-3.jpg', '7.44', '30.68', '104.85', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(351, 'Pu084-3', 'NSEW', 'Pu084-3.jpg', '7.36', '29.82', '101.55', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(352, 'Pu091-3', 'NSEW', 'Pu091-3.jpg', '7.28', '29.91', '102.07', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(353, 'Pu092-1', 'NSEW', 'Pu092-1.jpg', '7.57', '31.37', '107.33', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(354, 'Pu093-2', 'NSEW', 'Pu093-2.jpg', '7.37', '30.86', '101.68', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(355, 'Pu104-3', 'NSEW', 'Pu104-3.jpg', '7.33', '29.65', '100.92', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(356, 'Pu106-1', 'NSEW', 'Pu106-1.jpg', '7.94', '33.22', '115.48', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(357, 'Re012-1', 'NSEW', 'Re012-1.jpg', '8.17', '34.37', '118.12', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(358, 'Re021-2', 'NSEW', 'Re021-2.jpg', '7.23', '29.65', '101.13', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(359, 'Re022-1', 'NSEW', 'Re022-1.jpg', '7.99', '33.45', '114.81', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(360, 'Re031-3', 'NSEW', 'Re031-3.jpg', '7.49', '30.96', '105.87', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(361, 'Re043-2', 'NSEW', 'Re043-2.jpg', '8.24', '35.18', '117.25', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(362, 'Re052-1', 'NSEW', 'Re052-1.jpg', '8.42', '35.61', '122.59', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(363, 'Re053-2', 'NSEW', 'Re053-2.jpg', '7.52', '31.62', '104.42', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(364, 'Re071-3', 'NSEW', 'Re071-3.jpg', '7.78', '32.41', '111.07', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(365, 'Re076-1', 'NSEW', 'Re076-1.jpg', '11.69', '51.95', '182.93', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(366, 'Re096-1', 'NSEW', 'Re096-1.jpg', '14.67', '66.85', '236.55', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(367, 'Re112-1', 'NSEW', 'Re112-1.jpg', '8.33', '35.15', '120.95', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(368, 'Re121-2', 'NSEW', 'Re121-2.jpg', '7.47', '30.87', '105.53', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(369, 'Re123-2', 'NSEW', 'Re123-2.jpg', '8.53', '36.65', '122.53', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(370, 'Re126-1', 'NSEW', 'Re126-1.jpg', '11.11', '49.03', '172.42', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(371, 'Re141-2', 'NSEW', 'Re141-2.jpg', '7.08', '28.91', '98.49', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(372, 'Re161-3', 'NSEW', 'Re161-3.jpg', '7.95', '33.25', '114.11', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(373, 'Re172-1', 'NSEW', 'Re172-1.jpg', '8.18', '34.38', '118.16', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(374, 'Re176-1', 'NSEW', 'Re176-1.jpg', '11.2', '49.49', '174.05', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(375, 'Re182-1', 'NSEW', 'Re182-1.jpg', '7.46', '30.8', '105.28', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(376, 'Re185-4', 'NSEW', 'Re185-4.jpg', '8.53', '36.17', '126.11', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(377, 'Re194-3', 'NSEW', 'Re194-3.jpg', '7.92', '33.59', '111.52', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(378, 'Re244-3', 'NSEW', 'Re244-3.jpg', '7.37', '29.84', '101.62', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(379, 'Re262-1', 'NSEW', 'Re262-1.jpg', '7.86', '32.81', '112.5', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(380, 'Re266-1', 'NSEW', 'Re266-1.jpg', '7.89', '32.93', '114.43', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(381, 'Re273-2', 'NSEW', 'Re273-2.jpg', '7.34', '30.7', '101.12', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(382, 'Ye012-1', 'NSEW', 'Ye012-1.jpg', '8.57', '36.36', '125.3', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(383, 'Ye022-1', 'NSEW', 'Ye022-1.jpg', '7.42', '31.08', '102.49', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(384, 'Ye035-4', 'NSEW', 'Ye035-4.jpg', '11.16', '49.3', '173.37', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(385, 'Ye054-3', 'NSEW', 'Ye054-3.jpg', '7.65', '31.24', '106.66', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(386, 'Ye055-4', 'NSEW', 'Ye055-4.jpg', '10.78', '47.41', '166.58', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(387, 'Ye072-1', 'NSEW', 'Ye072-1.jpg', '8.1', '34.02', '116.87', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(388, 'Ye073-2', 'NSEW', 'Ye073-2.jpg', '7.96', '33.81', '112.33', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(389, 'Ye074-3', 'NSEW', 'Ye074-3.jpg', '8.24', '34.21', '117.34', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(390, 'Ye101-2', 'NSEW', 'Ye101-2.jpg', '7.24', '29.72', '101.38', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(391, 'Ye131-3', 'NSEW', 'Ye131-3.jpg', '7.34', '30.22', '103.21', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(392, 'Ye142-1', 'NSEW', 'Ye142-1.jpg', '7.96', '33.29', '114.24', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(393, 'Ye151-2', 'NSEW', 'Ye151-2.jpg', '7.21', '29.55', '100.78', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(394, 'Ye152-1', 'NSEW', 'Ye152-1.jpg', '7.62', '32.08', '106.09', '2023-12-17 10:45:11', '2023-12-17 10:45:11'),
+(395, 'Ye154-3', 'NSEW', 'Ye154-3.jpg', '8.43', '35.16', '120.79', '2023-12-17 10:45:11', '2023-12-17 10:45:11');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `colorprice_weatherbond`
+--
+
+CREATE TABLE `colorprice_weatherbond` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `color_name` varchar(255) NOT NULL,
+  `color_tag` varchar(255) DEFAULT NULL,
+  `color_image` varchar(255) DEFAULT NULL,
+  `color_1l` varchar(255) DEFAULT NULL,
+  `color_5l` varchar(255) DEFAULT NULL,
+  `color_18l` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `colorprice_weatherbond`
+--
+
+INSERT INTO `colorprice_weatherbond` (`id`, `color_name`, `color_tag`, `color_image`, `color_1l`, `color_5l`, `color_18l`, `created_at`, `updated_at`) VALUES
+(2610, 'Bl014-3', 'WB', 'Bl014-3.jpg', '10.97', '46.35', '160.46', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2611, 'Bl016-1', 'WB', 'Bl016-1.jpg', '12.6', '54.49', '191.78', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2612, 'Bl021-3', 'WB', 'Bl021-3.jpg', '10.53', '44.64', '154.5', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2613, 'Bl042-1', 'WB', 'Bl042-1.jpg', '11.19', '47.93', '166.36', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2614, 'Bl046-1', 'WB', 'Bl046-1.jpg', '13.16', '57.29', '201.85', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2615, 'Bl061-3', 'WB', 'Bl061-3.jpg', '10.67', '45.33', '156.98', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2616, 'Bl063-2', 'WB', 'Bl063-2.jpg', '12.37', '55.33', '190.6', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2617, 'Bl071-2', 'WB', 'Bl071-2.jpg', '10.34', '43.7', '151.12', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2618, 'Bl072-1', 'WB', 'Bl072-1.jpg', '11.34', '48.72', '169.21', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2619, 'Bl132-2', 'WB', 'Bl132-2.jpg', '11.56', '49.79', '173.04', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2620, 'Bl134-3', 'WB', 'Bl134-3.jpg', '10.65', '45.27', '156.76', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2621, 'GB023-2', 'WB', 'GB023-2.jpg', '10.61', '46.57', '159.05', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2622, 'GB062-1', 'WB', 'GB062-1.jpg', '10.63', '45.15', '156.33', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2623, 'GB065-4', 'WB', 'GB065-4.jpg', '11.3', '47.99', '168.38', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2624, 'GB091-3', 'WB', 'GB091-3.jpg', '10.48', '44.4', '153.63', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2625, 'GB092-1', 'WB', 'GB092-1.jpg', '10.93', '46.67', '161.8', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2626, 'GB101-2', 'WB', 'GB101-2.jpg', '10.23', '43.17', '149.2', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2627, 'GB105-4', 'WB', 'GB105-4.jpg', '12.24', '52.71', '185.35', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2628, 'GB151-3', 'WB', 'GB151-3.jpg', '10.67', '45.35', '157.07', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2629, 'GB162-1', 'WB', 'GB162-1.jpg', '11.15', '47.76', '165.75', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2630, 'GB163-2', 'WB', 'GB163-2.jpg', '10.71', '47.06', '160.83', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2631, 'GB164-3', 'WB', 'GB164-3.jpg', '12.37', '53.35', '185.65', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2632, 'Gn016-1', 'WB', 'Gn016-1.jpg', '18.4', '83.48', '296.12', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2633, 'Gn032-1', 'WB', 'Gn032-1.jpg', '12.31', '55.05', '189.59', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2634, 'Gn041-3', 'WB', 'Gn041-3.jpg', '11.63', '50.16', '174.37', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2635, 'Gn043-2', 'WB', 'Gn043-2.jpg', '12.87', '55.84', '194.62', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2636, 'Gn055-4', 'WB', 'Gn055-4.jpg', '16.86', '75.8', '268.49', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2637, 'Gn061-2', 'WB', 'Gn061-2.jpg', '10.2', '42.99', '148.55', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2638, 'Gn066-1', 'WB', 'Gn066-1.jpg', '14.57', '64.33', '227.18', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2639, 'Gn071-2', 'WB', 'Gn071-2.jpg', '10.24', '43.19', '149.27', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2640, 'Gn076-1', 'WB', 'Gn076-1.jpg', '15.56', '69.3', '245.07', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2641, 'Gn093-2', 'WB', 'Gn093-2.jpg', '12.57', '56.34', '194.22', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2642, 'Gn111-2', 'WB', 'Gn111-2.jpg', '10.13', '42.65', '147.36', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2643, 'Gn122-1', 'WB', 'Gn122-1.jpg', '10.67', '45.33', '156.97', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2644, 'Gn134-3', 'WB', 'Gn134-3.jpg', '11.01', '46.56', '161.22', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2645, 'Gn166-1', 'WB', 'Gn166-1.jpg', '15.78', '70.42', '249.1', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2646, 'Gn191-3', 'WB', 'Gn191-3.jpg', '10.28', '43.38', '149.96', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2647, 'Gn193-2', 'WB', 'Gn193-2.jpg', '10.95', '48.26', '165.14', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2648, 'Gn195-4', 'WB', 'Gn195-4.jpg', '13.6', '59.49', '209.77', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2649, 'Gn223-2', 'WB', 'Gn223-2.jpg', '10.53', '46.14', '157.52', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2650, 'Gn225-4', 'WB', 'Gn225-4.jpg', '12.22', '52.59', '182.91', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2651, 'Gn231-2', 'WB', 'Gn231-2.jpg', '10.1', '42.51', '146.83', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2652, 'Gn261-2', 'WB', 'Gn261-2.jpg', '10.23', '43.15', '149.15', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2653, 'Gn272-1', 'WB', 'Gn272-1.jpg', '11.3', '48.52', '168.48', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2654, 'Gn274-3', 'WB', 'Gn274-3.jpg', '9.99', '41.44', '142.78', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2655, 'GR-49', 'WB', 'GR-49.jpg', '10.38', '43.9', '151.84', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2656, 'Gy012-1', 'WB', 'Gy012-1.jpg', '11.96', '51.81', '180.31', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2657, 'Gy014-3', 'WB', 'Gy014-3.jpg', '10.28', '42.88', '147.96', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2658, 'Gy021-3', 'WB', 'Gy021-3.jpg', '11.17', '47.85', '166.06', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2659, 'Gy023-2', 'WB', 'Gy023-2.jpg', '10.58', '46.42', '158.53', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2660, 'Gy025-4', 'WB', 'Gy025-4.jpg', '11.49', '48.97', '169.89', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2661, 'Gy032-1', 'WB', 'Gy032-1.jpg', '11.19', '47.96', '166.46', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2662, 'Gy034-3', 'WB', 'Gy034-3.jpg', '10.08', '41.9', '144.44', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2663, 'Gy043-2', 'WB', 'Gy043-2.jpg', '10.48', '45.92', '156.72', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2664, 'Gy064-3', 'WB', 'Gy064-3.jpg', '11.07', '48.83', '167.2', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2665, 'Gy071-3', 'WB', 'Gy071-3.jpg', '10.84', '46.22', '160.19', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2666, 'Gy072-1', 'WB', 'Gy072-1.jpg', '11.49', '49.45', '171.8', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2667, 'Gy073-2', 'WB', 'Gy073-2.jpg', '10.17', '44.33', '150.97', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2668, 'Gy074-3', 'WB', 'Gy074-3.jpg', '9.81', '40.55', '139.6', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2669, 'Gy075-4', 'WB', 'Gy075-4.jpg', '10.7', '45', '155.59', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2670, 'Gy076-1', 'WB', 'Gy076-1.jpg', '11.22', '47.62', '167.04', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2671, 'Gy081-2', 'WB', 'Gy081-2.jpg', '10.24', '43.21', '149.34', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2672, 'Gy082-1', 'WB', 'Gy082-1.jpg', '11.36', '48.78', '169.4', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2673, 'Gy083-2', 'WB', 'Gy083-2.jpg', '10.65', '46.74', '159.65', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2674, 'Gy085-4', 'WB', 'Gy085-4.jpg', '10.31', '43.07', '148.64', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2675, 'Gy091-3', 'WB', 'Gy091-3.jpg', '10.71', '45.55', '157.78', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2676, 'Gy092-1', 'WB', 'Gy092-1.jpg', '11.57', '49.83', '173.2', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2677, 'Gy093-2', 'WB', 'Gy093-2.jpg', '10.28', '44.89', '153.01', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2678, 'Gy094-3', 'WB', 'Gy094-3.jpg', '11.18', '49.39', '169.21', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2679, 'Gy095-4', 'WB', 'Gy095-4.jpg', '10.39', '43.46', '150.07', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2680, 'Gy096-1', 'WB', 'Gy096-1.jpg', '11.3', '47.98', '168.32', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2681, 'Gy101-2', 'WB', 'Gy101-2.jpg', '10.36', '43.79', '151.45', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2682, 'Gy102-1', 'WB', 'Gy102-1.jpg', '10.87', '46.37', '160.72', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2683, 'Gy103-2', 'WB', 'Gy103-2.jpg', '11.59', '51.44', '176.59', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2684, 'Gy105-4', 'WB', 'Gy105-4.jpg', '10.23', '42.67', '147.21', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2685, 'Ne013-2', 'WB', 'Ne013-2.jpg', '10.79', '47.46', '162.27', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2686, 'Ne014-3', 'WB', 'Ne014-3.jpg', '11.02', '46.62', '161.45', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2687, 'Ne021-3', 'WB', 'Ne021-3.jpg', '10.24', '43.19', '149.27', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2688, 'Ne033-2', 'WB', 'Ne033-2.jpg', '10.87', '46.33', '160.58', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2689, 'Ne043-2', 'WB', 'Ne043-2.jpg', '10.53', '46.15', '157.55', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2690, 'Ne051-3', 'WB', 'Ne051-3.jpg', '10.47', '44.35', '153.46', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2691, 'Ne053-2', 'WB', 'Ne053-2.jpg', '11.06', '48.79', '167.05', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2692, 'Ne072-1', 'WB', 'Ne072-1.jpg', '10.64', '45.2', '156.5', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2693, 'Ne076-1', 'WB', 'Ne076-1.jpg', '11.48', '48.88', '171.57', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2694, 'Ne081-2', 'WB', 'Ne081-2.jpg', '10.21', '43.07', '148.87', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2695, 'Ne082-1', 'WB', 'Ne082-1.jpg', '10.72', '45.58', '157.89', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2696, 'Ne091-2', 'WB', 'Ne091-2.jpg', '10.12', '42.59', '147.14', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2697, 'Ne093-2', 'WB', 'Ne093-2.jpg', '10.97', '48.36', '165.5', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2698, 'Ne102-1', 'WB', 'Ne102-1.jpg', '10.65', '45.25', '156.71', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2699, 'Ne104-3', 'WB', 'Ne104-3.jpg', '11.6', '49.51', '171.83', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2700, 'Ne116-1', 'WB', 'Ne116-1.jpg', '11.1', '46.99', '164.77', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2701, 'Ne121-2', 'WB', 'Ne121-2.jpg', '10.19', '42.93', '148.36', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2702, 'Ne123-2', 'WB', 'Ne123-2.jpg', '11.75', '52.26', '179.53', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2703, 'Ne132-1', 'WB', 'Ne132-1.jpg', '11.64', '50.22', '174.6', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2704, 'Ne133-2', 'WB', 'Ne133-2.jpg', '12.81', '57.54', '198.55', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2705, 'Ne135-4', 'WB', 'Ne135-4.jpg', '11.27', '47.84', '167.83', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2706, 'Ne142-2', 'WB', 'Ne142-2.jpg', '11.32', '48.61', '168.81', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2707, 'Ne143-2', 'WB', 'Ne143-2.jpg', '11.96', '53.29', '183.23', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2708, 'Ne151-2', 'WB', 'Ne151-2.jpg', '10.2', '42.99', '148.56', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2709, 'Ne153-2', 'WB', 'Ne153-2.jpg', '11.52', '51.12', '175.44', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2710, 'Ne164-3', 'WB', 'Ne164-3.jpg', '11.06', '48.79', '167.04', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2711, 'Ne165-4', 'WB', 'Ne165-4.jpg', '10.47', '43.84', '151.44', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2712, 'Ne172-1', 'WB', 'Ne172-1.jpg', '11.33', '48.63', '168.86', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2713, 'Ne174-3', 'WB', 'Ne174-3.jpg', '11.62', '49.62', '172.22', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2714, 'Ne175-4', 'WB', 'Ne175-4.jpg', '11.03', '46.67', '161.6', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2715, 'Ne181-2', 'WB', 'Ne181-2.jpg', '10.32', '43.58', '150.69', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2716, 'Ne184-3', 'WB', 'Ne184-3.jpg', '11.35', '50.26', '172.35', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2717, 'Ne186-1', 'WB', 'Ne186-1.jpg', '11.05', '46.75', '163.89', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2718, 'Ne191-3', 'WB', 'Ne191-3.jpg', '10.91', '46.57', '161.46', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2719, 'Ne193-2', 'WB', 'Ne193-2.jpg', '10.53', '46.14', '157.51', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2720, 'Ne195-4', 'WB', 'Ne195-4.jpg', '10.77', '45.33', '156.77', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2721, 'Or011-2', 'WB', 'Or011-2.jpg', '10.32', '43.61', '150.8', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2722, 'Or014-3', 'WB', 'Or014-3.jpg', '15.11', '67.05', '236.97', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2723, 'Or032-1', 'WB', 'Or032-1.jpg', '11.27', '48.34', '167.84', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2724, 'Or035-4', 'WB', 'Or035-4.jpg', '16.84', '75.68', '268.04', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2725, 'Or044-3', 'WB', 'Or044-3.jpg', '11.2', '47.52', '164.69', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2726, 'Or055-4', 'WB', 'Or055-4.jpg', '16.05', '71.73', '253.84', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2727, 'Or063-2', 'WB', 'Or063-2.jpg', '13.2', '59.48', '205.54', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2728, 'Or073-2', 'WB', 'Or073-2.jpg', '12.53', '56.16', '193.59', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2729, 'Or082-1', 'WB', 'Or082-1.jpg', '11.45', '49.27', '171.18', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2730, 'Or091-2', 'WB', 'Or091-2.jpg', '10.31', '43.55', '150.57', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2731, 'Or102-1', 'WB', 'Or102-1.jpg', '12.04', '52.22', '181.81', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2732, 'Or111-2', 'WB', 'Or111-2.jpg', '10.13', '42.63', '147.26', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2733, 'Or112-1', 'WB', 'Or112-1.jpg', '12.32', '53.62', '186.83', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2734, 'Or151-2', 'WB', 'Or151-2.jpg', '10.17', '42.87', '148.15', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2735, 'Or163-2', 'WB', 'Or163-2.jpg', '10.98', '48.4', '165.62', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2736, 'Pu011-2', 'WB', 'Pu011-2.jpg', '10.29', '43.45', '150.2', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2737, 'Pu012-1', 'WB', 'Pu012-1.jpg', '12.03', '52.17', '181.61', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2738, 'Pu021-3', 'WB', 'Pu021-3.jpg', '10.88', '46.42', '160.91', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2739, 'Pu034-3', 'WB', 'Pu034-3.jpg', '12.36', '53.29', '185.43', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2740, 'Pu041-3', 'WB', 'Pu041-3.jpg', '10.88', '46.4', '160.85', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2741, 'Pu052-1', 'WB', 'Pu052-1.jpg', '11.81', '51.06', '177.62', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2742, 'Pu061-2', 'WB', 'Pu061-2.jpg', '10.31', '43.57', '150.66', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2743, 'Pu062-1', 'WB', 'Pu062-1.jpg', '11.52', '49.58', '172.28', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2744, 'Pu072-1', 'WB', 'Pu072-1.jpg', '11.67', '50.37', '175.14', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2745, 'Pu076-1', 'WB', 'Pu076-1.jpg', '13.84', '60.69', '214.08', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2746, 'Pu081-3', 'WB', 'Pu081-3.jpg', '10.74', '45.68', '158.26', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2747, 'Pu091-3', 'WB', 'Pu091-3.jpg', '10.77', '45.86', '158.89', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2748, 'Pu092-1', 'WB', 'Pu092-1.jpg', '11.44', '49.2', '170.9', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2749, 'Pu093-2', 'WB', 'Pu093-2.jpg', '12.09', '53.96', '185.65', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2750, 'Pu104-3', 'WB', 'Pu104-3.jpg', '10.76', '45.3', '156.68', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2751, 'Pu106-1', 'WB', 'Pu106-1.jpg', '11.82', '50.59', '177.71', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2752, 'Re012-1', 'WB', 'Re012-1.jpg', '12.38', '53.92', '187.92', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2753, 'Re021-2', 'WB', 'Re021-2.jpg', '10.2', '43.01', '148.65', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2754, 'Re022-1', 'WB', 'Re022-1.jpg', '12.62', '55.11', '192.18', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2755, 'Re031-3', 'WB', 'Re031-3.jpg', '10.92', '46.59', '161.54', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2756, 'Re052-1', 'WB', 'Re052-1.jpg', '12.54', '54.68', '190.66', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2757, 'Re071-3', 'WB', 'Re071-3.jpg', '11.27', '48.34', '167.83', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2758, 'Re076-1', 'WB', 'Re076-1.jpg', '21.31', '98.07', '348.66', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2759, 'Re096-1', 'WB', 'Re096-1.jpg', '21.01', '96.55', '343.2', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2760, 'Re112-1', 'WB', 'Re112-1.jpg', '12.31', '53.57', '186.67', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2761, 'Re121-2', 'WB', 'Re121-2.jpg', '10.74', '45.68', '158.26', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2762, 'Re123-2', 'WB', 'Re123-2.jpg', '13.75', '62.24', '215.46', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2763, 'Re126-1', 'WB', 'Re126-1.jpg', '17.53', '79.15', '280.56', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2764, 'Re141-2', 'WB', 'Re141-2.jpg', '10.07', '42.37', '146.33', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2765, 'Re161-3', 'WB', 'Re161-3.jpg', '11.05', '47.24', '163.86', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2766, 'Re172-1', 'WB', 'Re172-1.jpg', '11.87', '51.35', '178.67', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2767, 'Re176-1', 'WB', 'Re176-1.jpg', '16.2', '72.51', '256.63', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2768, 'Re182-1', 'WB', 'Re182-1.jpg', '10.97', '46.86', '162.48', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2769, 'Re185-4', 'WB', 'Re185-4.jpg', '12.91', '56.04', '197.35', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2770, 'Re194-3', 'WB', 'Re194-3.jpg', '11.35', '50.26', '172.33', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2771, 'Re244-3', 'WB', 'Re244-3.jpg', '11.37', '48.35', '167.66', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2772, 'Re262-1', 'WB', 'Re262-1.jpg', '11.07', '47.37', '164.32', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2773, 'Re266-1', 'WB', 'Re266-1.jpg', '11.28', '47.9', '168.02', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2774, 'Re273-2', 'WB', 'Re273-2.jpg', '11.69', '51.97', '178.48', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2775, 'Ye012-1', 'WB', 'Ye012-1.jpg', '10.95', '48.27', '165.15', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2776, 'Ye022-1', 'WB', 'Ye022-1.jpg', '11.81', '52.55', '180.59', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2777, 'Ye035-4', 'WB', 'Ye035-4.jpg', '18.88', '85.88', '304.76', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2778, 'Ye054-3', 'WB', 'Ye054-3.jpg', '13.08', '56.89', '198.41', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2779, 'Ye055-4', 'WB', 'Ye055-4.jpg', '17.33', '78.13', '276.86', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2780, 'Ye072-1', 'WB', 'Ye072-1.jpg', '11.9', '51.5', '179.2', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2781, 'Ye073-2', 'WB', 'Ye073-2.jpg', '13.99', '63.46', '219.87', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2782, 'Ye074-3', 'WB', 'Ye074-3.jpg', '13.57', '59.37', '207.34', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2783, 'Ye101-2', 'WB', 'Ye101-2.jpg', '10.41', '44.06', '152.43', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2784, 'Ye131-3', 'WB', 'Ye131-3.jpg', '10.28', '43.38', '149.97', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2785, 'Ye142-1', 'WB', 'Ye142-1.jpg', '11.31', '48.57', '168.64', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2786, 'Ye151-2', 'WB', 'Ye151-2.jpg', '10.19', '42.93', '148.36', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2787, 'Ye152-1', 'WB', 'Ye152-1.jpg', '10.77', '47.37', '161.92', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2788, 'Ye154-3', 'WB', 'Ye154-3.jpg', '12.06', '51.82', '182.14', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2789, 'Gy011-3', 'WB', 'Gy011-3.jpg', '11.28', '48.42', '168.1', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2790, 'Re092-1', 'WB', 'Re092-1.jpg', '12.1', '52.48', '182.74', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2791, 'OW005', 'WB', 'OW005.jpg', '10.16', '42.79', '147.83', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2792, 'OW021', 'WB', 'OW021.jpg', '10.1', '42.5', '146.82', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2793, 'OW027', 'WB', 'OW027.jpg', '10.09', '42.44', '146.6', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2794, 'OW040', 'WB', 'OW040.jpg', '10.19', '42.97', '148.5', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2795, 'OW045', 'WB', 'OW045.jpg', '10.08', '42.39', '146.39', '2023-12-17 11:04:59', '2023-12-17 11:04:59'),
+(2796, 'OW053', 'WB', 'OW053.jpg', '10.11', '42.53', '146.91', '2023-12-17 11:04:59', '2023-12-17 11:04:59');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `colorprice_weathergard`
+--
+
+CREATE TABLE `colorprice_weathergard` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `color_name` varchar(255) NOT NULL,
+  `color_tag` varchar(255) DEFAULT NULL,
+  `color_image` varchar(255) DEFAULT NULL,
+  `color_1l` varchar(255) DEFAULT NULL,
+  `color_5l` varchar(255) DEFAULT NULL,
+  `color_15l` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `colorprice_weathergard`
+--
+
+INSERT INTO `colorprice_weathergard` (`id`, `color_name`, `color_tag`, `color_image`, `color_1l`, `color_5l`, `color_15l`, `created_at`, `updated_at`) VALUES
+(4, 'Bl014-3', 'WG', 'Bl014-3.jpg', '9.97', '43.35', '125.55', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(5, 'Bl016-1', 'WG', 'Bl016-1.jpg', '11.6', '52.49', '152.48', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(6, 'Bl021-3', 'WG', 'Bl021-3.jpg', '9.53', '41.14', '117.92', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(7, 'Bl042-1', 'WG', 'Bl042-1.jpg', '10.19', '44.43', '127.8', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(8, 'Bl046-1', 'WG', 'Bl046-1.jpg', '12.16', '55.29', '160.87', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(9, 'Bl061-3', 'WG', 'Bl061-3.jpg', '9.67', '41.83', '119.98', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(10, 'Bl063-2', 'WG', 'Bl063-2.jpg', '11.37', '51.33', '149', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(11, 'Bl071-2', 'WG', 'Bl071-2.jpg', '9.34', '40.2', '115.1', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(12, 'Bl072-1', 'WG', 'Bl072-1.jpg', '10.34', '45.22', '130.17', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(13, 'Bl091-3', 'WG', 'Bl091-3.jpg', '9.65', '41.77', '119.8', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(14, 'Bl132-2', 'WG', 'Bl132-2.jpg', '10.56', '46.29', '133.37', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(15, 'Bl134-3', 'WG', 'Bl134-3.jpg', '9.5', '40.99', '118.47', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(16, 'GB023-2', 'WG', 'GB023-2.jpg', '9.61', '42.57', '122.71', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(17, 'GB062-1', 'WG', 'GB062-1.jpg', '9.63', '41.65', '119.44', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(18, 'GB065-4', 'WG', 'GB065-4.jpg', '10.3', '45.99', '132.98', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(19, 'GB091-3', 'WG', 'GB091-3.jpg', '9.48', '40.9', '117.19', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(20, 'GB092-1', 'WG', 'GB092-1.jpg', '9.93', '43.17', '124', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(21, 'GB101-2', 'WG', 'GB101-2.jpg', '9.23', '39.67', '113.5', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(22, 'GB105-4', 'WG', 'GB105-4.jpg', '11.24', '50.71', '147.13', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(23, 'GB151-3', 'WG', 'GB151-3.jpg', '9.67', '41.85', '120.06', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(24, 'GB162-1', 'WG', 'GB162-1.jpg', '10.15', '44.26', '127.29', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(25, 'GB163-2', 'WG', 'GB163-2.jpg', '9.71', '43.06', '124.19', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(26, 'GB164-3', 'WG', 'GB164-3.jpg', '11.37', '50.35', '146.54', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(27, 'Gn016-1', 'WG', 'Gn016-1.jpg', '17.4', '81.48', '239.44', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(28, 'Gn032-1', 'WG', 'Gn032-1.jpg', '11.31', '51.05', '148.16', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(29, 'Gn041-3', 'WG', 'Gn041-3.jpg', '10.63', '46.66', '134.47', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(30, 'Gn043-2', 'WG', 'Gn043-2.jpg', '11.87', '52.84', '154.02', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(31, 'Gn055-4', 'WG', 'Gn055-4.jpg', '15.86', '73.8', '216.41', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(32, 'Gn061-2', 'WG', 'Gn061-2.jpg', '9.2', '39.49', '112.96', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(33, 'Gn066-1', 'WG', 'Gn066-1.jpg', '13.57', '62.33', '181.99', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(34, 'Gn071-2', 'WG', 'Gn071-2.jpg', '9.24', '39.69', '113.56', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(35, 'Gn076-1', 'WG', 'Gn076-1.jpg', '14.56', '67.3', '196.89', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(36, 'Gn093-2', 'WG', 'Gn093-2.jpg', '11.57', '52.34', '152.01', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(37, 'Gn111-2', 'WG', 'Gn111-2.jpg', '9.13', '39.15', '111.96', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(38, 'Gn122-1', 'WG', 'Gn122-1.jpg', '9.67', '41.83', '119.98', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(39, 'Gn166-1', 'WG', 'Gn166-1.jpg', '14.78', '68.42', '200.25', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(40, 'Gn191-3', 'WG', 'Gn191-3.jpg', '9.28', '39.88', '114.13', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(41, 'Gn193-2', 'WG', 'Gn193-2.jpg', '9.95', '44.26', '127.79', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(42, 'Gn195-4', 'WG', 'Gn195-4.jpg', '12.6', '57.49', '167.47', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(43, 'Gn223-2', 'WG', 'Gn223-2.jpg', '9.53', '42.14', '121.43', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(44, 'Gn225-4', 'WG', 'Gn225-4.jpg', '11.22', '49.59', '144.26', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(45, 'Gn231-2', 'WG', 'Gn231-2.jpg', '9.1', '39.01', '111.52', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(46, 'Gn261-2', 'WG', 'Gn261-2.jpg', '9.23', '39.65', '113.45', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(47, 'Gn272-1', 'WG', 'Gn272-1.jpg', '10.3', '45.02', '129.57', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(48, 'Gn274-3', 'WG', 'Gn274-3.jpg', '8.99', '38.44', '110.81', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(49, 'Gy012-1', 'WG', 'Gy012-1.jpg', '10.96', '48.31', '139.43', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(50, 'Gy014-3', 'WG', 'Gy014-3.jpg', '9.28', '39.88', '115.13', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(51, 'Gy021-3', 'WG', 'Gy021-3.jpg', '10.17', '44.35', '127.55', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(52, 'Gy023-2', 'WG', 'Gy023-2.jpg', '9.58', '42.42', '122.27', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(53, 'Gy025-4', 'WG', 'Gy025-4.jpg', '10.49', '45.97', '133.41', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(54, 'Gy032-1', 'WG', 'Gy032-1.jpg', '10.19', '44.46', '127.88', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(55, 'Gy034-3', 'WG', 'Gy034-3.jpg', '9.08', '38.9', '112.2', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(56, 'Gy043-2', 'WG', 'Gy043-2.jpg', '9.48', '41.92', '120.77', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(57, 'Gy064-3', 'WG', 'Gy064-3.jpg', '10.07', '44.83', '129.5', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(58, 'Gy071-3', 'WG', 'Gy071-3.jpg', '9.84', '42.72', '122.66', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(59, 'Gy072-1', 'WG', 'Gy072-1.jpg', '10.49', '45.95', '132.34', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(60, 'Gy073-2', 'WG', 'Gy073-2.jpg', '9.17', '40.33', '115.98', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(61, 'Gy074-3', 'WG', 'Gy074-3.jpg', '8.81', '37.55', '108.16', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(62, 'Gy075-4', 'WG', 'Gy075-4.jpg', '9.7', '42', '121.49', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(63, 'Gy076-1', 'WG', 'Gy076-1.jpg', '10.22', '45.62', '131.87', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(64, 'Gy081-2', 'WG', 'Gy081-2.jpg', '9.24', '39.71', '113.62', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(65, 'Gy082-1', 'WG', 'Gy082-1.jpg', '10.36', '45.28', '130.33', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(66, 'Gy083-2', 'WG', 'Gy083-2.jpg', '9.65', '42.74', '123.21', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(67, 'Gy085-4', 'WG', 'Gy085-4.jpg', '9.31', '40.07', '115.7', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(68, 'Gy091-3', 'WG', 'Gy091-3.jpg', '9.71', '42.05', '120.65', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(69, 'Gy092-1', 'WG', 'Gy092-1.jpg', '10.57', '46.33', '133.5', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(70, 'Gy093-2', 'WG', 'Gy093-2.jpg', '9.28', '40.89', '117.67', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(71, 'Gy094-3', 'WG', 'Gy094-3.jpg', '10.18', '45.39', '131.17', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(72, 'Gy095-4', 'WG', 'Gy095-4.jpg', '9.39', '40.46', '116.89', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(73, 'Gy096-1', 'WG', 'Gy096-1.jpg', '10.3', '45.98', '132.93', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(74, 'Gy101-2', 'WG', 'Gy101-2.jpg', '9.36', '40.29', '115.38', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(75, 'Gy102-1', 'WG', 'Gy102-1.jpg', '9.87', '42.87', '123.1', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(76, 'Gy103-2', 'WG', 'Gy103-2.jpg', '10.59', '47.44', '137.32', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(77, 'Gy105-4', 'WG', 'Gy105-4.jpg', '9.23', '39.67', '114.51', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(78, 'Ne013-2', 'WG', 'Ne013-2.jpg', '9.79', '43.46', '125.39', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(79, 'Ne014-3', 'WG', 'Ne014-3.jpg', '10.02', '43.62', '126.37', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(80, 'Ne021-3', 'WG', 'Ne021-3.jpg', '9.24', '39.69', '113.56', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(81, 'Ne033-2', 'WG', 'Ne033-2.jpg', '9.87', '42.83', '122.98', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(82, 'Ne051-3', 'WG', 'Ne051-3.jpg', '9.47', '40.85', '117.05', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(83, 'Ne053-2', 'WG', 'Ne053-2.jpg', '10.06', '44.79', '129.38', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(84, 'Ne072-1', 'WG', 'Ne072-1.jpg', '9.64', '41.7', '119.59', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(85, 'Ne076-1', 'WG', 'Ne076-1.jpg', '10.48', '46.88', '135.64', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(86, 'Ne081-2', 'WG', 'Ne081-2.jpg', '9.21', '39.57', '113.22', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(87, 'Ne082-1', 'WG', 'Ne082-1.jpg', '9.72', '42.08', '120.74', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(88, 'Ne091-2', 'WG', 'Ne091-2.jpg', '9.12', '39.09', '111.78', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(89, 'Ne093-2', 'WG', 'Ne093-2.jpg', '9.97', '44.36', '128.08', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(90, 'Ne102-1', 'WG', 'Ne102-1.jpg', '9.65', '41.75', '119.76', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(91, 'Ne104-3', 'WG', 'Ne104-3.jpg', '10.6', '46.51', '135.03', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(92, 'Ne116-1', 'WG', 'Ne116-1.jpg', '10.1', '44.99', '129.98', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(93, 'Ne121-2', 'WG', 'Ne121-2.jpg', '9.19', '39.43', '112.8', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(94, 'Ne123-2', 'WG', 'Ne123-2.jpg', '10.75', '48.26', '139.77', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(95, 'Ne132-1', 'WG', 'Ne132-1.jpg', '10.64', '46.72', '134.67', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(96, 'Ne133-2', 'WG', 'Ne133-2.jpg', '11.81', '53.54', '155.62', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(97, 'Ne135-4', 'WG', 'Ne135-4.jpg', '10.27', '45.84', '132.52', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(98, 'Ne142-2', 'WG', 'Ne142-2.jpg', '10.32', '45.11', '129.84', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(99, 'Ne143-2', 'WG', 'Ne143-2.jpg', '10.96', '49.29', '142.86', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(100, 'Ne151-2', 'WG', 'Ne151-2.jpg', '9.2', '39.49', '112.97', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(101, 'Ne153-2', 'WG', 'Ne153-2.jpg', '10.52', '47.12', '136.37', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(102, 'Ne164-3', 'WG', 'Ne164-3.jpg', '10.06', '44.79', '129.37', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(103, 'Ne165-4', 'WG', 'Ne165-4.jpg', '9.47', '40.84', '118.03', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(104, 'Ne172-1', 'WG', 'Ne172-1.jpg', '10.33', '45.13', '129.89', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(105, 'Ne174-3', 'WG', 'Ne174-3.jpg', '10.62', '46.62', '135.35', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(106, 'Ne175-4', 'WG', 'Ne175-4.jpg', '10.03', '43.67', '126.5', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(107, 'Ne181-2', 'WG', 'Ne181-2.jpg', '9.32', '40.08', '114.74', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(108, 'Ne184-3', 'WG', 'Ne184-3.jpg', '10.35', '46.26', '133.79', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(109, 'Ne186-1', 'WG', 'Ne186-1.jpg', '10.05', '44.75', '129.24', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(110, 'Ne191-3', 'WG', 'Ne191-3.jpg', '9.91', '43.07', '123.72', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(111, 'Ne193-2', 'WG', 'Ne193-2.jpg', '9.53', '42.14', '121.42', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(112, 'Ne195-4', 'WG', 'Ne195-4.jpg', '9.77', '42.33', '122.48', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(113, 'Or011-2', 'WG', 'Or011-2.jpg', '9.32', '40.11', '114.83', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(114, 'Or014-3', 'WG', 'Or014-3.jpg', '14.11', '65.05', '190.14', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(115, 'Or032-1', 'WG', 'Or032-1.jpg', '10.27', '44.84', '129.03', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(116, 'Or035-4', 'WG', 'Or035-4.jpg', '15.84', '73.68', '216.04', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(117, 'Or044-3', 'WG', 'Or044-3.jpg', '10.2', '44.52', '129.07', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(118, 'Or055-4', 'WG', 'Or055-4.jpg', '15.05', '69.73', '204.2', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(119, 'Or063-2', 'WG', 'Or063-2.jpg', '12.2', '55.48', '161.45', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(120, 'Or073-2', 'WG', 'Or073-2.jpg', '11.53', '52.16', '151.49', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(121, 'Or082-1', 'WG', 'Or082-1.jpg', '10.45', '45.77', '131.82', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(122, 'Or091-2', 'WG', 'Or091-2.jpg', '9.31', '40.05', '114.64', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(123, 'Or102-1', 'WG', 'Or102-1.jpg', '11.04', '48.72', '140.67', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(124, 'Or111-2', 'WG', 'Or111-2.jpg', '9.13', '39.13', '111.89', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(125, 'Or112-1', 'WG', 'Or112-1.jpg', '11.32', '50.12', '144.86', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(126, 'Or151-2', 'WG', 'Or151-2.jpg', '9.17', '39.37', '112.62', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(127, 'Or163-2', 'WG', 'Or163-2.jpg', '9.98', '44.4', '128.19', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(128, 'OW005', 'WG', 'OW005.jpg', '9.16', '39.29', '112.36', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(129, 'OW021', 'WG', 'OW021.jpg', '9.1', '39', '111.51', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(130, 'OW027', 'WG', 'OW027.jpg', '9.09', '38.94', '111.33', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(131, 'OW040', 'WG', 'OW040.jpg', '9.19', '39.47', '112.92', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(132, 'OW045', 'WG', 'OW045.jpg', '9.08', '38.89', '111.16', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(133, 'OW053', 'WG', 'OW053.jpg', '9.11', '39.03', '111.59', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(134, 'Pu011-2', 'WG', 'Pu011-2.jpg', '9.29', '39.95', '114.34', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(135, 'Pu012-1', 'WG', 'Pu012-1.jpg', '11.03', '48.67', '140.51', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(136, 'Pu021-3', 'WG', 'Pu021-3.jpg', '9.88', '42.92', '123.26', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(137, 'Pu034-3', 'WG', 'Pu034-3.jpg', '11.36', '50.29', '146.36', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(138, 'Pu041-3', 'WG', 'Pu041-3.jpg', '9.88', '42.9', '123.21', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(139, 'Pu052-1', 'WG', 'Pu052-1.jpg', '10.81', '47.56', '137.19', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(140, 'Pu061-2', 'WG', 'Pu061-2.jpg', '9.31', '40.07', '114.72', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(141, 'Pu062-1', 'WG', 'Pu062-1.jpg', '10.52', '46.08', '132.73', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(142, 'Pu072-1', 'WG', 'Pu072-1.jpg', '10.67', '46.87', '135.12', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(143, 'Pu073-2', 'WG', 'Pu073-2.jpg', '8.5', '37', '#N/A', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(144, 'Pu076-1', 'WG', 'Pu076-1.jpg', '12.84', '58.69', '171.06', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(145, 'Pu081-3', 'WG', 'Pu081-3.jpg', '9.74', '42.18', '121.05', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(146, 'Pu091-3', 'WG', 'Pu091-3.jpg', '9.77', '42.36', '121.57', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(147, 'Pu092-1', 'WG', 'Pu092-1.jpg', '10.44', '45.7', '131.59', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(148, 'Pu093-2', 'WG', 'Pu093-2.jpg', '11.09', '49.96', '144.88', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(149, 'Pu104-3', 'WG', 'Pu104-3.jpg', '9.76', '42.3', '122.4', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(150, 'Pu106-1', 'WG', 'Pu106-1.jpg', '10.82', '48.59', '140.76', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(151, 'Re012-1', 'WG', 'Re012-1.jpg', '11.38', '50.42', '145.77', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(152, 'Re021-2', 'WG', 'Re021-2.jpg', '9.2', '39.51', '113.04', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(153, 'Re022-1', 'WG', 'Re022-1.jpg', '11.62', '51.61', '149.32', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(154, 'Re031-3', 'WG', 'Re031-3.jpg', '9.92', '43.09', '123.78', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(155, 'Re052-1', 'WG', 'Re052-1.jpg', '11.54', '51.18', '148.05', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(156, 'Re071-3', 'WG', 'Re071-3.jpg', '10.27', '44.84', '129.02', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(157, 'Re076-1', 'WG', 'Re076-1.jpg', '20.31', '96.07', '283.22', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(158, 'Re096-1', 'WG', 'Re096-1.jpg', '20.01', '94.55', '278.66', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(159, 'Re112-1', 'WG', 'Re112-1.jpg', '11.31', '50.07', '144.72', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(160, 'Re121-2', 'WG', 'Re121-2.jpg', '9.74', '42.18', '121.05', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(161, 'Re123-2', 'WG', 'Re123-2.jpg', '12.75', '58.24', '169.72', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(162, 'Re126-1', 'WG', 'Re126-1.jpg', '16.53', '77.15', '226.46', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(163, 'Re141-2', 'WG', 'Re141-2.jpg', '9.07', '38.87', '111.11', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(164, 'Re161-3', 'WG', 'Re161-3.jpg', '10.05', '43.74', '125.72', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(165, 'Re172-1', 'WG', 'Re172-1.jpg', '10.87', '47.85', '138.06', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(166, 'Re176-1', 'WG', 'Re176-1.jpg', '15.2', '70.51', '206.53', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(167, 'Re182-1', 'WG', 'Re182-1.jpg', '9.97', '43.36', '124.57', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(168, 'Re185-4', 'WG', 'Re185-4.jpg', '11.91', '54.04', '157.12', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(169, 'Re194-3', 'WG', 'Re194-3.jpg', '10.35', '46.26', '133.77', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(170, 'Re244-3', 'WG', 'Re244-3.jpg', '10.37', '45.35', '131.55', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(171, 'Re262-1', 'WG', 'Re262-1.jpg', '10.07', '43.87', '126.1', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(172, 'Re266-1', 'WG', 'Re266-1.jpg', '10.28', '45.9', '132.69', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(173, 'Re273-2', 'WG', 'Re273-2.jpg', '10.69', '47.97', '138.9', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(174, 'Ye012-1', 'WG', 'Ye012-1.jpg', '9.95', '44.27', '127.8', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(175, 'Ye022-1', 'WG', 'Ye022-1.jpg', '10.81', '48.55', '140.66', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(176, 'Ye035-4', 'WG', 'Ye035-4.jpg', '17.88', '83.88', '246.64', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(177, 'Ye054-3', 'WG', 'Ye054-3.jpg', '12.08', '53.89', '157.18', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(178, 'Ye055-4', 'WG', 'Ye055-4.jpg', '16.33', '76.13', '223.38', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(179, 'Ye072-1', 'WG', 'Ye072-1.jpg', '10.9', '48', '138.5', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(180, 'Ye073-2', 'WG', 'Ye073-2.jpg', '12.99', '59.46', '173.39', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(181, 'Ye074-3', 'WG', 'Ye074-3.jpg', '12.57', '56.37', '164.61', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(182, 'Ye101-2', 'WG', 'Ye101-2.jpg', '9.41', '40.56', '116.19', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(183, 'Ye131-3', 'WG', 'Ye131-3.jpg', '9.28', '39.88', '114.14', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(184, 'Ye142-1', 'WG', 'Ye142-1.jpg', '10.31', '45.07', '129.7', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(185, 'Ye151-2', 'WG', 'Ye151-2.jpg', '9.19', '39.43', '112.8', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(186, 'Ye152-1', 'WG', 'Ye152-1.jpg', '9.77', '43.37', '125.1', '2023-12-17 10:59:09', '2023-12-17 10:59:09'),
+(187, 'Ye154-3', 'WG', 'Ye154-3.jpg', '11.06', '49.82', '144.45', '2023-12-17 10:59:09', '2023-12-17 10:59:09');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dealer`
+--
+
+CREATE TABLE `dealer` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `dealer_name` varchar(255) NOT NULL,
+  `dealer_location` varchar(255) DEFAULT NULL,
+  `dealer_phone` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `event`
+--
+
+CREATE TABLE `event` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `event_title` varchar(255) NOT NULL,
+  `event_image` varchar(255) DEFAULT NULL,
+  `event_date` varchar(255) NOT NULL,
+  `event_detail` varchar(255) DEFAULT NULL,
+  `event_important` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `failed_jobs`
+--
+
+CREATE TABLE `failed_jobs` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `uuid` varchar(255) NOT NULL,
+  `connection` text NOT NULL,
+  `queue` text NOT NULL,
+  `payload` longtext NOT NULL,
+  `exception` longtext NOT NULL,
+  `failed_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `media`
+--
+
+CREATE TABLE `media` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `media_title` varchar(255) NOT NULL,
+  `media_image` varchar(255) DEFAULT NULL,
+  `media_date` varchar(255) NOT NULL,
+  `media_detail` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `migrations`
+--
+
+CREATE TABLE `migrations` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `migration` varchar(255) NOT NULL,
+  `batch` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `migrations`
+--
+
+INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
+(1, '2014_10_12_000000_create_users_table', 1),
+(2, '2014_10_12_100000_create_password_reset_tokens_table', 1),
+(3, '2014_10_12_100000_create_password_resets_table', 1),
+(4, '2019_08_19_000000_create_failed_jobs_table', 1),
+(5, '2019_12_14_000001_create_personal_access_tokens_table', 1),
+(6, '2023_10_23_112244_categories_migration', 1),
+(7, '2023_10_24_140338_product_migration', 1),
+(8, '2023_10_24_161812_news_migration', 1),
+(9, '2023_10_24_161822_event_migration', 1),
+(10, '2023_10_24_161833_career_migration', 1),
+(11, '2023_10_24_161842_media_migration', 1),
+(12, '2023_11_06_152312_projectreference', 1),
+(13, '2023_11_07_161317_dealer', 1),
+(14, '2023_11_27_220046_colorpalette', 1),
+(15, '2023_12_04_141516_last_seen', 1),
+(16, '2023_12_11_114652_product_pricing_migration', 1),
+(17, '2023_12_15_043033_colorpricing_matex', 2),
+(18, '2023_12_15_043052_colorpricing_weatherbond', 2),
+(19, '2023_12_15_043102_colorpricing_weathergard', 2),
+(20, '2023_12_15_043120_colorpricing_matexpremium', 2),
+(21, '2023_12_15_043133_colorpricing_supereasywash', 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `news`
+--
+
+CREATE TABLE `news` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `news_title` varchar(255) NOT NULL,
+  `news_image` varchar(255) DEFAULT NULL,
+  `news_date` varchar(255) NOT NULL,
+  `news_detail` varchar(255) DEFAULT NULL,
+  `news_important` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `news`
+--
+
+INSERT INTO `news` (`id`, `news_title`, `news_image`, `news_date`, `news_detail`, `news_important`, `created_at`, `updated_at`) VALUES
+(1, 'សូមចូលរួមអបអរសាទរបងប្រុសដែលជាសមាជិក​ ', '202311110918nippon.jpg', '19 Jan 2023', 'សូមចូលរួមអបអរសាទរបងប្រុសដែលជាសមាជិក​ JCM Applicator បានឈ្នះរង្វាន់រថយន្ត​ Pick Up ដោយការស្កេនពីធុងថ្នាំ Nippon ផ្ទាល់ហេីយទទួលបានឱកាសចាប់ឆ្នោតសំណាងជាមួយក្រុមហ៊ុនកាលពីថ្ងៃទី​ 31-12-21។   រង្វាន់ជាច្រេីនសន្ធឹកសន្ធាប់កំពុងរង់ចាំលោកអ្នកក្នុងឆ្នាំថ្មីនេះ! កុំភ្', 'yes', '2023-11-09 21:39:14', '2023-11-10 19:18:30'),
+(2, 'ទីបំផុតក្រុមហ៊ុនថ្នាំលាបនីពផនបានស្វែងរកម្ចាស់រង្វាន់ធំឃើញហើយ', '202311110919news2.jpg', '05 Jan 2023', 'សូមចូលរួមអបអរសាទរភ្នាក់ងារចែកចាយថ្នាំលាបនីពផន លាង ហួត ខេត្តព្រះសីហនុ និង ក្រុមជាងសមាជិក JCM លោក អ៊ូង ធូ ខេត្តកំពត។  សូមអរគុណសំរាប់ការគាំទ្រថ្នាំលាបនីពផនជារៀងរហូតមក។', 'yes', '2023-11-10 19:19:48', '2023-11-10 19:20:12'),
+(3, 'JCMNIPPON មានការចាប់រង្វាន់ធំនៅថ្ងៃ 31 ធ្នូ 2021', '202311110923news3.jpg', '11 Nov 2023', 'សន្លឹកឆ្នោតដែលមានសុពលភាពសំរាប់ឈ្នះរង្វាន់សល់មិនច្រើនទេបងប្អូន រួសរាន់ជាវដើម្បីទទួលបានឱកាសចាប់ឆ្នោតចុងឆ្នាំនេះ!  រង្វាន់ឡាន Pick Up ចំនួនពីរគ្រឿង ម៉ូតូ ទូក្លាសេ កង្ហារ ឆ្នាំងដាំបាយអគ្គិសនី រួមនឹងរង្វាន់ជាច្រើនផ្សេងៗទៀត សរុបជាង 600 លានរៀលកំពុងរង់ចាំលោកអ្នក។', 'yes', '2023-11-10 19:23:55', '2023-11-10 19:23:55'),
+(4, 'តើលោកអ្នកបានដឹងពីដំណឹងដំណើរកំសាន្តទៅក្រៅប្រទេសរបស់បងៗមេជាងរឺទេ?', '202311141757photo_2023-11-13_15-23-57.jpg', '14 Nov 2023', 'ចំណុចពិសេសនោះគឺថាបានក្លាយជាសមាជិក របស់ថ្នាំលាបនីពផន ហើយរឺនៅហ្នឹង? ព្រោះគេអោយតែសមាជិកទេណា។ ចុះឈ្មោះក្លាយជាសមាជិកដោយឥតគិតថ្លៃឥលូវនេះ ហើយទទួលបាននូវអត្ថប្រយោជន៌ជាច្រើនដូចជា៖ ១. ទឹកប្រាក់ត្រឡប់មកវិញរាល់ការទិញថ្នាំលាបនីពផន ២. ទទួលបានឱកាសចាប់ឆ្នោតដើម្បីឈ្នះរង្វា', 'no', '2023-11-14 03:57:32', '2023-11-14 03:57:32');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `password_resets`
+--
+
+CREATE TABLE `password_resets` (
+  `email` varchar(255) NOT NULL,
+  `token` varchar(255) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `password_reset_tokens`
+--
+
+CREATE TABLE `password_reset_tokens` (
+  `email` varchar(255) NOT NULL,
+  `token` varchar(255) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `personal_access_tokens`
+--
+
+CREATE TABLE `personal_access_tokens` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `tokenable_type` varchar(255) NOT NULL,
+  `tokenable_id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `token` varchar(64) NOT NULL,
+  `abilities` text DEFAULT NULL,
+  `last_used_at` timestamp NULL DEFAULT NULL,
+  `expires_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `product`
+--
+
+CREATE TABLE `product` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `product_name` varchar(255) NOT NULL,
+  `product_date` varchar(255) NOT NULL,
+  `product_category` varchar(255) NOT NULL,
+  `product_detail` varchar(255) DEFAULT NULL,
+  `product_image` varchar(255) NOT NULL,
+  `product_tag` varchar(255) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`id`, `product_name`, `product_date`, `product_category`, `product_detail`, `product_image`, `product_tag`, `created_at`, `updated_at`) VALUES
+(6, 'Solid Gold Paint\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Home Paint', NULL, '202310261604npd1.png', 'home-paint', '2023-10-26 02:04:54', '2023-10-26 02:04:54'),
+(7, 'Watex\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Home Paint', NULL, '202310261605npd2.png', 'home-paint', '2023-10-26 02:05:23', '2023-10-26 02:05:23'),
+(8, 'Matex\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Home Paint', NULL, '202310261605npd3.png', 'home-paint', '2023-10-26 02:05:35', '2023-10-26 02:05:35'),
+(9, 'Odour Less Super Easy Wash\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Home Paint', NULL, '202310261606npd4.png', 'home-paint', '2023-10-26 02:06:25', '2023-10-26 02:06:25'),
+(10, 'Odour Less\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Home Paint', NULL, '202310261606npd5.png', 'home-paint', '2023-10-26 02:06:59', '2023-10-26 02:06:59'),
+(11, 'SolaReflect\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Home Paint', NULL, '202310261607npd7.png', 'home-paint', '2023-10-26 02:07:50', '2023-10-26 02:07:50'),
+(12, 'Matex Premium\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Home Paint', NULL, '202310261608npd8.png', 'home-paint', '2023-10-26 02:08:02', '2023-10-26 02:08:02'),
+(13, 'WeatherBond\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Home Paint', NULL, '202310261608npd9.png', 'home-paint', '2023-10-26 02:08:28', '2023-10-26 02:54:48'),
+(14, 'WeatherGard\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Home Paint', NULL, '202310261608npd10.png', 'home-paint', '2023-10-26 02:08:47', '2023-10-26 02:54:39'),
+(15, 'StoCrete Thinplast Finish White\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'WaterProofing', NULL, '202310261701npd11.png', 'waterproofing', '2023-10-26 03:01:10', '2023-10-26 03:01:10'),
+(16, 'StoPox EPA-P\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'WaterProofing', NULL, '202310261701npd12.png', 'waterproofing', '2023-10-26 03:01:36', '2023-10-26 03:01:36'),
+(17, 'StoPx WL100\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'WaterProofing', NULL, '202310261701npd13.png', 'waterproofing', '2023-10-26 03:01:54', '2023-10-26 03:01:54'),
+(18, 'Sto Jet IHL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'WaterProofing', NULL, '202310261702npd14.png', 'waterproofing', '2023-10-26 03:02:24', '2023-10-26 03:02:24'),
+(19, 'StoCrete NSG\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'WaterProofing', NULL, '202310261702npd16.png', 'waterproofing', '2023-10-26 03:02:58', '2023-10-26 03:02:58'),
+(20, 'Sto Bit Seal 99\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'WaterProofing', NULL, '202310261704npd17.png', 'waterproofing', '2023-10-26 03:04:11', '2023-10-26 03:04:11'),
+(21, 'StoCrete Plug\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'WaterProofing', NULL, '202310261704npd18.png', 'waterproofing', '2023-10-26 03:04:41', '2023-10-26 03:04:41'),
+(22, 'StoCrete SBR HD\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'WaterProofing', NULL, '202310261704npd19.png', 'waterproofing', '2023-10-26 03:04:57', '2023-10-26 03:04:57'),
+(23, 'StoCrete 4222\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'WaterProofing', NULL, '202310261705npd20.png', 'waterproofing', '2023-10-26 03:05:11', '2023-10-26 03:06:20'),
+(24, 'StoCrete CCW Elastic\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'WaterProofing', NULL, '202310261705npd21.png', 'waterproofing', '2023-10-26 03:05:49', '2023-10-26 03:05:49'),
+(25, 'StoCry I Elastocoat II\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'WaterProofing', NULL, '202310261706npd22.png', 'waterproofing', '2023-10-26 03:06:09', '2023-10-26 03:06:09'),
+(26, 'Newspapers\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Painting Tools', NULL, '202310261707t1.png', 'painting-tools', '2023-10-26 03:07:13', '2023-10-26 03:07:13'),
+(27, 'Cleaning Rags\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Painting Tools', NULL, '202310261707t3.png', 'painting-tools', '2023-10-26 03:07:23', '2023-10-26 03:07:23'),
+(28, 'Container\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Painting Tools', NULL, '202310261707t7.png', 'painting-tools', '2023-10-26 03:07:33', '2023-10-26 03:07:33'),
+(29, 'Glove\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Painting Tools', NULL, '202310261707t5.png', 'painting-tools', '2023-10-26 03:07:41', '2023-10-26 03:08:23'),
+(30, 'Roller Tray\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Painting Tools', NULL, '202310261707t8.png', 'painting-tools', '2023-10-26 03:07:49', '2023-10-26 03:08:30'),
+(31, 'Sandpaper / Sanding Block\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Painting Tools', NULL, '202310261710t10.png', 'painting-tools', '2023-10-26 03:10:18', '2023-10-26 03:10:18'),
+(32, 'Scrapper\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Painting Tools', NULL, '202310261710t2.png', 'painting-tools', '2023-10-26 03:10:26', '2023-10-26 03:10:26'),
+(33, 'Rollers\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Painting Tools', NULL, '202310261710t4.png', 'painting-tools', '2023-10-26 03:10:33', '2023-10-26 03:10:33'),
+(34, 'Brushes\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Painting Tools', NULL, '202310261710t6.png', 'painting-tools', '2023-10-26 03:10:41', '2023-10-26 03:11:10'),
+(35, 'Masking Tape\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Painting Tools', NULL, '202310261710t9.png', 'painting-tools', '2023-10-26 03:10:47', '2023-10-26 03:10:47'),
+(36, 'Selleys RTV Red\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Protective Paint & Industry', NULL, '202310261717ind12.png', 'protective-paint-industry', '2023-10-26 03:17:56', '2023-10-26 03:17:56'),
+(37, 'Selleys RTV Gray\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Protective Paint & Industry', NULL, '202310261718ind6.png', 'protective-paint-industry', '2023-10-26 03:18:25', '2023-10-26 03:18:25'),
+(38, 'Selleys No More Gaps\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Protective Paint & Industry', NULL, '202310261719ind8.png', 'protective-paint-industry', '2023-10-26 03:19:43', '2023-10-26 03:19:43'),
+(39, 'Selleys Blockade\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Protective Paint & Industry', NULL, '202310261720ind3.png', 'protective-paint-industry', '2023-10-26 03:20:14', '2023-10-26 03:20:14'),
+(40, 'PU Recoatable\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Protective Paint & Industry', NULL, '202310261720ind4.png', 'protective-paint-industry', '2023-10-26 03:20:40', '2023-10-26 03:20:40'),
+(41, 'EA9 Finish\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Protective Paint & Industry', NULL, '202310261720ind2.png', 'protective-paint-industry', '2023-10-26 03:20:49', '2023-10-26 03:20:49'),
+(42, 'EA4 Finish\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Protective Paint & Industry', NULL, '202310261721ind5.png', 'protective-paint-industry', '2023-10-26 03:21:02', '2023-10-26 03:21:02'),
+(43, 'Road Line\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '26.10.2023', 'Home Paint', NULL, '202310261721ind9.png', 'home-paint', '2023-10-26 03:21:23', '2023-10-26 03:21:23');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `product_pricing`
+--
+
+CREATE TABLE `product_pricing` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `product_pricing_name` varchar(255) NOT NULL,
+  `product_pricing_price` varchar(255) NOT NULL,
+  `product_pricing_category` varchar(255) NOT NULL,
+  `product_pricing_quantity` varchar(255) NOT NULL,
+  `product_pricing_batch` varchar(255) NOT NULL,
+  `product_pricing_image` varchar(255) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `product_pricing`
+--
+
+INSERT INTO `product_pricing` (`id`, `product_pricing_name`, `product_pricing_price`, `product_pricing_category`, `product_pricing_quantity`, `product_pricing_batch`, `product_pricing_image`, `created_at`, `updated_at`) VALUES
+(1, 'Bl014-3', '160.46', 'WB', '18L', 'Bl014-3', 'Bl014-3.jpg', '2023-11-27 08:29:30', '2023-11-27 08:29:30');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `project_reference`
+--
+
+CREATE TABLE `project_reference` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `project_reference_name` varchar(255) NOT NULL,
+  `project_reference_startDate` varchar(255) DEFAULT NULL,
+  `project_reference_endDate` varchar(255) DEFAULT NULL,
+  `project_reference_area` varchar(255) DEFAULT NULL,
+  `project_reference_exterior` varchar(255) DEFAULT NULL,
+  `project_reference_interior` varchar(255) DEFAULT NULL,
+  `project_reference_image1` varchar(255) DEFAULT NULL,
+  `project_reference_image2` varchar(255) DEFAULT NULL,
+  `project_reference_image3` varchar(255) DEFAULT NULL,
+  `project_reference_image4` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `project_reference`
+--
+
+INSERT INTO `project_reference` (`id`, `project_reference_name`, `project_reference_startDate`, `project_reference_endDate`, `project_reference_area`, `project_reference_exterior`, `project_reference_interior`, `project_reference_image1`, `project_reference_image2`, `project_reference_image3`, `project_reference_image4`, `created_at`, `updated_at`) VALUES
+(2, 'Aeon Mall', '01.04.2014', '03.07.2017', 'ជិតមាត់ទន្លេ', 'WB 145, WB 590, WB 134, WB 569', 'MA 569, 2005-Y30A, 73A-1A', '202311061609aeon.jpg', '202311061609aeon1.jpg', '202311061609aeon2.jpg', NULL, '2023-11-06 02:09:08', '2023-11-06 02:09:08'),
+(3, 'La Seine', NULL, NULL, 'នៅក្នុងកោះពេជ្រ', 'WB 145, WB 27B-1P, WB 363 WB 569', NULL, '202311061643laseine.jpg', '202311061643laseine1.jpg', '202311061643laseine2.jpg', NULL, '2023-11-06 02:43:26', '2023-11-06 02:43:26'),
+(4, 'Central Market', '19.04.2010', '20.10.2010', 'ភ្នំពេញ', 'WB 2034, WB 28C-3T, WB 145 WB 73C-1P', 'WB 145', '202311061644cm.jpg', '202311061644cm1.jpg', '202311061644cm2.jpg', NULL, '2023-11-06 02:44:17', '2023-11-06 02:44:17'),
+(5, 'Independent Monument', '07.07.2011', '25.06.2012', 'វិមានឯករាជ្យ', NULL, 'WB 145', '202311061646im.jpg', '202311061646im1.jpg', '202311061646im2.jpg', NULL, '2023-11-06 02:46:01', '2023-11-06 02:46:01'),
+(6, 'Orkede Villa', '21.02.2015', '24.06.2017', 'សែនសុខ', 'WG NPY 01168I, NPOW 1001P NPN 2046P, NPN 1919D', 'Matex 9102', '202311061646orkide10001.jpg', '202311061646orkide10002.jpg', '202311061646orkide10003.jpg', NULL, '2023-11-06 02:46:55', '2023-11-06 02:46:55'),
+(7, 'Chip Mong Land', '03.08.2015', '09.05.2017', 'សែនសុខ', 'WG S3501. WGG 3501. WG N2003D', 'MA 9102', '202311061647cml10001.jpg', '202311061647cml10002.jpg', '202311061647cml10003.jpg', NULL, '2023-11-06 02:47:41', '2023-11-06 02:47:41'),
+(8, 'Bodaiju', '09.09.2016', '15.01.2018', 'ពោចិនតុង', 'WB 145, WB 13A-2P, WB 39-2T WB 13C-3D', 'MA 9102, WG 13A-3P', '202311061648bodaiju10001.jpg', '202311061648bodaiju10002.jpg', '202311061648bodaiju10003.jpg', NULL, '2023-11-06 02:48:17', '2023-11-06 02:48:17'),
+(9, 'CASA ( Maradian )', '16.07.2016', '24.06.2017', 'កោះពេជ្រ', 'WB 13C-2T. WB 13C-4D. WB 145', 'WB 145', '202311061649casa10001.jpg', '202311061649casa10002.jpg', '202311061649casa10003.jpg', NULL, '2023-11-06 02:49:11', '2023-11-06 02:49:11'),
+(10, 'Maline', '02.08.2013', '20.01.2015', 'ដូនពេញ', 'NPP1064, WB 416, WB 145', 'MA 9102, MA 560, PL20102', '202311061649maline10001.jpg', '202311061649maline10002.jpg', '202311061649maline10003.jpg', NULL, '2023-11-06 02:49:46', '2023-11-06 02:49:46'),
+(11, 'Mekong Royal', '28.01.2016', '08.02.2017', 'ផ្លូវជាតិលេខ6', 'WG 47A-2P. WG 24A-2P. WG 39C-2T', 'MA NPP 776', '202311061652mekong10001.jpg', '202311061652mekong10002.jpg', '202311061652mekong10003.jpg', NULL, '2023-11-06 02:52:17', '2023-11-06 02:52:17'),
+(12, 'Nan Jin Resturant', '20.04.2015', '14.07.2016', 'ជិតផ្សារថ្មី', 'NPP 12127, WB 145, SRC 13B-1P', NULL, '202311061652nanjing10001.jpg', '202311061652nanjing10002.jpg', '202311061652nanjing10003.jpg', NULL, '2023-11-06 02:52:51', '2023-11-06 02:52:51'),
+(13, 'Millennium', '23.07.2012', '03.07.2017', 'បឹងកេងកង', 'WB NPP 927. NPP 926. MA 353', 'MA 1112. WB 416. WB 589. MA 703', '202311061654Millennium10001.jpg', '202311061654Millennium10002.jpg', '202311061654Millennium10003.jpg', NULL, '2023-11-06 02:54:38', '2023-11-06 02:54:38'),
+(14, 'Phnom Penh Land Tower', '04.05.2015', '14.07.2016', 'Phnom Penh', 'WG NPP 12101, WB 145', 'Matex 0658, Matex NPN 12101', '202311061706Phnom_Penh_Land_Tower10001.jpg', '202311061706Phnom_Penh_Land_Tower10002.jpg', '202311061706Phnom_Penh_Land_Tower10003.jpg', NULL, '2023-11-06 03:06:53', '2023-11-06 03:06:53'),
+(15, 'Kim Mengsrun', NULL, NULL, NULL, 'WB 145. WB 816', 'WB 145', '202311061707Kim_Mengsrun10001.jpg', '202311061707Kim_Mengsrun10002.jpg', '202311061707Kim_Mengsrun10003.jpg', NULL, '2023-11-06 03:07:22', '2023-11-06 03:07:22'),
+(16, 'សំណាង សីម៉ា', NULL, NULL, NULL, 'WB 145, WB 1139', 'WB 145', '202311061707សំណាង_សីម៉ា10001.jpg', '202311061707សំណាង_សីម៉ា10002.jpg', '202311061707សំណាង_សីម៉ា10003.jpg', NULL, '2023-11-06 03:07:46', '2023-11-06 03:07:46'),
+(17, 'Aquarius Hotel', NULL, NULL, 'នៅជិតវិមានឯករាជ្យ', 'WB 1510, WB 569', 'WB 145, WB 1112, WB 416', '202311061708Aquarius_Hotel10001.jpg', '202311061708Aquarius_Hotel10002.jpg', '202311061708Aquarius_Hotel10003.jpg', NULL, '2023-11-06 03:08:17', '2023-11-06 03:08:17'),
+(19, 'ISL. Modern Apartment & Hotel', '09.05.2011', '11.05.2011', NULL, 'WB 39A-2P, WB 39C-1P, Roadline', 'Yellow, White', '202311061709ISL._Modern_Apartment_Hotel10001.jpg', '202311061709ISL._Modern_Apartment_Hotel10002.jpg', '202311061709ISL._Modern_Apartment_Hotel10003.jpg', NULL, '2023-11-06 03:09:28', '2023-11-06 03:09:28'),
+(20, 'Pacific Phnom Penh Hospital', '23.07.2012', '22.01.2013', 'ស្ពានអាកាស 7មករា', 'WB 78A-1A, NPP 325, NPP 328', 'MA 561, MA 9102, MA 587, MA 070', '202311061710Pacific_Phnom_Penh_Hospital10001.jpg', '202311061710Pacific_Phnom_Penh_Hospital10002.jpg', '202311061710Pacific_Phnom_Penh_Hospital10003.jpg', NULL, '2023-11-06 03:10:28', '2023-11-06 03:10:28'),
+(21, 'Phnom Penh Institute Nursing & Paramedical Sciences', '23.07.2012', '22.01.2013', 'ទួលគោក', 'WB 76C-3D, WB 602, INDEPENDENT', 'MA 9102, MA 456, MA 587', '202311061711Phnom_Penh_Institute_Nursing_Paramedical_Sciences10001.jpg', '202311061711Phnom_Penh_Institute_Nursing_Paramedical_Sciences10002.jpg', '202311061711Phnom_Penh_Institute_Nursing_Paramedical_Sciences10003.jpg', NULL, '2023-11-06 03:11:22', '2023-11-06 03:11:22'),
+(22, 'Apartment HM', '06.07.2015', '01.12.2016', 'ទួលគោក', 'WB 916, WGG 6673, WB 913, WB 145', 'MA 3145, MA 590, MA 9102', '202311061712Apartment_HM10001.jpg', '202311061712Apartment_HM10002.jpg', '202311061712Apartment_HM10003.jpg', NULL, '2023-11-06 03:12:10', '2023-11-06 03:12:10'),
+(24, 'The Diamond Home', NULL, NULL, NULL, 'WB 709, WG 66609, WB 145', 'WB 145', '202311061713The_Diamond_Home10001.jpg', '202311061713The_Diamond_Home10002.jpg', '202311061713The_Diamond_Home10003.jpg', NULL, '2023-11-06 03:13:11', '2023-11-06 03:13:11'),
+(25, 'CA And SA', '20.10.2015', '23.04.2016', 'កោះពេជ្រ', 'WB 3145. WB 569. WB 416', 'WB 145', '202311061713CA_And_SA10001.jpg', '202311061713CA_And_SA10002.jpg', '202311061713CA_And_SA10003.jpg', NULL, '2023-11-06 03:13:50', '2023-11-06 03:13:50'),
+(26, 'Ly Hout Condo', '19.11.2014', '28.03.2016', 'ខណ្ឌ័ 7 មករា', 'WB 416, WB 145, WB 307, WG 66626', 'MA 584, MA 560, MA 1199, MA 9102', '202311061729Ly_Hout_Condo10001.jpg', '202311061729Ly_Hout_Condo10002.jpg', '202311061729Ly_Hout_Condo10003.jpg', NULL, '2023-11-06 03:29:15', '2023-11-06 03:29:15'),
+(27, 'Silvertown', NULL, NULL, 'Close to Boeng Keng Kang Market', 'WB 145, WB 1510', 'WB 145, WB 1112', '202311061730Silvertown10001.jpg', '202311061730Silvertown10002.jpg', '202311061730Silvertown10003.jpg', NULL, '2023-11-06 03:30:12', '2023-11-06 03:30:12'),
+(28, 'Koh Santepheap Daily', '29.10.2013', '05.08.2015', 'Phsar Derm Thkov', 'WB NPP 962, WB NPN 963, WB 145', NULL, '202311061730Koh_Santepheap_Daily10001.jpg', '202311061730Koh_Santepheap_Daily10002.jpg', '202311061730Koh_Santepheap_Daily10003.jpg', NULL, '2023-11-06 03:30:46', '2023-11-06 03:30:46'),
+(29, 'Prasac Microfinance', '10.05.2015', '12.01.2016', 'Phnom Penh', 'WB 45A-1A, WB 13A-3P', 'Matex 13A-3P', '202311061733Prasac_Microfinance10001.jpg', '202311061733Prasac_Microfinance10002.jpg', '202311061733Prasac_Microfinance10003.jpg', NULL, '2023-11-06 03:33:08', '2023-11-06 03:33:08'),
+(30, 'Camko City', '08.12.2009', '31.12.2013', 'Camko Roundabout', 'WB 39C-3D, WB 51B-3D, WB 33C-3D', 'MA 589, MA 9102', '202311061734Camko_City10001.jpg', '202311061734Camko_City10002.jpg', '202311061734Extraordinary_Chamber10003.jpg', NULL, '2023-11-06 03:34:03', '2023-11-06 03:34:03'),
+(31, 'Vanda Institute', '08.12.2009', '31.12.2015', 'St. Mao Zedong', 'WB 37YY61/867, WB 18A-1A', 'Watex 145', '202311061734Vanda_Institute_10001.jpg', '202311061734Vanda_Institute_10002.jpg', '202311061734Vanda_Institute_10003.jpg', NULL, '2023-11-06 03:34:38', '2023-11-06 03:34:38'),
+(32, 'Heng Asia', '28.12.2009', '31.12.2013', 'Close to Bokor Street', 'WB NPP 1131, WB NPP 1132 WB 416, WB 145', 'MA 9102, MA 78A-17A, WB 307', '202311061735Heng_Asia10001.jpg', '202311061735Heng_Asia10002.jpg', '202311061735Heng_Asia10003.jpg', NULL, '2023-11-06 03:35:13', '2023-11-06 03:35:13'),
+(33, 'Thunborey Hotel', NULL, NULL, NULL, 'WB 555, WB 17A-1A, WB 145', 'WB 145', '202311061735Thunborey_Hotel10001.jpg', '202311061735Thunborey_Hotel10002.jpg', '202311061735Thunborey_Hotel10003.jpg', NULL, '2023-11-06 03:35:45', '2023-11-06 03:35:45'),
+(34, 'Peari Of Asia', NULL, NULL, NULL, 'WB 145, WB 134, WB 825', 'WB 145', '202311061736Peari_Of_Asia10001.jpg', '202311061736Peari_Of_Asia10002.jpg', '202311061736Peari_Of_Asia10003.jpg', NULL, '2023-11-06 03:36:17', '2023-11-06 03:36:17'),
+(35, 'Asia Palace Hotel', '22.05.2012', '11.08.2012', 'Close to Central Market', 'WB 145, WB 134', 'Watex 416, Watex 040', '202311061736Asia_Palace_Hotel10001.jpg', '202311061736Asia_Palace_Hotel10002.jpg', '202311061736Asia_Palace_Hotel10003.jpg', NULL, '2023-11-06 03:36:44', '2023-11-06 03:36:44'),
+(36, 'OCIC', '07.05.2014', '04.12.2014', 'Canadia Street 6A', 'WG M 451, WG M 569, WG M 416', 'Matex NPP 0548', '202311061737OCIC10001.jpg', '202311061737OCIC10002.jpg', '202311061737OCIC10003.jpg', NULL, '2023-11-06 03:37:21', '2023-11-06 03:37:21'),
+(37, 'Rong Roeung Condo', '17.05.2014', '04.12.2014', 'Canadia Street 6A', 'WGG 2996P, WGG SEMI 6681 WB 145', 'Matex NPP 0589', '202311061738Rong_Roeung_Condo10001.jpg', '202311061738Rong_Roeung_Condo10002.jpg', '202311061738Rong_Roeung_Condo10003.jpg', NULL, '2023-11-06 03:38:06', '2023-11-06 03:38:06');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `duty` varchar(255) DEFAULT NULL,
+  `member` varchar(255) DEFAULT NULL,
+  `is_admin` tinyint(1) NOT NULL DEFAULT 0,
+  `email_verified_at` timestamp NULL DEFAULT NULL,
+  `password` varchar(255) NOT NULL,
+  `password_confirmation` varchar(255) NOT NULL,
+  `remember_token` varchar(100) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `last_seen` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `duty`, `member`, `is_admin`, `email_verified_at`, `password`, `password_confirmation`, `remember_token`, `created_at`, `updated_at`, `last_seen`) VALUES
+(1, 'admin', 'admin@admin', NULL, NULL, 1, NULL, '$2y$10$Z2QZ9TUV7eAKvLQoJf1zDembGJZwLmHDaSIB6y91H57MHbgeJPsQa', '', NULL, '2023-10-23 21:09:09', '2024-01-14 20:01:37', '2024-01-14 20:01:37'),
+(2, 'admin', 'user@user', 'sale', 'yes', 0, NULL, '$2y$10$zg5sSJwQDXMCVjUL5NmgjuHwawBILrm6ql4mXzfvKgAIy0gqw2sW2', '', NULL, '2023-10-25 02:01:24', '2024-01-15 03:33:47', '2024-01-15 03:33:47'),
+(62, 'Panha', 'tengpanha11@gmail.com', 'sale', 'yes', 0, NULL, '$2y$12$1E59M7dtlrK36pVliNMFreW663Jtgfejtn9CwJ.1JZ0tuTBPABCa2', 'admin', NULL, '2023-12-10 19:48:54', '2023-12-10 21:38:17', '2023-12-10 21:38:17'),
+(63, 'theking', 'ra.racky@yahoo.com', 'depo', 'yes', 0, NULL, '$2y$12$z8fwdkLDNVMw.2y2osvXyeVXunzRqk4o9qaP72NA3VE.V1GcuFRie', 'admin', NULL, '2023-12-10 20:15:35', '2023-12-10 20:38:20', '2023-12-10 20:38:20');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `career`
+--
+ALTER TABLE `career`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `categories`
+--
+ALTER TABLE `categories`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `colorpalette`
+--
+ALTER TABLE `colorpalette`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `colorprice_matex`
+--
+ALTER TABLE `colorprice_matex`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `colorprice_matexpremium`
+--
+ALTER TABLE `colorprice_matexpremium`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `colorprice_supereasywash`
+--
+ALTER TABLE `colorprice_supereasywash`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `colorprice_weatherbond`
+--
+ALTER TABLE `colorprice_weatherbond`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `colorprice_weathergard`
+--
+ALTER TABLE `colorprice_weathergard`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `dealer`
+--
+ALTER TABLE `dealer`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `event`
+--
+ALTER TABLE `event`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `failed_jobs`
+--
+ALTER TABLE `failed_jobs`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `failed_jobs_uuid_unique` (`uuid`);
+
+--
+-- Indexes for table `media`
+--
+ALTER TABLE `media`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `migrations`
+--
+ALTER TABLE `migrations`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `news`
+--
+ALTER TABLE `news`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `password_resets`
+--
+ALTER TABLE `password_resets`
+  ADD KEY `password_resets_email_index` (`email`);
+
+--
+-- Indexes for table `password_reset_tokens`
+--
+ALTER TABLE `password_reset_tokens`
+  ADD PRIMARY KEY (`email`);
+
+--
+-- Indexes for table `personal_access_tokens`
+--
+ALTER TABLE `personal_access_tokens`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `personal_access_tokens_token_unique` (`token`),
+  ADD KEY `personal_access_tokens_tokenable_type_tokenable_id_index` (`tokenable_type`,`tokenable_id`);
+
+--
+-- Indexes for table `product`
+--
+ALTER TABLE `product`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `product_pricing`
+--
+ALTER TABLE `product_pricing`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `project_reference`
+--
+ALTER TABLE `project_reference`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `users_email_unique` (`email`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `career`
+--
+ALTER TABLE `career`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `categories`
+--
+ALTER TABLE `categories`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `colorpalette`
+--
+ALTER TABLE `colorpalette`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=870;
+
+--
+-- AUTO_INCREMENT for table `colorprice_matex`
+--
+ALTER TABLE `colorprice_matex`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=163;
+
+--
+-- AUTO_INCREMENT for table `colorprice_matexpremium`
+--
+ALTER TABLE `colorprice_matexpremium`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=195;
+
+--
+-- AUTO_INCREMENT for table `colorprice_supereasywash`
+--
+ALTER TABLE `colorprice_supereasywash`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=396;
+
+--
+-- AUTO_INCREMENT for table `colorprice_weatherbond`
+--
+ALTER TABLE `colorprice_weatherbond`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2797;
+
+--
+-- AUTO_INCREMENT for table `colorprice_weathergard`
+--
+ALTER TABLE `colorprice_weathergard`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=188;
+
+--
+-- AUTO_INCREMENT for table `dealer`
+--
+ALTER TABLE `dealer`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `event`
+--
+ALTER TABLE `event`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `failed_jobs`
+--
+ALTER TABLE `failed_jobs`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `media`
+--
+ALTER TABLE `media`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `migrations`
+--
+ALTER TABLE `migrations`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+
+--
+-- AUTO_INCREMENT for table `news`
+--
+ALTER TABLE `news`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `personal_access_tokens`
+--
+ALTER TABLE `personal_access_tokens`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `product`
+--
+ALTER TABLE `product`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+
+--
+-- AUTO_INCREMENT for table `product_pricing`
+--
+ALTER TABLE `product_pricing`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `project_reference`
+--
+ALTER TABLE `project_reference`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
