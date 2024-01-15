@@ -335,7 +335,7 @@
         </table>
     </div>
 </div>
-{{-- <div id="lqd-tab-events-item-Green-Blue" role="tabpanel" class="lqd-tabs-pane fade">
+<div id="lqd-tab-events-item-Green-Blue" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
         <table id="colorid" class="color_pallete" style="width: auto;">
             <thead>
@@ -376,7 +376,7 @@
             </tbody>
         </table>
     </div>
-</div> --}}
+</div>
 <div id="lqd-tab-events-item-Off-White" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
         <table id="colorid" class="color_pallete" style="width: auto;">
@@ -387,7 +387,7 @@
             </thead>
             <tbody id="tbody10">
                 @foreach ($color as $item)
-                    <?php if ($item->colorpalette_category == "Offwhite") { ?>
+                    <?php if ($item->colorpalette_category == "OffWhite") { ?>
                         <tr>
                             <td>
                                 <div id="lqd-tab-events-item-All-Color" role="tabpanel" class="lqd-tabs-pane fade color-view" >
