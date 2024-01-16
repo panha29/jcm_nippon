@@ -22,6 +22,7 @@
 @endsection
 
 @section('content')
+@include('websiteV2.css')
 <div id="lqd-contents-wrap">
     <section class="lqd-section has-accordion-page pt-100 bg-gray-200">
         <div class="titlebar-inner">
@@ -36,8 +37,8 @@
         </div>
     </section>
 
-   <div class="row">
-        <div class="col-3 moblie-cate">
+   <div class="row mobile-product">
+        <div class="col-5 ">
             <section class="lqd-section pt-40 sm:pt-0">
                 <div class="category">
                     <div class="container">
@@ -52,7 +53,6 @@
                                 <div>
                                     <h3 class="ld-fh-element relative mb-0/5em text-14 uppercase tracking-1/5">
                                         <a href="/Products/{{$item->category_tag}}" style="color: #233D62 ">{{$item->category_name}}</a>
-
                                     </h3>
                                 </div>
                                 @endforeach
@@ -62,7 +62,7 @@
                 </div>
             </section>
         </div>
-        <div class="col-9 mobile-product-width">
+        <div class="col-7 mobile-product-width">
             <section class="lqd-section products pt-40 sm:pt-0" id="products">
                 <div class="container">
                     <div class="row">

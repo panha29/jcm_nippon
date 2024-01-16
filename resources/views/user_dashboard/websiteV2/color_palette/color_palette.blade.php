@@ -34,6 +34,7 @@
 
 @section('content')
 @include('user_dashboard.websiteV2.color_palette.color_palette_js')
+@include('user_dashboard.websiteV2.css')
 
 <div id="lqd-contents-wrap">
     <section class="lqd-section design pt-100 pb-40 top-90">

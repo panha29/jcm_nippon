@@ -22,6 +22,7 @@
 @endsection
 
 @section('content')
+@include('websiteV2.css')
 <div id="lqd-contents-wrap">
 
 @include('websiteV2.banner')

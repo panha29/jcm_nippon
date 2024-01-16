@@ -10,51 +10,6 @@
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/base.css">
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/digital-hub.css">
 
-{{-- <style>
-    @media screen and (max-width: 879px){
-        .category{
-            background-color: #e9e9e9 !important;
-            width: 350px;
-            height: 300px;
-            float: right;
-            border-radius: 25px;
-            padding: 15px;
-            line-height: 40px;
-            display: none;
-        }
-        .moblie-cate{
-            display: none;
-        }
-
-        .mobile-width{
-            width: 100% !important;
-        }
-    }
-
-    @media screen and (max-width: 1920px){
-        .category{
-            background-color: #e9e9e9 !important;
-            width: auto;
-            height: 300px;
-            float: right;
-            border-radius: 25px;
-            padding: 10px;
-            line-height: 40px;
-        }
-    }
-
-    @media screen and (max-width: 2560px){
-        .category{
-            background-color: #e9e9e9 !important;
-            width: auto;
-            height: 300px;
-            float: right;
-            border-radius: 25px;
-            padding: 10px;
-            line-height: 40px;
-        }
-    }
-</style> --}}
 @endsection
 
 @section('js_vendor')
@@ -64,6 +19,8 @@
 @endsection
 
 @section('content')
+@include('websiteV2.css')
+
 {{-- <div id="lqd-contents-wrap">
     <section class="lqd-section has-accordion-page pt-100 bg-gray-200">
         <div class="titlebar-inner">
@@ -130,8 +87,9 @@
         </div>
     </section>
 
-   <div class="row">
-        <div class="col-3 moblie-cate">
+   <div class="row mobile-product">
+        {{-- <div class="col-3 mobile-cate"> --}}
+            <div class="col-5 ">
             <section class="lqd-section pt-40 sm:pt-0">
                 <div class="category">
                     <div class="container">
@@ -155,11 +113,11 @@
                 </div>
             </section>
         </div>
-        <div class="col-9 mobile-product-width">
+        <div class="col-7 mobile-product-width">
             <section class="lqd-section products pt-40 sm:pt-0" id="products">
                 <div class="container">
                     <div class="row">
-                        <div class="col col-12 col-md-8 col-xl-6 relative">
+                        <div class="col col-12 col-md-8 col-xl-6 relative product-title">
                             <div class="w-full absolute top-15percent -right-80percent z-0 text-center" data-parallax="true" data-parallax-options='{ "ease" : "linear", "start" : "top bottom", "end" : "bottom-=100% top" }' data-parallax-from='{ "y" : "65%", "rotationZ":-50,"opacity":0.6}' data-parallax-to='{ "y" : "-10%", "rotationZ":0,"opacity":1}'>
                                 <div class="elementor-widget-container">
                                     <img class="w-390" width="790" height="731" src="../webv2/images/demo/events-hub/shape-colored.jpg" alt="shape">

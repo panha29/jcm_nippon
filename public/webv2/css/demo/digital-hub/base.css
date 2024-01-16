@@ -423,7 +423,7 @@ body {
 }
 
 @media screen and (max-width: 879px) {
-    .category {
+    /* .category {
         background-color: #e9e9e9 !important;
         width: 350px;
         height: 300px;
@@ -432,8 +432,8 @@ body {
         padding: 15px;
         line-height: 40px;
         display: none;
-    }
-    .moblie-cate {
+    } */
+    .mobile-cate {
         display: none;
     }
     .lqd-tabs-style-3 .lqd-tabs-nav {
@@ -491,13 +491,47 @@ body {
     .painting-mobile-view {
         display: none;
     }
+    .mobile-selley-img {
+        width: 100% !important;
+    }
+    .mobile-selley-text {
+        width: 630px
+    }
+    .mobile-product {
+        justify-content: space-evenly !important;
+    }
+    .category {
+        background-color: #e9e9e9 !important;
+        width: 290px;
+        height: 300px;
+        float: right;
+        border-radius: 25px;
+        padding: 15px;
+        line-height: 40px;
+        display: block;
+    }
+    .text-14 {
+        font-size: 12px;
+    }
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: 47%;
+    }
+    .product-title {
+        width: 100%
+    }
+    .color_pallete tbody {
+        width: 735px;
+    }
 }
 
-@media screen and (max-width: 430px) {
+@media only screen and (max-width: 420px) {
     .color-view {
         display: inline-flex;
-        height: 300px;
-        width: 175px;
+        /* height: 300px;
+        width: 175px; */
+        width: 150px;
+        height: 240px;
     }
     .mobile-view-search {
         width: 100%;
@@ -536,12 +570,19 @@ body {
         border-style: none;
         border-width: 0;
     }
-    .color_pallete tbody {
+    /* .color_pallete tbody {
         display: inline-flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        width: 1010px;
+        width: 570px;
+    } */
+    .color_pallete tbody {
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 390px;
+        flex-direction: row;
+        align-content: center;
     }
     .color_pallete table tr {
         border-bottom: 0px solid #dedede;
@@ -586,5 +627,11 @@ body {
     .clients {
         padding-top: 50px;
         padding-bottom: 0px;
+    }
+    .category {
+        display: none !important;
+    }
+    .col-md-4 {
+        width: 50% !important;
     }
 }

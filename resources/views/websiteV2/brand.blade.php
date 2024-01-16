@@ -98,13 +98,13 @@
             </div>
         </div>
         <div class="row mt-50">
-            <div class="col col-8 p-0 mobile-view">
+            <div class="col col-8 p-0 mobile-view mobile-selley-img">
                 <article class="lqd-pf-item lqd-pf-item-style-3 lqd-pf-overlay-bg-scale lqd-pf-content-v pf-details-h-str">
                     <div class="lqd-pf-item-inner">
                         <div class="lqd-pf-img rounded-6 mb-2em">
                             <figure>
                                 <figure class="">
-                                    <img src="webv2/images/selleys.jpg" class="objfit-cover objfit-center" alt="nippon paint cambodia selleys" draggable="false">
+                                    <img src="webv2/images/selleys.jpg" class="objfit-cover objfit-center" alt="nippon paint cambodia selleys" class="brand-image" draggable="false">
                                 </figure>
                             </figure>
                         </div>
@@ -112,7 +112,7 @@
                 </article>
             </div>
 
-            <div class="col col-4 p-0 mobile-view" style="text-align: right;">
+            <div class="col col-4 p-0 mobile-view mobile-selley-text" style="text-align: right;">
                 <div class="ld-fancy-heading relative">
                     <h2 class="ld-fh-element inline-block relative mb-0/5em text-34" > Home Improvement Product's
                         <mark class="lqd-highlight">
