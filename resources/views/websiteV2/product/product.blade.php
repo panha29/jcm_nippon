@@ -89,7 +89,7 @@
 
    <div class="row mobile-product">
         {{-- <div class="col-3 mobile-cate"> --}}
-            <div class="col-5 ">
+            <div class="col-4">
             <section class="lqd-section pt-40 sm:pt-0">
                 <div class="category">
                     <div class="container">
