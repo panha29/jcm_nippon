@@ -22,15 +22,12 @@
                         <div class="carousel-item col-12 col-lg-6 col-xl-4 mr-60">
                             <article class="lqd-pf-item lqd-pf-item-style-3 lqd-pf-overlay-bg-scale lqd-pf-content-v pf-details-h-str">
                                 <div class="lqd-pf-item-inner">
-                                    <div class="lqd-pf-img overflow-hidden rounded-6 relative mb-2em">
+                                    <div class="lqd-pf-img  rounded-6 relative mb-2em">
                                         <figure>
                                             <figure class="lqd-overlay flex">
                                                 <img width="640" height="600" src="/webv2/images/brand/sto.png" class="w-full h-full objfit-cover objfit-center" alt="nippon paint sto" draggable="false" style="padding:25px">
                                             </figure>
                                         </figure>
-                                        {{-- <span class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center bg-transparent text-white" style="background-image: linear-gradient(180deg,  rgb(0 127 255 / 94%) 0%,  rgb(255 77 84 / 86%) 100%)">
-                                            <i class="lqd-icn-ess icon-md-arrow-forward"></i>
-                                        </span> --}}
                                     </div>
                                     <div class="lqd-pf-details">
                                         <h2 class="lqd-pf-title mt-0 mb-1 h5">STO</h2>
@@ -47,7 +44,7 @@
                         <div class="carousel-item col-12 col-lg-6 col-xl-4 mr-60">
                             <article class="lqd-pf-item lqd-pf-item-style-3 lqd-pf-overlay-bg-scale lqd-pf-content-v pf-details-h-str">
                                 <div class="lqd-pf-item-inner">
-                                    <div class="lqd-pf-img overflow-hidden rounded-6 relative mb-2em">
+                                    <div class="lqd-pf-img  rounded-6 relative mb-2em">
                                         <figure>
                                             <figure class="lqd-overlay flex">
                                                 <img width="640" height="600" src="/webv2/images/brand/nipponpaint.png" class="w-full h-full objfit-cover objfit-center" alt="nippon paint" draggable="false" style="padding:25px">
@@ -72,7 +69,7 @@
                         <div class="carousel-item col-12 col-lg-6 col-xl-4 mr-60">
                             <article class="lqd-pf-item lqd-pf-item-style-3 lqd-pf-overlay-bg-scale lqd-pf-content-v pf-details-h-str">
                                 <div class="lqd-pf-item-inner">
-                                    <div class="lqd-pf-img overflow-hidden rounded-6 relative mb-2em">
+                                    <div class="lqd-pf-img  rounded-6 relative mb-2em">
                                         <figure>
                                             <figure class="lqd-overlay flex">
                                                 <img width="640" height="600" src="/webv2/images/brand/renards.png" class="w-full h-full objfit-cover objfit-center" alt="nippon pant renard" draggable="false" style="padding:25px">
@@ -95,175 +92,27 @@
                             </article>
                         </div>
 
-                        {{-- <div class="carousel-item col-12 col-lg-6 col-xl-4 mr-60">
-                            <article class="lqd-pf-item lqd-pf-item-style-3 lqd-pf-overlay-bg-scale lqd-pf-content-v pf-details-h-str">
-                                <div class="lqd-pf-item-inner">
-                                    <div class="lqd-pf-img overflow-hidden rounded-6 relative mb-2em">
-                                        <figure>
-                                            <figure class="lqd-overlay flex">
-                                                <img width="640" height="600" src="/webv2/images/demo/digital-hub/case-study-4.jpg" class="w-full h-full objfit-cover objfit-center" alt="case study">
-                                            </figure>
-                                        </figure>
-                                        <span class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center bg-transparent text-white" style="background-image: linear-gradient(180deg,  rgb(0 127 255 / 94%) 0%,  rgb(255 77 84 / 86%) 100%)">
-                                            <i class="lqd-icn-ess icon-md-arrow-forward"></i>
-                                        </span>
-                                    </div>
-                                    <div class="lqd-pf-details">
-                                        <h2 class="lqd-pf-title mt-0 mb-1 h5">Nike Shopping</h2>
-                                        <ul class="reset-ul inline-nav lqd-pf-cat inline-flex relative z-2">
-                                            <li>
-                                                <a href="#" class="leading-1/4em">Branding</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="/webv2/images/demo/digital-hub/case-study-4.jpg" class="lqd-overlay flex lqd-pf-overlay-link leading-1/4em fresco" data-fresco-group="case-studies"></a>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="carousel-item col-12 col-lg-6 col-xl-4 mr-60">
-                            <article class="lqd-pf-item lqd-pf-item-style-3 lqd-pf-overlay-bg-scale lqd-pf-content-v pf-details-h-str">
-                                <div class="lqd-pf-item-inner">
-                                    <div class="lqd-pf-img overflow-hidden rounded-6 relative mb-2em">
-                                        <figure>
-                                            <figure class="lqd-overlay flex">
-                                                <img width="640" height="600" src="/webv2/images/demo/digital-hub/case-study-5.jpg" class="w-full h-full objfit-cover objfit-center" alt="case study">
-                                            </figure>
-                                        </figure>
-                                        <span class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center bg-transparent text-white" style="background-image: linear-gradient(180deg,  rgb(0 127 255 / 94%) 0%,  rgb(255 77 84 / 86%) 100%)">
-                                            <i class="lqd-icn-ess icon-md-arrow-forward"></i>
-                                        </span>
-                                    </div>
-                                    <div class="lqd-pf-details">
-                                        <h2 class="lqd-pf-title mt-0 mb-1 h5">Villa in Dallas</h2>
-                                        <ul class="reset-ul inline-nav lqd-pf-cat inline-flex relative z-2">
-                                            <li>
-                                                <a href="#" class="leading-1/4em">Custom Print</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="/webv2/images/demo/digital-hub/case-study-5.jpg" class="lqd-overlay flex lqd-pf-overlay-link leading-1/4em fresco" data-fresco-group="case-studies"></a>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="carousel-item col-12 col-lg-6 col-xl-4 mr-60">
-                            <article class="lqd-pf-item lqd-pf-item-style-3 lqd-pf-overlay-bg-scale lqd-pf-content-v pf-details-h-str">
-                                <div class="lqd-pf-item-inner">
-                                    <div class="lqd-pf-img overflow-hidden rounded-6 relative mb-2em">
-                                        <figure>
-                                            <figure class="lqd-overlay flex">
-                                                <img width="640" height="600" src="/webv2/images/demo/digital-hub/case-study-6.jpg" class="w-full h-full objfit-cover objfit-center" alt="case study">
-                                            </figure>
-                                        </figure>
-                                        <span class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center bg-transparent text-white" style="background-image: linear-gradient(180deg,  rgb(0 127 255 / 94%) 0%,  rgb(255 77 84 / 86%) 100%)">
-                                            <i class="lqd-icn-ess icon-md-arrow-forward"></i>
-                                        </span>
-                                    </div>
-                                    <div class="lqd-pf-details">
-                                        <h2 class="lqd-pf-title mt-0 mb-1 h5">Inspiration Board</h2>
-                                        <ul class="reset-ul inline-nav lqd-pf-cat inline-flex relative z-2">
-                                            <li>
-                                                <a href="#" class="leading-1/4em">Custom Print</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="/webv2/images/demo/digital-hub/case-study-6.jpg" class="lqd-overlay flex lqd-pf-overlay-link leading-1/4em fresco" data-fresco-group="case-studies"></a>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="carousel-item col-12 col-lg-6 col-xl-4 mr-60">
-                            <article class="lqd-pf-item lqd-pf-item-style-3 lqd-pf-overlay-bg-scale lqd-pf-content-v pf-details-h-str">
-                                <div class="lqd-pf-item-inner">
-                                    <div class="lqd-pf-img overflow-hidden rounded-6 relative mb-2em">
-                                        <figure>
-                                            <figure class="lqd-overlay flex">
-                                                <img width="640" height="600" src="/webv2/images/demo/digital-hub/case-study-2.jpg" class="w-full h-full objfit-cover objfit-center" alt="case study">
-                                            </figure>
-                                        </figure>
-                                        <span class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center bg-transparent text-white" style="background-image: linear-gradient(180deg,  rgb(0 127 255 / 94%) 0%,  rgb(255 77 84 / 86%) 100%)">
-                                            <i class="lqd-icn-ess icon-md-arrow-forward"></i>
-                                        </span>
-                                    </div>
-                                    <div class="lqd-pf-details">
-                                        <h2 class="lqd-pf-title mt-0 mb-1 h5">Mercedez-Benz Coupe</h2>
-                                        <ul class="reset-ul inline-nav lqd-pf-cat inline-flex relative z-2">
-                                            <li>
-                                                <a href="#" class="leading-1/4em">Custom Print</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="/webv2/images/demo/digital-hub/case-study-2.jpg" class="lqd-overlay flex lqd-pf-overlay-link leading-1/4em fresco" data-fresco-group="case-studies"></a>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="carousel-item col-12 col-lg-6 col-xl-4 mr-60">
-                            <article class="lqd-pf-item lqd-pf-item-style-3 lqd-pf-overlay-bg-scale lqd-pf-content-v pf-details-h-str">
-                                <div class="lqd-pf-item-inner">
-                                    <div class="lqd-pf-img overflow-hidden rounded-6 relative mb-2em">
-                                        <figure>
-                                            <figure class="lqd-overlay flex">
-                                                <img width="640" height="600" src="/webv2/images/demo/digital-hub/case-study-4.jpg" class="w-full h-full objfit-cover objfit-center" alt="case study">
-                                            </figure>
-                                        </figure>
-                                        <span class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center bg-transparent text-white" style="background-image: linear-gradient(180deg,  rgb(0 127 255 / 94%) 0%,  rgb(255 77 84 / 86%) 100%)">
-                                            <i class="lqd-icn-ess icon-md-arrow-forward"></i>
-                                        </span>
-                                    </div>
-                                    <div class="lqd-pf-details">
-                                        <h2 class="lqd-pf-title mt-0 mb-1 h5">Nike Shopping</h2>
-                                        <ul class="reset-ul inline-nav lqd-pf-cat inline-flex relative z-2">
-                                            <li>
-                                                <a href="#" class="leading-1/4em">Branding</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="/webv2/images/demo/digital-hub/case-study-4.jpg" class="lqd-overlay flex lqd-pf-overlay-link leading-1/4em fresco" data-fresco-group="case-studies"></a>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="carousel-item col-12 col-lg-6 col-xl-4 mr-60">
-                            <article class="lqd-pf-item lqd-pf-item-style-3 lqd-pf-overlay-bg-scale lqd-pf-content-v pf-details-h-str">
-                                <div class="lqd-pf-item-inner">
-                                    <div class="lqd-pf-img overflow-hidden rounded-6 relative mb-2em">
-                                        <figure>
-                                            <figure class="lqd-overlay flex">
-                                                <img width="640" height="600" src="/webv2/images/demo/digital-hub/case-study-1.jpg" class="w-full h-full objfit-cover objfit-center" alt="case study">
-                                            </figure>
-                                        </figure>
-                                        <span class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center bg-transparent text-white" style="background-image: linear-gradient(180deg,  rgb(0 127 255 / 94%) 0%,  rgb(255 77 84 / 86%) 100%)">
-                                            <i class="lqd-icn-ess icon-md-arrow-forward"></i>
-                                        </span>
-                                    </div>
-                                    <div class="lqd-pf-details">
-                                        <h2 class="lqd-pf-title mt-0 mb-1 h5">Inspiration Board</h2>
-                                        <ul class="reset-ul inline-nav lqd-pf-cat inline-flex relative z-2">
-                                            <li>
-                                                <a href="#" class="leading-1/4em">Custom Print</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="/webv2/images/demo/digital-hub/case-study-1.jpg" class="lqd-overlay flex lqd-pf-overlay-link leading-1/4em fresco" data-fresco-group="case-studies"></a>
-                                </div>
-                            </article>
-                        </div> --}}
+
                     </div>
                 </div>
             </div>
         </div>
         <div class="row mt-50">
-            <div class="col col-8 p-0 mobile-view">
+            <div class="col col-8 p-0 mobile-view mobile-selley-img">
                 <article class="lqd-pf-item lqd-pf-item-style-3 lqd-pf-overlay-bg-scale lqd-pf-content-v pf-details-h-str">
                     <div class="lqd-pf-item-inner">
                         <div class="lqd-pf-img rounded-6 mb-2em">
                             <figure>
                                 <figure class="">
-                                    <img src="/webv2/images/selleys.jpg" class="objfit-cover objfit-center" alt="nippon paint cambodia selleys" draggable="false">
+                                    <img src="../webv2/images/selleys.jpg" class="objfit-cover objfit-center" alt="nippon paint cambodia selleys" class="brand-image" draggable="false">
                                 </figure>
                             </figure>
                         </div>
                     </div>
                 </article>
             </div>
-            <div class="col col-4 p-0 mobile-view" style="text-align: right;">
+
+            <div class="col col-4 p-0 mobile-view mobile-selley-text" style="text-align: right;">
                 <div class="ld-fancy-heading relative">
                     <h2 class="ld-fh-element inline-block relative mb-0/5em text-34" > Home Improvement Product's
                         <mark class="lqd-highlight">
@@ -278,5 +127,6 @@
             </div>
         </div>
     </div>
+
 </section>
 <!-- End Case Study Carousel -->

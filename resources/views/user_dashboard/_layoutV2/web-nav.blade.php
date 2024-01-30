@@ -167,7 +167,7 @@
                             @endforeach
                         </ul>
                     </li>
-                    <li class="menu-item-has-children">
+                    {{-- <li class="menu-item-has-children">
                         <a href="/User/Painting-Services" class="leading-1/4em">
                             Painting Service
                             <span class="submenu-expander absolute"></span>
@@ -175,7 +175,7 @@
                                 <i class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
                             </span>
                         </a>
-                    </li>
+                    </li> --}}
                     <li class="menu-item-has-children">
                         <a class="leading-1/4em ">
                             About Company
@@ -209,6 +209,11 @@
                     <li>
                         <a href="/User/Color-Palette" class="leading-1/4em">
                             Color Palette
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn btn-solid btn-md uppercase text-13 font-bold  leading-1/4em bg-white rounded-100 shadow-md text-blue-700 hover:text-white" href="/logout">
+                            Logout
                         </a>
                     </li>
                 </ul>

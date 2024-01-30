@@ -34,8 +34,8 @@
         </div>
     </section>
 
-   <div class="row">
-        <div class="col-5">
+   <div class="">
+        {{-- <div class="col-5">
             <section class="lqd-section pt-40 sm:pt-0">
                 <div class="category">
                     <div class="container">
@@ -58,15 +58,15 @@
                     </div>
                 </div>
             </section>
-        </div>
-        <div class="col-7 mobile-width">
+        </div> --}}
+        <div class=" mobile-width">
             <section class="lqd-section products pt-40 sm:pt-0" id="products">
                 <div class="container">
                     <div class="row">
                         <div class="col col-12 col-md-8 col-xl-6 relative">
                             <div class="w-full absolute top-15percent -right-80percent z-0 text-center" data-parallax="true" data-parallax-options='{ "ease" : "linear", "start" : "top bottom", "end" : "bottom-=100% top" }' data-parallax-from='{ "y" : "65%", "rotationZ":-50,"opacity":0.6}' data-parallax-to='{ "y" : "-10%", "rotationZ":0,"opacity":1}'>
                                 <div class="elementor-widget-container">
-                                    <img class="w-390" width="790" height="731" src="../webv2/images/demo/events-hub/shape-colored.jpg" alt="shape">
+                                    <img class="w-390" width="790" height="731" src="/webv2/images/demo/events-hub/shape-colored.jpg" alt="shape">
                                 </div>
                             </div>
                             <div class="ld-fancy-heading relative mask-text -mb-30 module-number">
@@ -85,7 +85,7 @@
                                     <div class="lqd-imggrp-single mb-25 rounded-inherit" data-hover3d="true">
                                         <div class="lqd-imggrp-img-container rounded-inherit" data-stacking-factor="1">
                                             <figure class="rounded-inherit">
-                                                <img class="rounded-8" src="{{ url('img/product/company_product/'.$item->product_image) }}" alt="nippon paint cambodia" style="width:300px;background-image: url('../webv2/images/demo/modern-agency/banner.jpg');">
+                                                <img class="rounded-8" src="{{ url('img/product/company_product/'.$item->product_image) }}" alt="nippon paint cambodia" style="width:300px;background-image: url('/webv2/images/demo/modern-agency/banner.jpg');">
                                             </figure>
                                         </div>
                                     </div>

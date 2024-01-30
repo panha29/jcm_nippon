@@ -176,11 +176,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a class="leading-1/4em" href="/Painting-Services">
-                            Painting Services
-                        </a>
-                    </li>
+
                     <li>
                         <a href="/Contact-Us" class="leading-1/4em">
                             Contact Us
