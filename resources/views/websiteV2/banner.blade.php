@@ -24,7 +24,7 @@
                 </div>
                 <div class="flex flex-row flex-wrap items-center justify-start">
                     <div class="fancy-button mr-15 module-btn sm:w-full">
-                        <a href="tel: +855 11 822 266" class="btn btn-solid btn-xlg btn-icon-right btn-hover-reveal font-bold uppercase tracking-1/5 leading-1/4em whitespace-nowrap bg-transparent rounded-100 text-white" data-lity="#contact-modal">
+                        <a href="tel: +855 11 822 266" class="btn btn-solid btn-xlg btn-icon-right btn-hover-reveal font-bold uppercase tracking-1/5 leading-1/4em whitespace-nowrap bg-transparent rounded-100 text-white">
                             <span class="btn-txt" data-text="Get a Quote">Get a Quote</span>
                             <span class="btn-icon text-16">
                                 <i aria-hidden="true" class="lqd-icn-ess icon-md-arrow-round-forward-2"></i>
