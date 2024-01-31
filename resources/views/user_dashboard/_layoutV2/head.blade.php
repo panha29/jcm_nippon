@@ -1,5 +1,6 @@
 {{-- webv2 --}}
 <meta property="og:image" content="/webv2/images/common/og-image.jpg">
+<link rel="icon" type="image/x-icon" href="/img/logo/npp.png">
 <link rel="stylesheet" href="/webv2/vendors/liquid-icon/lqd-essentials/lqd-essentials.min.css">
 <link rel="stylesheet" href="/webv2/css/theme.min.css">
 <link rel="stylesheet" href="/webv2/css/utility.min.css">

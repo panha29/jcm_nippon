@@ -435,7 +435,6 @@ class AdminLoginController extends Controller
     function webv2(){
         $product = ProductModel::all();
         $nav = CategoryModel::all();
-
         return view('websiteV2.website_index',compact('product','nav'));
     }
     function navv2(){

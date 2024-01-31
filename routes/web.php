@@ -8,7 +8,9 @@ use App\Http\Controllers\ColorPricingController;
 use App\Http\Controllers\UserLoginController;
 use App\Http\Controllers\LogoutController;
 use App\Models\ColorPaletteModel;
-
+use App\Models\CategoryModel;
+use App\Models\ProductModel;
+use Illuminate\Support\Facades\Artisan;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -137,7 +139,7 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
 });
 
 Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');
-Route::get('/Home',[AdminLoginController::class,'webv2']);
+// Route::get('/Home',[AdminLoginController::class,'webv2'])->name('Home');
 Route::get('/Products/{category_tag}',[AdminLoginController::class,'category_tagv2']);
 Route::get('/Products',[AdminLoginController::class,'all_product']);
 Route::get('/Painting-Services',[AdminLoginController::class,'servicev2']);
@@ -148,3 +150,10 @@ Route::get('/Contact-Us',[AdminLoginController::class,'contact_us']);
 Route::get('/About-Us',[AdminLoginController::class,'about_us']);
 Route::redirect('/', '/Home', 301);
 Route::view('/Verify','websiteV2.verify');
+
+Route::get('/Home', function() {
+    Artisan::call('view:clear');
+    $product = ProductModel::all();
+    $nav = CategoryModel::all();
+    return view('websiteV2.website_index',compact('product','nav'));
+});

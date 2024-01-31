@@ -6,20 +6,7 @@
                 <div class="col col-12 col-xl-6 p-10">
                     <div class="module-form">
                         <div class="ld-sf relative ld-sf--button-naked ld-sf--size-lg ld-sf--sharp ld-sf--inputs-has-border ld-sf--input-shadow ld-sf--button-show ld-sf--button-inside">
-                            <form class="relative" method="post" action="#">
-                                <p class="relative">
-                                    <input type="email" class="block w-full rounded-2 text-gray-500 mb-20" name="email" placeholder="Your email to start">
-                                </p>
-                                <button type="submit" class="inline-flex items-center justify-center m-0 rounded-2 relative font-normal tracking-0">
-                                    <span class="submit-text">Subscribe</span>
-                                    <span class="submit-icon">
-                                        <i class="lqd-icn-ess icon-md-arrow-round-forward-2"></i>
-                                    </span>
-                                    <span class="ld-sf-spinner rounded-full absolute overflow-hidden">
-                                        <span class="block lqd-overlay flex rounded-full">Sending </span>
-                                    </span>
-                                </button>
-                            </form>
+
                             <div class="ld_sf_response"></div>
                         </div>
                     </div>

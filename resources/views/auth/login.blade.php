@@ -66,7 +66,7 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                            <a class="text-small position-absolute t-3 e-3" href="verify">Forgot?</a>
+                            {{-- <a class="text-small position-absolute t-3 e-3" href="verify">Forgot?</a> --}}
                         </div>
                         <button type="submit" class="btn btn-lg btn-primary" style="float: right">Login</button>
                     </form>

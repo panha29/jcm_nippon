@@ -14,7 +14,7 @@
     <!-- Background End -->
 
     <div class="container-fluid p-0 position-relative">
-        <div class="">
+        <div class="auth-ui">
             @yield('content')
         </div>
     </div>

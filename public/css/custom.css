@@ -40,6 +40,12 @@
     box-shadow: 0 6px 10px rgb(0 0 0 / 30%) !important;
 }
 
+.auth-ui {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
 .register-ui {
     border-radius: 15px !important;
     display: block;

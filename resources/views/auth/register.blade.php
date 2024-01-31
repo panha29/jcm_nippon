@@ -61,14 +61,23 @@
                             </span>
                         @enderror
                     </div>
+
                     <div class="mb-3 filled form-group tooltip-end-top" hidden>
+                        <i data-acorn-icon="user"></i>
+                        <input type="text" class="form-control" placeholder="Member" name="member" id="member" autocomplete="off" value="member"/>
+                    </div>
 
-                            <label for="" class="form-group col-5" style="color:black">Account Type:</label>
-                            <input type="radio" class="btn-check" id="btnRadioPrimaryOutline" name="is_admin" value="1" id="is_admin" />
-                            <label class="btn btn-outline-primary" for="btnRadioPrimaryOutline">Admin</label>
-                            <input type="radio" class="btn-check" id="btnRadioSecondaryOutline" name="is_admin" value="0" id="is_admin" checked="true"/>
-                            <label class="btn btn-outline-success" for="btnRadioSecondaryOutline"> User </label>
+                    <div class="mb-3 filled form-group tooltip-end-top" hidden>
+                        <i data-acorn-icon="user"></i>
+                        <input type="text" class="form-control" placeholder="duty" name="duty" id="duty" autocomplete="off" value="duty"/>
+                    </div>
 
+                    <div class="mb-3 filled form-group tooltip-end-top" hidden>
+                        <label for="" class="form-group col-5" style="color:black">Account Type:</label>
+                        <input type="radio" class="btn-check" id="btnRadioPrimaryOutline" name="is_admin" value="1" id="is_admin" />
+                        <label class="btn btn-outline-primary" for="btnRadioPrimaryOutline">Admin</label>
+                        <input type="radio" class="btn-check" id="btnRadioSecondaryOutline" name="is_admin" value="0" id="is_admin" checked="true"/>
+                        <label class="btn btn-outline-success" for="btnRadioSecondaryOutline"> User </label>
                     </div>
                     <div class="mb-3 filled form-group tooltip-end-top">
                         <i data-acorn-icon="lock-off">{{ __('Password') }}</i>

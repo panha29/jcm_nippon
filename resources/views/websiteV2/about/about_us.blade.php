@@ -221,7 +221,7 @@
                     </div>
                 </div>
                 <div class="col col-12 col-xl-6 p-0">
-                    <div class="w-full relative flex items-center pl-20percent rounded-8 z-1 module-col" data-parallax="true" data-parallax-options='{"ease":["linear"],"start":"top bottom","end":"bottom+=0px top"}' data-parallax-from='{"y":"60px"}' data-parallax-to='{"y":"-75px"}'>
+                    <div class="w-full relative flex items-center p-20 rounded-8 z-1 module-col" data-parallax="true" data-parallax-options='{"ease":["linear"],"start":"top bottom","end":"bottom+=0px top"}' data-parallax-from='{"y":"60px"}' data-parallax-to='{"y":"-75px"}'>
                         <div class="lqd-imggrp-single block pos-rel rounded-inherit" data-shadow-style="4" >
                             <div class="lqd-imggrp-img-container inline-flex pos-rel items-center justify-center rounded-inherit">
                             <figure class="w-full pos-rel">
@@ -353,16 +353,14 @@
 
     <!-- Start Team -->
     <section class="lqd-section team pt-100 pb-65">
-        <div class="container">
+        <div class="">
             <div class="row">
                 <div class="col col-12">
                     <div class="w-full flex flex-col items-center text-center px-15percent pb-10 sm:px-0">
                         <h2 class="ld-fh-element relative mb-0/5em"> Message From Our CEO</h2>
                     </div>
-                    <div class="container-fluid">
-                        <div class=" col-12  flex flex-col items-start text-start p-20 module-col" data-custom-animations="true" data-ca-options='{"addChildTimelines":false,"animationTarget":"img, h4, h6, p","duration":1200,"startDelay":200,"delay":100,"ease":["power4.out"],"initValues":{"y":"20px","opacity":0},"animations":{"y":"0px","opacity":1}}'>
-                            <img class="mb-1em"src="webv2/images/ceo.png" alt="team">
-                        </div>
+                    <div class="col-12 flex flex-col items-start text-start p-20 module-col" data-custom-animations="true" data-ca-options='{"addChildTimelines":false,"animationTarget":"img, h4, h6, p","duration":1200,"startDelay":200,"delay":100,"ease":["power4.out"],"initValues":{"y":"20px","opacity":0},"animations":{"y":"0px","opacity":1}}'>
+                        <img class="mb-1em"src="webv2/images/ceo.png" alt="team">
                     </div>
                 </div>
             </div>

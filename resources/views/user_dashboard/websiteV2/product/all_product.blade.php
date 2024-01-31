@@ -48,7 +48,7 @@
                                 @foreach ($nav as $item)
                                 <div>
                                     <h3 class="ld-fh-element relative mb-0/5em text-14 uppercase tracking-1/5">
-                                        <a href="/Products/{{$item->category_tag}}" style="color: #233D62 ">{{$item->category_name}}</a>
+                                        <a href="/User/Products/{{$item->category_tag}}" style="color: #233D62 ">{{$item->category_name}}</a>
                                     </h3>
                                 </div>
                                 @endforeach

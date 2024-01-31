@@ -26,12 +26,7 @@
                         <div class="contents text-start">
                             <h3 class="lqd-iconbox-heading text-20 mb-0/75em">Vision </h3>
                             <div class="text-14 mb-2/5rem">To be the number one paint and coating products distributors in Cambodia and will do our best to enhance and beautify Cambodia's surroundings.</div>
-                            <a href="./page-asymmetric-agency-case-studies.html" class="btn btn-naked btn-icon-right btn-hover-reveal mt-1/5em mb-0 tracking-1/5 leading-1/4em text-13 uppercase font-bold text-blue-600">
-                                <span class="btn-txt" data-text="― Learn more">― Learn more</span>
-                                <span class="btn-icon text-18">
-                                    <i class="lqd-icn-ess icon-md-arrow-forward"></i>
-                                </span>
-                            </a>
+
                         </div>
                     </div>
                 </div>
@@ -50,12 +45,7 @@
                         <div class="contents text-start">
                             <h3 class="lqd-iconbox-heading text-20 mb-0/75em">Mission </h3>
                             <div class="text-14 mb-2/5rem">To support businesses and consumers in Cambodia with a comprehensive range of paint, coating products and services. </div>
-                            <a href="./page-asymmetric-agency-case-studies.html" class="btn btn-naked btn-icon-right btn-hover-reveal mt-1/5em mb-0 tracking-1/5 leading-1/4em text-13 uppercase font-bold text-blue-600">
-                                <span class="btn-txt" data-text="― Learn more">― Learn more</span>
-                                <span class="btn-icon text-18">
-                                    <i class="lqd-icn-ess icon-md-arrow-forward"></i>
-                                </span>
-                            </a>
+
                         </div>
                     </div>
                 </div>
@@ -82,12 +72,7 @@
                                 <li>Continuous Improvement</li>
                                 <li>Visionary</li>
                             </div>
-                            <a href="./page-asymmetric-agency-case-studies.html" class="btn btn-naked btn-icon-right btn-hover-reveal mt-1/5em mb-0 tracking-1/5 leading-1/4em text-13 uppercase font-bold text-blue-600">
-                                <span class="btn-txt" data-text="― Learn more">― Learn more</span>
-                                <span class="btn-icon text-18">
-                                    <i class="lqd-icn-ess icon-md-arrow-forward"></i>
-                                </span>
-                            </a>
+
                         </div>
                     </div>
                 </div>
