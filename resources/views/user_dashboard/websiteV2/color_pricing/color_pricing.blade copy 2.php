@@ -1,4 +1,3 @@
-
 <div id="lqd-tab-events-item-show-all" role="tabpanel" class="lqd-tabs-pane fade active show">
     <div class="container p-0 module-container">
         <table id="tablecolor" class="display" style="width:100%">
@@ -15,27 +14,42 @@
                 </tr>
             </thead>
             <tbody id="tbodyall">
-                @foreach ($all as $item)
-                    <tr>
-                        <td>{{$item->id}}</td>
-                        <td>{{$item->color_name}}</td>
-                        <td><b>{{$item->color_description}}</b></td>
-                        <td><img src="{{ url('img/color_pricing/'.$item->color_image) }}" alt="jcm nippon cambodia" width="150px"></td>
-                        <td>{{$item->color_1l}}</td>
-                        <td>{{$item->color_5l}}</td>
-                        <td>{{$item->color_15l}}</td>
-                        <td>{{$item->color_18l}}</td>
-                    </tr>
+                @foreach ($ma as $item)
+                    <?php if ($item->color_tag == "MA") { ?>
+                        <tr>
+                            <td>{{$loop->iteration}}</td>
+                            <td>{{$item->color_name}}</td>
+                            <td><b>Matex</b></td>
+                            <td><img src="{{ url('img/color_pricing/'.$item->color_image) }}" alt="jcm nippon cambodia" width="150px"></td>
+                            <td>{{$item->color_1l}}</td>
+                            <td>{{$item->color_5l}}</td>
+                            <td></td>
+                            <td>{{$item->color_18l}}</td>
+                        </tr>
+                    <?php } ?>
+                @endforeach
+
+                @foreach ($mpm as $item)
+                    <?php if ($item->color_tag == "MPM") { ?>
+                        <tr>
+                            <td>{{$loop->iteration}}</td>
+                            <td>{{$item->color_name}}</td>
+                            <td><b>Matex Premium</b></td>
+                            <td><img src="{{ url('img/color_pricing/'.$item->color_image) }}" alt="jcm nippon cambodia" width="150px"></td>
+                            <td>{{$item->color_1l}}</td>
+                            <td>{{$item->color_5l}}</td>
+                            <td></td>
+                            <td>{{$item->color_18l}}</td>
+                        </tr>
+                    <?php } ?>
                 @endforeach
             </tbody>
-
         </table>
     </div>
 </div>
-
 <div id="lqd-tab-events-item-ma" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="ma" class="display" style="width:100%">
+        <table id="tablecolor" class="" style="width:100%">
             <thead>
                 <tr>
                     <td></td>
@@ -65,7 +79,7 @@
 </div>
 <div id="lqd-tab-events-item-mpm" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="mpm" class="" style="width:100%">
+        <table id="tablecolor" class="" style="width:100%">
             <thead>
                 <tr>
                     <td></td>
@@ -96,7 +110,7 @@
 
 <div id="lqd-tab-events-item-wb" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="wb" class="" style="width:100%">
+        <table id="tablecolor" class="" style="width:100%">
             <thead>
                 <tr>
                     <td></td>
@@ -127,7 +141,7 @@
 
 <div id="lqd-tab-events-item-wg" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="wg" class="" style="width:100%">
+        <table id="tablecolor" class="" style="width:100%">
             <thead>
                 <tr>
                     <td></td>
@@ -158,7 +172,7 @@
 
 <div id="lqd-tab-events-item-nsew" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="nsew" class="" style="width:100%">
+        <table id="tablecolor" class="" style="width:100%">
             <thead>
                 <tr>
                     <td></td>

@@ -10,9 +10,9 @@
     tr {
         height: 50px;
     }
-    .dataTables_length, .dataTables_filter{
+    /* .dataTables_length, .dataTables_filter{
         display: none;
-    }
+    } */
     .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
         border: none !important;
         background-color: none !important;

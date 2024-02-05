@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\DB;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\Cache;
 use App\Models\CategoryModel;
+use App\Models\AllColorpricingModel;
+
+use function Laravel\Prompts\table;
 
 class ColorPricingController extends Controller
 {
@@ -189,23 +192,25 @@ class ColorPricingController extends Controller
         // $nsew = DB::table('colorprice_supereasywash')->get();
         // return view('admin_dashboard.color_pricing.nsew', compact('nsew'));
         $nav = CategoryModel::all();
+        $ma = Cache::remember('colorprice_matex', $seconds = 86400, function () {
+            return DB::table('colorprice_matex')->get();
+        });
+        $mpm = Cache::remember('colorprice_matexpremium', $seconds = 86400, function () {
+            return DB::table('colorprice_matexpremium')->get();
+        });
+        $nsew = Cache::remember('colorprice_supereasywash', $seconds = 86400, function () {
+            return DB::table('colorprice_supereasywash')->get();
+        });
+        $wg = Cache::remember('colorprice_weathergard', $seconds = 86400, function () {
+            return DB::table('colorprice_weathergard')->get();
+        });
+        $wb = Cache::remember('colorprice_weatherbond', $seconds = 86400, function () {
+            return DB::table('colorprice_weatherbond')->get();
+        });
 
-        $all = Cache::remember('colorprice_matex', $seconds = 86400, function () {
-            return DB::table('colorprice_matex')->get();
-        });
-        $ma = Cache::remember('colorprice_matex', $seconds = 86400, function () {
-            return DB::table('colorprice_matex')->get();
-        });
-        $ma = Cache::remember('colorprice_matex', $seconds = 86400, function () {
-            return DB::table('colorprice_matex')->get();
-        });
-        $ma = Cache::remember('colorprice_matex', $seconds = 86400, function () {
-            return DB::table('colorprice_matex')->get();
-        });
-        $ma = Cache::remember('colorprice_matex', $seconds = 86400, function () {
-            return DB::table('colorprice_matex')->get();
-        });
-        return view('user_dashboard.websiteV2.color_pricing.all_color_pricing', compact('ma','nav'));
+        $all =  DB::table('colorprice_all')->get();
+
+        return view('user_dashboard.websiteV2.color_pricing.all_color_pricing', compact('ma','nav','mpm','wb','wg','nsew','all'));
 
     }
 }

@@ -9,21 +9,46 @@
 @section('css')
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/base.css">
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/digital-hub.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+{{-- @include('user_dashboard.websiteV2.color_pricing.dataTable_css') --}}
 <style>
 @media screen and (max-width: 430px){
     .pt-100{
         padding-top: 0 !important;
     }
 }
+.dataTables_filter{
+    display: none;
+}
+.dataTables_length{
+    display: none;
+
+}
 </style>
 @endsection
 @section('js_vendor')
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var table = $('#tablecolor, #ma, #mpm, #wb, #wg, #nsew').DataTable({
+            "pageLength": 10,
+            "oLanguage": {
+            "sLengthMenu": "_MENU_"
+            }
+        });
+        $('#myInput').on( 'keyup', function () {
+            table.search( this.value ).draw();
+        });
+    });
+</script>
 @endsection
+
 @section('js_page')
+
+
 @endsection
 @section('content')
-@include('user_dashboard.websiteV2.color_pricing.color_pricing_js')
-
 <div id="lqd-contents-wrap">
     <section class="lqd-section design pt-100 pb-40 top-90">
         <div class="absolute top-0">
@@ -213,7 +238,7 @@
                             <div class="mobile-view-search" style="float: right">
                                 <span class="lqd-form-control-wrap text">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
-                                    <input type="text"  onkeyup="filter_name()" size="40" id="myInput" autocomplete="off" class="icon-rtl lqd-cf-form-control border-1 border-black-10 rounded-4 px-2em text-16 text-slate-700" aria-required="true" aria-invalid="false">
+                                    <input type="text"  size="40" id="myInput" autocomplete="off" class="icon-rtl lqd-cf-form-control border-1 border-black-10 rounded-4 px-2em text-16 text-slate-700" aria-required="true" aria-invalid="false">
                                 </span>
                             </div>
                         </div>
@@ -229,4 +254,3 @@
 </div>
 
 @endsection
-
