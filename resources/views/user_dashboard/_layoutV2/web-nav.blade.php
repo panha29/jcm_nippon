@@ -153,15 +153,6 @@
                             @endforeach
                         </ul>
                     </li>
-                    {{-- <li class="menu-item-has-children">
-                        <a href="/User/Painting-Services" class="leading-1/4em">
-                            Painting Service
-                            <span class="submenu-expander absolute"></span>
-                            <span class="link-icon inline-flex hide-if-empty right-icon">
-                                <i class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
-                            </span>
-                        </a>
-                    </li> --}}
                     <li class="menu-item-has-children">
                         <a class="leading-1/4em ">
                             About Company
@@ -200,6 +191,11 @@
                     <li>
                         <a href="/User/Color-Palette" class="leading-1/4em">
                             Color Palette
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/User/Color-Pricing" class="leading-1/4em">
+                            Color Pricing
                         </a>
                     </li>
                     <li>

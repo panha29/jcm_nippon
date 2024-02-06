@@ -9,7 +9,7 @@
 @section('css')
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/base.css">
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/digital-hub.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="/css/jquery.customize.dataTables.min.css">
 {{-- @include('user_dashboard.websiteV2.color_pricing.dataTable_css') --}}
 <style>
 @media screen and (max-width: 430px){
@@ -56,7 +56,7 @@
                 <div class="ld-particles-inner lqd-overlay flex pointer-events-none" id="lqd-particle-design-services" ></div>
             </div>
         </div>
-        <div class="container">
+        {{-- <div class="container">
             <div class="row">
                 <div class="w-450 flex flex-col relative items-center max-w-full text-center mx-auto px-15">
                     <div class="ld-fancy-heading relative w-auto py-5 px-15 bg-gray rounded-100 animation-element">
@@ -147,10 +147,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </section>
      <!-- Satrt Events -->
-     <section class="lqd-section events pt-40 pb-70" id="events">
+     <section class="lqd-section events pb-70" id="events">
         <div class="container">
             <div class="row">
                 <div class="col col-12 mb-30">
