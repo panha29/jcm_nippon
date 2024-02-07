@@ -1,7 +1,7 @@
 @php
     $html_tag_data = [];
     $title = 'Dashboards';
-    $description = 'Dashboard pages contains different layouts to provide stats, graphics, listings, categories, banners and so on. They have various implementations of plugins such as Datatables, Chart.js, Glide.js and Plyr.js with alternative extensions.';
+    $description = 'JCM Nippon Paint Cambodia, Provide all kinds of house painting color and contruction materials, fit with every enviroment';
     $breadcrumbs = ["/"=>"Home"]
 @endphp
 @extends('webv2-layout',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description])

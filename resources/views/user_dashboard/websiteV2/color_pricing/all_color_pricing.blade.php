@@ -10,7 +10,8 @@
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/base.css">
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/digital-hub.css">
 <link rel="stylesheet" href="/css/jquery.customize.dataTables.min.css">
-{{-- @include('user_dashboard.websiteV2.color_pricing.dataTable_css') --}}
+{{-- @include('user_dashboard.websiteV2.color_pricing.css') --}}
+@include('user_dashboard.websiteV2.color_pricing.modal_css')
 <style>
 @media screen and (max-width: 430px){
     .pt-100{
@@ -27,25 +28,14 @@
 </style>
 @endsection
 @section('js_vendor')
-<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-<script>
-    $(document).ready(function() {
-        var table = $('#tablecolor, #ma, #mpm, #wb, #wg, #nsew').DataTable({
-            "pageLength": 10,
-            "oLanguage": {
-            "sLengthMenu": "_MENU_"
-            }
-        });
-        $('#myInput').on( 'keyup', function () {
-            table.search( this.value ).draw();
-        });
-    });
-</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+@include('user_dashboard.websiteV2.color_pricing.js')
+
+
 @endsection
 
 @section('js_page')
-
 
 @endsection
 @section('content')
@@ -157,8 +147,6 @@
                     <div class="lqd-tabs lqd-tabs-style-3 lqd-tabs-nav-items-not-expanded lqd-nav-underline-" data-tabs-options='{ "trigger" : "click" }'>
                         <nav class="lqd-tabs-nav-wrap mb-2rem">
                             <ul class="reset-ul lqd-tabs-nav flex items-center justify-center border-black-10 link-13 uppercase font-ultrabold link-primary md:justify-between" role="tablist">
-
-
                                 <li data-controls="lqd-tab-events-item-1" role="presentation" class="text-center">
                                     <a href="#lqd-tab-events-item-show-all" class="active" aria-expanded="false" aria-controls="lqd-tab-events-item-show-all" role="tab" data-bs-toggle="tab">
                                         <span class="iconbox items-center justify-center">
@@ -171,7 +159,6 @@
                                         </span>
                                     </a>
                                 </li>
-
                                 <li data-controls="lqd-tab-events-item-2" role="presentation" class="text-center">
                                     <a href="#lqd-tab-events-item-ma" class="" aria-expanded="false" aria-controls="lqd-tab-events-item-ma" role="tab" data-bs-toggle="tab">
                                         <span class="iconbox items-center justify-center">
@@ -252,5 +239,10 @@
     </section>
     <!-- End Events -->
 </div>
+<!-- Button trigger modal -->
+{{-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+</button> --}}
+
 
 @endsection

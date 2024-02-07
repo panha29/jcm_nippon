@@ -1,4 +1,6 @@
 <script src="/webv2/vendors/jquery.min.js"></script>
+<script src="/js/datetime_query/jquery-3.5.1.js"></script>
+
 <script src="/webv2/vendors/jquery-ui/jquery-ui.min.js"></script>
 <script src="/webv2/vendors/fastdom/fastdom.min.js"></script>
 <script src="/webv2/js/theme.min.js"></script>
