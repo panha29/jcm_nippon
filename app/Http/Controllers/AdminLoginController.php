@@ -35,6 +35,11 @@ class AdminLoginController extends Controller
         return redirect('/Admin/User/List');
     }
 
+    public function user_destroy($id){
+        User::where('id',$id)->forceDelete();
+        return redirect('/Admin/User/List');
+    }
+
     function product_list_edit($id){
         $item = ProductModel::find ($id);
         $cate = CategoryModel::get();

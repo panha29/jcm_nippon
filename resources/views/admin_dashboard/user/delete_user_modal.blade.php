@@ -42,7 +42,7 @@
         </div>
         <div class="modal-footer" style="border-top: none !important;">
           <button type="button" class="btn btn-utility" data-bs-dismiss="modal">No, Keep it.</button>
-          <button type="button" class="btn btn-danger">Yes, Delete!</button>
+          <a href="/Admin/User/List/{{$item->id}}/Delete" class="btn btn-danger">Yes, Delete!</a>
         </div>
       </div>
     </div>

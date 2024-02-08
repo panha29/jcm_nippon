@@ -104,6 +104,7 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
     Route::group(['prefix'=>'User'],function(){
         Route::get('List',[AdminLoginController::class,'user_list']);
         Route::post('List/Adduser',[AdminLoginController::class,'add_user']);
+        Route::get('List/{id}/Delete',[AdminLoginController::class,'user_destroy']);
     });
 
     Route::group(['prefix'=>'ColorPalette'],function(){
