@@ -192,7 +192,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="btn btn-solid btn-md uppercase text-13 font-bold  leading-1/4em bg-white rounded-100 shadow-md text-blue-700 hover:text-white" href="/login">
+                        <a class="btn btn-solid btn-md uppercase text-13 font-bold  leading-1/4em rounded-100 shadow-md text-blue-700 hover:text-white" href="/login" style="background-color: springgreen;">
                             Login
                         </a>
                     </li>

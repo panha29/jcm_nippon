@@ -152,7 +152,7 @@ Route::redirect('/', '/Home', 301);
 Route::view('/Verify','websiteV2.verify');
 
 Route::get('/Home', function() {
-    Artisan::call('view:clear');
+    Artisan::call('cache:clear');
     $product = ProductModel::all();
     $nav = CategoryModel::all();
     return view('websiteV2.website_index',compact('product','nav'));

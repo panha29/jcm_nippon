@@ -15,7 +15,7 @@
                     <tr data-bs-toggle="modal" data-bs-target="#exampleModal{{$item->id}}">
                         <td class="mobile-font" style="width: 11% ; padding:0; text-align:center">{{$item->id}}</td>
                         <td class="mobile-font col-2 gfold_name">{{$item->color_name}}</td>
-                        <td class="mobile-font col-3"><b>{{$item->color_description}}</b></td>
+                        <td class="mobile-font col-3 gfold_tag"><b>{{$item->color_description}}</b></td>
                         <td class="col-4 gfold" style="padding: 0px"><img src="{{ url('img/color_pricing/'.$item->color_image) }}" alt="jcm nippon cambodia" style="width: 150px; height:150px"  onerror="this.src='{{ url('img/no_image.png') }}';"></td>
                     </tr>
                     <!-- Modal -->
