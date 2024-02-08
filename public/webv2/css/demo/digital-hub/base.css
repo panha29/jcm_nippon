@@ -536,6 +536,9 @@ body {
 }
 
 @media only screen and (max-width: 769px) {
+    .content-dp {
+        display: contents;
+    }
     .gfold {
         /* width: 353px; */
         text-align: right;
@@ -554,6 +557,7 @@ body {
         border-style: none;
         border-width: 0;
         width: 768px;
+        display: contents;
     }
     tbody {
         display: inline-flex;
@@ -639,7 +643,7 @@ body {
     .color_pallete tbody {
         display: inline-flex;
         flex-wrap: wrap;
-        width: 390px;
+        width: 740px;
         flex-direction: row;
         align-content: center;
     }

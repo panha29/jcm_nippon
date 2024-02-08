@@ -1,7 +1,7 @@
 @php
     $html_tag_data = [];
-    $title = 'Dashboards';
-    $description = 'JCM Cambodia';
+    $title = 'JCMNP';
+    $description = 'JCM Cambodia, Provide house Painting product, Contruction material and many more things. Contact us now for more information';
     $breadcrumbs = ["/"=>"Home"]
 @endphp
 @extends('user_dashboard.webv2-layout',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description])

@@ -1,6 +1,6 @@
 @php
     $html_tag_data = [];
-    $title = 'Dashboards';
+    $title = 'JCMNP';
     $description = 'JCM Nippon Paint Cambodia, Provide all kinds of house painting color and contruction materials, fit with every enviroment';
     $breadcrumbs = ["/"=>"Home"]
 @endphp

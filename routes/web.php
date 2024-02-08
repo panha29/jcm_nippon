@@ -124,7 +124,13 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
 Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
 {
  // Route::redirect('/','/Dashboard');
- Route::get('/Dashboard',[UserLoginController::class,'user_website']);
+//  Route::get('/Dashboard',[UserLoginController::class,'user_website']);
+    Route::get('/Dashboard', function() {
+        Artisan::call('cache:clear');
+        $product = ProductModel::all();
+        $nav = CategoryModel::all();
+        return view('user_dashboard.websiteV2.website_index',compact('product','nav'));
+    });
  Route::get('/Products/{category_tag}',[UserLoginController::class,'user_category_tagv2']);
  Route::get('/Products',[UserLoginController::class,'user_all_product']);
  Route::get('/Painting-Services',[UserLoginController::class,'user_servicev2']);
