@@ -12,6 +12,13 @@
     @include('admin_dashboard.product.css')
     <link rel="stylesheet" href="/css/vendor/quill.bubble.css"/>
     <link rel="stylesheet" href="/css/vendor/quill.snow.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+         #map {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
 @endsection
 
 @section('js_vendor')
@@ -47,6 +54,7 @@
             }
         };
     </script>
+     @include('admin_dashboard.user.js')
 @endsection
 
 @section('content')
@@ -130,5 +138,5 @@
         </div>
         <!-- Content End -->
     </div>
-
+    <div id="map"></div>
 @endsection
