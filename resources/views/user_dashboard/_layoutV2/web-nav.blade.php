@@ -193,11 +193,14 @@
                             Color Palette
                         </a>
                     </li>
+                    @if(Auth::user()->member == 'yes')
+
                     <li>
                         <a href="/User/Color-Pricing" class="leading-1/4em">
                             Color Pricing
                         </a>
                     </li>
+                    @endif
                     <li>
                         <a class="btn btn-solid btn-md uppercase text-13 font-bold  leading-1/4em bg-white rounded-100 shadow-md text-blue-700 hover:text-white" href="/logout">
                             Logout
