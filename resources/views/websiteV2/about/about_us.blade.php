@@ -89,7 +89,7 @@
                                 <h4 class="accordion-title leading-1/5em text-blue-300" id="heading-1">
                                     <a class="py-0/65em px-1/5em bg-gray text-16 font-bold" role="button" data-bs-toggle="collapse" href="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
                                         <span class="accordion-title-txt">Nippon Paint 1881</span>
-                                        <img src="webv2/images/1881.png" width="100" alt="nippon paint cambodia" class="logo-img">
+                                        <img src="webv2/images/1881.png" width="100" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" class="logo-img">
                                         <span class="accordion-expander text-22">
                                             <i class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
                                             <i class="lqd-icn-ess icon-ion-ios-arrow-up"></i>
@@ -109,7 +109,7 @@
                                 <h4 class="accordion-title leading-1/5em text-blue-300" id="heading-2">
                                     <a class="collapsed py-0/65em px-1/5em bg-gray text-16 font-bold" role="button" data-bs-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
                                         <span class="accordion-title-txt">Nippon Paint 1962</span>
-                                        <img src="webv2/images/1962.png" width="100" alt="nippon paint cambodia" class="logo-img">
+                                        <img src="webv2/images/1962.png" width="100" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" class="logo-img">
                                         <span class="accordion-expander text-22">
                                             <i class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
                                             <i class="lqd-icn-ess icon-ion-ios-arrow-up"></i>
@@ -130,7 +130,7 @@
                                 <h4 class="accordion-title leading-1/5em text-blue-300" id="heading-3">
                                     <a class="collapsed py-0/65em px-1/5em bg-gray text-16 font-bold" role="button" data-bs-toggle="collapse" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
                                         <span class="accordion-title-txt">Nippon Paint 1998</span>
-                                        <img src="webv2/images/1998.png" width="100" alt="nippon paint cambodia" class="logo-img">
+                                        <img src="webv2/images/1998.png" width="100" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" class="logo-img">
 
                                         <span class="accordion-expander text-22">
                                             <i class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
@@ -152,7 +152,7 @@
                                 <h4 class="accordion-title leading-1/5em text-blue-300" id="heading-3">
                                     <a class="collapsed py-0/65em px-1/5em bg-gray text-16 font-bold" role="button" data-bs-toggle="collapse" href="#collapse-4" aria-expanded="false" aria-controls="collapse-3">
                                         <span class="accordion-title-txt">Nippon Paint 2021</span>
-                                        <img src="webv2/images/npp.png" width="100" alt="nippon paint cambodia" class="logo-img new-logo">
+                                        <img src="webv2/images/npp.png" width="100" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" class="logo-img new-logo">
 
                                         <span class="accordion-expander text-22">
                                             <i class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
@@ -175,7 +175,7 @@
                                 <h4 class="accordion-title leading-1/5em text-blue-300" id="heading-3">
                                     <a class="collapsed py-0/65em px-1/5em bg-gray text-16 font-bold" role="button" data-bs-toggle="collapse" href="#collapse-5" aria-expanded="false" aria-controls="collapse-3">
                                         <span class="accordion-title-txt">Nippon Paint 2022</span>
-                                        <img src="webv2/images/npp.png" width="100" alt="nippon paint cambodia" class="logo-img new-logo">
+                                        <img src="webv2/images/npp.png" width="100" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" class="logo-img new-logo">
 
                                         <span class="accordion-expander text-22">
                                             <i class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
@@ -199,7 +199,7 @@
                                 <h4 class="accordion-title leading-1/5em text-blue-300" id="heading-3">
                                     <a class="collapsed py-0/65em px-1/5em bg-gray text-16 font-bold" role="button" data-bs-toggle="collapse" href="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
                                         <span class="accordion-title-txt">JCMNIPPON Private.,Ltd 2023</span>
-                                        <img src="webv2/images/npp.png" width="100" alt="nippon paint cambodia" class="logo-img new-logo1">
+                                        <img src="webv2/images/npp.png" width="100" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" class="logo-img new-logo1">
 
                                         <span class="accordion-expander text-22">
                                             <i class="lqd-icn-ess icon-ion-ios-arrow-down"></i>

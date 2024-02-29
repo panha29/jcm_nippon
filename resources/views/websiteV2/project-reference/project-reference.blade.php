@@ -350,7 +350,7 @@
                             <article class="lqd-lp relative lqd-lp-style-6 lqd-lp-hover-img-zoom lqd-lp-animate-onhover rounded-4 overflow-hidden text-start post type-post status-publish format-standard has-post-thumbnail hentry category-blog-single tag-beauty tag-travel">
                                 <div class="lqd-lp-img overflow-hidden">
                                     <figure>
-                                        <img width="720" height="510" src="{{ url('img/project_reference/company_project_reference/'.$item->project_reference_image1) }}" alt="nippon paint cambodia">
+                                        <img width="720" height="510" src="{{ url('img/project_reference/company_project_reference/'.$item->project_reference_image1) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                     </figure>
                                 </div>
                                 <header class="lqd-lp-header p-2rem" style="height: 139px">
@@ -379,7 +379,7 @@
                             <article class="lqd-lp relative lqd-lp-style-6 lqd-lp-hover-img-zoom lqd-lp-animate-onhover rounded-4 overflow-hidden text-start post type-post status-publish format-standard has-post-thumbnail hentry category-blog-single tag-beauty tag-travel">
                                 <div class="lqd-lp-img overflow-hidden">
                                     <figure>
-                                        <img src="{{ url('img/project_reference/company_project_reference/'.$item->project_reference_image1) }}" alt="nippon paint cambodia">
+                                        <img src="{{ url('img/project_reference/company_project_reference/'.$item->project_reference_image1) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                     </figure>
                                 </div>
                                 <header class="lqd-lp-header p-1rem" style="height: 90px; width:350px">

@@ -11,10 +11,9 @@
                     <?php if ($item->colorpalette_category == "Green") { ?>
                         <tr>
                             <td class="content-dp">
-                                <div id="lqd-tab-events-item-Green" role="tabpanel" class="lqd-tabs-pane fade color-view" >
+                                <div id="lqd-tab-events-item-Green" role="tabpanel" class="lqd-tabs-pane fade color-view">
                                     <div id="box">
-                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
-
+                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                         <span class="iconbox items-center justify-center mt-10">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
                                                 <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b></span>
@@ -23,7 +22,7 @@
 
                                         <span class="iconbox items-center justify-center">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span>
+                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
                                             </span>
                                         </span>
 
@@ -56,7 +55,7 @@
                             <td class="content-dp">
                                 <div id="lqd-tab-events-item-All-Color" role="tabpanel" class="lqd-tabs-pane fade color-view" >
                                     <div id="box">
-                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
+                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
 
                                         <span class="iconbox items-center justify-center mt-10">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
@@ -66,7 +65,7 @@
 
                                         <span class="iconbox items-center justify-center">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span>
+                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
                                             </span>
                                         </span>
 
@@ -98,7 +97,7 @@
                             <td class="content-dp">
                                 <div id="lqd-tab-events-item-All-Color" role="tabpanel" class="lqd-tabs-pane fade color-view" >
                                     <div id="box">
-                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
+                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
 
                                         <span class="iconbox items-center justify-center mt-10">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
@@ -108,7 +107,7 @@
 
                                         <span class="iconbox items-center justify-center">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span>
+                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
                                             </span>
                                         </span>
 
@@ -140,7 +139,7 @@
                             <td class="content-dp">
                                 <div id="lqd-tab-events-item-All-Color" role="tabpanel" class="lqd-tabs-pane fade color-view" >
                                     <div id="box">
-                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
+                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
 
                                         <span class="iconbox items-center justify-center mt-10">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
@@ -150,7 +149,7 @@
 
                                         <span class="iconbox items-center justify-center">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span>
+                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
                                             </span>
                                         </span>
 
@@ -182,7 +181,7 @@
                             <td class="content-dp">
                                 <div id="lqd-tab-events-item-Blue" role="tabpanel" class="lqd-tabs-pane fade color-view" >
                                     <div id="box">
-                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
+                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
 
                                         <span class="iconbox items-center justify-center mt-10">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
@@ -192,7 +191,7 @@
 
                                         <span class="iconbox items-center justify-center">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span>
+                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
                                             </span>
                                         </span>
 
@@ -224,7 +223,7 @@
                             <td class="content-dp">
                                 <div id="lqd-tab-events-item-All-Color" role="tabpanel" class="lqd-tabs-pane fade color-view" >
                                     <div id="box">
-                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
+                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
 
                                         <span class="iconbox items-center justify-center mt-10">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
@@ -234,7 +233,7 @@
 
                                         <span class="iconbox items-center justify-center">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span>
+                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
                                             </span>
                                         </span>
 
@@ -266,7 +265,7 @@
                             <td class="content-dp">
                                 <div id="lqd-tab-events-item-All-Color" role="tabpanel" class="lqd-tabs-pane fade color-view" >
                                     <div id="box">
-                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
+                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
 
                                         <span class="iconbox items-center justify-center mt-10">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
@@ -276,7 +275,7 @@
 
                                         <span class="iconbox items-center justify-center">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span>
+                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
                                             </span>
                                         </span>
 
@@ -308,7 +307,7 @@
                             <td class="content-dp">
                                 <div id="lqd-tab-events-item-All-Color" role="tabpanel" class="lqd-tabs-pane fade color-view" >
                                     <div id="box">
-                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
+                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
 
                                         <span class="iconbox items-center justify-center mt-10">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
@@ -318,7 +317,7 @@
 
                                         <span class="iconbox items-center justify-center">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span>
+                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
                                             </span>
                                         </span>
 
@@ -350,7 +349,7 @@
                             <td class="content-dp">
                                 <div id="lqd-tab-events-item-All-Color" role="tabpanel" class="lqd-tabs-pane fade color-view" >
                                     <div id="box">
-                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
+                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
 
                                         <span class="iconbox items-center justify-center mt-10">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
@@ -360,7 +359,7 @@
 
                                         <span class="iconbox items-center justify-center">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span>
+                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
                                             </span>
                                         </span>
 
@@ -392,7 +391,7 @@
                             <td class="content-dp">
                                 <div id="lqd-tab-events-item-All-Color" role="tabpanel" class="lqd-tabs-pane fade color-view" >
                                     <div id="box">
-                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia">
+                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
 
                                         <span class="iconbox items-center justify-center mt-10">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
@@ -402,7 +401,7 @@
 
                                         <span class="iconbox items-center justify-center">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span>
+                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
                                             </span>
                                         </span>
 

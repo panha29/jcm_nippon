@@ -60,7 +60,7 @@
                             <div class="lqd-imggrp-single mb-25 rounded-inherit" data-hover3d="true">
                                 <div class="lqd-imggrp-img-container rounded-inherit" data-stacking-factor="1">
                                     <figure class="rounded-inherit">
-                                        <img class="rounded-8" src="{{ url('img/product/company_product/'.$item->product_image) }}" alt="nippon paint cambodia" style="width:300px;background-image: url('webv2/images/demo/modern-agency/banner.jpg');">
+                                        <img class="rounded-8" src="{{ url('img/product/company_product/'.$item->product_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" style="width:300px;background-image: url('webv2/images/demo/modern-agency/banner.jpg');">
                                     </figure>
                                 </div>
                             </div>
@@ -139,7 +139,7 @@
                                     <div class="lqd-imggrp-single mb-25 rounded-inherit" data-hover3d="true">
                                         <div class="lqd-imggrp-img-container rounded-inherit" data-stacking-factor="1">
                                             <figure class="rounded-inherit">
-                                                <img class="rounded-8" src="{{ url('img/product/company_product/'.$item->product_image) }}" alt="nippon paint cambodia" style="width:300px;background-image: url('../webv2/images/demo/modern-agency/banner.jpg');">
+                                                <img class="rounded-8" src="{{ url('img/product/company_product/'.$item->product_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" style="width:300px;background-image: url('../webv2/images/demo/modern-agency/banner.jpg');">
                                             </figure>
                                         </div>
                                     </div>

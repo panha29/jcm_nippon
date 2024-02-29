@@ -30,7 +30,7 @@
                                 <div class="lqd-pf-img overflow-hidden rounded-6 relative mb-2em">
                                     <figure>
                                         <figure class="lqd-overlay flex items-center justify-center">
-                                            <img style="width: 80%;" src="{{url('img/product/company_product/'.$item->product_image)}}" class="w-full h-full objfit-cover objfit-center" alt="nippon paint cambodia product" >
+                                            <img style="width: 80%;" src="{{url('img/product/company_product/'.$item->product_image)}}" class="w-full h-full objfit-cover objfit-center" alt="nippon paint cambodia product ថ្មាំលាបផ្ទះ nippon paint" >
                                         </figure>
                                     </figure>
                                     {{-- <span class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center bg-transparent text-white" style="background-image: linear-gradient(180deg,  rgb(0 127 255 / 94%) 0%,  rgb(255 77 84 / 86%) 100%)">

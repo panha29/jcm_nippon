@@ -462,35 +462,35 @@
                                 <div class="col col-6 col-xl-3 px-30 carousel-item flex flex-col justify-center">
                                     <div class="carousel-item-inner relative w-full">
                                         <div class="carousel-item-content relative w-full">
-                                            <img width="150" src="../webv2/images/client/aeon.png" alt="nippon paint cambodia">
+                                            <img width="150" src="../webv2/images/client/aeon.png" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col col-6 col-xl-3 px-30 carousel-item flex flex-col justify-center">
                                     <div class="carousel-item-inner relative w-full">
                                         <div class="carousel-item-content relative w-full">
-                                            <img width="150" src="../webv2/images/client/tourism.png" alt="nippon paint cambodia">
+                                            <img width="150" src="../webv2/images/client/tourism.png" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col col-6 col-xl-3 px-30 carousel-item flex flex-col justify-center">
                                     <div class="carousel-item-inner relative w-full">
                                         <div class="carousel-item-content relative w-full">
-                                            <img width="150" src="../webv2/images/client/grandpp.png" alt="nippon paint cambodia">
+                                            <img width="150" src="../webv2/images/client/grandpp.png" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col col-6 col-xl-3 px-30 carousel-item flex flex-col justify-center">
                                     <div class="carousel-item-inner relative w-full">
                                         <div class="carousel-item-content relative w-full">
-                                            <img width="150" src="../webv2/images/client/tax1.png" alt="nippon paint cambodia">
+                                            <img width="150" src="../webv2/images/client/tax1.png" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col col-6 col-xl-3 px-30 carousel-item flex flex-col justify-center">
                                     <div class="carousel-item-inner relative w-full">
                                         <div class="carousel-item-content relative w-full">
-                                            <img width="150" src="../webv2/images/client/ford.png" alt="nippon paint cambodia">
+                                            <img width="150" src="../webv2/images/client/ford.png" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                         </div>
                                     </div>
                                 </div>

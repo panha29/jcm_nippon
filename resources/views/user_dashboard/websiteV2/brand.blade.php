@@ -104,7 +104,7 @@
                         <div class="lqd-pf-img rounded-6 mb-2em">
                             <figure>
                                 <figure class="">
-                                    <img src="../webv2/images/selleys.jpg" class="objfit-cover objfit-center" alt="nippon paint cambodia selleys" class="brand-image" draggable="false">
+                                    <img src="../webv2/images/selleys.jpg" class="objfit-cover objfit-center" alt="nippon paint cambodia selleys ថ្មាំលាបផ្ទះ nippon paint" class="brand-image" draggable="false">
                                 </figure>
                             </figure>
                         </div>

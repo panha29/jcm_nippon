@@ -25,7 +25,7 @@
                                     <div class="lqd-pf-img  rounded-6 relative mb-2em">
                                         <figure>
                                             <figure class="lqd-overlay flex">
-                                                <img width="640" height="600" src="/webv2/images/brand/sto.png" class="w-full h-full objfit-cover objfit-center" alt="nippon paint sto" draggable="false" style="padding:25px">
+                                                <img width="640" height="600" src="/webv2/images/brand/sto.png" class="w-full h-full objfit-cover objfit-center" alt="nippon paint sto ថ្មាំលាបផ្ទះ nippon paint" draggable="false" style="padding:25px">
                                             </figure>
                                         </figure>
                                     </div>

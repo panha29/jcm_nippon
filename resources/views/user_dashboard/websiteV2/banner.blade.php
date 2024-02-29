@@ -52,7 +52,7 @@
                             </defs>
                         </svg>
                         <figure class="clip-svg" data-responsive-bg="true">
-                            <img width="1292" height="1196" src="/webv2/images/big-pic.png" class="w-full invisible" alt="nippon paint cambodia">
+                            <img width="1292" height="1196" src="/webv2/images/big-pic.png" class="w-full invisible" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                         </figure>
                     </div>
                 </div>

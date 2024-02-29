@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="/webv2/css/demo/digital-hub/digital-hub.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
 
+<link rel="stylesheet" href="/css/vendor/baguetteBox.min.css"/>
 
 <style>
 @media screen and (max-width: 430px){
@@ -23,6 +24,8 @@
 @endsection
 
 @section('js_vendor')
+<script src="/js/vendor/baguetteBox.min.js"></script>
+
 @endsection
 
 @section('js_page')
@@ -30,6 +33,8 @@
 
 <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+<script src="/js/plugins/lightbox.js"></script>
+
 @endsection
 
 @section('content')

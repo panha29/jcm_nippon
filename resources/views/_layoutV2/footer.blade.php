@@ -45,8 +45,8 @@
                         <div class="lqd-imggrp-single block relative mb-35">
                             <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                                 <figure class="w-full relative">
-                                    {{-- <img src="/webv2/images/npp.png" alt="nippon paint cambodia" width="100"> --}}
-                                    <img src="/webv2/images/logo.png" alt="nippon paint cambodia">
+                                    {{-- <img src="/webv2/images/npp.png" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" width="100"> --}}
+                                    <img src="/webv2/images/logo.png" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
 
                                     {{-- <img src="/webv2/images/demo/digital-hub/logo.svg" alt="Digital Hub"> --}}
                                 </figure>
