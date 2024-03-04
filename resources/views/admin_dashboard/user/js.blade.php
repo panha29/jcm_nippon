@@ -1,8 +1,5 @@
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script>
-    @foreach ($data as $item)
-    var userIP = '{{$item->name}}';
-
     // Map initialization
     var map = L.map('map').setView([14.0860746, 100.608406], 6);
 
@@ -17,13 +14,13 @@
     } else {
         setInterval(() => {
             navigator.geolocation.getCurrentPosition(getPosition)
-        }, 1000);
+        }, 5000);
     }
 
-    var marker, circle;
+    var marker;
 
     function getPosition(position){
-        console.log(position)
+        // console.log(position)
         var lat = position.coords.latitude
         var long = position.coords.longitude
         var accuracy = position.coords.accuracy
@@ -32,19 +29,13 @@
             map.removeLayer(marker)
         }
 
-        if(circle) {
-            map.removeLayer(circle)
-        }
-
         marker = L.marker([lat, long])
         circle = L.circle([lat, long], {radius: accuracy})
 
-        var featureGroup = L.featureGroup([marker, circle]).addTo(map)
+        var featureGroup = L.featureGroup([marker]).addTo(map)
 
         map.fitBounds(featureGroup.getBounds())
 
-        console.log("Your coordinate is: Lat:"+"{{$item->name}} " + lat +" Long: "+ long+ " Accuracy: "+ accuracy)
+        console.log(lat + " " +long)
     }
-    @endforeach
-
 </script>
