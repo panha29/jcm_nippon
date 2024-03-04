@@ -12,11 +12,11 @@
     @include('admin_dashboard.product.css')
     <link rel="stylesheet" href="/css/vendor/quill.bubble.css"/>
     <link rel="stylesheet" href="/css/vendor/quill.snow.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="/css/map.min.css" />
     <style>
          #map {
             width: 100%;
-            height: 100vh;
+            height: 50vh;
         }
     </style>
 @endsection
