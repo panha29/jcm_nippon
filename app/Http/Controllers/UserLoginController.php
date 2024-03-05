@@ -82,4 +82,14 @@ class UserLoginController extends Controller
         $product = ProductModel::all();
         return view('user_dashboard.websiteV2.contact.contact_us',compact('nav','product'));
     }
+
+    function staff_signin(){
+        return view('staff_attendant.staff_signin.index');
+    }
+
+    function staff_detail($id){
+        $user = User::find($id);
+        return view('staff_attendant.staff_detail.detail',compact('user'));
+
+    }
 }

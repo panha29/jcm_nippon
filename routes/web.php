@@ -142,6 +142,8 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
  Route::get('/Color-Palette',[UserLoginController::class,'user_color_palette']);
  Route::get('/Color-Pricing',[ColorPricingController::class,'user_color_pricing']);
  Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');
+ Route::get('/Checkin',[UserLoginController::class,'staff_signin']);
+ Route::get('/Detail/{id}',[UserLoginController::class,'staff_detail']);
 
 });
 

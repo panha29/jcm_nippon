@@ -62,6 +62,11 @@
                         @enderror
                     </div>
 
+                    <div class="mb-3 filled form-group tooltip-end-top">
+                        <i data-acorn-icon="phone">Phone</i>
+                        <input type="phone" class="form-control" name="phone" id="phone" placeholder="Phone" autocomplete="off" required/>
+                    </div>
+
                     <div class="mb-3 filled form-group tooltip-end-top" hidden>
                         <i data-acorn-icon="user"></i>
                         <input type="text" class="form-control" placeholder="Member" name="member" id="member" autocomplete="off" value="member"/>

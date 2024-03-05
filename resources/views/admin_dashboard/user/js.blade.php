@@ -37,5 +37,6 @@
         map.fitBounds(featureGroup.getBounds())
 
         console.log(lat + " " +long)
+        console.log(accuracy)
     }
 </script>

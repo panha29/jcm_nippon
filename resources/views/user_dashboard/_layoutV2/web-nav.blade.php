@@ -130,14 +130,16 @@
             </button>
         </div>
 
+        {{-- mobile nav --}}
         <div class="lqd-mobile-sec-nav w-full absolute z-10">
             <div class="mobile-navbar-collapse navbar-collapse collapse w-full" id="lqd-mobile-sec-nav" aria-expanded="false" role="navigation">
                 <ul id="mobile-primary-nav" class="reset-ul lqd-mobile-main-nav main-nav lqd-submenu-toggle-hover">
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7550 current_page_item menu-item-7601">
                         <a href="/User/Dashboard" class="leading-1/4em">Home</a>
                     </li>
-                    <li class="menu-item-has-children">
+                    @if(Auth::user()->duty == 'duty')
 
+                    <li class="menu-item-has-children">
                         <a class="leading-1/4em" href="/User/Products">
                             Products
                             <span class="submenu-expander absolute"></span>
@@ -188,16 +190,22 @@
                             Contact Us
                         </a>
                     </li>
+                    @endif
+
                     <li>
                         <a href="/User/Color-Palette" class="leading-1/4em">
                             Color Palette
                         </a>
                     </li>
                     @if(Auth::user()->member == 'yes')
-
                     <li>
                         <a href="/User/Color-Pricing" class="leading-1/4em">
                             Color Pricing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/User/Checkin" class="leading-1/4em">
+                            កំណត់ត្រាវត្តមាន
                         </a>
                     </li>
                     @endif
@@ -209,6 +217,7 @@
                 </ul>
             </div>
         </div>
+        {{-- end of mobile nav --}}
     </div>
 </header>
 <script>
