@@ -13,6 +13,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Auth;
 
 class UserLoginController extends Controller
 {
@@ -84,7 +85,7 @@ class UserLoginController extends Controller
     }
 
     function staff_signin(){
-        return view('staff_attendant.staff_signin.index');
+        return view('staff_attendant.staff_signin.checkin_button');
     }
 
     function staff_detail($id){

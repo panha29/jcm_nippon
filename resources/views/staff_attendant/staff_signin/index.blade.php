@@ -13,12 +13,7 @@
     <link rel="stylesheet" href="/css/vendor/quill.bubble.css"/>
     <link rel="stylesheet" href="/css/vendor/quill.snow.css"/>
     <link rel="stylesheet" href="/css/map.min.css" />
-    <style>
-         #map {
-            width: 100%;
-            height: 50vh;
-        }
-    </style>
+    @include('staff_attendant.css')
 @endsection
 
 @section('js_vendor')
@@ -54,7 +49,7 @@
             }
         };
     </script>
-     {{-- @include('staff_attendant.user.js') --}}
+     @include('staff_attendant.staff_signin.js')
 @endsection
 
 @section('content')
@@ -84,8 +79,8 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Name</th>
-                                    <th>Duty</th>
+                                    <th>Date</th>
+                                    <th>Checked</th>
 
                                 </tr>
                             </thead>
