@@ -159,7 +159,7 @@
                     <input type="text" name="staff_email" id="" value="{{auth()->user()->email}}">
                     <input type="text" name="staff_checkin_date" id="" value="<?php echo date("Y/m/d"); ?>">
                     <input type="text" name="staff_checkin_time" id="" value="<?php echo date("h:i:sa"); ?>">
-                    <input type="text" name="staff_location" id="geo" value="">
+                    <input type="text" name="staff_location" id="geos" value="">
                     <div id="map" ></div>
 
                 </form>

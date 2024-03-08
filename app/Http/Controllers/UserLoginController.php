@@ -85,6 +85,7 @@ class UserLoginController extends Controller
     }
 
     function staff_signin(){
+
         return view('staff_attendant.staff_signin.checkin_button');
     }
 

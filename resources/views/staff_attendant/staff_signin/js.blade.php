@@ -38,11 +38,12 @@
 
         console.log(lat + " " +long)
         console.log(accuracy)
-        var geo = lat + " " +long;
-        console.log(geo);
+        var $geo = lat + " " +long;
+        console.log($geo);
 
-        function myFunction() {
-            document.getElementById("geo").value = geo;
-            }
+       document.getElementById("geos").value = $geo;
+
     }
 </script>
+
+
