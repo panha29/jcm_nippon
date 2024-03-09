@@ -163,8 +163,8 @@
                         <input type="text" name="staff_location" id="geos" value="">
                         <div id="map"></div>
                     </div>
-                    <?php if ($staff->staff_checkin_date == '<?php echo date("Y/m/d"); ?>') { ?>
-                    <button type="submit" class="btn btn-primary col-12" disabled >Check In</button>
+                    <?php if ($staff->staff_checkin_date == '') { ?>
+                    <button type="submit" class="btn btn-primary col-12" >Check In</button>
 
 
 
