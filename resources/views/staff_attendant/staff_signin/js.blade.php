@@ -14,7 +14,7 @@
     } else {
         setInterval(() => {
             navigator.geolocation.getCurrentPosition(getPosition)
-        }, 5000);
+        }, 1000);
     }
 
     var marker;

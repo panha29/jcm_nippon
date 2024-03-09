@@ -144,7 +144,7 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
  Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');
 
 
- Route::get('/Checkin',[UserLoginController::class,'staff_signin']);
+ Route::get('/Checkin/{id}',[UserLoginController::class,'staff_signin']);
  Route::get('/Detail/{id}',[UserLoginController::class,'staff_detail']);
 
 });

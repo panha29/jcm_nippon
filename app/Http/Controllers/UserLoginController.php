@@ -9,6 +9,7 @@ use App\Models\NewsModel;
 use App\Models\ProductModel;
 use App\Models\ProjectReferenceModel;
 use App\Models\MediaModel;
+use App\Models\staff_attendant;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -84,14 +85,25 @@ class UserLoginController extends Controller
         return view('user_dashboard.websiteV2.contact.contact_us',compact('nav','product'));
     }
 
-    function staff_signin(){
-
-        return view('staff_attendant.staff_signin.checkin_button');
+    function staff_signin($id){
+        $staff = DB::table('staff_attendant')->find($id);
+        return view('staff_attendant.staff_signin.checkin_button',compact('staff'));
     }
 
     function staff_detail($id){
         $user = User::find($id);
         return view('staff_attendant.staff_detail.detail',compact('user'));
 
+    }
+
+    function save_attendant(Request $request){
+        $staff = new staff_attendant();
+        $staff -> staff_name = $request -> staff_name;
+        $staff -> staff_phone = $request -> staff_phone;
+        $staff -> staff_email = $request -> staff_email;
+        $staff -> staff_checkin_date = $request -> staff_checkin_date;
+        $staff -> staff_checkin_time = $request -> staff_checkin_time;
+        $staff -> staff_location = $request -> staff_location;
+        $staff -> save();
     }
 }

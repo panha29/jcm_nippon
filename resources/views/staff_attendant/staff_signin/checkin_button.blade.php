@@ -154,14 +154,21 @@
                 </div>
                 <form action="" method="POST" enctype="multipart/form-data">
                     @csrf
-                    <input type="text" name="staff_name" id="" value="{{auth()->user()->name}}">
-                    <input type="text" name="staff_phone" id="" value="{{auth()->user()->phone}}">
-                    <input type="text" name="staff_email" id="" value="{{auth()->user()->email}}">
-                    <input type="text" name="staff_checkin_date" id="" value="<?php echo date("Y/m/d"); ?>">
-                    <input type="text" name="staff_checkin_time" id="" value="<?php echo date("h:i:sa"); ?>">
-                    <input type="text" name="staff_location" id="geos" value="">
-                    <div id="map" ></div>
+                    <div hidden>
+                        <input type="text" name="staff_name" id="" value="{{auth()->user()->name}}">
+                        <input type="text" name="staff_phone" id="" value="{{auth()->user()->phone}}">
+                        <input type="text" name="staff_email" id="" value="{{auth()->user()->email}}">
+                        <input type="text" name="staff_checkin_date" id="" value="<?php echo date("Y/m/d"); ?>">
+                        <input type="text" name="staff_checkin_time" id="" value="<?php echo date("h:i:sa"); ?>">
+                        <input type="text" name="staff_location" id="geos" value="">
+                        <div id="map"></div>
+                    </div>
+                    <?php if ($staff->staff_checkin_date == '<?php echo date("Y/m/d"); ?>') { ?>
+                    <button type="submit" class="btn btn-primary col-12" disabled >Check In</button>
 
+
+
+                    <?php } ?>
                 </form>
             </div>
         </div>
