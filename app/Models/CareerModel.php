@@ -16,5 +16,8 @@ class CareerModel extends Model
         'career_date',
         'career_detail',
         'career_location',
+        'career_gender',
+        'career_hiring',
+        'career_report_to',
     ];
 }

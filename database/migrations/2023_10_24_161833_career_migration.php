@@ -21,6 +21,9 @@ class CareerMigration extends Migration
             $table -> string('career_location')->nullable();
             $table -> string('career_date');
             $table -> string('career_detail')->nullable();
+            $table -> string('career_gender')->nullable();
+            $table -> string('career_hiring')->nullable();
+            $table -> string('career_report_to')->nullable();
             $table->timestamps();
         });
     }

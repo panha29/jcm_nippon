@@ -410,6 +410,9 @@ class AdminLoginController extends Controller
         $data -> career_date = $request -> career_date;
         $data -> career_detail = $request -> career_detail;
         $data -> career_image = $request -> career_image;
+        $data -> career_gender = $request -> career_gender;
+        $data -> career_hiring = $request -> career_hiring;
+        $data -> career_report_to = $request -> career_report_to;
         $data -> save();
         return redirect('/Admin/News-&-Media/Career');
     }
@@ -421,6 +424,9 @@ class AdminLoginController extends Controller
         $data -> career_date = $request -> career_date;
         $data -> career_detail = $request -> career_detail;
         $data -> career_image = $request -> career_image;
+        $data -> career_gender = $request -> career_gender;
+        $data -> career_hiring = $request -> career_hiring;
+        $data -> career_report_to = $request -> career_report_to;
         $data -> save();
         return redirect('/Admin/News-&-Media/Media');
     }

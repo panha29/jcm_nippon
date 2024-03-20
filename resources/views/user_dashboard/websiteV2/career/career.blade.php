@@ -93,7 +93,6 @@
             <div class="row">
                 <div class="col col-12 mb-30">
                     <div class="lqd-tabs lqd-tabs-style-3 lqd-tabs-nav-items-not-expanded lqd-nav-underline-" data-tabs-options='{ "trigger" : "click" }'>
-
                         <div class="lqd-tabs-content mb-2rem pt-15">
                             <div id="lqd-tab-events-item-1" role="tabpanel" class="lqd-tabs-pane fade active show">
                                 <div class="container p-0 module-container">

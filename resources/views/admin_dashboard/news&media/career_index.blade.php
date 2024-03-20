@@ -97,6 +97,21 @@
                                 <input type="text" class="form-control" placeholder="" aria-label="career_detail" aria-describedby="career_detail" name="career_detail" autocomplete="off" id="career_detail">
                             </div>
 
+                            <div class="input-group mb-3" >
+                                <span class="input-group-text" id="career_gender" style="width: 100px;">Gender</span>
+                                <input type="text" class="form-control" placeholder="" aria-label="career_gender" aria-describedby="career_gender" name="career_gender" autocomplete="off" id="career_detail">
+                            </div>
+
+                            <div class="input-group mb-3" >
+                                <span class="input-group-text" id="career_hiring" style="width: 100px;">Hiring</span>
+                                <input type="text" class="form-control" placeholder="" aria-label="career_hiring" aria-describedby="career_hiring" name="career_hiring" autocomplete="off" id="career_detail">
+                            </div>
+
+                            <div class="input-group mb-3" >
+                                <span class="input-group-text" id="career_report_to" style="width: 100px;">Report To</span>
+                                <input type="text" class="form-control" placeholder="" aria-label="career_report_to" aria-describedby="career_report_to" name="career_report_to" autocomplete="off" id="career_detail">
+                            </div>
+
                             <div class="input-group mb-3">
                                 <input type="file" class="form-control" name="career_image" id="input-file1" onchange="loadFile1(event)">
                             </div>
@@ -121,31 +136,28 @@
                                     <th>Title</th>
                                     <th>Position</th>
                                     <th>Detail</th>
-                                    <th>Image</th>
+                                    <th>Location</th>
+                                    <th>Gender</th>
+                                    <th>Hiring</th>
+                                    <th>Report To</th>
                                     <th>Date</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($data as $item)
                                     <tr>
-                                        <td>
-                                            {{$loop->iteration}}
-                                        </td>
-                                        <td>
-                                            {{$item->career_title}}
-                                        </td>
-                                        <td>
-                                            {{$item->career_position}}
-                                        </td>
-                                        <td>
-                                            {{$item->career_detail}}
-                                        </td>
-                                        <td>
+                                        <td>{{$loop->iteration}}</td>
+                                        <td>{{$item->career_title}}</td>
+                                        <td>{{$item->career_position}}</td>
+                                        <td>{{$item->career_detail}}</td>
+                                        {{-- <td>
                                             <img src="{{ url('img/product/company_product/'.$item->career_image) }}" alt="" style="width: 100px; height: 100px;" onerror="this.style.display = 'none'">
-                                        </td>
-                                        <td>
-                                            {{$item->career_date}}
-                                        </td>
+                                        </td> --}}
+                                        <td>{{$item->career_location}}</td>
+                                        <td>{{$item->career_gender}}</td>
+                                        <td>{{$item->career_hiring}}</td>
+                                        <td>{{$item->career_report_to}}</td>
+                                        <td>{{$item->career_date}} </td>
                                     </tr>
                                 @endforeach
                             </tbody>
