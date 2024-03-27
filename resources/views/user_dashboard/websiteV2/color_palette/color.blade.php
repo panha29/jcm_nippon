@@ -12,15 +12,10 @@
                         <tr>
                             <td class="content-dp">
                                 <div id="lqd-tab-events-item-Green" role="tabpanel" class="lqd-tabs-pane fade color-view">
-                                    <div id="box">
+                                    <div class="box">
                                         <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
+                                        <div class="top-lt"><span><b>{{$item->colorpalette_batch}}</b></span></div>
                                         <span class="iconbox items-center justify-center mt-10">
-                                            <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b></span>
-                                            </span>
-                                        </span>
-
-                                        <span class="iconbox items-center justify-center">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
                                                 <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
                                             </span>

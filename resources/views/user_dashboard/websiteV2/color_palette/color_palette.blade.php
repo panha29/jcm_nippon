@@ -20,6 +20,7 @@
     }
 }
 
+
 </style>
 @endsection
 
@@ -42,7 +43,7 @@
 @include('user_dashboard.websiteV2.css')
 
 <div id="lqd-contents-wrap">
-    <section class="lqd-section design pt-100 pb-40 top-90">
+    <section class="lqd-section design pt-100 pb-40 top-90 pt-0">
         <div class="absolute top-0">
             <div class="ld-particles-container relative w-full">
                 <div class="ld-particles-inner lqd-overlay flex pointer-events-none" id="lqd-particle-design-services" ></div>
