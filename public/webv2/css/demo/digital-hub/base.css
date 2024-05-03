@@ -254,9 +254,7 @@ body {
         line-height: 40px;
     }
     .color-view {
-        display: inline-flex;
-        height: 290px;
-        width: 180px;
+        display: grid;
     }
     .color_pallete td,
     .color_pallete th {
@@ -308,6 +306,11 @@ body {
 }
 
 @media screen and (max-width: 1920px) {
+    .box-color {
+        width: 100%;
+        height: 65%;
+        border-radius: 10px;
+    }
     .top-lt {
         position: absolute;
         top: 0px;
@@ -328,8 +331,9 @@ body {
         line-height: 40px;
     }
     .color-view {
-        display: inline-flex;
-        height: 290px;
+        /* display: inline-flex; */
+        display: grid;
+        height: 230px;
         width: 180px;
     }
     .color_pallete td,
@@ -482,9 +486,7 @@ body {
         flex-wrap: wrap;
     }
     .color-view {
-        display: inline-flex;
-        height: 280px;
-        /* width: 24%; */
+        display: grid;
     }
     table td,
     table th {
@@ -561,7 +563,7 @@ body {
         width: 100%
     }
     .color_pallete tbody {
-        width: 735px;
+        width: 850px;
     }
 }
 
@@ -629,11 +631,8 @@ body {
         width: 100%;
     }
     .color-view {
-        display: inline-flex;
-        /* height: 300px;
-        width: 175px; */
-        width: 150px;
-        height: 240px;
+        display: grid;
+        width: 200px;
     }
     .mobile-view-search {
         width: 100%;
@@ -797,11 +796,8 @@ body {
         width: 100%;
     }
     .color-view {
-        display: inline-flex;
-        /* height: 300px;
-        width: 175px; */
-        width: 110px;
-        height: 200px;
+        display: grid;
+        width: 145px;
     }
     .mobile-view-search {
         width: 100%;
@@ -950,11 +946,7 @@ body {
         width: 100%;
     }
     .color-view {
-        display: inline-flex;
-        /* height: 300px;
-        width: 175px; */
-        width: 150px;
-        height: 240px;
+        display: grid;
     }
     .mobile-view-search {
         width: 100%;
@@ -1003,7 +995,7 @@ body {
     .color_pallete tbody {
         display: inline-flex;
         flex-wrap: wrap;
-        width: 390px;
+        width: 538px;
         flex-direction: row;
         align-content: center;
     }
@@ -1094,9 +1086,7 @@ body {
         width: 100%;
     }
     .color-view {
-        display: inline-flex;
-        width: auto;
-        height: 290px;
+        display: grid;
     }
     .mobile-view-search {
         width: 100%;
@@ -1213,11 +1203,7 @@ body {
         text-align: center
     }
     .color-view {
-        display: inline-flex;
-        /* height: 300px;
-        width: 175px; */
-        width: 150px;
-        height: 240px;
+        display: grid;
     }
     .mobile-view-search {
         width: 100%;

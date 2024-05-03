@@ -13,16 +13,15 @@
                             <td class="content-dp">
                                 <div id="lqd-tab-events-item-Green" role="tabpanel" class="lqd-tabs-pane fade color-view">
                                     <div class="box">
-                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-                                        <div class="top-lt"><span><b>{{$item->colorpalette_batch}}</b></span></div>
+                                        {{-- <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint"> --}}
+                                        <div class="box-color" style="background-color:rgb({{$item->colorpalette_rgb}})"></div>
                                         <span class="iconbox items-center justify-center mt-10">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
+                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b> <br> <b>{{$item->colorpalette_batch}}</b></span></h6>
                                             </span>
                                         </span>
-
                                         <span class="flex flex-col"  style="text-align: center">
-                                            <span class="">{{$item->colorpalette_rgb}}</span>
+                                            <h6><span class="leading-1/15em tracking-1"><b>RGB({{$item->colorpalette_rgb}})</b></span></h6>
                                         </span>
                                     </div>
                                 </div>
@@ -50,22 +49,14 @@
                             <td class="content-dp">
                                 <div id="lqd-tab-events-item-All-Color" role="tabpanel" class="lqd-tabs-pane fade color-view" >
                                     <div id="box">
-                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-
+                                        <div class="box-color" style="background-color:rgb({{$item->colorpalette_rgb}})"></div>
                                         <span class="iconbox items-center justify-center mt-10">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b></span>
+                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b> <br> <b>{{$item->colorpalette_batch}}</b></span></h6>
                                             </span>
                                         </span>
-
-                                        <span class="iconbox items-center justify-center">
-                                            <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
-                                            </span>
-                                        </span>
-
                                         <span class="flex flex-col"  style="text-align: center">
-                                            <span class="">{{$item->colorpalette_rgb}}</span>
+                                            <h6><span class="leading-1/15em tracking-1"><b>RGB({{$item->colorpalette_rgb}})</b></span></h6>
                                         </span>
                                     </div>
                                 </div>
@@ -92,22 +83,14 @@
                             <td class="content-dp">
                                 <div id="lqd-tab-events-item-All-Color" role="tabpanel" class="lqd-tabs-pane fade color-view" >
                                     <div id="box">
-                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-
+                                        <div class="box-color" style="background-color:rgb({{$item->colorpalette_rgb}})"></div>
                                         <span class="iconbox items-center justify-center mt-10">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b></span>
+                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b> <br> <b>{{$item->colorpalette_batch}}</b></span></h6>
                                             </span>
                                         </span>
-
-                                        <span class="iconbox items-center justify-center">
-                                            <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
-                                            </span>
-                                        </span>
-
                                         <span class="flex flex-col"  style="text-align: center">
-                                            <span class="">{{$item->colorpalette_rgb}}</span>
+                                            <h6><span class="leading-1/15em tracking-1"><b>RGB({{$item->colorpalette_rgb}})</b></span></h6>
                                         </span>
                                     </div>
                                 </div>
@@ -134,22 +117,14 @@
                             <td class="content-dp">
                                 <div id="lqd-tab-events-item-All-Color" role="tabpanel" class="lqd-tabs-pane fade color-view" >
                                     <div id="box">
-                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-
+                                        <div class="box-color" style="background-color:rgb({{$item->colorpalette_rgb}})"></div>
                                         <span class="iconbox items-center justify-center mt-10">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b></span>
+                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b> <br> <b>{{$item->colorpalette_batch}}</b></span></h6>
                                             </span>
                                         </span>
-
-                                        <span class="iconbox items-center justify-center">
-                                            <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
-                                            </span>
-                                        </span>
-
                                         <span class="flex flex-col"  style="text-align: center">
-                                            <span class="">{{$item->colorpalette_rgb}}</span>
+                                            <h6><span class="leading-1/15em tracking-1"><b>RGB({{$item->colorpalette_rgb}})</b></span></h6>
                                         </span>
                                     </div>
                                 </div>
@@ -176,22 +151,14 @@
                             <td class="content-dp">
                                 <div id="lqd-tab-events-item-Blue" role="tabpanel" class="lqd-tabs-pane fade color-view" >
                                     <div id="box">
-                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-
+                                        <div class="box-color" style="background-color:rgb({{$item->colorpalette_rgb}})"></div>
                                         <span class="iconbox items-center justify-center mt-10">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b></span>
+                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b> <br> <b>{{$item->colorpalette_batch}}</b></span></h6>
                                             </span>
                                         </span>
-
-                                        <span class="iconbox items-center justify-center">
-                                            <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
-                                            </span>
-                                        </span>
-
                                         <span class="flex flex-col"  style="text-align: center">
-                                            <span class="">{{$item->colorpalette_rgb}}</span>
+                                            <h6><span class="leading-1/15em tracking-1"><b>RGB({{$item->colorpalette_rgb}})</b></span></h6>
                                         </span>
                                     </div>
                                 </div>
@@ -218,22 +185,14 @@
                             <td class="content-dp">
                                 <div id="lqd-tab-events-item-All-Color" role="tabpanel" class="lqd-tabs-pane fade color-view" >
                                     <div id="box">
-                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-
+                                        <div class="box-color" style="background-color:rgb({{$item->colorpalette_rgb}})"></div>
                                         <span class="iconbox items-center justify-center mt-10">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b></span>
+                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b> <br> <b>{{$item->colorpalette_batch}}</b></span></h6>
                                             </span>
                                         </span>
-
-                                        <span class="iconbox items-center justify-center">
-                                            <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
-                                            </span>
-                                        </span>
-
                                         <span class="flex flex-col"  style="text-align: center">
-                                            <span class="">{{$item->colorpalette_rgb}}</span>
+                                            <h6><span class="leading-1/15em tracking-1"><b>RGB({{$item->colorpalette_rgb}})</b></span></h6>
                                         </span>
                                     </div>
                                 </div>
@@ -260,22 +219,14 @@
                             <td class="content-dp">
                                 <div id="lqd-tab-events-item-All-Color" role="tabpanel" class="lqd-tabs-pane fade color-view" >
                                     <div id="box">
-                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-
+                                        <div class="box-color" style="background-color:rgb({{$item->colorpalette_rgb}})"></div>
                                         <span class="iconbox items-center justify-center mt-10">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b></span>
+                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b> <br> <b>{{$item->colorpalette_batch}}</b></span></h6>
                                             </span>
                                         </span>
-
-                                        <span class="iconbox items-center justify-center">
-                                            <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
-                                            </span>
-                                        </span>
-
                                         <span class="flex flex-col"  style="text-align: center">
-                                            <span class="">{{$item->colorpalette_rgb}}</span>
+                                            <h6><span class="leading-1/15em tracking-1"><b>RGB({{$item->colorpalette_rgb}})</b></span></h6>
                                         </span>
                                     </div>
                                 </div>
@@ -302,22 +253,14 @@
                             <td class="content-dp">
                                 <div id="lqd-tab-events-item-All-Color" role="tabpanel" class="lqd-tabs-pane fade color-view" >
                                     <div id="box">
-                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-
+                                        <div class="box-color" style="background-color:rgb({{$item->colorpalette_rgb}})"></div>
                                         <span class="iconbox items-center justify-center mt-10">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b></span>
+                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b> <br> <b>{{$item->colorpalette_batch}}</b></span></h6>
                                             </span>
                                         </span>
-
-                                        <span class="iconbox items-center justify-center">
-                                            <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
-                                            </span>
-                                        </span>
-
                                         <span class="flex flex-col"  style="text-align: center">
-                                            <span class="">{{$item->colorpalette_rgb}}</span>
+                                            <h6><span class="leading-1/15em tracking-1"><b>RGB({{$item->colorpalette_rgb}})</b></span></h6>
                                         </span>
                                     </div>
                                 </div>
@@ -344,22 +287,14 @@
                             <td class="content-dp">
                                 <div id="lqd-tab-events-item-All-Color" role="tabpanel" class="lqd-tabs-pane fade color-view" >
                                     <div id="box">
-                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-
+                                        <div class="box-color" style="background-color:rgb({{$item->colorpalette_rgb}})"></div>
                                         <span class="iconbox items-center justify-center mt-10">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b></span>
+                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b> <br> <b>{{$item->colorpalette_batch}}</b></span></h6>
                                             </span>
                                         </span>
-
-                                        <span class="iconbox items-center justify-center">
-                                            <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
-                                            </span>
-                                        </span>
-
                                         <span class="flex flex-col"  style="text-align: center">
-                                            <span class="">{{$item->colorpalette_rgb}}</span>
+                                            <h6><span class="leading-1/15em tracking-1"><b>RGB({{$item->colorpalette_rgb}})</b></span></h6>
                                         </span>
                                     </div>
                                 </div>
@@ -386,22 +321,14 @@
                             <td class="content-dp">
                                 <div id="lqd-tab-events-item-All-Color" role="tabpanel" class="lqd-tabs-pane fade color-view" >
                                     <div id="box">
-                                        <img src="{{ url('img/color_palette/company_color_palette/'.$item->colorpalette_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-
+                                        <div class="box-color" style="background-color:rgb({{$item->colorpalette_rgb}}); border:0.1px solid"></div>
                                         <span class="iconbox items-center justify-center mt-10">
                                             <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b></span>
+                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b> <br> <b>{{$item->colorpalette_batch}}</b></span></h6>
                                             </span>
                                         </span>
-
-                                        <span class="iconbox items-center justify-center">
-                                            <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                                <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_name}}</b></span></h6>
-                                            </span>
-                                        </span>
-
                                         <span class="flex flex-col"  style="text-align: center">
-                                            <span class="">{{$item->colorpalette_rgb}}</span>
+                                            <h6><span class="leading-1/15em tracking-1"><b>RGB({{$item->colorpalette_rgb}})</b></span></h6>
                                         </span>
                                     </div>
                                 </div>
