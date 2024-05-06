@@ -189,9 +189,9 @@
     <!-- End Portfolio -->
 @include('websiteV2.professional')
 @include('websiteV2.brand')
-@include('websiteV2.product')
+{{-- @include('websiteV2.product') --}}
 @include('websiteV2.goal')
-@include('websiteV2.applicator')
+{{-- @include('websiteV2.applicator') --}}
 
 
 

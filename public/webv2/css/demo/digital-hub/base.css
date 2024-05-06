@@ -255,6 +255,8 @@ body {
     }
     .color-view {
         display: grid;
+        height: 230px;
+        width: 180px;
     }
     .color_pallete td,
     .color_pallete th {
@@ -306,11 +308,6 @@ body {
 }
 
 @media screen and (max-width: 1920px) {
-    .box-color {
-        width: 100%;
-        height: 65%;
-        border-radius: 10px;
-    }
     .top-lt {
         position: absolute;
         top: 0px;
@@ -1306,4 +1303,10 @@ body {
     .col-md-4 {
         width: 50% !important;
     }
+}
+
+.box-color {
+    width: 100%;
+    height: 65%;
+    border-radius: 10px;
 }

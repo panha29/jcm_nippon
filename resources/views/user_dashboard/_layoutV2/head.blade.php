@@ -5,8 +5,8 @@
 <link rel="stylesheet" href="/webv2/css/theme.min.css">
 <link rel="stylesheet" href="/webv2/css/utility.min.css">
 
-<link rel="stylesheet" href="/webv2/css/demo/start-hub-8/base.css">
-<link rel="stylesheet" href="/webv2/css/demo/start-hub-8/start-hub-8.css">
+{{-- <link rel="stylesheet" href="/webv2/css/demo/start-hub-8/base.css">
+<link rel="stylesheet" href="/webv2/css/demo/start-hub-8/start-hub-8.css"> --}}
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

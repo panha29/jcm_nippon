@@ -168,3 +168,10 @@ Route::get('/Home', function() {
     $nav = CategoryModel::all();
     return view('websiteV2.website_index',compact('product','nav'));
 });
+
+Route::get('/clear-cache', function() {
+    Artisan::call('cache:clear');
+    $product = ProductModel::all();
+    $nav = CategoryModel::all();
+    return view('websiteV2.website_index',compact('product','nav'));
+});

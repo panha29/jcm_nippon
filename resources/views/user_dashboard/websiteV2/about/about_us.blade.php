@@ -378,7 +378,7 @@
                     <h2 class="ld-fh-element relative mb-0/5em"> Message From Our CEO</h2>
                 </div>
                 <div class="col-12 flex flex-col items-start text-start p-20 module-col" data-custom-animations="true" data-ca-options='{"addChildTimelines":false,"animationTarget":"img, h4, h6, p","duration":1200,"startDelay":200,"delay":100,"ease":["power4.out"],"initValues":{"y":"20px","opacity":0},"animations":{"y":"0px","opacity":1}}'>
-                    <img class="mb-1em"src="webv2/images/ceo.png" alt="team">
+                    <img class="mb-1em"src="/webv2/images/ceo.png" alt="jcm nippon paint CEO" style="margin: auto; width:50%">
                 </div>
             </div>
         </div>

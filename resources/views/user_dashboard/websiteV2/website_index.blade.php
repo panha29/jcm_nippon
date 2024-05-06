@@ -189,9 +189,9 @@
     <!-- End Portfolio -->
 @include('user_dashboard.websiteV2.professional')
 @include('user_dashboard.websiteV2.brand')
-@include('user_dashboard.websiteV2.product')
+{{-- @include('user_dashboard.websiteV2.product') --}}
 @include('user_dashboard.websiteV2.goal')
-@include('user_dashboard.websiteV2.applicator')
+{{-- @include('user_dashboard.websiteV2.applicator') --}}
 
 
 

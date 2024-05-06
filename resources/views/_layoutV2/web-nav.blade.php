@@ -10,10 +10,18 @@
     <section class="lqd-section desktop-header md:hidden">
         <div class="container-fluid p-0">
             <div class="flex flex-wrap w-full justify-between">
-                <div class="navbar-brand-plain w-15percent py-30 flex">
+                <div class="navbar-brand-plain w-15percent flex">
                     <a href="/Home" class="navbar-brand flex relative p-0 leading-1/4em">
                         <span class="navbar-brand-inner post-rel">
-                            <img class="logo-default" src="/webv2/images/logo.png" alt="Nippon Paint Cambodia">
+                            {{-- <img class="logo-default" src="/webv2/images/logo.png" alt="Nippon Paint Cambodia"> --}}
+                            <div class="row">
+                                <div class="col" style="padding-right:0;">
+                                    <img class="logo-default" src="/webv2/images/logon.png" alt="Nippon Paint Cambodia ថ្មាំលាបផ្ទះ nippon paint" style="float: right">
+                                </div>
+                                <div class="col">
+                                    <h3>NIPPON PAINT</h3>
+                                </div>
+                            </div>
                         </span>
                     </a>
                 </div>
@@ -118,9 +126,17 @@
                     </span>
                 </span>
             </button>
-            <a class="navbar-brand flex relative leading-1/4em" href="/Home">
+            <a class="navbar-brand flex relative leading-1/4em" href="/Home" style="width: 45%; display:block; margin-top:auto; margin-bottom:auto; padding:0">
                 <span class="navbar-brand-inner">
-                    <img class="logo-default" src="/webv2/images/logo.png" alt="Hub">
+                    {{-- <img class="logo-default" src="/webv2/images/logo.png" alt="Hub"> --}}
+                    <div class="row">
+                        <div class="col" style="padding-right:0;">
+                            <img class="logo-default" src="/webv2/images/logon.png" alt="Nippon Paint Cambodia ថ្មាំលាបផ្ទះ nippon paint" style="float: right">
+                        </div>
+                        <div class="col">
+                            <h3 style="margin-bottom: 0">NIPPON PAINT</h3>
+                        </div>
+                    </div>
                 </span>
             </a>
         </div>
