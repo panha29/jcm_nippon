@@ -6104,6 +6104,12 @@ style+.ld-module-sd>.ld-module-dropdown:last-child {
     }
 }
 
+@media screen and (max-width:1440px) {
+    .navbar-brand-inner {
+        float: left;
+    }
+}
+
 .widget {
     --widget-input-border-color: #d8d8d8;
     --widget-input-border-radius: 6px;

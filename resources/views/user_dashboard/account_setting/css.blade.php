@@ -46,7 +46,7 @@ button, input {
   .profile-page .content {
     display: flex;
     flex-direction: column;
-    max-width: 800px;
+    max-width: 500px;
     width: 100%;
     position: relative;
     z-index: 2;
