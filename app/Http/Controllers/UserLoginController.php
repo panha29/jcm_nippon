@@ -106,4 +106,10 @@ class UserLoginController extends Controller
         $staff -> staff_location = $request -> staff_location;
         $staff -> save();
     }
+    public function account_setting($id){
+        $user = User::find($id);
+        $nav = CategoryModel::all();
+        $product = ProductModel::all();
+        return view('user_dashboard.account_setting.account_detail',compact('user','nav','product'));
+    }
 }

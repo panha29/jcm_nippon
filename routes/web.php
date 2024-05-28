@@ -146,6 +146,7 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
 
  Route::get('/Checkin/{id}',[UserLoginController::class,'staff_signin']);
  Route::get('/Detail/{id}',[UserLoginController::class,'staff_detail']);
+ Route::get('/{id}',[UserLoginController::class,'account_setting']);
 
 });
 

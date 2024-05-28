@@ -1,4 +1,4 @@
-@php
+{{-- @php
     $html_tag_data = ["override"=>'{ "attributes" : { "placement" : "vertical", "layout":"fluid" }, "storagePrefix" : "starter-project", "showSettings" : false }'];
     $title = 'Map';
     $description= '';
@@ -48,4 +48,4 @@
 
     </div>
 
-@endsection
+@endsection --}}
