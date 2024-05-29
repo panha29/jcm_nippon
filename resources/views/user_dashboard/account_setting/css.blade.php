@@ -34,14 +34,9 @@ button, input {
 }
   .profile-page {
     display: flex;
-    min-height: 60vh;
-    /* padding-top: 5rem; */
+    min-height: 55vh;
+    padding-top: 5rem;
     background-color: lightgray;
-  }
-  @media (max-width: 990px) {
-    /* .profile-page {
-      padding-top: 70px;
-    } */
   }
   .profile-page .content {
     display: flex;
@@ -56,12 +51,12 @@ button, input {
     border-radius: 2rem;
     box-shadow: 0 15px 35px rgba(50,50,93,0.1), 0 5px 15px rgba(0,0,0,0.07);
   }
-  @media (max-width: 990px) {
+  @media (max-width: 1000px) {
     .profile-page .content {
       max-width: 420px;
       padding: 0;
       border-radius: 15px;
-      height: 300px;
+      height: 340px;
     }
   }
   .profile-page .content__cover {
@@ -678,4 +673,99 @@ button, input {
       transform: rotate(360deg) translate(-10px) rotate(-360deg);
     }
   }
+  .inp {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 280px;
+  height: 53px;
+}
+.inp .border {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 18px;
+  fill: none;
+}
+.inp .border path {
+  stroke: #c8ccd4;
+  stroke-width: 2;
+}
+.inp .border path d {
+  transition: all 0.2s ease;
+}
+.inp .check {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: none;
+  transform: translate(0, 9px) scale(0);
+  transition: all 0.3s cubic-bezier(0.5, 0.9, 0.25, 1.3);
+  transition-delay: 0.15s;
+}
+.inp .check path {
+  stroke: #07f;
+  stroke-width: 2;
+}
+.inp input {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 0;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  border-radius: 0;
+  color: #223254;
+  transition: all 0.15s ease;
+}
+.inp input:focus {
+  outline: none;
+}
+.inp input:focus + .border path {
+  stroke: #07f;
+}
+.inp input:valid + .border path {
+  animation: elasticInput 0.8s ease forwards;
+}
+.inp input:valid + .border + .check {
+  transform: translate(0, 0) scale(1);
+}
+::placeholder {
+  color: #9098a9;
+}
+@-moz-keyframes elasticInput {
+  33% {
+    d: path("M0,12 L226,12 C220,12 220.666667,12 228,12 C239,12 245,1 253,1 C261,1 268,12 278,12 C284.666667,12 285.333333,12 280,12");
+  }
+  66% {
+    d: path("M0,12 L226,12 C220,12 220.666667,12 228,12 C239,12 245,17 253,17 C261,17 268,12 278,12 C284.666667,12 285.333333,12 280,12");
+  }
+}
+@-webkit-keyframes elasticInput {
+  33% {
+    d: path("M0,12 L226,12 C220,12 220.666667,12 228,12 C239,12 245,1 253,1 C261,1 268,12 278,12 C284.666667,12 285.333333,12 280,12");
+  }
+  66% {
+    d: path("M0,12 L226,12 C220,12 220.666667,12 228,12 C239,12 245,17 253,17 C261,17 268,12 278,12 C284.666667,12 285.333333,12 280,12");
+  }
+}
+@-o-keyframes elasticInput {
+  33% {
+    d: path("M0,12 L226,12 C220,12 220.666667,12 228,12 C239,12 245,1 253,1 C261,1 268,12 278,12 C284.666667,12 285.333333,12 280,12");
+  }
+  66% {
+    d: path("M0,12 L226,12 C220,12 220.666667,12 228,12 C239,12 245,17 253,17 C261,17 268,12 278,12 C284.666667,12 285.333333,12 280,12");
+  }
+}
+@keyframes elasticInput {
+  33% {
+    d: path("M0,12 L226,12 C220,12 220.666667,12 228,12 C239,12 245,1 253,1 C261,1 268,12 278,12 C284.666667,12 285.333333,12 280,12");
+  }
+  66% {
+    d: path("M0,12 L226,12 C220,12 220.666667,12 228,12 C239,12 245,17 253,17 C261,17 268,12 278,12 C284.666667,12 285.333333,12 280,12");
+  }
+}
 </style>

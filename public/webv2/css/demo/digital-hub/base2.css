@@ -380,7 +380,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1650px) {
+@media screen and (max-width: 1400px) {
     .top-lt {
         position: absolute;
         top: 0px;

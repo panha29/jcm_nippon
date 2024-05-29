@@ -93,7 +93,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="w-25percent flex items-center justify-end lg:hidden">
+                <div class="flex items-center justify-end lg:hidden">
                     <div class="widget-text-editor mr-15">
                         <h6 class="whitespace-nowrap mt-1em text-end">
                             <span class="text-12 opacity-70 text-blue-700 leading-1/15em tracking-0">Welcome!</span>
@@ -224,7 +224,7 @@
                     </li>
                     @endif
                     <li>
-                        <a href="/User/{{Auth::user()->id}}" class="leading-1/4em">
+                        <a href="/User/{{Auth::user()->name}}" class="leading-1/4em">
                             Account Setting
                         </a>
                     </li>

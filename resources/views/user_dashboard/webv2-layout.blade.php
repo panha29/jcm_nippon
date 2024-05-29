@@ -11,7 +11,7 @@
 
 <body data-localscroll-offset="80" data-mobile-nav-breakpoint="1199" data-localscroll-offset="60" data-mobile-nav-style="minimal" data-mobile-nav-scheme="dark" data-mobile-nav-trigger-alignment="right" data-mobile-header-scheme="gray" data-mobile-logo-alignment="default" data-overlay-onmobile="false">
 <div id="wrap">
-    <main class="content bg-cover bg-white" id="lqd-site-content" style="background-image: url(../webv2/images/demo/digital-hub/bg-min.png);">
+    <main class="content bg-cover bg-white" id="lqd-site-content" style="background-image: url(../../webv2/images/demo/digital-hub/bg-min.png);">
         @include('user_dashboard._layoutV2.web-nav')
         @yield('content')
     </main>

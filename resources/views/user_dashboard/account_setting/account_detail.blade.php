@@ -20,6 +20,7 @@
 @include('user_dashboard.account_setting.js')
 @endsection
 @section('content')
+
 <div class="profile-page">
 
     <div class="content">
@@ -30,7 +31,7 @@
 
       </div>
       <div class="content__actions">
-        <a href="" class="btn btn-success" style="color:white">
+        <a href="/User/{{ Auth::user()->name }}/{{ Auth::user()->id }}" class="btn btn-success" style="color:white" draggable="false">
             Edit
         </a>
         {{-- <a href="" class="btn btn-success">
@@ -40,7 +41,8 @@
         </a> --}}
         </div>
       <div class="content__title">
-        <h1>{{$user->name}}</h1><span>{{$user->email}}</span>
+        <h1>{{ Auth::user()->name }}</h1><span>{{ Auth::user()->email }}</span>
+
       </div>
 
       <div class="content__list">
@@ -59,4 +61,5 @@
 
 
 </div>
+
 @endsection

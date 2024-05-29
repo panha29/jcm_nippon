@@ -382,7 +382,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1650px) {
+@media screen and (max-width: 1400px) {
     .top-lt {
         position: absolute;
         top: 0px;
@@ -529,6 +529,12 @@ body {
     }
     .painting-mobile-view {
         display: none;
+    }
+    .main-header .desktop-header .main-nav {
+        --lqd-menu-items-top-padding: 10px;
+        --lqd-menu-items-right-padding: 15px;
+        --lqd-menu-items-bottom-padding: 10px;
+        --lqd-menu-items-left-padding: 15px;
     }
 }
 
