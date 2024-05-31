@@ -31,7 +31,7 @@
 
       </div>
       <div class="content__actions">
-        <a href="/User/{{ Auth::user()->name }}/{{ Auth::user()->id }}" class="btn btn-success" style="color:white" draggable="false">
+        <a href="/User/Name/{{ Auth::user()->id }}" class="btn btn-success" style="color:white" draggable="false">
             Edit
         </a>
         {{-- <a href="" class="btn btn-success">

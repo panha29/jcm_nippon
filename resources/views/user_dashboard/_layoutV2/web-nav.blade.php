@@ -224,7 +224,7 @@
                     </li>
                     @endif
                     <li>
-                        <a href="/User/{{Auth::user()->name}}" class="leading-1/4em">
+                        <a href="/User/Name" class="leading-1/4em">
                             Account Setting
                         </a>
                     </li>
