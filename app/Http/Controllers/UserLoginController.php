@@ -111,22 +111,12 @@ class UserLoginController extends Controller
     public function account_setting(){
         $nav = CategoryModel::all();
         $product = ProductModel::all();
-        return view('user_dashboard.account_setting.account_detail',compact('nav','product',));
-    }
-    public function account_edit($id){
-        $edit_user = User::find($id);
-
-        $nav = CategoryModel::all();
-        $product = ProductModel::all();
-        return view('user_dashboard.account_setting.account_edit',compact('nav','product','edit_user'));
+        return view('user_dashboard.account_setting.account_detail',compact('nav','product'));
     }
 
-    function account_update(Request $request){
-        $updateuser = User::find($request->id);
-        $updateuser -> name = $request -> name;
-        $updateuser -> email = $request -> email;
-        $updateuser -> phone = $request -> phone;
-        $updateuser -> save();
-        return redirect('/User/Name');
+    function delete_user($id){
+        User::destroy($id);
+        return redirect('/logout');
     }
+
 }
