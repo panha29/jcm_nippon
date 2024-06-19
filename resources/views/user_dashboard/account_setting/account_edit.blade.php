@@ -37,10 +37,10 @@
   background: #fff;
   position: relative;
   margin: 212px auto auto auto;
-  height: 340px;
+  height: 250px;
   padding: 48px 24px;
   border-radius: 4px;
-  max-width: 420px;
+  max-width: 360px;
   border-radius: 15px;
 }
 .modal-close {
@@ -143,7 +143,7 @@ button, input {
     overflow: visible;
 }
 .b-right{
-    margin-top: 150px;
+    margin-top: 10%;
     float: right;
 }
 </style>
