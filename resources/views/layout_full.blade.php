@@ -23,4 +23,3 @@
 @include('admin_dashboard._layout.scripts')
 </body>
 </html>
-
