@@ -1237,6 +1237,10 @@ body {
 }
 
 @media only screen and (max-width: 430px) {
+    .mobile-specs {
+        font-size: 9px;
+        line-height: 1.5em;
+    }
     .top-lt {
         position: absolute;
         top: 0px;
@@ -1377,6 +1381,9 @@ body {
 }
 
 @media only screen and (max-width: 420px) {
+    .mobile-specs {
+        font-size: 9px;
+    }
     .top-lt {
         position: absolute;
         top: 0px;
