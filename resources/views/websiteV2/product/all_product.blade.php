@@ -102,5 +102,8 @@
             </section>
         </div>
    </div>
+   <div id="product-table">
+    @include('websiteV2.product.product_category')
+   </div>
 </div>
 @endsection

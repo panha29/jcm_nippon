@@ -90,7 +90,9 @@
                         </div>
                     </div> --}}
                     <div class="lqd-tabs-content mb-2rem pt-15">
-                      @include('websiteV2.product.product_type')
+                      @include('websiteV2.product.interior')
+                      @include('websiteV2.product.exterior')
+                      @include('websiteV2.product.primer-sealer')
                     </div>
                 </div>
             </div>
