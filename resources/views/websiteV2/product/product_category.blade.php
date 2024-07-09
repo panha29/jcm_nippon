@@ -93,6 +93,7 @@
                       @include('websiteV2.product.interior')
                       @include('websiteV2.product.exterior')
                       @include('websiteV2.product.primer-sealer')
+                      @include('websiteV2.product.wood-metal')
                     </div>
                 </div>
             </div>

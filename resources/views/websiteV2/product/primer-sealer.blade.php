@@ -6,7 +6,7 @@
                     <th></th>
                 </tr>
             </thead>
-            <tbody id="tbody1">
+            <tbody id="tbody2">
                 <tr>
                     <td class="content-dp">
                         <div id="lqd-tab-events-item-Wall-Primer-Sealer" role="tabpanel" class="lqd-tabs-pane fade color-view">
@@ -155,7 +155,7 @@
                                 <img src="{{ url('webv2/images/product/sealer5170.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
                                     <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                        <h6><span class="leading-1/15em tracking-1"><b>OdourLess Sealer</b></span></h6>
+                                        <h6><span class="leading-1/15em tracking-1"><b>Sealer 5170</b></span></h6>
                                     </span>
                                 </span>
                             </div>
