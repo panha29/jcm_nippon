@@ -72,15 +72,10 @@
                             <h6>
                                 <span class="leading-1/15em tracking-1 mobile-specs">
                                     <ul>
-                                        <li>Excellent dirt resistant properties, keeps wall cleaner for longer.</li>
-                                        <li>Excellent weather durability under local climatic conditions.</li>
-                                        <li>Excellent resistance to water, alkaline, lime and chemicals which causes uneven discoloration and efflorescence.</li>
-                                        <li>Excellent resistance to fungus and algae growth.</li>
-                                        <li>Good adhesion on stable substrates.</li>
-                                        <li>Easy application with good levelling property.</li>
-                                        <li>Excellent anti-carbonation property.</li>
-                                        <li>High water vapour permeability.</li>
-                                        <li>Excellent durability with up to 12 years protection.</li>
+                                        <li>Economical.</li>
+                                        <li>Easy Application.</li>
+                                        <li>Good Average and hiding power.</li>
+                                        <li>Anti fungus and algae properties</li>
                                     </ul>
                                 </span>
                             </h6>
@@ -119,15 +114,16 @@
                             <h6>
                                 <span class="leading-1/15em tracking-1 mobile-specs">
                                     <ul>
-                                        <li>Excellent dirt resistant properties, keeps wall cleaner for longer.</li>
-                                        <li>Excellent weather durability under local climatic conditions.</li>
-                                        <li>Excellent resistance to water, alkaline, lime and chemicals which causes uneven discoloration and efflorescence.</li>
-                                        <li>Excellent resistance to fungus and algae growth.</li>
-                                        <li>Good adhesion on stable substrates.</li>
-                                        <li>Easy application with good levelling property.</li>
-                                        <li>Excellent anti-carbonation property.</li>
-                                        <li>High water vapour permeability.</li>
-                                        <li>Excellent durability with up to 12 years protection.</li>
+                                        <li>Environmential friendly interior emulsion.</li>
+                                        <li>Ultra-low VOCs (containing < 50g/L VOC, meeting the VOC requirement).</li>
+                                        <li>Extremely low dour during application and drying.</li>
+                                        <li>Non-toxic, does not contain lead, mercury and heavy metals.</li>
+                                        <li>Anti-fungus & algae properties.</li>
+                                        <li>Excellent coverage and hiding power.</li>
+                                        <li>Long lasting colors.</li>
+                                        <li>Washable.</li>
+                                        <li>Easy application, less splattering.</li>
+                                        <li>Excellent adhesion.</li>
                                     </ul>
                                 </span>
                             </h6>

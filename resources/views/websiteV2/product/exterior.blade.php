@@ -25,15 +25,11 @@
                             <h6>
                                 <span class="leading-1/15em tracking-1 mobile-specs">
                                     <ul>
-                                        <li>Excellent dirt resistant properties, keeps wall cleaner for longer.</li>
-                                        <li>Excellent weather durability under local climatic conditions.</li>
-                                        <li>Excellent resistance to water, alkaline, lime and chemicals which causes uneven discoloration and efflorescence.</li>
-                                        <li>Excellent resistance to fungus and algae growth.</li>
-                                        <li>Good adhesion on stable substrates.</li>
-                                        <li>Easy application with good levelling property.</li>
-                                        <li>Excellent anti-carbonation property.</li>
-                                        <li>High water vapour permeability.</li>
-                                        <li>Excellent durability with up to 12 years protection.</li>
+                                        <li>Resists deterioration by fresh cement.</li>
+                                        <li>Weather Resistance.</li>
+                                        <li>Anti-fungus / algae property.</li>
+                                        <li>High coverage because of high opacity and hiding.</li>
+                                        <li>Washable, resists water and mild detergents.</li>
                                     </ul>
                                 </span>
                             </h6>
@@ -71,15 +67,16 @@
                             <h6>
                                 <span class="leading-1/15em tracking-1 mobile-specs">
                                     <ul>
-                                        <li>Excellent dirt resistant properties, keeps wall cleaner for longer.</li>
-                                        <li>Excellent weather durability under local climatic conditions.</li>
-                                        <li>Excellent resistance to water, alkaline, lime and chemicals which causes uneven discoloration and efflorescence.</li>
+                                        <li>Excellent weathering resistance and long lasting colour.</li>
+                                        <li>Good washability and water proofing.</li>
+                                        <li>Excellent to Alkaline & Efflorescence properties.</li>
+                                        <li>Good dirt pick up resistance.</li>
                                         <li>Excellent resistance to fungus and algae growth.</li>
                                         <li>Good adhesion on stable substrates.</li>
-                                        <li>Easy application with good levelling property.</li>
-                                        <li>Excellent anti-carbonation property.</li>
-                                        <li>High water vapour permeability.</li>
-                                        <li>Excellent durability with up to 12 years protection.</li>
+                                        <li>Easy apply with good flow & leveling properties.</li>
+                                        <li>APEO free, Non-toxic, does not contain Lead, Mercury and heavy metals.</li>
+                                        <li>Low VOCs (containing < 30g/L VOC, meeting the VOC requirement).</li>
+                                        <li>Green Label Certificate.</li>
                                     </ul>
                                 </span>
                             </h6>
@@ -126,7 +123,7 @@
                                         <li>Easy application with good levelling property.</li>
                                         <li>Excellent anti-carbonation property.</li>
                                         <li>High water vapour permeability.</li>
-                                        <li>Excellent durability with up to 12 years protection.</li>
+                                        <li>Excellent durability with up to 8 years protection.</li>
                                     </ul>
                                 </span>
                             </h6>
@@ -164,15 +161,16 @@
                             <h6>
                                 <span class="leading-1/15em tracking-1 mobile-specs">
                                     <ul>
-                                        <li>Excellent dirt resistant properties, keeps wall cleaner for longer.</li>
-                                        <li>Excellent weather durability under local climatic conditions.</li>
-                                        <li>Excellent resistance to water, alkaline, lime and chemicals which causes uneven discoloration and efflorescence.</li>
+                                        <li>Excellent weathering resistance and long lasting colour.</li>
+                                        <li>6 years colour performance.</li>
+                                        <li>Good water resistant & water proofing resistance.</li>
                                         <li>Excellent resistance to fungus and algae growth.</li>
+                                        <li>Good washability.</li>
+                                        <li>Excellent to Alkaline & Efflorescence properties.</li>
                                         <li>Good adhesion on stable substrates.</li>
-                                        <li>Easy application with good levelling property.</li>
-                                        <li>Excellent anti-carbonation property.</li>
-                                        <li>High water vapour permeability.</li>
-                                        <li>Excellent durability with up to 12 years protection.</li>
+                                        <li>Easy apply with good flow & levelling properties.</li>
+                                        <li>Low VOCs (containing < 50g/L VOC, meeting the VOC requirement).</li>
+                                        <li>Non toxic, does not contain lead, mercury and heavy metals.</li>
                                     </ul>
                                 </span>
                             </h6>
@@ -210,15 +208,15 @@
                             <h6>
                                 <span class="leading-1/15em tracking-1 mobile-specs">
                                     <ul>
-                                        <li>Excellent dirt resistant properties, keeps wall cleaner for longer.</li>
-                                        <li>Excellent weather durability under local climatic conditions.</li>
-                                        <li>Excellent resistance to water, alkaline, lime and chemicals which causes uneven discoloration and efflorescence.</li>
+                                        <li>Excellent weathering resistance and long lasting colour.</li>
+                                        <li>Good water resistant & water proofing resistance.</li>
                                         <li>Excellent resistance to fungus and algae growth.</li>
+                                        <li>Good washability.</li>
+                                        <li>Excellent to Alkaline & Efflorescence properties.</li>
                                         <li>Good adhesion on stable substrates.</li>
-                                        <li>Easy application with good levelling property.</li>
-                                        <li>Excellent anti-carbonation property.</li>
-                                        <li>High water vapour permeability.</li>
-                                        <li>Excellent durability with up to 12 years protection.</li>
+                                        <li>Easy apply with good flow & levelling properties.</li>
+                                        <li>Low VOCs (containing < 50g/L VOC, meeting the VOC requirement).</li>
+                                        <li>Non toxic, does not contain lead, mercury and heavy metals.</li>
                                     </ul>
                                 </span>
                             </h6>
@@ -257,15 +255,17 @@
                             <h6>
                                 <span class="leading-1/15em tracking-1 mobile-specs">
                                     <ul>
-                                        <li>Excellent dirt resistant properties, keeps wall cleaner for longer.</li>
-                                        <li>Excellent weather durability under local climatic conditions.</li>
-                                        <li>Excellent resistance to water, alkaline, lime and chemicals which causes uneven discoloration and efflorescence.</li>
-                                        <li>Excellent resistance to fungus and algae growth.</li>
-                                        <li>Good adhesion on stable substrates.</li>
-                                        <li>Easy application with good levelling property.</li>
-                                        <li>Excellent anti-carbonation property.</li>
-                                        <li>High water vapour permeability.</li>
-                                        <li>Excellent durability with up to 12 years protection.</li>
+                                        <li>Heat reduction properties.</li>
+                                        <li>Energy saving.</li>
+                                        <li>Weather resistance.</li>
+                                        <li>Efflorescence resistance.</li>
+                                        <li>Excellent elasticity.</li>
+                                        <li>Excellent color retention.</li>
+                                        <li>Excellent dirt resistance.</li>
+                                        <li>High alkaline resistance.</li>
+                                        <li>Non toxic (no lead, mercury, and heavy metal).</li>
+                                        <li>Algae and fungus resistance.</li>
+                                        <li>Enviromentally Friendly.</li>
                                     </ul>
                                 </span>
                             </h6>
@@ -285,8 +285,6 @@
                         </div>
                     </td>
                 </tr>
-               
-                
             </tbody>
         </table>
     </div>
