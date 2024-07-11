@@ -19,10 +19,14 @@
 @endsection
 
 @section('js_page')
+
 @endsection
 
 @section('content')
 @include('websiteV2.css')
+@include('websiteV2.product.css')
+@include('websiteV2.product.js')
+
 <div id="lqd-contents-wrap">
     <section class="lqd-section has-accordion-page pt-100 bg-gray-200">
         <div class="titlebar-inner">

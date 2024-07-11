@@ -89,11 +89,18 @@
                             </span>
                         </div>
                     </div> --}}
-                    <div class="lqd-tabs-content mb-2rem pt-15">
+                    <div class="lqd-tabs-content mb-2rem pt-15 pd-des-mobile">
                       @include('websiteV2.product.interior')
                       @include('websiteV2.product.exterior')
                       @include('websiteV2.product.primer-sealer')
                       @include('websiteV2.product.wood-metal')
+                    </div>
+
+                    <div class="lqd-tabs-content mb-2rem pt-15">
+                        @include('websiteV2.product.mobile-display.interior')
+                        {{-- @include('websiteV2.product.mobile-display.exterior')
+                        @include('websiteV2.product.mobile-display.primer-sealer')
+                        @include('websiteV2.product.mobile-display.wood-metal') --}}
                     </div>
                 </div>
             </div>

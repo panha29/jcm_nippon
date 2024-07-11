@@ -1,15 +1,15 @@
 <div id="lqd-tab-events-item-Interior" role="tabpanel" class="lqd-tabs-pane fade active show">
     <div class="container p-0 module-container">
-        <table id="colorid" class="color_pallete" style="width: auto;">
+        <table id="colorid" class="" style="width: auto;">
             <thead>
                 <tr class="col-12">
                     <th></th>
                 </tr>
             </thead>
-            <tbody id="tbody1">
-                <tr class="col-12">
-                    <td class="content-dp col-2">
-                        <div id="lqd-tab-events-item-Interior" role="tabpanel" class="lqd-tabs-pane fade color-view">
+            <tbody id="tbody1" class="pd-mobile">
+                <tr class="">
+                    <td class="content-dp ">
+                        <div id="lqd-tab-events-item-Interior" role="tabpanel" class="lqd-tabs-pane fade pd-color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/matex.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
@@ -20,26 +20,22 @@
                             </div>
                         </div>
                     </td>
-                    <td class="col-6">
-                        <span class="flex flex-col">
+                    <td class="">
                             <h6>
-                                <span class="leading-1/15em tracking-1 mobile-specs">
-                                    <ul>
-                                        <li>Excellent dirt resistant properties, keeps wall cleaner for longer.</li>
-                                        <li>Excellent weather durability under local climatic conditions.</li>
-                                        <li>Excellent resistance to water, alkaline, lime and chemicals which causes uneven discoloration and efflorescence.</li>
-                                        <li>Excellent resistance to fungus and algae growth.</li>
-                                        <li>Good adhesion on stable substrates.</li>
-                                        <li>Easy application with good levelling property.</li>
-                                        <li>Excellent anti-carbonation property.</li>
-                                        <li>High water vapour permeability.</li>
-                                        <li>Excellent durability with up to 12 years protection.</li>
-                                    </ul>
-                                </span>
+                                <ul class="leading-1/15em tracking-1 mobile-specs">
+                                    <li>Excellent dirt resistant properties, keeps wall cleaner for longer.</li>
+                                    <li>Excellent weather durability under local climatic conditions.</li>
+                                    <li>Excellent resistance to water, alkaline, lime and chemicals which causes uneven discoloration and efflorescence.</li>
+                                    <li>Excellent resistance to fungus and algae growth.</li>
+                                    <li>Good adhesion on stable substrates.</li>
+                                    <li>Easy application with good levelling property.</li>
+                                    <li>Excellent anti-carbonation property.</li>
+                                    <li>High water vapour permeability.</li>
+                                    <li>Excellent durability with up to 12 years protection.</li>
+                                </ul>
                             </h6>
-                        </span>
                     </td>
-                    <td style="vertical-align: top">
+                    {{-- <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
                             <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
@@ -51,10 +47,10 @@
                                 <h6>ENG</h6>
                             </a>
                         </div>
-                    </td>
+                    </td> --}}
                 </tr>
 
-                <tr class="col-12">
+                {{-- <tr class="col-12">
                     <td class="content-dp col-2">
                         <div id="lqd-tab-events-item-Interior" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
@@ -142,8 +138,33 @@
                             </a>
                         </div>
                     </td>
-                </tr>
+                </tr> --}}
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
             </tbody>
         </table>
     </div>
 </div>
+
