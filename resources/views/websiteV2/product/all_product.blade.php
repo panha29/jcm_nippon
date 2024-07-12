@@ -16,6 +16,8 @@
 @endsection
 
 @section('js_vendor')
+@include('websiteV2.product.js')
+
 @endsection
 
 @section('js_page')
@@ -25,7 +27,6 @@
 @section('content')
 @include('websiteV2.css')
 @include('websiteV2.product.css')
-@include('websiteV2.product.js')
 
 <div id="lqd-contents-wrap">
     <section class="lqd-section has-accordion-page pt-100 bg-gray-200">
@@ -108,6 +109,7 @@
    </div>
    <div id="product-table">
     @include('websiteV2.product.product_category')
+
    </div>
 </div>
 @endsection

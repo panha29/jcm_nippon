@@ -1,5 +1,5 @@
 <style>
-    @media only screen and (max-width: 1920px) {
+    @media only screen and (min-width: 770px) {
     .pd-des-pc{
         display: none;
     }
@@ -14,14 +14,15 @@
         display: inline-flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        justify-content: space-around;
     }
 
     .pd-color-view{
         width: 80%;
         display: grid;
     }
-}
-.modal {
+
+    .modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -90,7 +91,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1040 !important;
+  z-index: -1 !important;
   width: 100vw;
   height: 100vh;
   background-color: #000;
@@ -359,4 +360,14 @@
 .btn-close-white {
     filter: invert(1) grayscale(100%) brightness(200%);
 }
+
+.btn-box{
+    width: 45%;
+    border-radius: 15px;
+    background-color: lightgray;
+    display: block;
+    text-align: center;
+}
+}
+
 </style>

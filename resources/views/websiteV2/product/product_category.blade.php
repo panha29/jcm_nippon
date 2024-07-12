@@ -96,7 +96,7 @@
                       @include('websiteV2.product.wood-metal')
                     </div>
 
-                    <div class="lqd-tabs-content mb-2rem pt-15">
+                    <div class="lqd-tabs-content mb-2rem pt-15 pd-des-pc">
                         @include('websiteV2.product.mobile-display.interior')
                         {{-- @include('websiteV2.product.mobile-display.exterior')
                         @include('websiteV2.product.mobile-display.primer-sealer')

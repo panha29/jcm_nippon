@@ -1,4 +1,4 @@
-<div id="lqd-tab-events-item-Exterior" role="tabpanel" class="lqd-tabs-pane fade show">
+<div id="lqd-tab-events-item-Exterior" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
         <table id="colorid" class="color_pallete" style="width: auto;">
             <thead>
