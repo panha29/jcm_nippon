@@ -105,7 +105,7 @@
                     <td class="content-dp">
                         <div id="lqd-tab-events-item-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
-                                <img src="{{ url('webv2/images/product/.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
+                                <img src="{{ url('webv2/images/product/satingloss.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
                                     <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
                                         <h6><span class="leading-1/15em tracking-1"><b>Satin Gloss</b></span></h6>
@@ -152,7 +152,7 @@
                     <td class="content-dp">
                         <div id="lqd-tab-events-item-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
-                                <img src="{{ url('webv2/images/product/.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
+                                <img src="{{ url('webv2/images/product/satingloss.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
                                     <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
                                         <h6><span class="leading-1/15em tracking-1"><b>9000 Satin</b></span></h6>
@@ -387,7 +387,7 @@
                     <td class="content-dp">
                         <div id="lqd-tab-events-item-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
-                                <img src="{{ url('webv2/images/product/.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
+                                <img src="{{ url('webv2/images/product/goldpaint2000.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
                                     <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
                                         <h6><span class="leading-1/15em tracking-1"><b>Gold Paint</b></span></h6>
@@ -433,7 +433,7 @@
                     <td class="content-dp">
                         <div id="lqd-tab-events-item-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
-                                <img src="{{ url('webv2/images/product/.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
+                                <img src="{{ url('webv2/images/product/nipponaluminium.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
                                     <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
                                         <h6><span class="leading-1/15em tracking-1"><b>Nippon Aluminium Paint</b></span></h6>

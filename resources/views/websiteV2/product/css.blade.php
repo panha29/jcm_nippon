@@ -10,11 +10,11 @@
         display: none;
     }
 
-    .pd-mobile{
+    .pd-mobile {
         display: inline-flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .pd-color-view{
@@ -367,7 +367,8 @@
     background-color: lightgray;
     display: block;
     text-align: center;
-}
+    margin-top: 5%;
+    }
 }
 
 </style>
