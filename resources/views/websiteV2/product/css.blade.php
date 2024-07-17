@@ -363,11 +363,12 @@
 
 .btn-box{
     width: 45%;
-    border-radius: 15px;
-    background-color: lightgray;
+    border-radius: 10px;
+    background-color: #ffd6d6;
     display: block;
     text-align: center;
     margin-top: 5%;
+    box-shadow: 0px 0px 21px -11px rgba(66, 68, 90, 1);
     }
 }
 

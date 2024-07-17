@@ -19,7 +19,7 @@
                                 </a>
                             </li>
                             <li data-controls="lqd-tab-events-item-2" role="presentation" class="text-center">
-                                <a draggable="false" href="#lqd-tab-events-item-Exterior" aria-expanded="false" aria-controls="lqd-tab-events-item-Red" role="tab" data-bs-toggle="tab">
+                                <a draggable="false" href="#lqd-tab-events-item-Exterior" aria-expanded="false" aria-controls="lqd-tab-events-item-Exterior" role="tab" data-bs-toggle="tab">
                                     <span class="iconbox items-center justify-center">
                                         <span class="flex flex-col">
                                             <span class="iconbox-title h3 my-0">Exterior</span>
@@ -98,8 +98,8 @@
 
                     <div class="lqd-tabs-content mb-2rem pt-15 pd-des-pc">
                         @include('websiteV2.product.mobile-display.interior')
-                        {{-- @include('websiteV2.product.mobile-display.exterior')
-                        @include('websiteV2.product.mobile-display.primer-sealer')
+                        @include('websiteV2.product.mobile-display.exterior')
+                        {{-- @include('websiteV2.product.mobile-display.primer-sealer')
                         @include('websiteV2.product.mobile-display.wood-metal') --}}
                     </div>
                 </div>
