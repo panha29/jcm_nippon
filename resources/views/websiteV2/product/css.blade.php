@@ -22,6 +22,7 @@
         display: grid;
     }
 
+
     .modal {
   position: fixed;
   top: 0;

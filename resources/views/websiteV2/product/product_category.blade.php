@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col col-12 mb-30">
                 <div class="lqd-tabs lqd-tabs-style-3 lqd-tabs-nav-items-not-expanded lqd-nav-underline-" data-tabs-options='{ "trigger" : "click" }'>
-                    <nav class="lqd-tabs-nav-wrap mb-2rem">
+                    <nav class="lqd-tabs-nav-wrap">
                         <ul class="reset-ul lqd-tabs-nav flex items-center justify-center border-black-10 link-13 uppercase font-ultrabold link-primary md:justify-between" role="tablist">
 
                             <li data-controls="lqd-tab-events-item-1" role="presentation" class="text-center">
@@ -34,7 +34,7 @@
                                 <a draggable="false" href="#lqd-tab-events-item-Wall-Primer-Sealer" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
                                     <span class="iconbox items-center justify-center">
                                         <span class="flex flex-col">
-                                            <span class="iconbox-title h3 my-0">Wall Primer & Sealer</span>
+                                            <span class="iconbox-title h3 my-0">Primer & Sealer</span>
                                         </span>
                                     </span>
                                     <span class="lqd-tabs-nav-progress">
@@ -89,19 +89,21 @@
                             </span>
                         </div>
                     </div> --}}
-                    <div class="lqd-tabs-content mb-2rem pt-15 pd-des-mobile">
+                    {{-- <div class="lqd-tabs-content mb-2rem pt-15"> --}}
+                    <div class="lqd-tabs-content pt-15">
+
                       @include('websiteV2.product.interior')
                       @include('websiteV2.product.exterior')
                       @include('websiteV2.product.primer-sealer')
                       @include('websiteV2.product.wood-metal')
                     </div>
 
-                    <div class="lqd-tabs-content mb-2rem pt-15 pd-des-pc">
+                    {{-- <div class="lqd-tabs-content mb-2rem pt-15 pd-des-pc">
                         @include('websiteV2.product.mobile-display.interior')
                         @include('websiteV2.product.mobile-display.exterior')
-                        {{-- @include('websiteV2.product.mobile-display.primer-sealer')
-                        @include('websiteV2.product.mobile-display.wood-metal') --}}
-                    </div>
+                        @include('websiteV2.product.mobile-display.primer-sealer')
+                        @include('websiteV2.product.mobile-display.wood-metal')
+                    </div> --}}
                 </div>
             </div>
         </div>

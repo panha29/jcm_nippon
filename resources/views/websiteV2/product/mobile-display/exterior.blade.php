@@ -8,7 +8,7 @@
                 <h5><span class="leading-1/15em tracking-1"><h6>Matex Premium</h6></span></h5>
             </a>
                             <!-- Modal -->
-            {{-- <div class="modal fade" id="matexpremium" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="matexpremium" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -40,10 +40,10 @@
                         </div>
                     </div>
                 </div>
-            </div> --}}
+            </div>
         </div>
 
-            {{-- <a type="button" class="btn btn-primary btn-box" data-bs-toggle="modal" data-bs-target="#weatherbondplus">
+            <a type="button" class="btn btn-primary btn-box" data-bs-toggle="modal" data-bs-target="#weatherbondplus">
                 <img src="{{ url('webv2/images/product/weatherbondplus.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                 <h5><span class="leading-1/15em tracking-1"><h6>WeatherBond Plus 12y</h6></span></h5>
             </a>
@@ -259,7 +259,7 @@
                         </div>
                     </div>
                 </div>
-            </div> --}}
+            </div>
         </div>
     </div>
 </div>
