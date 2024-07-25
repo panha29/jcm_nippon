@@ -42,7 +42,7 @@
                                     </span>
                                 </a>
                             </li>
-                            <li data-controls="lqd-tab-events-item-4" role="presentation" class="text-center">
+                            {{-- <li data-controls="lqd-tab-events-item-4" role="presentation" class="text-center">
                                 <a draggable="false" href="#lqd-tab-events-item-Enamel-Paint" aria-expanded="false" aria-controls="lqd-tab-events-item-4" role="tab" data-bs-toggle="tab">
                                     <span class="iconbox items-center justify-center">
                                         <span class="flex flex-col">
@@ -53,7 +53,7 @@
                                         <span class="lqd-tabs-nav-progress-inner"></span>
                                     </span>
                                 </a>
-                            </li>
+                            </li> --}}
                             <li data-controls="lqd-tab-events-item-Blue" role="presentation" class="text-center">
                                 <a draggable="false" href="#lqd-tab-events-item-Wood-Metal-Paint" aria-expanded="false" aria-controls="lqd-tab-events-item-Blue" role="tab" data-bs-toggle="tab">
                                     <span class="iconbox items-center justify-center">
@@ -96,6 +96,7 @@
                       @include('websiteV2.product.exterior')
                       @include('websiteV2.product.primer-sealer')
                       @include('websiteV2.product.wood-metal')
+                      @include('websiteV2.product.coating')
                     </div>
 
                     {{-- <div class="lqd-tabs-content mb-2rem pt-15 pd-des-pc">
