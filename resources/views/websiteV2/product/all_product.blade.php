@@ -42,11 +42,7 @@
         </div>
     </section>
     <div class="mobile-product">
-        <div class="reset-ul lqd-tabs-nav flex items-center justify-center border-black-10 link-13 uppercase font-ultrabold link-primary md:justify-between">
-            <section class="lqd-section sm:pt-0">
-                @include('websiteV2.product.testing-nav')
-            </section>
-        </div>
+
         {{-- <div class="col-7 mobile-product-width">
             <section class="lqd-section products pt-40 sm:pt-0" id="products">
                 <div class="container">
@@ -87,7 +83,7 @@
             </section>
         </div> --}}
 </div>
-   {{-- <div class="row mobile-product">
+   <div class="row mobile-product">
         <div class="col-4">
             <section class="lqd-section pt-40 sm:pt-0">
                 <div class="category">
@@ -133,12 +129,12 @@
                         </div>
                         <div class="w-full"></div>
                         @foreach ($allpd as $item)
-                            <div class="col col-6 col-md-4">
+                            <div class="col-3 container">
                                 <div class="relative flex flex-col mr-15 mb-20 lg:mr-0 module-col">
-                                    <div class="lqd-imggrp-single mb-25 rounded-inherit" data-hover3d="true">
+                                    <div class="lqd-imggrp-single mb-25 rounded-inherit" >
                                         <div class="lqd-imggrp-img-container rounded-inherit" data-stacking-factor="1">
                                             <figure class="rounded-inherit">
-                                                <img class="rounded-8" src="{{ url('img/product/company_product/'.$item->product_image) }}" alt="nippon paint cambodia" style="width:50%;background-image: url('webv2/images/demo/modern-agency/banner.jpg');">
+                                                <img class="rounded-8" src="{{ url('img/product/company_product/'.$item->product_image) }}" alt="nippon paint cambodia" style="width:100%;background-image: url('webv2/images/demo/modern-agency/banner.jpg');">
                                             </figure>
                                         </div>
                                     </div>
@@ -151,7 +147,7 @@
                 </div>
             </section>
         </div>
-   </div> --}}
+   </div>
    <div id="product-table">
     @include('websiteV2.product.product_category')
 

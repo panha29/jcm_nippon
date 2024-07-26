@@ -490,7 +490,12 @@ class AdminLoginController extends Controller
         $product = ProductModel::where('product_tag', ($id))->latest()->get();
         $pdcate = ProductModel::where('product_tag', ($id))->first();
         $allpd = ProductModel::latest()->get();
-        return view('websiteV2.product.all_product',compact('nav','product','pdcate','allpd'));
+        $hp = ProductModel::where('product_category','Home Paint')->pluck('product_tag')->first();
+        $wp = ProductModel::where('product_category','WaterProofing')->pluck('product_tag')->first();
+        $allhp = ProductModel::where('product_category','Home Paint')->get();
+        $allwp = ProductModel::where('product_category','WaterProofing')->get();
+
+        return view('websiteV2.product.all_product',compact('nav','product','pdcate','allpd','hp','wp','allhp','allwp'));
     }
 
     function loginui(){

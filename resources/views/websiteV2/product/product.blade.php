@@ -81,12 +81,25 @@
                         </div>
                         <div class="w-full"></div>
                         @foreach ($product as $item)
-                            <div class="col col-6 col-md-4">
+                            {{-- <div class="col col-6 col-md-4">
                                 <div class="relative flex flex-col mr-15 mb-20 lg:mr-0 module-col">
                                     <div class="lqd-imggrp-single mb-25 rounded-inherit" data-hover3d="true">
                                         <div class="lqd-imggrp-img-container rounded-inherit" data-stacking-factor="1">
                                             <figure class="rounded-inherit">
                                                 <img class="rounded-8" src="{{ url('img/product/company_product/'.$item->product_image) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" style="width:300px;background-image: url('../webv2/images/demo/modern-agency/banner.jpg');">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <h3 class="ld-fh-element relative mb-0/5em text-14 uppercase tracking-1/5"> {{$item->product_name}}</h3>
+                                    <p class="ld-fh-element relative m-0 text-15 font-medium"> {{$item->product_category}}</p>
+                                </div>
+                            </div> --}}
+                            <div class="col-3">
+                                <div class="relative flex flex-col mr-15 mb-20 lg:mr-0 module-col">
+                                    <div class="lqd-imggrp-single mb-25 rounded-inherit" >
+                                        <div class="lqd-imggrp-img-container rounded-inherit" data-stacking-factor="1">
+                                            <figure class="rounded-inherit">
+                                                <img class="rounded-8" src="{{ url('img/product/company_product/'.$item->product_image) }}" alt="nippon paint cambodia" style="width:100%;background-image: url('../webv2/images/demo/modern-agency/banner.jpg');">
                                             </figure>
                                         </div>
                                     </div>
