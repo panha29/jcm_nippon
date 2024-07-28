@@ -8,13 +8,13 @@
             </thead>
             <tbody id="tbody1">
                 <tr class="col-12">
-                    <td class="content-dp col-2">
+                    <td class="col-2">
                         <div id="lqd-tab-events-item-Coating" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/EpoxyEA4.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
                                     <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                        <h6><span class="leading-1/15em tracking-1"><b>EA 4 Finish</b></span></h6>
+                                        <h6><span class="leading-1/6em tracking-1"><b>EA 4 Finish</b></span></h6>
                                     </span>
                                 </span>
                             </div>
@@ -23,7 +23,7 @@
                     <td class="col-6">
                         <span class="flex flex-col">
                             <h6>
-                                <span class="leading-1/15em tracking-1 mobile-specs">
+                                <span class="leading-1/6em tracking-1 mobile-specs">
                                     <ul>
                                         <li>Good resistance to abrasion and mechanical damage.</li>
                                         <li>Excellent on correctly prepared and primed surfacesn.</li>
@@ -48,13 +48,13 @@
                     </td>
                 </tr>
                 <tr class="col-12">
-                    <td class="content-dp col-2">
+                    <td class="col-2">
                         <div id="lqd-tab-events-item-Coating" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/EpoxyEA9.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
                                     <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                        <h6><span class="leading-1/15em tracking-1"><b>EA 9 Finish</b></span></h6>
+                                        <h6><span class="leading-1/6em tracking-1"><b>EA 9 Finish</b></span></h6>
                                     </span>
                                 </span>
                             </div>
@@ -63,7 +63,7 @@
                     <td class="col-6">
                         <span class="flex flex-col">
                             <h6>
-                                <span class="leading-1/15em tracking-1 mobile-specs">
+                                <span class="leading-1/6em tracking-1 mobile-specs">
                                     <ul>
                                         <li>Excellent Adhesion.</li>
                                         <li>Resistance to aqueous solution.</li>
@@ -89,13 +89,13 @@
                     </td>
                 </tr>
                 <tr class="col-12">
-                    <td class="content-dp col-2">
+                    <td class="col-2">
                         <div id="lqd-tab-events-item-Coating" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/EpoxyPU.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
                                     <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                        <h6><span class="leading-1/15em tracking-1"><b>PU RECOATABLE FINISH</b></span></h6>
+                                        <h6><span class="leading-1/6em tracking-1"><b>PU RECOATABLE FINISH</b></span></h6>
                                     </span>
                                 </span>
                             </div>
@@ -104,7 +104,7 @@
                     <td class="col-6">
                         <span class="flex flex-col">
                             <h6>
-                                <span class="leading-1/15em tracking-1 mobile-specs">
+                                <span class="leading-1/6em tracking-1 mobile-specs">
                                     <ul>
                                         <li>Weathering durability, gloss and colour retention.</li>
                                         <li>Non-yellowing and does not chalk easily.</li>
@@ -136,7 +136,7 @@
     <div id="mobile-screen" class="pd-des-pc pd-mobile">
         <a type="button" class="btn btn-primary btn-box" data-bs-toggle="modal" data-bs-target="#EpoxyEA4">
             <img src="{{ url('webv2/images/product/EpoxyEA4.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-            <h5><span class="leading-1/15em tracking-1"><h6>EA 4 Finish</h6></span></h5>
+            <h5><span class="leading-1/6em tracking-1"><h6>EA 4 Finish</h6></span></h5>
         </a>
                         <!-- Modal -->
         <div class="modal fade" id="EpoxyEA4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -149,7 +149,7 @@
                     <div class="modal-body">
                         <img src="{{ url('webv2/images/product/EpoxyEA4.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                         <h6>
-                            <ul class="leading-1/15em tracking-1 mobile-specs">
+                            <ul class="">
                                 <li>Good resistance to abrasion and mechanical damage.</li>
                                 <li>Excellent on correctly prepared and primed surfacesn.</li>
                                 <li>Dry service temperature up to 100°C.</li>
@@ -173,7 +173,7 @@
 
         <a type="button" class="btn btn-primary btn-box" data-bs-toggle="modal" data-bs-target="#EpoxyEA9">
             <img src="{{ url('webv2/images/product/EpoxyEA9.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-            <h5><span class="leading-1/15em tracking-1"><h6>EA 9 Finish</h6></span></h5>
+            <h5><span class="leading-1/6em tracking-1"><h6>EA 9 Finish</h6></span></h5>
         </a>
                         <!-- Modal -->
         <div class="modal fade" id="EpoxyEA9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -186,7 +186,7 @@
                     <div class="modal-body">
                         <img src="{{ url('webv2/images/product/EpoxyEA9.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                         <h6>
-                            <ul class="leading-1/15em tracking-1 mobile-specs">
+                            <ul class="">
                                 <li>Excellent Adhesion.</li>
                                 <li>Resistance to aqueous solution.</li>
                                 <li>Preventing and Protection from Chemical resistance.</li>
@@ -211,7 +211,7 @@
 
         <a type="button" class="btn btn-primary btn-box" data-bs-toggle="modal" data-bs-target="#EpoxyPU">
             <img src="{{ url('webv2/images/product/EpoxyPU.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-            <h5><span class="leading-1/15em tracking-1"><h6>PU RECOATABLE FINISH</h6></span></h5>
+            <h5><span class="leading-1/6em tracking-1"><h6>PU RECOATABLE FINISH</h6></span></h5>
         </a>
                         <!-- Modal -->
         <div class="modal fade" id="EpoxyPU" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -224,7 +224,7 @@
                     <div class="modal-body">
                         <img src="{{ url('webv2/images/product/EpoxyPU.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                         <h6>
-                            <ul class="leading-1/15em tracking-1 mobile-specs">
+                            <ul class="">
                                 <li>Weathering durability, gloss and colour retention.</li>
                                 <li>Non-yellowing and does not chalk easily.</li>
                                 <li>Resistant to splashes of mild, non-aggressive chemicals.</li>

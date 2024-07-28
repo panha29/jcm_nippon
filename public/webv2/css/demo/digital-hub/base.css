@@ -110,9 +110,9 @@ body {
 
 .main-header .desktop-header .main-nav {
     --lqd-menu-items-top-padding: 10px;
-    --lqd-menu-items-right-padding: 25px;
+    --lqd-menu-items-right-padding: 15px;
     --lqd-menu-items-bottom-padding: 10px;
-    --lqd-menu-items-left-padding: 25px;
+    --lqd-menu-items-left-padding: 15px;
     max-width: auto;
 }
 

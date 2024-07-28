@@ -27,7 +27,7 @@
                 </div>
                 <div class="module-primary-nav w-60percent flex justify-end lg:w-85percent">
                     <div class="navbar-collapse inline-flex lqd-submenu-cover p-0" id="main-header-collapse" aria-expanded="false" role="navigation">
-                        <ul id="primary-nav" class="main-nav flex justify-center reset-ul inline-ul lqd-menu-counter-right lqd-menu-items-inline main-nav-hover-default lqd-submenu-toggle-hover" data-submenu-options='{"toggleType": "fade", "handler": "mouse-in-out"}' data-localscroll="true" data-localscroll-options='{"itemsSelector" : ">li > a", "trackWindowScroll": true, "includeParentAsOffset": true}'>
+                        <ul style="font-weight: 600; text-transform:uppercase;" id="primary-nav" class="main-nav flex justify-center reset-ul inline-ul lqd-menu-counter-right lqd-menu-items-inline main-nav-hover-default lqd-submenu-toggle-hover" data-submenu-options='{"toggleType": "fade", "handler": "mouse-in-out"}' data-localscroll="true" data-localscroll-options='{"itemsSelector" : ">li > a", "trackWindowScroll": true, "includeParentAsOffset": true}'>
                             <li class="is-active">
                                 <a class="leading-1/4em text-blue-700" href="/Home">
                                     Home
@@ -37,18 +37,18 @@
                             <li class="menu-item-has-children">
                                 <a class="leading-1/4em text-blue-700" href="/Products">
                                     Products
-                                    <span class="submenu-expander"></span>
+                                    {{-- <span class="submenu-expander"></span>
                                     <span class="link-icon inline-flex hide-if-empty right-icon">
                                         <i class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
-                                    </span>
+                                    </span> --}}
                                 </a>
-                                <ul class="nav-item-children">
+                                {{-- <ul class="nav-item-children">
                                     @foreach ($nav as $item)
                                     <li>
                                         <a href="/Products/{{$item->category_tag}}">{{$item->category_name}}</a>
                                     </li>
                                     @endforeach
-                                </ul>
+                                </ul> --}}
                             </li>
 
                             <li class="menu-item-has-children">

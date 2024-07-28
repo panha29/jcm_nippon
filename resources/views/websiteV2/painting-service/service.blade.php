@@ -27,7 +27,7 @@
                 <div class="ld-particles-inner lqd-overlay flex pointer-events-none" id="lqd-particle-design-services" ></div>
             </div>
         </div>
-        <div class="container">
+        <div class="container pt-70">
             <div class="row">
                 <div class="w-450 flex flex-col relative items-center max-w-full text-center mx-auto px-15">
                     <div class="ld-fancy-heading relative w-auto py-5 px-15 bg-gray rounded-100 animation-element">

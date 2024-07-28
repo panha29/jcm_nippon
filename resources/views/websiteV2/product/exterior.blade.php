@@ -8,13 +8,13 @@
             </thead>
             <tbody id="tbody2">
                 <tr class="col-12">
-                    <td class="content-dp col-2">
+                    <td class="col-2">
                         <div id="lqd-tab-events-item-Exterior" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/matexpremium.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
                                     <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                        <h6><span class="leading-1/15em tracking-1"><b>Matex Premium</b></span></h6>
+                                        <h6><span class="leading-1/6em tracking-1"><b>Matex Premium</b></span></h6>
                                     </span>
                                 </span>
                             </div>
@@ -23,7 +23,7 @@
                     <td class="col-6">
                         <span class="flex flex-col">
                             <h6>
-                                <span class="leading-1/15em tracking-1 mobile-specs">
+                                <span class="leading-1/6em tracking-1 mobile-specs">
                                     <ul>
                                         <li>Resists deterioration by fresh cement.</li>
                                         <li>Weather Resistance.</li>
@@ -50,13 +50,13 @@
                     </td>
                 </tr>
                 <tr class="col-12">
-                    <td class="content-dp col-2">
+                    <td class="col-2">
                         <div id="lqd-tab-events-item-Exterior" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/weatherbondplus.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
                                     <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                        <h6><span class="leading-1/15em tracking-1"><b>WeatherBond Plus 12y</b></span></h6>
+                                        <h6><span class="leading-1/6em tracking-1"><b>WeatherBond Plus 12y</b></span></h6>
                                     </span>
                                 </span>
                             </div>
@@ -65,7 +65,7 @@
                     <td class="col-6">
                         <span class="flex flex-col">
                             <h6>
-                                <span class="leading-1/15em tracking-1 mobile-specs">
+                                <span class="leading-1/6em tracking-1 mobile-specs">
                                     <ul>
                                         <li>Excellent weathering resistance and long lasting colour.</li>
                                         <li>Good washability and water proofing.</li>
@@ -98,13 +98,13 @@
                 </tr>
 
                 <tr class="col-12">
-                    <td class="content-dp col-2">
+                    <td class="col-2">
                         <div id="lqd-tab-events-item-Exterior" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/weatherbond8y.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
                                     <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                        <h6><span class="leading-1/15em tracking-1"><b>WeatherBond 8y</b></span></h6>
+                                        <h6><span class="leading-1/6em tracking-1"><b>WeatherBond 8y</b></span></h6>
                                     </span>
                                 </span>
                             </div>
@@ -113,7 +113,7 @@
                     <td class="col-6">
                         <span class="flex flex-col">
                             <h6>
-                                <span class="leading-1/15em tracking-1 mobile-specs">
+                                <span class="leading-1/6em tracking-1 mobile-specs">
                                     <ul>
                                         <li>Excellent dirt resistant properties, keeps wall cleaner for longer.</li>
                                         <li>Excellent weather durability under local climatic conditions.</li>
@@ -144,13 +144,13 @@
                     </td>
                 </tr>
                 <tr class="col-12">
-                    <td class="content-dp col-2">
+                    <td class="col-2">
                         <div id="lqd-tab-events-item-Exterior" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/weathergard6y.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
                                     <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                        <h6><span class="leading-1/15em tracking-1"><b>WeatherGard 6y</b></span></h6>
+                                        <h6><span class="leading-1/6em tracking-1"><b>WeatherGard 6y</b></span></h6>
                                     </span>
                                 </span>
                             </div>
@@ -159,7 +159,7 @@
                     <td class="col-6">
                         <span class="flex flex-col">
                             <h6>
-                                <span class="leading-1/15em tracking-1 mobile-specs">
+                                <span class="leading-1/6em tracking-1 mobile-specs">
                                     <ul>
                                         <li>Excellent weathering resistance and long lasting colour.</li>
                                         <li>6 years colour performance.</li>
@@ -191,13 +191,13 @@
                     </td>
                 </tr>
                 <tr class="col-12">
-                    <td class="content-dp col-2">
+                    <td class="col-2">
                         <div id="lqd-tab-events-item-Exterior" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/weatherbond.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
                                     <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                        <h6><span class="leading-1/15em tracking-1"><b>WeatherGard</b></span></h6>
+                                        <h6><span class="leading-1/6em tracking-1"><b>WeatherGard</b></span></h6>
                                     </span>
                                 </span>
                             </div>
@@ -206,7 +206,7 @@
                     <td class="col-6">
                         <span class="flex flex-col">
                             <h6>
-                                <span class="leading-1/15em tracking-1 mobile-specs">
+                                <span class="leading-1/6em tracking-1 mobile-specs">
                                     <ul>
                                         <li>Excellent weathering resistance and long lasting colour.</li>
                                         <li>Good water resistant & water proofing resistance.</li>
@@ -238,13 +238,13 @@
                 </tr>
 
                 <tr class="col-12">
-                    <td class="content-dp col-2">
+                    <td class="col-2">
                         <div id="lqd-tab-events-item-Exterior" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/solarreflect.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
                                     <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                        <h6><span class="leading-1/15em tracking-1"><b>Solar Reflect</b></span></h6>
+                                        <h6><span class="leading-1/6em tracking-1"><b>Solar Reflect</b></span></h6>
                                     </span>
                                 </span>
                             </div>
@@ -253,7 +253,7 @@
                     <td class="col-6">
                         <span class="flex flex-col">
                             <h6>
-                                <span class="leading-1/15em tracking-1 mobile-specs">
+                                <span class="leading-1/6em tracking-1 mobile-specs">
                                     <ul>
                                         <li>Heat reduction properties.</li>
                                         <li>Energy saving.</li>
@@ -291,7 +291,7 @@
     <div id="mobile-screen" class="pd-des-pc pd-mobile">
         <a type="button" class="btn btn-primary btn-box" data-bs-toggle="modal" data-bs-target="#matexpremium">
             <img src="{{ url('webv2/images/product/matexpremium.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-            <h5><span class="leading-1/15em tracking-1"><h6>Matex Premium</h6></span></h5>
+            <h5><span class="leading-1/6em tracking-1"><h6>Matex Premium</h6></span></h5>
         </a>
                         <!-- Modal -->
         <div class="modal fade" id="matexpremium" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -331,7 +331,7 @@
 
         <a type="button" class="btn btn-primary btn-box" data-bs-toggle="modal" data-bs-target="#weatherbondplus">
             <img src="{{ url('webv2/images/product/weatherbondplus.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-            <h5><span class="leading-1/15em tracking-1"><h6>WeatherBond Plus 12y</h6></span></h5>
+            <h5><span class="leading-1/6em tracking-1"><h6>WeatherBond Plus 12y</h6></span></h5>
         </a>
                         <!-- Modal -->
         <div class="modal fade" id="weatherbondplus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -375,7 +375,7 @@
 
         <a type="button" class="btn btn-primary btn-box" data-bs-toggle="modal" data-bs-target="#weatherbond8y">
             <img src="{{ url('webv2/images/product/weatherbond8y.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-            <h5><span class="leading-1/15em tracking-1"><h6>OWeatherBond 8y</h6></span></h5>
+            <h5><span class="leading-1/6em tracking-1"><h6>OWeatherBond 8y</h6></span></h5>
         </a>
                         <!-- Modal -->
         <div class="modal fade" id="weatherbond8y" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -418,7 +418,7 @@
 
         <a type="button" class="btn btn-primary btn-box" data-bs-toggle="modal" data-bs-target="#weathergard6y">
             <img src="{{ url('webv2/images/product/weathergard6y.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-            <h5><span class="leading-1/15em tracking-1"><h6>WeatherGard 6y</h6></span></h5>
+            <h5><span class="leading-1/6em tracking-1"><h6>WeatherGard 6y</h6></span></h5>
         </a>
                         <!-- Modal -->
         <div class="modal fade" id="weathergard6y" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -462,7 +462,7 @@
 
         <a type="button" class="btn btn-primary btn-box" data-bs-toggle="modal" data-bs-target="#weatherbond">
             <img src="{{ url('webv2/images/product/weatherbond.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-            <h5><span class="leading-1/15em tracking-1"><h6>Weatherbond</h6></span></h5>
+            <h5><span class="leading-1/6em tracking-1"><h6>Weatherbond</h6></span></h5>
         </a>
                         <!-- Modal -->
         <div class="modal fade" id="weatherbond" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -505,7 +505,7 @@
 
         <a type="button" class="btn btn-primary btn-box" data-bs-toggle="modal" data-bs-target="#solarreflect">
             <img src="{{ url('webv2/images/product/solarreflect.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-            <h5><span class="leading-1/15em tracking-1"><h6>Solar Reflect</h6></span></h5>
+            <h5><span class="leading-1/6em tracking-1"><h6>Solar Reflect</h6></span></h5>
         </a>
                         <!-- Modal -->
         <div class="modal fade" id="solarreflect" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
