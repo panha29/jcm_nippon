@@ -39,11 +39,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/timberfinish.pdf" download="Nippon Timber Finish">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/timberfinish.pdf" download="Nippon Timber Finish" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -84,11 +84,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/9000gloss.pdf" download="Nippon Bodelac 9000 Gloss">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/9000gloss.pdf" download="Nippon Bodelac 9000 Gloss" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -103,7 +103,7 @@
                                 <img src="{{ url('webv2/images/product/satingloss.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
                                     <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                        <h6><span class="leading-1/6em tracking-1"><b>Satin Gloss</b></span></h6>
+                                        <h6><span class="leading-1/6em tracking-1"><b>Bodelac 9000 Satin Gloss</b></span></h6>
                                     </span>
                                 </span>
                             </div>
@@ -132,11 +132,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/satin-gloss9000-kh.pdf" download="Nippon Bodelac 900 Satin Gloss">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/satin-gloss9000.pdf" download="Nippon Bodelac 900 Satin Gloss" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -151,7 +151,7 @@
                                 <img src="{{ url('webv2/images/product/satingloss.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
                                     <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                        <h6><span class="leading-1/6em tracking-1"><b>9000 Satin</b></span></h6>
+                                        <h6><span class="leading-1/6em tracking-1"><b>Bodelac 9000 Satin</b></span></h6>
                                     </span>
                                 </span>
                             </div>
@@ -180,11 +180,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/satin9000.pdf" download="Bodelac 9000 Satin">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/satin9000.pdf" download="Bodelac 9000 Satin" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -199,7 +199,7 @@
                                 <img src="{{ url('webv2/images/product/satingloss.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
                                     <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                        <h6><span class="leading-1/6em tracking-1"><b>9000 Matt</b></span></h6>
+                                        <h6><span class="leading-1/6em tracking-1"><b>Bodelac 9000 Matt</b></span></h6>
                                     </span>
                                 </span>
                             </div>
@@ -228,11 +228,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/matt9000-kh.pdf" download="Bodelac 9000 Matt">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/matt9000.pdf" download="Bodelac 9000 Matt" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -269,11 +269,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/zinc-phosphate-primer-kh.pdf" download="Zinc Phosphate Primer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/zinc-phosphate-primer.pdf" download="Zinc Phosphate Primer" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -310,11 +310,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/red-oxide-primer-kh.pdf" download="Red Oxide Primer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/red-oxide-primer.pdf" download="Red Oxide Primer" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -351,11 +351,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/gray-oxide-primer.pdf" download="Gray Oxide Primer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/gray-oxide-primer.pdf" download="Gray Oxide Primer" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -370,7 +370,7 @@
                                 <img src="{{ url('webv2/images/product/goldpaint2000.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
                                     <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                        <h6><span class="leading-1/6em tracking-1"><b>Gold Paint</b></span></h6>
+                                        <h6><span class="leading-1/6em tracking-1"><b>Gold Paint 2000</b></span></h6>
                                     </span>
                                 </span>
                             </div>
@@ -393,11 +393,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/gold2000-kh.pdf" download="Nippon Gold Paint 2000">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/gold2000.pdf" download="Nippon Gold Paint 2000" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -435,11 +435,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/aluminium9000-kh.pdf" download="Nippon Alminium Paint">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/aluminium9000.pdf" download="Nippon Alminium Paint" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -476,11 +476,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                 <div style="display: inline-flex;">
-                    <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                    <a href="/webv2/timberfinish-kh.pdf" download="Nippon Timber Finish">
                         <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                         <h6>KH</h6>
                     </a>
-                    <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                    <a href="/webv2/timberfinish.pdf" download="Nippon Timber Finish" style="margin-left: 10px">
                         <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                         <h6>ENG</h6>
                     </a>
@@ -517,54 +517,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/9000gloss-kh.pdf" download="Nippon Bodelac 9000 Gloss">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
-                                <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
-                                <h6>ENG</h6>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a type="button" class="btn btn-primary btn-box" data-bs-toggle="modal" data-bs-target="#satingloss">
-            <img src="{{ url('webv2/images/product/satingloss.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-            <h5><span class="leading-1/6em tracking-1"><h6>Satin Gloss</h6></span></h5>
-        </a>
-                        <!-- Modal -->
-        <div class="modal fade" id="satingloss" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Satin Gloss</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="{{ url('webv2/images/product/satingloss.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-                        <h6>
-                            <ul class="">
-                                <li>Environmental friendly interior emulsion.</li>
-                                <li>Ultra-low VOCs (containing < 25g/L VOC, meeting the VOC requirement).</li>
-                                <li>Extremely low dour during application and drying.</li>
-                                <li>Non-toxic, does not contain lead, mercury and heavy metals.</li>
-                                <li>Anti-fungus & algae properties.</li>
-                                <li>Excellent coverage and hiding power.</li>
-                                <li>Long lasting colors.</li>
-                                <li>Washable.</li>
-                                <li>Easy application, less splattering.</li>
-                                <li>Excellent adhesion.</li>
-                            </ul>
-                        </h6>
-                        <h5>Specification / Technical</h5>
-                        <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
-                                <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
-                                <h6>KH</h6>
-                            </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/9000gloss.pdf" download="Nippon Bodelac 9000 Gloss" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -576,14 +533,14 @@
 
         <a type="button" class="btn btn-primary btn-box" data-bs-toggle="modal" data-bs-target="#satingloss">
             <img src="{{ url('webv2/images/product/satingloss.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-            <h5><span class="leading-1/6em tracking-1"><h6>9000 Satin</h6></span></h5>
+            <h5><span class="leading-1/6em tracking-1"><h6>Bodelac 9000 Satin Gloss</h6></span></h5>
         </a>
                         <!-- Modal -->
         <div class="modal fade" id="satingloss" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">9000 Satin</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Bodelac 9000 Satin Gloss</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -604,11 +561,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/satin-gloss9000-kh.pdf" download="Nippon Bodelac 9000 Satin Gloss">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/satin-gloss9000-kh.pdf" download="Nippon Bodelac 9000 Satin Gloss" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -620,14 +577,14 @@
 
         <a type="button" class="btn btn-primary btn-box" data-bs-toggle="modal" data-bs-target="#satingloss">
             <img src="{{ url('webv2/images/product/satingloss.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-            <h5><span class="leading-1/6em tracking-1"><h6>9000 Matt</h6></span></h5>
+            <h5><span class="leading-1/6em tracking-1"><h6>Bodelac 9000 Satin</h6></span></h5>
         </a>
                         <!-- Modal -->
         <div class="modal fade" id="satingloss" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">9000 Matt</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Bodelac 9000 Satin</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -648,11 +605,55 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/satin9000-kh.pdf" download="Bodelac 9000 Satin">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/satin9000.pdf" download="Bodelac 9000 Satin" style="margin-left: 10px">
+                                <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
+                                <h6>ENG</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a type="button" class="btn btn-primary btn-box" data-bs-toggle="modal" data-bs-target="#satingloss">
+            <img src="{{ url('webv2/images/product/satingloss.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
+            <h5><span class="leading-1/6em tracking-1"><h6>Bodelac 9000 Matt</h6></span></h5>
+        </a>
+                        <!-- Modal -->
+        <div class="modal fade" id="satingloss" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Bodelac 9000 Matt</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{{ url('webv2/images/product/satingloss.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
+                        <h6>
+                            <ul class="">
+                                <li>Environmental friendly interior emulsion.</li>
+                                <li>Ultra-low VOCs (containing < 25g/L VOC, meeting the VOC requirement).</li>
+                                <li>Extremely low dour during application and drying.</li>
+                                <li>Non-toxic, does not contain lead, mercury and heavy metals.</li>
+                                <li>Anti-fungus & algae properties.</li>
+                                <li>Excellent coverage and hiding power.</li>
+                                <li>Long lasting colors.</li>
+                                <li>Washable.</li>
+                                <li>Easy application, less splattering.</li>
+                                <li>Excellent adhesion.</li>
+                            </ul>
+                        </h6>
+                        <h5>Specification / Technical</h5>
+                        <div style="display: inline-flex;">
+                            <a href="/webv2/matt9000-kh.pdf" download="Bodelac 9000 Matt">
+                                <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
+                                <h6>KH</h6>
+                            </a>
+                            <a href="/webv2/matt9000.pdf" download="Bodelac 9000 Matt" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -685,11 +686,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/zinc-phosphate-primer-kh.pdf" download="Zinc Phosphate Primer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/zinc-phosphate-primer.pdf" download="Zinc Phosphate Primer" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -722,11 +723,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/red-oxide-primer-kh.pdf" download="Eco Red Oxide Primer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/red-oxide-primer.pdf" download="Eco Red Oxide Primer" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -759,11 +760,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/gray-oxide-primer-kh.pdf" download="Eco Gray Oxide Primer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/gray-oxide-primer.pdf" download="Eco Gray Oxide Primer" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -775,14 +776,14 @@
 
         <a type="button" class="btn btn-primary btn-box" data-bs-toggle="modal" data-bs-target="#goldpaint2000">
             <img src="{{ url('webv2/images/product/goldpaint2000.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-            <h5><span class="leading-1/6em tracking-1"><h6>Gold Paint</h6></span></h5>
+            <h5><span class="leading-1/6em tracking-1"><h6>Gold Paint 2000</h6></span></h5>
         </a>
                         <!-- Modal -->
         <div class="modal fade" id="goldpaint2000" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Gold Paint</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Gold Paint 2000</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -797,11 +798,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/gold2000-kh.pdf" download="Gold Paint 2000">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/gold2000.pdf" download="Gold Paint 2000" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -836,11 +837,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/aluminium9000-kh.pdf" download="Nippon Aluminium Paint">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/aluminium9000.pdf" download="Nippon Aluminium Paint" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>

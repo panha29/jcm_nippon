@@ -41,11 +41,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/vinilex5000-kh.pdf" download="Nippon Vinilex 5000">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/vinilex5000.pdf" download="Nippon Vinilex 5000" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -82,11 +82,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/vinilex5100-kh.pdf" download="Nippon Vinilex 5100">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/vinilex5100.pdf" download="Nippon Vinilex 5100" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -126,11 +126,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/odourless-sealer-kh.pdf" download="Nippon OdourLess Sealer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/odourless-sealer.pdf" download="Nippon OdourLess Sealer" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -145,7 +145,7 @@
                                 <img src="{{ url('webv2/images/product/sealer5170.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
                                     <span class="items-center justify-center uppercase font-ultrabold" style="text-align: center">
-                                        <h6><span class="leading-1/6em tracking-1"><b>Sealer 5170</b></span></h6>
+                                        <h6><span class="leading-1/6em tracking-1"><b>Acrylic 5170 Wall Sealer</b></span></h6>
                                     </span>
                                 </span>
                             </div>
@@ -171,11 +171,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/vinilex5170.pdf" download="Acrylic 5170 Wall Sealer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/vinilex5170.pdf" download="Acrylic 5170 Wall Sealer" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -214,11 +214,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                 <div style="display: inline-flex;">
-                    <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                    <a href="/webv2/vinilex5000-kh.pdf" download="Nippon Vinilex 5000">
                         <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                         <h6>KH</h6>
                     </a>
-                    <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                    <a href="/webv2/vinilex5000.pdf" download="Nippon Vinilex 5000" style="margin-left: 10px">
                         <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                         <h6>ENG</h6>
                     </a>
@@ -251,11 +251,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/vinilex5100-kh.pdf" download="Nippon Vinilex 5100">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/vinilex5100.pdf" download="Nippon Vinilex 5100" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -286,16 +286,16 @@
                                 <li>Anti-fungus & algae resistance property.</li>
                                 <li>Fast-drying for convenient recoating.</li>
                                 <li>Easy to use.</li>
-                                
+
                             </ul>
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/odourless-sealer-kh.pdf" download="OdourLess Sealer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/odourless-sealer.pdf" download="OdourLess Sealer" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -307,14 +307,14 @@
 
         <a type="button" class="btn btn-primary btn-box" data-bs-toggle="modal" data-bs-target="#sealer5170">
             <img src="{{ url('webv2/images/product/sealer5170.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-            <h5><span class="leading-1/6em tracking-1"><h6>Nippon Acrylic 5170</h6></span></h5>
+            <h5><span class="leading-1/6em tracking-1"><h6>Acrylic 5170 Wall Sealer</h6></span></h5>
         </a>
                         <!-- Modal -->
         <div class="modal fade" id="sealer5170" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Nippon Acrylic 5170</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Acrylic 5170 Wall Sealer</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -332,11 +332,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/vinilex5170-kh.pdf" download="Acrylic 5170 Wall Sealer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a>
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            <a href="/webv2/vinilex5170.pdf" download="Acrylic 5170 Wall Sealer" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
