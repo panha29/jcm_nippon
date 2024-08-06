@@ -70,17 +70,17 @@
                                     <img class="w-390" width="790" height="731" src="../webv2/images/demo/events-hub/shape-colored.jpg" alt="shape">
                                 </div>
                             </div>
-                            <div class="ld-fancy-heading relative mask-text -mb-30 module-number">
+                            <div class="ld-fancy-heading relative mask-text -mb-30 module-number text-center">
                                 <p class="ld-fh-element inline-block relative lqd-highlight-classic lqd-highlight-grow-left lqd-split-chars h2 mb-0/5em font-bold" data-inview="true" data-transition-delay="true" data-delay-options='{"elements": ".lqd-highlight-inner", "delayType": "transition"}' data-split-text="true" data-split-options='{"type": "words, chars"}'>
                                     <mark class="lqd-highlight">
-                                        <span class="lqd-highlight-txt">All Products</span>
+                                        <span class="lqd-highlight-txt">{{$product_title}}</span>
                                         <span class="lqd-highlight-inner bottom-0/2em left-0 bg-green-200"></span>
                                     </mark>
                                 </p>
                             </div>
                         </div>
                         <div class="w-full"></div>
-                        @foreach ($allpd as $item)
+                        @foreach ($product as $item)
                             <div class="col-4 container">
                                 <div class="relative flex flex-col mr-15 mb-20 lg:mr-0 module-col">
                                     <div class="lqd-imggrp-single mb-25 rounded-inherit" >

@@ -44,7 +44,9 @@ class UserLoginController extends Controller
         $product = ProductModel::where('product_tag', ($id))->latest()->get();
         $pdcate = ProductModel::where('product_tag', ($id))->first();
         $allpd = ProductModel::latest()->get();
-        return view('user_dashboard.websiteV2.product.product',compact('nav','product','pdcate','allpd'));
+        $product_title = ProductModel::where('product_tag', ($id))->pluck('product_category')->first();
+
+        return view('user_dashboard.websiteV2.product.product',compact('nav','product','pdcate','allpd','product_title'));
     }
 
     function user_all_product($id = null){

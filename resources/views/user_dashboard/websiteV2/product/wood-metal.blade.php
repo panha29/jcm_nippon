@@ -180,7 +180,7 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/satin9000.pdf" download="Bodelac 9000 Satin">
+                            {{-- <a href="/webv2/satin9000-kh.pdf" download="Bodelac 9000 Satin">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a> --}}
@@ -351,7 +351,7 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/gray-oxide-primer.pdf" download="Gray Oxide Primer">
+                            {{-- <a href="/webv2/gray-oxide-primer-kh.pdf" download="Gray Oxide Primer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
                             </a> --}}

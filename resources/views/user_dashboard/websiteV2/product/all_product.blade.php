@@ -19,8 +19,10 @@
 
 @section('content')
 @include('user_dashboard.websiteV2.css')
+@include('user_dashboard.websiteV2.product.css')
+
 <div id="lqd-contents-wrap">
-    <section class="lqd-section has-accordion-page pt-100 bg-gray-200">
+    <section class="lqd-section has-accordion-page pt-40 bg-gray-200">
         <div class="titlebar-inner">
             <div class="container titlebar-container">
                 <div class="row titlebar-container justify-center">
@@ -32,8 +34,7 @@
             </div>
         </div>
     </section>
-
-   <div class="row mobile-product">
+    <div class="row mobile-product">
         <div class="col-4">
             <section class="lqd-section pt-40 sm:pt-0">
                 <div class="category">
@@ -48,7 +49,7 @@
                                 @foreach ($nav as $item)
                                 <div>
                                     <h3 class="ld-fh-element relative mb-0/5em text-14 uppercase tracking-1/5">
-                                        <a href="/User/Products/{{$item->category_tag}}" style="color: #233D62 ">{{$item->category_name}}</a>
+                                        <a href="/Products/{{$item->category_tag}}" style="color: #233D62 ">{{$item->category_name}}</a>
                                     </h3>
                                 </div>
                                 @endforeach
@@ -68,7 +69,7 @@
                                     <img class="w-390" width="790" height="731" src="../webv2/images/demo/events-hub/shape-colored.jpg" alt="shape">
                                 </div>
                             </div>
-                            <div class="ld-fancy-heading relative mask-text -mb-30 module-number">
+                            <div class="ld-fancy-heading relative mask-text -mb-30 module-number text-center">
                                 <p class="ld-fh-element inline-block relative lqd-highlight-classic lqd-highlight-grow-left lqd-split-chars h2 mb-0/5em font-bold" data-inview="true" data-transition-delay="true" data-delay-options='{"elements": ".lqd-highlight-inner", "delayType": "transition"}' data-split-text="true" data-split-options='{"type": "words, chars"}'>
                                     <mark class="lqd-highlight">
                                         <span class="lqd-highlight-txt">All Products</span>
@@ -79,12 +80,12 @@
                         </div>
                         <div class="w-full"></div>
                         @foreach ($allpd as $item)
-                            <div class="col col-6 col-md-4">
-                                <div class="relative flex flex-col mr-15 mb-20 lg:mr-0 module-col">
-                                    <div class="lqd-imggrp-single mb-25 rounded-inherit" data-hover3d="true">
+                            <div class="col-4 container">
+                                <div class="relative flex flex-col mr-15 mb-20 lg:mr-0 module-col text-center">
+                                    <div class="lqd-imggrp-single mb-25 rounded-inherit" >
                                         <div class="lqd-imggrp-img-container rounded-inherit" data-stacking-factor="1">
                                             <figure class="rounded-inherit">
-                                                <img class="rounded-8" src="{{ url('img/product/company_product/'.$item->product_image) }}" alt="nippon paint cambodia" style="width:300px;background-image: url('../webv2/images/demo/modern-agency/banner.jpg');">
+                                                <img class="rounded-8" src="{{ url('img/product/company_product/'.$item->product_image) }}" alt="nippon paint cambodia" style="width:100%;background-image: url('../webv2/images/demo/modern-agency/banner.jpg');">
                                             </figure>
                                         </div>
                                     </div>
@@ -97,6 +98,9 @@
                 </div>
             </section>
         </div>
-   </div>
+    </div>
+    <div id="product-table">
+        @include('websiteV2.product.product_category')
+    </div>
 </div>
 @endsection

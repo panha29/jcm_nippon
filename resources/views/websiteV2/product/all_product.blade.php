@@ -88,7 +88,7 @@
                         <div class="w-full"></div>
                         @foreach ($allpd as $item)
                             <div class="col-4 container">
-                                <div class="relative flex flex-col mr-15 mb-20 lg:mr-0 module-col">
+                                <div class="relative flex flex-col mr-15 mb-20 lg:mr-0 module-col text-center">
                                     <div class="lqd-imggrp-single mb-25 rounded-inherit" >
                                         <div class="lqd-imggrp-img-container rounded-inherit" data-stacking-factor="1">
                                             <figure class="rounded-inherit">

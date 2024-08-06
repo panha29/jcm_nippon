@@ -19,6 +19,7 @@
 
 @section('content')
 @include('user_dashboard.websiteV2.css')
+@include('user_dashboard.websiteV2.product.css')
 
 <div id="lqd-contents-wrap">
     <section class="lqd-section has-accordion-page pt-100 bg-gray-200">
@@ -59,7 +60,7 @@
                 </div>
             </section>
         </div>
-        <div class=" mobile-width">
+        <div class=" mobile-width container">
             <section class="lqd-section products pt-40 sm:pt-0" id="products">
                 <div class="container">
                     <div class="row">
@@ -69,7 +70,7 @@
                                     <img class="w-390" width="790" height="731" src="/webv2/images/demo/events-hub/shape-colored.jpg" alt="shape">
                                 </div>
                             </div>
-                            <div class="ld-fancy-heading relative mask-text -mb-30 module-number">
+                            <div class="ld-fancy-heading relative mask-text -mb-30 module-number text-center">
                                 <p class="ld-fh-element inline-block relative lqd-highlight-classic lqd-highlight-grow-left lqd-split-chars h2 mb-0/5em font-bold" data-inview="true" data-transition-delay="true" data-delay-options='{"elements": ".lqd-highlight-inner", "delayType": "transition"}' data-split-text="true" data-split-options='{"type": "words, chars"}'>
                                     <mark class="lqd-highlight">
                                         <span class="lqd-highlight-txt">{{$pdcate->product_category}}</span>
@@ -99,5 +100,8 @@
             </section>
         </div>
    </div>
+   <div id="product-table">
+        @include('user_dashboard.websiteV2.product.product_category')
+    </div>
 </div>
 @endsection
