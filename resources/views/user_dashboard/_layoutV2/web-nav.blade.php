@@ -19,7 +19,7 @@
                 </div>
                 <div class="module-primary-nav w-60percent flex justify-end lg:w-85percent">
                     <div class="navbar-collapse inline-flex lqd-submenu-cover p-0" id="main-header-collapse" aria-expanded="false" role="navigation">
-                        <ul id="primary-nav" class="main-nav flex justify-center reset-ul inline-ul lqd-menu-counter-right lqd-menu-items-inline main-nav-hover-default lqd-submenu-toggle-hover" data-submenu-options='{"toggleType": "fade", "handler": "mouse-in-out"}' data-localscroll="true" data-localscroll-options='{"itemsSelector" : ">li > a", "trackWindowScroll": true, "includeParentAsOffset": true}'>
+                        <ul style="font-weight: 600; text-transform:uppercase;" id="primary-nav" class="main-nav flex justify-center reset-ul inline-ul lqd-menu-counter-right lqd-menu-items-inline main-nav-hover-default lqd-submenu-toggle-hover" data-submenu-options='{"toggleType": "fade", "handler": "mouse-in-out"}' data-localscroll="true" data-localscroll-options='{"itemsSelector" : ">li > a", "trackWindowScroll": true, "includeParentAsOffset": true}'>
                             <li class="is-active">
                                 <a class="leading-1/4em text-blue-700" href="/User/Dashboard">
                                     Home
