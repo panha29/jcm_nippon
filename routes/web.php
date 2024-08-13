@@ -148,6 +148,10 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
  Route::get('/Detail/{id}',[UserLoginController::class,'staff_detail']);
  Route::get('/Name',[UserLoginController::class,'account_setting'])->name('account_setting');
  Route::get('/Name/{id}',[UserLoginController::class,'delete_user']);
+
+ Route::get('/Mobile',[UserLoginController::class,'eprice']);
+ Route::get('/Mobile/ColorPalette',[UserLoginController::class,'colorpalette']);
+ Route::get('/Mobile/Price-List',[UserLoginController::class,'pricelist']);
 });
 
 Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');

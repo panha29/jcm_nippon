@@ -1,6 +1,6 @@
 <div id="lqd-tab-events-item-Green" role="tabpanel" class="lqd-tabs-pane fade active show">
     <div class="container p-0 module-container">
-        <table id="colorid" class="color_pallete" style="width: auto;">
+        <table id="colorid" class="color_pallete">
             <thead>
                 <tr>
                     <th></th>
@@ -18,7 +18,7 @@
                                             <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b> <br> <b>{{$item->colorpalette_name}}</b></span></h6>
                                         </span>
                                     </span>
-                                    <span class="flex flex-col" style="text-align: left">
+                                    <span class="flex flex-col" style="text-align: right">
                                         <h6><span class="leading-1/15em tracking-1" style="color: black"><b>RGB({{$item->colorpalette_rgb}})</b></span></h6>
                                     </span>
                                 </div>
@@ -33,7 +33,7 @@
 
 <div id="lqd-tab-events-item-Red" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="colorid" class="color_pallete" style="width: auto;">
+        <table id="colorid" class="color_pallete">
             <thead>
                 <tr>
                     <th></th>
@@ -51,7 +51,7 @@
                                             <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b> <br> <b>{{$item->colorpalette_name}}</b></span></h6>
                                         </span>
                                     </span>
-                                    <span class="flex flex-col" style="text-align: left">
+                                    <span class="flex flex-col" style="text-align: right">
                                         <h6><span class="leading-1/15em tracking-1" style="color: black"><b>RGB({{$item->colorpalette_rgb}})</b></span></h6>
                                     </span>
                                 </div>
@@ -65,7 +65,7 @@
 </div>
 <div id="lqd-tab-events-item-Yellow" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="colorid" class="color_pallete" style="width: auto;">
+        <table id="colorid" class="color_pallete">
             <thead>
                 <tr>
                     <th></th>
@@ -83,7 +83,7 @@
                                             <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b> <br> <b>{{$item->colorpalette_name}}</b></span></h6>
                                         </span>
                                     </span>
-                                    <span class="flex flex-col" style="text-align: left">
+                                    <span class="flex flex-col" style="text-align: right">
                                         <h6><span class="leading-1/15em tracking-1" style="color: black"><b>RGB({{$item->colorpalette_rgb}})</b></span></h6>
                                     </span>
                                 </div>
@@ -97,7 +97,7 @@
 </div>
 <div id="lqd-tab-events-item-Orange" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="colorid" class="color_pallete" style="width: auto;">
+        <table id="colorid" class="color_pallete">
             <thead>
                 <tr>
                     <th></th>
@@ -115,7 +115,7 @@
                                             <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b> <br> <b>{{$item->colorpalette_name}}</b></span></h6>
                                         </span>
                                     </span>
-                                    <span class="flex flex-col" style="text-align: left">
+                                    <span class="flex flex-col" style="text-align: right">
                                         <h6><span class="leading-1/15em tracking-1" style="color: black"><b>RGB({{$item->colorpalette_rgb}})</b></span></h6>
                                     </span>
                                 </div>
@@ -129,7 +129,7 @@
 </div>
 <div id="lqd-tab-events-item-Blue" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="colorid" class="color_pallete" style="width: auto;">
+        <table id="colorid" class="color_pallete">
             <thead>
                 <tr>
                     <th></th>
@@ -147,7 +147,7 @@
                                             <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b> <br> <b>{{$item->colorpalette_name}}</b></span></h6>
                                         </span>
                                     </span>
-                                    <span class="flex flex-col" style="text-align: left">
+                                    <span class="flex flex-col" style="text-align: right">
                                         <h6><span class="leading-1/15em tracking-1" style="color: black"><b>RGB({{$item->colorpalette_rgb}})</b></span></h6>
                                     </span>
                                 </div>
@@ -161,7 +161,7 @@
 </div>
 <div id="lqd-tab-events-item-Purple" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="colorid" class="color_pallete" style="width: auto;">
+        <table id="colorid" class="color_pallete">
             <thead>
                 <tr>
                     <th></th>
@@ -179,7 +179,7 @@
                                             <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b> <br> <b>{{$item->colorpalette_name}}</b></span></h6>
                                         </span>
                                     </span>
-                                    <span class="flex flex-col" style="text-align: left">
+                                    <span class="flex flex-col" style="text-align: right">
                                         <h6><span class="leading-1/15em tracking-1" style="color: black"><b>RGB({{$item->colorpalette_rgb}})</b></span></h6>
                                     </span>
                                 </div>
@@ -193,7 +193,7 @@
 </div>
 <div id="lqd-tab-events-item-Grey" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="colorid" class="color_pallete" style="width: auto;">
+        <table id="colorid" class="color_pallete">
             <thead>
                 <tr>
                     <th></th>
@@ -211,7 +211,7 @@
                                             <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b> <br> <b>{{$item->colorpalette_name}}</b></span></h6>
                                         </span>
                                     </span>
-                                    <span class="flex flex-col" style="text-align: left">
+                                    <span class="flex flex-col" style="text-align: right">
                                         <h6><span class="leading-1/15em tracking-1" style="color: black"><b>RGB({{$item->colorpalette_rgb}})</b></span></h6>
                                     </span>
                                 </div>
@@ -225,7 +225,7 @@
 </div>
 <div id="lqd-tab-events-item-Neutral" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="colorid" class="color_pallete" style="width: auto;">
+        <table id="colorid" class="color_pallete">
             <thead>
                 <tr>
                     <th></th>
@@ -243,7 +243,7 @@
                                             <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b> <br> <b>{{$item->colorpalette_name}}</b></span></h6>
                                         </span>
                                     </span>
-                                    <span class="flex flex-col" style="text-align: left">
+                                    <span class="flex flex-col" style="text-align: right">
                                         <h6><span class="leading-1/15em tracking-1" style="color: black"><b>RGB({{$item->colorpalette_rgb}})</b></span></h6>
                                     </span>
                                 </div>
@@ -257,7 +257,7 @@
 </div>
 <div id="lqd-tab-events-item-Green-Blue" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="colorid" class="color_pallete" style="width: auto;">
+        <table id="colorid" class="color_pallete">
             <thead>
                 <tr>
                     <th></th>
@@ -275,7 +275,7 @@
                                             <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b> <br> <b>{{$item->colorpalette_name}}</b></span></h6>
                                         </span>
                                     </span>
-                                    <span class="flex flex-col" style="text-align: left">
+                                    <span class="flex flex-col" style="text-align: right">
                                         <h6><span class="leading-1/15em tracking-1" style="color: black"><b>RGB({{$item->colorpalette_rgb}})</b></span></h6>
                                     </span>
                                 </div>
@@ -289,7 +289,7 @@
 </div>
 <div id="lqd-tab-events-item-Off-White" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container">
-        <table id="colorid" class="color_pallete" style="width: auto;">
+        <table id="colorid" class="color_pallete">
             <thead>
                 <tr>
                     <th></th>
@@ -307,7 +307,7 @@
                                             <h6><span class="leading-1/15em tracking-1"><b>{{$item->colorpalette_batch}}</b> <br> <b>{{$item->colorpalette_name}}</b></span></h6>
                                         </span>
                                     </span>
-                                    <span class="flex flex-col" style="text-align: left">
+                                    <span class="flex flex-col" style="text-align: right">
                                         <h6><span class="leading-1/15em tracking-1" style="color: black"><b>RGB({{$item->colorpalette_rgb}})</b></span></h6>
                                     </span>
                                 </div>
@@ -319,19 +319,3 @@
         </table>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

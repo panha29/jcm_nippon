@@ -121,4 +121,22 @@ class UserLoginController extends Controller
         return redirect('/logout');
     }
 
+    function eprice(){
+        $nav = CategoryModel::all();
+        $product = ProductModel::all();
+        return view('user_dashboard.mobile-app.price_list.eprice_category',compact('nav','product'));
+    }
+
+    function colorpalette(){
+        $nav = CategoryModel::all();
+        $color = Cache::remember('colorpalette', $seconds = 86400, function () {
+            return DB::table('colorpalette')->get();
+        });
+        return view('user_dashboard.mobile-app.color_palette.color_palette',compact('nav','color'));
+    }
+
+    function pricelist(){
+        $nav = CategoryModel::all();
+        return view('user_dashboard.mobile-app.price_list.eprice_category',compact('nav'));
+    }
 }
