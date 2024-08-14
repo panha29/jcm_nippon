@@ -22,7 +22,7 @@
             </svg>
         </a>
     </div>
-    @include('user_dashboard._layoutV2.footer')
+    {{-- @include('user_dashboard._layoutV2.footer') --}}
 </div>
 @include('user_dashboard._layoutV2.scripts')
 </body>

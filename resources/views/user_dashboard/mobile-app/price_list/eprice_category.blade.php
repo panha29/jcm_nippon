@@ -39,25 +39,109 @@
 @endsection
 
 @section('content')
-{{-- @include('user_dashboard.websiteV2.color_palette.color_palette_js')
-@include('user_dashboard.websiteV2.css') --}}
+@include('user_dashboard.mobile-app.price_list.css')
 
 <div id="lqd-contents-wrap">
     <section class="lqd-section events pb-70 pt-40" id="events">
         <div class="container">
-            <a href="">
-                <div class="card">
+            <a href="" class="">
+                <div class="card category_btn" style="">
                     <div class="card-body">
-
-
-                            <div class="row">
-                                <div class="col">
-                                    <img src="{{ url('webv2/images/product/matexpremium.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" style="width: 50%">
+                        <div class="row">
+                            <div class="col" style="width: 30%; max-width:30%; padding: 0 0 0 2%;">
+                                <img src="{{ url('webv2/images/product/matex.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
+                            </div>
+                            <div class="col" style="margin: auto;">
+                                <div class="container">
+                                    <h5><span class="leading-1/6em tracking-1 uppercase font-ultrabold"><b>Matex</b></span></h5>
                                 </div>
-                                <div class="col">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <br>
+            <a href="">
+                <div class="card category_btn" style="">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col" style="width: 30%; max-width:30%; padding: 0 0 0 2%;">
+                                <img src="{{ url('webv2/images/product/matexpremium.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
+                            </div>
+                            <div class="col" style="margin: auto;">
+                                <div class="container">
                                     <h5><span class="leading-1/6em tracking-1 uppercase font-ultrabold"><b>Matex Premium</b></span></h5>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <br>
+            <a href="">
+                <div class="card category_btn" style="">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col" style="width: 30%; max-width:30%; padding: 0 0 0 2%;">
+                                <img src="{{ url('webv2/images/product/weatherbond8y.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
+                            </div>
+                            <div class="col" style="margin: auto;">
+                                <div class="container">
+                                    <h5><span class="leading-1/6em tracking-1 uppercase font-ultrabold"><b>Weatherbond 8 Years</b></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <br>
+            <a href="">
+                <div class="card category_btn" style="">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col" style="width: 30%; max-width:30%; padding: 0 0 0 2%;">
+                                <img src="{{ url('webv2/images/product/weatherbondplus.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
+                            </div>
+                            <div class="col" style="margin: auto;">
+                                <div class="container">
+                                    <h5><span class="leading-1/6em tracking-1 uppercase font-ultrabold"><b>Weatherbond Plus 12 Years</b></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <br>
+            <a href="">
+                <div class="card category_btn" style="">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col" style="width: 30%; max-width:30%; padding: 0 0 0 2%;">
+                                <img src="{{ url('webv2/images/product/weathergard6y.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
+                            </div>
+                            <div class="col" style="margin: auto;">
+                                <div class="container">
+                                    <h5><span class="leading-1/6em tracking-1 uppercase font-ultrabold"><b>Weathergard 6 Years</b></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <br>
+            <a href="">
+                <div class="card category_btn" style="">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col" style="width: 30%; max-width:30%; padding: 0 0 0 2%;">
+                                <img src="{{ url('webv2/images/product/supereasywash.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
+                            </div>
+                            <div class="col" style="margin: auto;">
+                                <div class="container">
+                                    <h5><span class="leading-1/6em tracking-1 uppercase font-ultrabold"><b>Super Easy Wash</b></span></h5>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </a>
