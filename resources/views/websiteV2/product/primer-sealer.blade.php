@@ -41,11 +41,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/vinilex5000-kh.pdf" download="Nippon Vinilex 5000">
+                            <a href="/webv2/primer-sealer/vinilex5000-kh.pdf" download="Nippon Vinilex 5000">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/vinilex5000.pdf" download="Nippon Vinilex 5000" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/primer-sealer/vinilex5000.pdf" download="Nippon Vinilex 5000" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -82,11 +82,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/vinilex5100-kh.pdf" download="Nippon Vinilex 5100">
+                            <a href="/webv2/primer-sealer/vinilex5100-kh.pdf" download="Nippon Vinilex 5100">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/vinilex5100.pdf" download="Nippon Vinilex 5100" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/primer-sealer/vinilex5100.pdf" download="Nippon Vinilex 5100" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -126,11 +126,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/odourless-sealer-kh.pdf" download="Nippon OdourLess Sealer">
+                            <a href="/webv2/primer-sealer/odourless-sealer-kh.pdf" download="Nippon OdourLess Sealer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/odourless-sealer.pdf" download="Nippon OdourLess Sealer" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/primer-sealer/odourless-sealer.pdf" download="Nippon OdourLess Sealer" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -171,11 +171,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/vinilex5170.pdf" download="Acrylic 5170 Wall Sealer">
+                            <a href="/webv2/primer-sealer/vinilex5170-kh.pdf" download="Acrylic 5170 Wall Sealer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/vinilex5170.pdf" download="Acrylic 5170 Wall Sealer" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/primer-sealer/vinilex5170.pdf" download="Acrylic 5170 Wall Sealer" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -214,11 +214,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                 <div style="display: inline-flex;">
-                    {{-- <a href="/webv2/vinilex5000-kh.pdf" download="Nippon Vinilex 5000">
+                    <a href="/webv2/primer-sealer/vinilex5000-kh.pdf" download="Nippon Vinilex 5000">
                         <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                         <h6>KH</h6>
-                    </a> --}}
-                    <a href="/webv2/vinilex5000.pdf" download="Nippon Vinilex 5000" style="margin-left: 10px">
+                    </a>
+                    <a href="/webv2/primer-sealer/vinilex5000.pdf" download="Nippon Vinilex 5000" style="margin-left: 10px">
                         <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                         <h6>ENG</h6>
                     </a>
@@ -251,11 +251,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/vinilex5100-kh.pdf" download="Nippon Vinilex 5100">
+                            <a href="/webv2/primer-sealer/vinilex5100-kh.pdf" download="Nippon Vinilex 5100">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/vinilex5100.pdf" download="Nippon Vinilex 5100" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/primer-sealer/vinilex5100.pdf" download="Nippon Vinilex 5100" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -291,11 +291,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/odourless-sealer-kh.pdf" download="OdourLess Sealer">
+                            <a href="/webv2/primer-sealer/odourless-sealer-kh.pdf" download="OdourLess Sealer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/odourless-sealer.pdf" download="OdourLess Sealer" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/primer-sealer/odourless-sealer.pdf" download="OdourLess Sealer" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -332,11 +332,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/vinilex5170-kh.pdf" download="Acrylic 5170 Wall Sealer">
+                            <a href="/webv2/primer-sealer/vinilex5170-kh.pdf" download="Acrylic 5170 Wall Sealer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/vinilex5170.pdf" download="Acrylic 5170 Wall Sealer" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/primer-sealer/vinilex5170.pdf" download="Acrylic 5170 Wall Sealer" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>

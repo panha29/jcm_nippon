@@ -150,18 +150,18 @@
 
                         <a class="leading-1/4em" href="/Products">
                             Products
-                            <span class="submenu-expander absolute"></span>
+                            {{-- <span class="submenu-expander absolute"></span>
                             <span class="link-icon inline-flex hide-if-empty right-icon">
                                 <i class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
-                            </span>
+                            </span> --}}
                         </a>
-                        <ul class="nav-item-children">
+                        {{-- <ul class="nav-item-children">
                             @foreach ($nav as $item)
                             <li>
                                 <a href="/Products/{{$item->category_tag}}">{{$item->category_name}}</a>
                             </li>
                             @endforeach
-                        </ul>
+                        </ul> --}}
                     </li>
                     <li class="menu-item-has-children">
                         <a href="/Painting-Services" class="leading-1/4em">

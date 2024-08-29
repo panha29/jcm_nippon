@@ -38,11 +38,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/matex-premium.pdf" download="Nippon Matex Premium">
+                            <a href="/webv2/exterior/matex-premium.pdf" download="Nippon Matex Premium">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/matex-premium.pdf" download="Nippon Matex Premium" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/exterior/matex-premium.pdf" download="Nippon Matex Premium" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -85,11 +85,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/exterior/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/exterior/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -132,11 +132,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/weatherbond-kh.pdf" download="Weatherbond 8y">
+                            <a href="/webv2/exterior/weatherbond-kh.pdf" download="Weatherbond 8y">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/weatherbond.pdf" download="Weatherbond 8y" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/exterior/weatherbond.pdf" download="Weatherbond 8y" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -179,11 +179,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/weathergard-kh.pdf" download="Nippon Weathergard">
+                            <a href="/webv2/exterior/weathergard-kh.pdf" download="Nippon Weathergard">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/weathergard.pdf" download="Nippon Weathergard" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/exterior/weathergard.pdf" download="Nippon Weathergard" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -229,11 +229,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/solareflect-kh.pdf" download="Nippon Solareflect">
+                            <a href="/webv2/exterior/solareflect-kh.pdf" download="Nippon Solareflect">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/solareflect.pdf" download="Nippon Solareflect" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/exterior/solareflect.pdf" download="Nippon Solareflect" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -269,11 +269,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                 <div style="display: inline-flex;">
-                    {{-- <a href="/webv2/matex-premium.pdf" download="Nippon Matex Premium">
+                    <a href="/webv2/exterior/matex-premium.pdf" download="Nippon Matex Premium">
                         <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                         <h6>KH</h6>
-                    </a> --}}
-                    <a href="/webv2/matex-premium.pdf" download="Nippon Matex Premium" style="margin-left: 10px">
+                    </a>
+                    <a href="/webv2/exterior/matex-premium.pdf" download="Nippon Matex Premium" style="margin-left: 10px">
                         <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                         <h6>ENG</h6>
                     </a>
@@ -314,11 +314,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/exterior/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/exterior/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -330,14 +330,14 @@
 
         <a type="button" class="btn btn-primary btn-box" data-bs-toggle="modal" data-bs-target="#weatherbond8y">
             <img src="{{ url('webv2/images/product/weatherbond8y.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
-            <h5><span class="leading-1/6em tracking-1"><h6>OWeatherBond 8y</h6></span></h5>
+            <h5><span class="leading-1/6em tracking-1"><h6>WeatherBond 8y</h6></span></h5>
         </a>
                         <!-- Modal -->
         <div class="modal fade" id="weatherbond8y" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">OWeatherBond 8y</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">WeatherBond 8y</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -357,11 +357,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/exterior/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/exterior/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -401,11 +401,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/exterior/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/exterior/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -444,11 +444,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/exterior/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/exterior/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -488,11 +488,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
+                            <a href="/webv2/exterior/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/exterior/weatherbond-plus-12y.pdf" download="Weatherbond Plus 12y" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>

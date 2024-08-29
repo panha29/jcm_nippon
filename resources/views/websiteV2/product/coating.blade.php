@@ -36,11 +36,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/ea4-kh.pdf" download="EA 4 Finish">
+                            <a href="/webv2/coating/ea4-kh.pdf" download="EA 4 Finish">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/ea4.pdf" download="EA 4 Finish" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/coating/ea4.pdf" download="EA 4 Finish" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -77,11 +77,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/ea9.pdf" download="EA 9 Finish">
+                            <a href="/webv2/coating/ea9-kh.pdf" download="EA 9 Finish">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/ea9.pdf" download="EA 9 Finish" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/coating/ea9.pdf" download="EA 9 Finish" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -119,11 +119,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/pu-kh.pdf" download="PU RECOATABLE FINISH">
+                            <a href="/webv2/coating/pu-kh.pdf" download="PU RECOATABLE FINISH">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/pu.pdf" download="PU RECOATABLE FINISH" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/coating/pu.pdf" download="PU RECOATABLE FINISH" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -157,11 +157,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                 <div style="display: inline-flex;">
-                    {{-- <a href="/webv2/ea4-kh.pdf" download="EA 4 Finish">
+                    <a href="/webv2/coating/ea4-kh.pdf" download="EA 4 Finish">
                         <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                         <h6>KH</h6>
-                    </a> --}}
-                    <a href="/webv2/ea4.pdf" download="EA 4 Finish" style="margin-left: 10px">
+                    </a>
+                    <a href="/webv2/coating/ea4.pdf" download="EA 4 Finish" style="margin-left: 10px">
                         <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                         <h6>ENG</h6>
                     </a>
@@ -195,11 +195,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/ea9-kh.pdf" download="EA 9 Finish">
+                            <a href="/webv2/coating/ea9-kh.pdf" download="EA 9 Finish">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/ea9.pdf" download="EA 9 Finish" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/coating/ea9.pdf" download="EA 9 Finish" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -234,11 +234,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/pu-kh.pdf" download="PU RECOATABLE FINISH">
+                            <a href="/webv2/coating/pu-kh.pdf" download="PU RECOATABLE FINISH">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/weatherbond-plus-12y.pdf" download="PU RECOATABLE FINISH" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/coating/weatherbond-plus-12y.pdf" download="PU RECOATABLE FINISH" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>

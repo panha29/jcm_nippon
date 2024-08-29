@@ -39,11 +39,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/timberfinish.pdf" download="Nippon Timber Finish">
+                            <a href="/webv2/wood-metal/timberfinish-kh.pdf" download="Nippon Timber Finish">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/timberfinish.pdf" download="Nippon Timber Finish" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/wood-metal/timberfinish.pdf" download="Nippon Timber Finish" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -84,11 +84,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/gloss9000.pdf" download="Nippon Bodelac 9000 Gloss">
+                            <a href="/webv2/wood-metal/gloss9000-kh.pdf" download="Nippon Bodelac 9000 Gloss">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/gloss9000.pdf" download="Nippon Bodelac 9000 Gloss" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/wood-metal/gloss9000.pdf" download="Nippon Bodelac 9000 Gloss" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -132,11 +132,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/satin-gloss9000-kh.pdf" download="Nippon Bodelac 900 Satin Gloss">
+                            <a href="/webv2/wood-metal/satin-gloss9000-kh.pdf" download="Nippon Bodelac 900 Satin Gloss">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/satin-gloss9000.pdf" download="Nippon Bodelac 900 Satin Gloss" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/wood-metal/satin-gloss9000.pdf" download="Nippon Bodelac 900 Satin Gloss" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -180,11 +180,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/satin9000-kh.pdf" download="Bodelac 9000 Satin">
+                            <a href="/webv2/wood-metal/satin9000-kh.pdf" download="Bodelac 9000 Satin">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/satin9000.pdf" download="Bodelac 9000 Satin" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/wood-metal/satin9000.pdf" download="Bodelac 9000 Satin" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -228,11 +228,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/matt9000-kh.pdf" download="Bodelac 9000 Matt">
+                            <a href="/webv2/wood-metal/matt9000-kh.pdf" download="Bodelac 9000 Matt">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/matt9000.pdf" download="Bodelac 9000 Matt" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/wood-metal/matt9000.pdf" download="Bodelac 9000 Matt" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -269,11 +269,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/zinc-phosphate-primer-kh.pdf" download="Zinc Phosphate Primer">
+                            <a href="/webv2/wood-metal/zinc-phosphate-primer-kh.pdf" download="Zinc Phosphate Primer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/zinc-phosphate-primer.pdf" download="Zinc Phosphate Primer" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/wood-metal/zinc-phosphate-primer.pdf" download="Zinc Phosphate Primer" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -310,11 +310,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/red-oxide-primer-kh.pdf" download="Red Oxide Primer">
+                            <a href="/webv2/wood-metal/red-oxide-primer-kh.pdf" download="Red Oxide Primer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/red-oxide-primer.pdf" download="Red Oxide Primer" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/wood-metal/red-oxide-primer.pdf" download="Red Oxide Primer" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -351,11 +351,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/gray-oxide-primer-kh.pdf" download="Gray Oxide Primer">
+                            <a href="/webv2/wood-metal/gray-oxide-primer-kh.pdf" download="Gray Oxide Primer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/gray-oxide-primer.pdf" download="Gray Oxide Primer" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/wood-metal/gray-oxide-primer.pdf" download="Gray Oxide Primer" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -393,11 +393,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/gold2000-kh.pdf" download="Nippon Gold Paint 2000">
+                            <a href="/webv2/wood-metal/gold2000-kh.pdf" download="Nippon Gold Paint 2000">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/gold2000.pdf" download="Nippon Gold Paint 2000" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/wood-metal/gold2000.pdf" download="Nippon Gold Paint 2000" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -435,11 +435,11 @@
                     <td style="vertical-align: top">
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/aluminium9000-kh.pdf" download="Nippon Alminium Paint">
+                            <a href="/webv2/wood-metal/aluminium9000-kh.pdf" download="Nippon Alminium Paint">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/aluminium9000.pdf" download="Nippon Alminium Paint" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/wood-metal/aluminium9000.pdf" download="Nippon Alminium Paint" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -476,11 +476,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                 <div style="display: inline-flex;">
-                    {{-- <a href="/webv2/timberfinish-kh.pdf" download="Nippon Timber Finish">
+                    <a href="/webv2/wood-metal/timberfinish-kh.pdf" download="Nippon Timber Finish">
                         <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                         <h6>KH</h6>
-                    </a> --}}
-                    <a href="/webv2/timberfinish.pdf" download="Nippon Timber Finish" style="margin-left: 10px">
+                    </a>
+                    <a href="/webv2/wood-metal/timberfinish.pdf" download="Nippon Timber Finish" style="margin-left: 10px">
                         <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                         <h6>ENG</h6>
                     </a>
@@ -517,11 +517,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/gloss9000-kh.pdf" download="Nippon Bodelac 9000 Gloss">
+                            <a href="/webv2/wood-metal/gloss9000-kh.pdf" download="Nippon Bodelac 9000 Gloss">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/gloss9000.pdf" download="Nippon Bodelac 9000 Gloss" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/wood-metal/gloss9000.pdf" download="Nippon Bodelac 9000 Gloss" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -561,11 +561,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/satin-gloss9000-kh.pdf" download="Nippon Bodelac 9000 Satin Gloss">
+                            <a href="/webv2/wood-metal/satin-gloss9000-kh.pdf" download="Nippon Bodelac 9000 Satin Gloss">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/satin-gloss9000-kh.pdf" download="Nippon Bodelac 9000 Satin Gloss" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/wood-metal/satin-gloss9000-kh.pdf" download="Nippon Bodelac 9000 Satin Gloss" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -605,11 +605,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/satin9000-kh.pdf" download="Bodelac 9000 Satin">
+                            <a href="/webv2/wood-metal/satin9000-kh.pdf" download="Bodelac 9000 Satin">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/satin9000.pdf" download="Bodelac 9000 Satin" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/wood-metal/satin9000.pdf" download="Bodelac 9000 Satin" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -649,11 +649,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/matt9000-kh.pdf" download="Bodelac 9000 Matt">
+                            <a href="/webv2/wood-metal/matt9000-kh.pdf" download="Bodelac 9000 Matt">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/matt9000.pdf" download="Bodelac 9000 Matt" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/wood-metal/matt9000.pdf" download="Bodelac 9000 Matt" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -686,11 +686,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/zinc-phosphate-primer-kh.pdf" download="Zinc Phosphate Primer">
+                            <a href="/webv2/wood-metal/zinc-phosphate-primer-kh.pdf" download="Zinc Phosphate Primer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/zinc-phosphate-primer.pdf" download="Zinc Phosphate Primer" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/wood-metal/zinc-phosphate-primer.pdf" download="Zinc Phosphate Primer" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -723,11 +723,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/red-oxide-primer-kh.pdf" download="Eco Red Oxide Primer">
+                            <a href="/webv2/wood-metal/red-oxide-primer-kh.pdf" download="Eco Red Oxide Primer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/red-oxide-primer.pdf" download="Eco Red Oxide Primer" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/wood-metal/red-oxide-primer.pdf" download="Eco Red Oxide Primer" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -760,11 +760,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/gray-oxide-primer-kh.pdf" download="Eco Gray Oxide Primer">
+                            <a href="/webv2/wood-metal/gray-oxide-primer-kh.pdf" download="Eco Gray Oxide Primer">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/gray-oxide-primer.pdf" download="Eco Gray Oxide Primer" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/wood-metal/gray-oxide-primer.pdf" download="Eco Gray Oxide Primer" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -798,11 +798,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/gold2000-kh.pdf" download="Gold Paint 2000">
+                            <a href="/webv2/wood-metal/gold2000-kh.pdf" download="Gold Paint 2000">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/gold2000.pdf" download="Gold Paint 2000" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/wood-metal/gold2000.pdf" download="Gold Paint 2000" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>
@@ -837,11 +837,11 @@
                         </h6>
                         <h5>Specification / Technical</h5>
                         <div style="display: inline-flex;">
-                            {{-- <a href="/webv2/aluminium9000-kh.pdf" download="Nippon Aluminium Paint">
+                            <a href="/webv2/wood-metal/aluminium9000-kh.pdf" download="Nippon Aluminium Paint">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>KH</h6>
-                            </a> --}}
-                            <a href="/webv2/aluminium9000.pdf" download="Nippon Aluminium Paint" style="margin-left: 10px">
+                            </a>
+                            <a href="/webv2/wood-metal/aluminium9000.pdf" download="Nippon Aluminium Paint" style="margin-left: 10px">
                                 <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 30px">
                                 <h6>ENG</h6>
                             </a>

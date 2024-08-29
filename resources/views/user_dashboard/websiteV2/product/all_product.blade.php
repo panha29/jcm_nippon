@@ -34,7 +34,7 @@
             </div>
         </div>
     </section>
-    <div class="row mobile-product">
+    {{-- <div class="row mobile-product">
         <div class="col-4">
             <section class="lqd-section pt-40 sm:pt-0">
                 <div class="category">
@@ -98,7 +98,7 @@
                 </div>
             </section>
         </div>
-    </div>
+    </div> --}}
     <div id="product-table">
         @include('websiteV2.product.product_category')
     </div>
