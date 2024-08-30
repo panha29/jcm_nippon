@@ -92,16 +92,16 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col col-12 col-md-6 col-xl-3 p-0 module-content">
-                    <div class=" lqd-fb relative lqd-fb-style-6 rounded-4 h-pt-125 text-white" data-lqd-zindex="true">
+                    <div class=" lqd-fb relative lqd-fb-style-6 rounded-4 h-pt-125 text-white">
                         <div class="lqd-fb-shadow"></div>
-                        <div class="flex flex-wrap items-center lqd-overlay flex" data-hover3d="true">
+                        <div class="flex flex-wrap items-center lqd-overlay flex">
                             <div class="lqd-fb-content-wrap lqd-overlay flex flex-col items-end transform-style-3d backface-hidden will-change-transform" data-stacking-factor="0.5">
-                                <div class="lqd-fb-img lqd-overlay flex rounded-4 overflow-hidden backface-hidden">
+                                <div class="lqd-overlay flex rounded-4 overflow-hidden backface-hidden">
                                     <figure class="w-full h-full m-0">
                                         <img class="w-full h-full objfit-cover objfit-center" src="/webv2/images/painter.jpg" alt="Painting Services">
                                     </figure>
                                     <div class="lqd-fb-bg lqd-overlay flex"></div>
-                                    <div class="lqd-fb-hover-overlay lqd-overlay flex bg-transparent" style="background-image: linear-gradient(180deg,  rgba(246,  72,  42,  0) 25%,  rgba(246,  72,  42,  0.9) 100%);"></div>
+                                    <div class="lqd-fb-hover-overlay lqd-overlay flex bg-transparent"></div>
                                 </div>
                                 <div class="lqd-fb-content flex flex-col justify-end lqd-overlay flex backface-hidden py-1/5em px-1/5em">
                                     <span class="lqd-fb-icon flex mb-0/85em">
@@ -115,16 +115,16 @@
                     </div>
                 </div>
                 <div class="col col-12 col-md-6 col-xl-3 p-0 module-content">
-                    <div class="lqd-fb relative lqd-fb-style-6 rounded-4 h-pt-125 text-white" data-lqd-zindex="true">
+                    <div class="lqd-fb relative lqd-fb-style-6 rounded-4 h-pt-125 text-white">
                         <div class="lqd-fb-shadow"></div>
-                        <div class="flex flex-wrap items-center lqd-overlay flex" data-hover3d="true">
+                        <div class="flex flex-wrap items-center lqd-overlay flex">
                             <div class="lqd-fb-content-wrap lqd-overlay flex flex-col items-end transform-style-3d backface-hidden will-change-transform" data-stacking-factor="0.5">
-                                <div class="lqd-fb-img lqd-overlay flex rounded-4 overflow-hidden backface-hidden">
+                                <div class="lqd-overlay flex rounded-4 overflow-hidden backface-hidden">
                                     <figure class="w-full h-full m-0">
                                         <img class="w-full h-full objfit-cover objfit-center" src="/webv2/images/mixer.jpg" alt="Modern Computerize Color">
                                     </figure>
                                     <div class="lqd-fb-bg lqd-overlay flex"></div>
-                                    <div class="lqd-fb-hover-overlay lqd-overlay flex bg-transparent" style="background-image: linear-gradient(180deg,  rgba(192,  11,  238,  0) 25%,  rgba(192,  11,  238,  0.8) 100%);"></div>
+                                    <div class="lqd-fb-hover-overlay lqd-overlay flex bg-transparent"></div>
                                 </div>
                                 <div class="lqd-fb-content flex flex-col justify-end lqd-overlay flex backface-hidden py-1/5em px-1/5em">
                                     <span class="lqd-fb-icon flex mb-0/85em">
@@ -138,16 +138,16 @@
                     </div>
                 </div>
                 <div class="col col-12 col-md-6 col-xl-3 p-0 module-content">
-                    <div class="lqd-fb relative lqd-fb-style-6 rounded-4 h-pt-125 text-white" data-lqd-zindex="true">
+                    <div class="lqd-fb relative lqd-fb-style-6 rounded-4 h-pt-125 text-white">
                         <div class="lqd-fb-shadow"></div>
-                        <div class="flex flex-wrap items-center lqd-overlay flex" data-hover3d="true">
+                        <div class="flex flex-wrap items-center lqd-overlay flex">
                             <div class="lqd-fb-content-wrap lqd-overlay flex flex-col items-end transform-style-3d backface-hidden will-change-transform" data-stacking-factor="0.5">
-                                <div class="lqd-fb-img lqd-overlay flex rounded-4 overflow-hidden backface-hidden">
+                                <div class="lqd-overlay flex rounded-4 overflow-hidden backface-hidden">
                                     <figure class="w-full h-full m-0">
                                         <img class="w-full h-full objfit-cover objfit-center" src="/webv2/images/colorscheme.jpg" alt="Color Scheme Services">
                                     </figure>
                                     <div class="lqd-fb-bg lqd-overlay flex"></div>
-                                    <div class="lqd-fb-hover-overlay lqd-overlay flex bg-transparent" style="background-image: linear-gradient(180deg,  rgba(255,  255,  255,  0) 25%,  rgba(71,  214,  126,  0.8) 100%);"></div>
+                                    <div class="lqd-fb-hover-overlay lqd-overlay flex bg-transparent"></div>
                                 </div>
                                 <div class="lqd-fb-content flex flex-col justify-end lqd-overlay flex backface-hidden py-1/5em px-1/5em">
                                     <span class="lqd-fb-icon flex mb-0/85em">
@@ -161,16 +161,16 @@
                     </div>
                 </div>
                 <div class="col col-12 col-md-6 col-xl-3 p-0 module-content">
-                    <div class=" lqd-fb relative lqd-fb-style-6 rounded-4 h-pt-125 text-white" data-lqd-zindex="true">
+                    <div class=" lqd-fb relative lqd-fb-style-6 rounded-4 h-pt-125 text-white">
                         <div class="lqd-fb-shadow"></div>
-                        <div class="flex flex-wrap items-center lqd-overlay flex" data-hover3d="true">
+                        <div class="flex flex-wrap items-center lqd-overlay flex">
                             <div class="lqd-fb-content-wrap lqd-overlay flex flex-col items-end transform-style-3d backface-hidden will-change-transform" data-stacking-factor="0.5">
-                                <div class="lqd-fb-img lqd-overlay flex rounded-4 overflow-hidden backface-hidden">
+                                <div class="lqd-overlay flex rounded-4 overflow-hidden backface-hidden">
                                     <figure class="w-full h-full m-0">
                                         <img class="w-full h-full objfit-cover objfit-center" src="/webv2/images/colorpallet.jpg" alt="Hundread Thousand of Color to choose">
                                     </figure>
                                     <div class="lqd-fb-bg lqd-overlay flex"></div>
-                                    <div class="lqd-fb-hover-overlay lqd-overlay flex bg-transparent" style="background-image: linear-gradient(180deg,  rgba(238,  109,  11,  0) 25%,  rgb(238,  109,  1) 100%);"></div>
+                                    <div class="lqd-fb-hover-overlay lqd-overlay flex bg-transparent"></div>
                                 </div>
                                 <div class="lqd-fb-content flex flex-col justify-end lqd-overlay flex backface-hidden py-1/5em px-1/5em">
                                     <span class="lqd-fb-icon flex mb-0/85em">
@@ -190,7 +190,7 @@
 @include('websiteV2.professional')
 @include('websiteV2.brand')
 {{-- @include('websiteV2.product') --}}
-@include('websiteV2.goal')
+{{-- @include('websiteV2.goal') --}}
 {{-- @include('websiteV2.applicator') --}}
 
 
@@ -199,7 +199,7 @@
 
 
     <!-- Start Counters -->
-    <section class="lqd-section counters pt-70 pb-65" id="counters">
+    {{-- <section class="lqd-section counters pt-70 pb-65" id="counters">
         <div class="container">
             <div class="row">
                 <div class="col col-12 p-0" data-custom-animations="true" data-ca-options='{"animationTarget": "p", "ease": "power4.out", "initValues": {"y": "30px", "opacity" : 0} , "animations": {"y": "0px", "opacity" : 1}}'>
@@ -271,7 +271,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End Counters -->
 
 @include('websiteV2.history')
