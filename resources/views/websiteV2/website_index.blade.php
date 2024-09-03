@@ -28,7 +28,7 @@
 @include('websiteV2.banner')
 
     <!-- Start Services -->
-    <section class="lqd-section services pt-50" id="services" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element", "ease": "power4.out", "initValues": {"y": "60px", "rotationZ" : 5, "opacity" : 0, "transformOrigin": "50% 50% 120px"} , "animations": {"y": "0px", "rotationZ" : 0, "opacity" : 1, "transformOrigin": "50% 50% 0px"}}'>
+    {{-- <section class="lqd-section services pt-50" id="services" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element", "ease": "power4.out", "initValues": {"y": "60px", "rotationZ" : 5, "opacity" : 0, "transformOrigin": "50% 50% 120px"} , "animations": {"y": "0px", "rotationZ" : 0, "opacity" : 1, "transformOrigin": "50% 50% 0px"}}'>
         <div class="container">
             <div class="row">
                 <div class="col col-xl-4 col-12 mb-30 sm:py-0">
@@ -83,15 +83,15 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End Services -->
 
     <!-- Start Portfolio -->
     <section class="lqd-section portfolio pt-150 pb-100">
         <h2 class="" style="text-align:center">Our Services</h2><br>
-        <div class="container-fluid">
+        <div class="container-fluid" style="width: 50%">
             <div class="row">
-                <div class="col col-12 col-md-6 col-xl-3 p-0 module-content">
+                <div class="col col-12 col-md-6 col-xl-3 module-content">
                     <div class=" lqd-fb relative lqd-fb-style-6 rounded-4 h-pt-125 text-white">
                         <div class="lqd-fb-shadow"></div>
                         <div class="flex flex-wrap items-center lqd-overlay flex">
@@ -103,18 +103,18 @@
                                     <div class="lqd-fb-bg lqd-overlay flex"></div>
                                     <div class="lqd-fb-hover-overlay lqd-overlay flex bg-transparent"></div>
                                 </div>
-                                <div class="lqd-fb-content flex flex-col justify-end lqd-overlay flex backface-hidden py-1/5em px-1/5em">
+                                <div class="lqd-fb-content flex flex-col justify-end lqd-overlay flex backface-hidden py-1/5em px-1/5em" style="">
                                     <span class="lqd-fb-icon flex mb-0/85em">
                                         <i aria-hidden="true" class="lqd-icn-ess icon-lqd-cogs"></i>
                                     </span>
                                     <h6 class="mt-0 mb-1/35em font-bold">Nippon Paint Cambodia</h6>
-                                    <h2 class="lqd-fb__title mt-0 text-26 font-bold">Painting Services</h2>
+                                    <h2 class="lqd-fb__title mt-0 text-16 font-bold">Painting Services</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col col-12 col-md-6 col-xl-3 p-0 module-content">
+                <div class="col col-12 col-md-6 col-xl-3 module-content">
                     <div class="lqd-fb relative lqd-fb-style-6 rounded-4 h-pt-125 text-white">
                         <div class="lqd-fb-shadow"></div>
                         <div class="flex flex-wrap items-center lqd-overlay flex">
@@ -131,13 +131,13 @@
                                         <i aria-hidden="true" class="lqd-icn-ess icon-lqd-presentation"></i>
                                     </span>
                                     <h6 class="mt-0 mb-1/35em font-bold">Nippon Paint Cambodia</h6>
-                                    <h2 class="lqd-fb__title mt-0 text-26 font-bold">Computerize Color Mixing</h2>
+                                    <h2 class="lqd-fb__title mt-0 text-16 font-bold">Computerize Color Mixing</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col col-12 col-md-6 col-xl-3 p-0 module-content">
+                <div class="col col-12 col-md-6 col-xl-3 module-content">
                     <div class="lqd-fb relative lqd-fb-style-6 rounded-4 h-pt-125 text-white">
                         <div class="lqd-fb-shadow"></div>
                         <div class="flex flex-wrap items-center lqd-overlay flex">
@@ -154,13 +154,13 @@
                                         <i aria-hidden="true" class="lqd-icn-ess icon-lqd-mobile"></i>
                                     </span>
                                     <h6 class="mt-0 mb-1/35em font-bold">Nippon Paint Cambodia</h6>
-                                    <h2 class="lqd-fb__title mt-0 text-26 font-bold">Color Scheme Services</h2>
+                                    <h2 class="lqd-fb__title mt-0 text-16 font-bold">Color Scheme Services</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col col-12 col-md-6 col-xl-3 p-0 module-content">
+                <div class="col col-12 col-md-6 col-xl-3 module-content">
                     <div class=" lqd-fb relative lqd-fb-style-6 rounded-4 h-pt-125 text-white">
                         <div class="lqd-fb-shadow"></div>
                         <div class="flex flex-wrap items-center lqd-overlay flex">
@@ -177,7 +177,7 @@
                                         <i aria-hidden="true" class="lqd-icn-ess icon-lqd-path"></i>
                                     </span>
                                     <h6 class="mt-0 mb-1/35em font-bold">Nippon Paint Cambodia</h6>
-                                    <h2 class="lqd-fb__title mt-0 text-26 font-bold">Thousand of Colors to choose</h2>
+                                    <h2 class="lqd-fb__title mt-0 text-16 font-bold">Thousand of Colors to choose</h2>
                                 </div>
                             </div>
                         </div>
@@ -187,7 +187,7 @@
         </div>
     </section>
     <!-- End Portfolio -->
-@include('websiteV2.professional')
+{{-- @include('websiteV2.professional') --}}
 @include('websiteV2.brand')
 {{-- @include('websiteV2.product') --}}
 {{-- @include('websiteV2.goal') --}}

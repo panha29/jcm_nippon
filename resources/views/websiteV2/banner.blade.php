@@ -25,20 +25,20 @@
                 <div class="flex flex-row flex-wrap items-center justify-start">
                     <div class="fancy-button mr-15 module-btn sm:w-full">
                         <a href="tel: +855 11 822 266" class="btn btn-solid btn-xlg btn-icon-right btn-hover-reveal font-bold uppercase tracking-1/5 leading-1/4em whitespace-nowrap bg-transparent rounded-100 text-white">
-                            <span class="btn-txt" data-text="Get a Quote">Get a Quote</span>
+                            <span class="btn-txt" data-text="Call us Now">Call us Now</span>
                             <span class="btn-icon text-16">
                                 <i aria-hidden="true" class="lqd-icn-ess icon-md-arrow-round-forward-2"></i>
                             </span>
                         </a>
                     </div>
-                    <div class="fancy-button text-left sm:w-full">
+                    {{-- <div class="fancy-button text-left sm:w-full">
                         <a href="#services" class="btn btn-naked btn-icon-right btn-hover-reveal btn-has-label font-bold uppercase tracking-1/5 leading-1/4em whitespace-nowrap text-blue-700" data-localscroll="true">
                             <span class="btn-txt" data-text="Discover Hub">Discover Hub</span>
                             <span class="btn-icon">
                                 <i aria-hidden="true" class="lqd-icn-ess icon-md-arrow-round-down"></i>
                             </span>
                         </a>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
             <div class="col col-12 col-xl-7 sm:order-first" data-custom-animations="true" data-ca-options='{"animationTarget": "svg, img", "startDelay" : 350, "ease": "power4.out", "initValues": {"opacity" : 0} , "animations": {"opacity" : 1}}'>
