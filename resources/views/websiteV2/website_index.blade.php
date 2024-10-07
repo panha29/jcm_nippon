@@ -87,11 +87,11 @@
     <!-- End Services -->
 
     <!-- Start Portfolio -->
-    <section class="lqd-section portfolio pt-150 pb-100">
+    <section class="lqd-section pt-150 pb-50">
         <h2 class="" style="text-align:center">Our Services</h2><br>
-        <div class="container-fluid" style="width: 50%">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col col-12 col-md-6 col-xl-3 module-content">
+                <div class="col col-6 col-md-6 col-xl-3 module-content">
                     <div class=" lqd-fb relative lqd-fb-style-6 rounded-4 h-pt-125 text-white">
                         <div class="lqd-fb-shadow"></div>
                         <div class="flex flex-wrap items-center lqd-overlay flex">
@@ -108,13 +108,13 @@
                                         <i aria-hidden="true" class="lqd-icn-ess icon-lqd-cogs"></i>
                                     </span>
                                     <h6 class="mt-0 mb-1/35em font-bold">Nippon Paint Cambodia</h6>
-                                    <h2 class="lqd-fb__title mt-0 text-16 font-bold">Painting Services</h2>
+                                    <h2 style="width: 140px" class="lqd-fb__title mt-0 text-16 font-bold">Painting Services</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col col-12 col-md-6 col-xl-3 module-content">
+                <div class="col col-6 col-md-6 col-xl-3 module-content">
                     <div class="lqd-fb relative lqd-fb-style-6 rounded-4 h-pt-125 text-white">
                         <div class="lqd-fb-shadow"></div>
                         <div class="flex flex-wrap items-center lqd-overlay flex">
@@ -131,13 +131,13 @@
                                         <i aria-hidden="true" class="lqd-icn-ess icon-lqd-presentation"></i>
                                     </span>
                                     <h6 class="mt-0 mb-1/35em font-bold">Nippon Paint Cambodia</h6>
-                                    <h2 class="lqd-fb__title mt-0 text-16 font-bold">Computerize Color Mixing</h2>
+                                    <h2 style="width: 140px" class="lqd-fb__title mt-0 text-16 font-bold">Computerize Color Mixing</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col col-12 col-md-6 col-xl-3 module-content">
+                <div class="col col-6 col-md-6 col-xl-3 module-content">
                     <div class="lqd-fb relative lqd-fb-style-6 rounded-4 h-pt-125 text-white">
                         <div class="lqd-fb-shadow"></div>
                         <div class="flex flex-wrap items-center lqd-overlay flex">
@@ -154,13 +154,13 @@
                                         <i aria-hidden="true" class="lqd-icn-ess icon-lqd-mobile"></i>
                                     </span>
                                     <h6 class="mt-0 mb-1/35em font-bold">Nippon Paint Cambodia</h6>
-                                    <h2 class="lqd-fb__title mt-0 text-16 font-bold">Color Scheme Services</h2>
+                                    <h2 style="width: 140px" class="lqd-fb__title mt-0 text-16 font-bold">Color Scheme Services</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col col-12 col-md-6 col-xl-3 module-content">
+                <div class="col col-6 col-md-6 col-xl-3 module-content">
                     <div class=" lqd-fb relative lqd-fb-style-6 rounded-4 h-pt-125 text-white">
                         <div class="lqd-fb-shadow"></div>
                         <div class="flex flex-wrap items-center lqd-overlay flex">
@@ -177,7 +177,7 @@
                                         <i aria-hidden="true" class="lqd-icn-ess icon-lqd-path"></i>
                                     </span>
                                     <h6 class="mt-0 mb-1/35em font-bold">Nippon Paint Cambodia</h6>
-                                    <h2 class="lqd-fb__title mt-0 text-16 font-bold">Thousand of Colors to choose</h2>
+                                    <h2 style="width: 140px" class="lqd-fb__title mt-0 text-16 font-bold">Thousand of Colors to choose</h2>
                                 </div>
                             </div>
                         </div>
@@ -186,10 +186,11 @@
             </div>
         </div>
     </section>
+@include('websiteV2.product')
+
     <!-- End Portfolio -->
 {{-- @include('websiteV2.professional') --}}
 @include('websiteV2.brand')
-{{-- @include('websiteV2.product') --}}
 {{-- @include('websiteV2.goal') --}}
 {{-- @include('websiteV2.applicator') --}}
 

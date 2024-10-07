@@ -3,7 +3,7 @@
         width: 100% !important;
     }
 </style>
-<section class="lqd-section case-study-carousel pt-60 pb-50" id="case-studies" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element", "ease": "power4.out", "initValues": {"y": "30px", "opacity" : 0} , "animations": {"y": "0px", "opacity" : 1}}'>
+<section class="lqd-section case-study-carousel pt-20 pb-50" id="case-studies" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element", "ease": "power4.out", "initValues": {"y": "30px", "opacity" : 0} , "animations": {"y": "0px", "opacity" : 1}}'>
     <div class="container">
         <div class="row items-center justify-between">
             <div class="col col-12 col-md-6 p-0">
@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="col col-12 p-0">
-                <div class="carousel-container pt-40 animation-element">
+                <div class="carousel-container pt-20 animation-element">
                     {{-- <div class="carousel-items relative" data-lqd-flickity='{ "equalHeightCells": true, "filters": "#pf-filter-46824385", "prevNextButtons": true, "navArrow":  6, "fullwidthSide":  true, "buttonsAppendTo":  "self", "autoPlay":3000}'> --}}
                         <div class="carousel-items relative" data-lqd-flickity='{ "equalHeightCells": true, "filters": "#pf-filter-46824385", "prevNextButtons": true, "navArrow":  6, "fullwidthSide":  true, "autoPlay":3000}'>
 
