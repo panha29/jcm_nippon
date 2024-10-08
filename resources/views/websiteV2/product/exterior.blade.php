@@ -1,4 +1,4 @@
-<div id="lqd-tab-events-item-Exterior" role="tabpanel" class="lqd-tabs-pane fade">
+<div id="Nippon-Paint-Exterior" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container pd-des-mobile">
         <table id="colorid" class="color_pallete" style="width: auto;">
             <thead>
@@ -9,7 +9,7 @@
             <tbody id="tbody2">
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Exterior" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Exterior" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/matexpremium.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
@@ -51,7 +51,7 @@
                 </tr>
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Exterior" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Exterior" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/weatherbondplus.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
@@ -99,7 +99,7 @@
 
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Exterior" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Exterior" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/weatherbond8y.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
@@ -145,7 +145,7 @@
                 </tr>
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Exterior" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Exterior" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/weathergard6y.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
@@ -194,7 +194,7 @@
 
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Exterior" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Exterior" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/solarreflect.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">

@@ -1,4 +1,4 @@
-<div id="lqd-tab-events-item-Wall-Primer-Sealer" role="tabpanel" class="lqd-tabs-pane fade">
+<div id="Nippon-Paint-Primer-Sealer" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container pd-des-mobile" id="pc-screen">
         <table id="colorid" class="color_pallete" style="width: auto;">
             <thead>
@@ -9,7 +9,7 @@
             <tbody id="tbody2">
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Wall-Primer-Sealer" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Primer-Sealer" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/vinilex5000.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
@@ -55,7 +55,7 @@
 
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Wall-Primer-Sealer" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Primer-Sealer" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/vinilex5100.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
@@ -96,7 +96,7 @@
 
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Wall-Primer-Sealer" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Primer-Sealer" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/odourless-sealer.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
@@ -140,7 +140,7 @@
 
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Wall-Primer-Sealer" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Primer-Sealer" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/sealer5170.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">

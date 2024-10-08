@@ -36,7 +36,7 @@
         </div>
     </section>
     <div class="row mobile-product">
-        <div class="col-4">
+        {{-- <div class="col-4">
             <section class="lqd-section pt-40 sm:pt-0">
                 <div class="category">
                     <div class="container">
@@ -59,7 +59,7 @@
                     </div>
                 </div>
             </section>
-        </div>
+        </div> --}}
         <div class="col-7 mobile-product-width">
             <section class="lqd-section products pt-40 sm:pt-0" id="products">
                 <div class="container">

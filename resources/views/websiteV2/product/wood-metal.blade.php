@@ -1,4 +1,4 @@
-<div id="lqd-tab-events-item-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade ">
+<div id="Nippon-Paint-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade ">
     <div class="container p-0 module-container pd-des-mobile" id="pc-screen">
         <table id="colorid" class="color_pallete" style="width: auto;">
             <thead>
@@ -9,7 +9,7 @@
             <tbody id="tbody3">
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/unknown.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
@@ -53,7 +53,7 @@
 
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/Bodelac9000.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
@@ -98,7 +98,7 @@
 
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/satingloss.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
@@ -146,7 +146,7 @@
 
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/satingloss.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
@@ -194,7 +194,7 @@
 
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/satingloss.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
@@ -242,7 +242,7 @@
 
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/ZincPhosphatePrimer.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
@@ -283,7 +283,7 @@
 
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/RedOxidePrimer.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
@@ -324,7 +324,7 @@
 
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/EcoGreyOxidePrimer.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
@@ -365,7 +365,7 @@
 
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/goldpaint2000.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
@@ -406,7 +406,7 @@
                 </tr>
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Wood-Metal-Paint" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/nipponaluminium.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">

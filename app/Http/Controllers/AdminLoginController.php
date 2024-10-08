@@ -520,4 +520,10 @@ class AdminLoginController extends Controller
         $data = DB::table('product_pricing')->latest()->get();
         return view('admin_dashboard.color_pricing.index',compact('data'));
     }
+
+    function redirect_interior(){
+        $nav = CategoryModel::all();
+        $product = ProductModel::all();
+        return view('website.website_index',compact('nav','product'));
+    }
 }

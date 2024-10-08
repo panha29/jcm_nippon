@@ -139,4 +139,5 @@ class UserLoginController extends Controller
         $nav = CategoryModel::all();
         return view('user_dashboard.mobile-app.price_list.eprice_category',compact('nav'));
     }
+
 }

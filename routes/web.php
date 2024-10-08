@@ -133,6 +133,8 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
     });
  Route::get('/Products/{category_tag}',[UserLoginController::class,'user_category_tagv2']);
  Route::get('/Products',[UserLoginController::class,'user_all_product']);
+ Route::get('/Products/Interior',[AdminLoginController::class,'redirect_interior']);
+
  Route::get('/Painting-Services',[UserLoginController::class,'user_servicev2']);
  Route::get('/News',[UserLoginController::class,'user_newsv2']);
  Route::get('/Career',[UserLoginController::class,'user_career']);
@@ -180,3 +182,5 @@ Route::get('/clear-cache', function() {
     $nav = CategoryModel::all();
     return view('websiteV2.website_index',compact('product','nav'));
 });
+
+

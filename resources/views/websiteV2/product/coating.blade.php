@@ -1,4 +1,4 @@
-<div id="lqd-tab-events-item-Coating" role="tabpanel" class="lqd-tabs-pane fade">
+<div id="Nippon-Paint-Coating" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="container p-0 module-container pd-des-mobile" id="pc-screen">
         <table id="colorid" class="color_pallete" style="width: auto;">
             <thead>
@@ -9,7 +9,7 @@
             <tbody id="tbody1">
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Coating" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Coating" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/EpoxyEA4.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
@@ -49,7 +49,7 @@
                 </tr>
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Coating" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Coating" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/EpoxyEA9.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">
@@ -90,7 +90,7 @@
                 </tr>
                 <tr class="col-12">
                     <td class="col-2">
-                        <div id="lqd-tab-events-item-Coating" role="tabpanel" class="lqd-tabs-pane fade color-view">
+                        <div id="Nippon-Paint-Coating" role="tabpanel" class="lqd-tabs-pane fade color-view">
                             <div class="box">
                                 <img src="{{ url('webv2/images/product/EpoxyPU.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                 <span class="iconbox items-center justify-center mt-10">

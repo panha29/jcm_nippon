@@ -6,8 +6,8 @@
                     <nav class="lqd-tabs-nav-wrap">
                         <ul class="reset-ul lqd-tabs-nav flex items-center justify-center border-black-10 link-13 uppercase font-ultrabold link-primary md:justify-between" role="tablist">
 
-                            <li data-controls="lqd-tab-events-item-1" role="presentation" class="text-center">
-                                <a draggable="false" href="#lqd-tab-events-item-Interior" class="active" aria-expanded="false" aria-controls="lqd-tab-events-item-green" role="tab" data-bs-toggle="tab">
+                            <li data-controls="Nippon-Paint-Interior" role="presentation" class="text-center">
+                                <a draggable="false" href="#Nippon-Paint-Interior" class="active" aria-expanded="false" aria-controls="Nippon-Paint-Interior" role="tab" data-bs-toggle="tab">
                                     <span class="iconbox items-center justify-center">
                                         <span class="flex flex-col">
                                             <span class="iconbox-title h3 my-0">Interior</span>
@@ -18,8 +18,8 @@
                                     </span>
                                 </a>
                             </li>
-                            <li data-controls="lqd-tab-events-item-2" role="presentation" class="text-center">
-                                <a draggable="false" href="#lqd-tab-events-item-Exterior" aria-expanded="false" aria-controls="lqd-tab-events-item-Exterior" role="tab" data-bs-toggle="tab">
+                            <li data-controls="Nippon-Paint-Exterior" role="presentation" class="text-center">
+                                <a draggable="false" href="#Nippon-Paint-Exterior" aria-expanded="false" aria-controls="Nippon-Paint-Exterior" role="tab" data-bs-toggle="tab">
                                     <span class="iconbox items-center justify-center">
                                         <span class="flex flex-col">
                                             <span class="iconbox-title h3 my-0">Exterior</span>
@@ -30,8 +30,8 @@
                                     </span>
                                 </a>
                             </li>
-                            <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
-                                <a draggable="false" href="#lqd-tab-events-item-Wall-Primer-Sealer" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
+                            <li data-controls="Nippon-Paint-Primer-Sealer" role="presentation" class="text-center">
+                                <a draggable="false" href="#Nippon-Paint-Primer-Sealer" aria-expanded="false" aria-controls="Nippon-Paint-Primer-Sealer" role="tab" data-bs-toggle="tab">
                                     <span class="iconbox items-center justify-center">
                                         <span class="flex flex-col">
                                             <span class="iconbox-title h3 my-0">Primer & Sealer</span>
@@ -54,8 +54,8 @@
                                     </span>
                                 </a>
                             </li> --}}
-                            <li data-controls="lqd-tab-events-item-Blue" role="presentation" class="text-center">
-                                <a draggable="false" href="#lqd-tab-events-item-Wood-Metal-Paint" aria-expanded="false" aria-controls="lqd-tab-events-item-Blue" role="tab" data-bs-toggle="tab">
+                            <li data-controls="Nippon-Paint-Wood-Metal-Paint" role="presentation" class="text-center">
+                                <a draggable="false" href="#Nippon-Paint-Wood-Metal-Paint" aria-expanded="false" aria-controls="Nippon-Paint-Wood-Metal-Paint" role="tab" data-bs-toggle="tab">
                                     <span class="iconbox items-center justify-center">
                                         <span class="flex flex-col">
                                             <span class="iconbox-title h3 my-0">Wood & Metal Paint</span>
@@ -66,8 +66,8 @@
                                     </span>
                                 </a>
                             </li>
-                            <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
-                                <a draggable="false" href="#lqd-tab-events-item-Coating" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
+                            <li data-controls="Nippon-Paint-Coating" role="presentation" class="text-center">
+                                <a draggable="false" href="#Nippon-Paint-Coating" aria-expanded="false" aria-controls="Nippon-Paint-Coating" role="tab" data-bs-toggle="tab">
                                     <span class="iconbox items-center justify-center">
                                         <span class="flex flex-col">
                                             <span class="iconbox-title h3 my-0">Coating</span>

@@ -88,7 +88,7 @@
 
     <!-- Start Portfolio -->
     <section class="lqd-section pt-150 pb-50">
-        <h2 class="" style="text-align:center">Our Services</h2><br>
+        <h2 class="" style="text-align:center">Our Solution</h2><br>
         <div class="container-fluid">
             <div class="row">
                 <div class="col col-6 col-md-6 col-xl-3 module-content">
