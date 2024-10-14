@@ -29,5 +29,24 @@
         .product-title{
             width: 100%
         }
+        .pc-banner{
+            display: none;
+        }
+        .mobile-banner{
+
+        }
+        .pc-product{
+            display: none;
+        }
     }
+
+    @media only screen and (min-width: 880px) {
+
+        .mobile-banner{
+            display: none;
+        }
+
+
+    }
+
 </style>

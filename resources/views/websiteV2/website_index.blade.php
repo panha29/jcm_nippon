@@ -88,7 +88,9 @@
 
     <!-- Start Portfolio -->
     <section class="lqd-section pt-150 pb-50">
-        <h2 class="" style="text-align:center">Our Solution</h2><br>
+        <div class="ld-fancy-heading relative animation-element">
+            <h2 class="m-0 ld-fh-element m-0 inline-block pos-re">Our Solution</h2>
+        </div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col col-6 col-md-6 col-xl-3 module-content">
