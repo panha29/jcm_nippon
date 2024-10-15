@@ -48,5 +48,7 @@
 
 
     }
+.carousel-card{
 
+}
 </style>

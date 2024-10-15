@@ -526,4 +526,6 @@ class AdminLoginController extends Controller
         $product = ProductModel::all();
         return view('website.website_index',compact('nav','product'));
     }
+
+
 }
