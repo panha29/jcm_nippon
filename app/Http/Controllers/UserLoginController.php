@@ -140,4 +140,9 @@ class UserLoginController extends Controller
         return view('user_dashboard.mobile-app.price_list.eprice_category',compact('nav'));
     }
 
+    function mockup_color(){
+        $color = DB::table('colorpalette')->get();
+        return view('websiteV2.color_testing',compact('color'));
+    }
+
 }

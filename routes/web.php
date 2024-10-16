@@ -11,6 +11,7 @@ use App\Models\ColorPaletteModel;
 use App\Models\CategoryModel;
 use App\Models\ProductModel;
 use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\DB;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -173,7 +174,8 @@ Route::get('/Home', function() {
     Artisan::call('cache:clear');
     $product = ProductModel::all();
     $nav = CategoryModel::all();
-    return view('websiteV2.website_index',compact('product','nav'));
+    $color = DB::table('colorpalette')->take(10)->get();
+    return view('websiteV2.website_index',compact('product','nav','color'));
 });
 
 Route::get('/clear-cache', function() {
@@ -182,5 +184,4 @@ Route::get('/clear-cache', function() {
     $nav = CategoryModel::all();
     return view('websiteV2.website_index',compact('product','nav'));
 });
-
 

@@ -336,69 +336,7 @@
 					<!-- End Banner -->
 
 					<!-- Start Solutions -->
-					<section class="lqd-section solutions z-1 pt-150 pb-60">
-						<div class="container">
-							<div class="row">
-								<div class="col col-xl-5 lg:w-60percent sm:w-full" data-custom-animations="true" data-ca-options='{"animationTarget": "h2, p", "duration" : 1000, "startDelay" : 1500, "delay" : 50, "ease": "expo.out", "initValues": {"y": "50px", "scaleX" : 0, "scaleY" : 0}, "animations": {"y": "0px", "scaleX" : 1, "scaleY" : 1}}'>
-									<div class="ld-fancy-heading relative mask-text">
-										<h2 class="ld-fh-element mb-0/4em inline-block relative" data-split-text="true" data-split-options='{"type": "lines"}'> Digital marketing solutions ⚡</h2>
-									</div>
-									<div class="ld-fancy-heading relative mask-text">
-										<p class="ld-fh-element mb-0/5em inline-block relative text-20 leading-1/5em text-slate-700" data-split-text="true" data-split-options='{"type": "lines"}'> With over 25 years of experience, we have crafted thousands of strategic discovery process that enables us to peel back <span class="text-purple-500">the layers which enable us to</span>understand, connect, represent. </p>
-									</div>
-								</div>
-								<div class="col col-xl-7 lg:w-40percent sm:w-full relative flex flex-row items-end justify-center module-last" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element", "duration" : 750, "startDelay" : 500, "delay" : 65, "ease": "expo.out", "initValues": {"y": "30px", "scaleX" : 0, "scaleY" : 0}, "animations": {"y": "0px", "scaleX" : 1, "scaleY" : 1}}'>
-									<div class="module-icon-box-1 flex absolute w-150 -top-10percent z-1 animation-element">
-										<div class="iconbox flex-grow-1 relative flex-col iconbox-default items-center text-center pt-45 pb-40 px-15 rounded-12 bg-slate-100">
-											<div class="iconbox-icon-wrap">
-												<div class="iconbox-icon-container inline-flex w-30 text-30 text-primary mb-20">
-													<svg class="w-1em h-auto" xmlns="http://www.w3.org/2000/svg" width="30.859" height="33.292" viewBox="0 0 30.859 33.292">
-														<path d="M1.613,1.843A1.958,1.958,0,0,1,3.568,0H27.291a1.958,1.958,0,0,1,1.955,1.843l1.606,27.3a3.917,3.917,0,0,1-3.91,4.147H3.917a3.917,3.917,0,0,1-3.91-4.147Z" transform="translate(0)" fill="#829cac" opacity="0.3"></path>
-														<path d="M0,0H3.917A5.875,5.875,0,0,0,9.792,5.875,5.875,5.875,0,0,0,15.667,0h3.917A9.792,9.792,0,0,1,9.792,9.792,9.792,9.792,0,0,1,0,0Z" transform="translate(5.638 5.875)" fill="#829cac"></path>
-													</svg>
-												</div>
-											</div>
-											<h3 class="lqd-iconbox-heading text-18 m-0 leading-1em text-slate-500">Ecommerce </h3>
-										</div>
-									</div>
-									<div class="module-icon-box-2 flex w-150 relative text-center animation-element">
-										<div class="iconbox flex-grow-1 relative flex-col iconbox-default items-center text-center pt-45 pb-40 px-15 rounded-12 bg-red-200">
-											<div class="iconbox-icon-wrap ">
-												<div class="iconbox-icon-container inline-flex w-30 text-30 text-primary mb-20">
-													<svg class="w-1em h-auto" xmlns="http://www.w3.org/2000/svg" width="31.881" height="31.881" viewBox="0 0 31.881 31.881">
-														<path d="M13.085,6H30.8a7.085,7.085,0,1,1,0,14.169H13.085A7.085,7.085,0,0,1,13.085,6Zm0,10.627a3.542,3.542,0,1,0-3.542-3.542A3.542,3.542,0,0,0,13.085,16.627Z" transform="translate(-6 -6)" fill="#f87397" fill-rule="evenodd"></path>
-														<path d="M13.085,26H30.8a7.085,7.085,0,1,1,0,14.169H13.085a7.085,7.085,0,1,1,0-14.169ZM30.8,36.627a3.542,3.542,0,1,0-3.542-3.542A3.542,3.542,0,0,0,30.8,36.627Z" transform="translate(-6 -8.288)" fill="#f87397" fill-rule="evenodd" opacity="0.3"></path>
-													</svg>
-												</div>
-											</div>
-											<h3 class="lqd-iconbox-heading text-18 m-0 leading-1em text-red-300">Consultation </h3>
-										</div>
-									</div>
-									<div class="module-icon-box-3 flex absolute w-150 -top-30percent z-1 animation-element">
-										<div class="iconbox flex-grow-1 relative flex-col iconbox-default items-center text-center pt-45 pb-40 px-15 rounded-12 bg-transparent" style="background-image: linear-gradient(180deg, #CBF4E4 0%, #E9F5E7 100%);">
-											<div class="iconbox-icon-wrap">
-												<div class="iconbox-icon-container inline-flex w-40 text-40 text-primary mb-20">
-													<svg class="w-1em h-auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.789" height="32.761" viewBox="0 0 42.789 32.761">
-														<defs>
-															<linearGradient id="blob-1" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-																<stop offset="0" stop-color="#e3e3e3"></stop>
-																<stop offset="1" stop-color="#9ccb95"></stop>
-															</linearGradient>
-														</defs>
-														<g transform="translate(0.5 0.521)">
-															<path d="M11.127,32a1.474,1.474,0,0,0,2.691.8L25.271,15.986a1.437,1.437,0,0,0-1.222-2.235H15.044V3.166a1.474,1.474,0,0,0-2.691-.8L.9,19.183a1.437,1.437,0,0,0,1.222,2.235h9.006Z" transform="translate(16.248 -1.726)" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" fill="url(#blob-1)"></path>
-															<path d="M5.3,28a1.5,1.5,0,0,1-1.5-1.5V23.9a1.5,1.5,0,0,1,1.5-1.5H17.5A1.5,1.5,0,0,1,19,23.9v2.6A1.5,1.5,0,0,1,17.5,28ZM1.5,16.8A1.5,1.5,0,0,1,0,15.3V12.7a1.5,1.5,0,0,1,1.5-1.5H11.8a1.5,1.5,0,0,1,1.5,1.5v2.6a1.5,1.5,0,0,1-1.5,1.5ZM5.3,5.6A1.5,1.5,0,0,1,3.8,4.1V1.5A1.5,1.5,0,0,1,5.3,0H17.5A1.5,1.5,0,0,1,19,1.5V4.1a1.5,1.5,0,0,1-1.5,1.5Z" transform="translate(0 1.859)" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" opacity="0.3" fill="url(#blob-1)"></path>
-														</g>
-													</svg>
-												</div>
-											</div>
-											<h3 class="lqd-iconbox-heading text-18 m-0 leading-1em text-green-500">Branding</h3>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
+                    @include('websiteV2.color_palette.testing_color')
 					<!-- End Solutions -->
 
 					<!-- Start About Progress -->
@@ -2087,7 +2025,7 @@
 		</a>
 
 		<!-- Google map api -->
-		<script src="//maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+		{{-- <script src="//maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script> --}}
 
 		<script src="./css/hub5/vendors/jquery.min.js"></script>
 		<script src="./css/hub5/vendors/jquery-ui/jquery-ui.min.js"></script>
