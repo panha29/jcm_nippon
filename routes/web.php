@@ -174,7 +174,7 @@ Route::get('/Home', function() {
     Artisan::call('cache:clear');
     $product = ProductModel::all();
     $nav = CategoryModel::all();
-    $color = DB::table('colorpalette')->take(10)->get();
+    $color = DB::table('colorpalette')->take(12)->get();
     return view('websiteV2.website_index',compact('product','nav','color'));
 });
 

@@ -56,6 +56,9 @@
     .lqd-tabs-nav-items-not-expanded .lqd-tabs-nav li {
 		flex-grow: 0;
 	}
+    .iconbox-title{
+        color: var(--lqd-h3-color, var(--lqd-heading-color)) !important;
+    }
 </style>
 @include('user_dashboard.websiteV2.color_palette.color_palette_js')
 @include('user_dashboard.websiteV2.css')
@@ -64,7 +67,7 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
 <div id="lqd-contents-wrap">
 		<!-- Satrt Events -->
-        <section class="lqd-section events pt-40 pb-70" id="events">
+        <section class="lqd-section events" id="events">
             <div class="container">
                 <div class="row">
                     <div class="col col-12 mb-30">
@@ -194,16 +197,9 @@
                                     </li>
                                 </ul>
                             </nav>
-                            <div class="lqd-contact-form ">
-                                <div class="mobile-view-search" style="float: right">
-                                    <span class="lqd-form-control-wrap text">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
-                                        <input type="text"  onkeyup="filter_name()" size="40" id="myInput" autocomplete="off" class="icon-rtl lqd-cf-form-control border-1 border-black-10 rounded-4 px-2em text-16 text-slate-700" aria-required="true" aria-invalid="false">
-                                    </span>
-                                </div>
-                            </div>
+
                             <div class="lqd-tabs-content mb-2rem pt-15">
-                              @include('user_dashboard.websiteV2.color_palette.color')
+                              @include('websiteV2.color_palette.color')
                             </div>
                         </div>
                     </div>
