@@ -31,7 +31,7 @@
 
 			<div class="lqd-sticky-placeholder hidden"></div>
 			<header id="site-header" class="main-header main-header-overlay sticky-header-noshadow" data-sticky-header="true" data-sticky-values-measured="false" data-sticky-options='{"disableOnMobile": true}'>
-				<div class="lqd-hide-onstuck flex flex-wrap items-center justify-center transition-all py-10 bg-transparent module-top" style="background-image: linear-gradient(90deg, #84F0B2 0%, #5F91A7 100%);">
+				{{-- <div class="lqd-hide-onstuck flex flex-wrap items-center justify-center transition-all py-10 bg-transparent module-top" style="background-image: linear-gradient(90deg, #84F0B2 0%, #5F91A7 100%);">
 					<div class="ld-fancy-heading relative bg-white rounded-16 px-15 mr-15">
 						<p class="ld-fh-element mb-0 inline-block relative text-10 text-medium uppercase tracking-2">Free update</p>
 					</div>
@@ -41,7 +41,7 @@
 					<a href="#" class="btn btn-underlined border-thick ml-10 text-14 text-medium leading-1em text-white-60 hover:text-white" target="_blank" rel="nofollow">
 						<span class="btn-txt" data-text="Join Us">Join Us</span>
 					</a>
-				</div>
+				</div> --}}
 				<div class="module-header flex justify-center md:hidden">
 					<div class="module-sticky w-full static flex flex-row items-center justify-between border-1 border-white-10 rounded-100 transition-all pr-10 pl-30">
 						<div class="flex items-center justify-start">
@@ -159,6 +159,7 @@
 
 					<!-- Start Banner -->
 					<section class="lqd-section banner min-h-100vh flex flex-wrap flex-row items-center justify-around transition-all bg-no-repeat bg-center bg-cover" id="banner" style="background-image: url(./css/hub5/images/demo/start-hub-5/banner1-bg.svg);">
+                    {{-- <section class="lqd-section banner min-h-100vh flex flex-wrap flex-row items-center justify-around transition-all bg-no-repeat bg-center bg-cover" id="banner" style="background-image: url(./webv2/images/banner/new_product.jpg);"> --}}
 						<div class="lqd-shape lqd-shape-bottom rotate-180 module-shape" data-negative="false">
 							<svg class="lqd-custom-shape h-420 -z-1 left-50percent" fill="none" height="461" viewBox="0 0 1440 461" width="1440" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
 								<path class="lqd-shape-fill" d="m0 131.906 34.4-20.017c34.4-19.9 103.2-59.936 171.68-82.979 68.64-23.043 136.8-29.328003 205.44-4.306 68.48 25.022 137.28 81.35 205.76 80.768 68.64-.582 136.8-58.074 205.44-84.608 68.48-26.535 137.28-22.345 205.76-16.06 68.64 6.168 136.8 14.315 205.44 22.811 68.48 8.612 137.28 17.457 171.68 22l34.4 4.422v396.851h-1440z" fill-opacity=".09" fill="#5A31C4FC">

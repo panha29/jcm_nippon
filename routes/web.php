@@ -170,12 +170,22 @@ Route::get('/About-Us',[AdminLoginController::class,'about_us']);
 Route::redirect('/', '/Home', 301);
 Route::view('/Verify','websiteV2.verify');
 
-Route::get('/Home', function() {
+Route::get('/', function() {
     Artisan::call('cache:clear');
     $product = ProductModel::all();
     $nav = CategoryModel::all();
-    $color = DB::table('colorpalette')->take(12)->get();
-    return view('websiteV2.website_index',compact('product','nav','color'));
+    $color = DB::table('colorpalette')->get();
+    $Green = DB::table('colorpalette')->where('colorpalette_category','=','Green')->take(8)->get();
+    $Red = DB::table('colorpalette')->where('colorpalette_category','=','Red')->take(8)->get();
+    $Yellow = DB::table('colorpalette')->where('colorpalette_category','=','Yellow')->take(8)->get();
+    $Orange = DB::table('colorpalette')->where('colorpalette_category','=','Orange')->take(8)->get();
+    $Blue = DB::table('colorpalette')->where('colorpalette_category','=','Blue')->take(8)->get();
+    $Purple = DB::table('colorpalette')->where('colorpalette_category','=','Purple')->take(8)->get();
+    $Grey = DB::table('colorpalette')->where('colorpalette_category','=','Grey')->take(8)->get();
+    $Neutral = DB::table('colorpalette')->where('colorpalette_category','=','Neutral')->take(8)->get();
+    $GreenBlue = DB::table('colorpalette')->where('colorpalette_category','=','GreenBlue')->take(8)->get();
+    $OffWhite = DB::table('colorpalette')->where('colorpalette_category','=','OffWhite')->take(8)->get();
+    return view('websiteV2.website_index',compact('product','nav','color','Green','Red','Yellow','Orange','Blue','Purple','Grey','Neutral','GreenBlue','OffWhite'));
 });
 
 Route::get('/clear-cache', function() {

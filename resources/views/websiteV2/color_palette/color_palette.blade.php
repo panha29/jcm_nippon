@@ -40,6 +40,24 @@
 
 @section('content') --}}
 <style>
+    @media (max-width: 767px) {
+    .solutions .module-last {
+        margin-top: 0%;
+        padding-top: 0%;
+    }
+    .color-border{
+        width: 110px;
+    height: 110px;
+    border: 1px solid #ebebeb;
+    }
+    .color-box {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px;
+    width: 390px;
+    }
+}
     .lqd-tabs-style-3 .lqd-tabs-nav {
         flex-wrap: wrap;
     }
@@ -70,9 +88,9 @@
         <section class="lqd-section events" id="events">
             <div class="container">
                 <div class="row">
-                    <div class="col col-12 mb-30">
+                    <div class="col col-12">
                         <div class="lqd-tabs lqd-tabs-style-3 lqd-tabs-nav-items-not-expanded lqd-nav-underline-" data-tabs-options='{ "trigger" : "click" }'>
-                            <nav class="lqd-tabs-nav-wrap mb-2rem">
+                            <nav class="lqd-tabs-nav-wrap">
                                 <ul class="reset-ul lqd-tabs-nav flex items-center justify-center border-black-10 link-13 uppercase font-ultrabold link-primary md:justify-between" role="tablist">
 
                                     <li data-controls="lqd-tab-events-item-1" role="presentation" class="text-center">
@@ -111,7 +129,7 @@
                                             </span>
                                         </a>
                                     </li>
-                                    <li data-controls="lqd-tab-events-item-4" role="presentation" class="text-center">
+                                    {{-- <li data-controls="lqd-tab-events-item-4" role="presentation" class="text-center">
                                         <a draggable="false" href="#lqd-tab-events-item-Orange" aria-expanded="false" aria-controls="lqd-tab-events-item-4" role="tab" data-bs-toggle="tab">
                                             <span class="iconbox items-center justify-center">
                                                 <span class="flex flex-col">
@@ -182,7 +200,7 @@
                                                 <span class="lqd-tabs-nav-progress-inner"></span>
                                             </span>
                                         </a>
-                                    </li>
+                                    </li> --}}
                                     <li data-controls="lqd-tab-events-item-3" role="presentation" class="text-center">
                                         <a draggable="false" href="#lqd-tab-events-item-Off-White" aria-expanded="false" aria-controls="lqd-tab-events-item-3" role="tab" data-bs-toggle="tab">
                                             <span class="iconbox items-center justify-center">
@@ -198,7 +216,7 @@
                                 </ul>
                             </nav>
 
-                            <div class="lqd-tabs-content mb-2rem pt-15">
+                            <div class="lqd-tabs-content">
                               @include('websiteV2.color_palette.color')
                             </div>
                         </div>
