@@ -1,10 +1,10 @@
-<meta property="og:image" content="./css/hub5/images/common/og-image.jpg">
-<link rel="stylesheet" href="./css/hub5/vendors/liquid-icon/lqd-essentials/lqd-essentials.min.css">
-<link rel="stylesheet" href="./css/hub5/css/theme.min.css">
-<link rel="stylesheet" href="./css/hub5/css/utility.min.css">
-<link rel="stylesheet" href="./css/hub5/css/demo/start-hub-5/base.css">
-<link rel="stylesheet" href="./css/hub5/css/demo/start-hub-5/start-hub-5.css">
-<link rel="stylesheet" href="./css/hub5/css/demo/start-hub-5/start-hub-5-about.css">
+<meta property="og:image" content="../css/hub5/images/common/og-image.jpg">
+<link rel="stylesheet" href="../css/hub5/vendors/liquid-icon/lqd-essentials/lqd-essentials.min.css">
+<link rel="stylesheet" href="../css/hub5/css/theme.min.css">
+<link rel="stylesheet" href="../css/hub5/css/utility.min.css">
+<link rel="stylesheet" href="../css/hub5/css/demo/start-hub-5/base.css">
+<link rel="stylesheet" href="../css/hub5/css/demo/start-hub-5/start-hub-5.css">
+<link rel="stylesheet" href="../css/hub5/css/demo/start-hub-5/start-hub-5-about.css">
 
 
 <!-- Fonts -->

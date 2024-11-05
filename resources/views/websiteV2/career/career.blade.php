@@ -1,30 +1,19 @@
-@php
-    $html_tag_data = [];
-    $title = 'Career';
-    $description = 'Career';
-    $breadcrumbs = ["/"=>"Home"]
-@endphp
-@extends('webv2-layout',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description])
-
+@extends('webv2-layout')
 @section('css')
-
-<link rel="stylesheet" href="/webv2/css/demo/digital-hub/base.css">
-<link rel="stylesheet" href="/webv2/css/demo/digital-hub/digital-hub.css">
-
+    <link rel="stylesheet" href="./css/hub5/css/demo/start-hub-5/start-hub-5-start.css">
 @endsection
 
 @section('js_vendor')
+    <script src="./css/hub5/vendors/particles.min.js"></script>
 @endsection
 
 @section('js_page')
-    <script>
-        window.liquidParams = {
-            currentZIndex: 10
-        }
-    </script>
-
 @endsection
-
+<style>
+    .text-white{
+        color: black !important;
+    }
+</style>
 @section('content')
 <div id="lqd-contents-wrap">
     <section class="lqd-section webinar pt-130 pb-45" id="nipponcambodia">
@@ -109,13 +98,13 @@
                                         </div>
 
                                         <div class="w-20percent flex flex-col items-center justify-center py-25 md:w-25percent sm:w-full">
-                                            <a href="#career{{$item->id}}" class="button btn btn-solid btn-md btn-hover-txt-switch-change btn-hover-txt-switch btn-hover-txt-switch-y btn-md btn-has-label bg-slate-700 rounded-100 text-13 uppercase leading-1/3em tracking-1 text-white font-bold hover:bg-secondary hover:text-primary"
-                                            data-bs-toggle="modal" data-bs-target="">
+                                            <a href="Career/{{$item->career_title}}" class="button btn btn-solid btn-md btn-hover-txt-switch-change btn-hover-txt-switch btn-hover-txt-switch-y btn-md btn-has-label bg-slate-700 rounded-100 text-13 uppercase leading-1/3em tracking-1 text-white font-bold hover:bg-secondary hover:text-primary">
                                                 <span class="btn-txt" data-text="Urgent" style="position:revert" data-split-text="true" data-split-options='{ "type": "chars, words" }'>More Detail</span>
                                             </a>
                                         </div>
                                     </div>
-                                        @include('websiteV2.career.modal')
+                                        {{-- @include('websiteV2.career.modal') --}}
+                                        {{-- <a href="career/{{$item->id}}">More Detail</a> --}}
                                     @endforeach
                                 </div>
                             </div>

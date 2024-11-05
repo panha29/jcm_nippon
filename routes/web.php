@@ -164,6 +164,7 @@ Route::get('/Products',[AdminLoginController::class,'all_product']);
 Route::get('/Painting-Services',[AdminLoginController::class,'servicev2']);
 Route::get('/News',[AdminLoginController::class,'newsv2']);
 Route::get('/Career',[AdminLoginController::class,'career']);
+Route::get('/Career/{id}',[AdminLoginController::class,'get_career_id']);
 Route::get('/Project-Reference',[AdminLoginController::class,'project_referencev2']);
 Route::get('/Contact-Us',[AdminLoginController::class,'contact_us']);
 Route::get('/About-Us',[AdminLoginController::class,'about_us']);
