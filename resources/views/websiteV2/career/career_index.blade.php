@@ -13,10 +13,23 @@
     .text-white{
         color: black !important;
     }
+    .mobile-lineheight{
+        line-height: 2;
+    }
 </style>
 @section('content')
 <div id="lqd-contents-wrap">
-    <section class="lqd-section webinar pt-130 pb-45" id="nipponcambodia">
+    <section class="lqd-section webinar " id="nipponcambodia">
+        <div class="titlebar-inner">
+            <div class="container titlebar-container mt-100">
+                <div class="row titlebar-container justify-center">
+                    <div class="col titlebar-col col-xl-6 col-lg-8 col-12 text-center text-gray-400">
+                        <h2>Our News & Media</h2>
+                        {{-- <p class="leading-20 text-gray-400">Our Project Reference</p> --}}
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             @foreach ($career_id as $item)
             <?php if ($item->career_title == "Senior Training & Talent Development Specialist") { ?>
@@ -54,7 +67,9 @@
                     </div>
                 </div>
                 <div class="container">
+                    <br><br>
                     <h5>Duties & Responsibilities</h5>
+                    <br><br>
                     <h6><b>Talent Development</b></h6>
                     <ul>
                         <li class="text-16">Planning and coordinating company-wide training programs for employees to ensure that they are meeting current industry standards.</li>
@@ -104,8 +119,9 @@
                         <li class="text-16">Assist to onboard new employees in order to become fully integrated.</li>
                         <li class="text-16">Assist to monitor and apply HR recruiting best practices.</li>
                     </ul>
-
+                    <br><br>
                     <h5>Qualification / Requirements</h5>
+                    <br><br>
                     <ul>
                         <li class="text-16"> Student with a minimum finish Bachelor Degree.</li>
                         <li class="text-16">At least 2 experiences with training both hard/soft skill and administration field.</li>
@@ -115,7 +131,9 @@
                         <li class="text-16">Loyalty and respect company rule, regulation and policies.</li>
                     </ul>
 
+                    <br><br>
                     <h5>Benefit</h5>
+                    <br><br>
                     <ul>
                         <li class="text-16"> 5.5 Days/week.</li>
                         <li class="text-16">Competitive Salary.</li>
@@ -163,7 +181,9 @@
                         <div class="col"></div>
                     </div>
                 </div>
+                <br><br>
                 <h5>Duties & Responsibilities</h5>
+                <br><br>
                 <h6><b>Talent Development</b></h6>
                 <ul>
                     <li class="text-16">Plan effective auditing processes.</li>
@@ -179,8 +199,9 @@
                     <li class="text-16">Others Task & duties as assigned by management.</li>
                 </ul>
 
-
+                <br><br>
                 <h5>Qualification / Requirements</h5>
+                <br><br>
                 <ul>
                     <li class="text-16">CPA license, BSc/BA in Accounting, Finance or relevant field.</li>
                     <li class="text-16">Proven experience as an Auditor.</li>
@@ -192,7 +213,9 @@
                     <li class="text-16">Strong organizational skills.</li>
                 </ul>
 
+                <br><br>
                 <h5>Benefit</h5>
+                <br><br>
                 <ul>
                     <li class="text-16">Competitive Salary + Allowance and Incentive.</li>
                     <li class="text-16">13th salary (Bonus Angpao before Chinese).</li>
@@ -238,7 +261,9 @@
                         <div class="col"></div>
                     </div>
                 </div>
+                <br><br>
                 <h5>Duties & Responsibilities</h5>
+                <br><br>
                 <h6><b>Talent Development</b></h6>
                 <ul>
                     <li class="text-16">Managing, training, and providing overall guidance to the sales team of an assigned territory.</li>
@@ -249,8 +274,9 @@
                     <li class="text-16">Developing and sustaining long-term relationships with customers.</li>
                     <li class="text-16">Implementing a sales management process to assist the sales team in identifying and prioritizing key customers and prospects.</li>
                 </ul>
-
+                <br><br>
                 <h5>Qualification / Requirements</h5>
+                <br><br>
                 <ul>
                     <li class="text-16">Bachelor's degree in Sales & marketing, communications, business management, Business Administration or any related field.</li>
                     <li class="text-16">Proven sales experience; paint, building material or construction sector-specific sales experience is preferred.</li>
@@ -263,7 +289,9 @@
                 </ul>
 
 
+                <br><br>
                 <h5>Benefit</h5>
+                <br><br>
                 <ul>
                     <li class="text-16">Competitive Salary + Allowance and Incentive.</li>
                     <li class="text-16">Public Holiday, Special Leave & Sick Leave.</li>
@@ -307,7 +335,9 @@
                         <div class="col"></div>
                     </div>
                 </div>
+                <br><br>
                 <h5>Duties & Responsibilities</h5>
+                <br><br>
                 <h6><b>Talent Development</b></h6>
                 <ul>
                     <li class="text-16">Processing, verifying, and posting receipts.</li>
@@ -320,8 +350,9 @@
                     <li class="text-16">Generating reports and statements for internal use.</li>
                     <li class="text-16">Other tasks as assigned by management.</li>
                 </ul>
-
+                <br><br>
                 <h5>Qualification / Requirements</h5>
+                <br><br>
                 <ul>
                     <li class="text-16">Bachelor degree in accounting/Finance/ Banking or related field.</li>
                     <li class="text-16">Fair in spoken & written in English.</li>
@@ -332,7 +363,9 @@
                     <li class="text-16">Can used Quick Books Accounting/Data base or other software and Ms. office, Internet & Email.</li>
                 </ul>
 
+                <br><br>
                 <h5>Benefit</h5>
+                <br><br>
                 <ul>
                     <li class="text-16">Competitive Salary + Allowance and Incentive.</li>
                     <li class="text-16">13th salary (Bonus Angpao before Chinese).</li>
@@ -378,7 +411,9 @@
                         <div class="col"></div>
                     </div>
                 </div>
+                <br><br>
                 <h5>Duties & Responsibilities</h5>
+                <br><br>
                 <h6><b>Talent Development</b></h6>
                 <ul>
                     <li class="text-16">To manage key accounts and meet or exceed targets relating to revenue growth, activities, profit margin, mix of products and services sales, customer retention and customer acquisition.</li>
@@ -397,8 +432,9 @@
                     <li class="text-16">Other tasks & duties as assigned by management.</li>
                 </ul>
 
-
+                <br><br>
                 <h5>Qualification / Requirements</h5>
+                <br><br>
                 <ul>
                     <li class="text-16">Bachelor’s degree or diploma in Business, Marketing, Engineering Science or Related Building Industry Qualification.</li>
                     <li class="text-16">At least 3 years working experience in specification role in Building Material Industry with a proven track record.</li>
@@ -413,7 +449,9 @@
                 </ul>
 
 
+                <br><br>
                 <h5>Benefit</h5>
+                <br><br>
                 <ul>
                     <li class="text-16">Competitive Salary + Allowance and Incentive.</li>
                     <li class="text-16">Public Holiday, Special Leave & Sick Leave.</li>
@@ -457,7 +495,9 @@
                         <div class="col"></div>
                     </div>
                 </div>
+                <br><br>
                 <h5>Duties & Responsibilities</h5>
+                <br><br>
                 <h6><b>Talent Development</b></h6>
                 <ul>
                     <li class="text-16">Promote and achieve sales revenue and sales targets.</li>
@@ -467,8 +507,9 @@
                     <li class="text-16">Monitor and report market activities.</li>
                     <li class="text-16">Other tasks assigned by line manager.</li>
                 </ul>
-
+                <br><br>
                 <h5>Qualification / Requirements</h5>
+                <br><br>
                 <ul>
                     <li class="text-16">Bachelor degree with relevant field.</li>
                     <li class="text-16">High school’s degree as minimum requirement.</li>
@@ -480,7 +521,9 @@
                     <li class="text-16">Honesty excellent interpersonal skills.</li>
                 </ul>
 
+                <br><br>
                 <h5>Benefit</h5>
+                <br><br>
                 <ul>
                     <li class="text-16">Competitive Salary + Allowance and Incentive.</li>
                     <li class="text-16">13th salary (Bonus Angpao before Chinese).</li>
@@ -526,7 +569,9 @@
                         <div class="col"></div>
                     </div>
                 </div>
+                <br><br>
                 <h5>Duties & Responsibilities</h5>
+                <br><br>
                 <h6><b>Talent Development</b></h6>
                 <ul>
                     <li class="text-16">Developing the marketing strategy for the company in line with company objectives.</li>
@@ -542,8 +587,9 @@
                     <li class="text-16">Analyzing potential strategic partner relationships for company marketing.</li>
                     <li class="text-16">Other tasks assigned by top management.</li>
                 </ul>
-
+                <br><br>
                 <h5>Qualification / Requirements</h5>
+                <br><br>
                 <ul>
                     <li class="text-16">Local candidate (Khmer) is required.</li>
                     <li class="text-16">Bachelor's degree in Sales & marketing, communications, business management, Business Administration or any related field.</li>
@@ -557,7 +603,9 @@
                     <li class="text-16">Exceptional customer service skills.</li>
                 </ul>
 
+                <br><br>
                 {{-- <h5>Benefit</h5>
+                <br><br>
                 <ul>
                     <li class="text-16">Competitive Salary + Allowance and Incentive.</li>
                     <li class="text-16">13th salary (Bonus Angpao before Chinese).</li>
@@ -603,7 +651,9 @@
                         <div class="col"></div>
                     </div>
                 </div>
+                <br><br>
                 <h5>Duties & Responsibilities</h5>
+                <br><br>
                 <h6><b>Talent Development</b></h6>
                 <ul>
                     <li class="text-16">Promote and achieve sales revenue and sales targets.</li>
@@ -613,8 +663,9 @@
                     <li class="text-16">Monitor and report market activities.</li>
                     <li class="text-16">Other tasks assigned by line manager.</li>
                 </ul>
-
+                <br><br>
                 <h5>Qualification / Requirements</h5>
+                <br><br>
                 <ul>
                     <li class="text-16">Bachelor degree with relevant field. - High school’s degree as minimum requirement.</li>
                     <li class="text-16">Fresh people or 1year experience in sale and marketing.</li>
@@ -625,7 +676,9 @@
                     <li class="text-16">Honesty excellent interpersonal skills.</li>
                 </ul>
 
+                <br><br>
                 <h5>Benefit</h5>
+                <br><br>
                 <ul>
                     <li class="text-16">Competitive Salary + Allowance and Incentive.</li>
                     <li class="text-16">Public Holiday, Special Leave & Sick Leave.</li>
@@ -669,7 +722,9 @@
                         <div class="col"></div>
                     </div>
                 </div>
+                <br><br>
                 <h5>Duties & Responsibilities</h5>
+                <br><br>
                 <h6><b>Talent Development</b></h6>
                 <ul>
                     <li class="text-16">Provide clerical and organization support to sales teams.</li>
@@ -685,8 +740,9 @@
                     <li class="text-16">Identifying new products to add to those on offer.</li>
                     <li class="text-16">Others as assigned by management.</li>
                 </ul>
-
+                <br><br>
                 <h5>Qualification / Requirements</h5>
+                <br><br>
                 <ul>
                     <li class="text-16">An associate’s or bachelor's degree in business administration, sales and marketing or similar preferred.</li>
                     <li class="text-16">Previous experience in sales administration, or a similar role.</li>
@@ -695,7 +751,9 @@
                     <li class="text-16">Good command of written and verbal communication skills both in Khmer and English.</li>
                 </ul>
 
+                <br><br>
                 <h5>Benefit</h5>
+                <br><br>
                 <ul>
                     <li class="text-16">Competitive Salary + Allowance and Incentive.</li>
                     <li class="text-16">Public Holiday, Special Leave & Sick Leave.</li>
@@ -710,7 +768,7 @@
     </section>
 
 
-
+<br><br>
 </div>
 
 @endsection
