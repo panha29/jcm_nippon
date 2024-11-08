@@ -27,23 +27,37 @@
                         <li class="menu-item-object-page menu-item-home">
                             <a href="/" class="text-16 font-medium text-white">Home<sup class="link-sup">01</sup></a>
                         </li>
-                        <li class="menu-item-object-page">
-                            <a href="About-Us" class="text-16 font-medium text-white">About<sup class="link-sup">02</sup></a>
-                        </li>
                         <li class="menu-item-object-page menu-item-has-children">
-                            <a href="../page-start-hub-5-services.html" class="text-16 font-medium text-white">
-                                <span>Services</span>
+                            <a href="/Products" class="text-16 font-medium text-white">
+                                <span>Products</span>
                                 <span class="submenu-expander">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="32" viewBox="0 0 21 32" style="width: 1em; height: 1em;">
                                         <path fill="currentColor" d="M10.5 18.375l7.938-7.938c.562-.562 1.562-.562 2.125 0s.562 1.563 0 2.126l-9 9c-.563.562-1.5.625-2.063.062L.437 12.562C.126 12.25 0 11.876 0 11.5s.125-.75.438-1.063c.562-.562 1.562-.562 2.124 0z"></path>
                                     </svg>
                                 </span>
-                                <sup class="link-sup">03</sup>
+                                <sup class="link-sup">02</sup>
                             </a>
+                            <ul class="nav-item-children">
+                                <li>
+                                    <a href="/Project-Reference">Exterior</a>
+                                </li>
+                                <li>
+                                    <a href="/News">Interior</a>
+                                </li>
+                                <li>
+                                    <a href="/Career">Primer & Sealer</a>
+                                </li>
+                                <li>
+                                    <a href="/Career">Wood & Metal</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-object-page">
+                            <a href="About-Us" class="text-16 font-medium text-white">About<sup class="link-sup">03</sup></a>
                         </li>
 
                         <li class="menu-item-object-page menu-item-has-children">
-                            <a href="../page-start-hub-5-services.html" class="text-16 font-medium text-white">
+                            <a href="#" class="text-16 font-medium text-white">
                                 <span>Company</span>
                                 <span class="submenu-expander">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="32" viewBox="0 0 21 32" style="width: 1em; height: 1em;">
@@ -105,20 +119,20 @@
                             <sup class="link-sup">01</sup>
                         </a>
                     </li>
-                    <li>
-                        <a href="../page-start-hub-5-about.html">
-                            <span>About</span>
+                    <li class="menu-item-object-page menu-item-has-children">
+                        <a href="../page-start-hub-5-services.html">
+                            <span>Products</span>
+                            <span class="submenu-expander absolute"></span>
                             <sup class="link-sup">02</sup>
                         </a>
                     </li>
-                    <li class="menu-item-object-page menu-item-has-children">
-                        <a href="../page-start-hub-5-services.html">
-                            <span>Services</span>
-                            <span class="submenu-expander absolute"></span>
+                    <li>
+                        <a href="../page-start-hub-5-about.html">
+                            <span>About</span>
                             <sup class="link-sup">03</sup>
                         </a>
-
                     </li>
+
                     <li>
                         <a href="#testimonials">
                             <span>Customer Stories</span>

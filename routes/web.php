@@ -134,7 +134,6 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
     });
  Route::get('/Products/{category_tag}',[UserLoginController::class,'user_category_tagv2']);
  Route::get('/Products',[UserLoginController::class,'user_all_product']);
- Route::get('/Products/Interior',[AdminLoginController::class,'redirect_interior']);
 
  Route::get('/Painting-Services',[UserLoginController::class,'user_servicev2']);
  Route::get('/News',[UserLoginController::class,'user_newsv2']);
@@ -157,10 +156,15 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
  Route::get('/Mobile/Price-List',[UserLoginController::class,'pricelist']);
 });
 
+Route::group(['prefix' => 'Products'], function()
+{
+    Route::get('/',[AdminLoginController::class,'all_product']);
+    Route::view('/Odourless%Spotless','websiteV2/product/product_detail/odourless-spotless');
+});
+
 Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');
 // Route::get('/Home',[AdminLoginController::class,'webv2'])->name('Home');
-Route::get('/Products/{category_tag}',[AdminLoginController::class,'category_tagv2']);
-Route::get('/Products',[AdminLoginController::class,'all_product']);
+// Route::get('/Products/{category_tag}',[AdminLoginController::class,'category_tagv2']);
 Route::get('/Painting-Services',[AdminLoginController::class,'servicev2']);
 Route::get('/News',[AdminLoginController::class,'newsv2']);
 Route::get('/Career',[AdminLoginController::class,'career']);

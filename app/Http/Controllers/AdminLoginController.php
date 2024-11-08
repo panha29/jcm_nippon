@@ -111,7 +111,7 @@ class AdminLoginController extends Controller
         $data = DB::table('event')->latest()->get();
         return view('admin_dashboard.news&media.event_index',compact('data'));
     }
-    function career_list(){
+    function career_list($id){
         $data = DB::table('career')->latest()->get();
         return view('admin_dashboard.news&media.career_index',compact('data'));
     }

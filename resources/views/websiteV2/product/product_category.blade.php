@@ -1,13 +1,29 @@
+<style>
+    .link-primary a {
+    color: #ff0000;
+}
+</style>
 <section class="lqd-section events pt-40 pb-70" id="events">
     <div class="container">
         <div class="row">
             <div class="col col-12 mb-30">
                 <div class="lqd-tabs lqd-tabs-style-3 lqd-tabs-nav-items-not-expanded lqd-nav-underline-" data-tabs-options='{ "trigger" : "click" }'>
                     <nav class="lqd-tabs-nav-wrap">
-                        <ul class="reset-ul lqd-tabs-nav flex items-center justify-center border-black-10 link-13 uppercase font-ultrabold link-primary md:justify-between" role="tablist">
-
+                        <ul class="reset-ul lqd-tabs-nav flex items-center justify-center border-black-10 link-17 uppercase font-ultrabold link-primary md:justify-between" role="tablist">
+                            <li data-controls="Nippon-Paint-All" role="presentation" class="text-center">
+                                <a draggable="false" href="#Nippon-Paint-All" class="active" aria-expanded="false" aria-controls="Nippon-Paint-All" role="tab" data-bs-toggle="tab">
+                                    <span class="iconbox items-center justify-center">
+                                        <span class="flex flex-col">
+                                            <span class="iconbox-title h3 my-0">All</span>
+                                        </span>
+                                    </span>
+                                    <span class="lqd-tabs-nav-progress">
+                                        <span class="lqd-tabs-nav-progress-inner"></span>
+                                    </span>
+                                </a>
+                            </li>
                             <li data-controls="Nippon-Paint-Interior" role="presentation" class="text-center">
-                                <a draggable="false" href="#Nippon-Paint-Interior" class="active" aria-expanded="false" aria-controls="Nippon-Paint-Interior" role="tab" data-bs-toggle="tab">
+                                <a draggable="false" href="#Nippon-Paint-Interior" aria-expanded="false" aria-controls="Nippon-Paint-Interior" role="tab" data-bs-toggle="tab">
                                     <span class="iconbox items-center justify-center">
                                         <span class="flex flex-col">
                                             <span class="iconbox-title h3 my-0">Interior</span>
@@ -91,12 +107,12 @@
                     </div> --}}
                     {{-- <div class="lqd-tabs-content mb-2rem pt-15"> --}}
                     <div class="lqd-tabs-content pt-15">
-
-                      @include('websiteV2.product.interior')
-                      @include('websiteV2.product.exterior')
-                      @include('websiteV2.product.primer-sealer')
-                      @include('websiteV2.product.wood-metal')
-                      @include('websiteV2.product.coating')
+                        @include('websiteV2.product.all-product')
+                        @include('websiteV2.product.interior')
+                        @include('websiteV2.product.exterior')
+                        @include('websiteV2.product.primer-sealer')
+                        @include('websiteV2.product.wood-metal')
+                        @include('websiteV2.product.coating')
                     </div>
 
                     {{-- <div class="lqd-tabs-content mb-2rem pt-15 pd-des-pc">
