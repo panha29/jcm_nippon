@@ -45,6 +45,7 @@
             </div>
             <div class="col col-8">
                 <h1 class="uppercase title-h1">Nippon Odourless Spot-less</h1>
+                <h4>INTERIOR</h4>
                 <h3 class="mt-50" >Product Information</h3>
                 <h6 style="line-height:25px">Nippon Paint SPOT-LESS PLUS is an outstanding interior paint with Anti-Stain Technology that makes it an excellent hydrophilic stain repellent with very high resistance to household stains such as tea, wine, coffee, inks, hand marks, lipstick, juice, etc.
                     Besides, SPOT-LESS PLUS is formulated with Silver Ion Technology that is proven 99.9% effective against COVID-19 (SARS-CoV-2), other harmful viruses and bacteria when existing on walls.

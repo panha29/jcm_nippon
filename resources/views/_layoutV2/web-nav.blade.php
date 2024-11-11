@@ -53,7 +53,7 @@
                             </ul>
                         </li>
                         <li class="menu-item-object-page">
-                            <a href="About-Us" class="text-16 font-medium text-white">About<sup class="link-sup">03</sup></a>
+                            <a href="/About-Us" class="text-16 font-medium text-white">About<sup class="link-sup">03</sup></a>
                         </li>
 
                         <li class="menu-item-object-page menu-item-has-children">

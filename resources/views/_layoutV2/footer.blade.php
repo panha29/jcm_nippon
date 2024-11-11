@@ -1,4 +1,4 @@
-<footer id="site-footer" class="main-footer py-70 bg-transparent lg:relative" data-sticky-footer="true" data-sticky-footer-options='{"shadow": "3"}' style="background-image: linear-gradient(170deg, #2D3140 0%, #19272C 100%);">
+<footer id="site-footer" class="main-footer pt-70 bg-transparent lg:relative" data-sticky-footer="true" data-sticky-footer-options='{"shadow": "3"}' style="background-image: linear-gradient(170deg, #910000  0%, #c70404 100%);">
     <div class="container">
         <div class="row">
             <div class="w-20percent flex flex-col mb-30 sm:w-50percent">
@@ -107,7 +107,7 @@
                 <div class="lqd-imggrp-single block relative mr-20">
                     <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                         <figure class="w-full relative">
-                            <img width="75" height="21" src="../css/hub5/images/demo/start-hub-5/Logo.svg" alt="Start Hub 5">
+                            <img width="75" height="21" src="../webv2/images/blobby1.png" alt="Start Hub 5">
                         </figure>
                     </div>
                 </div>

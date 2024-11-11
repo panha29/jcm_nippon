@@ -159,7 +159,10 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
 Route::group(['prefix' => 'Products'], function()
 {
     Route::get('/',[AdminLoginController::class,'all_product']);
-    Route::view('/Odourless%Spotless','websiteV2/product/product_detail/odourless-spotless');
+    Route::view('/Odourless%Spotless','websiteV2/product/product_detail/interior/odourless-spotless');
+    Route::view('/Odourless%SuperEasyWash','websiteV2/product/product_detail/interior/odourless-supereasywash');
+    Route::view('/Nippon%Matex','websiteV2/product/product_detail/interior/nippon-matex');
+    Route::view('/Nippon%Watex','websiteV2/product/product_detail/interior/nippon-watex');
 });
 
 Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');
