@@ -163,6 +163,13 @@ Route::group(['prefix' => 'Products'], function()
     Route::view('/Odourless%SuperEasyWash','websiteV2/product/product_detail/interior/odourless-supereasywash');
     Route::view('/Nippon%Matex','websiteV2/product/product_detail/interior/nippon-matex');
     Route::view('/Nippon%Watex','websiteV2/product/product_detail/interior/nippon-watex');
+
+    Route::view('/Nippon%Weatherbond-Plus','websiteV2/product/product_detail/exterior/nippon-weatherbondplus');
+    Route::view('/Nippon%Weatherbond-8y','websiteV2/product/product_detail/exterior/nippon-weatherbond-8y');
+    Route::view('/Nippon%WeatherGard','websiteV2/product/product_detail/exterior/nippon-weathergard');
+    Route::view('/Nippon%SolaReflect','websiteV2/product/product_detail/exterior/nippon-solareflect');
+    Route::view('/Nippon%MatexPremium','websiteV2/product/product_detail/exterior/nippon-matexpremium');
+
 });
 
 Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');
