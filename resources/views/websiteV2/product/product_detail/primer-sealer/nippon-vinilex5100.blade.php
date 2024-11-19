@@ -35,7 +35,7 @@
                 <img src="{{ url('webv2/images/product/vinilex5100.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                 <a href="/webv2/primer-sealer/vinilex5100-sealer-kh.pdf" download="Nippon Vinilex 5100" class="title-h1 a-btn btn-hover mt-10 title-h1">
                     <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 40px">
-                    Technical Documentation (Kh)
+                    Technical Documentation (KHM)
                 </a>
                 <a href="/webv2/primer-sealer/vinilex5100-sealer.pdf" download="Nippon Vinilex 5100" class="title-h1 a-btn btn-hover mt-10 title-h1">
                     <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 40px">
@@ -45,7 +45,7 @@
             </div>
             <div class="col col-8">
                 <h1 class="uppercase title-h1">Nippon Vinilex 5100</h1>
-                <h4>EXTERIOR</h4>
+                <h4>SEALER</h4>
                 <h3 class="mt-50" >Product Information</h3>
                 <h6 style="line-height:25px">Nippon Paint Vinilex 5100 Wall Sealer is a water-based sealer that is suitable for masonry surfaces. It is
                     formulated to prevent deterioration of emulsion paints by

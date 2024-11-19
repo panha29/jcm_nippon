@@ -15,7 +15,7 @@
         <div class="module-sticky w-full static flex flex-row items-center justify-between border-1 border-white-10 rounded-100 transition-all pr-10 pl-30">
             <div class="flex items-center justify-start">
                 <div id="site-logo" class="module-logo flex navbar-brand-plain pointer-events-auto py-20 pr-30">
-                    <a class="navbar-brand flex p-0 relative" href="../index-start-hub-5.html" rel="home">
+                    <a class="navbar-brand flex p-0 relative" href="/" rel="home">
                         <span class="navbar-brand-inner post-rel">
                             <img class="logo-sticky" src="../img/logo/logo.png" alt="Starthub five">
                             <img class="logo-default" src="../img/logo/logo.png" alt="Starthub five">
@@ -39,16 +39,19 @@
                             </a>
                             <ul class="nav-item-children">
                                 <li>
-                                    <a href="/Project-Reference">Exterior</a>
+                                    <a href="/Products/Interior">Interior</a>
                                 </li>
                                 <li>
-                                    <a href="/News">Interior</a>
+                                    <a href="/Products/Exterior">Exterior</a>
                                 </li>
                                 <li>
-                                    <a href="/Career">Primer & Sealer</a>
+                                    <a href="/Products/Sealer_Primer">Primer & Sealer</a>
                                 </li>
                                 <li>
-                                    <a href="/Career">Wood & Metal</a>
+                                    <a href="/Products/Wood_Metal">Wood & Metal</a>
+                                </li>
+                                <li>
+                                    <a href="/Products/Coating">Coating</a>
                                 </li>
                             </ul>
                         </li>

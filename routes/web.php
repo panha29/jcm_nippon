@@ -159,29 +159,38 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
 Route::group(['prefix' => 'Products'], function()
 {
     Route::get('/',[AdminLoginController::class,'all_product']);
-    Route::view('/Odourless%Spotless','websiteV2/product/product_detail/interior/odourless-spotless');
-    Route::view('/Odourless%SuperEasyWash','websiteV2/product/product_detail/interior/odourless-supereasywash');
-    Route::view('/Nippon%Matex','websiteV2/product/product_detail/interior/nippon-matex');
-    Route::view('/Nippon%Watex','websiteV2/product/product_detail/interior/nippon-watex');
+    Route::get('/Interior',[AdminLoginController::class,'nav_interior']);
+    Route::get('/Exterior',[AdminLoginController::class,'nav_exterior']);
+    Route::get('/Coating',[AdminLoginController::class,'nav_coating']);
+    Route::get('/Sealer_Primer',[AdminLoginController::class,'nav_sealer_primer']);
+    Route::get('/Wood_Metal',[AdminLoginController::class,'nav_wood_metal']);
+    Route::view('/Nippon_Odourless_Spotless','websiteV2/product/product_detail/interior/odourless-spotless');
+    Route::view('/Nippon_Odourless_SuperEasyWash','websiteV2/product/product_detail/interior/odourless-supereasywash');
+    Route::view('/Nippon_Matex','websiteV2/product/product_detail/interior/nippon-matex');
+    Route::view('/Nippon_Watex','websiteV2/product/product_detail/interior/nippon-watex');
 
-    Route::view('/Nippon%Weatherbond-Plus','websiteV2/product/product_detail/exterior/nippon-weatherbondplus');
-    Route::view('/Nippon%Weatherbond-8y','websiteV2/product/product_detail/exterior/nippon-weatherbond-8y');
-    Route::view('/Nippon%WeatherGard','websiteV2/product/product_detail/exterior/nippon-weathergard');
-    Route::view('/Nippon%SolaReflect','websiteV2/product/product_detail/exterior/nippon-solareflect');
-    Route::view('/Nippon%MatexPremium','websiteV2/product/product_detail/exterior/nippon-matexpremium');
+    Route::view('/Nippon_Weatherbond_Plus','websiteV2/product/product_detail/exterior/nippon-weatherbondplus');
+    Route::view('/Nippon_Weatherbond_8y','websiteV2/product/product_detail/exterior/nippon-weatherbond-8y');
+    Route::view('/Nippon_WeatherGard','websiteV2/product/product_detail/exterior/nippon-weathergard');
+    Route::view('/Nippon_SolaReflect','websiteV2/product/product_detail/exterior/nippon-solareflect');
+    Route::view('/Nippon_MatexPremium','websiteV2/product/product_detail/exterior/nippon-matexpremium');
 
-    Route::view('/Matex%Premium%Sealer','websiteV2/product/product_detail/primer-sealer/nippon-matexpremiumsealer');
-    Route::view('/Matex%Sealer','websiteV2/product/product_detail/primer-sealer/nippon-matexsealer');
-    Route::view('/Vinilex5100','websiteV2/product/product_detail/primer-sealer/nippon-vinilex5100');
-    Route::view('/Vinilex5170','websiteV2/product/product_detail/primer-sealer/nippon-vinilex5170');
-    Route::view('/Vinilex5000','websiteV2/product/product_detail/primer-sealer/nippon-vinilex5000');
-    Route::view('/Odourless%Sealer','websiteV2/product/product_detail/primer-sealer/nippon-odourlesssealer');
+    Route::view('/Nippon_Matex_Premium_Sealer','websiteV2/product/product_detail/primer-sealer/nippon-matexpremiumsealer');
+    Route::view('/Nippon_Matex_Sealer','websiteV2/product/product_detail/primer-sealer/nippon-matexsealer');
+    Route::view('/Nippon_Vinilex5100','websiteV2/product/product_detail/primer-sealer/nippon-vinilex5100');
+    Route::view('/Nippon_Vinilex5170','websiteV2/product/product_detail/primer-sealer/nippon-vinilex5170');
+    Route::view('/Nippon_Vinilex5000','websiteV2/product/product_detail/primer-sealer/nippon-vinilex5000');
+    Route::view('/Nippon_Odourless_Sealer','websiteV2/product/product_detail/primer-sealer/nippon-odourlesssealer');
 
-    Route::view('/Nippon%Bodelac9000','websiteV2/product/product_detail/wood-metal/nippon-bodelac9000');
-    Route::view('/Nippon%Gold%Paint2000','websiteV2/product/product_detail/wood-metal/nippon-goldpaint2000');
-    Route::view('/Nippon%Zinc%Phosphate%Primer','websiteV2/product/product_detail/wood-metal/nippon-zincphosphate');
-    Route::view('/Nippon%ECO%Red%Oxide','websiteV2/product/product_detail/wood-metal/nippon-redoxide');
-    Route::view('/Nippon%ECO%Grey%Oxide','websiteV2/product/product_detail/wood-metal/nippon-greyoxide');
+    Route::view('/Nippon_Bodelac9000','websiteV2/product/product_detail/wood-metal/nippon-bodelac9000');
+    Route::view('/Nippon_Gold_Paint2000','websiteV2/product/product_detail/wood-metal/nippon-goldpaint2000');
+    Route::view('/Nippon_Zinc_Phosphate_Primer','websiteV2/product/product_detail/wood-metal/nippon-zincphosphate');
+    Route::view('/Nippon_ECO_Red_Oxide','websiteV2/product/product_detail/wood-metal/nippon-redoxide');
+    Route::view('/Nippon_ECO_Grey_Oxide','websiteV2/product/product_detail/wood-metal/nippon-greyoxide');
+
+    Route::view('/Nippon_Epoxy_EA4','websiteV2/product/product_detail/coating/nippon-epoxyea4');
+    Route::view('/Nippon_Epoxy_EA9','websiteV2/product/product_detail/coating/nippon-epoxyea9');
+    Route::view('/Nippon_Epoxy_PU','websiteV2/product/product_detail/coating/nippon-epoxypu');
 });
 
 Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');

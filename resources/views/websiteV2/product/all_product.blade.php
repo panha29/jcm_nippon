@@ -20,6 +20,11 @@
      .text-white{
         color: black !important;
     }
+    .lqd-tabs-style-3 .lqd-tabs-nav li a:after {
+	height: 4px!important;
+	background-color: #ff4747 !important;
+
+}
 </style>
 @section('content')
 <div id="lqd-contents-wrap">

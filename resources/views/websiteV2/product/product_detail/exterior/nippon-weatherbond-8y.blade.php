@@ -35,7 +35,7 @@
                 <img src="{{ url('webv2/images/product/weatherbond8y.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                 <a href="/webv2/exterior/weatherbond-kh.pdf" download="Nippon Weatherbond 8Y" class="title-h1 a-btn btn-hover mt-10 title-h1">
                     <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 40px">
-                    Technical Documentation (Kh)
+                    Technical Documentation (KHM)
                 </a>
                 <a href="/webv2/exterior/weatherbond.pdf" download="Nippon Weatherbond 8Y" class="title-h1 a-btn btn-hover mt-10 title-h1">
                     <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 40px">

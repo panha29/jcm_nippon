@@ -35,7 +35,7 @@
                 <img src="{{ url('webv2/images/product/EcoGreyOxidePrimer.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                 <a href="/webv2/wood-matel/zinc-phosphate-primer-kh.pdf" download="Nippon Zinc Phosphate Primer" class="title-h1 a-btn btn-hover mt-10 title-h1">
                     <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 40px">
-                    Technical Documentation (Kh)
+                    Technical Documentation (KHM)
                 </a>
                 <a href="/webv2/wood-matel/zinc-phosphate-primer.pdf" download="Nippon Zinc Phosphate Primer" class="title-h1 a-btn btn-hover mt-10 title-h1">
                     <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 40px">

@@ -501,6 +501,46 @@ class AdminLoginController extends Controller
         return view('websiteV2.product.all_product',compact('nav','product','pdcate','allpd'));
     }
 
+    function nav_interior($id = null){
+        $nav = CategoryModel::all();
+        $product = ProductModel::where('product_tag', ($id))->latest()->get();
+        $pdcate = ProductModel::where('product_tag', ($id))->first();
+        $allpd = ProductModel::latest()->get();
+        return view('websiteV2.product.nav_product.interior.nav_interior',compact('nav','product','pdcate','allpd'));
+    }
+
+    function nav_exterior($id = null){
+        $nav = CategoryModel::all();
+        $product = ProductModel::where('product_tag', ($id))->latest()->get();
+        $pdcate = ProductModel::where('product_tag', ($id))->first();
+        $allpd = ProductModel::latest()->get();
+        return view('websiteV2.product.nav_product.exterior.nav_exterior',compact('nav','product','pdcate','allpd'));
+    }
+
+    function nav_coating($id = null){
+        $nav = CategoryModel::all();
+        $product = ProductModel::where('product_tag', ($id))->latest()->get();
+        $pdcate = ProductModel::where('product_tag', ($id))->first();
+        $allpd = ProductModel::latest()->get();
+        return view('websiteV2.product.nav_product.coating.nav_coating',compact('nav','product','pdcate','allpd'));
+    }
+
+    function nav_sealer_primer($id = null){
+        $nav = CategoryModel::all();
+        $product = ProductModel::where('product_tag', ($id))->latest()->get();
+        $pdcate = ProductModel::where('product_tag', ($id))->first();
+        $allpd = ProductModel::latest()->get();
+        return view('websiteV2.product.nav_product.sealer_primer.nav_sealer_primer',compact('nav','product','pdcate','allpd'));
+    }
+
+    function nav_wood_metal($id = null){
+        $nav = CategoryModel::all();
+        $product = ProductModel::where('product_tag', ($id))->latest()->get();
+        $pdcate = ProductModel::where('product_tag', ($id))->first();
+        $allpd = ProductModel::latest()->get();
+        return view('websiteV2.product.nav_product.wood_metal.nav_wood_metal',compact('nav','product','pdcate','allpd'));
+    }
+
     function loginui(){
         $nav = CategoryModel::all();
         return view('websiteV2.layout_full',compact('nav'));
