@@ -1,7 +1,7 @@
 <div id="Nippon-Paint-Coating" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="row">
         <div class="col col-sm-6 col-lg-4 mb-30 px-10 py-0" style="width: 33%">
-            <a href="/Products/Nippon_Epoxy_EA4">
+            <a href="/User/Products/Nippon_Epoxy_EA4">
                 <div class="lqd-lp relative lqd-lp-style-6 lqd-lp-hover-img-zoom lqd-lp-animate-onhover rounded-4 overflow-hidden text-start post type-post status-publish format-standard has-post-thumbnail hentry category-blog-single tag-beauty tag-travel">
                     <div class="lqd-lp-img overflow-hidden">
                         <figure>
@@ -24,7 +24,7 @@
             </a>
         </div>
         <div class="col col-sm-6 col-lg-4 mb-30 px-10 py-0" style="width: 33%">
-            <a href="/Products/Nippon_Epoxy_EA9">
+            <a href="/User/Products/Nippon_Epoxy_EA9">
                 <div class="lqd-lp relative lqd-lp-style-6 lqd-lp-hover-img-zoom lqd-lp-animate-onhover rounded-4 overflow-hidden text-start post type-post status-publish format-standard has-post-thumbnail hentry category-blog-single tag-beauty tag-travel">
                     <div class="lqd-lp-img overflow-hidden">
                         <figure>
@@ -47,7 +47,7 @@
             </a>
         </div>
         <div class="col col-sm-6 col-lg-4 mb-30 px-10 py-0" style="width: 33%">
-            <a href="/Products/Nippon_Epoxy_PU">
+            <a href="/User/Products/Nippon_Epoxy_PU">
                 <div class="lqd-lp relative lqd-lp-style-6 lqd-lp-hover-img-zoom lqd-lp-animate-onhover rounded-4 overflow-hidden text-start post type-post status-publish format-standard has-post-thumbnail hentry category-blog-single tag-beauty tag-travel">
                     <div class="lqd-lp-img overflow-hidden">
                         <figure>

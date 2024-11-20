@@ -85,6 +85,10 @@
                         <li class="menu-item-object-page">
                             <a href="../page-start-hub-5-contact.html" class="text-16 font-medium text-white">Contact<sup class="link-sup">05</sup></a>
                         </li>
+
+                        <li class="menu-item-object-page">
+                            <a href="/User/Color-Palette" class="text-16 font-medium text-white">Color Palette<sup class="link-sup">05</sup></a>
+                        </li>
                     </ul>
                 </div>
             </div>

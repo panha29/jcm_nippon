@@ -164,6 +164,23 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
     Route::get('/Mobile/ColorPalette',[UserLoginController::class,'colorpalette']);
     Route::get('/Mobile/Price-List',[UserLoginController::class,'pricelist']);
 
+    Route::get('/Color-Palette', function()
+    {
+        $nav = CategoryModel::all();
+        $color = DB::table('colorpalette')->get();
+        $Green = DB::table('colorpalette')->where('colorpalette_category','=','Green')->get();
+        $Red = DB::table('colorpalette')->where('colorpalette_category','=','Red')->get();
+        $Yellow = DB::table('colorpalette')->where('colorpalette_category','=','Yellow')->get();
+        $Orange = DB::table('colorpalette')->where('colorpalette_category','=','Orange')->get();
+        $Blue = DB::table('colorpalette')->where('colorpalette_category','=','Blue')->get();
+        $Purple = DB::table('colorpalette')->where('colorpalette_category','=','Purple')->get();
+        $Grey = DB::table('colorpalette')->where('colorpalette_category','=','Grey')->get();
+        $Neutral = DB::table('colorpalette')->where('colorpalette_category','=','Neutral')->get();
+        $GreenBlue = DB::table('colorpalette')->where('colorpalette_category','=','GreenBlue')->get();
+        $OffWhite = DB::table('colorpalette')->where('colorpalette_category','=','OffWhite')->get();
+        return view('user_dashboard.websiteV2.color_palette.color_palette',compact('nav','color','Green','Red','Yellow','Orange','Blue','Purple','Grey','Neutral','GreenBlue','OffWhite'));
+    });
+
     Route::group(['prefix' => 'Products'], function()
     {
         Route::get('/',[UserLoginController::class,'user_all_product']);
