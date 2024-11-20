@@ -25,7 +25,7 @@
                         </div>
                         <div class="contents text-start">
                             <h3 class="lqd-iconbox-heading text-20 mb-0/75em">Vision </h3>
-                            <div class="text-14 mb-2/5rem">To be the number one paint and coating products distributors in Cambodia and will do our best to enhance and beautify Cambodia's surroundings.</div>
+                            <div class="text-14 goal mb-2/5rem">To be the number one paint and coating products distributors in Cambodia and will do our best to enhance and beautify Cambodia's surroundings.</div>
 
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                         </div>
                         <div class="contents text-start">
                             <h3 class="lqd-iconbox-heading text-20 mb-0/75em">Mission </h3>
-                            <div class="text-14 mb-2/5rem">To support businesses and consumers in Cambodia with a comprehensive range of paint, coating products and services. </div>
+                            <div class="text-14 goal mb-2/5rem">To support businesses and consumers in Cambodia with a comprehensive range of paint, coating products and services. </div>
 
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                         </div>
                         <div class="contents text-start">
                             <h3 class="lqd-iconbox-heading text-20 mb-0/75em">Value </h3>
-                            <div class="text-14 mb-2/5rem">
+                            <div class="text-14 goal mb-2/5rem">
                                 <li>Customer is Our Priority</li>
                                 <li>Transparency</li>
                                 <li>Teamwork</li>

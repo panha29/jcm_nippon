@@ -7,8 +7,8 @@
 @extends('user_dashboard.webv2-layout',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description])
 
 @section('css')
-<link rel="stylesheet" href="/webv2/css/demo/digital-hub/base.css">
-<link rel="stylesheet" href="/webv2/css/demo/digital-hub/digital-hub.css">
+<link rel="stylesheet" href="../webv2/css/demo/digital-hub/base.css">
+<link rel="stylesheet" href="../webv2/css/demo/digital-hub/digital-hub.css">
 
 @endsection
 
@@ -147,7 +147,7 @@
                                 <h2 class="ld-fh-element relative text-28 font-bold"> Send a message</h2>
                             </div>
                             <div class="w-50percent relative text-end pr-40 sm:w-full sm:text-start">
-                                <img class="w-60" width="100" height="100" src="/webv2/images/demo/start-hub-1/contact/shape-plane.svg" alt="plane">
+                                <img class="w-60" width="100" height="100" src="webv2/images/demo/start-hub-1/contact/shape-plane.svg" alt="plane">
                             </div>
                         </div>
                         <div class="lqd-contact-form lqd-contact-form-inputs-round lqd-contact-form-button-block lqd-contact-form-button-lg lqd-contact-form-button-round lqd-contact-form-button-border-none lqd-contact-form-inputs-lg p-10">

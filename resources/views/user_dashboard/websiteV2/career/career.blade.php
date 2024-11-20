@@ -1,30 +1,22 @@
-@php
-    $html_tag_data = [];
-    $title = 'Career';
-    $description = 'Career';
-    $breadcrumbs = ["/"=>"Home"]
-@endphp
-@extends('user_dashboard.webv2-layout',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description])
-
+@extends('user_dashboard.webv2-layout')
 @section('css')
-
-<link rel="stylesheet" href="/webv2/css/demo/digital-hub/base.css">
-<link rel="stylesheet" href="/webv2/css/demo/digital-hub/digital-hub.css">
-
+    <link rel="stylesheet" href="./css/hub5/css/demo/start-hub-5/start-hub-5-start.css">
 @endsection
 
 @section('js_vendor')
+    <script src="../css/hub5/vendors/particles.min.js"></script>
 @endsection
 
 @section('js_page')
-    <script>
-        window.liquidParams = {
-            currentZIndex: 10
-        }
-    </script>
-
 @endsection
-
+<style>
+    .text-white{
+        color: black !important;
+    }
+    .text-01ad08{
+        color: #01ad08 !important;
+    }
+</style>
 @section('content')
 <div id="lqd-contents-wrap">
     <section class="lqd-section webinar pt-130 pb-45" id="nipponcambodia">
@@ -93,31 +85,32 @@
             <div class="row">
                 <div class="col col-12 mb-30">
                     <div class="lqd-tabs lqd-tabs-style-3 lqd-tabs-nav-items-not-expanded lqd-nav-underline-" data-tabs-options='{ "trigger" : "click" }'>
+
                         <div class="lqd-tabs-content mb-2rem pt-15">
-                            <div id="lqd-tab-events-item-1" role="tabpanel" class="lqd-tabs-pane fade active show">
+
                                 <div class="container p-0 module-container">
                                     @foreach ($career as $item)
                                     <div class="w-full relative flex flex-wrap bg-white rounded-100 shadow-md transition-all px-25 mb-25 sm:rounded-10 sm:p-0">
                                         <div class="w-15percent flex flex-col items-center justify-center border-right border-black-10 py-25 px-15 sm:w-full sm:items-center sm:border-right-0 sm:border-bottom">
-                                            <p class="ld-fh-element relative m-0 text-17 font-bold leading-1em text-primary"> {{$item->career_date}}</p>
-                                            <p class="ld-fh-element relative m-0 text-14 text-primary"> </p>
+                                            <p class="text-01ad08 ld-fh-element relative m-0 text-17 font-bold leading-1em text-primary"> {{$item->career_date}}</p>
+                                            <p class="text-01ad08 ld-fh-element relative m-0 text-14 text-primary"> </p>
                                         </div>
                                         <div class="w-65percent flex flex-col justify-center border-right border-black-10 py-25 pr-15 pl-30 md:w-30percent sm:w-full sm:items-center sm:border-right-0 sm:border-bottom">
-                                            <p class="ld-fh-element relative m-0 text-14 text-primary"> {{$item->career_location}} </p>
-                                            <p class="ld-fh-element relative m-0 text-17 font-bold text-primary"> {{$item->career_title}}</p>
+                                            <p class="text-01ad08 ld-fh-element relative m-0 text-14 text-primary"> {{$item->career_location}} </p>
+                                            <p class="text-01ad08 ld-fh-element relative m-0 text-17 font-bold text-primary"> {{$item->career_title}}</p>
                                         </div>
 
                                         <div class="w-20percent flex flex-col items-center justify-center py-25 md:w-25percent sm:w-full">
-                                            <a href="#career{{$item->id}}" class="button btn btn-solid btn-md btn-hover-txt-switch-change btn-hover-txt-switch btn-hover-txt-switch-y btn-md btn-has-label bg-slate-700 rounded-100 text-13 uppercase leading-1/3em tracking-1 text-white font-bold hover:bg-secondary hover:text-primary"
-                                            data-bs-toggle="modal" data-bs-target="">
-                                                <span class="btn-txt" data-text="Urgent" data-split-text="true" data-split-options='{ "type": "chars, words" }'>More Detail</span>
+                                            <a href="Career/{{$item->career_title}}" style="color: white" class="button btn btn-solid btn-md btn-hover-txt-switch-change btn-hover-txt-switch btn-hover-txt-switch-y btn-md btn-has-label bg-slate-700 rounded-100 text-13 uppercase leading-1/3em tracking-1 font-bold hover:bg-secondary hover:text-primary">
+                                                <span class="btn-txt" data-text="Urgent" style="position:revert" data-split-text="true" data-split-options='{ "type": "chars, words" }'>More Detail</span>
                                             </a>
                                         </div>
                                     </div>
-                                        @include('user_dashboard.websiteV2.career.modal')
+                                        {{-- @include('websiteV2.career.modal') --}}
+                                        {{-- <a href="career/{{$item->id}}">More Detail</a> --}}
                                     @endforeach
                                 </div>
-                            </div>
+
 
                         </div>
                     </div>

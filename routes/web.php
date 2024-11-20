@@ -124,36 +124,83 @@ Route::group(['prefix' => 'Admin',  'middleware' => 'isadmin'], function()
 
 Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
 {
- // Route::redirect('/','/Dashboard');
-//  Route::get('/Dashboard',[UserLoginController::class,'user_website']);
     Route::get('/Dashboard', function() {
         Artisan::call('cache:clear');
         $product = ProductModel::all();
         $nav = CategoryModel::all();
-        return view('user_dashboard.websiteV2.website_index',compact('product','nav'));
+        $color = DB::table('colorpalette')->get();
+    $product = ProductModel::all();
+    $Green = DB::table('colorpalette')->where('colorpalette_category','=','Green')->take(8)->get();
+    $Red = DB::table('colorpalette')->where('colorpalette_category','=','Red')->take(8)->get();
+    $Yellow = DB::table('colorpalette')->where('colorpalette_category','=','Yellow')->take(8)->get();
+    $Orange = DB::table('colorpalette')->where('colorpalette_category','=','Orange')->take(8)->get();
+    $Blue = DB::table('colorpalette')->where('colorpalette_category','=','Blue')->take(8)->get();
+    $Purple = DB::table('colorpalette')->where('colorpalette_category','=','Purple')->take(8)->get();
+    $Grey = DB::table('colorpalette')->where('colorpalette_category','=','Grey')->take(8)->get();
+    $Neutral = DB::table('colorpalette')->where('colorpalette_category','=','Neutral')->take(8)->get();
+    $GreenBlue = DB::table('colorpalette')->where('colorpalette_category','=','GreenBlue')->take(8)->get();
+    $OffWhite = DB::table('colorpalette')->where('colorpalette_category','=','OffWhite')->take(8)->get();
+    return view('user_dashboard.websiteV2.website_index',compact('product','nav','color','Green','Red','Yellow','Orange','Blue','Purple','Grey','Neutral','GreenBlue','OffWhite'));
     });
- Route::get('/Products/{category_tag}',[UserLoginController::class,'user_category_tagv2']);
- Route::get('/Products',[UserLoginController::class,'user_all_product']);
+    // Route::get('/Products/{category_tag}',[UserLoginController::class,'user_category_tagv2']);
 
- Route::get('/Painting-Services',[UserLoginController::class,'user_servicev2']);
- Route::get('/News',[UserLoginController::class,'user_newsv2']);
- Route::get('/Career',[UserLoginController::class,'user_career']);
- Route::get('/Project-Reference',[UserLoginController::class,'user_project_referencev2']);
- Route::get('/Contact-Us',[UserLoginController::class,'user_contact_us']);
- Route::get('/About-Us',[UserLoginController::class,'user_about_us']);
- Route::get('/Color-Palette',[UserLoginController::class,'user_color_palette']);
- Route::get('/Color-Pricing',[ColorPricingController::class,'user_color_pricing']);
- Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');
+    Route::get('/Painting-Services',[UserLoginController::class,'user_servicev2']);
+    Route::get('/News',[UserLoginController::class,'user_newsv2']);
+    Route::get('/Career',[UserLoginController::class,'user_career']);
+    Route::get('/Project-Reference',[UserLoginController::class,'user_project_referencev2']);
+    Route::get('/Contact-Us',[UserLoginController::class,'user_contact_us']);
+    Route::get('/About-Us',[UserLoginController::class,'user_about_us']);
+    Route::get('/Color-Palette',[UserLoginController::class,'user_color_palette']);
+    Route::get('/Color-Pricing',[ColorPricingController::class,'user_color_pricing']);
+    Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');
 
 
- Route::get('/Checkin/{id}',[UserLoginController::class,'staff_signin']);
- Route::get('/Detail/{id}',[UserLoginController::class,'staff_detail']);
- Route::get('/Name',[UserLoginController::class,'account_setting'])->name('account_setting');
- Route::get('/Name/{id}',[UserLoginController::class,'delete_user']);
+    Route::get('/Checkin/{id}',[UserLoginController::class,'staff_signin']);
+    Route::get('/Detail/{id}',[UserLoginController::class,'staff_detail']);
+    Route::get('/Name',[UserLoginController::class,'account_setting'])->name('account_setting');
+    Route::get('/Name/{id}',[UserLoginController::class,'delete_user']);
 
- Route::get('/Mobile',[UserLoginController::class,'eprice']);
- Route::get('/Mobile/ColorPalette',[UserLoginController::class,'colorpalette']);
- Route::get('/Mobile/Price-List',[UserLoginController::class,'pricelist']);
+    Route::get('/Mobile',[UserLoginController::class,'eprice']);
+    Route::get('/Mobile/ColorPalette',[UserLoginController::class,'colorpalette']);
+    Route::get('/Mobile/Price-List',[UserLoginController::class,'pricelist']);
+
+    Route::group(['prefix' => 'Products'], function()
+    {
+        Route::get('/',[UserLoginController::class,'user_all_product']);
+        Route::get('/Interior',[UserLoginController::class,'user_nav_interior']);
+        Route::get('/Exterior',[UserLoginController::class,'user_nav_exterior']);
+        Route::get('/Coating',[UserLoginController::class,'user_nav_coating']);
+        Route::get('/Sealer_Primer',[UserLoginController::class,'user_nav_sealer_primer']);
+        Route::get('/Wood_Metal',[UserLoginController::class,'user_nav_wood_metal']);
+        Route::view('/Nippon_Odourless_Spotless','user_dashboard/websiteV2/product/product_detail/interior/odourless-spotless');
+        Route::view('/Nippon_Odourless_SuperEasyWash','user_dashboard/websiteV2/product/product_detail/interior/odourless-supereasywash');
+        Route::view('/Nippon_Matex','user_dashboard/websiteV2/product/product_detail/interior/nippon-matex');
+        Route::view('/Nippon_Watex','user_dashboard/websiteV2/product/product_detail/interior/nippon-watex');
+
+        Route::view('/Nippon_Weatherbond_Plus','user_dashboard/websiteV2/product/product_detail/exterior/nippon-weatherbondplus');
+        Route::view('/Nippon_Weatherbond_8y','user_dashboard/websiteV2/product/product_detail/exterior/nippon-weatherbond-8y');
+        Route::view('/Nippon_WeatherGard','user_dashboard/websiteV2/product/product_detail/exterior/nippon-weathergard');
+        Route::view('/Nippon_SolaReflect','user_dashboard/websiteV2/product/product_detail/exterior/nippon-solareflect');
+        Route::view('/Nippon_MatexPremium','user_dashboard/websiteV2/product/product_detail/exterior/nippon-matexpremium');
+
+        Route::view('/Nippon_Matex_Premium_Sealer','user_dashboard/websiteV2/product/product_detail/primer-sealer/nippon-matexpremiumsealer');
+        Route::view('/Nippon_Matex_Sealer','user_dashboard/websiteV2/product/product_detail/primer-sealer/nippon-matexsealer');
+        Route::view('/Nippon_Vinilex5100','user_dashboard/websiteV2/product/product_detail/primer-sealer/nippon-vinilex5100');
+        Route::view('/Nippon_Vinilex5170','user_dashboard/websiteV2/product/product_detail/primer-sealer/nippon-vinilex5170');
+        Route::view('/Nippon_Vinilex5000','user_dashboard/websiteV2/product/product_detail/primer-sealer/nippon-vinilex5000');
+        Route::view('/Nippon_Odourless_Sealer','user_dashboard/websiteV2/product/product_detail/primer-sealer/nippon-odourlesssealer');
+
+        Route::view('/Nippon_Bodelac9000','user_dashboard/websiteV2/product/product_detail/wood-metal/nippon-bodelac9000');
+        Route::view('/Nippon_Gold_Paint2000','user_dashboard/websiteV2/product/product_detail/wood-metal/nippon-goldpaint2000');
+        Route::view('/Nippon_Zinc_Phosphate_Primer','user_dashboard/websiteV2/product/product_detail/wood-metal/nippon-zincphosphate');
+        Route::view('/Nippon_ECO_Red_Oxide','user_dashboard/websiteV2/product/product_detail/wood-metal/nippon-redoxide');
+        Route::view('/Nippon_ECO_Grey_Oxide','user_dashboard/websiteV2/product/product_detail/wood-metal/nippon-greyoxide');
+
+        Route::view('/Nippon_Epoxy_EA4','user_dashboard/websiteV2/product/product_detail/coating/nippon-epoxyea4');
+        Route::view('/Nippon_Epoxy_EA9','user_dashboard/websiteV2/product/product_detail/coating/nippon-epoxyea9');
+        Route::view('/Nippon_Epoxy_PU','user_dashboard/websiteV2/product/product_detail/coating/nippon-epoxypu');
+    });
+
 });
 
 Route::group(['prefix' => 'Products'], function()

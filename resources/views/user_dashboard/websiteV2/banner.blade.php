@@ -1,18 +1,20 @@
 <!-- Start Banner -->
-<section class="lqd-section banner min-h-100vh w-full flex flex-column items-center justify-center" id="banner">
+<link rel="stylesheet" href="css/carousel.css">
+{{-- <script type="text/javascript" src="js/carousel.min.js"></script> --}}
+<section class="lqd-section w-full flex flex-column items-center justify-center top-90" id="banner">
     <div class="absolute w-full h-full">
-        <div class="ld-particles-container relative w-full lqd-particles-as-bg lqd-overlay flex h-vh-100">
+        <div class="ld-particles-container relative w-full lqd-particles-as-bg lqd-overlay flex">
             <div class="ld-particles-inner lqd-overlay flex pointer-events-none" id="lqd-particle-banner" data-particles="true" data-particles-options='{"particles": {"number": {"value" : 14, "density" : 1} , "color": {"value" : ["#F27E3F", "#0FBBB4", "#48BB0F", "#3FF292", "#899BFF"]} , "shape": {"type" : ["circle"]} , "opacity": {"value" : 1} , "size": {"value" : 6, "random": true, "anim": {"enable": true, "size_min" : 1, "speed" : 1}} , "move": {"enable": true, "direction": "right", "out_mode": "out"}} , "interactivity" : [], "retina_detect": true}'></div>
         </div>
     </div>
-    <div class="container">
-        <div class="row items-center">
+    <div class="">
+    {{-- <div class="row items-center">
             <div class="col col-12 col-xl-5" data-custom-animations="true" data-ca-options='{"animationTarget": "h2, h6, p, .btn", "duration" : 1800, "delay" : 170, "ease": "power4.out", "initValues": {"y": "65px", "rotationY" : 65, "opacity" : 0} , "animations": {"y": "0px", "rotationY" : 0, "opacity" : 1}}'>
                 <div class="ld-fancy-heading relative">
                     <h6 class="ld-fh-element inline-block relative mb-2em text-12 uppercase font-bold tracking-1/5 text-gray-900">Creative solutions for everyone</h6>
                 </div>
                 <div class="ld-fancy-heading relative">
-                    <h2 class="ld-fh-element inline-block relative text-rotator-activated mb-0/25em text-72 leading-1/05em tracking-0" data-text-rotator="true"> Nippon Paint<span class="txt-rotate-keywords">
+                    <h2 class="ld-fh-element inline-block relative text-rotator-activated mb-0/25em text-60 leading-1/05em tracking-0" data-text-rotator="true"> Nippon Paint<span class="txt-rotate-keywords">
                             <span class="txt-rotate-keyword lqd-keyword-slide-out"> We Build</span>
                             <span class="txt-rotate-keyword lqd-keyword-slide-out">We Do It</span>
                             <span class="txt-rotate-keyword lqd-keyword-slide-in active"> We Dream</span>
@@ -24,18 +26,10 @@
                 </div>
                 <div class="flex flex-row flex-wrap items-center justify-start">
                     <div class="fancy-button mr-15 module-btn sm:w-full">
-                        <a href="#contact-modal" class="btn btn-solid btn-xlg btn-icon-right btn-hover-reveal font-bold uppercase tracking-1/5 leading-1/4em whitespace-nowrap bg-transparent rounded-100 text-white" data-lity="#contact-modal">
-                            <span class="btn-txt" data-text="Get a Quote">Get a Quote</span>
+                        <a href="tel: +855 11 822 266" class="btn btn-solid btn-xlg btn-icon-right btn-hover-reveal font-bold uppercase tracking-1/5 leading-1/4em whitespace-nowrap bg-transparent rounded-100 text-white">
+                            <span class="btn-txt" data-text="Call us Now">Call us Now</span>
                             <span class="btn-icon text-16">
                                 <i aria-hidden="true" class="lqd-icn-ess icon-md-arrow-round-forward-2"></i>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="fancy-button text-left sm:w-full">
-                        <a href="#services" class="btn btn-naked btn-icon-right btn-hover-reveal btn-has-label font-bold uppercase tracking-1/5 leading-1/4em whitespace-nowrap text-blue-700" data-localscroll="true">
-                            <span class="btn-txt" data-text="Discover Hub">Discover Hub</span>
-                            <span class="btn-icon">
-                                <i aria-hidden="true" class="lqd-icn-ess icon-md-arrow-round-down"></i>
                             </span>
                         </a>
                     </div>
@@ -57,7 +51,53 @@
                     </div>
                 </div>
             </div>
+            </div>
+        </div> --}}
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="webv2/images/banner/new_product.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="webv2/images/banner/new_product1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="webv2/images/banner/new_product2.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              {{-- <span class="visually-hidden">Previous</span> --}}
+            </a>
+            <a class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              {{-- <span class="visually-hidden">Next</span> --}}
+            </a>
         </div>
-    </div>
 </section>
 <!-- End banner -->
+
+{{-- <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 50000); // Change image every 2 seconds
+    }
+    </script> --}}
+
+

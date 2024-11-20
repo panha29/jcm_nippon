@@ -1,139 +1,67 @@
-@php
-    $html_tag_data = [];
-    $title = 'Project Reference';
-    $description = 'Project Reference';
-    $breadcrumbs = ["/"=>"Home"]
-@endphp
-@extends('user_dashboard.webv2-layout',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description])
-
+@extends('user_dashboard.webv2-layout')
 @section('css')
-<link rel="stylesheet" href="/webv2/css/demo/modern-agancy/modern-agency.css">
-{{-- <link rel="stylesheet" href="/webv2/css/demo/modern-agancy/base.css"> --}}
-<link rel="stylesheet" href="/webv2/css/demo/digital-hub/base.css">
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
-
-{{-- <link rel="stylesheet" href="/webv2/css/demo/digital-hub/digital-hub.css"> --}}
+    <link rel="stylesheet" href="../css/hub5/css/demo/start-hub-5/start-hub-5-services.css">
 @endsection
 
 @section('js_vendor')
+    <script src="../css/hub5/vendors/particles.min.js"></script>
 @endsection
 
 @section('js_page')
-
 @endsection
+<style>
+    .text-white{
+        color: black !important;
+    }
+</style>
+@include('user_dashboard.websiteV2.project-reference.css')
 @section('content')
 
-<div id="lqd-contents-wrap" class="">
-    <!-- Start Banner Image -->
-    <section class="lqd-section banner-image z-1" id="banner">
-        <div class="flex relative">
-            <div class="module-img absolute ltr-right-0 -top-40 w-710">
-                <div class="lqd-imggrp-single block relative">
-                    <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
-                        {{-- <h1>Project Reference</h1> --}}
-                    </div>
+<div id="lqd-contents-wrap ">
+    <div class="titlebar-inner">
+        <div class="container titlebar-container mt-100">
+            <div class="row titlebar-container justify-center">
+                <div class="col titlebar-col col-xl-6 col-lg-8 col-12 text-center text-gray-400">
+                    <h2>Our Project Reference</h2>
+                    {{-- <p class="leading-20 text-gray-400">Our Project Reference</p> --}}
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End Banner Image -->
-      <!-- Start Banner -->
-      <section class="lqd-section banner">
-        <div class="ld-particles-container lqd-particles-as-bg lqd-overlay flex">
-            <div class="ld-particles-inner lqd-overlay flex pointer-events-none" id="lqd-particle-banner" data-particles="true" data-particles-options='{"particles": {"number": {"value" : 4} , "color": {"value" : ["#FDA44C", "#604CFD", "#F85976", "#0FBBB4"]} , "shape": {"type" : ["circle"]} , "opacity": {"value" : 1} , "size": {"value" : 4}} , "interactivity" : [], "retina_detect": true}'></div>
-        </div>
-        <div class="container">
-            <div class="row h-vh-100 items-center sm:h-auto">
-                <div class="w-50percent lg:w-70percent sm:w-full p-0">
-                    <div class="w-full flex flex-col items-start bg-no-repeat pt-10 px-15 pb-50 module-bg" style="background-image: url('webv2/images/demo/modern-agency/shape-lines-circle.svg');">
-                    <h1 class="" style="font-size:50px">Project Reference</h1>
-
-                        <div class="ld-fancy-heading relative w-auto mb-0/65em bg-orange-100 rounded-100" data-custom-animations="true" data-ca-options='{"animationTarget": ".lqd-split-lines .lqd-lines .split-inner", "delay" : 100, "ease": "power4.out", "initValues": {"y": "35px", "opacity" : 0} , "animations": {"y": "0px", "opacity" : 1}}'>
-                            <h6 class="ld-fh-element relative lqd-split-lines lowercase m-0 py-10 px-20" data-split-text="true" data-split-options='{"type":"lines"}'> decade Experience</h6>
-                        </div>
-                        <div class="ld-fancy-heading relative" data-custom-animations="true" data-ca-options='{"animationTarget": ".lqd-split-lines .lqd-lines .split-inner", "duration" : 1800, "startDelay" : 250, "delay" : 180, "ease": "power4.out", "initValues": {"y": "30px", "z": "-130px", "rotationX" : -75, "opacity" : 0} , "animations": {"y": "0px", "z": "0px", "rotationX" : 0, "opacity" : 1}}'>
-                            <h1 class="ld-fh-element mb-0/5em inline-block relative lqd-highlight-classic lqd-highlight-grow-left lqd-split-lines -tracking-1" data-inview="true" data-transition-delay="true" data-delay-options='{"elements": ".lqd-highlight-inner", "delayType": "transition"}'
-                                data-split-text="true" data-split-options='{"type": "lines"}'>
-                                <span>industry, building,</span>
-                                <mark class="lqd-highlight">
-                                        <span class="lqd-highlight-txt">house</span>
-                                        <span class="lqd-highlight-inner"></span>
-                                    </mark> and construction solutions
-                            </h1>
-                        </div>
-                        <div class="w-full">
-                            <div class="ld-fancy-heading relative mask-text module-text" data-custom-animations="true" data-ca-options='{"animationTarget": ".lqd-split-lines .lqd-lines .split-inner", "duration" : 1800, "startDelay" : 850, "delay" : 180, "ease": "power4.out", "initValues": {"y": "65px"} , "animations": {"y": "0px"}}'>
-                                <p class="ld-fh-element mb-0/5em inline-block relative text-20 leading-1/5em lqd-split-lines" data-split-text="true" data-split-options='{"type": "lines"}'> We merge imagination and technology to help thousands of construction grow in an age of Nippon Paint's product.</p>
-                            </div>
-                        </div>
-                        <div class="spacer w-full">
-                            <div class="w-full h-10"></div>
-                        </div>
-                        <div class="pt-35 flex items-center" data-custom-animations="true" data-ca-options='{"animationTarget": ".banner .module-btn", "duration" : 1800, "startDelay" : 1200, "delay" : 180, "ease": "power4.out", "initValues": {"z": "-70px", "rotationX" : -90, "opacity" : 0} , "animations": {"z": "0px", "rotationX" : 0, "opacity" : 1}}'>
-                            <div class="w-full flex items-center module-btn sm:flex-wrap">
-                                <a href="#about" class="btn font-bold text-14 uppercase tracking-1/5 whitespace-nowrap btn-solid btn-xl btn-icon-right btn-hover-reveal mr-40 rounded-100 text-white bg-primary hover:bg-accent" data-localscroll="true">
-                                    <span class="btn-txt" data-text="See how we work">See how we work</span>
-                                    <span class="btn-icon">
-                                        <i aria-hidden="true" class="lqd-icn-ess icon-md-arrow-round-forward-2"></i>
-                                    </span>
-                                </a>
-                                <div class="ld-fancy-heading relative">
-                                    <p class="text-14 m-0 p-0 ld-fh-element relative">
-                                        <span class="text-black">Hotline: <span class="text-primary">+855 11 822 266 / 11 907 902</span></span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-30percent p-0 sm:w-full"></div>
-
-            </div>
-        </div>
-    </section>
-    <!-- End Banner -->
-     <!-- Start Clients -->
-     <section class="lqd-section clients pb-40" id="clients">
+    </div>
+    <section class="lqd-section clients pb-40 pt-50" id="clients">
         <div class="container">
             <div class="row items-center text-center">
-                <div class="col col-12 p-0">
-                    <div class="ld-fancy-heading relative">
-                        <p class="ld-fh-element relative text-11 font-bold uppercase mb-3/5em tracking-0/1 text-blue-900">Join the 10.000+ client trusting us</p>
-                    </div>
+                <div class="col col-6 col-md-4 col-xl-2 p-0 mb-30">
+                    <img src="../webv2/images/client/aeon.png" alt="nippon paint cambodia client">
                 </div>
                 <div class="col col-6 col-md-4 col-xl-2 p-0 mb-30">
-                    <img src="../webv2/images/client/aeon.png" alt="clients" width="">
+                    <img src="../webv2/images/client/ford.png" alt="nippon paint cambodia client">
                 </div>
                 <div class="col col-6 col-md-4 col-xl-2 p-0 mb-30">
-                    <img src="../webv2/images/client/ford.png" alt="clients">
+                    <img src="../webv2/images/client/grandpp.png" alt="nippon paint cambodia client">
                 </div>
                 <div class="col col-6 col-md-4 col-xl-2 p-0 mb-30">
-                    <img src="../webv2/images/client/grandpp.png" alt="clients">
+                    <img src="../webv2/images/client/tax1.png" alt="nippon paint cambodia client">
                 </div>
                 <div class="col col-6 col-md-4 col-xl-2 p-0 mb-30">
-                    <img src="../webv2/images/client/tax1.png" alt="clients">
+                    <img src="../webv2/images/client/tourism.png" alt="nippon paint cambodia client" width="100">
                 </div>
                 <div class="col col-6 col-md-4 col-xl-2 p-0 mb-30">
-                    <img src="../webv2/images/client/tourism.png" alt="clients" width="120">
-                </div>
-                <div class="col col-6 col-md-4 col-xl-2 p-0 mb-30">
-                    <img src="../webv2/images/client/tex.png" alt="clients" width="120">
+                    <img src="../webv2/images/client/tex.png" alt="nippon paint cambodia client" width="100">
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Clients -->
-    <!-- Start About -->
     <section class="lqd-section about pt-40 pb-100" id="about">
-        <div class="container">
+        <div class="container p-20">
             <div class="row text-center">
                 <div class="col col-md-10 offset-md-1 mb-60 p-0 module-first">
                     <div class="w-full flex flex-col items-center">
-                        <div class="ld-fancy-heading relative">
+                        {{-- <div class="ld-fancy-heading relative">
                             <h6 class="mb-1em ld-fh-element relative">We're Color professional</h6>
-                        </div>
+                        </div> --}}
                         <div class="ld-fancy-heading relative">
-                            <h2 class="ld-fh-element mb-0/5em inline-block relative">We design and build beautiful with premium products that make a difference</h2>
+                            <h3 class="ld-fh-element mb-0/5em inline-block relative">We paint with joy, and paint with care, For in each color, love’s declared. In every hue, a promise laid, A home renewed, in colors swayed.</h3>
                         </div>
                     </div>
                 </div>
@@ -260,9 +188,7 @@
             </div>
         </div>
     </section>
-    <!-- End About -->
-      <!-- Start Digital Experience -->
-      <section class="lqd-section digital-experience py-100">
+    <section class="lqd-section digital-experience py-50 hide-pjr">
         <div class="container">
             <div class="row items-center">
                 <div class="w-55percent relative flex items-center justify-center lg:w-full sm:hidden">
@@ -275,7 +201,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="absolute w-260 -top-5percent module-img-2" data-parallax="true" data-parallax-options='{"ease": "linear", "start": "top bottom", "end": "bottom+=0px top"}' data-parallax-from='{"y": "110px"}' data-parallax-to='{"y": "-50px"}'>
+                    {{-- <div class="absolute w-260 -top-5percent module-img-2" data-parallax="true" data-parallax-options='{"ease": "linear", "start": "top bottom", "end": "bottom+=0px top"}' data-parallax-from='{"y": "110px"}' data-parallax-to='{"y": "-50px"}'>
                         <div class="lqd-imggrp-single block relative" data-shadow-style="4" data-inview="true" data-animate-shadow="true">
                             <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                                 <figure class="w-full relative">
@@ -283,7 +209,7 @@
                                 </figure>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="absolute w-400 -top-5percent module-img-3" data-parallax="true" data-parallax-options='{"ease": "linear", "start": "top bottom", "end": "bottom+=0px top"}' data-parallax-from='{"y": "150px"}' data-parallax-to='{"y": "-120px"}'>
                         <div class="lqd-imggrp-single block relative" data-shadow-style="4" data-inview="true" data-animate-shadow="true">
                             <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
@@ -329,9 +255,7 @@
             </div>
         </div>
     </section>
-
-
-    <section class="lqd-section blog pt-100 pb-55" id="blog">
+    <section class="lqd-section blog pt-100 pb-55">
         <div class="container">
             <div class="row">
                 <div class="col col-12 mb-40">
@@ -339,33 +263,34 @@
                         <div class="ld-fancy-heading relative w-full">
                             <h6 class="mb-1em ld-fh-element relative lowercase">We're Professional Painting</h6>
                         </div>
-                        <div class="ld-fancy-heading relative w-full">
+                        {{-- <div class="ld-fancy-heading relative w-full">
                             <h2 class="ld-fh-element mb-0/5em inline-block relative">Our Project Reference</h2>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
-                <div class="col col-12 pjr-pc-view">
-                    <div class="row -mr-15 -ml-15">
+
+                <div class="col col-12 pjr-pc-view pjref-m">
+                    <div class="row mr-10 ml-10">
                         @foreach ($pjref as $item)
-                        <div class="col col-sm-6 col-lg-4 mb-30 px-15 py-0">
+                        <div class="col col-sm-6 col-lg-4 mb-30 px-10 py-0" style="width: 50%">
                             <article class="lqd-lp relative lqd-lp-style-6 lqd-lp-hover-img-zoom lqd-lp-animate-onhover rounded-4 overflow-hidden text-start post type-post status-publish format-standard has-post-thumbnail hentry category-blog-single tag-beauty tag-travel">
                                 <div class="lqd-lp-img overflow-hidden">
                                     <figure>
-                                        <img width="720" height="510" src="{{ url('img/project_reference/company_project_reference/'.$item->project_reference_image1) }}" alt="nippon paint cambodia">
+                                        <img src="{{ url('img/project_reference/company_project_reference/'.$item->project_reference_image1) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" style="width: 100%">
                                     </figure>
                                 </div>
-                                <header class="lqd-lp-header p-2rem" style="height: 139px">
+                                <header class="lqd-lp-header p-2rem">
                                     <div class="lqd-lp-meta lqd-lp-meta-dot-between flex flex-wrap items-center uppercase tracking-0/1em font-bold">
-                                        <div class="lqd-lp-author relative z-3">
+                                        {{-- <div class="lqd-lp-author relative z-3">
                                             <div class="lqd-lp-author-info">
                                                 <h3 class="mt-0 mb-0 h5">
                                                     <p>{{$item->project_reference_area}}</p>
                                                 </h3>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                         {{-- <time class="lqd-lp-date" datetime="2023-11-24T13:40:12+00:00">{{$item->project_reference_startDate}}</time> --}}
                                     </div>
-                                    <h2 class="entry-title lqd-lp-title mt-0/75em mb-0 h5">{{$item->project_reference_name}}</h2>
+                                    <h3 class="entry-title lqd-lp-title mt-0/75em mb-0 h5">{{$item->project_reference_name}}</h3>
                                 </header>
                             </article>
                         </div>
@@ -373,14 +298,14 @@
                     </div>
                 </div>
 
-                <div class="col col-12 pjr-mobile-view">
+                {{-- <div class="col col-12 pjr-mobile-view">
                     <div class="row -mr-15 -ml-15">
                         @foreach ($pjref as $item)
                         <div class="col col-sm-12 mb-30 px-15 py-0">
                             <article class="lqd-lp relative lqd-lp-style-6 lqd-lp-hover-img-zoom lqd-lp-animate-onhover rounded-4 overflow-hidden text-start post type-post status-publish format-standard has-post-thumbnail hentry category-blog-single tag-beauty tag-travel">
                                 <div class="lqd-lp-img overflow-hidden">
                                     <figure>
-                                        <img src="{{ url('img/project_reference/company_project_reference/'.$item->project_reference_image1) }}" alt="nippon paint cambodia">
+                                        <img src="{{ url('img/project_reference/company_project_reference/'.$item->project_reference_image1) }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                     </figure>
                                 </div>
                                 <header class="lqd-lp-header p-1rem" style="height: 90px; width:350px">
@@ -392,7 +317,6 @@
                                                 </h3>
                                             </div>
                                         </div>
-                                        {{-- <time class="lqd-lp-date" datetime="2023-11-24T13:40:12+00:00">{{$item->project_reference_startDate}}</time> --}}
                                     </div>
                                     <h5 class="entry-title lqd-lp-title mb-0 h5">{{$item->project_reference_name}}</h5>
                                 </header>
@@ -400,15 +324,9 @@
                         </div>
                         @endforeach
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
 </div>
-
-
-
-
-
-
 @endsection

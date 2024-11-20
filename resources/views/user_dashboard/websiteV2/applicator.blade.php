@@ -1,60 +1,4 @@
  <!-- Start Team -->
- <style>
-    .youtube-player {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      max-width: 100%;
-      background: #000;
-      margin: 5px;
-    }
-
-    .youtube-player iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 100;
-      background: transparent;
-    }
-
-    .youtube-player img {
-      object-fit: cover;
-      display: block;
-      left: 0;
-      bottom: 0;
-      margin: auto;
-      max-width: 100%;
-      width: 100%;
-      position: absolute;
-      right: 0;
-      top: 0;
-      border: none;
-      height: auto;
-      cursor: pointer;
-      -webkit-transition: 0.4s all;
-      -moz-transition: 0.4s all;
-      transition: 0.4s all;
-    }
-
-    .youtube-player img:hover {
-      -webkit-filter: brightness(75%);
-    }
-
-    .youtube-player .play {
-      height: 48px;
-      width: 68px;
-      left: 50%;
-      top: 50%;
-      margin-left: -34px;
-      margin-top: -24px;
-      position: absolute;
-      background: url('https://i.ibb.co/j3jcJKv/yt.png') no-repeat;
-      cursor: pointer;
-    }
-  </style>
  <section class="lqd-section team pt-30 pb-130" id="team" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element, h2, .btn", "ease": "power4.out", "initValues": {"y": "45px", "rotationY" : 45, "opacity" : 0} , "animations": {"y": "0px", "rotationY" : 0, "opacity" : 1}}'>
     <div class="container">
         <div class="row items-center justify-between">
@@ -74,7 +18,8 @@
                 <div class="lqd-tm relative lqd-tm-style-2 module-1">
                     <div class="lqd-tm-img">
                         <figure class="m-0">
-                            <div class="youtube-player" data-id="NbNjNi3aKW8?si=rCTz-bfBS6VGOIzW"></div>
+                            {{-- <img class="w-full" width="564" height="712" src="/webv2/images/demo/digital-hub/team-1.jpg" alt="Erik Genie"> --}}
+                            <iframe width="600" height="600" src="https://www.youtube.com/embed/NbNjNi3aKW8?si=fox4UqY97_hSRzzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </figure>
                     </div>
                 </div>
@@ -94,12 +39,7 @@
     </div>
 </section>
 <script>
-    /*
-     * Light YouTube Embeds by @labnol
-     * Credit: https://www.labnol.org/
-     */
-
-    function labnolIframe(div) {
+        function labnolIframe(div) {
       var iframe = document.createElement('iframe');
       iframe.setAttribute('src', 'https://www.youtube.com/embed/' + div.dataset.id + '?autoplay=1');
       iframe.setAttribute('frameborder', '0');
@@ -128,5 +68,5 @@
     }
 
     document.addEventListener('DOMContentLoaded', initYouTubeVideos);
-  </script>
+</script>
 <!-- End Team -->

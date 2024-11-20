@@ -7,8 +7,8 @@
 @extends('user_dashboard.webv2-layout',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description])
 
 @section('css')
-<link rel="stylesheet" href="/webv2/css/demo/digital-hub/base.css">
-<link rel="stylesheet" href="/webv2/css/demo/digital-hub/digital-hub.css">
+<link rel="stylesheet" href="../webv2/css/demo/digital-hub/base.css">
+<link rel="stylesheet" href="../webv2/css/demo/digital-hub/digital-hub.css">
 
 @endsection
 
@@ -21,13 +21,13 @@
 
 @section('content')
 <div id="lqd-contents-wrap">
-    <section class="lqd-section design pt-100 pb-40 top-90">
+    <section class="lqd-section design pt-100 pb-40">
         <div class="absolute top-0">
             <div class="ld-particles-container relative w-full">
                 <div class="ld-particles-inner lqd-overlay flex pointer-events-none" id="lqd-particle-design-services" ></div>
             </div>
         </div>
-        <div class="container">
+        <div class="container pt-70">
             <div class="row">
                 <div class="w-450 flex flex-col relative items-center max-w-full text-center mx-auto px-15">
                     <div class="ld-fancy-heading relative w-auto py-5 px-15 bg-gray rounded-100 animation-element">
@@ -46,7 +46,7 @@
                         <div class="lqd-imggrp-single block relative">
                             <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                                 <figure class="w-full relative">
-                                    <img width="67" height="73" src="../webv2/images/demo/start-hub-4/services/Shape.svg" alt="shape">
+                                    <img width="67" height="73" src="webv2/images/demo/start-hub-4/services/Shape.svg">
                                 </figure>
                             </div>
                         </div>
@@ -122,8 +122,8 @@
         <div class="absolute mb-0 top-0 z-0 max-w-full module-shape">
             <figure id="lqd-draw-shape-851c9d9" class="lqd-draw-shape" data-lqd-draw-shape="true" data-draw-shape-options='{"drawSVG": "0% 0%", "stagger" : 0 , "start": "top bottom", "end": "center 20%", "scrub" : 1 , "ease": "linear"}'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="255.64" height="182.773" viewBox="0 0 255.64 182.773">
-                        <path d="M629.327,2793.022s26.615,148.038,71.511,142.649c13.427-2.278,22.262-11.867,28.131-22.554,8-14.569,9.938-31.107,9.938-31.107s29.991,80.066,62.334,80.06,27.3-44.1,27.3-44.1,9.277,42.023,49.372,50.767" transform="translate(-625.844 -2789.539)" fill="none" stroke="#ff5125" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
-                    </svg>
+                                        <path d="M629.327,2793.022s26.615,148.038,71.511,142.649c13.427-2.278,22.262-11.867,28.131-22.554,8-14.569,9.938-31.107,9.938-31.107s29.991,80.066,62.334,80.06,27.3-44.1,27.3-44.1,9.277,42.023,49.372,50.767" transform="translate(-625.844 -2789.539)" fill="none" stroke="#ff5125" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+                                    </svg>
             </figure>
         </div>
         <div class="container painting-pc-view">
@@ -144,7 +144,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 pb-25 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-10 text-center">Pre-Painting Site Inspection With Our Professional</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em text-center">Pre-Painting Site Inspection With Our Professional</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>
@@ -152,7 +152,7 @@
                                             <div class="w-230 lqd-imggrp-single block relative">
                                                 <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                                                     <figure class="w-full relative rounded-full">
-                                                        <img class="rounded-full" draggable="false" width="458" height="602" src="../webv2/images/demo/service/page-s1.jpg" alt="services">
+                                                        <img class="rounded-full" draggable="false" width="458" height="602" src="webv2/images/demo/service/page-s1.jpg" alt="House Painting">
                                                     </figure>
                                                 </div>
                                             </div>
@@ -165,7 +165,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 pb-25 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-10 text-center">Shifting and Protection of Furniture and Floor</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em text-center">Shifting and Protection of Furniture and Floor</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>
@@ -173,7 +173,7 @@
                                             <div class="w-230 lqd-imggrp-single block relative">
                                                 <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                                                     <figure class="w-full relative rounded-full">
-                                                        <img class="rounded-full" draggable="false" width="458" height="602" src="../webv2/images/demo/service/page-s3.jpg" alt="services">
+                                                        <img class="rounded-full" draggable="false" width="458" height="602" src="webv2/images/demo/service/page-s3.jpg" alt="House Painting">
                                                     </figure>
                                                 </div>
                                             </div>
@@ -186,7 +186,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 pb-25 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-10 text-center">Certified and Highly-Trained Painting Professionals</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em text-center">Certified and Highly-Trained Painting Professionals</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>
@@ -194,7 +194,7 @@
                                             <div class="w-230 lqd-imggrp-single block relative">
                                                 <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                                                     <figure class="w-full relative rounded-full">
-                                                        <img class="rounded-full" draggable="false" width="458" height="602" src="../webv2/images/demo/service/page-s4.jpg" alt="services">
+                                                        <img class="rounded-full" draggable="false" width="458" height="602" src="webv2/images/demo/service/page-s4.jpg" alt="House Painting">
                                                     </figure>
                                                 </div>
                                             </div>
@@ -215,7 +215,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 pb-25 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-10 text-center">Prepare Premium Nippon Paint Products</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em text-center">Prepare Premium Nippon Paint Products</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>
@@ -223,9 +223,12 @@
                                             <div class="w-230 lqd-imggrp-single block relative">
                                                 <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                                                     <figure class="w-full relative rounded-full">
-                                                        <img class="rounded-full" draggable="false" width="458" height="602" src="../webv2/images/demo/service/page-s2.jpg" alt="services">
+                                                        <img class="rounded-full" draggable="false" width="458" height="602" src="webv2/images/demo/service/page-s2.jpg" alt="House Painting">
                                                     </figure>
                                                 </div>
+                                            </div>
+                                            <div class="divider w-full">
+                                                <span class="w-full my-25 border-top border-black-20"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -236,7 +239,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 pb-25 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-10 text-center">Reinstating of furniture after painting</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em text-center">Reinstating of furniture after painting</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>
@@ -244,9 +247,12 @@
                                             <div class="w-230 lqd-imggrp-single block relative">
                                                 <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                                                     <figure class="w-full relative rounded-full">
-                                                        <img class="rounded-full" draggable="false" width="458" height="602" src="../webv2/images/demo/service/page-s5.jpg" alt="services">
+                                                        <img class="rounded-full" draggable="false" width="458" height="602" src="webv2/images/demo/service/page-s5.jpg" alt="House Painting">
                                                     </figure>
                                                 </div>
+                                            </div>
+                                            <div class="divider w-full">
+                                                <span class="w-full my-25 border-top border-black-20"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -257,7 +263,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 pb-25 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-10 text-center">Aavailable Thousand Colors to Choose</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em text-center">Aavailable Thousand Colors to Choose</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>
@@ -265,9 +271,12 @@
                                             <div class="w-230 lqd-imggrp-single block relative">
                                                 <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                                                     <figure class="w-full relative rounded-full">
-                                                        <img class="rounded-full" draggable="false" width="458" height="602" src="../webv2/images/demo/service/colorpallet.jpg" alt="services">
+                                                        <img class="rounded-full" draggable="false" width="458" height="602" src="webv2/images/demo/service/colorpallet.jpg" alt="House Painting">
                                                     </figure>
                                                 </div>
+                                            </div>
+                                            <div class="divider w-full">
+                                                <span class="w-full my-25 border-top border-black-20"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -296,7 +305,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-15 text-center p-10 text-center">Pre-Painting Site Inspection With Our Professional</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em text-center p-15 text-center">Pre-Painting Site Inspection With Our Professional</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>
@@ -304,7 +313,7 @@
                                             <div class="">
                                                 <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                                                     <figure class="w-full relative">
-                                                        <img class="" draggable="false" width="458" height="602" src="../webv2/images/demo/service/page-s1.jpg" alt="services">
+                                                        <img class="" draggable="false" width="458" height="602" src="webv2/images/demo/service/page-s1.jpg" alt="House Painting">
                                                     </figure>
                                                 </div>
                                             </div>
@@ -317,7 +326,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-15 text-center p-10 text-center">Shifting and Protection of Furniture and Floor</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em text-center p-15 text-center">Shifting and Protection of Furniture and Floor</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>
@@ -325,7 +334,7 @@
                                             <div class="">
                                                 <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                                                     <figure class="w-full relative ">
-                                                        <img class="" draggable="false" width="458" height="602" src="../webv2/images/demo/service/page-s3.jpg" alt="services">
+                                                        <img class="" draggable="false" width="458" height="602" src="webv2/images/demo/service/page-s3.jpg" alt="House Painting">
                                                     </figure>
                                                 </div>
                                             </div>
@@ -338,7 +347,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-15 text-center">Certified and Highly-Trained Painting Professionals</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em text-center p-15 text-center">Certified and Highly-Trained Painting Professionals</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>
@@ -346,7 +355,7 @@
                                             <div class="">
                                                 <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                                                     <figure class="w-full relative ">
-                                                        <img class="" draggable="false" width="458" height="602" src="../webv2/images/demo/service/page-s4.jpg" alt="services">
+                                                        <img class="" draggable="false" width="458" height="602" src="webv2/images/demo/service/page-s4.jpg" alt="House Painting">
                                                     </figure>
                                                 </div>
                                             </div>
@@ -367,7 +376,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-15 text-center">Prepare Premium Nippon Paint Products</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em text-center p-15 text-center">Prepare Premium Nippon Paint Products</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>
@@ -375,7 +384,7 @@
                                             <div class="">
                                                 <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                                                     <figure class="w-full relative ">
-                                                        <img class="" draggable="false" width="458" height="602" src="../webv2/images/demo/service/page-s2.jpg" alt="services">
+                                                        <img class="" draggable="false" width="458" height="602" src="webv2/images/demo/service/page-s2.jpg" alt="House Painting">
                                                     </figure>
                                                 </div>
                                             </div>
@@ -388,7 +397,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-15 text-center">Reinstating of furniture after painting</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em text-center p-15 text-center">Reinstating of furniture after painting</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>
@@ -396,7 +405,7 @@
                                             <div class="">
                                                 <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                                                     <figure class="w-full relative ">
-                                                        <img class="" draggable="false" width="458" height="602" src="../webv2/images/demo/service/page-s5.jpg" alt="services">
+                                                        <img class="" draggable="false" width="458" height="602" src="webv2/images/demo/service/page-s5.jpg" alt="House Painting">
                                                     </figure>
                                                 </div>
                                             </div>
@@ -409,7 +418,7 @@
                                     <div class="carousel-item-content relative w-full">
                                         <div class="pt-20 rounded-10 flex flex-col items-center bg-yellow-200">
                                             <div class="ld-fancy-heading relative">
-                                                <h4 class="ld-fh-element relative text-20 mb-0/25em p-15 text-center">Available Thousand Colors to Choose</h4>
+                                                <h4 class="ld-fh-element relative text-20 mb-0/25em text-center p-15 text-center">Aavailable Thousand Colors to Choose</h4>
                                             </div>
                                             <div class="ld-fancy-heading relative">
                                                 <p class="ld-fh-element relative text-15 mb-1em">Nippon Paint Services</p>
@@ -417,7 +426,7 @@
                                             <div class="">
                                                 <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                                                     <figure class="w-full relative ">
-                                                        <img class="" draggable="false" width="458" height="602" src="../webv2/images/demo/service/colorpallet.jpg" alt="services">
+                                                        <img class="" draggable="false" width="458" height="602" src="webv2/images/demo/service/colorpallet.jpg" alt="House Painting">
                                                     </figure>
                                                 </div>
                                             </div>
@@ -462,35 +471,35 @@
                                 <div class="col col-6 col-xl-3 px-30 carousel-item flex flex-col justify-center">
                                     <div class="carousel-item-inner relative w-full">
                                         <div class="carousel-item-content relative w-full">
-                                            <img width="150" src="../webv2/images/client/aeon.png" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
+                                            <img src="webv2/images/client/aeon.png" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col col-6 col-xl-3 px-30 carousel-item flex flex-col justify-center">
                                     <div class="carousel-item-inner relative w-full">
                                         <div class="carousel-item-content relative w-full">
-                                            <img width="150" src="../webv2/images/client/tourism.png" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
+                                            <img src="webv2/images/client/tourism.png" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col col-6 col-xl-3 px-30 carousel-item flex flex-col justify-center">
                                     <div class="carousel-item-inner relative w-full">
                                         <div class="carousel-item-content relative w-full">
-                                            <img width="150" src="../webv2/images/client/grandpp.png" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
+                                            <img src="webv2/images/client/grandpp.png" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col col-6 col-xl-3 px-30 carousel-item flex flex-col justify-center">
                                     <div class="carousel-item-inner relative w-full">
                                         <div class="carousel-item-content relative w-full">
-                                            <img width="150" src="../webv2/images/client/tax1.png" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
+                                            <img src="webv2/images/client/tax1.png" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col col-6 col-xl-3 px-30 carousel-item flex flex-col justify-center">
                                     <div class="carousel-item-inner relative w-full">
                                         <div class="carousel-item-content relative w-full">
-                                            <img width="150" src="../webv2/images/client/ford.png" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
+                                            <img src="webv2/images/client/ford.png" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint">
                                         </div>
                                     </div>
                                 </div>
