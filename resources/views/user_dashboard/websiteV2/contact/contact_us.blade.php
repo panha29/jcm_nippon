@@ -1,18 +1,10 @@
-@php
-    $html_tag_data = [];
-    $title = 'Contact Us';
-    $description = 'Contact Us';
-    $breadcrumbs = ["/"=>"Home"]
-@endphp
-@extends('user_dashboard.webv2-layout',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description])
-
+@extends('user_dashboard.webv2-layout')
 @section('css')
-<link rel="stylesheet" href="../webv2/css/demo/digital-hub/base.css">
-<link rel="stylesheet" href="../webv2/css/demo/digital-hub/digital-hub.css">
-
+    <link rel="stylesheet" href="../css/hub5/css/demo/start-hub-5/start-hub-5-about.css">
 @endsection
 
 @section('js_vendor')
+    <script src="../css/hub5/vendors/particles.min.js"></script>
 @endsection
 
 @section('js_page')
@@ -20,7 +12,7 @@
 
 @section('content')
 <div id="lqd-contents-wrap">
-    <section class="lqd-section has-accordion-page pt-100 bg-gray-200">
+    <section class="lqd-section has-accordion-page pt-100">
 
     <div class="titlebar-inner">
         <div class="container titlebar-container">
@@ -147,7 +139,7 @@
                                 <h2 class="ld-fh-element relative text-28 font-bold"> Send a message</h2>
                             </div>
                             <div class="w-50percent relative text-end pr-40 sm:w-full sm:text-start">
-                                <img class="w-60" width="100" height="100" src="webv2/images/demo/start-hub-1/contact/shape-plane.svg" alt="plane">
+                                <img class="w-60" width="100" height="100" src="../webv2/images/demo/start-hub-1/contact/shape-plane.svg" alt="plane">
                             </div>
                         </div>
                         <div class="lqd-contact-form lqd-contact-form-inputs-round lqd-contact-form-button-block lqd-contact-form-button-lg lqd-contact-form-button-round lqd-contact-form-button-border-none lqd-contact-form-inputs-lg p-10">
@@ -177,19 +169,7 @@
                                                 <input type="tel" name="tel-969" value="" size="40" class="lqd-cf-form-control border-1 border-black-10 rounded-4 px-2em text-16 text-slate-700" aria-required="true" aria-invalid="false" placeholder="Phone number">
                                             </span>
                                         </div>
-                                        <div class="col col-12 py-0 px-15">
-                                            <div class="mb-0 lqd-form-control-wrap relative">
-                                                <div class="lqd-select-dropdown" role="menubar">
-                                                    <div class="ui-selectmenu-menu ui-front">
-                                                        <ul aria-hidden="true" aria-labelledby="ui-id-2-button" id="ui-id-2-menu" role="listbox" tabindex="0" class="ui-menu ui-corner-bottom ui-widget ui-widget-content"></ul>
-                                                    </div>
-                                                </div>
-                                                <span tabindex="0" id="ui-id-2-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="ui-id-2-menu" aria-haspopup="true" class="ui-selectmenu-button ui-selectmenu-button-closed ui-corner-all ui-button ui-widget border-1 border-black-10 text-16 font-normal text-slate-700">
-                                                    <span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span>
-                                                    <span class="ui-selectmenu-text px-2em">Select a product</span>
-                                                </span>
-                                            </div>
-                                        </div>
+
                                         <div class="col col-12 py-0 px-15">
                                             <span class="lqd-form-control-wrap">
                                                 <textarea name="textarea" cols="10" rows="4" class="lqd-cf-form-control border-1 border-black-10 rounded-4 px-2em text-16 text-slate-700" aria-required="true" aria-invalid="false" placeholder="Your message"></textarea>
@@ -220,6 +200,14 @@
             </div>
         </div>
     </section>
+    <div class="col col-12 py-0">
+        <div class="flex justify-center">
+            <div class="lqd-tabs lqd-tabs-style-13 flex lqd-tabs-nav-items-not-expanded flex-row-reverse lqd-nav-underline-" data-tabs-options='{"trigger": "click"}'>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15637.1073596482!2d104.92720480000001!3d11.53198785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109511c5ffc60ab%3A0xabbabcf6bf4c8113!2sJCMNippon%20Private%20Ltd.!5e0!3m2!1sen!2skh!4v1730449635207!5m2!1sen!2skh" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
 </div>
-
+<br>
+<br>
 @endsection

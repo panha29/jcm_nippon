@@ -4,7 +4,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="keywords" content="Nippon Paint, House Painting Cambodia, Cambodia, Phnom Penh, ថ្មាំលាបផ្ទះ, Nippon Paint Cambodia">
+		<meta name="keywords" content="HTML Template, site template, seo, marketing, creative, corporate, modern, multipurpose, one page, business, responsive, minimal, saas, startup">
+		<meta name="author" content="LiquidThemes">
+		<meta name="description" content="Hub is a HTML template with high performance, and award-winning design collection.">
+		<meta property="og:title" content="Hub HTML template">
+		<meta property="og:description" content="Hub is a HTML template with high performance, and award-winning design collection.">
+		<meta property="og:type" content="website">
 		<meta property="og:image" content="../css/hub5/images/common/og-image.jpg">
 
 		<link rel="stylesheet" href="../css/hub5/vendors/liquid-icon/lqd-essentials/lqd-essentials.min.css">
@@ -17,6 +22,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+
 	</head>
 
 	<body data-localscroll-offset="95" data-mobile-nav-breakpoint="1199" data-mobile-nav-style="modern" data-mobile-nav-scheme="dark" data-mobile-nav-trigger-alignment="right" data-mobile-header-scheme="gray" data-mobile-logo-alignment="default" data-overlay-onmobile="false">
@@ -39,10 +45,10 @@
 					<div class="module-sticky w-full static flex flex-row items-center justify-between border-1 border-white-10 rounded-100 transition-all pr-10 pl-30">
 						<div class="flex items-center justify-start">
 							<div id="site-logo" class="module-logo flex navbar-brand-plain pointer-events-auto py-20 pr-30">
-								<a class="navbar-brand flex p-0 relative" href="./index-start-hub-5.html" rel="home">
+								<a class="navbar-brand flex p-0 relative" href="../index-start-hub-5.html" rel="home">
 									<span class="navbar-brand-inner post-rel">
-										<img class="logo-sticky" src="./img/logo/logo.png" alt="Starthub five">
-										<img class="logo-default" src="./img/logo/logo.png" alt="Starthub five">
+										<img class="logo-sticky" src="../img/logo/logo.png" alt="Starthub five">
+										<img class="logo-default" src="../img/logo/logo.png" alt="Starthub five">
 									</span>
 								</a>
 							</div>
@@ -52,10 +58,10 @@
 										<a href="#banner" class="text-16 font-medium text-white">Home<sup class="link-sup">01</sup></a>
 									</li>
 									<li class="menu-item-object-page">
-										<a href="./page-start-hub-5-about.html" class="text-16 font-medium text-white">About<sup class="link-sup">02</sup></a>
+										<a href="../page-start-hub-5-about.html" class="text-16 font-medium text-white">About<sup class="link-sup">02</sup></a>
 									</li>
 									<li class="menu-item-object-page menu-item-has-children">
-										<a href="./page-start-hub-5-services.html" class="text-16 font-medium text-white">
+										<a href="../page-start-hub-5-services.html" class="text-16 font-medium text-white">
 											<span>Services</span>
 											<span class="submenu-expander">
 												<svg xmlns="http://www.w3.org/2000/svg" width="21" height="32" viewBox="0 0 21 32" style="width: 1em; height: 1em;">
@@ -69,7 +75,7 @@
 										<a href="#testimonials" class="text-16 font-medium text-white">Customer Stories<sup class="link-sup">04</sup></a>
 									</li>
 									<li class="menu-item-object-page">
-										<a href="./page-start-hub-5-contact.html" class="text-16 font-medium text-white">Contact<sup class="link-sup">05</sup></a>
+										<a href="../page-start-hub-5-contact.html" class="text-16 font-medium text-white">Contact<sup class="link-sup">05</sup></a>
 									</li>
 								</ul>
 							</div>
@@ -101,9 +107,9 @@
 								</span>
 							</span>
 						</button>
-						<a class="navbar-brand flex relative" href="./index-start-hub-5.html">
+						<a class="navbar-brand flex relative" href="../index-start-hub-5.html">
 							<span class="navbar-brand-inner">
-								<img class="logo-default" src="./css/hub5/images/demo/start-hub-5/logo-dark.svg" alt="Starthub five">
+								<img class="logo-default" src="../css/hub5/images/demo/start-hub-5/logo-dark.svg" alt="Starthub five">
 							</span>
 						</a>
 					</div>
@@ -117,13 +123,13 @@
 									</a>
 								</li>
 								<li>
-									<a href="./page-start-hub-5-about.html">
+									<a href="../page-start-hub-5-about.html">
 										<span>About</span>
 										<sup class="link-sup">02</sup>
 									</a>
 								</li>
 								<li class="menu-item-object-page menu-item-has-children">
-									<a href="./page-start-hub-5-services.html">
+									<a href="../page-start-hub-5-services.html">
 										<span>Services</span>
 										<span class="submenu-expander absolute"></span>
 										<sup class="link-sup">03</sup>
@@ -136,7 +142,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="./page-start-hub-5-contact.html">
+									<a href="../page-start-hub-5-contact.html">
 										<span>Contact</span>
 										<sup class="link-sup">05</sup>
 									</a>
@@ -151,7 +157,7 @@
 				<div id="lqd-contents-wrap">
 
 					<!-- Start Banner -->
-					<section class="lqd-section banner min-h-100vh flex flex-wrap flex-row items-center justify-around transition-all bg-no-repeat bg-center bg-cover" id="banner" style="background-image: url(./css/hub5/images/demo/start-hub-5/banner1-bg.svg);">
+					<section class="lqd-section banner min-h-100vh flex flex-wrap flex-row items-center justify-around transition-all bg-no-repeat bg-center bg-cover" id="banner" style="background-image: url(../css/hub5/images/demo/start-hub-5/banner1-bg.svg);">
 						<div class="lqd-shape lqd-shape-bottom rotate-180 module-shape" data-negative="false">
 							<svg class="lqd-custom-shape h-420 -z-1 left-50percent" fill="none" height="461" viewBox="0 0 1440 461" width="1440" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
 								<path class="lqd-shape-fill" d="m0 131.906 34.4-20.017c34.4-19.9 103.2-59.936 171.68-82.979 68.64-23.043 136.8-29.328003 205.44-4.306 68.48 25.022 137.28 81.35 205.76 80.768 68.64-.582 136.8-58.074 205.44-84.608 68.48-26.535 137.28-22.345 205.76-16.06 68.64 6.168 136.8 14.315 205.44 22.811 68.48 8.612 137.28 17.457 171.68 22l34.4 4.422v396.851h-1440z" fill-opacity=".09" fill="#5A31C4FC">
@@ -172,7 +178,7 @@
 							<div class="lqd-imggrp-single block relative w-full max-w-full">
 								<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 									<figure class="w-full relative animation-element">
-										<img width="260" height="297" src="./css/hub5/images/demo/start-hub-5/shape-circle-green.png" alt="shape">
+										<img width="260" height="297" src="../css/hub5/images/demo/start-hub-5/shape-circle-green.png" alt="shape">
 									</figure>
 								</div>
 							</div>
@@ -182,35 +188,35 @@
 								<div class="lqd-imggrp-single block relative opacity-30 hover:opacity-100 text-center sm:w-50percent">
 									<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 										<figure class="w-full relative">
-											<img width="58" height="58" src="./css/hub5/images/demo/start-hub-5/client-1.svg" alt="clients">
+											<img width="58" height="58" src="../css/hub5/images/demo/start-hub-5/client-1.svg" alt="clients">
 										</figure>
 									</div>
 								</div>
 								<div class="lqd-imggrp-single block relative opacity-30 hover:opacity-100 text-center sm:w-50percent">
 									<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 										<figure class="w-full relative">
-											<img width="81" height="34" src="./css/hub5/images/demo/start-hub-5/client-4.svg" alt="clients">
+											<img width="81" height="34" src="../css/hub5/images/demo/start-hub-5/client-4.svg" alt="clients">
 										</figure>
 									</div>
 								</div>
 								<div class="lqd-imggrp-single block relative opacity-30 hover:opacity-100 text-center sm:w-50percent">
 									<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 										<figure class="w-full relative">
-											<img width="45" height="33" src="./css/hub5/images/demo/start-hub-5/client-3.svg" alt="clients">
+											<img width="45" height="33" src="../css/hub5/images/demo/start-hub-5/client-3.svg" alt="clients">
 										</figure>
 									</div>
 								</div>
 								<div class="lqd-imggrp-single block relative opacity-30 hover:opacity-100 text-center sm:w-50percent">
 									<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 										<figure class="w-full relative">
-											<img width="49" height="49" src="./css/hub5/images/demo/start-hub-5/client-5.svg" alt="clients">
+											<img width="49" height="49" src="../css/hub5/images/demo/start-hub-5/client-5.svg" alt="clients">
 										</figure>
 									</div>
 								</div>
 								<div class="lqd-imggrp-single block relative opacity-30 hover:opacity-100 text-center sm:w-full">
 									<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 										<figure class="w-full relative">
-											<img width="64" height="23" src="./css/hub5/images/demo/start-hub-5/client-2.svg" alt="clients">
+											<img width="64" height="23" src="../css/hub5/images/demo/start-hub-5/client-2.svg" alt="clients">
 										</figure>
 									</div>
 								</div>
@@ -220,7 +226,7 @@
 									<div class="lqd-imggrp-single block relative" data-float="ease-in-out">
 										<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 											<figure class="w-full relative">
-												<img width="150" height="138" src="./css/hub5/images/demo/start-hub-5/shape-crown.png" alt="shape">
+												<img width="150" height="138" src="../css/hub5/images/demo/start-hub-5/shape-crown.png" alt="shape">
 											</figure>
 										</div>
 									</div>
@@ -229,7 +235,7 @@
 									<div class="lqd-imggrp-single block relative" data-float="ease-in-out">
 										<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 											<figure class="w-full relative">
-												<img width="222" height="290" src="./css/hub5/images/demo/start-hub-5/shape-person.png" alt="shape">
+												<img width="222" height="290" src="../css/hub5/images/demo/start-hub-5/shape-person.png" alt="shape">
 											</figure>
 										</div>
 									</div>
@@ -329,7 +335,7 @@
 					<!-- End Banner -->
 
 					<!-- Start Solutions -->
-                    @include('user_dashboard.websiteV2.color_pallete.testing_color')
+                    @include('websiteV2.color_pallete.testing_color')
 					<!-- End Solutions -->
 
 					<!-- Start About Progress -->
@@ -345,7 +351,7 @@
 									<div class="lqd-imggrp-single block relative" data-shadow-style="4">
 										<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center md:flex-col">
 											<figure class="w-full relative">
-												<img class="rounded-12" width="862" height="1010" src="./webv2/images/banner/interior&exterior.jpg" alt="about progress">
+												<img class="rounded-12" width="862" height="1010" src="../webv2/images/banner/interior&exterior.jpg" alt="about progress">
 												<span class="lqd-overlay flex lqd-imggrp-overlay-bg bg-transparent" style="background-image: linear-gradient(0deg, #2E4655 0%, #2E465500 43%);"></span>
 											</figure>
 										</div>
@@ -507,7 +513,7 @@
 										<div class="lqd-imggrp-single block relative" data-shadow-style="4">
 											<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 												<figure class="w-full relative" style="box-shadow: none">
-													<img draggable="false" class="rounded-12" width="541" height="550" src="./webv2/images/colorpattern.jpg" alt="passion">
+													<img draggable="false" class="rounded-12" width="541" height="550" src="../webv2/images/colorpattern.jpg" alt="passion">
 												</figure>
 											</div>
 										</div>
@@ -516,7 +522,7 @@
 										<div class="lqd-imggrp-single block relative" data-shadow-style="4">
 											<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 												<figure class="w-full relative" style="box-shadow: none">
-													<img draggable="false" class="rounded-12" width="526" height="621" src="./webv2/images/big-pic.png" alt="passion">
+													<img draggable="false" class="rounded-12" width="526" height="621" src="../webv2/images/big-pic.png" alt="passion">
 												</figure>
 											</div>
 										</div>
@@ -756,7 +762,7 @@
 														<div class="lqd-pf-img mb-1em relative rounded-10 overflow-hidden">
 															<figure>
 																<figure class="w-full">
-																	<img width="698" height="478" src="./img/project_reference/company_project_reference/202311061647cml10001.jpg" alt="case studies">
+																	<img width="698" height="478" src="../img/project_reference/company_project_reference/202311061647cml10001.jpg" alt="case studies">
 																</figure>
 															</figure>
 															<span class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center bg-transparent" style="background-image: linear-gradient(180deg, #675DE100 0%, #675DE1 100%);"></span>
@@ -771,7 +777,7 @@
 																</li>
 															</ul>
 														</div>
-														<a href="./img/project_reference/company_project_reference/202311061647cml10001.jpg" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger fresco" data-fresco-group="true"></a>
+														<a href="../img/project_reference/company_project_reference/202311061647cml10001.jpg" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger fresco" data-fresco-group="true"></a>
 													</div>
 												</article>
 											</div>
@@ -781,7 +787,7 @@
 														<div class="lqd-pf-img mb-1em relative rounded-10 overflow-hidden">
 															<figure>
 																<figure class="w-full">
-																	<img width="698" height="478" src="./img/project_reference/company_project_reference/202311061649casa10002.jpg" alt="case studies">
+																	<img width="698" height="478" src="../img/project_reference/company_project_reference/202311061649casa10002.jpg" alt="case studies">
 																</figure>
 															</figure>
 															<span class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center bg-transparent" style="background-image: linear-gradient(180deg, #675DE100 0%, #675DE1 100%);"></span>
@@ -796,7 +802,7 @@
 																</li>
 															</ul>
 														</div>
-														<a href="./img/project_reference/company_project_reference/202311061649casa10002.jpg" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger fresco" data-fresco-group="true"></a>
+														<a href="../img/project_reference/company_project_reference/202311061649casa10002.jpg" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger fresco" data-fresco-group="true"></a>
 													</div>
 												</article>
 											</div>
@@ -806,7 +812,7 @@
 														<div class="lqd-pf-img mb-1em relative rounded-10 overflow-hidden">
 															<figure>
 																<figure class="w-full">
-																	<img width="698" height="478" src="./img/project_reference/company_project_reference/cambodian_party1.jpg" alt="case studies">
+																	<img width="698" height="478" src="../img/project_reference/company_project_reference/cambodian_party1.jpg" alt="case studies">
 																</figure>
 															</figure>
 															<span class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center bg-transparent" style="background-image: linear-gradient(180deg, #675DE100 0%, #675DE1 100%);"></span>
@@ -821,7 +827,7 @@
 																</li>
 															</ul>
 														</div>
-														<a href="./img/project_reference/company_project_reference/cambodian_party1.jpg" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger fresco" data-fresco-group="true"></a>
+														<a href="../img/project_reference/company_project_reference/cambodian_party1.jpg" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger fresco" data-fresco-group="true"></a>
 													</div>
 												</article>
 											</div>
@@ -831,7 +837,7 @@
 														<div class="lqd-pf-img mb-1em relative rounded-10 overflow-hidden">
 															<figure>
 																<figure class="w-full">
-																	<img width="698" height="476" src="./img/project_reference/company_project_reference/monument.jpg" alt="case studies">
+																	<img width="698" height="476" src="../img/project_reference/company_project_reference/monument.jpg" alt="case studies">
 																</figure>
 															</figure>
 															<span class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center bg-transparent" style="background-image: linear-gradient(180deg, #675DE100 0%, #675DE1 100%);"></span>
@@ -846,7 +852,7 @@
 																</li>
 															</ul>
 														</div>
-														<a href="./img/project_reference/company_project_reference/monument.jpg" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger fresco" data-fresco-group="true"></a>
+														<a href="../img/project_reference/company_project_reference/monument.jpg" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger fresco" data-fresco-group="true"></a>
 													</div>
 												</article>
 											</div>
@@ -856,7 +862,7 @@
 														<div class="lqd-pf-img mb-1em relative rounded-10 overflow-hidden">
 															<figure>
 																<figure class="w-full">
-																	<img width="698" height="476" src="./img/project_reference/company_project_reference/202311061602aeon.jpg" alt="case studies">
+																	<img width="698" height="476" src="../img/project_reference/company_project_reference/202311061602aeon.jpg" alt="case studies">
 																</figure>
 															</figure>
 															<span class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center bg-transparent" style="background-image: linear-gradient(180deg, #675DE100 0%, #675DE1 100%);"></span>
@@ -871,7 +877,7 @@
 																</li>
 															</ul>
 														</div>
-														<a href="./img/project_reference/company_project_reference/202311061602aeon.jpg" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger fresco" data-fresco-group="true"></a>
+														<a href="../img/project_reference/company_project_reference/202311061602aeon.jpg" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger fresco" data-fresco-group="true"></a>
 													</div>
 												</article>
 											</div>
@@ -881,7 +887,7 @@
 														<div class="lqd-pf-img mb-1em relative rounded-10 overflow-hidden">
 															<figure>
 																<figure class="w-full">
-																	<img width="698" height="476" src="./img/project_reference/company_project_reference/202311061649maline10002.jpg" alt="case studies">
+																	<img width="698" height="476" src="../img/project_reference/company_project_reference/202311061649maline10002.jpg" alt="case studies">
 																</figure>
 															</figure>
 															<span class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center bg-transparent" style="background-image: linear-gradient(180deg, #675DE100 0%, #675DE1 100%);"></span>
@@ -896,7 +902,7 @@
 																</li>
 															</ul>
 														</div>
-														<a href="./img/project_reference/company_project_reference/202311061649maline10002.jpg" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger fresco" data-fresco-group="true"></a>
+														<a href="../img/project_reference/company_project_reference/202311061649maline10002.jpg" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger fresco" data-fresco-group="true"></a>
 													</div>
 												</article>
 											</div>
@@ -1004,7 +1010,7 @@
 							<div class="lqd-imggrp-single block relative w-full max-w-full text-center">
 								<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 									<figure class="w-full relative">
-										<img width="869" height="453" src="./css/hub5/images/demo/start-hub-5/shape-waves.svg" alt="shape wave">
+										<img width="869" height="453" src="../css/hub5/images/demo/start-hub-5/shape-waves.svg" alt="shape wave">
 									</figure>
 								</div>
 							</div>
@@ -1013,7 +1019,7 @@
 							<div class="lqd-imggrp-single block relative w-full max-w-full text-center">
 								<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 									<figure class="w-full relative">
-										<img width="254" height="254" src="./css/hub5/images/demo/start-hub-5/shape-ellipse.svg" alt="shape">
+										<img width="254" height="254" src="../css/hub5/images/demo/start-hub-5/shape-ellipse.svg" alt="shape">
 									</figure>
 								</div>
 							</div>
@@ -1027,7 +1033,7 @@
 												<div class="lqd-imggrp-single block relative w-full max-w-full text-center">
 													<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 														<figure class="w-full relative">
-															<img class="w-65" width="128" height="150" src="./css/hub5/images/demo/start-hub-5/shape-prlx.png" alt="parallax">
+															<img class="w-65" width="128" height="150" src="../css/hub5/images/demo/start-hub-5/shape-prlx.png" alt="parallax">
 														</figure>
 													</div>
 												</div>
@@ -1038,14 +1044,14 @@
 											<div class="lqd-imggrp-single block relative mr-20">
 												<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 													<figure class="w-full relative">
-														<img width="26" height="28" src="./css/hub5/images/demo/start-hub-5/angular.svg" alt="angular">
+														<img width="26" height="28" src="../css/hub5/images/demo/start-hub-5/angular.svg" alt="angular">
 													</figure>
 												</div>
 											</div>
 											<div class="lqd-imggrp-single block relative mr-20">
 												<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 													<figure class="w-full relative">
-														<img width="31" height="31" src="./css/hub5/images/demo/start-hub-5/firefox.svg" alt="firefox">
+														<img width="31" height="31" src="../css/hub5/images/demo/start-hub-5/firefox.svg" alt="firefox">
 													</figure>
 												</div>
 											</div>
@@ -1200,7 +1206,7 @@
 										<div class="lqd-imggrp-single block relative" data-float="ease-out">
 											<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 												<figure class="w-full relative">
-													<img class="w-50percent" width="174" height="179" src="./css/hub5/images/demo/start-hub-5/shape-like.png" alt="shape">
+													<img class="w-50percent" width="174" height="179" src="../css/hub5/images/demo/start-hub-5/shape-like.png" alt="shape">
 												</figure>
 											</div>
 										</div>
@@ -1211,7 +1217,7 @@
 										<div class="lqd-imggrp-single block relative w-full max-w-full text-center py-45 opacity-60">
 											<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 												<figure class="w-full relative">
-													<img width="100" height="42" src="./css/hub5/images/demo/start-hub-5/company-1.svg" alt="global companies">
+													<img width="100" height="42" src="../css/hub5/images/demo/start-hub-5/company-1.svg" alt="global companies">
 												</figure>
 											</div>
 										</div>
@@ -1220,7 +1226,7 @@
 										<div class="lqd-imggrp-single block relative w-full max-w-full text-center py-35 opacity-60">
 											<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 												<figure class="w-full relative">
-													<img width="72" height="72" src="./css/hub5/images/demo/start-hub-5/company-2.svg" alt="global companies">
+													<img width="72" height="72" src="../css/hub5/images/demo/start-hub-5/company-2.svg" alt="global companies">
 												</figure>
 											</div>
 										</div>
@@ -1229,7 +1235,7 @@
 										<div class="lqd-imggrp-single block relative w-full max-w-full text-center py-35 opacity-60">
 											<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 												<figure class="w-full relative">
-													<img width="61" height="61" src="./css/hub5/images/demo/start-hub-5/company-3.svg" alt="global companies">
+													<img width="61" height="61" src="../css/hub5/images/demo/start-hub-5/company-3.svg" alt="global companies">
 												</figure>
 											</div>
 										</div>
@@ -1238,7 +1244,7 @@
 										<div class="lqd-imggrp-single block relative w-full max-w-full text-center py-55 opacity-60">
 											<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 												<figure class="w-full relative">
-													<img width="79" height="28" src="./css/hub5/images/demo/start-hub-5/company-4.svg" alt="global companies">
+													<img width="79" height="28" src="../css/hub5/images/demo/start-hub-5/company-4.svg" alt="global companies">
 												</figure>
 											</div>
 										</div>
@@ -1247,7 +1253,7 @@
 										<div class="lqd-imggrp-single block relative w-full max-w-full text-center py-55 opacity-60">
 											<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 												<figure class="w-full relative">
-													<img width="177" height="35" src="./css/hub5/images/demo/start-hub-5/company-5.svg" alt="global companies">
+													<img width="177" height="35" src="../css/hub5/images/demo/start-hub-5/company-5.svg" alt="global companies">
 												</figure>
 											</div>
 										</div>
@@ -1256,7 +1262,7 @@
 										<div class="lqd-imggrp-single block relative w-full max-w-full text-center py-55 opacity-60">
 											<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 												<figure class="w-full relative">
-													<img width="79" height="35" src="./css/hub5/images/demo/start-hub-5/company-6.svg" alt="global companies">
+													<img width="79" height="35" src="../css/hub5/images/demo/start-hub-5/company-6.svg" alt="global companies">
 												</figure>
 											</div>
 										</div>
@@ -1265,7 +1271,7 @@
 										<div class="lqd-imggrp-single block relative w-full max-w-full text-center py-45 opacity-60">
 											<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 												<figure class="w-full relative">
-													<img width="122" height="36" src="./css/hub5/images/demo/start-hub-5/company-7.svg" alt="global companies">
+													<img width="122" height="36" src="../css/hub5/images/demo/start-hub-5/company-7.svg" alt="global companies">
 												</figure>
 											</div>
 										</div>
@@ -1274,7 +1280,7 @@
 										<div class="lqd-imggrp-single block relative w-full max-w-full text-center py-45 opacity-60">
 											<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 												<figure class="w-full relative">
-													<img width="67" height="49" src="./css/hub5/images/demo/start-hub-5/company-8.svg" alt="global companies">
+													<img width="67" height="49" src="../css/hub5/images/demo/start-hub-5/company-8.svg" alt="global companies">
 												</figure>
 											</div>
 										</div>
@@ -1283,7 +1289,7 @@
 										<div class="lqd-imggrp-single block relative w-full max-w-full text-center py-45 opacity-60">
 											<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 												<figure class="w-full relative">
-													<img width="66" height="51" src="./css/hub5/images/demo/start-hub-5/company-9.svg" alt="global companies">
+													<img width="66" height="51" src="../css/hub5/images/demo/start-hub-5/company-9.svg" alt="global companies">
 												</figure>
 											</div>
 										</div>
@@ -1341,7 +1347,7 @@
 																	<div class="lqd-testi-info flex flex-wrap items-center justify-between mb-1/5em">
 																		<div class="lqd-testi-details flex items-center">
 																			<figure class="lqd-testi-avatar rounded-full overflow-hidden">
-																				<img decoding="async" class="rounded-full" src="./css/hub5/images/demo/start-hub-5/avatar-1.jpg" alt="leandroMariotto">
+																				<img decoding="async" class="rounded-full" src="../css/hub5/images/demo/start-hub-5/avatar-1.jpg" alt="leandroMariotto">
 																			</figure>
 																			<div class="lqd-testi-np pl-1/5em">
 																				<h3 class="font-medium">leandroMariotto</h3>
@@ -1368,7 +1374,7 @@
 																	<div class="lqd-testi-info flex flex-wrap items-center justify-between mb-1/5em">
 																		<div class="lqd-testi-details flex items-center">
 																			<figure class="lqd-testi-avatar rounded-full overflow-hidden">
-																				<img decoding="async" class="rounded-full" src="./css/hub5/images/demo/start-hub-5/avatar-2.jpg" alt="myadesigns">
+																				<img decoding="async" class="rounded-full" src="../css/hub5/images/demo/start-hub-5/avatar-2.jpg" alt="myadesigns">
 																			</figure>
 																			<div class="lqd-testi-np pl-1/5em">
 																				<h3 class="font-medium">myadesigns</h3>
@@ -1395,7 +1401,7 @@
 																	<div class="lqd-testi-info flex flex-wrap items-center justify-between mb-1/5em">
 																		<div class="lqd-testi-details flex items-center">
 																			<figure class="lqd-testi-avatar rounded-full overflow-hidden">
-																				<img decoding="async" class="rounded-full" src="./css/hub5/images/demo/start-hub-5/avatar-3.jpg" alt="arke1">
+																				<img decoding="async" class="rounded-full" src="../css/hub5/images/demo/start-hub-5/avatar-3.jpg" alt="arke1">
 																			</figure>
 																			<div class="lqd-testi-np pl-1/5em">
 																				<h3 class="font-medium">arke1</h3>
@@ -1422,7 +1428,7 @@
 																	<div class="lqd-testi-info flex flex-wrap items-center justify-between mb-1/5em">
 																		<div class="lqd-testi-details flex items-center">
 																			<figure class="lqd-testi-avatar rounded-full overflow-hidden">
-																				<img decoding="async" class="rounded-full" src="./css/hub5/images/demo/start-hub-5/avatar-4.jpg" alt="ritamjahed">
+																				<img decoding="async" class="rounded-full" src="../css/hub5/images/demo/start-hub-5/avatar-4.jpg" alt="ritamjahed">
 																			</figure>
 																			<div class="lqd-testi-np pl-1/5em">
 																				<h3 class="font-medium">ritamjahed </h3>
@@ -1449,7 +1455,7 @@
 																	<div class="lqd-testi-info flex flex-wrap items-center justify-between mb-1/5em">
 																		<div class="lqd-testi-details flex items-center">
 																			<figure class="lqd-testi-avatar rounded-full overflow-hidden">
-																				<img decoding="async" class="rounded-full" src="./css/hub5/images/demo/start-hub-5/avatar-2.jpg" alt="arke1">
+																				<img decoding="async" class="rounded-full" src="../css/hub5/images/demo/start-hub-5/avatar-2.jpg" alt="arke1">
 																			</figure>
 																			<div class="lqd-testi-np pl-1/5em">
 																				<h3 class="font-medium">arke1</h3>
@@ -1476,7 +1482,7 @@
 																	<div class="lqd-testi-info flex flex-wrap items-center justify-between mb-1/5em">
 																		<div class="lqd-testi-details flex items-center">
 																			<figure class="lqd-testi-avatar rounded-full overflow-hidden">
-																				<img decoding="async" class="rounded-full" src="./css/hub5/images/demo/start-hub-5/avatar-3.jpg" alt="myadesigns">
+																				<img decoding="async" class="rounded-full" src="../css/hub5/images/demo/start-hub-5/avatar-3.jpg" alt="myadesigns">
 																			</figure>
 																			<div class="lqd-testi-np pl-1/5em">
 																				<h3 class="font-medium">myadesigns</h3>
@@ -1504,7 +1510,7 @@
 																	<div class="lqd-testi-info flex flex-wrap items-center justify-between mb-1/5em">
 																		<div class="lqd-testi-details flex items-center">
 																			<figure class="lqd-testi-avatar rounded-full overflow-hidden">
-																				<img decoding="async" class="rounded-full" src="./css/hub5/images/demo/start-hub-5/avatar-4.jpg" alt="ritamjahed">
+																				<img decoding="async" class="rounded-full" src="../css/hub5/images/demo/start-hub-5/avatar-4.jpg" alt="ritamjahed">
 																			</figure>
 																			<div class="lqd-testi-np pl-1/5em">
 																				<h3 class="font-medium">ritamjahed </h3>
@@ -1671,7 +1677,7 @@
 											<div class="screen-reader-response absolute overflow-hidden p-0 border-0">
 												<p role="status" aria-live="polite" aria-atomic="true"></p>
 											</div>
-											<form action="./css/hub5/php/mailer.php" method="post" class="lqd-cf-form" novalidate="novalidate" data-status="init">
+											<form action="../css/hub5/php/mailer.php" method="post" class="lqd-cf-form" novalidate="novalidate" data-status="init">
 												<div class="row -mr-15 -ml-15">
 													<div class="col col-12 col-md-6 px-15">
 														<span class="lqd-form-control-wrap" data-name="name">
@@ -1846,7 +1852,7 @@
 							<div class="lqd-imggrp-single block relative mr-20">
 								<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 									<figure class="w-full relative">
-										<img width="75" height="21" src="./css/hub5/images/demo/start-hub-5/Logo.svg" alt="Start Hub 5">
+										<img width="75" height="21" src="../css/hub5/images/demo/start-hub-5/Logo.svg" alt="Start Hub 5">
 									</figure>
 								</div>
 							</div>
@@ -1903,7 +1909,7 @@
 		<div id="contact-modal" class="lity-modal lqd-modal lity-hide" data-modal-type="fullscreen">
 			<div class="lqd-modal-inner">
 				<div class="lqd-modal-head"></div>
-				<section class="lqd-section lqd-modal-content link-black bg-center bg-cover bg-no-repeat" style="background-image: url(./css/hub5/images/common/modal-bg.jpeg);">
+				<section class="lqd-section lqd-modal-content link-black bg-center bg-cover bg-no-repeat" style="background-image: url(../css/hub5/images/common/modal-bg.jpeg);">
 					<div class="container min-h-100vh flex items-center flex-wrap">
 						<div class="w-55percent flex flex-col sm:w-full">
 							<div class="flex flex-col items-start justify-center py-10 pr-100 pl-10">
@@ -1946,7 +1952,7 @@
 									<div class="screen-reader-response">
 										<p role="status" aria-live="polite" aria-atomic="true"></p>
 									</div>
-									<form action="./css/hub5/php/mailer.php" method="post" class="lqd-cf-form" novalidate="novalidate" data-status="init">
+									<form action="../css/hub5/php/mailer.php" method="post" class="lqd-cf-form" novalidate="novalidate" data-status="init">
 										<div class="flex flex-wrap -mr-15 -ml-15">
 											<div class="w-50percent px-15 md:w-full">
 												<span class="lqd-form-control-wrap" data-name="your-name">
@@ -2020,28 +2026,28 @@
 		<!-- Google map api -->
 		<script src="//maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 
-		<script src="./css/hub5/vendors/jquery.min.js"></script>
-		<script src="./css/hub5/vendors/jquery-ui/jquery-ui.min.js"></script>
-		<script src="./css/hub5/vendors/bootstrap/js/bootstrap.min.js"></script>
-		<script src="./css/hub5/vendors/fastdom/fastdom.min.js"></script>
-		<script src="./css/hub5/vendors/fresco/js/fresco.js"></script>
-		<script src="./css/hub5/vendors/lity/lity.min.js"></script>
-		<script src="./css/hub5/vendors/gsap/minified/gsap.min.js"></script>
-		<script src="./css/hub5/vendors/gsap/utils/CustomEase.min.js"></script>
-		<script src="./css/hub5/vendors/gsap/minified/DrawSVGPlugin.min.js"></script>
-		<script src="./css/hub5/vendors/gsap/utils/SplitText.min.js"></script>
-		<script src="./css/hub5/vendors/gsap/minified/ScrollTrigger.min.js"></script>
-		<script src="./css/hub5/vendors/draggabilly.pkgd.min.js"></script>
-		<script src="./css/hub5/vendors/draw-shape/liquidDrawShape.min.js"></script>
-		<script src="./css/hub5/vendors/animated-blob/liquidAnimatedBlob.min.js"></script>
-		<script src="./css/hub5/vendors/fontfaceobserver.js"></script>
-		<script src="./css/hub5/vendors/flickity/flickity.pkgd.min.js"></script>
-		<script src="./css/hub5/vendors/isotope/isotope.pkgd.min.js"></script>
-		<script src="./css/hub5/vendors/isotope/packery-mode.pkgd.min.js"></script>
-		<script src="./css/hub5/vendors/flickity/flickity-fade.min.js"></script>
-		<script src="./css/hub5/js/liquid-gdpr.min.js"></script>
-		<script src="./css/hub5/js/theme.min.js"></script>
-		<script src="./css/hub5/js/liquid-ajax-contact-form.min.js"></script>
+		<script src="../css/hub5/vendors/jquery.min.js"></script>
+		<script src="../css/hub5/vendors/jquery-ui/jquery-ui.min.js"></script>
+		<script src="../css/hub5/vendors/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../css/hub5/vendors/fastdom/fastdom.min.js"></script>
+		<script src="../css/hub5/vendors/fresco/js/fresco.js"></script>
+		<script src="../css/hub5/vendors/lity/lity.min.js"></script>
+		<script src="../css/hub5/vendors/gsap/minified/gsap.min.js"></script>
+		<script src="../css/hub5/vendors/gsap/utils/CustomEase.min.js"></script>
+		<script src="../css/hub5/vendors/gsap/minified/DrawSVGPlugin.min.js"></script>
+		<script src="../css/hub5/vendors/gsap/utils/SplitText.min.js"></script>
+		<script src="../css/hub5/vendors/gsap/minified/ScrollTrigger.min.js"></script>
+		<script src="../css/hub5/vendors/draggabilly.pkgd.min.js"></script>
+		<script src="../css/hub5/vendors/draw-shape/liquidDrawShape.min.js"></script>
+		<script src="../css/hub5/vendors/animated-blob/liquidAnimatedBlob.min.js"></script>
+		<script src="../css/hub5/vendors/fontfaceobserver.js"></script>
+		<script src="../css/hub5/vendors/flickity/flickity.pkgd.min.js"></script>
+		<script src="../css/hub5/vendors/isotope/isotope.pkgd.min.js"></script>
+		<script src="../css/hub5/vendors/isotope/packery-mode.pkgd.min.js"></script>
+		<script src="../css/hub5/vendors/flickity/flickity-fade.min.js"></script>
+		<script src="../css/hub5/js/liquid-gdpr.min.js"></script>
+		<script src="../css/hub5/js/theme.min.js"></script>
+		<script src="../css/hub5/js/liquid-ajax-contact-form.min.js"></script>
 
 		<!-- Start custom cursor -->
 		<div class="lqd-cc lqd-cc--inner fixed pointer-events-none"></div>

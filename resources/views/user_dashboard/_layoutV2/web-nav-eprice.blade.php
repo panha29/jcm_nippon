@@ -1,3 +1,8 @@
+<style>
+    .nav-text{
+        color: black;
+    }
+</style>
 <div class="lqd-sticky-placeholder hidden"></div>
 <header id="site-header" class="main-header main-header-overlay" data-sticky-header="true" data-sticky-values-measured="false" data-sticky-options='{"disableOnMobile": true}'>
     <section class="lqd-section desktop-header md:hidden">
@@ -21,13 +26,13 @@
                     <div class="navbar-collapse inline-flex lqd-submenu-cover p-0" id="main-header-collapse" aria-expanded="false" role="navigation">
                         <ul style="font-weight: 600; text-transform:uppercase;" id="primary-nav" class="main-nav flex justify-center reset-ul inline-ul lqd-menu-counter-right lqd-menu-items-inline main-nav-hover-default lqd-submenu-toggle-hover" data-submenu-options='{"toggleType": "fade", "handler": "mouse-in-out"}' data-localscroll="true" data-localscroll-options='{"itemsSelector" : ">li > a", "trackWindowScroll": true, "includeParentAsOffset": true}'>
                             <li class="is-active">
-                                <a class="leading-1/4em text-blue-700" href="/User/Dashboard">
+                                <a class="leading-1/4em text-blue-700 nav-text" href="/User/Dashboard">
                                     Home
                                 </a>
                             </li>
 
                             <li class="menu-item-has-children">
-                                <a class="leading-1/4em text-blue-700" href="/User/Products">
+                                <a class="leading-1/4em text-blue-700 nav-text" href="/User/Products">
                                     Products
                                     <span class="submenu-expander"></span>
                                     {{-- <span class="link-icon inline-flex hide-if-empty right-icon">
@@ -44,7 +49,7 @@
                             </li>
 
                             <li class="menu-item-has-children">
-                                <a class="leading-1/4em text-blue-700">
+                                <a class="leading-1/4em text-blue-700 nav-text">
                                     About Company
                                     <span class="submenu-expander"></span>
                                     <span class="link-icon inline-flex hide-if-empty right-icon">
@@ -64,28 +69,28 @@
                                 </ul>
                             </li>
                             <li>
-                                <a class="leading-1/4em text-blue-700" href="/User/Painting-Services">
+                                <a class="leading-1/4em text-blue-700 nav-text" href="/User/Painting-Services">
                                     Painting Services
                                 </a>
                             </li>
                             <li>
-                                <a class="leading-1/4em text-blue-700" href="/User/About-Us">
+                                <a class="leading-1/4em text-blue-700 nav-text" href="/User/About-Us">
                                     About Us
                                 </a>
                             </li>
                             <li>
-                                <a class="leading-1/4em text-blue-700" href="/User/Contact-Us">
+                                <a class="leading-1/4em text-blue-700 nav-text" href="/User/Contact-Us">
                                     Contact Us
                                 </a>
                             </li>
                             <li>
-                                <a class="leading-1/4em text-blue-700" href="/User/Color-Palette">
+                                <a class="leading-1/4em text-blue-700 nav-text" href="/User/Color-Palette">
                                     Color Palette
                                 </a>
                             </li>
                             @if(Auth::user()->member == 'yes')
                                 <li>
-                                    <a class="leading-1/4em text-blue-700" href="/User/Color-Pricing">
+                                    <a class="leading-1/4em text-blue-700 nav-text" href="/User/Color-Pricing">
                                         Color Pricing
                                     </a>
                                 </li>

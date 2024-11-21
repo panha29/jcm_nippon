@@ -9,11 +9,7 @@
 
 @section('js_page')
 @endsection
-<style>
-    .text-white{
-        color: black !important;
-    }
-</style>
+
 @section('content')
 <div id="lqd-contents-wrap">
     <div class="container">

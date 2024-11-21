@@ -75,14 +75,31 @@ class UserLoginController extends Controller
         return view('user_dashboard.websiteV2.news.news',compact('nav','news','media'));
     }
 
+    // function user_color_palette(){
+    //     // $color = DB::table('colorpalette')->get();
+    //     $nav = CategoryModel::all();
+    //     $color = Cache::remember('colorpalette', $seconds = 86400, function () {
+    //         return DB::table('colorpalette')->get();
+    //     });
+    //     return view('user_dashboard.websiteV2.color_palette.color_palette',compact('nav','color'));
+    // }
+
     function user_color_palette(){
-        // $color = DB::table('colorpalette')->get();
         $nav = CategoryModel::all();
-        $color = Cache::remember('colorpalette', $seconds = 86400, function () {
-            return DB::table('colorpalette')->get();
-        });
-        return view('user_dashboard.websiteV2.color_palette.color_palette',compact('nav','color'));
+        $color = DB::table('colorpalette')->get();
+        $GreenUser = DB::table('colorpalette')->where('colorpalette_category','=','Green')->get();
+        $RedUser = DB::table('colorpalette')->where('colorpalette_category','=','Red')->get();
+        $YellowUser = DB::table('colorpalette')->where('colorpalette_category','=','Yellow')->get();
+        $OrangeUser = DB::table('colorpalette')->where('colorpalette_category','=','Orange')->get();
+        $BlueUser = DB::table('colorpalette')->where('colorpalette_category','=','Blue')->get();
+        $PurpleUser = DB::table('colorpalette')->where('colorpalette_category','=','Purple')->get();
+        $GreyUser = DB::table('colorpalette')->where('colorpalette_category','=','Grey')->get();
+        $NeutralUser = DB::table('colorpalette')->where('colorpalette_category','=','Neutral')->get();
+        $GreenBlueUser = DB::table('colorpalette')->where('colorpalette_category','=','GreenBlue')->get();
+        $OffWhiteUser = DB::table('colorpalette')->where('colorpalette_category','=','OffWhite')->get();
+        return view('user_dashboard.websiteV2.color_palette.color_palette',compact('nav','color','GreenUser','RedUser','YellowUser','OrangeUser','BlueUser','PurpleUser','GreyUser','NeutralUser','GreenBlueUser','OffWhiteUser'));
     }
+
     function user_contact_us(){
         $nav = CategoryModel::all();
         $product = ProductModel::all();

@@ -1,3 +1,14 @@
+<style>
+    .nav-text{
+        color: black;
+    }
+    .bg-green-300 {
+    background-color: rgb(255 6 6);
+    }
+    .text-primary {
+    color: #ffffff;
+}
+</style>
 <div class="lqd-sticky-placeholder hidden"></div>
 <header id="site-header" class="main-header main-header-overlay sticky-header-noshadow" data-sticky-header="true" data-sticky-values-measured="false" data-sticky-options='{"disableOnMobile": true}'>
     {{-- <div class="lqd-hide-onstuck flex flex-wrap items-center justify-center transition-all py-10 bg-transparent module-top" style="background-image: linear-gradient(90deg, #84F0B2 0%, #5F91A7 100%);">
@@ -15,7 +26,7 @@
         <div class="module-sticky w-full static flex flex-row items-center justify-between border-1 border-white-10 rounded-100 transition-all pr-10 pl-30">
             <div class="flex items-center justify-start">
                 <div id="site-logo" class="module-logo flex navbar-brand-plain pointer-events-auto py-20 pr-30">
-                    <a class="navbar-brand flex p-0 relative" href="/" rel="home">
+                    <a class="navbar-brand flex p-0 relative" href="/User/Dashboard" rel="home">
                         <span class="navbar-brand-inner post-rel">
                             <img class="logo-sticky" src="../../img/logo/logo.png" alt="Nippon Paint Cambodia">
                             <img class="logo-default" src="../../img/logo/logo.png" alt="Nippon Paint Cambodia">
@@ -25,10 +36,10 @@
                 <div class="navbar-collapse inline-flex p-0 lqd-submenu-default-style items-stretch h-full pointer-events-auto" id="main-header-collapse" aria-expanded="false" role="navigation">
                     <ul class="main-nav flex reset-ul inline-ul lqd-menu-counter-left lqd-menu-items-inline main-nav-hover-fade-inactive" data-submenu-options='{"toggleType": "fade", "handler": "mouse-in-out"}' data-localscroll="true" data-localscroll-options='{"itemsSelector":"> li > a", "trackWindowScroll": true, "includeParentAsOffset": true}'>
                         <li class="menu-item-object-page menu-item-home">
-                            <a href="/User/Dashboard" class="text-16 font-medium text-white">Home<sup class="link-sup">01</sup></a>
+                            <a href="/User/Dashboard" class="text-16 nav-text font-medium">Home<sup class="link-sup">01</sup></a>
                         </li>
                         <li class="menu-item-object-page menu-item-has-children">
-                            <a href="/User/Products" class="text-16 font-medium text-white">
+                            <a href="/User/Products" class="text-16 nav-text font-medium">
                                 <span>Products</span>
                                 <span class="submenu-expander">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="32" viewBox="0 0 21 32" style="width: 1em; height: 1em;">
@@ -56,11 +67,11 @@
                             </ul>
                         </li>
                         <li class="menu-item-object-page">
-                            <a href="/User/About-Us" class="text-16 font-medium text-white">About<sup class="link-sup">03</sup></a>
+                            <a href="/User/About_Us" class="text-16 nav-text font-medium">About<sup class="link-sup">03</sup></a>
                         </li>
 
                         <li class="menu-item-object-page menu-item-has-children">
-                            <a href="#" class="text-16 font-medium text-white">
+                            <a href="#" class="text-16 nav-text font-medium">
                                 <span>Company</span>
                                 <span class="submenu-expander">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="32" viewBox="0 0 21 32" style="width: 1em; height: 1em;">
@@ -71,7 +82,7 @@
                             </a>
                             <ul class="nav-item-children">
                                 <li>
-                                    <a href="/User/Project-Reference">Project Reference</a>
+                                    <a href="/User/Project_Reference">Project Reference</a>
                                 </li>
                                 <li>
                                     <a href="/User/News">News & Media</a>
@@ -83,17 +94,17 @@
                         </li>
 
                         <li class="menu-item-object-page">
-                            <a href="../page-start-hub-5-contact.html" class="text-16 font-medium text-white">Contact<sup class="link-sup">05</sup></a>
+                            <a href="/User/Contact_Us" class="text-16 nav-text font-medium">Contact<sup class="link-sup">05</sup></a>
                         </li>
 
                         <li class="menu-item-object-page">
-                            <a href="/User/Color-Palette" class="text-16 font-medium text-white">Color Palette<sup class="link-sup">05</sup></a>
+                            <a href="/User/Color_Palette" class="text-16 nav-text font-medium">Color Palette<sup class="link-sup">06</sup></a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <a href="login" class="btn btn-solid pointer-events-auto text-primary bg-green-300 rounded-100 module-btn-sm">
-                <span class="btn-txt" >Login</span>
+            <a href="/logout" class="btn btn-solid pointer-events-auto text-primary bg-green-300 rounded-100 module-btn-sm">
+                <span class="btn-txt" >Logout</span>
             </a>
         </div>
     </div>

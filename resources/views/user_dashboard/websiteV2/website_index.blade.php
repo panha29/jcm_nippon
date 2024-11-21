@@ -191,7 +191,7 @@
 
     <!-- Start Solutions -->
     {{-- @include('user_dashboard.websiteV2.paint-drip') --}}
-    @include('user_dashboard.websiteV2.color_palette.testing_color')
+    @include('user_dashboard.websiteV2.testing_color.testing_color')
     <!-- End Solutions -->
 
     <!-- Start About Progress -->

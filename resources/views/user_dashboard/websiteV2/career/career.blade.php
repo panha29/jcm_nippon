@@ -10,9 +10,7 @@
 @section('js_page')
 @endsection
 <style>
-    .text-white{
-        color: black !important;
-    }
+
     .text-01ad08{
         color: #01ad08 !important;
     }

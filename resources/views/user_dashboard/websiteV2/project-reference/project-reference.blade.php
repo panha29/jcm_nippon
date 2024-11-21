@@ -9,11 +9,7 @@
 
 @section('js_page')
 @endsection
-<style>
-    .text-white{
-        color: black !important;
-    }
-</style>
+
 @include('user_dashboard.websiteV2.project-reference.css')
 @section('content')
 

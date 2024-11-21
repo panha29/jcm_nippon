@@ -10,9 +10,7 @@
 @section('js_page')
 @endsection
 <style>
-    .text-white{
-        color: black !important;
-    }
+
     .mobile-lineheight{
         line-height: 2;
     }

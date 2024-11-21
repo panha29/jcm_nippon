@@ -12,6 +12,8 @@ use App\Models\CategoryModel;
 use App\Models\ProductModel;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
+use PhpParser\Node\Stmt\Return_;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -129,28 +131,27 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
         $product = ProductModel::all();
         $nav = CategoryModel::all();
         $color = DB::table('colorpalette')->get();
-    $product = ProductModel::all();
-    $Green = DB::table('colorpalette')->where('colorpalette_category','=','Green')->take(8)->get();
-    $Red = DB::table('colorpalette')->where('colorpalette_category','=','Red')->take(8)->get();
-    $Yellow = DB::table('colorpalette')->where('colorpalette_category','=','Yellow')->take(8)->get();
-    $Orange = DB::table('colorpalette')->where('colorpalette_category','=','Orange')->take(8)->get();
-    $Blue = DB::table('colorpalette')->where('colorpalette_category','=','Blue')->take(8)->get();
-    $Purple = DB::table('colorpalette')->where('colorpalette_category','=','Purple')->take(8)->get();
-    $Grey = DB::table('colorpalette')->where('colorpalette_category','=','Grey')->take(8)->get();
-    $Neutral = DB::table('colorpalette')->where('colorpalette_category','=','Neutral')->take(8)->get();
-    $GreenBlue = DB::table('colorpalette')->where('colorpalette_category','=','GreenBlue')->take(8)->get();
-    $OffWhite = DB::table('colorpalette')->where('colorpalette_category','=','OffWhite')->take(8)->get();
-    return view('user_dashboard.websiteV2.website_index',compact('product','nav','color','Green','Red','Yellow','Orange','Blue','Purple','Grey','Neutral','GreenBlue','OffWhite'));
+        $Green = DB::table('colorpalette')->where('colorpalette_category','=','Green')->take(8)->get();
+        $Red = DB::table('colorpalette')->where('colorpalette_category','=','Red')->take(8)->get();
+        $Yellow = DB::table('colorpalette')->where('colorpalette_category','=','Yellow')->take(8)->get();
+        $Orange = DB::table('colorpalette')->where('colorpalette_category','=','Orange')->take(8)->get();
+        $Blue = DB::table('colorpalette')->where('colorpalette_category','=','Blue')->take(8)->get();
+        $Purple = DB::table('colorpalette')->where('colorpalette_category','=','Purple')->take(8)->get();
+        $Grey = DB::table('colorpalette')->where('colorpalette_category','=','Grey')->take(8)->get();
+        $Neutral = DB::table('colorpalette')->where('colorpalette_category','=','Neutral')->take(8)->get();
+        $GreenBlue = DB::table('colorpalette')->where('colorpalette_category','=','GreenBlue')->take(8)->get();
+        $OffWhite = DB::table('colorpalette')->where('colorpalette_category','=','OffWhite')->take(8)->get();
+        return view('user_dashboard.websiteV2.website_index',compact('product','nav','color','Green','Red','Yellow','Orange','Blue','Purple','Grey','Neutral','GreenBlue','OffWhite'));
     });
     // Route::get('/Products/{category_tag}',[UserLoginController::class,'user_category_tagv2']);
 
     Route::get('/Painting-Services',[UserLoginController::class,'user_servicev2']);
     Route::get('/News',[UserLoginController::class,'user_newsv2']);
     Route::get('/Career',[UserLoginController::class,'user_career']);
-    Route::get('/Project-Reference',[UserLoginController::class,'user_project_referencev2']);
-    Route::get('/Contact-Us',[UserLoginController::class,'user_contact_us']);
-    Route::get('/About-Us',[UserLoginController::class,'user_about_us']);
-    Route::get('/Color-Palette',[UserLoginController::class,'user_color_palette']);
+    Route::get('/Project_Reference',[UserLoginController::class,'user_project_referencev2']);
+    Route::get('/Contact_Us',[UserLoginController::class,'user_contact_us']);
+    Route::get('/About_Us',[UserLoginController::class,'user_about_us']);
+    Route::get('/Color_Palette',[UserLoginController::class,'user_color_palette']);
     Route::get('/Color-Pricing',[ColorPricingController::class,'user_color_pricing']);
     Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');
 
@@ -164,24 +165,8 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
     Route::get('/Mobile/ColorPalette',[UserLoginController::class,'colorpalette']);
     Route::get('/Mobile/Price-List',[UserLoginController::class,'pricelist']);
 
-    Route::get('/Color-Palette', function()
-    {
-        $nav = CategoryModel::all();
-        $color = DB::table('colorpalette')->get();
-        $Green_name = DB::table('colorpalette')->where('colorpalette_category','Green')->pluck('colorpalette_name');
-        $Green_rgb = DB::table('colorpalette')->where('colorpalette_category','Green')->pluck('colorpalette_rgb');
-        $Green_batch = DB::table('colorpalette')->where('colorpalette_category','Green')->pluck('colorpalette_batch');
-        $Red = DB::table('colorpalette')->where('colorpalette_category','=','Red')->get();
-        $Yellow = DB::table('colorpalette')->where('colorpalette_category','=','Yellow')->get();
-        $Orange = DB::table('colorpalette')->where('colorpalette_category','=','Orange')->get();
-        $Blue = DB::table('colorpalette')->where('colorpalette_category','=','Blue')->get();
-        $Purple = DB::table('colorpalette')->where('colorpalette_category','=','Purple')->get();
-        $Grey = DB::table('colorpalette')->where('colorpalette_category','=','Grey')->get();
-        $Neutral = DB::table('colorpalette')->where('colorpalette_category','=','Neutral')->get();
-        $GreenBlue = DB::table('colorpalette')->where('colorpalette_category','=','GreenBlue')->get();
-        $OffWhite = DB::table('colorpalette')->where('colorpalette_category','=','OffWhite')->get();
-        return view('user_dashboard.websiteV2.color_palette.color_palette',compact('nav','color','Green_rgb','Green_batch','Green_name','Red','Yellow','Orange','Blue','Purple','Grey','Neutral','GreenBlue','OffWhite'));
-    });
+    Route::get('/Color-Palette', [AdminLoginController::class,'color_palette']);
+
 
     Route::group(['prefix' => 'Products'], function()
     {
@@ -260,8 +245,6 @@ Route::group(['prefix' => 'Products'], function()
 });
 
 Route::get('/logout',[LogoutController::class,'perform'])->name('logout.perform');
-// Route::get('/Home',[AdminLoginController::class,'webv2'])->name('Home');
-// Route::get('/Products/{category_tag}',[AdminLoginController::class,'category_tagv2']);
 Route::get('/Painting-Services',[AdminLoginController::class,'servicev2']);
 Route::get('/News',[AdminLoginController::class,'newsv2']);
 Route::get('/Career',[AdminLoginController::class,'career']);
@@ -269,7 +252,7 @@ Route::get('/Career/{id}',[AdminLoginController::class,'get_career_id']);
 Route::get('/Project-Reference',[AdminLoginController::class,'project_referencev2']);
 Route::get('/Contact-Us',[AdminLoginController::class,'contact_us']);
 Route::get('/About-Us',[AdminLoginController::class,'about_us']);
-Route::redirect('/', '/Home', 301);
+Route::redirect('/', '/', 301);
 Route::view('/Verify','websiteV2.verify');
 
 Route::get('/', function() {
