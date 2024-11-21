@@ -7,8 +7,8 @@
 @extends('user_dashboard.webv2-layout',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description])
 
 @section('css')
-<link rel="stylesheet" href="../webv2/css/demo/digital-hub/base.css">
-<link rel="stylesheet" href="../webv2/css/demo/digital-hub/digital-hub.css">
+{{-- <link rel="stylesheet" href="../webv2/css/demo/digital-hub/base.css">
+<link rel="stylesheet" href="../webv2/css/demo/digital-hub/digital-hub.css"> --}}
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
 
 <link rel="stylesheet" href="../css/vendor/baguetteBox.min.css"/>
@@ -34,7 +34,7 @@
 
 <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-<script src="/js/plugins/lightbox.js"></script>
+<script src="../js/plugins/lightbox.js"></script>
 
 @endsection
 
@@ -59,9 +59,9 @@
                         <h2 class="ld-fh-element relative lqd-highlight-classic lqd-highlight-grow-bottom lqd-highlight-reset-onhover lqd-split-lines mb-0/5em mt-0/25em">
                             Consulting
                             <mark class="lqd-highlight">
-                                    <span class="lqd-highlight-txt">with</span>
-                                    <span class="bottom-0 left-0 lqd-highlight-inner bg-purple-200"></span>
-                                </mark> our professional.
+                                <span class="lqd-highlight-txt">with</span>
+                                <span class="bottom-0 left-0 lqd-highlight-inner bg-purple-200"></span>
+                            </mark> our professional.
                         </h2>
                     </div>
                     <div class="absolute -top-5percent -left-10percent module-shape">

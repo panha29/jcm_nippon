@@ -27,9 +27,9 @@
     </div>
     <script>
         @foreach ($color as $item)
-        function function{{$item->id}}() {
-          document.getElementById("color_div").style.backgroundColor = "rgb({{$item->colorpalette_rgb}})";
-        }
+            function function{{$item->id}}() {
+                document.getElementById("color_div").style.backgroundColor = "rgb({{$item->colorpalette_rgb}})";
+            }
         @endforeach
     </script>
 </section>
