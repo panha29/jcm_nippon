@@ -8,7 +8,8 @@
         <title>Nippon Paint Cambodia</title>
         @include('_layoutV2.head')
     </head>
-    <body data-localscroll-offset="95" data-mobile-nav-breakpoint="1199" data-mobile-nav-style="modern" data-mobile-nav-scheme="dark" data-mobile-nav-trigger-alignment="right" data-mobile-header-scheme="gray" data-mobile-logo-alignment="default" data-overlay-onmobile="false">
+    {{-- <body data-localscroll-offset="80" data-mobile-nav-breakpoint="1199" data-localscroll-offset="60" data-mobile-nav-style="minimal" data-mobile-nav-scheme="dark" data-mobile-nav-trigger-alignment="right" data-mobile-header-scheme="gray" data-mobile-logo-alignment="default" data-overlay-onmobile="false"> --}}
+    <body data-localscroll-offset="95" data-mobile-nav-breakpoint="1199" data-mobile-nav-style="minimal" data-mobile-nav-scheme="dark" data-mobile-nav-trigger-alignment="right" data-mobile-header-scheme="gray" data-mobile-logo-alignment="default" data-overlay-onmobile="false">
         <div class="relative bg-white" id="wrap">
             <main class="content bg-white" id="lqd-site-content">
                 @include('_layoutV2.web-nav')

@@ -124,7 +124,7 @@
             </button>
             <a class="navbar-brand flex relative" href="../index-start-hub-5.html">
                 <span class="navbar-brand-inner">
-                    <img class="logo-default" src="../css/hub5/images/demo/start-hub-5/logo-dark.svg" alt="Starthub five">
+                    <img class="logo-default" src="../css/hub5/images/demo/start-hub-5/logo-dark.svg" alt="Nippon Paint Cambodia">
                 </span>
             </a>
         </div>

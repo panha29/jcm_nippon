@@ -13,7 +13,7 @@
                         <span class="navbar-brand-inner post-rel">
                             <div class="row">
                                 <div class="col" style="padding-right:0;">
-                                    <img class="logo-default" src="/webv2/images/logon.png" alt="Nippon Paint Cambodia ថ្មាំលាបផ្ទះ nippon paint" style="float: right">
+                                    <img class="logo-default" src="../webv2/images/logon.png" alt="Nippon Paint Cambodia ថ្មាំលាបផ្ទះ nippon paint" style="float: right">
                                 </div>
                                 <div class="col">
                                     <h3>NIPPON PAINT</h3>
@@ -124,7 +124,7 @@
                 <span class="navbar-brand-inner">
                     <div class="row">
                         <div class="col" style="padding-right:0;">
-                            <img class="logo-default" src="/webv2/images/logon.png" alt="Nippon Paint Cambodia ថ្មាំលាបផ្ទះ nippon paint" style="float: right">
+                            <img class="logo-default" src="../webv2/images/logon.png" alt="Nippon Paint Cambodia ថ្មាំលាបផ្ទះ nippon paint" style="float: right">
                         </div>
                         <div class="col">
                             <h3 style="margin-bottom: 0">NIPPON PAINT</h3>
