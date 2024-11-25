@@ -18,7 +18,7 @@
 @endsection
 @include('websiteV2.product.product_detail.css')
 @section('content')
-<div id="lqd-contents-wrap">
+<div id="lqd-contents-wrap" class="pc-display">
     <div class="titlebar-inner">
         <div class="container titlebar-container mt-100">
             <div class="row titlebar-container justify-center">

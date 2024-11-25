@@ -46,4 +46,12 @@
         color: white;
     }
 
+    @media only screen and (max-width:767px){
+        .detail-item{
+
+        }
+        .pc-display{
+            display: none;
+        }
+    }
 </style>

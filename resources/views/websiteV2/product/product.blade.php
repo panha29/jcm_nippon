@@ -36,30 +36,7 @@
         </div>
     </section>
     <div class="row mobile-product">
-        {{-- <div class="col-4">
-            <section class="lqd-section pt-40 sm:pt-0">
-                <div class="category">
-                    <div class="container">
-                        <div class="col titlebar-col col-xl-6 col-lg-8 col-12 text-center text-gray-400">
-                            <h3>Categories</h3>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="card">
-                            <div class="card-body" >
-                                @foreach ($nav as $item)
-                                <div>
-                                    <h3 class="ld-fh-element relative mb-0/5em text-14 uppercase tracking-1/5">
-                                        <a href="/Products/{{$item->category_tag}}" style="color: #233D62 ">{{$item->category_name}}</a>
-                                    </h3>
-                                </div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div> --}}
+
         <div class="col-7 mobile-product-width">
             <section class="lqd-section products pt-40 sm:pt-0" id="products">
                 <div class="container">

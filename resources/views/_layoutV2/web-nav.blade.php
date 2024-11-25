@@ -1,7 +1,7 @@
 <style>
     .inline-ul>li>a {
     display: inline-flex;
-    color: white;
+    color: black;
 }
     [data-mobile-nav-scheme=dark] .lqd-mobile-sec .navbar-collapse {
     background-color: #fff;
@@ -23,6 +23,10 @@
     padding: 0;
     max-width: 75% !important;
 }
+.lqd-mobile-sec .navbar-header {
+
+    height: 50px;
+}
 </style>
 <div class="lqd-sticky-placeholder hidden"></div>
 <header id="site-header" class="main-header main-header-overlay sticky-header-noshadow" data-sticky-header="true" data-sticky-values-measured="false" data-sticky-options='{"disableOnMobile": true}'>
@@ -38,13 +42,13 @@
         </a>
     </div> --}}
     <div class="module-header flex justify-center md:hidden">
-        <div class="module-sticky w-full static flex flex-row items-center justify-between border-1 border-white-10 rounded-100 transition-all pr-10 pl-30">
+        <div class="module-sticky static flex flex-row items-center justify-between border-1 border-white-10 rounded-100 transition-all pr-10 pl-30">
             <div class="flex items-center justify-start">
                 <div id="site-logo" class="module-logo flex navbar-brand-plain pointer-events-auto py-20 pr-30">
                     <a class="navbar-brand flex p-0 relative" href="/" rel="home">
                         <span class="navbar-brand-inner post-rel">
-                            <img class="logo-sticky" src="../img/logo/logo.png" alt="JCM Nippon Paint, House Paint Cambodia, House Paint Phnom Penh,">
-                            <img class="logo-default" src="../img/logo/logo.png" alt="JCM Nippon Paint, House Paint Cambodia, House Paint Phnom Penh,">
+                            <img class="logo-sticky" src="../img/logo/logo-new.png" alt="JCM Nippon Paint, House Paint Cambodia, House Paint Phnom Penh," style="width: 200px">
+                            <img class="logo-default" src="../img/logo/logo-new.png" alt="JCM Nippon Paint, House Paint Cambodia, House Paint Phnom Penh," style="width: 200px">
                         </span>
                     </a>
                 </div>
@@ -155,13 +159,13 @@
                                 <i class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
                             </span>
                         </a>
-                        <ul class="nav-item-children">
+                        {{-- <ul class="nav-item-children">
                             @foreach ($nav as $item)
                             <li>
                                 <a href="/Products/{{$item->category_tag}}">{{$item->category_name}}</a>
                             </li>
                             @endforeach
-                        </ul>
+                        </ul> --}}
                     </li>
                     <li class="menu-item-has-children">
                         <a href="/Painting-Services" class="leading-1/4em">
