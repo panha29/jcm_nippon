@@ -18,7 +18,7 @@
 @endsection
 @include('websiteV2.product.product_detail.css')
 @section('content')
-<div id="lqd-contents-wrap">
+<div id="lqd-contents-wrap" class="pc-display">
     <div class="titlebar-inner">
         <div class="container titlebar-container mt-100">
             <div class="row titlebar-container justify-center">
@@ -77,8 +77,61 @@
             </div>
         </div>
     </div>
-
-<br>
-<br>
+    <br>
+    <br>
+</div>
+<div id="lqd-contents-wrap" class="mobile-display">
+    <div class="titlebar-inner-40">
+        <div class="container titlebar-container">
+            <div class="row titlebar-container justify-center">
+                <div class="col titlebar-col col-xl-6 col-lg-8 col-12 text-center text-gray-400">
+                    <h4 class="uppercase title-h6">Nippon Matex Premium</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="" >
+        <img src="{{ url('webv2/images/product/supereasywash.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" class="mobile-center">
+        <a href="/webv2/exterior/matex-premium-kh.pdf" download="Nippon Matex Premium" class="title-h1 a-btn-m btn-hover mt-10 title-h1 mobile-center">
+            <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 40px">
+            Technical Documentation (KHM)
+        </a>
+        <a href="/webv2/exterior/matex-premium.pdf" download="Nippon Matex Premium" class="title-h1 a-btn-m btn-hover mt-10 title-h1 mobile-center">
+            <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 40px">
+            Technical Documentation (ENG)
+        </a>
+    </div>
+    <div class="mobile-center" style="width: 350px;">
+        <h3 class="mt-50" >Product Information</h3>
+        <h6 style="line-height:25px; text-align: justify;">Nippon Matex Premium Sheen is formulated to resist cement alkali material on Interior and Exterior masonry surfaces. It has good weathering resistance , anti- algae and fungus property. It gives good coverage and is easy to use.
+        </h6>
+        <h4 class="mt-50">1.Nippon Matex Premium Features</h4>
+        <ul style="line-height:25px">
+            <li>High solar energy reflection, less heat build-up results in lesser.</li>
+            <li>power consumption for air-conditioning – energy saving.</li>
+            <li>Excellent weather resistance.</li>
+            <li>Long lasting colours.</li>
+            <li>Excellent dirt pick-up resistance.</li>
+            <li>Elastic and flexible – covers hairline cracks.</li>
+            <li>Excellent washability.</li>
+            <li>Excellent resistance to alkali and efflorescence.</li>
+            <li>Non-toxic, does not contain lead, mercury and heavy metals.</li>
+            <li>Anti-fungus and anti-algal properties.</li>
+            <li>Environmentally friendly paint certified under the Singapore.</li>
+            <li>Green Building Product Certification Scheme.</li>
+        </ul>
+        <h4 class="mt-50">2.Application of Nippon Matex Premium</h4>
+        <ul style="line-height:25px">
+            <li>Soft boards.</li>
+            <li>Asbestos.</li>
+            <li>Wood.</li>
+            <li>Plastered walls.</li>
+            <li>Cement / Concrete.</li>
+            <li>Factory.</li>
+            <li>Ceiling.</li>
+        </ul>
+    </div>
+    <br>
+    <br>
 </div>
 @endsection

@@ -54,4 +54,40 @@
             display: none;
         }
     }
+
+    @media only screen and (min-width:767px){
+        .detail-item{
+
+        }
+        .mobile-display{
+            display: none;
+        }
+    }
+    .titlebar-inner-40 {
+    color: #000;
+    padding: 40px 10px;
+    }
+    .mobile-center{
+        margin-left: auto;
+        margin-right: auto;
+        display:block
+    }
+    .a-btn-m {
+        width: 350px;
+        height: 70px;
+        color: rgb(207, 0, 0);
+        padding: 8px 0;
+        border: 1px solid red;
+        text-align: center;
+        text-decoration: none;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+        display:block
+    }
+    .mt-100{
+        margin-top: 100px
+    }
 </style>
