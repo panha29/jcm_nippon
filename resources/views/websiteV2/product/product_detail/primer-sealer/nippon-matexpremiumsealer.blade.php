@@ -18,13 +18,11 @@
 @endsection
 @include('websiteV2.product.product_detail.css')
 @section('content')
-<div id="lqd-contents-wrap">
+<div id="lqd-contents-wrap" class="pc-display">
     <div class="titlebar-inner">
         <div class="container titlebar-container mt-100">
             <div class="row titlebar-container justify-center">
-                <div class="col titlebar-col col-xl-6 col-lg-8 col-12 text-center text-gray-400">
-                    {{-- <p class="leading-20 text-gray-400">Our Project Reference</p> --}}
-                </div>
+
             </div>
         </div>
     </div>

@@ -25,6 +25,24 @@
             background-image: url(./webv2/images/banner/m_web_banner1.jpg);
         }
     }
+    .h1,h1 {
+        font-family: var(--lqd-body-font-family)!important;
+    }
+    .h2,h2 {
+        font-family: var(--lqd-body-font-family)!important;
+    }
+    .h3,h3 {
+        font-family: var(--lqd-body-font-family)!important;
+    }
+    .h4,h4 {
+        font-family: var(--lqd-body-font-family)!important;
+    }
+    .h5,h5 {
+        font-family: var(--lqd-body-font-family)!important;
+    }
+    .h6,h6 {
+        font-family: var(--lqd-body-font-family)!important;
+    }
 </style>
 @section('content')
 <div id="lqd-contents-wrap ">

@@ -4,7 +4,15 @@
 <link rel="stylesheet" href="./css/hub5/css/demo/start-hub-5/start-hub-5-start.css">
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 <style>
-
+    @font-face {
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    }
+    .p-font{
+        font-family: 'Rubik', serif;
+    }
 </style>
 @endsection
 
@@ -45,7 +53,7 @@
                 <h1 class="uppercase title-h1">Nippon WeatherBond Plus 18Y</h1>
                 <h4>EXTERIOR</h4>
                 <h3 class="mt-50" >Product Information</h3>
-                <h6 style="line-height:25px">A high-performance water-based paint that possesses superior exterior durability with good water proofing and long lasting colour.
+                <h6 style="line-height:25px" class="p-font">A high-performance water-based paint that possesses superior exterior durability with good water proofing and long lasting colour.
                 </h6>
                 <h4 class="mt-50">1.Nippon WeatherBond Plus 18Y Features</h4>
                 <ul style="line-height:25px">
@@ -98,7 +106,7 @@
         <h3 class="mt-50" >Product Information</h3>
         <h6 style="line-height:25px; text-align: justify;">A high-performance water-based paint that possesses superior exterior durability with good water proofing and long lasting colour.
         </h6>
-        <h4 class="mt-50">1.Nippon WeatherBond 12 Plus years Features</h4>
+        <h4 class="mt-50">1.Nippon WeatherBond Plus 12  years Features</h4>
         <ul style="line-height:25px">
             <li>Excellent weathering resistance</li>
             <li>12 years colour performance</li>
@@ -112,7 +120,7 @@
             <li>Low VOCs (containing < 30g/L VOC, meeting the VOC requirement)</li>
             <li>Green Label Certificate</li>
         </ul>
-        <h4 class="mt-50">2.Application of Nippon WeatherBond 12 Plus years</h4>
+        <h4 class="mt-50">2.Application of Nippon WeatherBond Plus 12 years</h4>
         <ul style="line-height:25px">
             <li>Cement plasters.</li>
             <li>Concrete.</li>

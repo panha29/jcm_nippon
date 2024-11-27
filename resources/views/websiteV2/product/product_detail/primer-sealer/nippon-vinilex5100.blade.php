@@ -18,13 +18,11 @@
 @endsection
 @include('websiteV2.product.product_detail.css')
 @section('content')
-<div id="lqd-contents-wrap">
+<div id="lqd-contents-wrap" class="pc-display">
     <div class="titlebar-inner">
         <div class="container titlebar-container mt-100">
             <div class="row titlebar-container justify-center">
-                <div class="col titlebar-col col-xl-6 col-lg-8 col-12 text-center text-gray-400">
-                    {{-- <p class="leading-20 text-gray-400">Our Project Reference</p> --}}
-                </div>
+
             </div>
         </div>
     </div>
@@ -68,8 +66,51 @@
             </div>
         </div>
     </div>
+    <br>
+    <br>
+</div>
 
-<br>
-<br>
+<div id="lqd-contents-wrap" class="mobile-display">
+    <div class="titlebar-inner-40">
+        <div class="container titlebar-container">
+            <div class="row titlebar-container justify-center">
+                <div class="col titlebar-col col-xl-6 col-lg-8 col-12 text-center text-gray-400">
+                    <h4 class="uppercase title-h6">Nippon Vinilex 5100</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="" >
+        <img src="{{ url('webv2/images/product/vinilex5100.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" class="mobile-center">
+        <a href="/webv2/primer-sealer/vinilex5100-sealer-kh.pdf" download="Nippon Vinilex 5100" class="title-h1 a-btn-m btn-hover mt-10 title-h1 mobile-center">
+            <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 40px">
+            Technical Documentation (KHM)
+        </a>
+        <a href="/webv2/primer-sealer/vinilex5100-sealer.pdf" download="Nippon Vinilex 5100" class="title-h1 a-btn-m btn-hover mt-10 title-h1 mobile-center">
+            <img src="{{ url('webv2/images/icon-pdf-red.svg') }}" alt="" style="width: 40px">
+            Technical Documentation (ENG)
+        </a>
+    </div>
+    <div class="mobile-center" style="width: 350px;">
+        <h3 class="mt-50" >Product Information</h3>
+        <h6 style="line-height:25px; text-align: justify;">Nippon Paint Vinilex 5100 Wall Sealer is a water-based sealer that is suitable for masonry surfaces. It is
+            formulated to prevent deterioration of emulsion paints by
+            alkalinity of surfaces.
+        </h6>
+        <h4 class="mt-50">1.Nippon Vinilex 5100 Features</h4>
+        <ul style="line-height:25px">
+            <li>Good adhesion on recommended surfaces.</li>
+            <li>Good Efflorescence resistance.</li>
+            <li>Easy to use.</li>
+        </ul>
+        <h4 class="mt-50">2.Application of Nippon Vinilex 5100</h4>
+        <ul style="line-height:25px">
+            <li>Cement plasters.</li>
+            <li>Concrete.</li>
+            <li>Asbestos.</li>
+        </ul>
+    </div>
+    <br>
+    <br>
 </div>
 @endsection
