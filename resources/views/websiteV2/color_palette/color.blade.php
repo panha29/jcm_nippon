@@ -12,8 +12,8 @@
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 15px;
-    width: 630px;
+    padding: 0 47px;;
+    width: 850px;
 }
 
 .color-border{
