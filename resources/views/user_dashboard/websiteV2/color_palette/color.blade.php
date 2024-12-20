@@ -38,17 +38,17 @@
                                 <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
                             </a>
                             <span class="iconbox items-center mt-10">
-                                <span class="items-center uppercase font-ultrabold" style="text-align: left">
+                                <span class="items-center uppercase font-ultrabold">
                                     <p><span class="leading-1/15em tracking-1;"><b >{{$item->colorpalette_batch}}</b> <br> <b style="font-size: 10px">{{$item->colorpalette_name}}</b></span></p>
                                 </span>
                             </span>
-                            <span class="flex flex-col" style="text-align: left">
+                            <span class="flex flex-col">
                                 <p><span class="leading-1/15em tracking-1" style="color: black; font-size: 10px;"><b>RGB({{$item->colorpalette_rgb}})</b></span></p>
                             </span>
                             <!-- The Modal -->
                             <div id="{{$item->id}}" class="modal" style="background-color: rgb({{$item->colorpalette_rgb}})">
                                 <span onclick="document.getElementById('{{$item->id}}').style.display='none'" class="close"></span>
-                                <div class="modal-content" style="background-color: rgb({{$item->colorpalette_rgb}})"></div>
+                                {{-- <div class="modal-content"></div> --}}
                             </div>
                         </td>
                     </tr>
@@ -70,11 +70,11 @@
                                 <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
                             </a>
                             <span class="iconbox items-center mt-10">
-                                <span class="items-center uppercase font-ultrabold" style="text-align: left">
+                                <span class="items-center uppercase font-ultrabold">
                                     <p><span class="leading-1/15em tracking-1;"><b >{{$item->colorpalette_batch}}</b> <br> <b style="font-size: 10px">{{$item->colorpalette_name}}</b></span></p>
                                 </span>
                             </span>
-                            <span class="flex flex-col" style="text-align: left">
+                            <span class="flex flex-col">
                                 <p><span class="leading-1/15em tracking-1" style="color: black; font-size: 10px;"><b>RGB({{$item->colorpalette_rgb}})</b></span></p>
                             </span>
                             <!-- The Modal -->
@@ -101,11 +101,11 @@
                                 <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
                             </a>
                             <span class="iconbox items-center mt-10">
-                                <span class="items-center uppercase font-ultrabold" style="text-align: left">
+                                <span class="items-center uppercase font-ultrabold">
                                     <p><span class="leading-1/15em tracking-1;"><b >{{$item->colorpalette_batch}}</b> <br> <b style="font-size: 10px">{{$item->colorpalette_name}}</b></span></p>
                                 </span>
                             </span>
-                            <span class="flex flex-col" style="text-align: left">
+                            <span class="flex flex-col">
                                 <p><span class="leading-1/15em tracking-1" style="color: black; font-size: 10px;"><b>RGB({{$item->colorpalette_rgb}})</b></span></p>
                             </span>
                             <!-- The Modal -->
@@ -133,11 +133,11 @@
                                 <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
                             </a>
                             <span class="iconbox items-center mt-10">
-                                <span class="items-center uppercase font-ultrabold" style="text-align: left">
+                                <span class="items-center uppercase font-ultrabold">
                                     <p><span class="leading-1/15em tracking-1;"><b >{{$item->colorpalette_batch}}</b> <br> <b style="font-size: 10px">{{$item->colorpalette_name}}</b></span></p>
                                 </span>
                             </span>
-                            <span class="flex flex-col" style="text-align: left">
+                            <span class="flex flex-col">
                                 <p><span class="leading-1/15em tracking-1" style="color: black; font-size: 10px;"><b>RGB({{$item->colorpalette_rgb}})</b></span></p>
                             </span>
                             <!-- The Modal -->
@@ -164,11 +164,11 @@
                                 <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
                             </a>
                             <span class="iconbox items-center mt-10">
-                                <span class="items-center uppercase font-ultrabold" style="text-align: left">
+                                <span class="items-center uppercase font-ultrabold">
                                     <p><span class="leading-1/15em tracking-1;"><b >{{$item->colorpalette_batch}}</b> <br> <b style="font-size: 10px">{{$item->colorpalette_name}}</b></span></p>
                                 </span>
                             </span>
-                            <span class="flex flex-col" style="text-align: left">
+                            <span class="flex flex-col">
                                 <p><span class="leading-1/15em tracking-1" style="color: black; font-size: 10px;"><b>RGB({{$item->colorpalette_rgb}})</b></span></p>
                             </span>
                             <!-- The Modal -->
@@ -195,11 +195,11 @@
                                 <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
                             </a>
                             <span class="iconbox items-center mt-10">
-                                <span class="items-center uppercase font-ultrabold" style="text-align: left">
+                                <span class="items-center uppercase font-ultrabold">
                                     <p><span class="leading-1/15em tracking-1;"><b >{{$item->colorpalette_batch}}</b> <br> <b style="font-size: 10px">{{$item->colorpalette_name}}</b></span></p>
                                 </span>
                             </span>
-                            <span class="flex flex-col" style="text-align: left">
+                            <span class="flex flex-col">
                                 <p><span class="leading-1/15em tracking-1" style="color: black; font-size: 10px;"><b>RGB({{$item->colorpalette_rgb}})</b></span></p>
                             </span>
                             <!-- The Modal -->
@@ -226,11 +226,11 @@
                                 <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
                             </a>
                             <span class="iconbox items-center mt-10">
-                                <span class="items-center uppercase font-ultrabold" style="text-align: left">
+                                <span class="items-center uppercase font-ultrabold">
                                     <p><span class="leading-1/15em tracking-1;"><b >{{$item->colorpalette_batch}}</b> <br> <b style="font-size: 10px">{{$item->colorpalette_name}}</b></span></p>
                                 </span>
                             </span>
-                            <span class="flex flex-col" style="text-align: left">
+                            <span class="flex flex-col">
                                 <p><span class="leading-1/15em tracking-1" style="color: black; font-size: 10px;"><b>RGB({{$item->colorpalette_rgb}})</b></span></p>
                             </span>
                             <!-- The Modal -->
@@ -257,11 +257,11 @@
                                 <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
                             </a>
                             <span class="iconbox items-center mt-10">
-                                <span class="items-center uppercase font-ultrabold" style="text-align: left">
+                                <span class="items-center uppercase font-ultrabold">
                                     <p><span class="leading-1/15em tracking-1;"><b >{{$item->colorpalette_batch}}</b> <br> <b style="font-size: 10px">{{$item->colorpalette_name}}</b></span></p>
                                 </span>
                             </span>
-                            <span class="flex flex-col" style="text-align: left">
+                            <span class="flex flex-col">
                                 <p><span class="leading-1/15em tracking-1" style="color: black; font-size: 10px;"><b>RGB({{$item->colorpalette_rgb}})</b></span></p>
                             </span>
                             <!-- The Modal -->
@@ -288,11 +288,11 @@
                                 <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
                             </a>
                             <span class="iconbox items-center mt-10">
-                                <span class="items-center uppercase font-ultrabold" style="text-align: left">
+                                <span class="items-center uppercase font-ultrabold">
                                     <p><span class="leading-1/15em tracking-1;"><b >{{$item->colorpalette_batch}}</b> <br> <b style="font-size: 10px">{{$item->colorpalette_name}}</b></span></p>
                                 </span>
                             </span>
-                            <span class="flex flex-col" style="text-align: left">
+                            <span class="flex flex-col">
                                 <p><span class="leading-1/15em tracking-1" style="color: black; font-size: 10px;"><b>RGB({{$item->colorpalette_rgb}})</b></span></p>
                             </span>
                             <!-- The Modal -->
@@ -319,11 +319,11 @@
                                 <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
                             </a>
                             <span class="iconbox items-center mt-10">
-                                <span class="items-center uppercase font-ultrabold" style="text-align: left">
+                                <span class="items-center uppercase font-ultrabold">
                                     <p><span class="leading-1/15em tracking-1;"><b >{{$item->colorpalette_batch}}</b> <br> <b style="font-size: 10px">{{$item->colorpalette_name}}</b></span></p>
                                 </span>
                             </span>
-                            <span class="flex flex-col" style="text-align: left">
+                            <span class="flex flex-col">
                                 <p><span class="leading-1/15em tracking-1" style="color: black; font-size: 10px;"><b>RGB({{$item->colorpalette_rgb}})</b></span></p>
                             </span>
                             <!-- The Modal -->
