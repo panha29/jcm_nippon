@@ -107,7 +107,7 @@
                 <div class="lqd-imggrp-single block relative mr-20">
                     <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                         <figure class="w-full relative">
-                            <img width="75" height="21" src="../webv2/images/blobby1.png" alt="Start Hub 5">
+                            <img width="75" height="21" src="/webv2/images/blobby1.png" alt="Start Hub 5">
                         </figure>
                     </div>
                 </div>
@@ -162,7 +162,7 @@
 {{-- <div id="contact-modal" class="lity-modal lqd-modal lity-hide" data-modal-type="fullscreen">
     <div class="lqd-modal-inner">
         <div class="lqd-modal-head"></div>
-        <section class="lqd-section lqd-modal-content link-black bg-center bg-cover bg-no-repeat" style="background-image: url(../css/hub5/images/common/modal-bg.jpeg);">
+        <section class="lqd-section lqd-modal-content link-black bg-center bg-cover bg-no-repeat" style="background-image: url(/css/hub5/images/common/modal-bg.jpeg);">
             <div class="container min-h-100vh flex items-center flex-wrap">
                 <div class="w-55percent flex flex-col sm:w-full">
                     <div class="flex flex-col items-start justify-center py-10 pr-100 pl-10">
@@ -205,7 +205,7 @@
                             <div class="screen-reader-response">
                                 <p role="status" aria-live="polite" aria-atomic="true"></p>
                             </div>
-                            <form action="../css/hub5/php/mailer.php" method="post" class="lqd-cf-form" novalidate="novalidate" data-status="init">
+                            <form action="/css/hub5/php/mailer.php" method="post" class="lqd-cf-form" novalidate="novalidate" data-status="init">
                                 <div class="flex flex-wrap -mr-15 -ml-15">
                                     <div class="w-50percent px-15 md:w-full">
                                         <span class="lqd-form-control-wrap" data-name="your-name">

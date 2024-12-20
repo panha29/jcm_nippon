@@ -1,24 +1,31 @@
 <style>
-    table td, table th {
-        border: none;
-        padding: 0 0 1em 1em;
+ .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
 
-    }
-    table tbody tr:nth-child(odd) {
-        background-color: #f7f7f700;
-    }
-    tbody{
-        display: inline-flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    table tr {
-        border-bottom: 0px solid #dedede;
-    }
-    .link-primary a {
-    color: #ff0000;
-    }
+/* Modal Content/Box */
+.modal-content {
 
+  width: 100%; /* Could be more or less, depending on screen size */
+}
+.close {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
 </style>
 <div id="lqd-tab-events-item-Green" role="tabpanel" class="lqd-tabs-pane fade active show">
     <div class="">
@@ -27,7 +34,9 @@
                 @foreach ($GreenUser as $item)
                     <tr>
                         <td>
-                            <div class="" style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                            <a onclick="document.getElementById('{{$item->id}}').style.display='block'" type="button">
+                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                            </a>
                             <span class="iconbox items-center mt-10">
                                 <span class="items-center uppercase font-ultrabold" style="text-align: left">
                                     <p><span class="leading-1/15em tracking-1;"><b >{{$item->colorpalette_batch}}</b> <br> <b style="font-size: 10px">{{$item->colorpalette_name}}</b></span></p>
@@ -36,6 +45,11 @@
                             <span class="flex flex-col" style="text-align: left">
                                 <p><span class="leading-1/15em tracking-1" style="color: black; font-size: 10px;"><b>RGB({{$item->colorpalette_rgb}})</b></span></p>
                             </span>
+                            <!-- The Modal -->
+                            <div id="{{$item->id}}" class="modal" style="background-color: rgb({{$item->colorpalette_rgb}})">
+                                <span onclick="document.getElementById('{{$item->id}}').style.display='none'" class="close"></span>
+                                <div class="modal-content" style="background-color: rgb({{$item->colorpalette_rgb}})"></div>
+                            </div>
                         </td>
                     </tr>
                 @endforeach
@@ -44,6 +58,7 @@
     </div>
 </div>
 
+
 <div id="lqd-tab-events-item-Red" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="">
         <table id="colorid" class="color_pallete" style="width: auto;">
@@ -51,7 +66,9 @@
                 @foreach ($RedUser as $item)
                     <tr>
                         <td>
-                            <div class="color-border" style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                            <a onclick="document.getElementById('{{$item->id}}').style.display='block'" type="button">
+                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                            </a>
                             <span class="iconbox items-center mt-10">
                                 <span class="items-center uppercase font-ultrabold" style="text-align: left">
                                     <p><span class="leading-1/15em tracking-1;"><b >{{$item->colorpalette_batch}}</b> <br> <b style="font-size: 10px">{{$item->colorpalette_name}}</b></span></p>
@@ -60,6 +77,11 @@
                             <span class="flex flex-col" style="text-align: left">
                                 <p><span class="leading-1/15em tracking-1" style="color: black; font-size: 10px;"><b>RGB({{$item->colorpalette_rgb}})</b></span></p>
                             </span>
+                            <!-- The Modal -->
+                            <div id="{{$item->id}}" class="modal" style="background-color: rgb({{$item->colorpalette_rgb}})">
+                                <span onclick="document.getElementById('{{$item->id}}').style.display='none'" class="close"></span>
+                                <div class="modal-content" style="background-color: rgb({{$item->colorpalette_rgb}})"></div>
+                            </div>
                         </td>
                     </tr>
                 @endforeach
@@ -75,7 +97,9 @@
                 @foreach ($YellowUser as $item)
                     <tr>
                         <td>
-                            <div class="color-border" style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                            <a onclick="document.getElementById('{{$item->id}}').style.display='block'" type="button">
+                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                            </a>
                             <span class="iconbox items-center mt-10">
                                 <span class="items-center uppercase font-ultrabold" style="text-align: left">
                                     <p><span class="leading-1/15em tracking-1;"><b >{{$item->colorpalette_batch}}</b> <br> <b style="font-size: 10px">{{$item->colorpalette_name}}</b></span></p>
@@ -84,6 +108,12 @@
                             <span class="flex flex-col" style="text-align: left">
                                 <p><span class="leading-1/15em tracking-1" style="color: black; font-size: 10px;"><b>RGB({{$item->colorpalette_rgb}})</b></span></p>
                             </span>
+                            <!-- The Modal -->
+                            <div id="{{$item->id}}" class="modal" style="background-color: rgb({{$item->colorpalette_rgb}})">
+                                <span onclick="document.getElementById('{{$item->id}}').style.display='none'" class="close"></span>
+                                <div class="modal-content" style="background-color: rgb({{$item->colorpalette_rgb}})">
+                                </div>
+                            </div>
                         </td>
                     </tr>
                 @endforeach
@@ -99,7 +129,9 @@
                 @foreach ($OrangeUser as $item)
                     <tr>
                         <td>
-                            <div class="color-border" style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                            <a onclick="document.getElementById('{{$item->id}}').style.display='block'" type="button">
+                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                            </a>
                             <span class="iconbox items-center mt-10">
                                 <span class="items-center uppercase font-ultrabold" style="text-align: left">
                                     <p><span class="leading-1/15em tracking-1;"><b >{{$item->colorpalette_batch}}</b> <br> <b style="font-size: 10px">{{$item->colorpalette_name}}</b></span></p>
@@ -108,6 +140,11 @@
                             <span class="flex flex-col" style="text-align: left">
                                 <p><span class="leading-1/15em tracking-1" style="color: black; font-size: 10px;"><b>RGB({{$item->colorpalette_rgb}})</b></span></p>
                             </span>
+                            <!-- The Modal -->
+                            <div id="{{$item->id}}" class="modal" style="background-color: rgb({{$item->colorpalette_rgb}})">
+                                <span onclick="document.getElementById('{{$item->id}}').style.display='none'" class="close"></span>
+                                <div class="modal-content" style="background-color: rgb({{$item->colorpalette_rgb}})"></div>
+                            </div>
                         </td>
                     </tr>
                 @endforeach
@@ -123,7 +160,9 @@
                 @foreach ($BlueUser as $item)
                     <tr>
                         <td>
-                            <div class="color-border" style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                            <a onclick="document.getElementById('{{$item->id}}').style.display='block'" type="button">
+                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                            </a>
                             <span class="iconbox items-center mt-10">
                                 <span class="items-center uppercase font-ultrabold" style="text-align: left">
                                     <p><span class="leading-1/15em tracking-1;"><b >{{$item->colorpalette_batch}}</b> <br> <b style="font-size: 10px">{{$item->colorpalette_name}}</b></span></p>
@@ -132,6 +171,11 @@
                             <span class="flex flex-col" style="text-align: left">
                                 <p><span class="leading-1/15em tracking-1" style="color: black; font-size: 10px;"><b>RGB({{$item->colorpalette_rgb}})</b></span></p>
                             </span>
+                            <!-- The Modal -->
+                            <div id="{{$item->id}}" class="modal" style="background-color: rgb({{$item->colorpalette_rgb}})">
+                                <span onclick="document.getElementById('{{$item->id}}').style.display='none'" class="close"></span>
+                                <div class="modal-content" style="background-color: rgb({{$item->colorpalette_rgb}})"></div>
+                            </div>
                         </td>
                     </tr>
                 @endforeach
@@ -147,7 +191,9 @@
                 @foreach ($PurpleUser as $item)
                     <tr>
                         <td>
-                            <div class="color-border" style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                            <a onclick="document.getElementById('{{$item->id}}').style.display='block'" type="button">
+                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                            </a>
                             <span class="iconbox items-center mt-10">
                                 <span class="items-center uppercase font-ultrabold" style="text-align: left">
                                     <p><span class="leading-1/15em tracking-1;"><b >{{$item->colorpalette_batch}}</b> <br> <b style="font-size: 10px">{{$item->colorpalette_name}}</b></span></p>
@@ -156,6 +202,11 @@
                             <span class="flex flex-col" style="text-align: left">
                                 <p><span class="leading-1/15em tracking-1" style="color: black; font-size: 10px;"><b>RGB({{$item->colorpalette_rgb}})</b></span></p>
                             </span>
+                            <!-- The Modal -->
+                            <div id="{{$item->id}}" class="modal" style="background-color: rgb({{$item->colorpalette_rgb}})">
+                                <span onclick="document.getElementById('{{$item->id}}').style.display='none'" class="close"></span>
+                                <div class="modal-content" style="background-color: rgb({{$item->colorpalette_rgb}})"></div>
+                            </div>
                         </td>
                     </tr>
                 @endforeach
@@ -171,7 +222,9 @@
                 @foreach ($GreyUser as $item)
                     <tr>
                         <td>
-                            <div class="color-border" style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                            <a onclick="document.getElementById('{{$item->id}}').style.display='block'" type="button">
+                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                            </a>
                             <span class="iconbox items-center mt-10">
                                 <span class="items-center uppercase font-ultrabold" style="text-align: left">
                                     <p><span class="leading-1/15em tracking-1;"><b >{{$item->colorpalette_batch}}</b> <br> <b style="font-size: 10px">{{$item->colorpalette_name}}</b></span></p>
@@ -180,6 +233,11 @@
                             <span class="flex flex-col" style="text-align: left">
                                 <p><span class="leading-1/15em tracking-1" style="color: black; font-size: 10px;"><b>RGB({{$item->colorpalette_rgb}})</b></span></p>
                             </span>
+                            <!-- The Modal -->
+                            <div id="{{$item->id}}" class="modal" style="background-color: rgb({{$item->colorpalette_rgb}})">
+                                <span onclick="document.getElementById('{{$item->id}}').style.display='none'" class="close"></span>
+                                <div class="modal-content" style="background-color: rgb({{$item->colorpalette_rgb}})"></div>
+                            </div>
                         </td>
                     </tr>
                 @endforeach
@@ -195,7 +253,9 @@
                 @foreach ($NeutralUser as $item)
                     <tr>
                         <td>
-                            <div class="color-border" style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                            <a onclick="document.getElementById('{{$item->id}}').style.display='block'" type="button">
+                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                            </a>
                             <span class="iconbox items-center mt-10">
                                 <span class="items-center uppercase font-ultrabold" style="text-align: left">
                                     <p><span class="leading-1/15em tracking-1;"><b >{{$item->colorpalette_batch}}</b> <br> <b style="font-size: 10px">{{$item->colorpalette_name}}</b></span></p>
@@ -204,6 +264,11 @@
                             <span class="flex flex-col" style="text-align: left">
                                 <p><span class="leading-1/15em tracking-1" style="color: black; font-size: 10px;"><b>RGB({{$item->colorpalette_rgb}})</b></span></p>
                             </span>
+                            <!-- The Modal -->
+                            <div id="{{$item->id}}" class="modal" style="background-color: rgb({{$item->colorpalette_rgb}})">
+                                <span onclick="document.getElementById('{{$item->id}}').style.display='none'" class="close"></span>
+                                <div class="modal-content" style="background-color: rgb({{$item->colorpalette_rgb}})"></div>
+                            </div>
                         </td>
                     </tr>
                 @endforeach
@@ -219,7 +284,9 @@
                 @foreach ($GreenBlueUser as $item)
                     <tr>
                         <td>
-                            <div class="color-border" style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                            <a onclick="document.getElementById('{{$item->id}}').style.display='block'" type="button">
+                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                            </a>
                             <span class="iconbox items-center mt-10">
                                 <span class="items-center uppercase font-ultrabold" style="text-align: left">
                                     <p><span class="leading-1/15em tracking-1;"><b >{{$item->colorpalette_batch}}</b> <br> <b style="font-size: 10px">{{$item->colorpalette_name}}</b></span></p>
@@ -228,6 +295,11 @@
                             <span class="flex flex-col" style="text-align: left">
                                 <p><span class="leading-1/15em tracking-1" style="color: black; font-size: 10px;"><b>RGB({{$item->colorpalette_rgb}})</b></span></p>
                             </span>
+                            <!-- The Modal -->
+                            <div id="{{$item->id}}" class="modal" style="background-color: rgb({{$item->colorpalette_rgb}})">
+                                <span onclick="document.getElementById('{{$item->id}}').style.display='none'" class="close"></span>
+                                <div class="modal-content" style="background-color: rgb({{$item->colorpalette_rgb}})"></div>
+                            </div>
                         </td>
                     </tr>
                 @endforeach
@@ -243,7 +315,9 @@
                 @foreach ($OffWhiteUser as $item)
                     <tr>
                         <td>
-                            <div class="color-border" style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                            <a onclick="document.getElementById('{{$item->id}}').style.display='block'" type="button">
+                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                            </a>
                             <span class="iconbox items-center mt-10">
                                 <span class="items-center uppercase font-ultrabold" style="text-align: left">
                                     <p><span class="leading-1/15em tracking-1;"><b >{{$item->colorpalette_batch}}</b> <br> <b style="font-size: 10px">{{$item->colorpalette_name}}</b></span></p>
@@ -252,6 +326,11 @@
                             <span class="flex flex-col" style="text-align: left">
                                 <p><span class="leading-1/15em tracking-1" style="color: black; font-size: 10px;"><b>RGB({{$item->colorpalette_rgb}})</b></span></p>
                             </span>
+                            <!-- The Modal -->
+                            <div id="{{$item->id}}" class="modal" style="background-color: rgb({{$item->colorpalette_rgb}})">
+                                <span onclick="document.getElementById('{{$item->id}}').style.display='none'" class="close"></span>
+                                <div class="modal-content" style="background-color: rgb({{$item->colorpalette_rgb}})"></div>
+                            </div>
                         </td>
                     </tr>
                 @endforeach

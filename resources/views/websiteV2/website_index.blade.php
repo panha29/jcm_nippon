@@ -52,7 +52,7 @@
         {{-- <section class="lqd-section banner min-h-25vh flex flex-wrap flex-row items-center justify-around transition-all bg-no-repeat bg-center bg-cover mobile-display" id="banner" style=""> --}}
     {{-- <section class="lqd-section banner min-h-25vh flex flex-wrap flex-row items-center justify-around transition-all bg-no-repeat bg-center bg-cover mobile-display" id="banner"> --}}
         <section class="lqd-section banner min-h-25vh flex flex-wrap flex-row items-center justify-around transition-all bg-no-repeat bg-center bg-cover">
-        @include('websiteV2.banner')
+        @include('user_dashboard.websiteV2.banner')
         <div class="lqd-shape lqd-shape-bottom rotate-180 module-shape" data-negative="false">
             <svg class="lqd-custom-shape h-420 -z-1 left-50percent" fill="none" height="461" viewBox="0 0 1440 461" width="1440" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
 
