@@ -81,13 +81,13 @@
                     <h6 class="ld-fh-element mb-0/5em inline-block relative text-9 font-bold tracking-1 text-white-50 uppercase">CALL US DIRECTLY</h6>
                 </div>
                 <div class="ld-fancy-heading relative">
-                    <p class="ld-fh-element mb-1/6em inline-block relative text-18 font-medium text-white">(123) 567 8901</p>
+                    <p class="ld-fh-element mb-1/6em inline-block relative text-18 font-medium text-white">(+855) 11 822 266 </p>
                 </div>
                 <div class="ld-fancy-heading relative">
                     <h6 class="ld-fh-element mb-0/5em inline-block relative text-9 font-bold tracking-1 text-white-50 uppercase">CALL US DIRECTLY</h6>
                 </div>
                 <div class="ld-fancy-heading relative">
-                    <p class="ld-fh-element mb-1/6em inline-block relative text-18 font-medium text-white">info@liquid.com</p>
+                    <p class="ld-fh-element mb-1/6em inline-block relative text-18 font-medium text-white">info@jcmnippon.com</p>
                 </div>
             </div>
             <div class="w-35percent flex flex-col items-center text-center mb-30 pt-45 pb-60 px-45 ml-5percent border-1 border-white-10 rounded-20 transition-all module-border lg:m-0 sm:w-full">

@@ -11,7 +11,8 @@
         }
     }
     .p-title{
-        padding: 18px
+        padding: 18px;
+        height: 100px;
     }
 </style>
 <div id="Nippon-Paint-All" role="tabpanel" class="lqd-tabs-pane fade active show">

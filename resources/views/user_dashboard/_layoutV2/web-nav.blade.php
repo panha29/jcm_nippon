@@ -7,7 +7,13 @@
     }
     .text-primary {
     color: #ffffff;
-}
+    }
+    [data-mobile-nav-scheme=dark] .lqd-mobile-sec .navbar-collapse{
+        background-color: #ffffff;
+    }
+    li a   {
+        color: black !important;
+    }
 </style>
 <div class="lqd-sticky-placeholder hidden"></div>
 <header id="site-header" class="main-header main-header-overlay sticky-header-noshadow" data-sticky-header="true" data-sticky-values-measured="false" data-sticky-options='{"disableOnMobile": true}'>
@@ -122,46 +128,70 @@
                     </span>
                 </span>
             </button>
-            <a class="navbar-brand flex relative" href="../index-start-hub-5.html">
+            <a class="navbar-brand flex relative" href="/User/Dashboard" >
                 <span class="navbar-brand-inner">
-                    <img class="logo-default" src="../css/hub5/images/demo/start-hub-5/logo-dark.svg" alt="Nippon Paint Cambodia">
+                    <img class="logo-default" src="../img/logo/logo.png" alt="Nippon Paint Cambodia">
                 </span>
             </a>
         </div>
         <div class="lqd-mobile-sec-nav w-full absolute z-10">
             <div class="mobile-navbar-collapse navbar-collapse collapse w-full" id="lqd-mobile-sec-nav" aria-expanded="false" role="navigation">
-                <ul id="mobile-primary-nav" class="reset-ul lqd-mobile-main-nav main-nav nav" data-localscroll="true" data-localscroll-options='{"itemsSelector":"> li > a", "trackWindowScroll": true, "includeParentAsOffset": true}'>
-                    <li>
-                        <a href="#banner">
-                            <span>Home</span>
-                            <sup class="link-sup">01</sup>
-                        </a>
+                <ul id="mobile-primary-nav" class="reset-ul lqd-mobile-main-nav main-nav lqd-submenu-toggle-hover">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7550 current_page_item menu-item-7601">
+                        <a href="/Home" class="leading-1/4em">Home</a>
                     </li>
-                    <li class="menu-item-object-page menu-item-has-children">
-                        <a href="../page-start-hub-5-services.html">
-                            <span>Products</span>
+                    <li class="menu-item-has-children">
+                        <a class="leading-1/4em" href="/User/Products">
+                            Products
                             <span class="submenu-expander absolute"></span>
-                            <sup class="link-sup">02</sup>
+                            <span class="link-icon inline-flex hide-if-empty right-icon">
+                                <i class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="/User/Painting-Services" class="leading-1/4em">
+                            Painting Service
+                        </a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a class="leading-1/4em " href="#">
+                            About Company
+                            <span class="submenu-expander absolute"></span>
+                            <span class="link-icon inline-flex hide-if-empty right-icon">
+                                <i class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
+                            </span>
+                        </a>
+                        <ul class="nav-item-children">
+                            <li>
+                                <a href="/User/Project-Reference">Project Reference</a>
+                            </li>
+                            <li>
+                                <a href="/User/News">News & Media</a>
+                            </li>
+                            <li>
+                                <a href="/User/Career">Career</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/User/About-Us" class="leading-1/4em">
+                            About Us
                         </a>
                     </li>
                     <li>
-                        <a href="../page-start-hub-5-about.html">
-                            <span>About</span>
-                            <sup class="link-sup">03</sup>
+                        <a href="/User/Contact-Us" class="leading-1/4em">
+                            Contact Us
                         </a>
                     </li>
-
                     <li>
-                        <a href="#testimonials">
-                            <span>Customer Stories</span>
-                            <sup class="link-sup">04</sup>
+                        <a href="/User/Color_Palette" class="leading-1/4em">
+                            Color Palette
                         </a>
                     </li>
-
                     <li>
-                        <a href="../page-start-hub-5-contact.html">
-                            <span>Contact</span>
-                            <sup class="link-sup">05</sup>
+                        <a class="btn btn-solid btn-md uppercase text-13 font-bold  leading-1/4em rounded-100 shadow-md text-blue-700 hover:text-white" href="/logout" style="background-color: springgreen;">
+                            Logout
                         </a>
                     </li>
                 </ul>

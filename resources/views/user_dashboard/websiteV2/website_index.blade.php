@@ -1,5 +1,6 @@
 @extends('user_dashboard.webv2-layout')
 @section('css')
+
 @endsection
 
 @section('js_vendor')
@@ -7,43 +8,8 @@
 
 @section('js_page')
 @endsection
-<style>
-    @media only screen and (max-width:767px){
-        .min-h-25vh{
-            min-height: 35vh !important;
-        }
-        .mobile-display{
-            background-image: url(../webv2/images/banner/m_web_bannerm.jpg);
-        }
-
-    }
-    @media only screen and (min-width:767px){
-        .min-h-200vh{
-            min-height: 100vh !important;
-        }
-        .mobile-display{
-            background-image: url(../webv2/images/banner/m_web_banner1.jpg);
-        }
-    }
-    .h1,h1 {
-        font-family: var(--lqd-body-font-family)!important;
-    }
-    .h2,h2 {
-        font-family: var(--lqd-body-font-family)!important;
-    }
-    .h3,h3 {
-        font-family: var(--lqd-body-font-family)!important;
-    }
-    .h4,h4 {
-        font-family: var(--lqd-body-font-family)!important;
-    }
-    .h5,h5 {
-        font-family: var(--lqd-body-font-family)!important;
-    }
-    .h6,h6 {
-        font-family: var(--lqd-body-font-family)!important;
-    }
-</style>
+<link rel="stylesheet" href="../css/carousel.css">
+@include('user_dashboard.websiteV2.css')
 @section('content')
 <div id="lqd-contents-wrap ">
     <!-- Start Banner -->
@@ -106,7 +72,7 @@
                 </div>
                 <div class="module-last w-60percent flex flex-col flex-auto items-start justify-center pl-10percent lg:w-50percent sm:w-full" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element, .lqd-split-lines .lqd-lines .split-inner", "duration" : 750, "startDelay" : 350, "delay" : 55, "ease": "expo.out", "initValues": {"y": "70px", "opacity" : 0}, "animations": {"y": "0px", "opacity" : 1}}'>
                     <div class="ld-fancy-heading relative w-auto mb-15 py-5 px-15 bg-transparent rounded-100 animation-element" style="background-image: linear-gradient(90deg, #8745D5 0%, #e3e3e3 100%);">
-                        <h6 class="ld-fh-element m-0 inline-block relative text-12 font-bold uppercase tracking-1 text-white">About Starthub</h6>
+                        <h6 class="ld-fh-element m-0 inline-block relative text-12 font-bold uppercase tracking-1 text-white">About Product</h6>
                     </div>
                     <div class="ld-fancy-heading relative mask-text">
                         <h2 class="ld-fh-element mb-0/4em inline-block relative lqd-split-lines" data-split-text="true" data-split-options='{"type": "lines"}'> Our specification details </h2>
@@ -267,172 +233,7 @@
     <!-- End Services -->
 
     <!-- Start Text Carousel -->
-    <section class="lqd-section text-carousel pt-100">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col col-12 module-first">
-                    <div class="carousel-container relative carousel-nav-shaped">
-                        <div class="carousel-items relative -mr-50 -ml-50" data-lqd-flickity='{"marquee": true, "percentPosition": false, "columnsAutoWidth": true, "draggable": false, "equalHeightCells": true, "middleAlignContent": true, "marqueeTickerSpeed": "0.5", "pauseAutoPlayOnHover": false}'>
-                            <div class="flickity-viewport relative w-full overflow-hidden">
-                                <div class="flickity-slider flex w-full h-full relative">
-                                    <div class="carousel-item flex flex-col justify-center items-center px-20">
-                                        <div class="carousel-item-inner relative w-full">
-                                            <div class="carousel-item-content relative w-full text-3vw font-bold leading-1/2em text-green-700">
-                                                <div style="border-radius: 2rem; background-color:#e3e3e3;">
-                                                    <img src="{{ url('webv2/images/product/watex.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" style="width:200px ">
-                                                    <br>
-                                                    <h6 class="text-center">Nippon <br> Watex</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item flex flex-col justify-center items-center px-20">
-                                        <div class="carousel-item-inner relative w-full">
-                                            <div class="carousel-item-content relative w-full text-3vw font-bold leading-1/2em text-green-700">
-                                                <div style="border-radius: 2rem; background-color:#e3e3e3;">
-                                                    <img src="{{ url('webv2/images/product/matex.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" style="width:200px ">
-                                                    <br>
-                                                    <h6 class="text-center">Nippon <br> Matex</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item flex flex-col justify-center items-center px-20">
-                                        <div class="carousel-item-inner relative w-full">
-                                            <div class="carousel-item-content relative w-full text-3vw font-bold leading-1/2em text-green-700">
-                                                <div style="border-radius: 2rem; background-color:#e3e3e3;">
-                                                    <img src="{{ url('webv2/images/product/matexpremium.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" style="width:200px ">
-                                                    <br>
-                                                    <h6 class="text-center">Nippon<br>Matex Premium</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item flex flex-col justify-center items-center px-20">
-                                        <div class="carousel-item-inner relative w-full">
-                                            <div class="carousel-item-content relative w-full text-3vw font-bold leading-1/2em text-green-700">
-                                                <div style="border-radius: 2rem; background-color:#e3e3e3;">
-                                                    <img src="{{ url('webv2/images/product/weathergard6y.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" style="width:200px ">
-                                                    <br>
-                                                    <h6 class="text-center">WeatherGard <br> 6 years</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item flex flex-col justify-center items-center px-20">
-                                        <div class="carousel-item-inner relative w-full">
-                                            <div class="carousel-item-content relative w-full text-3vw font-bold leading-1/2em text-green-700">
-                                                <div style="border-radius: 2rem; background-color:#e3e3e3;">
-                                                    <img src="{{ url('webv2/images/product/weatherbond8y.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" style="width:200px ">
-                                                    <br>
-                                                    <h6 class="text-center">WeatherBond <br> 8 years</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item flex flex-col justify-center items-center px-20">
-                                        <div class="carousel-item-inner relative w-full">
-                                            <div class="carousel-item-content relative w-full text-3vw font-bold leading-1/2em text-green-700">
-                                                <div style="border-radius: 2rem; background-color:#e3e3e3;">
-                                                    <img src="{{ url('webv2/images/product/weatherbondplus.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" style="width:200px ">
-                                                    <br>
-                                                    <h6 class="text-center">WeatherBond Plus<br> 12 years</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item flex flex-col justify-center items-center px-20">
-                                        <div class="carousel-item-inner relative w-full">
-                                            <div class="carousel-item-content relative w-full text-3vw font-bold leading-1/2em text-green-700">
-                                                <div style="border-radius: 2rem; background-color:#e3e3e3;">
-                                                    <img src="{{ url('webv2/images/product/odourless-spotless.png') }}" alt="nippon paint cambodia ថ្មាំលាបផ្ទះ nippon paint" style="width:200px ">
-                                                    <br>
-                                                    <h6 class="text-center">Odourless<br> Spotless Plus</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {{-- <div class="carousel-item flex flex-col justify-center items-center px-50">
-                                        <div class="carousel-item-inner relative w-full">
-                                            <div class="carousel-item-content relative w-full text-3vw font-bold leading-1/2em text-green-700">
-                                                <p>Built for online marketing 🎉</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item flex flex-col justify-center items-center px-50">
-                                        <div class="carousel-item-inner relative w-full">
-                                            <div class="carousel-item-content relative w-full text-3vw font-bold leading-1/2em text-green-700">
-                                                <p>Social media 📱</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item flex flex-col justify-center items-center px-50">
-                                        <div class="carousel-item-inner relative w-full">
-                                            <div class="carousel-item-content relative w-full text-3vw font-bold leading-1/2em text-green-700">
-                                                <p>Agility and scale 💶</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item flex flex-col justify-center items-center px-50">
-                                        <div class="carousel-item-inner relative w-full">
-                                            <div class="carousel-item-content relative w-full text-3vw font-bold leading-1/2em text-green-700">
-                                                <p>Built for online marketing 🎉</p>
-                                            </div>
-                                        </div>
-                                    </div> --}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {{-- <div class="col col-12">
-                    <div class="carousel-container relative carousel-nav-shaped">
-                        <div class="carousel-items relative -mr-50 -ml-50" data-lqd-flickity='{"marquee": true, "percentPosition": false, "columnsAutoWidth": true, "draggable": false, "marqueeTickerSpeed": "1", "equalHeightCells": true, "middleAlignContent": true, "rightToLeft": true, "pauseAutoPlayOnHover": false}'>
-                            <div class="flickity-viewport relative w-full overflow-hidden">
-                                <div class="flickity-slider flex w-full h-full relative">
-                                    <div class="carousel-item flex flex-col justify-center items-center px-50">
-                                        <div class="carousel-item-inner relative w-full">
-                                            <div class="carousel-item-content relative w-full text-3vw font-bold leading-1/2em text-green-700">
-                                                <p>Development 👨🏾‍💻</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item flex flex-col justify-center items-center px-50">
-                                        <div class="carousel-item-inner relative w-full">
-                                            <div class="carousel-item-content relative w-full text-3vw font-bold leading-1/2em text-green-700">
-                                                <p>Consultation 🤩</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item flex flex-col justify-center items-center px-50">
-                                        <div class="carousel-item-inner relative w-full">
-                                            <div class="carousel-item-content relative w-full text-3vw font-bold leading-1/2em text-green-700 module-gradient">
-                                                <p class="ld-gradient-heading" style="background-image: linear-gradient(to bottom right, #F08991, #F4B466);">Digital age</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item flex flex-col justify-center items-center px-50">
-                                        <div class="carousel-item-inner relative w-full">
-                                            <div class="carousel-item-content relative w-full text-3vw font-bold leading-1/2em text-green-700">
-                                                <p>eCommerce 🏦</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item flex flex-col justify-center items-center px-50">
-                                        <div class="carousel-item-inner relative w-full">
-                                            <div class="carousel-item-content relative w-full text-3vw font-bold leading-1/2em text-green-700">
-                                                <p>Built for online marketing 🎉</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
-            </div>
-        </div>
-    </section>
+    @include('user_dashboard.websiteV2.product_carousel')
     <!-- End Text Carousel -->
 
     <!-- Start Case Studies -->
@@ -648,7 +449,7 @@
     <!-- End Case Studies -->
 
     <!-- Start How It Work -->
-    <section class="lqd-section how-it-work pt-70 pb-80" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element, .lqd-split-lines .lqd-lines .split-inner", "duration" : 750, "startDelay" : 250, "delay" : 50, "ease": "expo.out", "initValues": {"y": "55px", "opacity" : 0}, "animations": {"y": "0px", "opacity" : 1}}'>
+    {{-- <section class="lqd-section how-it-work pt-70 pb-80" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element, .lqd-split-lines .lqd-lines .split-inner", "duration" : 750, "startDelay" : 250, "delay" : 50, "ease": "expo.out", "initValues": {"y": "55px", "opacity" : 0}, "animations": {"y": "0px", "opacity" : 1}}'>
         <div class="container animation-element">
             <div class="row justify-between">
                 <div class="col col-12 col-md-3 relative flex flex-col module-col">
@@ -711,11 +512,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End How It Work -->
 
     <!-- Start Companies -->
-    <section class="lqd-section companies pt-90 pb-120 bg-transparent" style="background-image: linear-gradient(180deg, #2D3140 0%, #19272C 100%);">
+    {{-- <section class="lqd-section companies pt-90 pb-120 bg-transparent" style="background-image: linear-gradient(180deg, #2D3140 0%, #19272C 100%);">
         <div class="lqd-shape lqd-shape-bottom rotate-180 module-shape-1" data-negative="false">
             <svg class="lqd-custom-shape h-175 left-50percent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
                 <path class="lqd-shape-fill" data-name="Row Separator" d="M1440,0Q1080,99,720,99T0,0V100H1440Z" fill="#fff" id="Row_Separator-1" />
@@ -1041,11 +842,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End Companies -->
 
     <!-- Start Testimonials -->
-    <section class="lqd-section testimonials pt-90 pb-20" id="testimonials" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element .lqd-split-lines .lqd-lines .split-inner, .animation-element", "duration" : 750, "delay" : 55, "ease": "expo.out", "initValues": {"y": "80px", "opacity" : 0}, "animations": {"y": "0px", "opacity" : 1}}'>
+    {{-- <section class="lqd-section testimonials pt-90 pb-20" id="testimonials" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element .lqd-split-lines .lqd-lines .split-inner, .animation-element", "duration" : 750, "delay" : 55, "ease": "expo.out", "initValues": {"y": "80px", "opacity" : 0}, "animations": {"y": "0px", "opacity" : 1}}'>
         <div class="container-fluid">
             <div class="row">
                 <div class="col col-12 flex flex-col items-center text-center">
@@ -1339,11 +1140,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End Testimonials -->
 
     <!-- Start contact Us -->
-    <section class="lqd-section contact-us py-80 bg-transparent" id="contact" style="background-image: linear-gradient(180deg, #35575C 0%, #334B62 100%);" data-custom-animations="true" data-ca-options='{"animationTarget": ".module-first, .module-last", "ease" : ["power4.out"], "initValues": {"y": "30px", "scaleX" : 0.5, "scaleY" : 0.5, "opacity" : 0}, "animations": {"y": "0px", "scaleX" : 1, "scaleY" : 1, "opacity" : 1}}'>
+    <section class="lqd-section contact-us py-80 bg-transparent" id="contact" style="background-image: linear-gradient(180deg, #03428d 0%, #0f0350 100%);" data-custom-animations="true" data-ca-options='{"animationTarget": ".module-first, .module-last", "ease" : ["power4.out"], "initValues": {"y": "30px", "scaleX" : 0.5, "scaleY" : 0.5, "opacity" : 0}, "animations": {"y": "0px", "scaleX" : 1, "scaleY" : 1, "opacity" : 1}}'>
         <div class="lqd-shape lqd-shape-top module-shape-1" data-negative="false">
             <svg class="lqd-custom-shape h-full left-50percent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
                 <path class="lqd-shape-fill" data-name="Row Separator" d="M1440,0Q1080,99,720,99T0,0V100H1440Z" fill="#fff" id="Row_Separator-2" />
@@ -1375,22 +1176,22 @@
                         <h2 class="ld-fh-element mb-0/75em inline-block relative text-34 text-white">
                             <span class="text-gray-200">Ready to get started?</span>
                             <br>
-                            <span> Let's chat.</span>
+                            {{-- <span> Let's chat.</span> --}}
                         </h2>
                     </div>
-                    <div class="w-full max-w-full flex flex-col items-start transition-all rounded-12 bg-blue-500">
+                    <div class="w-full max-w-full flex flex-col items-start transition-all rounded-12 bg-blue-trans-500">
                         <div class="w-full rounded-12 rounded-bottom-0 animation-element">
                             <div class="ld-gmap-container relative h-130">
                                 <div class="ld-gmap w-full h-full" data-plugin-map="true" data-plugin-options='{"style": "wy", "address": "7420 Shore Rd, Brooklyn, NY 11209, USA", "marker_style": "html", "markers" : null, "map": {"zoom" : 16, "mapTypeId": "roadmap", "zoomControl": true}}'></div>
                             </div>
                         </div>
                         <div class="ld-fancy-heading relative mt-20 mx-30 mb-0">
-                            <p class="ld-fh-element mb-0/5em inline-block relative text-slate-200">3rd Street, London, UK</p>
+                            <p class="ld-fh-element mb-0/5em inline-block relative text-slate-200">#51, St. 271 Sangkat Phsar Derm thkov, Khan Chamkarmorn Phnom Penh, Kingdom of Cambodia.</p>
                         </div>
                         <div class="ld-fancy-heading relative mx-30">
-                            <p class="ld-fh-element mb-0/5em inline-block relative text-slate-200">+ 1 223 38 87&nbsp;&nbsp;&nbsp;&nbsp;info.liquid.com</p>
+                            <p class="ld-fh-element mb-0/5em inline-block relative text-slate-200">+855 11 822 266&nbsp;&nbsp;&nbsp;&nbsp;info@jcmnippon.com</p>
                         </div>
-                        <a href="#" class="btn btn-naked btn-icon-right btn-hover-swp mx-30 mb-25 text-white" target="_blank">
+                        <a href="https://maps.app.goo.gl/sYCufhSoNWLj5M58A" class="btn btn-naked btn-icon-right btn-hover-swp mx-30 mb-25 text-white" target="_blank">
                             <span class="btn-txt" data-text="Show on map">Show on map</span>
                             <span class="btn-icon">
                                 <i aria-hidden="true" class="lqd-icn-ess icon-ion-ios-arrow-forward"></i>

@@ -8208,6 +8208,10 @@
     background-color: var(--lqd-color-blue-500)
 }
 
+.bg-blue-trans-500 {
+    background-color: #ffffff29;
+}
+
 .bg-blue-600 {
     background-color: var(--lqd-color-blue-600)
 }

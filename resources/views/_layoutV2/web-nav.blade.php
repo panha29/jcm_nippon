@@ -1,32 +1,19 @@
 <style>
-    .inline-ul>li>a {
-    display: inline-flex;
-    color: black;
-}
-    [data-mobile-nav-scheme=dark] .lqd-mobile-sec .navbar-collapse {
-    background-color: #fff;
-}
-[data-mobile-nav-scheme=dark] .lqd-mobile-sec .header-module .social-icon>li>a, [data-mobile-nav-scheme=dark] .lqd-mobile-sec .main-nav .lqd-custom-menu>li>a, [data-mobile-nav-scheme=dark] .lqd-mobile-sec ul.main-nav.lqd-mobile-main-nav>li>a {
-    border-color: rgba(255, 255, 255, .1);
-    color: #191d18;
-}
-.h3, h3{
-    font-family: "Golos Text", sans-serif;
-    font-size: 25px;
-    line-height: 1.2em;
-    font-weight: 600;
-    text-transform: var(--lqd-h3-text-transform, var(--lqd-heading-text-transform));
-    letter-spacing: -0.5px;
-    color: #273653
-}
-.lqd-mobile-sec .navbar-brand {
-    padding: 0;
-    max-width: 75% !important;
-}
-.lqd-mobile-sec .navbar-header {
-
-    height: 50px;
-}
+    .nav-text{
+        color: black;
+    }
+    .bg-green-300 {
+    background-color: rgb(255 6 6);
+    }
+    .text-primary {
+    color: #ffffff;
+    }
+    [data-mobile-nav-scheme=dark] .lqd-mobile-sec .navbar-collapse{
+        background-color: #ffffff;
+    }
+    li a   {
+        color: black !important;
+    }
 </style>
 <div class="lqd-sticky-placeholder hidden"></div>
 <header id="site-header" class="main-header main-header-overlay sticky-header-noshadow" data-sticky-header="true" data-sticky-values-measured="false" data-sticky-options='{"disableOnMobile": true}'>
@@ -113,13 +100,13 @@
                         </li>
 
                         <li class="menu-item-object-page">
-                            <a href="../page-start-hub-5-contact.html" class="text-16 font-medium nav-text">Contact<sup class="link-sup">05</sup></a>
+                            <a href="/Contact_Us" class="text-16 font-medium nav-text">Contact<sup class="link-sup">05</sup></a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <a href="login" class="btn btn-solid pointer-events-auto text-primary bg-green-300 rounded-100 module-btn-sm">
-                <span class="btn-txt" >Login</span>
+            <a href="login" class="btn btn-solid btn-success pointer-events-auto text-primary bg-green-500 rounded-100 module-btn-sm">
+                <span class="text-white" >Login</span>
             </a>
         </div>
     </div>
@@ -151,7 +138,6 @@
                         <a href="/Home" class="leading-1/4em">Home</a>
                     </li>
                     <li class="menu-item-has-children">
-
                         <a class="leading-1/4em" href="/Products">
                             Products
                             <span class="submenu-expander absolute"></span>
@@ -159,21 +145,10 @@
                                 <i class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
                             </span>
                         </a>
-                        {{-- <ul class="nav-item-children">
-                            @foreach ($nav as $item)
-                            <li>
-                                <a href="/Products/{{$item->category_tag}}">{{$item->category_name}}</a>
-                            </li>
-                            @endforeach
-                        </ul> --}}
                     </li>
                     <li class="menu-item-has-children">
                         <a href="/Painting-Services" class="leading-1/4em">
                             Painting Service
-                            {{-- <span class="submenu-expander absolute"></span>
-                            <span class="link-icon inline-flex hide-if-empty right-icon">
-                                <i class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
-                            </span> --}}
                         </a>
                     </li>
                     <li class="menu-item-has-children">

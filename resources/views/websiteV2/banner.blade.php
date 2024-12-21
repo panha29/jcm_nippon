@@ -1,5 +1,4 @@
 <!-- Start Banner -->
-<link rel="stylesheet" href="css/carousel.css">
 {{-- <script type="text/javascript" src="js/carousel.min.js"></script> --}}
 <div class="lqd-section banner min-h-25vh flex flex-wrap flex-row items-center justify-around transition-all bg-no-repeat bg-center bg-cover" id="banner">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
