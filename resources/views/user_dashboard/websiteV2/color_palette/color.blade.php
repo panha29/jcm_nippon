@@ -26,6 +26,10 @@
   color: #f44336;
   cursor: pointer;
 }
+table td, table th {
+    border: none;
+    padding: 0px;
+}
 </style>
 <div id="lqd-tab-events-item-Green" role="tabpanel" class="lqd-tabs-pane fade active show">
     <div class="">
@@ -35,7 +39,7 @@
                     <tr>
                         <td>
                             <a onclick="document.getElementById('{{$item->id}}').style.display='block'" type="button">
-                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:170px; height:170px;border-radius: 15px;"></div>
                             </a>
                             <span class="iconbox items-center mt-10">
                                 <span class="items-center uppercase font-ultrabold">
@@ -67,7 +71,7 @@
                     <tr>
                         <td>
                             <a onclick="document.getElementById('{{$item->id}}').style.display='block'" type="button">
-                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:170px; height:170px;border-radius: 15px;"></div>
                             </a>
                             <span class="iconbox items-center mt-10">
                                 <span class="items-center uppercase font-ultrabold">
@@ -98,7 +102,7 @@
                     <tr>
                         <td>
                             <a onclick="document.getElementById('{{$item->id}}').style.display='block'" type="button">
-                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:170px; height:170px;border-radius: 15px;"></div>
                             </a>
                             <span class="iconbox items-center mt-10">
                                 <span class="items-center uppercase font-ultrabold">
@@ -130,7 +134,7 @@
                     <tr>
                         <td>
                             <a onclick="document.getElementById('{{$item->id}}').style.display='block'" type="button">
-                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:170px; height:170px;border-radius: 15px;"></div>
                             </a>
                             <span class="iconbox items-center mt-10">
                                 <span class="items-center uppercase font-ultrabold">
@@ -161,7 +165,7 @@
                     <tr>
                         <td>
                             <a onclick="document.getElementById('{{$item->id}}').style.display='block'" type="button">
-                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:170px; height:170px;border-radius: 15px;"></div>
                             </a>
                             <span class="iconbox items-center mt-10">
                                 <span class="items-center uppercase font-ultrabold">
@@ -192,7 +196,7 @@
                     <tr>
                         <td>
                             <a onclick="document.getElementById('{{$item->id}}').style.display='block'" type="button">
-                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:170px; height:170px;border-radius: 15px;"></div>
                             </a>
                             <span class="iconbox items-center mt-10">
                                 <span class="items-center uppercase font-ultrabold">
@@ -223,7 +227,7 @@
                     <tr>
                         <td>
                             <a onclick="document.getElementById('{{$item->id}}').style.display='block'" type="button">
-                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:170px; height:170px;border-radius: 15px;"></div>
                             </a>
                             <span class="iconbox items-center mt-10">
                                 <span class="items-center uppercase font-ultrabold">
@@ -254,7 +258,7 @@
                     <tr>
                         <td>
                             <a onclick="document.getElementById('{{$item->id}}').style.display='block'" type="button">
-                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:170px; height:170px;border-radius: 15px;"></div>
                             </a>
                             <span class="iconbox items-center mt-10">
                                 <span class="items-center uppercase font-ultrabold">
@@ -285,7 +289,7 @@
                     <tr>
                         <td>
                             <a onclick="document.getElementById('{{$item->id}}').style.display='block'" type="button">
-                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:170px; height:170px;border-radius: 15px;"></div>
                             </a>
                             <span class="iconbox items-center mt-10">
                                 <span class="items-center uppercase font-ultrabold">
@@ -316,7 +320,7 @@
                     <tr>
                         <td>
                             <a onclick="document.getElementById('{{$item->id}}').style.display='block'" type="button">
-                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:150px; height:150px;border-radius: 15px;"></div>
+                                <div style="background-color:rgb({{$item->colorpalette_rgb}});width:170px; height:170px;border-radius: 15px;"></div>
                             </a>
                             <span class="iconbox items-center mt-10">
                                 <span class="items-center uppercase font-ultrabold">

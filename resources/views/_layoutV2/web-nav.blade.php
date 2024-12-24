@@ -11,9 +11,9 @@
     [data-mobile-nav-scheme=dark] .lqd-mobile-sec .navbar-collapse{
         background-color: #ffffff;
     }
-    li a   {
-        color: black !important;
-    }
+    /* li a   {
+        color: white !important;
+    } */
 </style>
 <div class="lqd-sticky-placeholder hidden"></div>
 <header id="site-header" class="main-header main-header-overlay sticky-header-noshadow" data-sticky-header="true" data-sticky-values-measured="false" data-sticky-options='{"disableOnMobile": true}'>

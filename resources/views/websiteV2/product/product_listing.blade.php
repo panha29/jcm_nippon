@@ -4,6 +4,11 @@
             width: 50%
         }
     }
+    .lqd-tabs-nav .h3 {
+        color: inherit;
+        font-size: 15px;
+        line-height: inherit;
+    }
 
     @media only screen and (min-width:768px){
         .pc-pd{
@@ -13,6 +18,11 @@
     .p-title{
         padding: 18px;
         height: 100px;
+    }
+    @media screen and (max-width: 479px) {
+        .lqd-tabs-style-3 .lqd-tabs-nav li {
+            width: 33.33%;
+        }
     }
 </style>
 <div id="Nippon-Paint-All" role="tabpanel" class="lqd-tabs-pane fade active show">

@@ -17,12 +17,18 @@
 
 @endsection
 <style>
-
-    .lqd-tabs-style-3 .lqd-tabs-nav li a:after {
-	height: 4px!important;
-	background-color: #ff4747 !important;
-
-}
+    @media screen and (max-width: 1920px) {
+        .lqd-tabs-style-3 .lqd-tabs-nav li a:after {
+	    height: 4px!important;
+	    background-color: #ff4747 !important;
+        }
+    }
+    @media screen and (max-width: 479px) {
+        .lqd-tabs-style-3 .lqd-tabs-nav li a:after {
+        height: 50px!important;
+        background-color: #ff4747b8 !important;
+        }
+    }
 </style>
 @section('content')
 <div id="lqd-contents-wrap">

@@ -1,3 +1,17 @@
+<style>
+    @media screen and (max-width: 1920px) {
+        .lqd-tabs-style-3 .lqd-tabs-nav li a:after {
+	    height: 4px!important;
+	    background-color: #ff4747 !important;
+    }
+        }
+    @media screen and (max-width: 479px) {
+        .lqd-tabs-style-3 .lqd-tabs-nav li a:after {
+        height: 50px!important;
+        background-color: #ff4747b8 !important;
+        }
+    }
+</style>
 <div id="Nippon-Paint-Exterior" role="tabpanel" class="lqd-tabs-pane fade">
     <div class="row">
         <div class="col col-6 mb-30 px-10 py-0 mobile-pd pc-pd">

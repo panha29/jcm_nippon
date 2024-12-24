@@ -1,6 +1,6 @@
 <style>
     .nav-text{
-        color: black;
+        color: black !important;
     }
     .bg-green-300 {
     background-color: rgb(255 6 6);
@@ -11,9 +11,9 @@
     [data-mobile-nav-scheme=dark] .lqd-mobile-sec .navbar-collapse{
         background-color: #ffffff;
     }
-    li a   {
-        color: black !important;
-    }
+    /* li a   {
+        color: white !important;
+    } */
 </style>
 <div class="lqd-sticky-placeholder hidden"></div>
 <header id="site-header" class="main-header main-header-overlay sticky-header-noshadow" data-sticky-header="true" data-sticky-values-measured="false" data-sticky-options='{"disableOnMobile": true}'>
@@ -130,7 +130,7 @@
             </button>
             <a class="navbar-brand flex relative" href="/User/Dashboard" >
                 <span class="navbar-brand-inner">
-                    <img class="logo-default" src="../img/logo/logo.png" alt="Nippon Paint Cambodia">
+                    <img class="logo-default" src="/img/logo/logo.png" alt="Nippon Paint Cambodia">
                 </span>
             </a>
         </div>

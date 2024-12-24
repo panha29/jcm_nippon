@@ -63,7 +63,7 @@
                                 <a draggable="false" href="#Nippon-Paint-Wood-Metal-Paint" aria-expanded="false" aria-controls="Nippon-Paint-Wood-Metal-Paint" role="tab" data-bs-toggle="tab">
                                     <span class="iconbox items-center justify-center">
                                         <span class="flex flex-col">
-                                            <span class="iconbox-title h3 my-0">Wood & Metal Paint</span>
+                                            <span class="iconbox-title h3 my-0">Wood & Metal</span>
                                         </span>
                                     </span>
                                     <span class="lqd-tabs-nav-progress">

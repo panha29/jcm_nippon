@@ -59,6 +59,7 @@
             justify-content: space-around;
         }
         table tr {
+            padding: 15px;
             border-bottom: 0px solid #dedede !important;
         }
         .link-primary a {
