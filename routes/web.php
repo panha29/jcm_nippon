@@ -148,6 +148,7 @@ Route::group(['prefix' => 'User',  'middleware' => 'auth'], function()
     Route::get('/Painting-Services',[UserLoginController::class,'user_servicev2']);
     Route::get('/News',[UserLoginController::class,'user_newsv2']);
     Route::get('/Career',[UserLoginController::class,'user_career']);
+    Route::get('/Career/{id}',[AdminLoginController::class,'user_get_career_id']);
     Route::get('/Project_Reference',[UserLoginController::class,'user_project_referencev2']);
     Route::get('/Contact_Us',[UserLoginController::class,'user_contact_us']);
     Route::get('/About_Us',[UserLoginController::class,'user_about_us']);
@@ -250,7 +251,7 @@ Route::get('/News',[AdminLoginController::class,'newsv2']);
 Route::get('/Career',[AdminLoginController::class,'career']);
 Route::get('/Career/{id}',[AdminLoginController::class,'get_career_id']);
 Route::get('/Project-Reference',[AdminLoginController::class,'project_referencev2']);
-Route::get('/Contact-Us',[AdminLoginController::class,'contact_us']);
+Route::get('/Contact_Us',[AdminLoginController::class,'contact_us']);
 Route::get('/About-Us',[AdminLoginController::class,'about_us']);
 Route::redirect('/', '/', 301);
 Route::view('/Verify','websiteV2.verify');

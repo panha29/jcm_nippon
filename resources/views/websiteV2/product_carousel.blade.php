@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col col-12 module-first">
-                <div class="carousel-container relative carousel-nav-shaped">
+                <div class="carousel-container relative">
                     <div class="carousel-items relative -mr-50 -ml-50" data-lqd-flickity='{"marquee": true, "percentPosition": false, "columnsAutoWidth": true, "draggable": true, "equalHeightCells": true, "middleAlignContent": true, "marqueeTickerSpeed": "0.5", "pauseAutoPlayOnHover": true}'>
                         <div class="flickity-viewport relative w-full overflow-hidden">
                             <div class="flickity-slider flex w-full h-full relative">

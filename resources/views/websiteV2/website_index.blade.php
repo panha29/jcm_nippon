@@ -1215,7 +1215,7 @@
                                 <div class="row -mr-15 -ml-15">
                                     <div class="col col-12 col-md-6 px-15">
                                         <span class="lqd-form-control-wrap" data-name="name">
-                                            <input class="lqd-cf-form-control text-white-80 border-1 border-white-10 bg-transparent px-2em" type="text" name="name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Full name">
+                                            <input class="lqd-cf-form-control text-white-80 border-1 border-white-10 bg-transparent px-2em" type="text" name="name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Full name" autocomplete="off">
                                         </span>
                                     </div>
                                     <div class="col col-12 col-md-6 px-15">

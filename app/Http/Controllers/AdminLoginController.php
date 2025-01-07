@@ -477,6 +477,13 @@ class AdminLoginController extends Controller
         return view('websiteV2.career.career_index',compact('nav','career_id'));
     }
 
+    function user_get_career_id($id){
+        $nav = CategoryModel::all();
+        // $career = CareerModel::latest()->get();
+        $career_id = CareerModel::where('career_title', ($id))->get();
+        return view('user_dashboard.websiteV2.career.career_index',compact('nav','career_id'));
+    }
+
     function project_referencev2(){
         $nav = CategoryModel::all();
         $pjref = ProjectReferenceModel::all();

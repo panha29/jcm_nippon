@@ -8,31 +8,20 @@
                 <nav class="lqd-fancy-menu lqd-custom-menu relative lqd-menu-td-none">
                     <ul class="reset-ul" id="b21a56a">
                         <li class="mb-15">
-                            <a class="text-white-80" href="#">
+                            <a class="text-white-80" href="/Contact_Us">
                                 <span class="link-icon inline-flex hide-if-empty left-icon icon-next-to-label"></span>
                                 <span> Contact Us</span>
                             </a>
                         </li>
+
                         <li class="mb-15">
-                            <a class="text-white-80" href="#">
-                                <span class="link-icon inline-flex hide-if-empty left-icon icon-next-to-label"></span>
-                                <span>FAQ</span>
-                            </a>
-                        </li>
-                        <li class="mb-15">
-                            <a class="text-white-80" href="#">
-                                <span class="link-icon inline-flex hide-if-empty left-icon icon-next-to-label"></span>
-                                <span>Report A Bug</span>
-                            </a>
-                        </li>
-                        <li class="mb-15">
-                            <a class="text-white-80" href="#">
+                            <a class="text-white-80" href="/Career">
                                 <span class="link-icon inline-flex hide-if-empty left-icon icon-next-to-label"></span>
                                 <span>Careers</span>
                             </a>
                         </li>
                         <li>
-                            <a class="text-white-80" href="#">
+                            <a class="text-white-80" href="/About_Us">
                                 <span class="link-icon inline-flex hide-if-empty left-icon icon-next-to-label"></span>
                                 <span> About Us</span>
                             </a>
@@ -46,28 +35,29 @@
                 </div>
                 <nav class="lqd-fancy-menu lqd-custom-menu relative lqd-menu-td-none">
                     <ul class="reset-ul">
+
                         <li class="mb-15">
-                            <a class="text-white-80" href="#">
-                                <span class="link-icon inline-flex hide-if-empty left-icon icon-next-to-label"></span>
-                                <span>Privacy Policy</span>
-                            </a>
-                        </li>
-                        <li class="mb-15">
-                            <a class="text-white-80" href="#">
+                            <a class="text-white-80" href="/Career">
                                 <span class="link-icon inline-flex hide-if-empty left-icon icon-next-to-label"></span>
                                 <span>Jobs</span>
                             </a>
                         </li>
                         <li class="mb-15">
-                            <a class="text-white-80" href="#">
+                            <a class="text-white-80" href="https://www.linkedin.com/company/nippon-paint-cambodia/posts/?feedView=all">
                                 <span class="link-icon inline-flex hide-if-empty left-icon icon-next-to-label"></span>
                                 <span>Linkedin</span>
                             </a>
                         </li>
-                        <li>
-                            <a class="text-white-80" href="#">
+                        <li class="mb-15">
+                            <a class="text-white-80" href="https://www.facebook.com/nipponcambodia">
                                 <span class="link-icon inline-flex hide-if-empty left-icon icon-next-to-label"></span>
-                                <span>Community</span>
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li class="mb-15">
+                            <a class="text-white-80" href="https://t.me/jcmnp">
+                                <span class="link-icon inline-flex hide-if-empty left-icon icon-next-to-label"></span>
+                                <span>Telegram</span>
                             </a>
                         </li>
                     </ul>
@@ -81,25 +71,25 @@
                     <h6 class="ld-fh-element mb-0/5em inline-block relative text-9 font-bold tracking-1 text-white-50 uppercase">CALL US DIRECTLY</h6>
                 </div>
                 <div class="ld-fancy-heading relative">
-                    <a class="ld-fh-element mb-1/6em inline-block relative text-18 font-medium text-white" href="tel: +855 11 822 266"> +855 11 822 266 </a>
+                    <a class="ld-fh-element mb-1/6em inline-block relative text-18 font-medium text-white-80" href="tel: +855 11 822 266"> +855 11 822 266 </a>
                 </div>
                 <div class="ld-fancy-heading relative">
-                    <h6 class="ld-fh-element mb-0/5em inline-block relative text-9 font-bold tracking-1 text-white-50 uppercase">CALL US DIRECTLY</h6>
+                    <h6 class="ld-fh-element mb-0/5em inline-block relative text-9 font-bold tracking-1 text-white-50 uppercase">Email US DIRECTLY</h6>
                 </div>
                 <div class="ld-fancy-heading relative">
-                    <p class="ld-fh-element mb-1/6em inline-block relative text-18 font-medium text-white">info@jcmnippon.com</p>
+                    <p class="ld-fh-element mb-1/6em inline-block relative text-18 font-medium text-white-80">info@jcmnippon.com</p>
                 </div>
             </div>
             <div class="w-35percent flex flex-col items-center text-center mb-30 pt-45 pb-60 px-45 ml-5percent border-1 border-white-10 rounded-20 transition-all module-border lg:m-0 sm:w-full">
                 <div class="ld-fancy-heading relative">
-                    <h4 class="ld-fh-element mb-1/75em inline-block relative text-18 text-white">Join the community 🎉</h4>
+                    <h4 class="ld-fh-element mb-1/75em inline-block relative text-18 text-white-80">Join the community 🎉</h4>
                 </div>
                 <div class="ld-fancy-heading relative">
-                    <p class="ld-fh-element mb-1/5em inline-block relative text-16 leading-20 text-white-40 hover:text-white">Bring your ideas to life an intuitive visual editor. Create, edit, and </p>
+                    <p class="ld-fh-element mb-1/5em inline-block relative text-16 leading-20 text-white-40 hover:text-white">Bring your ideas to life color. Paint, Scheme, and Colors</p>
                 </div>
                 <div class="w-auto">
-                    <a href="#contact-modal" class="btn btn-solid btn-md btn-hover-txt-switch-change btn-hover-txt-switch btn-hover-txt-switch-y pointer-events-auto text-primary bg-green-300 rounded-100" data-lity="#contact-modal">
-                        <span class="btn-txt" data-text="Download Hub" data-split-text="true" data-split-options='{"type":  "chars, words"}'>Join the community</span>
+                    <a href="https://t.me/jcmnp" class="btn btn-solid btn-md btn-hover-txt-switch-change btn-hover-txt-switch btn-hover-txt-switch-y pointer-events-auto text-primary bg-green-300 rounded-100">
+                        <span class="btn-txt" data-text="Telegram" data-split-text="true" data-split-options='{"type":  "chars, words"}'>Join the community</span>
                     </a>
                 </div>
             </div>
@@ -112,29 +102,19 @@
                     </div>
                 </div>
                 <div class="ld-fancy-heading relative">
-                    <p class="ld-fh-element m-0 inline-block relative text-14 text-white-60">© 2022 StartupHub. All images are for demo purposes.</p>
+                    <p class="ld-fh-element m-0 inline-block relative text-14 text-white-60">© 2022 JCM Nippon Paint.</p>
                 </div>
             </div>
-            <div class="w-50percent flex justify-end items-start mt-55 sm:w-full sm:m-0">
+            {{-- <div class="w-50percent flex justify-end items-start mt-55 sm:w-full sm:m-0">
                 <div class="social-icons-wrapper w-full justify-end sm:justify-start gap-30">
-                    <span class="grid-item">
-                        <a href="#" class="icon social-icon social-icon-gitlab text-24 text-white-70" target="_blank">
-                            <span class="sr-only">Gitlab</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="currentColor" ><path d="M503.5 204.6L502.8 202.8L433.1 21.02C431.7 17.45 429.2 14.43 425.9 12.38C423.5 10.83 420.8 9.865 417.9 9.57C415 9.275 412.2 9.653 409.5 10.68C406.8 11.7 404.4 13.34 402.4 15.46C400.5 17.58 399.1 20.13 398.3 22.9L351.3 166.9H160.8L113.7 22.9C112.9 20.13 111.5 17.59 109.6 15.47C107.6 13.35 105.2 11.72 102.5 10.7C99.86 9.675 96.98 9.295 94.12 9.587C91.26 9.878 88.51 10.83 86.08 12.38C82.84 14.43 80.33 17.45 78.92 21.02L9.267 202.8L8.543 204.6C-1.484 230.8-2.72 259.6 5.023 286.6C12.77 313.5 29.07 337.3 51.47 354.2L51.74 354.4L52.33 354.8L158.3 434.3L210.9 474L242.9 498.2C246.6 500.1 251.2 502.5 255.9 502.5C260.6 502.5 265.2 500.1 268.9 498.2L300.9 474L353.5 434.3L460.2 354.4L460.5 354.1C482.9 337.2 499.2 313.5 506.1 286.6C514.7 259.6 513.5 230.8 503.5 204.6z"/></svg>
-                        </a>
-                    </span>
+
                     <span class="grid-item">
                         <a href="#" class="icon social-icon social-icon-instagram text-24 text-white-70" target="_blank">
                             <span class="sr-only">Instagram</span>
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="currentColor" ><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
                         </a>
                     </span>
-                    <span class="grid-item">
-                        <a href="#" class="icon social-icon social-icon-spotify text-24 text-white-70" target="_blank">
-                            <span class="sr-only">Spotify</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512" fill="currentColor" ><path d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"/></svg>
-                        </a>
-                    </span>
+
                     <span class="grid-item">
                         <a href="#" class="icon social-icon social-icon-facebook text-24 text-white-70" target="_blank">
                             <span class="sr-only">Facebook</span>
@@ -153,7 +133,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" fill="currentColor" ><path d="M180.5,74.262C80.813,74.262,0,155.633,0,256S80.819,437.738,180.5,437.738,361,356.373,361,256,280.191,74.262,180.5,74.262Zm288.25,10.646c-49.845,0-90.245,76.619-90.245,171.095s40.406,171.1,90.251,171.1,90.251-76.619,90.251-171.1H559C559,161.5,518.6,84.908,468.752,84.908Zm139.506,17.821c-17.526,0-31.735,68.628-31.735,153.274s14.2,153.274,31.735,153.274S640,340.631,640,256C640,171.351,625.785,102.729,608.258,102.729Z"/></svg>
                         </a>
                     </span>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>

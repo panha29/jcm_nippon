@@ -1,7 +1,7 @@
 @extends('webv2-layout')
 
 @section('css')
-<link rel="stylesheet" href="./css/hub5/css/demo/start-hub-5/start-hub-5-start.css">
+<link rel="stylesheet" href="../css/hub5/css/demo/start-hub-5/start-hub-5-start.css">
 
 <style>
 

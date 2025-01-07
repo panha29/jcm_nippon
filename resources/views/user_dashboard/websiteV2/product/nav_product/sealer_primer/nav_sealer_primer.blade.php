@@ -1,7 +1,7 @@
-@extends('webv2-layout')
+@extends('user_dashboard.webv2-layout')
 
 @section('css')
-<link rel="stylesheet" href="./css/hub5/css/demo/start-hub-5/start-hub-5-start.css">
+<link rel="stylesheet" href="../css/hub5/css/demo/start-hub-5/start-hub-5-start.css">
 
 <style>
 
@@ -9,7 +9,7 @@
 @endsection
 
 @section('js_vendor')
-@include('websiteV2.product.js')
+@include('user_dashboard.websiteV2.product.js')
 
 @endsection
 
@@ -90,7 +90,7 @@
                                         </a>
                                     </li>
                                     <li data-controls="Nippon-Paint-Primer-Sealer" role="presentation" class="text-center">
-                                        <a draggable="false" href="#Nippon-Paint-Primer-Sealer" class="active" aria-expanded="false" aria-controls="Nippon-Paint-Primer-Sealer" role="tab" data-bs-toggle="tab">
+                                        <a draggable="false" href="#Nippon-Paint-Primer-Sealer" class="active show" aria-expanded="false" aria-controls="Nippon-Paint-Primer-Sealer" role="tab" data-bs-toggle="tab">
                                             <span class="iconbox items-center justify-center">
                                                 <span class="flex flex-col">
                                                     <span class="iconbox-title h3 my-0">Primer & Sealer</span>

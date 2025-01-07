@@ -20,7 +20,7 @@ class RedirectIfAuthenticated
         if (Auth::guard($guards)->check()) {
             if(Auth::user()->is_admin){
                 return redirect('Admin/Dashboard');
-            }
+            }else
                 return redirect('User/Dashboard');
         }
         return $next($request);

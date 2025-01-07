@@ -258,18 +258,6 @@
                                         <li class="text-slate-300 cursor-pointer active" data-filter="*">
                                             <span>All</span>
                                         </li>
-                                        {{-- <li class="text-slate-300 cursor-pointer" data-filter=".branding">
-                                            <span>Ministry</span>
-                                        </li>
-                                        <li class="text-slate-300 cursor-pointer" data-filter=".custom-print">
-                                            <span>Condo </span>
-                                        </li>
-                                        <li class="text-slate-300 cursor-pointer" data-filter=".digital-design">
-                                            <span>Digital Design</span>
-                                        </li>
-                                        <li class="text-slate-300 cursor-pointer" data-filter=".ecommerce">
-                                            <span>Ecommerce</span>
-                                        </li> --}}
                                     </ul>
                                 </div>
                                 <div class="lqd-filter-dropdown hidden md:block" data-form-options='{ "dropdownAppendTo":  "self" }'>
@@ -516,12 +504,12 @@
     <!-- End How It Work -->
 
     <!-- Start Companies -->
-    {{-- <section class="lqd-section companies pt-90 pb-120 bg-transparent" style="background-image: linear-gradient(180deg, #2D3140 0%, #19272C 100%);">
-        <div class="lqd-shape lqd-shape-bottom rotate-180 module-shape-1" data-negative="false">
+    <section class="lqd-section companies pt-90 pb-120 bg-transparent">
+        {{-- <div class="lqd-shape lqd-shape-bottom rotate-180 module-shape-1" data-negative="false">
             <svg class="lqd-custom-shape h-175 left-50percent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
                 <path class="lqd-shape-fill" data-name="Row Separator" d="M1440,0Q1080,99,720,99T0,0V100H1440Z" fill="#fff" id="Row_Separator-1" />
             </svg>
-        </div>
+        </div> --}}
         <div class="module-shape-2 w-full absolute flex z-0 bottom-0 ltr-left-0">
             <div class="lqd-shape lqd-shape-bottom rotate-180" data-negative="false">
                 <svg class="lqd-custom-shape -z-1 left-50percent" fill="none" height="461" viewBox="0 0 1440 461" width="1440" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -560,178 +548,9 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col col-12 flex flex-row flex-wrap rounded-12 transition-all border-1 border-white-10">
-                    <div class="row">
-                        <div class="col col-12 col-md-5 relative flex flex-row flex-wrap items-center flex-grow-0 flex-shrink-0 border-right border-white-10 pt-45 pb-60 px-70 module-col sm:border-bottom sm:border-right-0" data-custom-animations="true" data-ca-options='{"animationTarget": "figure, .btn, h2, p", "duration" : 750, "delay" : 55, "ease": "expo.out", "initValues": {"y": "60px", "opacity" : 0}, "animations": {"y": "0px", "opacity" : 1}}'>
-                            <div class="module-parallax absolute top-30percent" data-parallax="true" data-parallax-options='{"ease": "linear", "start": "top bottom", "end": "bottom+=0px top"}' data-parallax-from='{"x": "-79px", "y": "280px", "rotationZ" : 0}' data-parallax-to='{"x": "0px", "y": "-257px", "rotationZ" : 92}'>
-                                <div class="lqd-imggrp-single block relative w-full max-w-full text-center">
-                                    <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
-                                        <figure class="w-full relative">
-                                            <img class="w-65" width="128" height="150" src="../css/hub5/images/demo/start-hub-5/shape-prlx.png" alt="parallax">
-                                        </figure>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ld-fancy-heading relative mr-30">
-                                <p class="ld-fh-element m-0 inline-block relative text-16 font-medium text-white">Compatible</p>
-                            </div>
-                            <div class="lqd-imggrp-single block relative mr-20">
-                                <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
-                                    <figure class="w-full relative">
-                                        <img width="26" height="28" src="../css/hub5/images/demo/start-hub-5/angular.svg" alt="angular">
-                                    </figure>
-                                </div>
-                            </div>
-                            <div class="lqd-imggrp-single block relative mr-20">
-                                <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
-                                    <figure class="w-full relative">
-                                        <img width="31" height="31" src="../css/hub5/images/demo/start-hub-5/firefox.svg" alt="firefox">
-                                    </figure>
-                                </div>
-                            </div>
-                            <div class="ld-fancy-heading relative w-full max-w-full module-title">
-                                <h2 class="ld-fh-element mb-0/3em mt-0/2em inline-block relative ld-gradient-heading bg-transparent text-65" style="background-image: linear-gradient(180deg, #FFD36A 0%, #9B90D6 100%);">Built-in<br> tools 3d</h2>
-                            </div>
-                            <div class="ld-fancy-heading relative w-full max-w-full">
-                                <p class="ld-fh-element mb-1/75em inline-block relative text-16 leading-20 text-white-30">Bring your ideas to life an intuitive visual editor create, edit, and customize.</p>
-                            </div>
-                            <a href="#" class="btn btn-solid btn-md btn-icon-right btn-hover-reveal text-purple-300 bg-blue-200 rounded-8" target="_blank" rel="nofollow">
-                                <span class="btn-txt" data-text="Join the community">Join the community</span>
-                                <span class="btn-icon text-1em">
-                                    <i aria-hidden="true" class="lqd-icn-ess icon-md-arrow-forward"></i>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="col col-12 col-md-7 flex flex-row flex-wrap justify-between pt-45 pb-60 px-70 module-col" data-custom-animations="true" data-ca-options='{"animationTarget": ".lqd-iconbox-scale", "duration" : 750, "startDelay" : 500, "delay" : 55, "ease": "expo.out", "initValues": {"y": "70px", "scaleX" : 0.5, "scaleY" : 0.5, "opacity" : 0}, "animations": {"y": "0px", "scaleX" : 1, "scaleY" : 1, "opacity" : 1}}'>
-                            <div class="lqd-iconbox-scale w-33percent flex flex-wrap justify-center mb-30 sm:w-50percent transition-all">
-                                <div class="iconbox flex flex-grow-1 relative flex-col iconbox-default iconbox-circle iconbox-heading-arrow-onhover text-center">
-                                    <div class="iconbox-icon-wrap">
-                                        <div class="iconbox-icon-container inline-flex relative z-1 rounded-full w-70 h-70 text-42 mb-10 bg-blue-100">
-                                            <svg class="absolute-center h-auto" xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">
-                                                <rect width="41" height="41" fill="none"></rect>
-                                                <path d="M9.789,28.713a1.281,1.281,0,0,0,2.347.711l9.991-14.987a1.281,1.281,0,0,0-1.066-1.992H13.206V3.009A1.281,1.281,0,0,0,10.859,2.3L.867,17.286a1.281,1.281,0,0,0,1.066,1.992H9.789Z" transform="translate(15.836 4.639)" fill="#7989ff"></path>
-                                                <path d="M4.9,25a1.5,1.5,0,0,1-1.5-1.5v-2A1.5,1.5,0,0,1,4.9,20H15.5A1.5,1.5,0,0,1,17,21.5v2A1.5,1.5,0,0,1,15.5,25ZM1.5,15A1.5,1.5,0,0,1,0,13.5v-2A1.5,1.5,0,0,1,1.5,10h8.9a1.5,1.5,0,0,1,1.5,1.5v2A1.5,1.5,0,0,1,10.4,15ZM4.9,5A1.5,1.5,0,0,1,3.4,3.5v-2A1.5,1.5,0,0,1,4.9,0H15.5A1.5,1.5,0,0,1,17,1.5v2A1.5,1.5,0,0,1,15.5,5Z" transform="translate(2 8)" fill="#7989ff" opacity="0.3"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <h3 class="lqd-iconbox-heading text-15 leading-20 m-0 text-white">
-                                        <span>App<br>Development </span>
-                                        <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="12" height="32" viewBox="0 0 12 32">
-                                            <path d="M8.375 16L.437 8.062C-.125 7.5-.125 6.5.438 5.938s1.563-.563 2.126 0l9 9c.562.562.624 1.5.062 2.062l-9.063 9.063c-.312.312-.687.437-1.062.437s-.75-.125-1.063-.438c-.562-.562-.562-1.562 0-2.125z" fill="currentColor"></path>
-                                        </svg>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="lqd-iconbox-scale w-33percent flex flex-wrap justify-center mb-30 sm:w-50percent transition-all">
-                                <div class="iconbox flex flex-grow-1 relative flex-col iconbox-default iconbox-circle iconbox-heading-arrow-onhover text-center">
-                                    <div class="iconbox-icon-wrap">
-                                        <div class="iconbox-icon-container inline-flex relative z-1 rounded-full w-70 h-70 text-42 mb-10 bg-gray-100">
-                                            <svg class="absolute-center h-auto" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
-                                                <rect width="42" height="42" fill="none"></rect>
-                                                <path d="M1.441,1.647A1.75,1.75,0,0,1,3.188,0h21.2a1.75,1.75,0,0,1,1.747,1.647l1.435,24.4a3.5,3.5,0,0,1-3.494,3.706H3.5A3.5,3.5,0,0,1, .006,26.044Z" transform="translate(7.212 7)" fill="#accfe3" opacity="0.3"></path>
-                                                <path d="M0,0H3.5A5.25,5.25,0,0,0,8.75,5.25,5.25,5.25,0,0,0,14,0h3.5A8.75,8.75,0,0,1,8.75,8.75,8.75,8.75,0,0,1,0,0Z" transform="translate(12.25 12.25)" fill="#accfe3"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <h3 class="lqd-iconbox-heading text-15 leading-20 m-0 text-white">
-                                        <span>eCommerce<br>Solutions</span>
-                                        <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="12" height="32" viewBox="0 0 12 32">
-                                            <path d="M8.375 16L.437 8.062C-.125 7.5-.125 6.5.438 5.938s1.563-.563 2.126 0l9 9c.562.562.624 1.5.062 2.062l-9.063 9.063c-.312.312-.687.437-1.062.437s-.75-.125-1.063-.438c-.562-.562-.562-1.562 0-2.125z" fill="currentColor"></path>
-                                        </svg>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="lqd-iconbox-scale w-33percent flex flex-wrap justify-center mb-30 sm:w-50percent transition-all">
-                                <div class="iconbox flex flex-grow-1 relative flex-col iconbox-default iconbox-circle iconbox-heading-arrow-onhover text-center">
-                                    <div class="iconbox-icon-wrap">
-                                        <div class="iconbox-icon-container inline-flex relative z-1 rounded-full w-70 h-70 text-42 mb-10 bg-green-100">
-                                            <svg class="absolute-center h-auto" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
-                                                <rect width="42" height="42" fill="none"></rect>
-                                                <path d="M6.5,21A1.5,1.5,0,0,1,5,19.5V19a1.5,1.5,0,0,1,1.5-1.5h2A1.5,1.5,0,0,1,10,19v.5A1.5,1.5,0,0,1,8.5,21Zm-5-8.75A1.5,1.5,0,0,1,0,10.75v-.5a1.5,1.5,0,0,1,1.5-1.5h7a1.5,1.5,0,0,1,1.5,1.5v.5a1.5,1.5,0,0,1-1.5,1.5ZM4.833,3.5A1.5,1.5,0,0,1,3.334,2V1.5A1.5,1.5,0,0,1,4.833,0H8.5A1.5,1.5,0,0,1,10,1.5V2A1.5,1.5,0,0,1,8.5,3.5Z" transform="translate(0 11)" fill="#67cb91" opacity="0.3"></path>
-                                                <path d="M26,21H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H26a2,2,0,0,1,2,2V19A2,2,0,0,1,26,21ZM4.587,3.5a1.091,1.091,0,0,0-.957.553,1.012,1.012,0,0,0-.087.789,1.052,1.052,0,0,0, .529.633l9.413,4.9a1.116,1.116,0,0,0,1.031,0l9.413-4.9a1.051,1.051,0,0,0, .528-.632,1.013,1.013,0,0,0-.087-.79,1.091,1.091,0,0,0-.957-.553,1.115,1.115,0,0,0-.514.126L14,8.258,5.1,3.626A1.118,1.118,0,0,0,4.587,3.5Z" transform="translate(14 11)" fill="#67cb91"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <h3 class="lqd-iconbox-heading text-15 leading-20 m-0 text-white">
-                                        <span>Newsletter<br>Builder</span>
-                                        <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="12" height="32" viewBox="0 0 12 32">
-                                            <path d="M8.375 16L.437 8.062C-.125 7.5-.125 6.5.438 5.938s1.563-.563 2.126 0l9 9c.562.562.624 1.5.062 2.062l-9.063 9.063c-.312.312-.687.437-1.062.437s-.75-.125-1.063-.438c-.562-.562-.562-1.562 0-2.125z" fill="currentColor"></path>
-                                        </svg>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="lqd-iconbox-scale w-33percent flex flex-wrap justify-center sm:w-50percent transition-all">
-                                <div class="iconbox flex flex-grow-1 relative flex-col iconbox-default iconbox-circle iconbox-heading-arrow-onhover text-center">
-                                    <div class="iconbox-icon-wrap">
-                                        <div class="iconbox-icon-container inline-flex relative z-1 rounded-full w-70 h-70 text-42 mb-10 bg-purple-100">
-                                            <svg class="absolute-center h-auto" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
-                                                <rect width="39" height="39" fill="none"></rect>
-                                                <path d="M12.455,16.169l3.582-3.582a3.25,3.25,0,0,0, .609-3.752l-.2-.406a3.25,3.25,0,0,1, .609-3.752L21.492.238a.812.812,0,0,1,1.3.211l1.794,3.588a7.13,7.13,0,0,1-1.336,8.23L13.5,22.015a8.819,8.819,0,0,1-9.025,2.13L.556,22.838a.813.813,0,0,1-.318-1.345l4.308-4.308A3.25,3.25,0,0,1,8.3,16.575l.406.2A3.25,3.25,0,0,0,12.455,16.169Z" transform="translate(8.799 7.855)" fill="#b576ff"></path>
-                                                <path d="M5.235,5.236A17.838,17.838,0,0,1,19.537.077l-.3,3.237A14.623,14.623,0,0,0,3.312,19.22l-3.237.3A17.835,17.835,0,0,1,5.235,5.236Zm4.6,4.6a11.347,11.347,0,0,1,9.136-3.279l-.31,3.235a8.125,8.125,0,0,0-8.873,8.847l-3.237.3A11.356,11.356,0,0,1,9.832,9.832Z" transform="translate(4.022 3.209)" fill="#b576ff" opacity="0.3"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <h3 class="lqd-iconbox-heading text-15 leading-20 m-0 text-white">
-                                        <span>Marketing<br>Solutions </span>
-                                        <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="12" height="32" viewBox="0 0 12 32">
-                                            <path d="M8.375 16L.437 8.062C-.125 7.5-.125 6.5.438 5.938s1.563-.563 2.126 0l9 9c.562.562.624 1.5.062 2.062l-9.063 9.063c-.312.312-.687.437-1.062.437s-.75-.125-1.063-.438c-.562-.562-.562-1.562 0-2.125z" fill="currentColor"></path>
-                                        </svg>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="lqd-iconbox-scale w-33percent flex flex-wrap justify-center sm:w-50percent transition-all">
-                                <div class="iconbox flex flex-grow-1 relative flex-col iconbox-default iconbox-circle iconbox-heading-arrow-onhover text-center">
-                                    <div class="iconbox-icon-wrap">
-                                        <div class="iconbox-icon-container inline-flex relative z-1 rounded-full w-70 h-70 text-42 mb-10 bg-yellow-100">
-                                            <svg class="absolute-center h-auto" xmlns="http://www.w3.org/2000/svg" width="34" height="34.028" viewBox="0 0 34 34.028">
-                                                <rect width="34" height="34.003" transform="translate(0 0.025)" fill="none"></rect>
-                                                <path d="M28.333,0V5.668A2.834,2.834,0,0,1,25.5,8.5H2.833A2.834,2.834,0,0,1,0,5.668V0H6.062l.771,2.313A2.833,2.833,0,0,0,9.521,4.251h9.437a2.833,2.833,0,0,0,2.534-1.567L22.834,0Z" transform="translate(2.833 24.108)" fill="#ffc569"></path>
-                                                <path d="M0,9.919,4.766,1.445A2.833,2.833,0,0,1,7.235,0H19.5a2.833,2.833,0,0,1,2.469,1.445L26.74,9.919h-4.7A2.833,2.833,0,0,0,19.5,11.486L18.161,14.17H8.724l-.771-2.313A2.833,2.833,0,0,0,5.265,9.919Z" transform="translate(3.63 11.355)" fill="#ffc569" opacity="0.3"></path>
-                                                <path d="M4.72.169A.709.709,0,0,0,3.553.71V3.481H.708A.708.708,0,0,0,0,4.19v1.45a.708.708,0,0,0, .708.708H3.553V9.119A.709.709,0,0,0,4.72,9.66l4.968-4.2a.708.708,0,0,0,0-1.081Z" transform="translate(12.085 9.938) rotate(-90)" fill="#ffc569"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <h3 class="lqd-iconbox-heading text-15 leading-20 m-0 text-white">
-                                        <span>High Performance<br>Server</span>
-                                        <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="12" height="32" viewBox="0 0 12 32">
-                                            <path d="M8.375 16L.437 8.062C-.125 7.5-.125 6.5.438 5.938s1.563-.563 2.126 0l9 9c.562.562.624 1.5.062 2.062l-9.063 9.063c-.312.312-.687.437-1.062.437s-.75-.125-1.063-.438c-.562-.562-.562-1.562 0-2.125z" fill="currentColor"></path>
-                                        </svg>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="lqd-iconbox-scale w-33percent flex flex-wrap justify-center sm:w-50percent transition-all">
-                                <div class="iconbox flex flex-grow-1 relative flex-col iconbox-default iconbox-circle iconbox-heading-arrow-onhover text-center">
-                                    <div class="iconbox-icon-wrap">
-                                        <div class="iconbox-icon-container inline-flex relative z-1 rounded-full w-70 h-70 text-42 mb-10 bg-red-100">
-                                            <svg class="absolute-center h-auto" xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">
-                                                <rect width="41" height="41" fill="none"></rect>
-                                                <path d="M0,19.238a17.99,17.99,0,0,1, .664-4.855l3.29.922a14.5,14.5,0,1,0,9.283-9.812l2.034,2.424a.855.855,0,0,1-.606,1.4l-8.315.47a.855.855,0,0,1-.879-1.052L7.4.657A.855.855,0,0,1,8.885.3l2.031,2.421A17.94,17.94,0,1,1,0,19.238Z" transform="translate(1.708 2.117)" fill="#faa" opacity="0.3"></path>
-                                                <path d="M11,14H1a1,1,0,0,1-1-1V6.25a1,1,0,0,1,1-1h.715V2.5A2.5,2.5,0,0,1,4.214,0H7.785a2.5,2.5,0,0,1,2.5,2.5V5.25H11a1,1,0,0,1,1,1V13A1,1,0,0,1,11,14ZM4.928,1.75a1.5,1.5,0,0,0-1.5,1.5v2H8.572v-2a1.5,1.5,0,0,0-1.5-1.5Z" transform="translate(15 14)" fill="#faa"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <h3 class="lqd-iconbox-heading text-15 leading-20 m-0 text-white">
-                                        <span>Secure<br>Payments</span>
-                                        <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="12" height="32" viewBox="0 0 12 32">
-                                            <path d="M8.375 16L.437 8.062C-.125 7.5-.125 6.5.438 5.938s1.563-.563 2.126 0l9 9c.562.562.624 1.5.062 2.062l-9.063 9.063c-.312.312-.687.437-1.062.437s-.75-.125-1.063-.438c-.562-.562-.562-1.562 0-2.125z" fill="currentColor"></path>
-                                        </svg>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 flex items-center justify-center pt-40 pb-80" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element", "ease" : ["power4.out"], "initValues": {"y": "100px", "opacity" : 0}, "animations": {"y": "0px", "opacity" : 1}}'>
-                    <div class="ld-fancy-heading relative py-15 px-20 rounded-30 text-center bg-slate-50 animation-element">
-                        <p class="ld-fh-element m-0 inline-block relative text-14 font-medium text-blue-300">
-                            <span>Still have a question?</span>
-                            <a href="#contact" data-localscroll="true"><u>submit a ticket.</u></a>
-                        </p>
-                    </div>
-                </div>
                 <div class="col col-12 relative flex flex-col pb-45" data-custom-animations="true" data-ca-options='{"animationTarget": "figure, .lqd-split-lines .lqd-lines .split-inner", "duration" : 750, "startDelay" : 250, "delay" : 55, "ease": "expo.out", "initValues": {"y": "100px", "opacity" : 0}, "animations": {"y": "0px", "opacity" : 1}}'>
                     <div class="ld-fancy-heading relative mask-text text-center">
-                        <h2 class="ld-fh-element mb-0/5em inline-block relative lqd-split-lines text-white" data-split-text="true" data-split-options='{"type": "lines"}'> <span class="text-gray-200">Trusted by</span> global companies</h2>
+                        <h2 class="ld-fh-element mb-0/5em inline-block relative lqd-split-lines text-blue-700" data-split-text="true" data-split-options='{"type": "lines"}'> <span class="text-blue-700">Recommended </span> Product</h2>
                     </div>
                     <div class="ld-fancy-heading relative mask-text text-center w-500 mx-auto sm:w-full">
                         <p class="ld-fh-element mb-0/5em inline-block relative lqd-split-lines text-18 leading-24 text-white-40" data-split-text="true" data-split-options='{"type": "lines"}'> Install any demo, plugin or template in a matter of seconds. Pin any content, use different duration times.</p>
@@ -842,7 +661,7 @@
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>
     <!-- End Companies -->
 
     <!-- Start Testimonials -->
@@ -1144,7 +963,7 @@
     <!-- End Testimonials -->
 
     <!-- Start contact Us -->
-    <section class="lqd-section contact-us py-80 bg-transparent" id="contact" style="background-image: linear-gradient(180deg, #03428d 0%, #0f0350 100%);" data-custom-animations="true" data-ca-options='{"animationTarget": ".module-first, .module-last", "ease" : ["power4.out"], "initValues": {"y": "30px", "scaleX" : 0.5, "scaleY" : 0.5, "opacity" : 0}, "animations": {"y": "0px", "scaleX" : 1, "scaleY" : 1, "opacity" : 1}}'>
+    {{-- <section class="lqd-section contact-us py-80 bg-transparent" id="contact" style="background-image: linear-gradient(180deg, #03428d 0%, #0f0350 100%);" data-custom-animations="true" data-ca-options='{"animationTarget": ".module-first, .module-last", "ease" : ["power4.out"], "initValues": {"y": "30px", "scaleX" : 0.5, "scaleY" : 0.5, "opacity" : 0}, "animations": {"y": "0px", "scaleX" : 1, "scaleY" : 1, "opacity" : 1}}'>
         <div class="lqd-shape lqd-shape-top module-shape-1" data-negative="false">
             <svg class="lqd-custom-shape h-full left-50percent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
                 <path class="lqd-shape-fill" data-name="Row Separator" d="M1440,0Q1080,99,720,99T0,0V100H1440Z" fill="#fff" id="Row_Separator-2" />
@@ -1176,7 +995,7 @@
                         <h2 class="ld-fh-element mb-0/75em inline-block relative text-34 text-white">
                             <span class="text-gray-200">Ready to get started?</span>
                             <br>
-                            {{-- <span> Let's chat.</span> --}}
+                            <span> Let's chat.</span>
                         </h2>
                     </div>
                     <div class="w-full max-w-full flex flex-col items-start transition-all rounded-12 bg-blue-trans-500">
@@ -1215,7 +1034,7 @@
                                 <div class="row -mr-15 -ml-15">
                                     <div class="col col-12 col-md-6 px-15">
                                         <span class="lqd-form-control-wrap" data-name="name">
-                                            <input class="lqd-cf-form-control text-white-80 border-1 border-white-10 bg-transparent px-2em" type="text" name="name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Full name">
+                                            <input class="lqd-cf-form-control text-white-80 border-1 border-white-10 bg-transparent px-2em" type="text" name="name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Full name" autocomplete="off">
                                         </span>
                                     </div>
                                     <div class="col col-12 col-md-6 px-15">
@@ -1223,31 +1042,25 @@
                                             <input class="lqd-cf-form-control text-white-80 border-1 border-white-10 bg-transparent px-2em" type="email" name="email" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Email Address">
                                         </span>
                                     </div>
+
                                     <div class="col col-12 col-md-6 px-15">
-                                        <span class="lqd-form-control-wrap bg-transparent text-white-80 border-1 border-white-10 rounded-100 pl-2em" data-name="subject">
-                                            <select name="subject" class="wpcf7-form-control text-black" aria-required="true" aria-invalid="false">
-                                                <option value="Subject">Subject</option>
-                                                <option value="Subject 1">Subject 1</option>
-                                                <option value="Subject 2">Subject 2</option>
-                                                <option value="Subject 3">Subject 3</option>
-                                            </select>
+                                        <span class="lqd-form-control-wrap" data-name="phone_number">
+                                            <input class="lqd-cf-form-control text-white-80 border-1 border-white-10 bg-transparent px-2em" type="phone_number" name="phone_number" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Phone Number">
                                         </span>
                                     </div>
+
                                     <div class="col col-12 col-md-6 px-15">
-                                        <span class="lqd-form-control-wrap bg-transparent text-white-80 border-1 border-white-10 rounded-100 pl-2em" data-name="subject2">
-                                            <select name="subject2" class="wpcf7-form-control text-black" aria-required="true" aria-invalid="false">
-                                                <option value="Your budget">Your budget</option>
-                                                <option value="&lt; 1000">&lt; 1000</option>
-                                                <option value="&lt; 2000">&lt; 2000</option>
-                                                <option value="&lt; 3000">&lt; 3000</option>
-                                            </select>
+                                        <span class="lqd-form-control-wrap" data-name="address">
+                                            <input class="lqd-cf-form-control text-white-80 border-1 border-white-10 bg-transparent px-2em" type="address" name="address" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Address">
                                         </span>
                                     </div>
+
                                     <div class="col col-12 px-15">
                                         <span class="lqd-form-control-wrap" data-name="message">
-                                            <textarea class="text-white-80 border-1 border-white-10 bg-transparent px-2em" name="message" cols="10" rows="4" aria-required="true" aria-invalid="false" placeholder="Your message"></textarea>
+                                            <input class="text-white-80 border-1 border-white-10 bg-transparent px-2em" name="message" cols="10" rows="4" aria-required="true" aria-invalid="false" placeholder="Your message"></input>
                                         </span>
                                     </div>
+
                                     <div class="col col-12 text-white-50 px-15">
                                         <span class="lqd-form-control-wrap" data-name="acceptance">
                                             <span class="lqd-cf-form-control lqd-cf-acceptance">
@@ -1261,7 +1074,7 @@
                                         </span>
                                     </div>
                                     <div class="col col-12 px-15">
-                                        <input type="submit" value="get a quote" class="lqd-cf-form-control has-spinner lqd-cf-submit">
+                                        <input type="submit" value="Send" class="lqd-cf-form-control has-spinner lqd-cf-submit">
                                     </div>
                                 </div>
                             </form>
@@ -1271,7 +1084,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End contact Us -->
 </div
 
