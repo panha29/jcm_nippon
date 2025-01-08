@@ -281,3 +281,4 @@ Route::get('/clear-cache', function() {
     return view('websiteV2.website_index',compact('product','nav'));
 });
 
+Route::get('/my-maps',[AdminLoginController::class,'my_maps']);

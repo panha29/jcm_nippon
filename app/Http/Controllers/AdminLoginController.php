@@ -575,5 +575,7 @@ class AdminLoginController extends Controller
         return view('admin_dashboard.color_pricing.index',compact('data'));
     }
 
-
+    function my_maps(){
+        return view('websiteV2.my_maps');
+    }
 }
