@@ -97,7 +97,7 @@
                 <div class="lqd-imggrp-single block relative mr-20">
                     <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                         <figure class="w-full relative">
-                            <img width="75" height="21" src="/webv2/images/blobby1.png" alt="Start Hub 5">
+                            <img width="75" height="21" src="/webv2/images/blobby1.png" alt="JCM Nippon Paint" style="width: 75; hight:21">
                         </figure>
                     </div>
                 </div>
