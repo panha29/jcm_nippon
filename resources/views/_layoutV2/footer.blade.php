@@ -93,7 +93,7 @@
                     </a>
                 </div>
             </div>
-            <div class="w-50percent flex justify-start items-center mt-55 module-col sm:w-full sm:flex-col sm:items-start">
+            <div class="w-50percent flex justify-start items-center module-col sm:w-full sm:flex-col sm:items-start">
                 <div class="lqd-imggrp-single block relative mr-20">
                     <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                         <figure class="w-full relative">
