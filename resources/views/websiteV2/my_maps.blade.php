@@ -6,11 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<style>
+    .mapouter{position:relative;text-align:right;width:100%;height:1080px;}
+    .gmap_canvas {overflow:hidden;background:none!important;width:100%;height:1080px;}
+    .gmap_iframe {height:1080px!important;}
+</style>
 <body>
-    <iframe src="https://www.google.com/maps/d/embed?mid=1RIm_I4m7-K6zMS-1_TUlevLp4OUZ0mk&ehbc=2E312F" width="640" height="480"></iframe>
-    <embed src="https://www.youtube.com/" style="width:500px; height: 300px;">
-        <iframe src="https://www.youtube.com/" width="100%" height="300">
-            <p>Your browser does not support iframes.</p>
-          </iframe>
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJQzfc1L-HBzERUxL0ieC_t-Q&key=AIzaSyAmEhChgRGbceZ5oVfVl2TLXpr-ZN1jdi8"></iframe>
+        </div>
+    </div>
 </body>
 </html>
